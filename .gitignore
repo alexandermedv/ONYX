@@ -1,0 +1,82 @@
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ==========================
+# Virtual environments
+# ==========================
+.venv/
+venv/
+env/
+
+# ==========================
+# IDE
+# ==========================
+.vscode/
+.idea/
+
+# ==========================
+# Obsidian
+# ==========================
+
+# Если не планируешь хранить настройки Obsidian
+#.obsidian/workspace.json
+#.obsidian/workspace-mobile.json
+#.obsidian/cache/
+#.obsidian/plugins/*
+#!.obsidian/plugins/.gitkeep
+
+# Если наоборот хочешь синхронизировать настройки,
+# то этот раздел можно будет изменить позже.
+
+# ==========================
+# Logs
+# ==========================
+*.log
+logs/
+
+# ==========================
+# Temporary files
+# ==========================
+*.tmp
+*.bak
+*.cache
+
+# ==========================
+# Windows
+# ==========================
+Thumbs.db
+Desktop.ini
+
+# ==========================
+# AI Models
+# ==========================
+models/
+checkpoints/
+loras/
+embeddings/
+vae/
+upscale_models/
+controlnet/
+
+# ==========================
+# Generated images
+# ==========================
+output/
+outputs/
+
+# ==========================
+# Client data
+# ==========================
+clients/
+Clients/
+
+# ==========================
+# Temporary experiments
+# ==========================
+temp/
+tmp/
+cache/
