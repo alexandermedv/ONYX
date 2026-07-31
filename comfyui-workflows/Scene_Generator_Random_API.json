@@ -1,0 +1,146 @@
+{
+  "1": {
+    "inputs": {
+      "ckpt_name": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load Checkpoint"
+    }
+  },
+  "3": {
+    "inputs": {
+      "text": "worst quality,\nlow quality,\nlow resolution,\nblurry,\nout of focus,\njpeg artifacts,\nwatermark,\ntext,\nlogo,\n\ncartoon,\nanime,\npainting,\n3d,\ncgi,\nillustration,\n\nbad anatomy,\nbad proportions,\ndeformed face,\nasymmetrical eyes,\ncross eyed,\nlazy eye,\nextra eyes,\nextra ears,\nextra fingers,\nmissing fingers,\nmutated hands,\ncropped head,\nduplicate person,\n\nplastic skin,\noversmoothed skin,\nwax face,\nbad teeth,\nugly smile,\ndistorted mouth,\n\nmessy background,\nclutter,\noverexposed,\nunderexposed,\nmotion blur\n\nbad hands,\npoorly drawn hands,\nmalformed hands,\ndeformed hands,\nmutated hands,\nextra fingers,\nmissing fingers,\nfused fingers,\nwebbed fingers,\ntoo many fingers,\ntoo few fingers,\nlong fingers,\nbroken fingers,\ndislocated fingers,\nbad finger anatomy,\nincorrect hand anatomy,\nextra hands,\nduplicate hands,\ncloned hands,\ntwisted wrists,\ndeformed wrists",
+      "clip": [
+        "1",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Negative)"
+    }
+  },
+  "4": {
+    "inputs": {
+      "width": 832,
+      "height": 1216,
+      "batch_size": 1
+    },
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "Empty Latent Image"
+    }
+  },
+  "5": {
+    "inputs": {
+      "seed": 149788051828335,
+      "steps": 28,
+      "cfg": 2.5,
+      "sampler_name": "dpmpp_sde",
+      "scheduler": "karras",
+      "denoise": 1,
+      "model": [
+        "1",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "3",
+        0
+      ],
+      "latent_image": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "6": {
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "1",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "12": {
+    "inputs": {
+      "filename": "Sample_%date_%time",
+      "path": "SceneGenerator/Random",
+      "extension": "png",
+      "steps": 20,
+      "cfg": 7,
+      "modelname": "",
+      "sampler_name": "",
+      "scheduler_name": "normal",
+      "positive": "unknown",
+      "negative": "unknown",
+      "seed_value": 0,
+      "width": 512,
+      "height": 512,
+      "lossless_webp": true,
+      "quality_jpeg_or_webp": 100,
+      "optimize_png": false,
+      "counter": 1,
+      "denoise": 1,
+      "clip_skip": 0,
+      "time_format": "%Y-%m-%d-%H%M%S",
+      "save_workflow_as_json": false,
+      "embed_workflow": true,
+      "additional_hashes": "",
+      "download_civitai_data": true,
+      "easy_remix": true,
+      "show_preview": true,
+      "custom": "",
+      "images": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "Image Saver",
+    "_meta": {
+      "title": "Image Saver"
+    }
+  },
+  "13": {
+    "inputs": {
+      "text": "{# ============================================================\n   BUSINESS PORTRAIT SCENE GENERATOR\n   random = случайный выбор\n   любое другое значение = использовать заданный текст\n   ============================================================ #}\n\n\n{# ============================================================\n   1. USER SETTINGS\n   Редактируй только этот раздел\n   ============================================================ #}\n\n{% set gender_setting = \"man\" %}\n{% set age_setting = \"random\" %}\n{% set appearance_setting = \"random\" %}\n{% set hair_setting = \"completely bald head, clean-shaven scalp, realistic healthy scalp\" %}\n{% set clothing_setting = \"random\" %}\n{% set location_setting = \"random\" %}\n{% set pose_setting = \"random\" %}\n{% set hands_setting = \"random\" %}\n{% set camera_setting = \"random\" %}\n{% set lighting_setting = \"random\" %}\n{% set mood_setting = \"random\" %}\n{% set details_setting = \"random\" %}\n\n\n{# ============================================================\n   ПРИМЕР ЧАСТИЧНО ФИКСИРОВАННОЙ ГЕНЕРАЦИИ\n\n   {% set gender_setting = \"man\" %}\n   {% set age_setting = \"42-year-old\" %}\n   {% set appearance_setting = \"random\" %}\n   {% set hair_setting = \"completely bald head, clean-shaven scalp\" %}\n   {% set clothing_setting = \"a tailored navy business suit with a white shirt\" %}\n   {% set location_setting = \"random\" %}\n   {% set pose_setting = \"standing naturally with a confident posture\" %}\n   {% set hands_setting = \"hands outside the frame\" %}\n   {% set camera_setting = \"random\" %}\n   {% set lighting_setting = \"random\" %}\n   {% set mood_setting = \"calm confident expression\" %}\n   {% set details_setting = \"random\" %}\n   ============================================================ #}\n\n\n{# ============================================================\n   2. GENDER\n   ============================================================ #}\n\n{% set gender_options = [\n    \"woman\",\n    \"man\"\n] %}\n\n\n{# ============================================================\n   3. AGE\n   ============================================================ #}\n\n{% set female_age_options = [\n    \"27-year-old\",\n    \"30-year-old\",\n    \"33-year-old\",\n    \"36-year-old\",\n    \"40-year-old\",\n    \"44-year-old\",\n    \"48-year-old\",\n    \"52-year-old\",\n] %}\n\n{% set male_age_options = [\n    \"27-year-old\",\n    \"30-year-old\",\n    \"34-year-old\",\n    \"38-year-old\",\n    \"42-year-old\",\n    \"46-year-old\",\n    \"50-year-old\",\n    \"55-year-old\"\n] %}\n\n\n{# ============================================================\n   4. APPEARANCE\n   ============================================================ #}\n\n{% set female_appearance_options = [\n    \"well-groomed professional appearance, natural facial features, healthy realistic skin, expressive eyes, subtle professional makeup\",\n    \"elegant executive appearance, refined natural facial features, clear eyes, realistic skin texture, discreet makeup\",\n    \"confident corporate appearance, balanced facial features, healthy skin, expressive eyes, natural professional makeup\",\n    \"approachable business appearance, realistic facial structure, clear eyes, natural skin texture, minimal makeup\",\n    \"mature executive appearance, distinguished natural facial features, healthy realistic skin, restrained professional makeup\"\n] %}\n\n{% set male_appearance_options = [\n    \"well-groomed professional appearance, natural masculine facial features, healthy realistic skin, expressive eyes\",\n    \"confident executive appearance, strong natural facial structure, clear eyes, realistic skin texture\",\n    \"approachable business appearance, balanced masculine facial features, healthy skin, professional grooming\",\n    \"mature corporate appearance, distinguished facial features, natural skin texture, confident eyes\",\n    \"refined executive appearance, realistic facial structure, healthy skin, restrained professional grooming\"\n] %}\n\n\n{# ============================================================\n   5. HAIR\n   В мужском списке есть лысые варианты\n   ============================================================ #}\n\n{% set female_hair_options = [\n    \"long straight dark brown hair\",\n    \"shoulder-length softly styled brown hair\",\n    \"long naturally wavy black hair\",\n    \"medium-length blonde hair with a professional style\",\n    \"dark hair tied in a neat low ponytail\",\n    \"short elegant professional haircut\",\n    \"shoulder-length auburn hair\",\n    \"naturally curly dark hair\"\n] %}\n\n{% set male_hair_options = [\n    \"short dark brown hair\",\n    \"short neatly styled black hair\",\n    \"short blonde hair\",\n    \"short salt-and-pepper hair\",\n    \"neat professional buzz cut\",\n    \"completely bald head, clean-shaven scalp, realistic healthy scalp\",\n    \"shaved head, realistic healthy scalp\",\n    \"bald head with short neatly groomed beard\",\n    \"short receding hairline, naturally styled\"\n] %}\n\n\n{# ============================================================\n   6. CLOTHING\n   ============================================================ #}\n\n{% set female_clothing_options = [\n    \"an elegant tailored navy pantsuit with a clean white blouse\",\n    \"a charcoal gray business suit with a cream silk blouse\",\n    \"a light beige blazer with tailored dark trousers\",\n    \"a dark blue professional dress with a structured blazer\",\n    \"a white tailored blazer with navy business trousers\",\n    \"a black premium business suit with a light neutral blouse\",\n    \"a muted burgundy blazer with charcoal tailored trousers\"\n] %}\n\n{% set male_clothing_options = [\n    \"a tailored navy business suit with a crisp white dress shirt\",\n    \"a charcoal gray suit with a light blue dress shirt\",\n    \"a dark blue blazer with tailored gray trousers and a white shirt\",\n    \"a black tailored suit with a clean white shirt\",\n    \"a medium gray business suit with a pale blue shirt\",\n    \"a premium navy three-piece suit with a white shirt\",\n    \"a smart casual dark blazer with tailored trousers and an open-collar shirt\"\n] %}\n\n\n{# ============================================================\n   7. LOCATION\n   ============================================================ #}\n\n{% set location_options = [\n    \"a modern executive office with panoramic windows and a clean minimalist interior\",\n    \"a glass-walled corporate meeting room\",\n    \"a premium high-rise office overlooking a city skyline\",\n    \"a professional photography studio with a soft neutral background\",\n    \"a bright contemporary office with restrained corporate decor\",\n    \"a sophisticated private office with a wooden desk and subtle background details\",\n    \"a luxury corporate lobby with modern architecture\",\n    \"a minimalist coworking space with elegant professional furniture\",\n    \"a modern boardroom with a long conference table\",\n    \"a bright office corridor with glass walls and soft background blur\"\n] %}\n\n\n{# ============================================================\n   8–9. POSE + HANDS\n   Эти параметры объединены, чтобы не создавать противоречий\n   ============================================================ #}\n\n{% set pose_hand_options = [\n    [\n        \"standing naturally with a relaxed professional posture\",\n        \"arms relaxed naturally, hands outside the frame\"\n    ],\n    [\n        \"standing confidently beside an executive desk\",\n        \"one hand resting lightly on the desk, the other arm relaxed and partially outside the frame\"\n    ],\n    [\n        \"standing with a composed executive posture\",\n        \"arms crossed naturally, hands partially concealed, anatomically correct wrists\"\n    ],\n    [\n        \"sitting upright at an executive desk\",\n        \"forearms resting naturally on the desk, hands relaxed and separated\"\n    ],\n    [\n        \"standing beside an open laptop\",\n        \"one hand resting near the laptop, the other hand outside the frame\"\n    ],\n    [\n        \"standing near a panoramic office window\",\n        \"hands loosely clasped at waist level, fingers relaxed\"\n    ],\n    [\n        \"sitting naturally in a modern office chair\",\n        \"one forearm resting on the chair arm, the other hand outside the frame\"\n    ],\n    [\n        \"walking confidently through a modern office\",\n        \"arms moving naturally, hands relaxed and partially outside the frame\"\n    ],\n    [\n        \"standing while holding a thin business folder\",\n        \"folder held naturally with both hands, fingers partially concealed\"\n    ],\n    [\n        \"standing beside a conference table\",\n        \"both hands resting lightly and separately on the table edge\"\n    ],\n    [\n        \"standing in a relaxed three-quarter pose\",\n        \"one hand in a trouser pocket, the other arm relaxed\"\n    ],\n    [\n        \"upper-body portrait with a straight professional posture\",\n        \"hands completely outside the frame\"\n    ]\n] %}\n\n\n{# ============================================================\n   10. CAMERA / COMPOSITION\n   ============================================================ #}\n\n{% set camera_options = [\n    \"waist-up three-quarter portrait, eye-level camera, 85mm portrait lens, shallow depth of field\",\n    \"upper-body corporate portrait, eye-level camera, 85mm lens, softly blurred background\",\n    \"three-quarter body portrait, slightly low camera angle, 70mm lens, natural perspective\",\n    \"medium business portrait, eye-level camera, 50mm lens, balanced depth of field\",\n    \"chest-up executive portrait, eye-level framing, 85mm lens, soft background bokeh\",\n    \"full-height corporate portrait, eye-level camera, 50mm lens, realistic body proportions\",\n    \"slightly off-center editorial composition, eye-level camera, 85mm lens\"\n] %}\n\n\n{# ============================================================\n   11. LIGHTING\n   ============================================================ #}\n\n{% set lighting_options = [\n    \"soft natural window light, diffused professional illumination, gentle facial shadows\",\n    \"professional studio lighting with a large softbox and subtle rim light\",\n    \"bright high-key corporate lighting with natural skin tones\",\n    \"soft cinematic office lighting with controlled contrast\",\n    \"warm diffused daylight balanced with subtle interior lighting\",\n    \"clean neutral studio lighting with soft shadows\",\n    \"soft side lighting from panoramic windows with balanced fill light\"\n] %}\n\n\n{# ============================================================\n   12. MOOD / EXPRESSION\n   ============================================================ #}\n\n{% set mood_options = [\n    \"calm confident expression, slight professional smile, approachable and competent\",\n    \"serious executive expression, composed and authoritative\",\n    \"friendly professional smile, warm and trustworthy\",\n    \"neutral focused expression, intelligent and self-assured\",\n    \"subtle confident smile, polished and successful\",\n    \"calm thoughtful expression, attentive and professional\",\n    \"relaxed executive expression, confident but approachable\"\n] %}\n\n\n{# ============================================================\n   13. ADDITIONAL DETAILS\n   ============================================================ #}\n\n{% set details_options = [\n    \"realistic premium fabric texture, detailed natural hair, clean background, restrained corporate color grading\",\n    \"premium tailoring, realistic material details, natural skin texture, polished editorial finish\",\n    \"clean luxury corporate aesthetics, realistic individual hair strands, subtle professional color grading\",\n    \"authentic office atmosphere, detailed clothing texture, balanced highlights and shadows\",\n    \"subtle elegant accessories, realistic fabric folds, clean professional background\",\n    \"high-end editorial styling, accurate clothing seams, natural skin tones, realistic photographic finish\"\n] %}\n\n\n{# ============================================================\n   14. RESOLVE GENDER\n   ============================================================ #}\n\n{% if gender_setting == \"random\" %}\n    {% set gender = gender_options | random %}\n{% else %}\n    {% set gender = gender_setting %}\n{% endif %}\n\n\n{# ============================================================\n   15. SUBJECT DESCRIPTION\n   ============================================================ #}\n\n{% if gender == \"woman\" %}\n    {% set subject = \"successful businesswoman, senior corporate executive\" %}\n{% else %}\n    {% set subject = \"successful businessman, senior corporate executive\" %}\n{% endif %}\n\n\n{# ============================================================\n   16. RESOLVE AGE\n   ============================================================ #}\n\n{% if age_setting == \"random\" %}\n    {% if gender == \"woman\" %}\n        {% set age = female_age_options | random %}\n    {% else %}\n        {% set age = male_age_options | random %}\n    {% endif %}\n{% else %}\n    {% set age = age_setting %}\n{% endif %}\n\n\n{# ============================================================\n   17. RESOLVE APPEARANCE\n   ============================================================ #}\n\n{% if appearance_setting == \"random\" %}\n    {% if gender == \"woman\" %}\n        {% set appearance = female_appearance_options | random %}\n    {% else %}\n        {% set appearance = male_appearance_options | random %}\n    {% endif %}\n{% else %}\n    {% set appearance = appearance_setting %}\n{% endif %}\n\n\n{# ============================================================\n   18. RESOLVE HAIR\n   ============================================================ #}\n\n{% if hair_setting == \"random\" %}\n    {% if gender == \"woman\" %}\n        {% set hair = female_hair_options | random %}\n    {% else %}\n        {% set hair = male_hair_options | random %}\n    {% endif %}\n{% else %}\n    {% set hair = hair_setting %}\n{% endif %}\n\n\n{# ============================================================\n   19. RESOLVE CLOTHING\n   ============================================================ #}\n\n{% if clothing_setting == \"random\" %}\n    {% if gender == \"woman\" %}\n        {% set clothing = female_clothing_options | random %}\n    {% else %}\n        {% set clothing = male_clothing_options | random %}\n    {% endif %}\n{% else %}\n    {% set clothing = clothing_setting %}\n{% endif %}\n\n\n{# ============================================================\n   20. RESOLVE LOCATION\n   ============================================================ #}\n\n{% if location_setting == \"random\" %}\n    {% set location = location_options | random %}\n{% else %}\n    {% set location = location_setting %}\n{% endif %}\n\n\n{# ============================================================\n   21. RESOLVE POSE AND HANDS\n\n   Если pose_setting = random:\n   поза и руки выбираются согласованной парой.\n\n   Если pose_setting фиксирован:\n   используется pose_setting, а hands_setting задаётся отдельно.\n   ============================================================ #}\n\n{% if pose_setting == \"random\" %}\n    {% set pose_hand = pose_hand_options | random %}\n    {% set pose = pose_hand[0] %}\n    {% set hands = pose_hand[1] %}\n{% else %}\n    {% set pose = pose_setting %}\n\n    {% if hands_setting == \"random\" %}\n        {% set hands = \"hands naturally positioned, relaxed fingers, anatomically correct wrists\" %}\n    {% else %}\n        {% set hands = hands_setting %}\n    {% endif %}\n{% endif %}\n\n\n{# ============================================================\n   22. RESOLVE CAMERA\n   ============================================================ #}\n\n{% if camera_setting == \"random\" %}\n    {% set camera = camera_options | random %}\n{% else %}\n    {% set camera = camera_setting %}\n{% endif %}\n\n\n{# ============================================================\n   23. RESOLVE LIGHTING\n   ============================================================ #}\n\n{% if lighting_setting == \"random\" %}\n    {% set lighting = lighting_options | random %}\n{% else %}\n    {% set lighting = lighting_setting %}\n{% endif %}\n\n\n{# ============================================================\n   24. RESOLVE MOOD\n   ============================================================ #}\n\n{% if mood_setting == \"random\" %}\n    {% set mood = mood_options | random %}\n{% else %}\n    {% set mood = mood_setting %}\n{% endif %}\n\n\n{# ============================================================\n   25. RESOLVE DETAILS\n   ============================================================ #}\n\n{% if details_setting == \"random\" %}\n    {% set details = details_options | random %}\n{% else %}\n    {% set details = details_setting %}\n{% endif %}\n\n\n{# ============================================================\n   26. FINAL POSITIVE PROMPT\n   ============================================================ #}\n\nprofessional business portrait of a {{ age }} {{ gender }},\n{{ subject }},\n{{ appearance }},\n{{ hair }},\nwearing {{ clothing }},\n{{ pose }},\n{{ hands }},\ninside {{ location }},\n{{ camera }},\n{{ lighting }},\n{{ mood }},\n{{ details }},\nhigh-end corporate photography,\nphotorealistic,\nrealistic natural skin texture,\nsharp expressive eyes,\nnatural body proportions,\nrealistic human anatomy,\nprofessional composition,\nhigh dynamic range,\nbalanced natural colors,\nsharp focus,\npremium editorial quality",
+      "autorefresh": "Yes"
+    },
+    "class_type": "DPJinja",
+    "_meta": {
+      "title": "Jinja2 Templates"
+    }
+  },
+  "16": {
+    "inputs": {
+      "text": [
+        "13",
+        0
+      ],
+      "clip": [
+        "1",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  }
+}

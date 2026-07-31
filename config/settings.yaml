@@ -1,0 +1,13 @@
+clients_root: 'D:\AI\Clients'
+
+comfyui:
+  server: 'http://127.0.0.1:8188'
+  root: 'D:\AI\ComfyUI\ComfyUI_windows_portable\ComfyUI'
+  timeout: 1800
+
+facefusion:
+  root: 'D:\AI\facefusion'
+  python: 'C:\Users\ME\miniconda3\envs\facefusion\python.exe'
+
+generation:
+  scene_count: 8

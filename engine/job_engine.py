@@ -14,6 +14,7 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from jobs.create_job import create_job
 
 
 STAGES = ("scene_generator", "facefusion", "postprocessor")
@@ -80,9 +81,12 @@ def resolve_job_path(job_dir: Path, value: str) -> Path:
     return path if path.is_absolute() else (job_dir / path).resolve()
 
 
-def stage_paths(job_dir: Path) -> dict[str, Path]:
+def stage_paths(job_dir: Path, job: dict[str, Any]) -> dict[str, Path]:
+    client_profile = Path(job["paths"]["client_profile"])
+    client_root = client_profile.parent.parent
+
     return {
-        "source": job_dir / "01_source",
+        "source": client_root / "source",
         "scenes": job_dir / "02_scenes",
         "face_swapped": job_dir / "03_face_swapped",
         "final": job_dir / "04_final",
@@ -91,7 +95,7 @@ def stage_paths(job_dir: Path) -> dict[str, Path]:
 
 
 def clear_generated_outputs(paths: dict[str, Path]) -> None:
-    """Remove generated outputs without touching client source photos."""
+    """Remove generated outputs."""
     for key in ("scenes", "face_swapped", "final", "logs"):
         folder = paths[key]
         if folder.exists():
@@ -99,17 +103,44 @@ def clear_generated_outputs(paths: dict[str, Path]) -> None:
         folder.mkdir(parents=True, exist_ok=True)
 
 
+def stage_completed(
+    stage: str,
+    stage_io: dict[str, tuple[Path, Path]],
+    job: dict[str, Any],
+) -> bool:
+    input_dir, output_dir = stage_io[stage]
+
+    produced = image_count(output_dir)
+
+    minimum = int(
+        job["pipeline"][stage].get(
+            "minimum_output_images",
+            1,
+        )
+    )
+
+    if stage == "scene_generator":
+        return produced >= minimum
+
+    return (
+        image_count(input_dir) >= minimum
+        and produced >= image_count(input_dir)
+    )
+
+
 def run_job(
     job_file: Path,
     restart: bool = False,
     dry_run: bool = False,
     stop_after: str | None = None,
+    from_stage: str | None = None,
+    only_stage: str | None = None,
 ) -> int:
     job_file = job_file.resolve()
     job_dir = job_file.parent
     job = read_json(job_file)
     validate_job(job)
-    paths = stage_paths(job_dir)
+    paths = stage_paths(job_dir, job)
     if restart and not dry_run:
         clear_generated_outputs(paths)
     for folder in paths.values():
@@ -136,19 +167,30 @@ def run_job(
         if isinstance(value, str):
             values[key] = str(resolve_job_path(job_dir, value))
 
+    if only_stage:
+        stages_to_run = [only_stage]
+    elif from_stage:
+        stages_to_run = list(STAGES[STAGES.index(from_stage):])
+    else:
+        stages_to_run = list(STAGES)
+
     try:
-        for stage in STAGES:
+        for stage in stages_to_run:
             cfg = job["pipeline"][stage]
             stage_state = state["stages"].setdefault(stage, {"status": "pending"})
             if not cfg.get("enabled", True):
                 stage_state.update(status="skipped", finished_at=utc_now())
                 write_json(state_path, state)
                 continue
-            if stage_state.get("status") == "completed" and not restart:
-                print(f"[SKIP] {stage}: already completed")
+            if stage_completed(stage, stage_io, job) and not restart:
+                print(f"[SKIP] {stage}: outputs already exist")
                 continue
 
             input_dir, output_dir = stage_io[stage]
+            if stage != "scene_generator" and image_count(input_dir) == 0:
+                raise RuntimeError(
+                    f"{stage} cannot start because input folder is empty:\n{input_dir}"
+                )
             values.update(input_dir=str(input_dir), output_dir=str(output_dir), stage=stage)
             command = format_command(cfg["command"], values)
             stage_state.update(status="running", started_at=utc_now(), command=command)
@@ -218,25 +260,77 @@ def run_job(
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Commercial AI Portrait Job Engine v1.3")
-    parser.add_argument("job_file", type=Path, help="Path to job.json")
+    parser = argparse.ArgumentParser(
+        description="Commercial AI Portrait Job Engine v1.3"
+    )
+
+    parser.add_argument(
+        "--create-job",
+        nargs=2,
+        metavar=("CLIENT", "JOB"),
+        help="Create new job structure",
+    )
+
+    parser.add_argument(
+        "job_file",
+        nargs="?",
+        type=Path,
+        help="Path to job.json",
+    )
+
     parser.add_argument(
         "--restart",
         action="store_true",
         help="Clear generated outputs (02-04 and logs) and run all stages again",
     )
-    parser.add_argument("--dry-run", action="store_true", help="Validate and print commands only")
+
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Validate and print commands only",
+    )
+
     parser.add_argument(
         "--stop-after",
         choices=STAGES,
         help="Stop successfully after a stage so its output can be reviewed",
     )
+
+    parser.add_argument(
+    "--from-stage",
+    choices=STAGES,
+    help="Start pipeline from the specified stage",
+    )
+
+    parser.add_argument(
+    "--only-stage",
+    choices=STAGES,
+    help="Execute only the specified stage",
+    )
+
     args = parser.parse_args()
+
+    if args.from_stage and args.only_stage:
+        parser.error(
+            "--from-stage and --only-stage cannot be used together"
+        )
+
+    if args.create_job:
+        client, job = args.create_job
+        folder = create_job(client, job)
+        print(folder)
+        return 0
+
+    if args.job_file is None:
+        parser.error("job_file is required unless --create-job is used")
+
     return run_job(
-        args.job_file,
-        restart=args.restart,
-        dry_run=args.dry_run,
-        stop_after=args.stop_after,
+    args.job_file,
+    restart=args.restart,
+    dry_run=args.dry_run,
+    stop_after=args.stop_after,
+    from_stage=args.from_stage,
+    only_stage=args.only_stage,
     )
 
 
