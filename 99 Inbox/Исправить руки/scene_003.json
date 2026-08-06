@@ -1,0 +1,71 @@
+{
+  "run_id": "run_2026-08-05_181447",
+  "scene_id": "scene_003",
+  "collection": "ONYX Executive Office",
+  "collection_id": "executive",
+  "mode": "client",
+  "session": {
+    "session_id": "2026-08-05_executive",
+    "session_file": "D:\\AI\\Clients\\Alexander\\jobs\\2026-08-05_executive\\session_spec.json",
+    "status": "ready"
+  },
+  "character": {
+    "gender": "male",
+    "age_range": 36,
+    "body_type": "average build",
+    "hair": "bald",
+    "facial_hair": "clean-shaven",
+    "eye_color": "blue eyes",
+    "glasses": false,
+    "source": "client_profile",
+    "profile_file": "D:\\AI\\Clients\\Alexander\\profile\\client_profile_v2.json",
+    "overrides_file": null
+  },
+  "character_prompt": "36-year-old man, average build, bald, a completely clean-shaven and freshly shaved face, smooth cheeks and jawline, no visible stubble, no beard and no mustache, blue eyes, without glasses",
+  "parameter_sources": {
+    "character": "client_profile",
+    "clothing": "collection_random",
+    "scene": "collection_scene_library"
+  },
+  "generation_seed": 5317045154574012622,
+  "selected_parameters": {
+    "scene_preset_id": "presentation_wall",
+    "scene_blueprint": "standing beside a large dark presentation screen after a meeting, body angled toward the camera. One hand holds a closed slim notebook at the side and the other rests naturally in a trouser pocket. Medium three-quarter portrait with clean geometric composition",
+    "environment": "A modern presentation room with a blank dark screen, a narrow console and subtle glass architecture, with no logos, charts or readable text.",
+    "lighting": "balanced soft room light with a gentle side key that keeps the face natural and dimensional",
+    "camera": "a professional full-frame camera with a 65mm lens at f/3.5",
+    "expression": "a composed neutral expression and direct confident gaze",
+    "character": {
+      "gender": "male",
+      "age_range": 36,
+      "body_type": "average build",
+      "hair": "bald",
+      "facial_hair": "clean-shaven",
+      "eye_color": "blue eyes",
+      "glasses": false,
+      "source": "client_profile",
+      "profile_file": "D:\\AI\\Clients\\Alexander\\profile\\client_profile_v2.json",
+      "overrides_file": null
+    },
+    "clothing": "a dark textured blazer over a fine black turtleneck, understated and executive, with natural fabric folds"
+  },
+  "prompt": "A natural, highly realistic editorial business photograph of a single 36-year-old man, average build, bald, a completely clean-shaven and freshly shaved face, smooth cheeks and jawline, no visible stubble, no beard and no mustache, blue eyes, without glasses.\n\nHe is wearing a dark textured blazer over a fine black turtleneck, understated and executive, with natural fabric folds.\n\nHe is standing beside a large dark presentation screen after a meeting, body angled toward the camera. One hand holds a closed slim notebook at the side and the other rests naturally in a trouser pocket. Medium three-quarter portrait with clean geometric composition. The posture is confident but unposed, as if photographed during a real working day. The subject has a composed neutral expression and direct confident gaze.\n\nA modern presentation room with a blank dark screen, a narrow console and subtle glass architecture, with no logos, charts or readable text.\n\nLighting: balanced soft room light with a gentle side key that keeps the face natural and dimensional. Neutral color grading with charcoal, navy and warm brown tones.\n\nPhotographed on a professional full-frame camera with a 65mm lens at f/3.5. Natural depth of field, realistic optical rendering, fine fabric texture, visible skin pores, subtle under-eye detail, natural body proportions and anatomically correct hands. Authentic corporate editorial photography, restrained retouching, slight photographic grain, subtle lens softness, realistic exposure, no artificial glamour, no glossy advertising look.",
+  "generation": {
+    "seed_mode": "random",
+    "fixed_seed": 240805001,
+    "steps": 20,
+    "cfg": 1.0,
+    "sampler_name": "euler",
+    "scheduler": "simple",
+    "denoise": 1.0,
+    "width": 896,
+    "height": 1152,
+    "batch_size": 1
+  },
+  "workflow_file": "ONYX_Flux_Scene_Generator_0.3_API.json",
+  "local_output_directory": "output\\run_2026-08-05_181447",
+  "output_images": [
+    "scene_003.png"
+  ],
+  "prompt_id": "131dcc97-28c4-4f13-ad1c-f689e9f02f0c"
+}

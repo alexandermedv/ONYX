@@ -1,0 +1,71 @@
+{
+  "run_id": "run_2026-08-05_181447",
+  "scene_id": "scene_005",
+  "collection": "ONYX Executive Office",
+  "collection_id": "executive",
+  "mode": "client",
+  "session": {
+    "session_id": "2026-08-05_executive",
+    "session_file": "D:\\AI\\Clients\\Alexander\\jobs\\2026-08-05_executive\\session_spec.json",
+    "status": "ready"
+  },
+  "character": {
+    "gender": "male",
+    "age_range": 36,
+    "body_type": "average build",
+    "hair": "bald",
+    "facial_hair": "clean-shaven",
+    "eye_color": "blue eyes",
+    "glasses": false,
+    "source": "client_profile",
+    "profile_file": "D:\\AI\\Clients\\Alexander\\profile\\client_profile_v2.json",
+    "overrides_file": null
+  },
+  "character_prompt": "36-year-old man, average build, bald, a completely clean-shaven and freshly shaved face, smooth cheeks and jawline, no visible stubble, no beard and no mustache, blue eyes, without glasses",
+  "parameter_sources": {
+    "character": "client_profile",
+    "clothing": "collection_random",
+    "scene": "collection_scene_library"
+  },
+  "generation_seed": 5702627897742432169,
+  "selected_parameters": {
+    "scene_preset_id": "walking_corridor",
+    "scene_blueprint": "walking slowly through a modern office corridor toward the camera, captured mid-step with natural posture. One hand adjusts the front of the jacket while the other arm swings gently, hands kept apart. Three-quarter environmental portrait with subtle motion in the background but a sharp face",
+    "environment": "A modern corporate corridor with glass walls, muted stone and a few soft practical lights receding into the background.",
+    "lighting": "soft directional daylight mixed naturally with warm architectural lighting",
+    "camera": "a professional full-frame camera with a 50mm lens at f/3.2 and a fast shutter speed",
+    "expression": "a warm restrained smile with relaxed eyes",
+    "character": {
+      "gender": "male",
+      "age_range": 36,
+      "body_type": "average build",
+      "hair": "bald",
+      "facial_hair": "clean-shaven",
+      "eye_color": "blue eyes",
+      "glasses": false,
+      "source": "client_profile",
+      "profile_file": "D:\\AI\\Clients\\Alexander\\profile\\client_profile_v2.json",
+      "overrides_file": null
+    },
+    "clothing": "a deep brown blazer over a cream open-collar shirt and tailored charcoal trousers, restrained and professional"
+  },
+  "prompt": "A natural, highly realistic editorial business photograph of a single 36-year-old man, average build, bald, a completely clean-shaven and freshly shaved face, smooth cheeks and jawline, no visible stubble, no beard and no mustache, blue eyes, without glasses.\n\nHe is wearing a deep brown blazer over a cream open-collar shirt and tailored charcoal trousers, restrained and professional.\n\nHe is walking slowly through a modern office corridor toward the camera, captured mid-step with natural posture. One hand adjusts the front of the jacket while the other arm swings gently, hands kept apart. Three-quarter environmental portrait with subtle motion in the background but a sharp face. The posture is confident but unposed, as if photographed during a real working day. The subject has a warm restrained smile with relaxed eyes.\n\nA modern corporate corridor with glass walls, muted stone and a few soft practical lights receding into the background.\n\nLighting: soft directional daylight mixed naturally with warm architectural lighting. Neutral color grading with charcoal, navy and warm brown tones.\n\nPhotographed on a professional full-frame camera with a 50mm lens at f/3.2 and a fast shutter speed. Natural depth of field, realistic optical rendering, fine fabric texture, visible skin pores, subtle under-eye detail, natural body proportions and anatomically correct hands. Authentic corporate editorial photography, restrained retouching, slight photographic grain, subtle lens softness, realistic exposure, no artificial glamour, no glossy advertising look.",
+  "generation": {
+    "seed_mode": "random",
+    "fixed_seed": 240805001,
+    "steps": 20,
+    "cfg": 1.0,
+    "sampler_name": "euler",
+    "scheduler": "simple",
+    "denoise": 1.0,
+    "width": 896,
+    "height": 1152,
+    "batch_size": 1
+  },
+  "workflow_file": "ONYX_Flux_Scene_Generator_0.3_API.json",
+  "local_output_directory": "output\\run_2026-08-05_181447",
+  "output_images": [
+    "scene_005.png"
+  ],
+  "prompt_id": "39685c34-d1da-4476-9ce3-290ff854023b"
+}
