@@ -1,0 +1,110 @@
+{
+  "7": {
+    "inputs": {
+      "filename_prefix": "ONYX_Ensemble/JuggernautXL/juggernautxl",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "11",
+        0
+      ]
+    },
+    "class_type": "SaveImageAdvanced",
+    "_meta": {
+      "title": "Save Image (Advanced)"
+    }
+  },
+  "9": {
+    "inputs": {
+      "width": 832,
+      "height": 1216,
+      "batch_size": 1
+    },
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "Empty Latent Image"
+    }
+  },
+  "10": {
+    "inputs": {
+      "ckpt_name": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load Checkpoint"
+    }
+  },
+  "11": {
+    "inputs": {
+      "samples": [
+        "12",
+        0
+      ],
+      "vae": [
+        "10",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "12": {
+    "inputs": {
+      "seed": 627603667103627,
+      "steps": 35,
+      "cfg": 5,
+      "sampler_name": "dpmpp_2m_sde",
+      "scheduler": "karras",
+      "denoise": 1,
+      "model": [
+        "10",
+        0
+      ],
+      "positive": [
+        "13",
+        0
+      ],
+      "negative": [
+        "14",
+        0
+      ],
+      "latent_image": [
+        "9",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "13": {
+    "inputs": {
+      "text": "professional corporate editorial photograph, one 37-year-old Eastern European man,\n(standing beside a dark wooden executive desk:1.25),\n(medium three-quarter portrait, framed from mid-thigh upward:1.2),\n\n(short dark brown hair:1.1), (completely clean-shaven face:1.3),\nrealistic age, subtle expression lines, natural facial asymmetry, authentic skin texture,\n\n(dark navy business suit:1.35), (crisp white open-collar dress shirt:1.3),\n(body turned slightly away from camera, face toward camera:1.15),\n(one relaxed hand resting on the desk edge:1.2), other arm relaxed beside his body,\n\nsophisticated inhabited modern executive office, dark wood, charcoal stone,\nglass partitions, practical office details, soft natural side-window daylight,\n\nfull-frame photography, 85mm lens, f/2.8, natural depth of field,\nrealistic anatomy, natural hands, restrained retouching, subtle photographic grain",
+      "clip": [
+        "10",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Positive Prompt"
+    }
+  },
+  "14": {
+    "inputs": {
+      "text": "",
+      "clip": [
+        "10",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative Prompt"
+    }
+  }
+}

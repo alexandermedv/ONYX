@@ -80,3 +80,11 @@ Clients/
 temp/
 tmp/
 cache/
+# ONYX Ensemble Generator runtime artifacts
+09 Experiments/ensemble_generator_0.2/runs/
+09 Experiments/ensemble_generator_0.2/final_results/
+09 Experiments/ensemble_generator_0.2/*.manifest.json
+09 Experiments/ensemble_generator_0.2/*.zip
+09 Experiments/ensemble_generator_0.2/Архив/
+
+**/Архив/

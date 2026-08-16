@@ -1,0 +1,303 @@
+{
+  "6": {
+    "inputs": {
+      "text": "A photorealistic professional portrait of the same person from the identity reference, preserving the exact pose, head angle, body position, hands, clothing, composition, background and lighting of the source image. Natural facial proportions, realistic eyes, detailed natural skin texture, authentic high-end editorial photography.\ncompletely clean-shaven face, smooth freshly shaved cheeks and jawline, no beard, no mustache, no stubble, no beard shadow",
+      "clip": [
+        "39",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Positive Prompt)"
+    }
+  },
+  "8": {
+    "inputs": {
+      "samples": [
+        "31",
+        0
+      ],
+      "vae": [
+        "40",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "9": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "27": {
+    "inputs": {
+      "width": 896,
+      "height": 1152,
+      "batch_size": 1
+    },
+    "class_type": "EmptySD3LatentImage",
+    "_meta": {
+      "title": "EmptySD3LatentImage"
+    }
+  },
+  "31": {
+    "inputs": {
+      "seed": 48,
+      "steps": 12,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 0.55,
+      "model": [
+        "50",
+        0
+      ],
+      "positive": [
+        "35",
+        0
+      ],
+      "negative": [
+        "33",
+        0
+      ],
+      "latent_image": [
+        "61",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "33": {
+    "inputs": {
+      "text": "",
+      "clip": [
+        "39",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Negative Prompt)"
+    }
+  },
+  "35": {
+    "inputs": {
+      "guidance": 4.5,
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "FluxGuidance",
+    "_meta": {
+      "title": "FluxGuidance"
+    }
+  },
+  "38": {
+    "inputs": {
+      "unet_name": "flux1-dev.safetensors",
+      "weight_dtype": "fp8_e4m3fn"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "39": {
+    "inputs": {
+      "clip_name1": "t5xxl_fp8_e4m3fn.safetensors",
+      "clip_name2": "clip_l.safetensors",
+      "type": "flux",
+      "device": "default"
+    },
+    "class_type": "DualCLIPLoader",
+    "_meta": {
+      "title": "Load CLIP (Dual)"
+    }
+  },
+  "40": {
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "41": {
+    "inputs": {
+      "lora_name": "diffusion_pytorch_model.safetensors",
+      "strength_model": 1,
+      "model": [
+        "38",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "42": {
+    "inputs": {
+      "lora_name": "dreamo_comfyui.safetensors",
+      "strength_model": 1,
+      "model": [
+        "41",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "43": {
+    "inputs": {
+      "lora_name": "dreamo_cfg_distill_comfyui.safetensors",
+      "strength_model": 1,
+      "model": [
+        "42",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "44": {
+    "inputs": {
+      "lora_name": "dreamo_sft_lora.safetensors",
+      "strength_model": 1.0000000000000002,
+      "model": [
+        "43",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "45": {
+    "inputs": {
+      "lora_name": "dreamo_dpo_lora.safetensors",
+      "strength_model": 1,
+      "model": [
+        "44",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "46": {
+    "inputs": {},
+    "class_type": "DreamOProcessorLoader",
+    "_meta": {
+      "title": "DreamO Processor Loader"
+    }
+  },
+  "50": {
+    "inputs": {
+      "model": [
+        "45",
+        0
+      ],
+      "ref1": [
+        "57",
+        0
+      ]
+    },
+    "class_type": "ApplyDreamO",
+    "_meta": {
+      "title": "Apply DreamO"
+    }
+  },
+  "52": {
+    "inputs": {
+      "image": "Лицо крупно.PNG"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "56": {
+    "inputs": {
+      "images": [
+        "57",
+        1
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "57": {
+    "inputs": {
+      "resolution": 512,
+      "ref_task": "ip",
+      "pixels": [
+        "52",
+        0
+      ],
+      "vae": [
+        "40",
+        0
+      ],
+      "dreamo_processor": [
+        "46",
+        0
+      ]
+    },
+    "class_type": "DreamORefEncode",
+    "_meta": {
+      "title": "DreamO Ref Image Encode"
+    }
+  },
+  "60": {
+    "inputs": {
+      "image": "Flux.1_Dev_00021_.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "61": {
+    "inputs": {
+      "pixels": [
+        "60",
+        0
+      ],
+      "vae": [
+        "40",
+        0
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  }
+}

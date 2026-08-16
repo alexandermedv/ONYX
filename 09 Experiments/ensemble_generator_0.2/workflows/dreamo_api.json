@@ -1,0 +1,602 @@
+{
+  "67": {
+    "inputs": {
+      "filename_prefix": "ONYX_Ensemble/DreamO/dreamo",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "66:63",
+        0
+      ]
+    },
+    "class_type": "SaveImageAdvanced",
+    "_meta": {
+      "title": "Save Image (Advanced)"
+    }
+  },
+  "60:47": {
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "60:48": {
+    "inputs": {
+      "unet_name": "flux1-dev.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "60:49": {
+    "inputs": {
+      "clip_name1": "clip_l.safetensors",
+      "clip_name2": "t5xxl_fp8_e4m3fn.safetensors",
+      "type": "flux",
+      "device": "default"
+    },
+    "class_type": "DualCLIPLoader",
+    "_meta": {
+      "title": "Load CLIP (Dual)"
+    }
+  },
+  "60:50": {
+    "inputs": {
+      "width": 896,
+      "height": 1152,
+      "batch_size": 1
+    },
+    "class_type": "EmptySD3LatentImage",
+    "_meta": {
+      "title": "EmptySD3LatentImage"
+    }
+  },
+  "60:53": {
+    "inputs": {
+      "samples": [
+        "60:58",
+        0
+      ],
+      "vae": [
+        "60:47",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "60:54": {
+    "inputs": {
+      "conditioning": [
+        "60:51",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "Conditioning Zero Out"
+    }
+  },
+  "60:51": {
+    "inputs": {
+      "text": "A realistic editorial photograph of one 37-year-old Eastern European man with short dark brown hair, a clean-shaven face, no beard, no mustache, and no glasses. He looks his real age, with subtle expression lines, slight natural facial asymmetry, visible skin pores, natural under-eye detail, and authentic unsmoothed skin texture.\n\nHe is wearing a well-fitted dark navy business suit and a crisp white dress shirt with an open collar and no tie. The clothing has natural fabric folds, fine textile texture, and realistic tailoring.\n\nHe is standing beside a dark wooden desk in a sophisticated modern executive office. His body is turned slightly away from the camera while his face is directed toward the camera. One hand rests lightly on the edge of the desk with relaxed, naturally separated fingers. His other arm hangs naturally beside his body. Both hands are visible. His posture is confident, relaxed, and natural.\n\nMedium three-quarter portrait framed from mid-thigh upward, eye-level camera, balanced asymmetrical composition. The office contains warm dark wood, charcoal stone surfaces, subtle glass partitions, practical office details, and a softly blurred background. The interior appears functional, inhabited, and realistic.\n\nSoft natural daylight from a large side window creates gentle facial modeling and realistic shadow transitions. Neutral editorial color grading with charcoal, navy, and warm brown tones.\n\nProfessional full-frame photography, 85mm lens, f/2.8, natural depth of field, realistic optical rendering, accurate body proportions, anatomically correct hands, restrained professional retouching, subtle photographic grain, slight natural lens softness, realistic exposure, authentic corporate editorial photography.",
+      "clip": [
+        "60:49",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "60:58": {
+    "inputs": {
+      "seed": 202608150001,
+      "steps": 20,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1,
+      "model": [
+        "60:48",
+        0
+      ],
+      "positive": [
+        "60:51",
+        0
+      ],
+      "negative": [
+        "60:54",
+        0
+      ],
+      "latent_image": [
+        "60:50",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "8:4": {
+    "inputs": {
+      "width": 896,
+      "height": 1152,
+      "batch_size": 1
+    },
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "Empty Latent Image"
+    }
+  },
+  "8:1": {
+    "inputs": {
+      "ckpt_name": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load Checkpoint"
+    }
+  },
+  "8:6": {
+    "inputs": {
+      "samples": [
+        "8:5",
+        0
+      ],
+      "vae": [
+        "8:1",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "8:2": {
+    "inputs": {
+      "text": "professional corporate editorial photograph, one 37-year-old Eastern European man,\n(standing beside a dark wooden executive desk:1.25),\n(medium three-quarter portrait, framed from mid-thigh upward:1.2),\n\n(short dark brown hair:1.1), (completely clean-shaven face:1.3),\nrealistic age, subtle expression lines, natural facial asymmetry, authentic skin texture,\n\n(dark navy business suit:1.35), (crisp white open-collar dress shirt:1.3),\n(body turned slightly away from camera, face toward camera:1.15),\n(one relaxed hand resting on the desk edge:1.2), other arm relaxed beside his body,\n\nsophisticated inhabited modern executive office, dark wood, charcoal stone,\nglass partitions, practical office details, soft natural side-window daylight,\n\nfull-frame photography, 85mm lens, f/2.8, natural depth of field,\nrealistic anatomy, natural hands, restrained retouching, subtle photographic grain",
+      "clip": [
+        "8:1",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Positive Prompt"
+    }
+  },
+  "8:3": {
+    "inputs": {
+      "text": "sitting, seated, leaning forward, tie, necktie, bow tie, no jacket, shirt only,\nrolled sleeves, black shirt, blue shirt, casual clothing, pocket square,\nbeard, mustache, stubble, glasses, crossed arms, folded arms, hand in pocket,\ncropped hands, hidden hands, hands out of frame, fused hands, overlapping hands,\ndeformed hands, malformed hands, extra fingers, fused fingers, missing fingers,\nextra limbs, duplicate limbs, deformed anatomy, bad proportions,\ncgi, 3d render, illustration, doll, mannequin, waxy skin, plastic skin,\nairbrushed skin, beauty filter, glossy advertising, blur, text, watermark, logo",
+      "clip": [
+        "8:1",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative Prompt"
+    }
+  },
+  "8:5": {
+    "inputs": {
+      "seed": 202608150001,
+      "steps": 30,
+      "cfg": 5,
+      "sampler_name": "dpmpp_2m_sde",
+      "scheduler": "karras",
+      "denoise": 1,
+      "model": [
+        "8:1",
+        0
+      ],
+      "positive": [
+        "8:2",
+        0
+      ],
+      "negative": [
+        "8:3",
+        0
+      ],
+      "latent_image": [
+        "8:4",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "66:39": {
+    "inputs": {
+      "clip_name1": "t5xxl_fp8_e4m3fn.safetensors",
+      "clip_name2": "clip_l.safetensors",
+      "type": "flux",
+      "device": "default"
+    },
+    "class_type": "DualCLIPLoader",
+    "_meta": {
+      "title": "Load CLIP (Dual)"
+    }
+  },
+  "66:33": {
+    "inputs": {
+      "text": "",
+      "clip": [
+        "66:39",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Negative Prompt)"
+    }
+  },
+  "66:63": {
+    "inputs": {
+      "samples": [
+        "66:31",
+        0
+      ],
+      "vae": [
+        "66:40",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "66:42": {
+    "inputs": {
+      "lora_name": "dreamo_comfyui.safetensors",
+      "strength_model": 1,
+      "model": [
+        "66:41",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "66:43": {
+    "inputs": {
+      "lora_name": "dreamo_cfg_distill_comfyui.safetensors",
+      "strength_model": 1,
+      "model": [
+        "66:42",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "66:44": {
+    "inputs": {
+      "lora_name": "dreamo_sft_lora.safetensors",
+      "strength_model": 1.0000000000000002,
+      "model": [
+        "66:43",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "66:45": {
+    "inputs": {
+      "lora_name": "dreamo_dpo_lora.safetensors",
+      "strength_model": 1.2000000000000002,
+      "model": [
+        "66:44",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "66:35": {
+    "inputs": {
+      "guidance": 4.5,
+      "conditioning": [
+        "66:65",
+        0
+      ]
+    },
+    "class_type": "FluxGuidance",
+    "_meta": {
+      "title": "FluxGuidance"
+    }
+  },
+  "66:40": {
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "66:46": {
+    "inputs": {},
+    "class_type": "DreamOProcessorLoader",
+    "_meta": {
+      "title": "DreamO Processor Loader"
+    }
+  },
+  "66:52": {
+    "inputs": {
+      "image": "Лицо крупно.PNG",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "66:57": {
+    "inputs": {
+      "resolution": 512,
+      "ref_task": "ip",
+      "pixels": [
+        "66:52",
+        0
+      ],
+      "vae": [
+        "66:40",
+        0
+      ],
+      "dreamo_processor": [
+        "66:46",
+        0
+      ]
+    },
+    "class_type": "DreamORefEncode",
+    "_meta": {
+      "title": "DreamO Ref Image Encode"
+    }
+  },
+  "66:38": {
+    "inputs": {
+      "unet_name": "flux1-dev.safetensors",
+      "weight_dtype": "fp8_e4m3fn"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "66:41": {
+    "inputs": {
+      "lora_name": "diffusion_pytorch_model.safetensors",
+      "strength_model": 1,
+      "model": [
+        "66:38",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "66:27": {
+    "inputs": {
+      "width": 896,
+      "height": 1152,
+      "batch_size": 1
+    },
+    "class_type": "EmptySD3LatentImage",
+    "_meta": {
+      "title": "EmptySD3LatentImage"
+    }
+  },
+  "66:64": {
+    "inputs": {
+      "model": [
+        "66:45",
+        0
+      ],
+      "ref1": [
+        "66:57",
+        0
+      ]
+    },
+    "class_type": "ApplyDreamO",
+    "_meta": {
+      "title": "Apply DreamO"
+    }
+  },
+  "66:65": {
+    "inputs": {
+      "text": "A photorealistic medium three-quarter corporate editorial portrait of the same man from the reference image, preserving his recognizable identity, facial proportions and real age.\n\nHe is standing beside a dark wooden executive desk in a sophisticated modern office. His body is turned slightly away from the camera while his face is directed toward the camera. One relaxed hand rests naturally on the edge of the desk and his other arm hangs comfortably beside his body. Both hands are visible.\n\nHe is wearing a well-fitted dark navy business suit and a crisp white dress shirt with an open collar and no tie. Natural fabric folds and realistic tailoring.\n\nFramed from mid-thigh upward, eye-level camera, balanced asymmetrical composition. Inhabited executive office with warm dark wood, charcoal stone surfaces, subtle glass partitions and practical office details.\n\nSoft natural daylight from a large side window, realistic skin texture, subtle expression lines, natural body proportions, anatomically correct hands, 85mm lens, f/2.8, natural depth of field, restrained retouching, authentic corporate editorial photography.",
+      "clip": [
+        "66:39",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Positive Prompt)"
+    }
+  },
+  "66:31": {
+    "inputs": {
+      "seed": 202608150001,
+      "steps": 12,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1,
+      "model": [
+        "66:64",
+        0
+      ],
+      "positive": [
+        "66:35",
+        0
+      ],
+      "negative": [
+        "66:33",
+        0
+      ],
+      "latent_image": [
+        "66:27",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "76:68": {
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "76:69": {
+    "inputs": {
+      "unet_name": "flux1-dev.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "76:70": {
+    "inputs": {
+      "clip_name1": "clip_l.safetensors",
+      "clip_name2": "t5xxl_fp8_e4m3fn.safetensors",
+      "type": "flux",
+      "device": "default"
+    },
+    "class_type": "DualCLIPLoader",
+    "_meta": {
+      "title": "Load CLIP (Dual)"
+    }
+  },
+  "76:71": {
+    "inputs": {
+      "width": 896,
+      "height": 1152,
+      "batch_size": 1
+    },
+    "class_type": "EmptySD3LatentImage",
+    "_meta": {
+      "title": "EmptySD3LatentImage"
+    }
+  },
+  "76:72": {
+    "inputs": {
+      "samples": [
+        "76:75",
+        0
+      ],
+      "vae": [
+        "76:68",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "76:73": {
+    "inputs": {
+      "conditioning": [
+        "76:74",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "Conditioning Zero Out"
+    }
+  },
+  "76:74": {
+    "inputs": {
+      "text": "A photorealistic medium three-quarter corporate editorial portrait of alexonyx, preserving his recognizable identity, natural facial proportions and real age.\n\nalexonyx is standing beside a dark wooden executive desk in a sophisticated modern office. His body is turned slightly away from the camera while his face is directed toward the camera. One relaxed hand rests naturally on the edge of the desk and his other arm hangs comfortably beside his body. Both hands are visible.\n\nHe is wearing a well-fitted dark navy business suit and a crisp white dress shirt with an open collar and no tie. Natural fabric folds and realistic tailoring.\n\nFramed from mid-thigh upward, eye-level camera, balanced asymmetrical composition. Inhabited executive office with warm dark wood, charcoal stone surfaces, subtle glass partitions and practical office details.\n\nSoft natural daylight from a large side window, authentic skin texture, subtle expression lines, natural body proportions, anatomically correct hands, 85mm lens, f/2.8, natural depth of field, restrained retouching, authentic corporate editorial photography.",
+      "clip": [
+        "76:70",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "76:59": {
+    "inputs": {
+      "lora_name": "alexonyx_v1.safetensors",
+      "strength_model": 1,
+      "model": [
+        "76:69",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "76:75": {
+    "inputs": {
+      "seed": 202608150001,
+      "steps": 20,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1,
+      "model": [
+        "76:59",
+        0
+      ],
+      "positive": [
+        "76:74",
+        0
+      ],
+      "negative": [
+        "76:73",
+        0
+      ],
+      "latent_image": [
+        "76:71",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  }
+}
