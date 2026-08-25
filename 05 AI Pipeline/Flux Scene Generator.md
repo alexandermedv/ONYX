@@ -10,6 +10,8 @@ Flux Scene Generator — модуль ONYX Method для автоматичес�
 
 ## Место в пайплайне
 
+В текущем standalone/runtime-процессе модуль используется так:
+
 Client Profile
 ↓
 Flux Scene Generator
@@ -21,6 +23,14 @@ Postprocessing
 Quality Control
 ↓
 Финальное изображение
+
+Эта последовательность описывает существующую интеграцию, а не каноническую
+архитектуру ONYX v1. В целевой модели FLUX — один из `SceneGenerator`, его
+результаты нормализуются как `GenerationResult`, а варианты после переноса
+личности — как независимые `IdentityResult`. Оценка и ручная проверка должны
+предшествовать явному отбору и дорогому postprocessing.
+
+См. [[JobSpec and Manifest v1]] и [[Pipeline Architecture]].
 
 ## Возможности v1.0
 

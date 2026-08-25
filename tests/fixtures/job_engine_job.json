@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "job_id": "fixture_job_engine",
+  "client_id": "fixture-client",
+  "paths": {
+    "client_profile": "X:\\SANITIZED\\profile\\client_profile.json"
+  },
+  "pipeline": {
+    "scene_generator": {
+      "enabled": true,
+      "command": [
+        "{python}",
+        "X:\\SANITIZED\\scene_generator.py",
+        "--workflow",
+        "X:\\SANITIZED\\ONYX_Flux_Scene_Generator_0.3_API.json",
+        "--output",
+        "{output_dir}"
+      ],
+      "minimum_output_images": 2
+    },
+    "facefusion": {
+      "enabled": true,
+      "command": ["{python}", "X:\\SANITIZED\\facefusion_runner.py"],
+      "minimum_output_images": 1
+    },
+    "postprocessor": {
+      "enabled": true,
+      "command": [
+        "{python}",
+        "X:\\SANITIZED\\generator.py",
+        "postprocess",
+        "--workflow",
+        "X:\\SANITIZED\\Portrait_PostProcessor_1.0_API.json"
+      ],
+      "minimum_output_images": 1
+    }
+  }
+}
+

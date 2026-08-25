@@ -272,3 +272,24 @@ You may proactively identify:
 But separate observations from requested changes.
 
 Do not implement unrelated suggestions without approval.
+
+## Documentation synchronization
+
+The Obsidian vault at `D:\AI\ONYX` is part of the ONYX repository and is
+the authoritative human-readable project documentation.
+
+For every completed implementation phase:
+
+1. Implement the requested change.
+2. Run and verify relevant tests.
+3. Update affected Obsidian documentation to match the actual implementation.
+4. Update or create ADRs for architectural decisions.
+5. Update project/status documentation when capabilities or pipeline state changed.
+6. Verify that documentation describes implemented behavior, not planned behavior.
+7. Only then propose the final commit.
+
+Do not update documentation after every intermediate edit.
+Update it once the implementation phase is stable and tests pass.
+
+Documentation and code should normally be committed together when they
+describe the same completed change.

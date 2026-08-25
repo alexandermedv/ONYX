@@ -1,0 +1,42 @@
+{
+  "job_id": "fixture_ensemble",
+  "client_id": "fixture-client",
+  "service_tier": "vip",
+  "base_seed": 202608260001,
+  "generators": ["flux", "juggernautxl", "dreamo", "lora"],
+  "trigger_word": "fixturetoken",
+  "stop_on_error": false,
+  "work_root": "X:\\SANITIZED\\runs",
+  "final_results_root": "X:\\SANITIZED\\final_results",
+  "identity": {
+    "dreamo_reference": "fixture_reference.png",
+    "lora": {"enabled": true},
+    "facefusion": {
+      "enabled": true,
+      "source_dir": "X:\\SANITIZED\\source",
+      "command": ["{python}", "X:\\SANITIZED\\runner.py"]
+    },
+    "dreamo_img2img": {
+      "enabled": true,
+      "workflow": "dreamo_img2img_api.json",
+      "comfy_input_root": "X:\\SANITIZED\\input",
+      "seed_offset": 100000
+    }
+  },
+  "postprocess": {
+    "enabled": true,
+    "workflow": "ONYX_Postprocessor v0.1.json",
+    "model": "4x_NMKD-Siax_200k.pth",
+    "methods": [],
+    "scene_ids": []
+  },
+  "scenes": [
+    {
+      "scene_id": "executive_01",
+      "subject": "adult portrait subject",
+      "clothing": "dark business suit",
+      "pose": "standing",
+      "lighting": "soft daylight"
+    }
+  ]
+}

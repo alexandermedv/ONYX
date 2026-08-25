@@ -15,7 +15,10 @@
 ## ⚙ Разработка
 
 - [[Engineering]]
+- [[Pipeline Architecture]]
+- [[JobSpec and Manifest v1]]
 - [[AI Pipeline]]
+- [[ADR-0001 Repository Structure|Architecture Decisions]]
 
 ---
 

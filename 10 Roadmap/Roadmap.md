@@ -1,17 +1,26 @@
 # Roadmap
 
-## 🚀 В работе
+## ✅ Phase 1A — Canonical contracts: COMPLETE
 
-- Интеграция Flux Scene Generator v1.0.0 в ONYX Job Engine.
+- [x] JobSpec v1 и Manifest v1 contract layer.
+- [x] Stable logical IDs и deterministic `sha256-derived-v1` seeds.
+- [x] Валидация quality → human review → selection → postprocessing → delivery.
+- [x] Atomic Manifest persistence и read-only compatibility importers.
+
+Phase 1A не включает runtime integration.
 
 ---
 
-## 🔜 Следующие шаги
+## ⏸ Next architectural phase — runtime/orchestrator integration: NOT STARTED
+
+Следующие задачи являются **proposed**, а не утверждённым implementation scope:
 
 - Проверить восстановление личности через FaceFusion после FLUX.
 - Проверить устранение растительности на лице через FaceFusion.
-- Настроить postprocessing финальных изображений.
-- Разработать автоматический Quality Control.
+- Подключить существующие Job Engine и Ensemble runtime через compatibility
+  adapters без переписывания исторических jobs.
+- Подключить QualityEvaluator и human-review evidence к каноническому Manifest.
+- Перевести postprocessing на selected-only execution.
 
 ---
 
@@ -33,3 +42,5 @@
 - [x] Управление параметрами `fixed/random`.
 - [x] Diversity-контроль сцен без повторов.
 - [x] Интеграция Flux Scene Generator с ComfyUI API.
+Phase 1A является только contract layer: существующие runner-ы, Quality Gate,
+FaceFusion, postprocessor и ComfyUI workflows ещё не переведены на эти контракты.
