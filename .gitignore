@@ -88,3 +88,19 @@ cache/
 09 Experiments/ensemble_generator_0.2/Архив/
 
 **/Архив/
+
+# Client / identity source images
+09 Experiments/*/dataset/source/
+09 Experiments/*/dataset/source/**
+
+# Generated experiment images
+09 Experiments/PuLID_FLUX_Test_v0.1/*.png
+
+# Runtime QA data
+engine/quality_gate/*.csv
+engine/quality_gate/runs/
+
+# Local archives / backups
+09 Experiments/**/Архив/
+09 Experiments/**/*.zip
+09 Experiments/ensemble_generator_0.1/

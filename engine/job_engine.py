@@ -198,8 +198,17 @@ def run_job(
             print(f"[RUN ] {stage}: {shlex.join(command)}")
 
             if dry_run:
-                stage_state.update(status="dry_run", finished_at=utc_now())
+                stage_state.update(
+                    status="dry_run",
+                    finished_at=utc_now(),
+                )
+                state["updated_at"] = utc_now()
                 write_json(state_path, state)
+
+                if stage == stop_after:
+                    print(f"[STOP] dry-run requested to stop after {stage}")
+                    return 0
+
                 continue
 
             started = time.monotonic()

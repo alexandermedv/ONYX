@@ -130,17 +130,32 @@ def create_job(client: str, job_name: str) -> Path:
         / "generator.py"
     )
 
+    flux_generator_path = (
+        onyx_root
+        / "engine"
+        / "flux_scene_generator"
+        / "scene_generator.py"
+    )
+
+    flux_workflow_path = (
+        onyx_root
+        / "engine"
+        / "flux_scene_generator"
+        / "ONYX_Flux_Scene_Generator_0.3_API.json"
+    )
+
+    flux_config_path = (
+        onyx_root
+        / "engine"
+        / "flux_scene_generator"
+        / "scene_config.json"
+    )
+
     facefusion_runner_path = (
         onyx_root
         / "engine"
         / "facefusion"
         / "runner.py"
-    )
-
-    scene_workflow_path = (
-        onyx_root
-        / "comfyui-workflows"
-        / "Scene_Generator_Random_API.json"
     )
 
     postprocess_workflow_path = (
@@ -177,22 +192,19 @@ def create_job(client: str, job_name: str) -> Path:
                 "enabled": True,
                 "command": [
                     "{python}",
-                    str(generator_path),
-                    "--server",
-                    comfyui_server,
-                    "--comfy-output",
-                    str(comfyui_root / "output"),
-                    "--timeout",
-                    str(comfyui_timeout),
-                    "scenes",
+                    str(flux_generator_path),
                     "--workflow",
-                    str(scene_workflow_path),
-                    "--profile",
-                    "{client_profile}",
-                    "--output-dir",
+                    str(flux_workflow_path),
+                    "--config",
+                    str(flux_config_path),
+                    "--output",
                     "{output_dir}",
                     "--count",
                     str(scene_count),
+                    "--mode",
+                    "client",
+                    "--profile",
+                    "{client_profile}",
                 ],
                 "minimum_output_images": scene_count,
             },

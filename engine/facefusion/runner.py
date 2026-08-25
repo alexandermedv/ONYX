@@ -12,6 +12,7 @@ It simply receives folders from Job Engine and performs face swapping.
 from __future__ import annotations
 
 import argparse
+import os
 import subprocess
 import sys
 import time
@@ -95,6 +96,25 @@ def main() -> int:
     args.output_dir = args.output_dir.resolve()
 
     python_executable = Path(args.python).resolve()
+
+    # --------------------------------------------------
+    # FaceFusion runtime environment
+    # --------------------------------------------------
+
+    facefusion_env = os.environ.copy()
+
+    facefusion_library_bin = (
+        python_executable.parent
+        / "Library"
+        / "bin"
+    )
+
+    if facefusion_library_bin.exists():
+        facefusion_env["PATH"] = (
+            str(facefusion_library_bin)
+            + os.pathsep
+            + facefusion_env.get("PATH", "")
+        )
 
     if not args.facefusion_folder.exists():
         parser.error(
@@ -182,6 +202,9 @@ def main() -> int:
 
             "--reference-face-distance",
             str(args.reference_distance),
+
+            "--execution-providers",
+            "cuda",
         ]
 
         started = time.monotonic()
@@ -189,6 +212,7 @@ def main() -> int:
         result = subprocess.run(
             command,
             cwd=args.facefusion_folder,
+            env=facefusion_env,
             capture_output=True,
             text=True,
         )

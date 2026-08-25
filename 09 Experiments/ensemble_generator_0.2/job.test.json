@@ -1,0 +1,54 @@
+{
+  "job_id": "2026-08-15_ensemble_test_001",
+  "base_seed": 202608150001,
+  "generators": [
+    "flux",
+    "lora",
+    "juggernautxl",
+    "dreamo"
+  ],
+  "trigger_word": "alexonyx",
+  "stop_on_error": false,
+  "work_root": "D:\\AI\\ONYX\\09 Experiments\\ensemble_generator_0.2\\runs",
+  "identity": {
+    "dreamo_reference": "alexander_face.png",
+    "facefusion": {
+      "enabled": true,
+      "source_dir": "D:\\AI\\Clients\\Alexander\\source",
+      "command": [
+        "{python}",
+        "D:\\AI\\ONYX\\engine\\facefusion\\runner.py",
+        "--facefusion-folder",
+        "D:\\AI\\facefusion",
+        "--python",
+        "C:\\Users\\ME\\miniconda3\\envs\\facefusion\\python.exe",
+        "--source-dir",
+        "{source_dir}",
+        "--target-dir",
+        "{input_dir}",
+        "--output-dir",
+        "{output_dir}"
+      ]
+    },
+    "dreamo_img2img": {
+      "enabled": true,
+      "workflow": "dreamo_img2img_api.json",
+      "comfy_input_root": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\input",
+      "seed_offset": 100000
+    }
+  },
+  "scenes": [
+    {
+      "scene_id": "executive_desk_01",
+      "subject": "one 37-year-old Eastern European man",
+      "clothing": "a well-fitted dark navy business suit and a crisp white open-collar shirt, no tie",
+      "pose": "standing beside a dark wooden executive desk, body slightly turned away and face toward the camera",
+      "hands": "one relaxed hand resting on the desk edge, the other arm hanging naturally, both hands visible",
+      "location": "a sophisticated inhabited modern executive office with dark wood, charcoal stone and glass partitions",
+      "lighting": "soft natural daylight from a large side window",
+      "composition": "medium three-quarter portrait framed from mid-thigh upward, eye-level camera",
+      "camera": "full-frame photography, 85mm lens at f/2.8, natural depth of field",
+      "details": "authentic skin texture, natural proportions, anatomically correct hands, restrained retouching"
+    }
+  ]
+}

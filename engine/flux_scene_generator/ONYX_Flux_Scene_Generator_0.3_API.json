@@ -1,0 +1,11 @@
+{
+  "9": {"inputs": {"filename_prefix": "Flux.1_Dev", "images": ["56:53", 0]}, "class_type": "SaveImage", "_meta": {"title": "Save Image"}},
+  "56:47": {"inputs": {"vae_name": "ae.safetensors"}, "class_type": "VAELoader", "_meta": {"title": "Load VAE"}},
+  "56:48": {"inputs": {"unet_name": "flux1-dev.safetensors", "weight_dtype": "default"}, "class_type": "UNETLoader", "_meta": {"title": "Load Diffusion Model"}},
+  "56:49": {"inputs": {"clip_name1": "clip_l.safetensors", "clip_name2": "t5xxl_fp8_e4m3fn.safetensors", "type": "flux", "device": "default"}, "class_type": "DualCLIPLoader", "_meta": {"title": "Load CLIP (Dual)"}},
+  "56:50": {"inputs": {"width": 896, "height": 1152, "batch_size": 1}, "class_type": "EmptySD3LatentImage", "_meta": {"title": "EmptySD3LatentImage"}},
+  "56:53": {"inputs": {"samples": ["56:58", 0], "vae": ["56:47", 0]}, "class_type": "VAEDecode", "_meta": {"title": "VAE Decode"}},
+  "56:54": {"inputs": {"conditioning": ["56:51", 0]}, "class_type": "ConditioningZeroOut", "_meta": {"title": "Conditioning Zero Out"}},
+  "56:51": {"inputs": {"text": "API placeholder: replaced by scene_generator.py", "clip": ["56:49", 0]}, "class_type": "CLIPTextEncode", "_meta": {"title": "CLIP Text Encode (Prompt)"}},
+  "56:58": {"inputs": {"seed": 240805001, "steps": 20, "cfg": 1.0, "sampler_name": "euler", "scheduler": "simple", "denoise": 1.0, "model": ["56:48", 0], "positive": ["56:51", 0], "negative": ["56:54", 0], "latent_image": ["56:50", 0]}, "class_type": "KSampler", "_meta": {"title": "KSampler"}}
+}

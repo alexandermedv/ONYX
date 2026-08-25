@@ -1,0 +1,87 @@
+{
+  "job_id": "2026-08-15_executive_4scenes_vip",
+  "service_tier": "vip",
+  "base_seed": 202608150101,
+  "generators": ["flux", "lora", "juggernautxl", "dreamo"],
+  "trigger_word": "alexonyx",
+  "stop_on_error": false,
+  "work_root": "D:\\AI\\ONYX\\09 Experiments\\ensemble_generator_0.2\\runs",
+  "identity": {
+    "appearance": "a 37-year-old Eastern European man with a completely bald scalp, blue eyes, and a smooth completely clean-shaven face and jaw, with no beard, no mustache and no stubble; he looks his real age, with subtle expression lines, slight natural facial asymmetry and authentic skin texture",
+    "dreamo_reference": "alexander_face.png",
+    "lora": {
+      "enabled": true
+    },
+    "facefusion": {
+      "enabled": true,
+      "source_dir": "D:\\AI\\Clients\\Alexander\\source",
+      "command": [
+        "{python}",
+        "D:\\AI\\ONYX\\engine\\facefusion\\runner.py",
+        "--facefusion-folder", "D:\\AI\\facefusion",
+        "--python", "C:\\Users\\ME\\miniconda3\\envs\\facefusion\\python.exe",
+        "--source-dir", "{source_dir}",
+        "--target-dir", "{input_dir}",
+        "--output-dir", "{output_dir}"
+      ]
+    },
+    "dreamo_img2img": {
+      "enabled": true,
+      "workflow": "dreamo_img2img_api.json",
+      "comfy_input_root": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\input",
+      "seed_offset": 100000
+    }
+  },
+  "scenes": [
+    {
+      "scene_id": "executive_desk_01",
+      "subject": "one man",
+      "clothing": "a well-fitted dark navy business suit and a crisp white open-collar shirt, no tie",
+      "pose": "standing beside a dark wooden executive desk, body slightly turned away and face toward the camera",
+      "hands": "one relaxed hand resting on the desk edge, the other arm hanging naturally, both hands visible",
+      "location": "a sophisticated inhabited modern executive office with dark wood, charcoal stone and glass partitions",
+      "lighting": "soft natural daylight from a large side window",
+      "composition": "medium three-quarter portrait framed from mid-thigh upward, eye-level camera",
+      "camera": "full-frame photography, 85mm lens at f/2.8, natural depth of field",
+      "details": "authentic skin texture, natural proportions, anatomically correct hands, restrained retouching"
+    },
+    {
+      "scene_id": "executive_window_02",
+      "subject": "one man",
+      "clothing": "a tailored charcoal gray suit with a pale blue open-collar shirt, no tie",
+      "pose": "standing near a large office window, body in three-quarter view, looking calmly toward the camera",
+      "hands": "one hand resting lightly on the window ledge, the other hand relaxed beside the body, both hands visible",
+      "location": "a high-rise executive office overlooking a softly blurred city skyline",
+      "lighting": "soft overcast window light with realistic shadow transitions and cool neutral tones",
+      "composition": "three-quarter editorial portrait from mid-thigh upward with negative space toward the window",
+      "camera": "full-frame photography, 70mm lens at f/3.2, realistic optical rendering",
+      "details": "natural mature skin, fine wool texture, subtle photographic grain, restrained corporate editorial finish"
+    },
+    {
+      "scene_id": "conference_table_03",
+      "subject": "one man",
+      "clothing": "a textured medium-brown blazer, white open-collar shirt and dark tailored trousers, no tie",
+      "pose": "seated naturally at the end of a modern conference table, torso turned slightly toward the camera, relaxed attentive expression",
+      "hands": "both forearms resting naturally on the table, hands separated and fully visible with relaxed fingers",
+      "location": "an inhabited premium conference room with walnut panels, glass walls, notebooks and subtle practical details",
+      "lighting": "balanced daylight and warm architectural lighting with gentle facial modeling",
+      "composition": "medium seated portrait framed from slightly above the knees, eye-level camera, asymmetrical composition",
+      "camera": "full-frame photography, 65mm lens at f/3.2, natural depth of field",
+      "details": "realistic skin pores, natural fabric folds, correct hands, authentic working environment, no showroom appearance"
+      ,
+      "negative_prompt": "standing, tie, necktie, no jacket, shirt only, beard, mustache, stubble, glasses, crossed arms, folded arms, hand in pocket, cropped hands, hidden hands, deformed hands, malformed hands, extra fingers, fused fingers, missing fingers, extra limbs, duplicate limbs, deformed anatomy, bad proportions, cgi, 3d render, illustration, doll, mannequin, waxy skin, plastic skin, airbrushed skin, blur, text, watermark, logo"
+    },
+    {
+      "scene_id": "bookshelf_candid_04",
+      "subject": "one man",
+      "clothing": "a refined dark navy blazer, light gray fine-knit crew-neck shirt and charcoal trousers",
+      "pose": "standing casually near a walnut bookshelf, body angled away from the camera while turning his head toward the lens",
+      "hands": "one hand lightly touching the spine of a book, the other arm relaxed beside the body, both hands visible",
+      "location": "a private executive library with walnut shelving, a few books, stone details and a softly blurred lounge chair",
+      "lighting": "soft directional window light mixed with warm practical lamps, natural cinematic contrast",
+      "composition": "medium three-quarter environmental portrait from mid-thigh upward, eye-level camera",
+      "camera": "full-frame photography, 85mm lens at f/2.8, subtle lens softness and realistic depth of field",
+      "details": "authentic candid expression, natural skin texture, accurate anatomy, premium editorial color grading, restrained retouching"
+    }
+  ]
+}

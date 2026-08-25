@@ -1,0 +1,155 @@
+{
+  "collection": "ONYX Executive Office",
+  "collection_id": "executive",
+  "version": "0.7.1",
+  "count": 12,
+  "server": "http://127.0.0.1:8188",
+  "generation": {
+    "seed_mode": "random",
+    "fixed_seed": 240805001,
+    "steps": 20,
+    "cfg": 1.0,
+    "sampler_name": "euler",
+    "scheduler": "simple",
+    "denoise": 1.0,
+    "width": 896,
+    "height": 1152,
+    "batch_size": 1
+  },
+  "portfolio_characters": [
+    {"id": "man_01", "gender": "male", "age_range": "29-year-old", "ethnicity": "Eastern European", "body_type": "lean build", "face_shape": "angular face", "hair": "short dark brown crew-cut hair", "facial_hair": "clean-shaven", "eye_color": "brown eyes", "glasses": false},
+    {"id": "woman_01", "gender": "female", "age_range": "34-year-old", "ethnicity": "Southern European", "body_type": "slim build", "face_shape": "oval face", "hair": "shoulder-length dark wavy hair", "facial_hair": "no facial hair", "eye_color": "brown eyes", "glasses": false},
+    {"id": "man_02", "gender": "male", "age_range": "42-year-old", "ethnicity": "Northern European", "body_type": "broad build", "face_shape": "square face", "hair": "a fully bald head with natural scalp texture", "facial_hair": "short neat beard", "eye_color": "blue eyes", "glasses": false},
+    {"id": "woman_02", "gender": "female", "age_range": "46-year-old", "ethnicity": "East Asian", "body_type": "average build", "face_shape": "heart-shaped face", "hair": "sleek chin-length black bob", "facial_hair": "no facial hair", "eye_color": "dark brown eyes", "glasses": true},
+    {"id": "man_03", "gender": "male", "age_range": "55-year-old", "ethnicity": "Mediterranean", "body_type": "average build", "face_shape": "long face", "hair": "short salt-and-pepper hair with a receding hairline", "facial_hair": "salt-and-pepper stubble", "eye_color": "hazel eyes", "glasses": false},
+    {"id": "woman_03", "gender": "female", "age_range": "39-year-old", "ethnicity": "Black British", "body_type": "athletic build", "face_shape": "oval face", "hair": "natural shoulder-length coiled black hair", "facial_hair": "no facial hair", "eye_color": "dark brown eyes", "glasses": false},
+    {"id": "man_04", "gender": "male", "age_range": "33-year-old", "ethnicity": "South Asian", "body_type": "slim build", "face_shape": "oval face", "hair": "medium-length wavy black hair swept back", "facial_hair": "trimmed full beard", "eye_color": "brown eyes", "glasses": true},
+    {"id": "woman_04", "gender": "female", "age_range": "57-year-old", "ethnicity": "Eastern European", "body_type": "full build", "face_shape": "round face", "hair": "short naturally silver-gray layered hair", "facial_hair": "no facial hair", "eye_color": "gray eyes", "glasses": false},
+    {"id": "man_05", "gender": "male", "age_range": "48-year-old", "ethnicity": "East Asian", "body_type": "average build", "face_shape": "round face", "hair": "very short straight black hair with a natural side part", "facial_hair": "clean-shaven", "eye_color": "dark brown eyes", "glasses": false},
+    {"id": "woman_05", "gender": "female", "age_range": "28-year-old", "ethnicity": "Middle Eastern", "body_type": "slim build", "face_shape": "diamond-shaped face", "hair": "long dark brown hair in a low professional ponytail", "facial_hair": "no facial hair", "eye_color": "hazel eyes", "glasses": false},
+    {"id": "man_06", "gender": "male", "age_range": "62-year-old", "ethnicity": "Western European", "body_type": "solid build", "face_shape": "square face", "hair": "thinning silver-gray hair brushed neatly back", "facial_hair": "clean-shaven", "eye_color": "blue eyes", "glasses": true},
+    {"id": "woman_06", "gender": "female", "age_range": "51-year-old", "ethnicity": "Latin American", "body_type": "average build", "face_shape": "rectangular face", "hair": "collar-length auburn hair with soft layers", "facial_hair": "no facial hair", "eye_color": "brown eyes", "glasses": false}
+  ],
+  "clothing_by_gender": {
+    "male": [
+      "a well-fitted dark navy business suit and a crisp white open-collar shirt, no tie, with realistic tailoring and natural fabric folds",
+      "a tailored charcoal gray business suit with a pale blue open-collar shirt, no tie, with realistic fabric folds",
+      "a dark textured blazer over a fine black turtleneck, understated and executive, with natural fabric folds",
+      "a deep brown blazer over a cream open-collar shirt and tailored charcoal trousers, restrained and professional"
+    ],
+    "female": [
+      "a tailored dark navy trouser suit over an ivory silk blouse, understated and executive, with realistic fabric folds",
+      "a charcoal blazer over a fine black turtleneck with tailored trousers, modern and professional",
+      "a structured deep burgundy blazer over a neutral blouse with tailored dark trousers, restrained and elegant",
+      "a well-fitted warm gray business suit with a soft blue blouse, realistic tailoring and natural fabric folds"
+    ]
+  },
+  "scene_presets": [
+    {
+      "id": "window_editorial",
+      "scene_blueprint": "standing beside a large office window, body at a slight three-quarter angle, one hand naturally in a trouser pocket and the other arm relaxed beside the body. Medium three-quarter portrait from mid-thigh upward with generous negative space",
+      "environment": "A restrained private office with a large window, muted architectural lines and a softly blurred city background. The space looks functional, inhabited and realistic rather than staged.",
+      "lighting": "soft overcast daylight from the side window, with gentle facial modeling and natural shadow transitions",
+      "camera": "a professional full-frame camera with an 85mm lens at f/2.8"
+    },
+    {
+      "id": "desk_standing",
+      "scene_blueprint": "standing comfortably beside a dark wooden desk, body turned slightly away from the camera and face directed toward it. One hand rests loosely on the desk edge and the other is naturally placed in a trouser pocket. Medium three-quarter portrait at eye level with a balanced asymmetrical composition",
+      "environment": "A sophisticated but functional executive office with a dark wood desk, a few organized documents and subtle glass details in a softly blurred background.",
+      "lighting": "diffused daylight from camera-left with soft shadows and accurate natural skin tones",
+      "camera": "a professional full-frame camera with an 85mm lens at f/2.8"
+    },
+    {
+      "id": "chair_seated",
+      "scene_blueprint": "seated naturally in an executive chair, torso turned slightly toward the camera. One forearm rests on the chair arm and the other hand rests loosely on the thigh, with both hands separated and clearly readable. Three-quarter seated portrait at eye level",
+      "environment": "A quiet private office with a textured wall, dark desk edge and restrained shelving softly out of focus. The room feels used for real work.",
+      "lighting": "broad soft window light with subtle fill and realistic shadow depth",
+      "camera": "a professional full-frame camera with a 70mm lens at f/3.2"
+    },
+    {
+      "id": "glass_meeting_room",
+      "scene_blueprint": "standing near a glass partition in a contemporary meeting room, shoulders angled slightly away and face toward the camera. Both arms hang relaxed close to the body with hands naturally visible and not touching. Medium portrait from upper thighs upward, off-center composition",
+      "environment": "A contemporary meeting room with a glass partition, long table and subtle reflections, rendered as a believable working space rather than a showroom.",
+      "lighting": "clean diffused daylight through frosted glass with soft controlled contrast",
+      "camera": "a professional full-frame camera with a 70mm lens at f/3.2"
+    },
+    {
+      "id": "close_headshot",
+      "scene_blueprint": "facing the camera with shoulders turned slightly, standing upright with hands completely outside the frame. Tight head-and-shoulders editorial portrait at eye level, leaving a little negative space above one shoulder",
+      "environment": "A softly blurred executive office background with subdued charcoal and warm wood tones, enough context to feel professional without distracting from the face.",
+      "lighting": "large soft window light from camera-right with a subtle natural catchlight and gentle falloff",
+      "camera": "a professional full-frame camera with a 105mm lens at f/3.2"
+    },
+    {
+      "id": "working_at_desk",
+      "scene_blueprint": "seated at a desk reviewing a single printed report, body in three-quarter profile and eyes lifted naturally toward the camera. One hand holds the edge of the report and the other rests open on the desk, hands separated. Medium seated environmental portrait",
+      "environment": "A real working office with a laptop, one report and a pen arranged naturally on a dark desk, with restrained shelving in the background and no decorative clutter.",
+      "lighting": "natural side-window daylight balanced by soft ambient office light",
+      "camera": "a professional full-frame camera with a 50mm lens at f/3.5"
+    },
+    {
+      "id": "walking_corridor",
+      "scene_blueprint": "walking slowly through a modern office corridor toward the camera, captured mid-step with natural posture. One hand adjusts the front of the jacket while the other arm swings gently, hands kept apart. Three-quarter environmental portrait with subtle motion in the background but a sharp face",
+      "environment": "A modern corporate corridor with glass walls, muted stone and a few soft practical lights receding into the background.",
+      "lighting": "soft directional daylight mixed naturally with warm architectural lighting",
+      "camera": "a professional full-frame camera with a 50mm lens at f/3.2 and a fast shutter speed"
+    },
+    {
+      "id": "conference_table",
+      "scene_blueprint": "seated upright in a freestanding executive chair in an open area of a boardroom, torso slightly angled toward the camera. The chair and the subject are fully unobstructed, with open floor space immediately around the body. Both hands rest naturally on the chair arms. Three-quarter seated executive portrait at eye level",
+      "environment": "A restrained boardroom with a long dark conference table positioned entirely along the far-left side of the middle background, several feet behind the subject. Open carpeted floor surrounds the unobstructed freestanding chair, with empty chairs and glass walls softly receding behind.",
+      "lighting": "broad daylight from one side of the boardroom with soft practical ceiling light and controlled contrast",
+      "camera": "a professional full-frame camera with a 65mm lens at f/3.5"
+    },
+    {
+      "id": "bookshelf_informal",
+      "scene_blueprint": "standing casually beside a restrained office bookshelf, body leaning very slightly against the cabinet. Arms rest naturally at the sides with one hand lightly touching the cabinet edge. Medium three-quarter portrait with an approachable editorial feeling",
+      "environment": "A quiet executive reading corner with a small curated bookshelf, warm wood and a single understated chair, all softly out of focus and authentically used.",
+      "lighting": "warm late-afternoon window light softened by the room, with natural skin color and gentle shadows",
+      "camera": "a professional full-frame camera with an 85mm lens at f/2.8"
+    },
+    {
+      "id": "city_window_profile",
+      "scene_blueprint": "standing close to a floor-to-ceiling window in partial profile, face turned slightly back toward the camera. The shoulders and upper torso remain relaxed, while both arms and hands stay completely outside the lower crop. Chest-up environmental portrait with strong negative space",
+      "environment": "A high-floor office window overlooking a softly blurred modern city, with minimal interior detail and realistic glass reflections.",
+      "lighting": "cool overcast city light wrapping around the face with subtle interior fill",
+      "camera": "a professional full-frame camera with an 85mm lens at f/3.2"
+    },
+    {
+      "id": "lounge_seated",
+      "scene_blueprint": "seated upright on the front edge of a low leather lounge chair, one ankle placed naturally forward rather than crossed. One hand rests on the chair arm and the other lies relaxed on the opposite thigh. Three-quarter seated portrait with both hands clearly separated",
+      "environment": "A refined office lounge with one leather chair, a low side table and charcoal stone surfaces, restrained and believable rather than luxurious for its own sake.",
+      "lighting": "soft directional window light with warm reflected fill from the interior",
+      "camera": "a professional full-frame camera with a 70mm lens at f/3.2"
+    },
+    {
+      "id": "presentation_wall",
+      "scene_blueprint": "standing beside a large dark presentation screen after a meeting, body angled toward the camera. One hand holds a closed slim notebook at the side and the other rests naturally in a trouser pocket. Medium three-quarter portrait with clean geometric composition",
+      "environment": "A modern presentation room with a blank dark screen, a narrow console and subtle glass architecture, with no logos, charts or readable text.",
+      "lighting": "balanced soft room light with a gentle side key that keeps the face natural and dimensional",
+      "camera": "a professional full-frame camera with a 65mm lens at f/3.5"
+    }
+  ],
+  "parameters": {
+    "scene_preset": {
+      "mode": "random",
+      "fixed": "window_editorial"
+    },
+    "clothing": {
+      "mode": "random",
+      "fixed_by_gender": {
+        "male": "a well-fitted dark navy business suit and a crisp white open-collar shirt, no tie, with realistic tailoring and natural fabric folds",
+        "female": "a tailored dark navy trouser suit over an ivory silk blouse, understated and executive, with realistic fabric folds"
+      }
+    },
+    "expression": {
+      "mode": "random",
+      "fixed": "a calm, confident expression with a subtle closed-mouth smile",
+      "choices": [
+        "a calm, confident expression with a subtle closed-mouth smile",
+        "a composed neutral expression and direct confident gaze",
+        "a warm restrained smile with relaxed eyes"
+      ]
+    }
+  }
+}
