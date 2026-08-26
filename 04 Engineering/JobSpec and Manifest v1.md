@@ -2,10 +2,12 @@
 
 ## Implementation status
 
-Статус: **Phase 1A implemented**.
+Статус: **Phase 1A contracts и Phase 1B.1 materialization implemented**.
 
-Реализация находится в `engine/contracts/` и покрыта 28 contract и
-compatibility tests. Контракты пока не подключены к текущим runtime pipelines.
+Контракты находятся в `engine/contracts/`, materialization — в
+`engine/runtime/`. Canonical discovery выполняет 50 contract, compatibility и
+runtime tests. Provider execution и текущие runtime pipelines пока не
+подключены.
 
 ## JobSpec v1
 
@@ -25,10 +27,51 @@ JobSpec использует schema `onyx.job_spec`, version `1.0`. После �
 исполнения JobSpec должен рассматриваться как immutable input. Технической
 защиты файла от изменения Phase 1A не реализует.
 
-JobSpec преимущественно machine-independent. Canonical references используют
-stable provider IDs и logical URIs. Resolved endpoints, executable paths и
-локальные runtime paths должны фиксироваться в Manifest, а не в основном
-JobSpec intent.
+JobSpec является machine-independent. Canonical references используют stable
+provider IDs и logical URIs. Resolved endpoints, executable paths и локальные
+runtime paths не записываются обратно в JobSpec. Phase 1B.1 подтверждает
+тестами, что JobSpec остаётся равным исходному после materialization.
+
+## RuntimeConfig и ExecutionPlan
+
+RuntimeConfig — отдельная machine-local модель, содержащая только:
+
+- `machine_id`, repository/workspace/client roots;
+- provider endpoints и installation/executable/input/output roots;
+- workflow roots;
+- provider-local model roots и explicit model mappings;
+- runtime capabilities/location metadata.
+
+Он не содержит scenes, prompts, service tier, seeds, candidate counts или
+quality/review/selection/delivery policy. `config/runtime.example.json`
+является sanitized tracked example, а `config/runtime.local.json` игнорируется.
+Другой файл выбирается одной переменной `ONYX_RUNTIME_CONFIG`.
+
+`materialize_job(JobSpec, RuntimeConfig)` возвращает immutable ExecutionPlan:
+
+- resolved workspace и intended output locations;
+- resolved client profiles и identity references;
+- только используемые provider runtime bindings;
+- materialized generation tasks и canonical scene/provider inputs;
+- отдельный deterministic seed для каждого scene/provider/candidate;
+- JSON-serializable `resolved_runtime_snapshot()` для будущего Manifest.
+
+ExecutionPlan является описанием будущего исполнения, не runtime state. В нём
+нет Manifest, results, attempts или retries. Materialization не создаёт
+каталоги, не проверяет существование runtime assets и не выполняет subprocess,
+network, ComfyUI, FaceFusion или GPU operations.
+
+### Logical URI resolution
+
+- `client://` разрешается относительно `RuntimeConfig.client_root`;
+- `workspace://` — относительно `workspace_root`;
+- `repo://` — относительно `repo_root`;
+- `model://<root-alias>/<path>` — через model roots конкретного provider.
+
+Для `ProviderRef.model_id` runtime configuration должна явно задать
+`models[model_id] → model://...`. Filename guessing отсутствует. URI без
+authority, traversal (`..`), percent-encoded traversal/separators, absolute
+path и Windows drive injection отклоняются.
 
 ## Manifest v1
 
@@ -117,6 +160,10 @@ AttemptRecord с собственным attempt ID.
 
 Golden vector закреплён automated test.
 
+Phase 1B.1 использует этот же `derive_seed()` при materialization с dimensions
+job, scene, provider, candidate index и stage=`generation`. Legacy shared-branch
+seed behavior не переносится в canonical ExecutionPlan.
+
 ## Identity model
 
 - DreamO T2I и personal LoRA — identity-aware SceneGenerators.
@@ -187,16 +234,18 @@ placeholder scenes из `minimum_output_images`, поскольку legacy job �
 
 Historical Manifest importer и Quality Gate CSV importer пока отсутствуют.
 
-## Known Phase 1A limitations
+## Known limitations after Phase 1B.1
 
 - нет orchestrator;
-- нет runtime provider interfaces/adapters или registries;
+- нет runtime provider execution/interfaces/adapters или registries;
 - текущий runtime не читает JobSpec/Manifest v1;
+- нет Manifest runtime lifecycle и retries;
+- нет ComfyUI, FaceFusion, QA/review/selection, postprocessing или delivery execution;
 - нет historical Manifest и Quality Gate CSV importers;
 - нет JSON Schema files;
 - нет event journal и concurrent-writer protection;
 - revision monotonicity не проверяется persistence layer;
-- workflow/model hashes не materialized автоматически;
+- workflow/model hashes не materialized автоматически, существование resolved paths не проверяется;
 - provider-specific inputs/outputs частично loosely typed;
 - Manifest quality plan пока не сверяется с JobSpec hash;
 - timestamps и полный lifecycle не обязательны валидатором.

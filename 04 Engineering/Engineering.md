@@ -7,6 +7,11 @@ Phase 1A завершена: в `engine/contracts/` реализован кан�
 валидация, стабильные IDs, детерминированные seeds, атомарное сохранение и
 read-only compatibility adapters.
 
+Phase 1B.1 также завершена: `engine/runtime/` загружает machine-local
+RuntimeConfig, безопасно разрешает logical URI и materializes неизменяемый
+ExecutionPlan с canonical per-provider/per-candidate seeds. Materialization не
+изменяет JobSpec и не запускает providers.
+
 Текущие Job Engine, Ensemble Runner, Quality Gate, FaceFusion и postprocessing
 остаются рабочими runtime-контурами совместимости. Они пока не переведены на
 JobSpec/Manifest v1 и не заменены новым orchestrator.
@@ -35,8 +40,24 @@ JobSpec/Manifest v1 и не заменены новым orchestrator.
 - `engine/contracts/compatibility/` — импорт Job Engine и Ensemble jobs.
 - `tests/contracts/`, `tests/compatibility/` — 28 passing tests.
 
+## Реализация Phase 1B.1
+
+- `engine/runtime/config.py` — RuntimeConfig, ProviderRuntimeConfig и выбор
+  файла через `ONYX_RUNTIME_CONFIG`.
+- `engine/runtime/materialize.py` — безопасное URI resolution и
+  JobSpec → ExecutionPlan.
+- `engine/runtime/execution_plan.py` — immutable execution description и
+  `resolved_runtime_snapshot()`.
+- `config/runtime.example.json` — tracked sanitized example.
+- `config/runtime.local.json` — ignored machine-local configuration.
+- `tests/runtime/` — CPU-only runtime/materialization tests.
+
+Полный canonical unittest discovery выполняет 50 passing tests.
+
 ## Не реализовано
 
-Phase 1A не включает новый orchestrator, runtime provider interfaces/adapters,
-перевод текущих pipeline на v1, historical Manifest importer, Quality Gate CSV
-importer, JSON Schema, event journal или concurrent-writer protection.
+Phase 1B.1 не включает orchestrator, provider execution/interfaces/adapters,
+Manifest runtime lifecycle, retries, перевод текущих pipeline на v1,
+ComfyUI/FaceFusion execution, QA/review/selection, postprocessing или delivery.
+Также пока отсутствуют historical Manifest importer, Quality Gate CSV importer,
+JSON Schema, event journal и concurrent-writer protection.

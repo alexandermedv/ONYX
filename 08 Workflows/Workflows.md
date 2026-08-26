@@ -16,8 +16,14 @@ ComfyUI workflows — версионируемые определения вне
 
 JobSpec v1 задаёт provider/model/workflow версии и логические входы. Manifest v1
 записывает фактически использованные версии, параметры, runtime и артефакты.
-Контракты Phase 1A не запускают ComfyUI и пока не подключены к существующим
-runner-ам. Физические пути остаются деталями compatibility runtime/provider;
-канонический provenance использует логические artifact URI.
+Phase 1B.1 разрешает canonical `repo://` workflow references и provider-local
+`model://` mappings через RuntimeConfig. Machine paths остаются вне JobSpec:
+tracked `runtime.example.json` содержит только sanitized example, а локальный
+`runtime.local.json` игнорируется.
+
+Materialization создаёт только immutable ExecutionPlan. Она не читает и не
+изменяет workflow JSON, не проверяет наличие моделей, не обращается к ComfyUI и
+не подключена к существующим runner-ам. Канонический provenance продолжает
+использовать logical artifact URI.
 
 См. [[Pipeline Architecture]] и [[JobSpec and Manifest v1]].

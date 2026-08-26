@@ -20,9 +20,10 @@ Key features
 
 Phase 1A implements the canonical contract layer: JobSpec v1, Manifest v1,
 normalized result entities, validation, atomic persistence, and read-only
-compatibility importers. Existing Job Engine, Ensemble Runner, Quality Gate,
-FaceFusion, and postprocessing runtimes remain operational and do not yet
-consume the v1 contracts.
+compatibility importers. Phase 1B.1 adds machine-local RuntimeConfig and
+side-effect-free JobSpec → immutable ExecutionPlan materialization. Existing
+Job Engine, Ensemble Runner, Quality Gate, FaceFusion, and postprocessing
+runtimes remain operational and do not yet consume or execute the v1 plan.
 
 - [[Pipeline Architecture]]
 - [[JobSpec and Manifest v1]]

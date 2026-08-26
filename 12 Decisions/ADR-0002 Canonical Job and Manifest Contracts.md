@@ -34,14 +34,26 @@ v1.
 Legacy Job Engine и Ensemble jobs читаются compatibility adapters. Source
 files не переписываются.
 
+Machine bindings отделены от JobSpec в RuntimeConfig. Materialization разрешает
+logical URI через local roots/provider mappings и создаёт immutable
+ExecutionPlan, не изменяя JobSpec. ExecutionPlan описывает будущее исполнение,
+но не содержит Manifest lifecycle state.
+
+`model://` разрешается только через explicit provider-local model ID/root
+mapping. Runtime не угадывает model filenames. В Manifest в дальнейшем должен
+копироваться JSON-serializable resolved runtime snapshot только для providers,
+фактически используемых job.
+
 ## Consequences
 
 - Новый runtime сможет работать с единым contract независимо от provider.
 - Исторические runtimes остаются operational compatibility runtimes до
   последующей интеграции.
 - Caller отвечает за monotonic revision и concurrent writers.
-- Runtime materialization и automatic workflow/model hashing ещё необходимы.
+- Provider execution, Manifest runtime lifecycle и automatic workflow/model
+  hashing ещё необходимы.
 
 ## Implementation
 
-Phase 1A реализована в `engine/contracts/`. Подробнее: [[JobSpec and Manifest v1]].
+Phase 1A реализована в `engine/contracts/`; Phase 1B.1 RuntimeConfig и
+materialization — в `engine/runtime/`. Подробнее: [[JobSpec and Manifest v1]].

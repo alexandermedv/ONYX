@@ -1,0 +1,40 @@
+{
+  "schema": "onyx.runtime_config",
+  "schema_version": "1.0",
+  "machine_id": "example-windows-workstation",
+  "repo_root": "D:\\AI\\ONYX",
+  "workspace_root": "D:\\AI\\ONYX-runtime",
+  "client_root": "D:\\AI\\Clients",
+  "providers": {
+    "scene.flux": {
+      "endpoint": "http://127.0.0.1:8188",
+      "root": "D:\\AI\\ComfyUI_Flux\\ComfyUI",
+      "input_root": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\input",
+      "output_root": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\output",
+      "model_roots": {
+        "checkpoints": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\models\\checkpoints"
+      },
+      "models": {
+        "flux1-dev": "model://checkpoints/flux1-dev.safetensors"
+      },
+      "capabilities": ["comfyui_api"]
+    },
+    "identity.facefusion": {
+      "root": "D:\\AI\\FaceFusion",
+      "python_executable": "D:\\AI\\Environments\\facefusion\\python.exe",
+      "model_roots": {
+        "face_swapper": "D:\\AI\\FaceFusion\\models"
+      },
+      "models": {
+        "hyperswap_1a_256": "model://face_swapper/hyperswap_1a_256.onnx"
+      }
+    },
+    "delivery.local": {}
+  },
+  "workflow_roots": {
+    "ensemble": "D:\\AI\\ONYX\\09 Experiments\\ensemble_generator_0.2\\workflows"
+  },
+  "metadata": {
+    "platform": "windows"
+  }
+}

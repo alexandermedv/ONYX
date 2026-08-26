@@ -1,5 +1,23 @@
 ## Unreleased
 
+### Phase 1B.1 — runtime configuration and materialization
+
+- Добавлены RuntimeConfig и ProviderRuntimeConfig для machine-only bindings.
+- Добавлены tracked sanitized `config/runtime.example.json`, ignored
+  `config/runtime.local.json` и выбор через `ONYX_RUNTIME_CONFIG`.
+- Добавлено безопасное resolution `client://`, `workspace://`, `repo://` и
+  provider-local `model://` без filename guessing.
+- Добавлен immutable ExecutionPlan и side-effect-free JobSpec materialization.
+- Generation tasks используют canonical `sha256-derived-v1` seeds отдельно для
+  provider и candidate; VIP-only LoRA повторно проверяется.
+- `resolved_runtime_snapshot()` включает только используемые providers и
+  является JSON-serializable.
+- Canonical unittest discovery выполняет 50 passing tests.
+
+Phase 1B.1 не выполняет providers и не реализует orchestrator, Manifest
+lifecycle, retries, ComfyUI/FaceFusion, QA/review/selection, postprocessing или
+delivery execution.
+
 ### Phase 1A — canonical contracts
 
 - Добавлены JobSpec v1 и Manifest v1 как независимые канонические модели.

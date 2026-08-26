@@ -11,7 +11,20 @@ Phase 1A не включает runtime integration.
 
 ---
 
-## ⏸ Next architectural phase — runtime/orchestrator integration: NOT STARTED
+## ✅ Phase 1B.1 — Runtime Configuration and Materialization: COMPLETE
+
+- [x] RuntimeConfig и ProviderRuntimeConfig.
+- [x] Local/ignored runtime config и tracked sanitized example.
+- [x] Безопасное resolution `client://`, `workspace://`, `repo://`, `model://`.
+- [x] Immutable ExecutionPlan без execution state.
+- [x] Canonical per-provider/per-candidate `sha256-derived-v1` seeds.
+- [x] Side-effect-free JobSpec materialization и 50 passing tests.
+
+Phase 1B.1 не выполняет providers и не создаёт Manifest lifecycle.
+
+---
+
+## ⏸ Phase 1B.2 — Canonical execution shell / Manifest lifecycle: PROPOSED / NOT STARTED
 
 Следующие задачи являются **proposed**, а не утверждённым implementation scope:
 
@@ -42,5 +55,5 @@ Phase 1A не включает runtime integration.
 - [x] Управление параметрами `fixed/random`.
 - [x] Diversity-контроль сцен без повторов.
 - [x] Интеграция Flux Scene Generator с ComfyUI API.
-Phase 1A является только contract layer: существующие runner-ы, Quality Gate,
-FaceFusion, postprocessor и ComfyUI workflows ещё не переведены на эти контракты.
+Phase 1A и Phase 1B.1 не переводят существующие runner-ы, Quality Gate,
+FaceFusion, postprocessor и ComfyUI workflows на canonical execution.
