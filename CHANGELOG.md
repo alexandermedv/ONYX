@@ -1,5 +1,24 @@
 ## Unreleased
 
+### Phase 1B.2 — canonical generation execution shell
+
+- Добавлен `SceneGenerator` provider boundary и CPU-only
+  `FakeSceneGenerator`.
+- Добавлен canonical orchestrator, который единолично владеет
+  Manifest state, revisions, canonical IDs и atomic incremental persistence.
+- Running `GenerationResult` и `AttemptRecord` сохраняются до
+  provider invocation; каждый retry сохраняет logical result ID и
+  создаёт новую attempt.
+- Добавлены resume, stale running/crash recovery, missing-artifact rerun
+  и сохранение полной attempt/artifact истории.
+- ArtifactRecord записывает фактические SHA-256 и byte size;
+  independent sibling tasks по умолчанию продолжаются после failure.
+- Canonical unittest discovery выполняет 70 passing tests.
+
+Phase 1B.2 не подключает ComfyUI, FaceFusion, DreamO, LoRA,
+Ensemble Runner или Job Engine. Identity-aware generators отклоняются
+до реализации native passthrough IdentityResult lifecycle.
+
 ### Phase 1B.1 — runtime configuration and materialization
 
 - Добавлены RuntimeConfig и ProviderRuntimeConfig для machine-only bindings.

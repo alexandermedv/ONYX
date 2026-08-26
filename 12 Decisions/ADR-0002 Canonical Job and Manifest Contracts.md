@@ -49,11 +49,15 @@ mapping. Runtime не угадывает model filenames. В Manifest в дал�
 - Новый runtime сможет работать с единым contract независимо от provider.
 - Исторические runtimes остаются operational compatibility runtimes до
   последующей интеграции.
-- Caller отвечает за monotonic revision и concurrent writers.
-- Provider execution, Manifest runtime lifecycle и automatic workflow/model
-  hashing ещё необходимы.
+- Canonical orchestrator отвечает за monotonic revision внутри
+  single-writer process; concurrent-writer locking не реализован.
+- Real provider adapters и automatic workflow/model hashing ещё
+  необходимы.
 
 ## Implementation
 
 Phase 1A реализована в `engine/contracts/`; Phase 1B.1 RuntimeConfig и
-materialization — в `engine/runtime/`. Подробнее: [[JobSpec and Manifest v1]].
+materialization, а Phase 1B.2 canonical generation lifecycle — в
+`engine/runtime/`. Ownership и recovery semantics зафиксированы в
+[[ADR-0005 Orchestrator-Owned Manifest Lifecycle]]. Подробнее:
+[[JobSpec and Manifest v1]].

@@ -24,9 +24,27 @@ Phase 1B.1 не выполняет providers и не создаёт Manifest lif
 
 ---
 
-## ⏸ Phase 1B.2 — Canonical execution shell / Manifest lifecycle: PROPOSED / NOT STARTED
+## ✅ Phase 1B.2 — Canonical Generation Execution Shell: COMPLETE
 
-Следующие задачи являются **proposed**, а не утверждённым implementation scope:
+- [x] `SceneGenerator` boundary и CPU-only `FakeSceneGenerator`.
+- [x] Orchestrator-owned incremental Manifest lifecycle и single writer.
+- [x] Stable `GenerationResult` и distinct `AttemptRecord` per invocation.
+- [x] Atomic persist-before-invoke, structured failures и artifact provenance.
+- [x] Retry, resume, stale-attempt/crash recovery и missing-artifact rerun.
+- [x] Independent sibling failure handling и 70 passing tests.
+
+Phase 1B.2 не подключает real providers. Identity-aware generation ещё
+не executable без native passthrough IdentityResult lifecycle.
+
+---
+
+## ⏸ Phase 1B.3 — Real generation adapter integration: PROPOSED / NOT STARTED
+
+Точный implementation scope ещё не утверждён. Предполагаемое
+направление — подключение первого real SceneGenerator adapter к
+canonical execution shell без переноса ownership Manifest в provider.
+
+Отдельные будущие шаги, не входящие в Phase 1B.2:
 
 - Проверить восстановление личности через FaceFusion после FLUX.
 - Проверить устранение растительности на лице через FaceFusion.
@@ -55,5 +73,5 @@ Phase 1B.1 не выполняет providers и не создаёт Manifest lif
 - [x] Управление параметрами `fixed/random`.
 - [x] Diversity-контроль сцен без повторов.
 - [x] Интеграция Flux Scene Generator с ComfyUI API.
-Phase 1A и Phase 1B.1 не переводят существующие runner-ы, Quality Gate,
+Phase 1A–1B.2 не переводят существующие runner-ы, Quality Gate,
 FaceFusion, postprocessor и ComfyUI workflows на canonical execution.

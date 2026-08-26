@@ -8,9 +8,10 @@ ONYX разделяет текущий runtime и каноническую це�
 postprocessing и экспериментальные ComfyUI workflows продолжают работать в
 своих существующих форматах.
 
-**Canonical target architecture:** Phase 1A реализует contract layer, а Phase
-1B.1 — machine-local configuration и чистую materialization в ExecutionPlan.
-Новый orchestrator, Manifest lifecycle и provider execution ещё не реализованы.
+**Canonical architecture:** Phase 1A реализует contract layer, Phase
+1B.1 — machine-local configuration и чистую materialization в ExecutionPlan,
+а Phase 1B.2 — CPU-only generation shell с fake provider и incremental
+Manifest lifecycle. Real ONYX providers и legacy runtimes ещё не подключены.
 
 Подробный формат данных: [[JobSpec and Manifest v1]].
 
@@ -39,6 +40,44 @@ ExecutionPlan содержит resolved execution description, identity referenc
 provider bindings, output locations и generation tasks. Он не является
 Manifest и не содержит results, attempts или lifecycle state. JobSpec при
 materialization не мутируется; providers и внешние runtimes не запускаются.
+
+## Canonical generation execution shell
+
+```text
+ExecutionPlan generation task
+          ↓
+orchestrator assigns stable GenerationResult ID
+          ↓  persist running result + AttemptRecord
+SceneGenerator invocation
+          ↓
+result/error + ArtifactRecord (SHA-256, size)
+          ↓  atomic incremental persist
+resumable Manifest
+```
+
+Оркестратор — единственный владелец Manifest, revisions, canonical
+IDs и persistence. `SceneGenerator` получает immutable request с уже
+назначенным result ID и детерминированным seed. Provider выполняет
+работу и возвращает outcome, но не получает Manifest, не мутирует
+canonical state и не назначает IDs.
+
+Каждый provider invocation имеет отдельный `AttemptRecord`, но
+`GenerationResult` ID остаётся стабильным при retry. Running state
+атомарно сохраняется **до** provider invocation, чтобы crash не
+оставался невидимым.
+
+При resume:
+
+- succeeded result с существующим artifact пропускается;
+- failed result получает новую attempt при том же logical ID;
+- stale running attempt сохраняется и помечается
+  `INTERRUPTED_ATTEMPT`, после чего создаётся новая attempt;
+- succeeded result с отсутствующим artifact перезапускается;
+- исторические attempts и artifacts не удаляются.
+
+Независимые sibling tasks продолжаются после failure по
+умолчанию. Успешные artifacts регистрируются с фактическими
+SHA-256 и byte size.
 
 ## Канонический поток
 
@@ -114,9 +153,12 @@ Postprocessing разрешён только для selected IdentityResult. Del
 - PostProcessor;
 - DeliveryProvider.
 
-Phase 1A определяет provider references/configuration, а Phase 1B.1 разрешает
-только machine bindings используемых providers. Runtime interfaces,
-registries, execution adapters и orchestrator пока не реализованы.
+Phase 1A определяет provider references/configuration, Phase 1B.1
+разрешает machine bindings, а Phase 1B.2 реализует `SceneGenerator`
+boundary и canonical orchestrator. Выполняется только CPU-only
+`FakeSceneGenerator`; real ComfyUI, FaceFusion, DreamO, LoRA, Ensemble Runner
+и Job Engine adapters/registries не подключены. Identity-aware generators
+отклоняются до реализации native passthrough `IdentityResult` lifecycle.
 
 ## Совместимость
 
@@ -129,3 +171,4 @@ JobSpec v1. Они не изменяют исторические файлы и 
 - [[ADR-0002 Canonical Job and Manifest Contracts]]
 - [[ADR-0003 Identity-Aware Generators and Identity Results]]
 - [[ADR-0004 Quality Selection Postprocessing and Delivery]]
+- [[ADR-0005 Orchestrator-Owned Manifest Lifecycle]]

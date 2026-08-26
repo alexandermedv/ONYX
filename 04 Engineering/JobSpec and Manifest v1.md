@@ -2,12 +2,13 @@
 
 ## Implementation status
 
-Статус: **Phase 1A contracts и Phase 1B.1 materialization implemented**.
+Статус: **Phase 1A contracts, Phase 1B.1 materialization и Phase 1B.2
+canonical generation shell implemented**.
 
 Контракты находятся в `engine/contracts/`, materialization — в
-`engine/runtime/`. Canonical discovery выполняет 50 contract, compatibility и
-runtime tests. Provider execution и текущие runtime pipelines пока не
-подключены.
+`engine/runtime/`. Canonical discovery выполняет 70 contract, compatibility и
+runtime tests. Phase 1B.2 выполняет generation tasks только через
+CPU-only fake provider; текущие ONYX runtime pipelines не подключены.
 
 ## JobSpec v1
 
@@ -218,7 +219,32 @@ DeliveryResult требует succeeded PostProcessResult. Unprocessed fallback 
 6. cleanup оставшегося temporary file.
 
 Event journal, locking и concurrent-writer protection не реализованы.
-Monotonic revision остаётся ответственностью caller.
+Persistence primitive сам по себе не владеет revision lifecycle;
+Phase 1B.2 `ManifestWriter` единолично управляет monotonic revisions
+внутри одного orchestrator process и отклоняет неожиданное внешнее
+изменение revision.
+
+## Phase 1B.2 generation lifecycle
+
+`run_generation_plan()` инициализирует Manifest до provider execution.
+Оркестратор назначает stable `GenerationResult` ID и `AttemptRecord`
+для каждого фактического invocation. Running result и attempt атомарно
+сохраняются до вызова provider. Provider не получает Manifest,
+не меняет canonical state и не выбирает canonical IDs.
+
+Resume основан на сохранённом Manifest:
+
+- succeeded result с доступным artifact не вызывает provider;
+- failed result повторяется с тем же logical result ID и новым
+  attempt ID;
+- stale running attempt остаётся в истории, помечается failed
+  с `INTERRUPTED_ATTEMPT`, затем создаётся новая attempt;
+- succeeded result с пропавшим artifact перезапускается;
+- предыдущие attempts и ArtifactRecord не удаляются.
+
+Каждый успешный returned artifact проверяется и получает
+ArtifactRecord с фактическими SHA-256 и byte size. Failure одной
+независимой task по умолчанию не останавливает siblings.
 
 ## Compatibility imports
 
@@ -234,13 +260,14 @@ placeholder scenes из `minimum_output_images`, поскольку legacy job �
 
 Historical Manifest importer и Quality Gate CSV importer пока отсутствуют.
 
-## Known limitations after Phase 1B.1
+## Known limitations after Phase 1B.2
 
-- нет orchestrator;
-- нет runtime provider execution/interfaces/adapters или registries;
-- текущий runtime не читает JobSpec/Manifest v1;
-- нет Manifest runtime lifecycle и retries;
+- есть только CPU-only `FakeSceneGenerator`; нет real provider adapters или
+  registry;
+- legacy Job Engine и Ensemble runtimes не читают JobSpec/Manifest v1;
 - нет ComfyUI, FaceFusion, QA/review/selection, postprocessing или delivery execution;
+- identity-aware SceneGenerators отклоняются до native passthrough
+  IdentityResult lifecycle;
 - нет historical Manifest и Quality Gate CSV importers;
 - нет JSON Schema files;
 - нет event journal и concurrent-writer protection;
@@ -256,3 +283,4 @@ Historical Manifest importer и Quality Gate CSV importer пока отсутс�
 - [[ADR-0002 Canonical Job and Manifest Contracts]]
 - [[ADR-0003 Identity-Aware Generators and Identity Results]]
 - [[ADR-0004 Quality Selection Postprocessing and Delivery]]
+- [[ADR-0005 Orchestrator-Owned Manifest Lifecycle]]

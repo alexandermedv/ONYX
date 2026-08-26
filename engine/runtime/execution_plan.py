@@ -26,6 +26,15 @@ class MaterializedProvider:
     provider_id: str
     provider_kind: str
     implementation_version: str
+    model_id: str | None = None
+    model_version: str | None = None
+    model_hash: str | None = None
+    workflow_id: str | None = None
+    workflow_version: str | None = None
+    workflow_uri: str | None = None
+    workflow_hash: str | None = None
+    identity_aware: bool = False
+    identity_mode: str | None = None
     endpoint: str | None = None
     root: str | None = None
     python_executable: str | None = None
@@ -72,6 +81,7 @@ class GenerationTask:
 class ExecutionPlan:
     job_id: str
     machine_id: str
+    workspace_uri: str
     workspace_path: str
     providers: tuple[MaterializedProvider, ...]
     identity_profiles: tuple[ResolvedIdentityProfile, ...]
@@ -84,6 +94,7 @@ class ExecutionPlan:
             "runtime_config_schema": "onyx.runtime_config",
             "runtime_config_version": "1.0",
             "machine_id": self.machine_id,
+            "workspace_uri": self.workspace_uri,
             "workspace_path": self.workspace_path,
             "providers": [provider.to_dict() for provider in self.providers],
             "identity_profiles": [asdict(profile) for profile in self.identity_profiles],
@@ -95,6 +106,7 @@ class ExecutionPlan:
         return {
             "job_id": self.job_id,
             "machine_id": self.machine_id,
+            "workspace_uri": self.workspace_uri,
             "workspace_path": self.workspace_path,
             "providers": [provider.to_dict() for provider in self.providers],
             "identity_profiles": [asdict(profile) for profile in self.identity_profiles],

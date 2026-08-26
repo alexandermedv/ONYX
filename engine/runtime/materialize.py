@@ -133,6 +133,15 @@ def _materialize_provider(
         provider_id=provider_ref.provider_id,
         provider_kind=provider_ref.provider_kind,
         implementation_version=provider_ref.implementation_version,
+        model_id=provider_ref.model_id,
+        model_version=provider_ref.model_version,
+        model_hash=provider_ref.model_hash,
+        workflow_id=provider_ref.workflow_id,
+        workflow_version=provider_ref.workflow_version,
+        workflow_uri=provider_ref.workflow_uri,
+        workflow_hash=provider_ref.workflow_hash,
+        identity_aware=provider_ref.identity_aware,
+        identity_mode=provider_ref.identity_mode,
         endpoint=provider_runtime.endpoint,
         root=_runtime_path(provider_runtime.root, f"provider {provider_ref.provider_id} root"),
         python_executable=_runtime_path(
@@ -266,6 +275,7 @@ def materialize_job(job_spec: JobSpec, runtime_config: RuntimeConfig) -> Executi
     return ExecutionPlan(
         job_id=job_spec.job_id,
         machine_id=runtime_config.machine_id,
+        workspace_uri=workspace_uri,
         workspace_path=workspace_path,
         providers=providers,
         identity_profiles=tuple(profiles),

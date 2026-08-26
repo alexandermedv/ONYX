@@ -12,6 +12,12 @@ RuntimeConfig, безопасно разрешает logical URI и materializes
 ExecutionPlan с canonical per-provider/per-candidate seeds. Materialization не
 изменяет JobSpec и не запускает providers.
 
+Phase 1B.2 завершена: canonical execution shell потребляет
+ExecutionPlan и выполняет generation tasks через `SceneGenerator`.
+Оркестратор единолично владеет canonical IDs, Manifest state,
+revisions и atomic persistence. Текущая реализация CPU-only и имеет
+только `FakeSceneGenerator`.
+
 Текущие Job Engine, Ensemble Runner, Quality Gate, FaceFusion и postprocessing
 остаются рабочими runtime-контурами совместимости. Они пока не переведены на
 JobSpec/Manifest v1 и не заменены новым orchestrator.
@@ -30,6 +36,7 @@ JobSpec/Manifest v1 и не заменены новым orchestrator.
 - [[ADR-0002 Canonical Job and Manifest Contracts]]
 - [[ADR-0003 Identity-Aware Generators and Identity Results]]
 - [[ADR-0004 Quality Selection Postprocessing and Delivery]]
+- [[ADR-0005 Orchestrator-Owned Manifest Lifecycle]]
 
 ## Реализация Phase 1A
 
@@ -52,12 +59,34 @@ JobSpec/Manifest v1 и не заменены новым orchestrator.
 - `config/runtime.local.json` — ignored machine-local configuration.
 - `tests/runtime/` — CPU-only runtime/materialization tests.
 
-Полный canonical unittest discovery выполняет 50 passing tests.
+После Phase 1B.1 canonical unittest discovery выполнял 50 passing tests.
+
+## Реализация Phase 1B.2
+
+- `engine/runtime/providers.py` — `SceneGenerator` boundary, immutable request,
+  structured provider outcome и CPU-only `FakeSceneGenerator`.
+- `engine/runtime/orchestrator.py` — Manifest initialization, single-writer
+  revisions, generation lifecycle, retries, resume и artifact provenance.
+- `tests/runtime/test_orchestrator.py` — CPU-only lifecycle, crash/recovery,
+  retry, sibling-failure и artifact tests.
+
+Manifest сохраняется до provider invocation. Logical `GenerationResult`
+сохраняет ID между retries, а каждый фактический вызов
+получает отдельный `AttemptRecord`. При resume успешный result с
+существующим artifact не перезапускается; failed result, stale
+running attempt или пропавший artifact приводят к новой
+attempt без удаления истории. ArtifactRecord получает фактические
+SHA-256 и size. По умолчанию failure одной task не блокирует
+независимые sibling tasks.
+
+Полный canonical unittest discovery выполняет 70 passing tests.
 
 ## Не реализовано
 
-Phase 1B.1 не включает orchestrator, provider execution/interfaces/adapters,
-Manifest runtime lifecycle, retries, перевод текущих pipeline на v1,
-ComfyUI/FaceFusion execution, QA/review/selection, postprocessing или delivery.
+Не реализованы real provider adapters и перевод текущих pipeline
+на v1: ComfyUI/FaceFusion/DreamO/LoRA execution, Job Engine и Ensemble
+integration, identity lifecycle, QA/review/selection, postprocessing и delivery.
+Identity-aware generators в Phase 1B.2 явно отклоняются, пока не
+реализован native passthrough `IdentityResult` lifecycle.
 Также пока отсутствуют historical Manifest importer, Quality Gate CSV importer,
 JSON Schema, event journal и concurrent-writer protection.
