@@ -1,5 +1,26 @@
 ## Unreleased
 
+### Phase 1B.3 — real non-identity FLUX adapter
+
+- Добавлены минимальный ComfyUI HTTP client и `FluxSceneGenerator` для
+  canonical `/prompt` → `/history` → `/view` execution.
+- Adapter проверяет workflow SHA-256, детерминированно патчит API graph и
+  передаёт canonical seed без изменения.
+- Добавлены structured provider failures, output descriptor validation и
+  provenance для endpoint, prompt ID, workflow hash, submitted seed и ComfyUI
+  output metadata.
+- Windows-style relative output subfolder нормализуется в POSIX form перед
+  строгой проверкой; traversal, absolute/rooted/drive/UNC paths и encoded
+  separators остаются запрещены.
+- Controlled real smoke на clean external ComfyUI `b1693ecb` выполнил ровно
+  один POST и создал canonical PNG 896×1152 с совпадающими size/SHA-256.
+- Same-manifest resume не создал нового POST или AttemptRecord и сохранил все
+  canonical IDs и artifact hash.
+- Canonical unittest discovery выполняет 93 passing tests.
+
+Phase 1B.3 не реализует identity-aware generation, FaceFusion,
+QA/review/selection, postprocessing, delivery или legacy runner integration.
+
 ### Phase 1B.2 — canonical generation execution shell
 
 - Добавлен `SceneGenerator` provider boundary и CPU-only

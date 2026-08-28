@@ -38,13 +38,20 @@ Phase 1B.2 не подключает real providers. Identity-aware generation �
 
 ---
 
-## ⏸ Phase 1B.3 — Real generation adapter integration: PROPOSED / NOT STARTED
+## ✅ Phase 1B.3 — Real FLUX SceneGenerator integration: COMPLETE
 
-Точный implementation scope ещё не утверждён. Предполагаемое
-направление — подключение первого real SceneGenerator adapter к
-canonical execution shell без переноса ownership Manifest в provider.
+- [x] Минимальный ComfyUI HTTP client для `/prompt`, `/history`, `/view`.
+- [x] Non-identity `FluxSceneGenerator` с workflow-hash и model checks.
+- [x] Deterministic workflow patching и unchanged canonical seed.
+- [x] Structured failures и untrusted output-descriptor validation.
+- [x] Windows relative subfolder normalization без ослабления traversal checks.
+- [x] Один successful real smoke и same-manifest resume без нового POST.
+- [x] 93 passing canonical CPU tests.
 
-Отдельные будущие шаги, не входящие в Phase 1B.2:
+Phase 1B.3 не подключает identity-aware generators, FaceFusion, legacy runners,
+Quality Gate, review/selection, postprocessing или delivery.
+
+Следующие отдельные шаги:
 
 - Проверить восстановление личности через FaceFusion после FLUX.
 - Проверить устранение растительности на лице через FaceFusion.
@@ -73,5 +80,6 @@ canonical execution shell без переноса ownership Manifest в provider
 - [x] Управление параметрами `fixed/random`.
 - [x] Diversity-контроль сцен без повторов.
 - [x] Интеграция Flux Scene Generator с ComfyUI API.
-Phase 1A–1B.2 не переводят существующие runner-ы, Quality Gate,
-FaceFusion, postprocessor и ComfyUI workflows на canonical execution.
+Phase 1A–1B.3 не переводят существующие runner-ы, Quality Gate, FaceFusion,
+postprocessor и legacy ComfyUI workflows на canonical execution; подключён
+только новый canonical FLUX API workflow Phase 1B.3.

@@ -10,8 +10,9 @@ postprocessing и экспериментальные ComfyUI workflows прод�
 
 **Canonical architecture:** Phase 1A реализует contract layer, Phase
 1B.1 — machine-local configuration и чистую materialization в ExecutionPlan,
-а Phase 1B.2 — CPU-only generation shell с fake provider и incremental
-Manifest lifecycle. Real ONYX providers и legacy runtimes ещё не подключены.
+а Phase 1B.2 — generation shell с fake provider и incremental Manifest
+lifecycle. Phase 1B.3 подключает первый real non-identity FLUX provider через
+ComfyUI HTTP API. Legacy runtimes и остальные providers ещё не подключены.
 
 Подробный формат данных: [[JobSpec and Manifest v1]].
 
@@ -78,6 +79,25 @@ canonical state и не назначает IDs.
 Независимые sibling tasks продолжаются после failure по
 умолчанию. Успешные artifacts регистрируются с фактическими
 SHA-256 и byte size.
+
+### Real FLUX adapter
+
+`FluxSceneGenerator` потребляет уже materialized request, проверяет SHA-256
+API workflow, детерминированно подставляет prompt, seed, generation parameters
+и result-derived output prefix, затем использует ComfyUI `/prompt`, `/history`
+и `/view`. Provider не получает Manifest и не назначает canonical IDs.
+
+ComfyUI output descriptor рассматривается как недоверенный. Относительные
+Windows separators нормализуются в `/`; traversal, absolute/rooted paths,
+drive paths, UNC и encoded separators отклоняются до обращения к output root.
+Downloaded image bytes передаются orchestrator-у, который создаёт canonical
+ArtifactRecord с фактическими hash и size.
+
+Один controlled smoke подтвердил real execution и resume: clean external
+ComfyUI `b1693ecb` на `127.0.0.1:8190`, один POST, один успешный
+GenerationResult/AttemptRecord/ArtifactRecord; повторный запуск того же
+Manifest не отправил новый POST. Это не интеграция legacy Ensemble/Job Engine
+и не поддержка identity-aware generation.
 
 ## Канонический поток
 
@@ -154,10 +174,10 @@ Postprocessing разрешён только для selected IdentityResult. Del
 - DeliveryProvider.
 
 Phase 1A определяет provider references/configuration, Phase 1B.1
-разрешает machine bindings, а Phase 1B.2 реализует `SceneGenerator`
-boundary и canonical orchestrator. Выполняется только CPU-only
-`FakeSceneGenerator`; real ComfyUI, FaceFusion, DreamO, LoRA, Ensemble Runner
-и Job Engine adapters/registries не подключены. Identity-aware generators
+разрешает machine bindings, Phase 1B.2 реализует `SceneGenerator` boundary и
+canonical orchestrator, а Phase 1B.3 добавляет non-identity
+`FluxSceneGenerator` для ComfyUI. FaceFusion, DreamO, LoRA, Ensemble Runner и
+Job Engine adapters/registries не подключены. Identity-aware generators
 отклоняются до реализации native passthrough `IdentityResult` lifecycle.
 
 ## Совместимость

@@ -23,7 +23,24 @@ tracked `runtime.example.json` содержит только sanitized example, 
 
 Materialization создаёт только immutable ExecutionPlan. Она не читает и не
 изменяет workflow JSON, не проверяет наличие моделей, не обращается к ComfyUI и
-не подключена к существующим runner-ам. Канонический provenance продолжает
-использовать logical artifact URI.
+не подключена к существующим runner-ам.
+
+Phase 1B.3 добавляет отдельную execution boundary после materialization.
+`FluxSceneGenerator` использует canonical API workflow
+`engine/flux_scene_generator/ONYX_Flux_Scene_Generator_0.3_API.json`, проверяет
+его declared SHA-256 и детерминированно подставляет prompt, seed, dimensions,
+sampler settings и output prefix. Затем adapter вызывает ComfyUI `/prompt`,
+`/history` и `/view`. Workflow не мутируется на диске.
+
+External ComfyUI installation и model files остаются вне ONYX. RuntimeConfig
+задаёт endpoint и explicit provider-local model mapping; известный smoke
+использовал `127.0.0.1:8190` с включёнными DynamicVRAM, async weight offloading
+и pinned memory. Cold model initialization может занимать несколько минут.
+Windows-style relative output subfolder
+нормализуется, а traversal, absolute/rooted/drive/UNC и encoded separators
+отклоняются. Канонический provenance продолжает использовать logical artifact
+URI; Manifest и ArtifactRecord создаёт orchestrator, не ComfyUI provider.
+Экспериментальные pread/custom-loader исследования не входят в canonical
+runtime и не стали production architecture.
 
 См. [[Pipeline Architecture]] и [[JobSpec and Manifest v1]].

@@ -31,6 +31,8 @@ from .providers import (
     SceneGenerator,
     SceneGeneratorRequest,
 )
+from .comfyui_client import ComfyUIClient, ComfyUIImageOutput
+from .flux_scene_generator import FluxSceneGenerator
 
 __all__ = [
     "ExecutionPlan",
@@ -53,6 +55,9 @@ __all__ = [
     "RuntimeConfigError",
     "SceneGenerator",
     "SceneGeneratorRequest",
+    "ComfyUIClient",
+    "ComfyUIImageOutput",
+    "FluxSceneGenerator",
     "attempt_record_id",
     "dumps_runtime_config",
     "load_runtime_config",

@@ -12,12 +12,17 @@
       "input_root": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\input",
       "output_root": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\output",
       "model_roots": {
-        "checkpoints": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\models\\checkpoints"
+        "diffusion_models": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\models\\diffusion_models"
       },
       "models": {
-        "flux1-dev": "model://checkpoints/flux1-dev.safetensors"
+        "flux1-dev": "model://diffusion_models/flux1-dev.safetensors"
       },
-      "capabilities": ["comfyui_api"]
+      "capabilities": ["comfyui_api"],
+      "metadata": {
+        "request_timeout_seconds": 30,
+        "generation_timeout_seconds": 1800,
+        "poll_interval_seconds": 1
+      }
     },
     "identity.facefusion": {
       "root": "D:\\AI\\FaceFusion",

@@ -2,13 +2,13 @@
 
 ## Implementation status
 
-Статус: **Phase 1A contracts, Phase 1B.1 materialization и Phase 1B.2
-canonical generation shell implemented**.
+Статус: **Phase 1A contracts, Phase 1B.1 materialization, Phase 1B.2
+canonical generation shell и Phase 1B.3 non-identity FLUX adapter implemented**.
 
 Контракты находятся в `engine/contracts/`, materialization — в
-`engine/runtime/`. Canonical discovery выполняет 70 contract, compatibility и
-runtime tests. Phase 1B.2 выполняет generation tasks только через
-CPU-only fake provider; текущие ONYX runtime pipelines не подключены.
+`engine/runtime/`. Canonical discovery выполняет 93 contract, compatibility и
+runtime tests. Generation tasks выполняются через CPU-only fake provider или
+real non-identity FLUX/ComfyUI adapter; legacy ONYX runtimes не подключены.
 
 ## JobSpec v1
 
@@ -260,12 +260,24 @@ placeholder scenes из `minimum_output_images`, поскольку legacy job �
 
 Historical Manifest importer и Quality Gate CSV importer пока отсутствуют.
 
-## Known limitations after Phase 1B.2
+## Phase 1B.3 FLUX execution
 
-- есть только CPU-only `FakeSceneGenerator`; нет real provider adapters или
-  registry;
+`FluxSceneGenerator` выполняет один canonical candidate через внешний ComfyUI
+HTTP endpoint. Он проверяет workflow hash, патчит API graph из immutable
+request, отправляет seed без изменения, получает output descriptor и image
+bytes, после чего orchestrator регистрирует результат и artifact provenance.
+
+Windows-style relative output subfolder поддерживается через нормализацию
+separator перед safety validation. Traversal, absolute/rooted/drive/UNC paths
+и percent-encoded separators остаются запрещены. Controlled smoke подтвердил
+один успешный real result и same-manifest resume без нового POST/attempt.
+
+## Known limitations after Phase 1B.3
+
+- доступны CPU-only `FakeSceneGenerator` и один real non-identity FLUX adapter;
+  общего provider registry нет;
 - legacy Job Engine и Ensemble runtimes не читают JobSpec/Manifest v1;
-- нет ComfyUI, FaceFusion, QA/review/selection, postprocessing или delivery execution;
+- нет FaceFusion, QA/review/selection, postprocessing или delivery execution;
 - identity-aware SceneGenerators отклоняются до native passthrough
   IdentityResult lifecycle;
 - нет historical Manifest и Quality Gate CSV importers;
