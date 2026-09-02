@@ -42,6 +42,8 @@ Phase 1B.2 не подключает real providers. Identity-aware generation �
 
 - [x] Минимальный ComfyUI HTTP client для `/prompt`, `/history`, `/view`.
 - [x] Non-identity `FluxSceneGenerator` с workflow-hash и model checks.
+- [x] LoRA Lab Phase 1: CPU/dry-run analysis, selection, planners, AI-Toolkit renderer, metrics and serialization.
+- [ ] Alexander LoRA dataset-size Phase 2: approved materialization and controlled training.
 - [x] Deterministic workflow patching и unchanged canonical seed.
 - [x] Structured failures и untrusted output-descriptor validation.
 - [x] Windows relative subfolder normalization без ослабления traversal checks.

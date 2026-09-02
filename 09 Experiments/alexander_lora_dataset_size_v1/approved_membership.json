@@ -1,0 +1,31 @@
+{
+  "approval_id": "human_approved_2026_08_29",
+  "status": "approved",
+  "automatic_proposal": "artifacts/selection_phase_1_5/dataset_manifest.proposed.json",
+  "mini_3": [
+    "photo_5465281760758275812_y.jpg",
+    "photo_5228983934421510601_y.jpg",
+    "Alexander-7970.jpg"
+  ],
+  "mini_5": [
+    "photo_5465281760758275812_y.jpg",
+    "photo_5228983934421510601_y.jpg",
+    "Alexander-7970.jpg",
+    "photo3.jpg",
+    "photo_5228983934421510600_y.jpg"
+  ],
+  "mini_10": [
+    "photo_5465281760758275812_y.jpg",
+    "photo_5228983934421510601_y.jpg",
+    "photo4.jpg",
+    "photo_5465281760758275807_y.jpg",
+    "photo_5465281760758275813_y.jpg",
+    "photo3.jpg",
+    "photo_5228983934421510602_y.jpg",
+    "photo_5465281760758275886_y.jpg",
+    "Alexander-7970.jpg",
+    "photo_5228983934421510600_y.jpg"
+  ],
+  "full_21": "frozen_historical_manifest",
+  "approval_reason": "Human-approved hybrid mini_3 removes redundant lakeside frontal image while preserving frontal, fresh 3/4 right, and studio 3/4 left diversity."
+}

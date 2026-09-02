@@ -102,3 +102,19 @@ Phase 1A не изменяет и не подключает существующ
 - FLUX может генерировать растительность на лице для мужского профиля даже при `clean-shaven`.
 - Точное положение рук может отличаться от заданного в scene preset.
 - Геометрия взаимодействия человека с мебелью в отдельных случаях может содержать артефакты.
+# Unreleased
+
+### LoRA Lab Phase 1 — CPU/dry-run infrastructure
+
+- Добавлены versioned specs и deterministic planners для Alexander dataset-size experiment.
+- Historical `full_21` зафиксирован как control; mini datasets требуют human approval.
+- Добавлены staged benchmark plans, AI-Toolkit dry-run renderer, telemetry,
+  `time_to_best_checkpoint`, metrics aggregation и machine-readable reports.
+- Training, GPU benchmark и production integration не выполнялись.
+
+### LoRA Lab Phase 1.5 — candidate-pool proposal
+
+- Protocol расширен: frozen `full_21` остаётся baseline, а nested mini datasets
+  выбираются из полного доступного client pool.
+- Добавлены explicit capture groups, session-aware selection и derived caption
+  overrides без изменения historical captions.

@@ -8,22 +8,22 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Mapping
 
-from contracts.ids import generation_result_id, stable_id
-from contracts.job_spec import dumps_job_spec
-from contracts.models import (
-    MANIFEST_SCHEMA,
-    SCHEMA_VERSION,
-    ArtifactRecord,
-    AttemptRecord,
-    ErrorRecord,
-    GenerationResult,
-    JobSpec,
-    Manifest,
-    ProviderRef,
-    QualityPlan,
-    RuntimeStatus,
-)
-from contracts.persistence import load_manifest, save_manifest_atomic
+if __package__ == "runtime":
+    from contracts.ids import generation_result_id, stable_id
+    from contracts.job_spec import dumps_job_spec
+    from contracts.models import (
+        MANIFEST_SCHEMA, SCHEMA_VERSION, ArtifactRecord, AttemptRecord, ErrorRecord,
+        GenerationResult, JobSpec, Manifest, ProviderRef, QualityPlan, RuntimeStatus,
+    )
+    from contracts.persistence import load_manifest, save_manifest_atomic
+else:
+    from engine.contracts.ids import generation_result_id, stable_id
+    from engine.contracts.job_spec import dumps_job_spec
+    from engine.contracts.models import (
+        MANIFEST_SCHEMA, SCHEMA_VERSION, ArtifactRecord, AttemptRecord, ErrorRecord,
+        GenerationResult, JobSpec, Manifest, ProviderRef, QualityPlan, RuntimeStatus,
+    )
+    from engine.contracts.persistence import load_manifest, save_manifest_atomic
 
 from .execution_plan import ExecutionPlan, GenerationTask, MaterializedProvider
 from .providers import ProviderArtifact, ProviderError, ProviderExecutionResult, SceneGenerator, SceneGeneratorRequest

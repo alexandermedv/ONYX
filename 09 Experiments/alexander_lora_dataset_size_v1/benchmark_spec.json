@@ -1,0 +1,26 @@
+{
+  "benchmark_id": "alexander_lora_dataset_size_v1_benchmark",
+  "inference_steps": 30,
+  "guidance": 4.0,
+  "sampler": "euler",
+  "scheduler": "simple",
+  "scenes": [
+    {"scene_id":"closeup_neutral","prompt":"A photorealistic close-up portrait photograph of alexonyx man, neutral expression, looking directly at the camera, soft natural window light, simple neutral background, authentic skin texture, restrained retouching.","width":768,"height":1024,"diagnostic":true},
+    {"scene_id":"business_headshot","prompt":"A photorealistic business headshot of alexonyx man wearing a dark navy suit and white shirt, calm confident expression, modern office, soft daylight, authentic skin texture.","width":768,"height":1024,"diagnostic":false},
+    {"scene_id":"executive_three_quarter_left","prompt":"A photorealistic executive portrait of alexonyx man, three-quarter left view, wearing a tailored dark suit in a modern executive office, soft side window light, authentic editorial photography.","width":832,"height":1216,"diagnostic":true},
+    {"scene_id":"three_quarter_right","prompt":"A photorealistic portrait of alexonyx man, three-quarter right view, calm neutral expression, simple indoor background, realistic skin and natural daylight.","width":768,"height":1024,"diagnostic":false},
+    {"scene_id":"half_body","prompt":"A photorealistic half-body portrait of alexonyx man, relaxed posture, smart casual dark clothing, neutral interior, natural body proportions and authentic skin texture.","width":832,"height":1216,"diagnostic":false},
+    {"scene_id":"full_body","prompt":"A photorealistic full-body photograph of alexonyx man standing naturally in a contemporary interior, dark casual clothing, realistic anatomy and proportions.","width":832,"height":1216,"diagnostic":false},
+    {"scene_id":"sitting_at_desk","prompt":"A photorealistic editorial portrait of alexonyx man sitting at an executive desk, both hands visible, dark business suit, natural posture, side window daylight.","width":832,"height":1216,"diagnostic":false},
+    {"scene_id":"outdoor_overcast","prompt":"A photorealistic outdoor portrait of alexonyx man on a modern European street, relaxed expression, elegant casual clothes, soft overcast daylight.","width":832,"height":1216,"diagnostic":false},
+    {"scene_id":"difficult_side_light","prompt":"A photorealistic close portrait of alexonyx man under difficult hard side lighting, deep natural shadows, neutral expression, realistic unretouched skin.","width":768,"height":1024,"diagnostic":true},
+    {"scene_id":"slight_profile","prompt":"A photorealistic slight-profile portrait of alexonyx man looking past the camera, soft studio lighting, simple background, authentic facial geometry.","width":768,"height":1024,"diagnostic":false},
+    {"scene_id":"smiling_closeup","prompt":"A photorealistic close-up portrait of alexonyx man with a natural relaxed smile, soft daylight, realistic teeth and skin texture, restrained retouching.","width":768,"height":1024,"diagnostic":false},
+    {"scene_id":"small_face_environment","prompt":"A photorealistic environmental portrait of alexonyx man standing in a spacious modern office, face relatively small in frame, natural proportions, realistic daylight.","width":832,"height":1216,"diagnostic":true}
+  ],
+  "stages": [
+    {"stage_id":"stage_1_screening","datasets":["mini_3","mini_5","mini_10","full_21"],"scenes":["closeup_neutral","executive_three_quarter_left","difficult_side_light","small_face_environment"],"seeds":[202608290101],"weights":[0.9],"checkpoints":[250,500,750,1000,1250],"checkpoint_mode":"explicit","include_historical_control":true},
+    {"stage_id":"stage_2_full","datasets":["mini_3","mini_5","mini_10","full_21"],"scenes":["closeup_neutral","business_headshot","executive_three_quarter_left","three_quarter_right","half_body","full_body","sitting_at_desk","outdoor_overcast","difficult_side_light","slight_profile","smiling_closeup","small_face_environment"],"seeds":[202608290201,202608290202],"weights":[0.9],"checkpoints":["best"],"checkpoint_mode":"best","include_historical_control":true},
+    {"stage_id":"stage_3_weight_sweep_optional","datasets":["mini_3","mini_5","mini_10","full_21"],"scenes":["closeup_neutral","business_headshot","executive_three_quarter_left","three_quarter_right","half_body","full_body","sitting_at_desk","outdoor_overcast","difficult_side_light","slight_profile","smiling_closeup","small_face_environment"],"seeds":[202608290201,202608290202],"weights":[0.7,0.9,1.0],"checkpoints":["best"],"checkpoint_mode":"best","include_historical_control":false}
+  ]
+}

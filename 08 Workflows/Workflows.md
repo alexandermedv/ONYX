@@ -33,14 +33,18 @@ sampler settings и output prefix. Затем adapter вызывает ComfyUI `
 `/history` и `/view`. Workflow не мутируется на диске.
 
 External ComfyUI installation и model files остаются вне ONYX. RuntimeConfig
-задаёт endpoint и explicit provider-local model mapping; известный smoke
-использовал `127.0.0.1:8190` с включёнными DynamicVRAM, async weight offloading
-и pinned memory. Cold model initialization может занимать несколько минут.
+задаёт endpoint и explicit provider-local model mapping. Для Windows FLUX
+runtime canonical command сохраняет DynamicVRAM, но отключает async weight
+offloading и pinned memory: `--disable-async-offload --disable-pinned-memory`.
+Это workaround для нестабильного DynamicVRAM/comfy-aimdo host-buffer transfer
+path; exact command, validation модели и troubleshooting находятся в
+[[ComfyUI FLUX Windows Runbook]]. Cold model initialization может занимать
+несколько минут.
 Windows-style relative output subfolder
 нормализуется, а traversal, absolute/rooted/drive/UNC и encoded separators
 отклоняются. Канонический provenance продолжает использовать logical artifact
 URI; Manifest и ArtifactRecord создаёт orchestrator, не ComfyUI provider.
-Экспериментальные pread/custom-loader исследования не входят в canonical
-runtime и не стали production architecture.
+Экспериментальные pread/custom-loader исследования rollback-нуты и не входят в
+canonical runtime.
 
 См. [[Pipeline Architecture]] и [[JobSpec and Manifest v1]].

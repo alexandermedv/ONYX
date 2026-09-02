@@ -106,10 +106,13 @@ ArtifactRecord остаются собственностью orchestrator.
 `bdd790a35b5f6e360273d50a91710559411e52a7c60bcf001345bf4bc583df18`
 успешно создал один PNG 896×1152. Cold run занял 421.6 секунды, включая
 333.9 секунды model initialization; resume занял 0.004 секунды и не создал
-новый POST или AttemptRecord. Known-good runtime использовал DynamicVRAM,
-async weight offloading (2 streams) и pinned memory; ComfyUI и модели остались
-внешними и не модифицировались. Исследовательские pread/custom-loader
-прототипы не стали частью production architecture.
+новый POST или AttemptRecord. Последующий Windows runtime investigation показал
+нестабильность DynamicVRAM/comfy-aimdo host-buffer transfers при включённых async
+weight offloading и pinned memory. Canonical запуск сохраняет DynamicVRAM, но
+использует `--disable-async-offload --disable-pinned-memory`; подробности и
+exact command — в [[ComfyUI FLUX Windows Runbook]]. ComfyUI и модели остаются
+внешними и не модифицируются ONYX. Исследовательские pread/custom-loader
+прототипы rollback-нуты и не входят в runtime architecture.
 
 Полный canonical unittest discovery выполняет 93 passing tests.
 

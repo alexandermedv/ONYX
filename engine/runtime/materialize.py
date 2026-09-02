@@ -4,9 +4,14 @@ import json
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
-from contracts.ids import derive_seed
-from contracts.models import JobSpec, ProviderRef
-from contracts.validation import validate_job_spec
+if __package__ == "runtime":  # existing top-level runtime API used by legacy callers
+    from contracts.ids import derive_seed
+    from contracts.models import JobSpec, ProviderRef
+    from contracts.validation import validate_job_spec
+else:  # canonical package import: engine.runtime
+    from engine.contracts.ids import derive_seed
+    from engine.contracts.models import JobSpec, ProviderRef
+    from engine.contracts.validation import validate_job_spec
 
 from .config import ProviderRuntimeConfig, RuntimeConfig
 from .execution_plan import (

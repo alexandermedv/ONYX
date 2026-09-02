@@ -1,0 +1,5 @@
+{
+  "control_id": "historical_control",
+  "checkpoint_path": "REQUIRES_EXPLICIT_REGISTRATION",
+  "notes": "External sanity check only; excluded from the controlled 3/5/10/21 comparison."
+}

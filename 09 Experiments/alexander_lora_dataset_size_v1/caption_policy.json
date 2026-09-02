@@ -1,0 +1,6 @@
+{
+  "trigger_word": "alexonyx",
+  "required_prefix": "photo of alexonyx man",
+  "max_words": 45,
+  "forbidden_terms": ["handsome", "perfect face", "flawless", "award-winning"]
+}
