@@ -6,8 +6,18 @@ Related: [[03 - Network and Security]] · [[04 - Backup and Recovery]] · [[05 -
 - Container minio; image minio/minio:RELEASE.2025-09-07T16-13-09Z.
 - Digest sha256:14cea493d9a34af32f524e538b8346cf79f3321eff8e708c1e2960462bd8936e.
 - Compose: /home/alexander/services/minio/compose.yaml; data: /mnt/data/minio/data.
-- Credentials: /home/alexander/services/minio/.env, mode 600; restart unless-stopped; healthy.
+- Root/admin credentials: /home/alexander/services/minio/.env, mode 600; restart unless-stopped; healthy.
 - LAN API 9000 and Console 9001. Functional and persistence tests passed.
+
+### MinIO credentials
+- Root/admin credentials: `/home/alexander/services/minio/.env`.
+- Daily user `alexander` credentials: `/home/alexander/services/minio/users/alexander.env` (mode 600).
+- Private bucket: `alexander`.
+- Policy: `alexander-bucket-rw`; it permits list/read/write/delete and multipart-compatible object operations only in bucket `alexander`.
+- The daily user has no MinIO administrative rights and no access to other buckets.
+
+> [!danger]
+> Do not store plaintext passwords or secret keys in Obsidian. This vault records credential-file paths only. Use root credentials only for MinIO administration.
 
 ## ClickHouse
 - yandex/clickhouse-server, version 22.1.3.7; data /mnt/data/clickhouse.
@@ -18,6 +28,43 @@ Related: [[03 - Network and Security]] · [[04 - Backup and Recovery]] · [[05 -
 ## PostgreSQL my-postgres
 - Data /mnt/data/postgres; mae_db ~589 MiB; SCRAM HBA; restart unless-stopped.
 - Localhost only: 127.0.0.1:5432.
+
+### PostgreSQL access from Windows / pgAdmin
+PostgreSQL is intentionally not published to the LAN. Its host bind is `127.0.0.1:5432`. From Windows, use a pgAdmin SSH Tunnel.
+
+**Connection tab**
+- Host name/address: `127.0.0.1`
+- Port: `5432`
+- Maintenance database: `postgres`
+- Username: `postgres` or the required PostgreSQL DB user
+
+**SSH Tunnel tab**
+- Use SSH tunneling: enabled
+- Tunnel host: `192.168.0.11`
+- Tunnel port: `22`
+- Username: `alexander`
+- Authentication: Identity file
+- Identity file: `C:\Users\ME\.ssh\id_ed25519`
+
+Critical distinction: SSH user = `alexander`; PostgreSQL DB user = `postgres`. These are separate accounts. Store their credentials in Bitwarden (`HomeLab – Ubuntu Server` and `HomeLab – PostgreSQL postgres`), never in Obsidian.
+
+```yaml
+pgAdmin on Windows
+    |
+    | SSH tunnel
+    | user: alexander
+    v
+192.168.0.11:22
+    |
+    | localhost on Ubuntu
+    v
+127.0.0.1:5432
+    |
+    | PostgreSQL auth
+    | user: postgres
+    v
+my-postgres
+```
 
 ## Airflow
 - 2.10.5; FabAuthManager; login required; alexandermed is Admin.

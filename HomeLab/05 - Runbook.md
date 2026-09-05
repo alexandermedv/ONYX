@@ -12,8 +12,39 @@ Check MinIO and open http://192.168.0.11:9001. Check Airflow at http://192.168.0
 2. Confirm /mnt/data/minio/data and permissions.
 3. Check .env, Compose config, logs, and 9000/9001 conflicts.
 
+## Where to find MinIO credentials
+- Root/admin: `/home/alexander/services/minio/.env`
+- Daily user: `/home/alexander/services/minio/users/alexander.env`
+
+On the server, view only when necessary:
+
+```bash
+cat /home/alexander/services/minio/.env
+cat /home/alexander/services/minio/users/alexander.env
+```
+
+> [!danger]
+> Never copy credential-file contents into Obsidian, chat logs, or git.
+
 > [!danger]
 > Do not start or restart MinIO, PostgreSQL, or ClickHouse when /mnt/data is missing. Docker could create empty root-filesystem paths instead of using persistent data.
+
+## pgAdmin cannot connect to PostgreSQL
+If the PostgreSQL connection times out:
+
+1. Do not re-open PostgreSQL on `0.0.0.0`.
+2. Confirm that pgAdmin uses an SSH Tunnel.
+3. In **Connection**, use host `127.0.0.1` and port `5432`.
+4. In **SSH Tunnel**, use host `192.168.0.11`, SSH username `alexander`, and key `C:\Users\ME\.ssh\id_ed25519`.
+5. Set the PostgreSQL username separately in **Connection**.
+
+Incident record: pgAdmin could not establish the SSH Tunnel when its SSH username was incorrectly set to `postgres`. Changing the SSH Tunnel username to `alexander` made the ED25519-key connection work.
+
+> [!warning]
+> Do not open PostgreSQL port `5432` back to the LAN solely for pgAdmin. Use the SSH Tunnel.
+
+> [!danger]
+> Store credentials in Bitwarden (`HomeLab – Ubuntu Server`, `HomeLab – PostgreSQL postgres`). Never copy passwords or a private key into Obsidian or git.
 
 ## SSH unavailable
 Check VPN bypass route, server IP, UFW, then physical console. Historical Windows route: destination 192.168.0.11/32; gateway 192.168.1.1; Tenda Wi-Fi historical ifIndex 9.
