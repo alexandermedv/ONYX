@@ -1,0 +1,37 @@
+run_id: gpt_BUS_03_v1
+benchmark_id: identity_benchmark_v1
+identity_id: P01
+identity_version: "1.0"
+canonical_references:
+  - ../../01_references/P01_REF01_frontal.png
+  - ../../01_references/P01_REF02_right_3q.png
+  - ../../01_references/P01_REF03_left_3q_smile.png
+scene_id: BUS_03
+scene_pack: business_scene_pack_v1
+provider: openai
+backend: chatgpt_image
+candidate_count: 3
+status: provisional
+strict_provenance_verified: false
+generation_date: 2026-09-08
+
+provenance_notes:
+  - Generated interactively in ChatGPT.
+  - Canonical P01 reference images existed in the conversation context.
+  - Strict proof that only REF01-REF03 were used as generation inputs is unavailable.
+  - Results are retained for exploratory benchmark analysis but must not be treated as strict cross-model benchmark evidence.
+
+scene_snapshot:
+  framing: chest_up
+  body_pose: upright_three_quarter_body_orientation
+  head_pose: three_quarter
+  gaze: near_camera
+  expression: composed_confident
+  wardrobe: tailored_business_suit
+  environment: executive_office
+  lighting: directional_soft_daylight
+  mandatory_constraints:
+    - single_adult_subject
+    - visible_three_quarter_face_geometry
+    - natural_jawline
+    - no_profile_only_pose

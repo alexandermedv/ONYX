@@ -1,0 +1,6 @@
+Evaluation command:
+D:\AI\ComfyUI_Flux\python_embeded\python.exe -
+
+The one-time stdin harness used the already-installed InsightFace buffalo_l CPUExecutionProvider stack and the deterministic image/face-analysis operations from engine.lora_lab.analyzer. It compared C01-C03 independently with REF01-REF03, without using the Identity Master. The numerical output is recorded in evaluation.yaml.
+
+The methodology matches gpt_BUS_01_v1. No dependency was installed and no engine/quality_gate source file was modified.

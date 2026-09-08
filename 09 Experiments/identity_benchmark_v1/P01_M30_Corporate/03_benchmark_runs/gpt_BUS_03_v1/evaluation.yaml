@@ -1,0 +1,83 @@
+run_id: gpt_BUS_03_v1
+identity_qa:
+  tool: InsightFace buffalo_l
+  implementation_basis: existing engine.lora_lab.analyzer logic
+  provider: CPUExecutionProvider
+  references: [REF01, REF02, REF03]
+  identity_master_used: false
+  calibrated_threshold_applied: false
+  threshold_note: No benchmark-calibrated P01 identity threshold exists; scores are machine evidence only.
+
+candidates:
+  - candidate_id: C01
+    identity:
+      ref01: 0.865976
+      ref02: 0.911476
+      ref03: 0.864632
+      mean: 0.880694
+      median: 0.865976
+      min: 0.864632
+      max: 0.911476
+    technical:
+      readable: true
+      width: 1086
+      height: 1448
+      aspect_ratio: 0.75
+      face_detected: true
+      face_count: 1
+      face_area_ratio: 0.112802
+      sharpness_laplacian_variance: 128.02921
+      exposure_mean: 109.58253
+      perceptual_hash: b93998bdb6aeadb6
+      exact_duplicate_of: null
+    decision:
+      status: REVIEW
+      reason: pending_human_review
+  - candidate_id: C02
+    identity:
+      ref01: 0.83456
+      ref02: 0.886752
+      ref03: 0.838936
+      mean: 0.853416
+      median: 0.838936
+      min: 0.83456
+      max: 0.886752
+    technical:
+      readable: true
+      width: 1086
+      height: 1448
+      aspect_ratio: 0.75
+      face_detected: true
+      face_count: 1
+      face_area_ratio: 0.110879
+      sharpness_laplacian_variance: 80.05371
+      exposure_mean: 109.355612
+      perceptual_hash: b9bb1ebdb6bebcbe
+      exact_duplicate_of: null
+    decision:
+      status: REVIEW
+      reason: pending_human_review
+  - candidate_id: C03
+    identity:
+      ref01: 0.818361
+      ref02: 0.874315
+      ref03: 0.836472
+      mean: 0.843049
+      median: 0.836472
+      min: 0.818361
+      max: 0.874315
+    technical:
+      readable: true
+      width: 1086
+      height: 1448
+      aspect_ratio: 0.75
+      face_detected: true
+      face_count: 1
+      face_area_ratio: 0.109038
+      sharpness_laplacian_variance: 100.979819
+      exposure_mean: 114.650669
+      perceptual_hash: b3ba94b8362e3cf2
+      exact_duplicate_of: null
+    decision:
+      status: REVIEW
+      reason: pending_human_review

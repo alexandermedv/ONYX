@@ -1,0 +1,21 @@
+comparison_basis: candidate_identity_mean
+notes:
+  - Descriptive comparison only; two scenes and provisional provenance do not establish backend superiority.
+  - Values are read from the committed BUS_01 evaluation artifact and this run evaluation.
+
+BUS_01:
+  candidate_count: 3
+  identity_mean_across_candidates: 0.875246
+  identity_min_candidate: 0.867965
+  identity_max_candidate: 0.885309
+  identity_range: 0.017344
+
+BUS_03:
+  candidate_count: 3
+  identity_mean_across_candidates: 0.859053
+  identity_min_candidate: 0.843049
+  identity_max_candidate: 0.880694
+  identity_range: 0.037645
+
+delta:
+  mean_identity: -0.016193
