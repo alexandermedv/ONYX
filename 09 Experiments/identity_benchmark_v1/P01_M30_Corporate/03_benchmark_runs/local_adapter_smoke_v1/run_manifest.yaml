@@ -1,0 +1,77 @@
+run_id: local_adapter_smoke_v1
+benchmark_id: identity_benchmark_v1
+identity_id: P01
+identity_version: "1.0"
+scene_id: BUS_01
+run_type: local_pulid_flux_smoke
+status: interrupted_before_sampling
+strict_reference_provenance_verified: true
+strict_benchmark_evidence: false
+
+workflow:
+  source_path: ../../../../workflows/ONYX_P01_PuLID_FLUX_v0.1_api.json
+  source_sha256: 29542e811a0e61cfe14121d47dbf47391e69f11ba21d3903c97694279826d5fa
+  upstream_template_path: ../../../../../../comfyui-workflows/ONYX_PuLID_FLUX_v0.1_api.json
+  upstream_template_sha256: 1768760d13336b4f1fc6baecb29dc336955699a60ff33fbccd60aff2306e5d55
+
+references:
+  identity_master_used: false
+  injection: native_multi_reference_batch
+  workflow_nodes: {load_ref01: 67, load_ref02: 68, load_ref03: 54, batch: 66, apply_pulid: 62}
+  canonical:
+    - {id: REF01, path: ../../01_references/P01_REF01_frontal.png, sha256: 3c9d08bdc2ab581a1e1e928337b09bf5f21e4a3eea4a4d4e7d793a7d3bc8a1b0}
+    - {id: REF02, path: ../../01_references/P01_REF02_right_3q.png, sha256: cf2bcba506c5a2b83ca1e9f497a6116431dff8b9d5cee8a3f0eaec9a79404323}
+    - {id: REF03, path: ../../01_references/P01_REF03_left_3q_smile.png, sha256: 058ea909e7b26589b59f2ce6a4361c78f1dbc6f67c2ad31132715914b179669b}
+  runtime_staging_directory: D:\AI\ComfyUI_Flux\ComfyUI\input\onyx_benchmark_p01_v1
+  staging_verified_byte_identical: true
+
+models:
+  diffusion_model: flux1-dev.safetensors
+  text_encoders: [t5xxl_fp8_e4m3fn.safetensors, clip_l.safetensors]
+  vae: ae.safetensors
+  pulid_adapter: pulid_flux_v0.9.1.safetensors
+  eva_clip: EVA02_CLIP_L_336_psz14_s6B.pt
+  face_analysis: InsightFace antelopev2
+
+parameters:
+  prompt: "professional editorial corporate portrait of one adult man, head and shoulders, seated or standing upright, frontal face, looking at camera, calm confident expression, dark business jacket with neutral shirt, neutral modern office background, soft even daylight, unobstructed face, natural skin texture, professional photography, photorealistic"
+  seed: 748412438238144
+  width: 768
+  height: 1024
+  batch_size: 1
+  sampler: euler
+  scheduler: simple
+  steps: 20
+  denoise: 1.0
+  flux_guidance: 3.5
+  pulid_weight: 0.9
+  pulid_start_at: 0.0
+  pulid_end_at: 1.0
+  output_prefix: ONYX_Benchmark/P01/local_adapter_smoke_v1/P01_BUS_01_PULID_SMOKE
+
+runtime:
+  comfyui_pid: 37512
+  endpoint: http://127.0.0.1:8188
+  argv: "D:\\AI\\ComfyUI_Flux\\python_embeded\\python.exe -s ComfyUI\\main.py --windows-standalone-build --disable-async-offload --disable-pinned-memory"
+  dynamic_vram: enabled
+  prompt_id: a834a013-991a-4404-8178-4bf81902447b
+
+result:
+  output_created: false
+  output_path: null
+  output_sha256: null
+  face_count: null
+  identity_scores: null
+  server_status: error
+  server_event: execution_interrupted
+  interrupted_node: "48: SamplerCustomAdvanced"
+  elapsed_seconds: 569.91
+  failure_reason: "FLUX remained at Model Initializing before the first sampler step; the single permitted smoke was interrupted without retry."
+  machine_decision: NOT_EVALUABLE
+  human_review_required: false
+
+notes:
+  - No candidate PNG was generated or modified.
+  - The initial junction-based input attempt failed ComfyUI validation before execution; it was not a generation attempt.
+  - ComfyUI performed a Hugging Face HEAD cache-validation request for EVA-CLIP, but no model download was observed.
+  - This result must not be used as local-adapter benchmark evidence.
