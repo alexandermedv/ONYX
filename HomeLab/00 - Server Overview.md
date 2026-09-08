@@ -8,6 +8,7 @@
 - [[05 - Runbook]]
 - [[06 - SSD Migration Plan]]
 - [[07 - Change Log]]
+- [[08 - ONYX Storage Layout]]
 
 ## Current server
 - Hostname: alexander-server

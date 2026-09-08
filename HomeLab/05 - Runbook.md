@@ -1,6 +1,6 @@
 # HomeLab — Runbook
 
-Related: [[02 - Services]] · [[03 - Network and Security]] · [[04 - Backup and Recovery]]
+Related: [[02 - Services]] · [[03 - Network and Security]] · [[04 - Backup and Recovery]] · [[08 - ONYX Storage Layout]]
 
 ## After reboot
 Run: lsblk; findmnt /mnt/data; df -hT; docker ps; systemctl --failed.
@@ -25,6 +25,47 @@ cat /home/alexander/services/minio/users/alexander.env
 
 > [!danger]
 > Never copy credential-file contents into Obsidian, chat logs, or git.
+
+## Create an ONYX client prefix
+1. Allocate the next immutable client ID in the form `CL-YYYY-NNNN`; do not use a client name as the storage identifier.
+2. Create `onyx/clients/<CLIENT_ID>/metadata.json` from the minimal schema in [[08 - ONYX Storage Layout]].
+3. Create the defined client-stage prefixes as the pipeline first writes to them. If empty-prefix visibility is required, create a minimal `.keep` object through the approved S3 client.
+4. Write final client files only to `onyx/clients/<CLIENT_ID>/06_delivery/`, named `ONYX_<CLIENT_ID>_<SERIES>_<NN>.jpg`.
+5. Do not copy `00_intake`, `01_references`, `02_raw`, `03_work`, `04_qa`, or `05_selected` to Yandex Disk.
+
+### Check ONYX MinIO policy
+The user `alexander` must have `onyx-bucket-rw` in addition to the pre-existing `alexander-bucket-rw`. The policy allows list/read/write/delete and multipart-compatible object operations only in the `onyx` bucket; it does not allow MinIO administration.
+
+### ONYX delivery to Yandex Disk
+Before copying, confirm the client ID, that only `06_delivery/` is selected, and that neither test nor real source data is missing:
+
+```bash
+rclone lsf minio-onyx:onyx/clients/<CLIENT_ID>/06_delivery/
+```
+
+Copy a finished delivery prefix with:
+
+```bash
+rclone copy \
+  minio-onyx:onyx/clients/<CLIENT_ID>/06_delivery/ \
+  yandex-onyx:ONYX/Clients/<CLIENT_ID>/ \
+  --progress
+```
+
+Verify the result without changing either side:
+
+```bash
+rclone check \
+  minio-onyx:onyx/clients/<CLIENT_ID>/06_delivery/ \
+  yandex-onyx:ONYX/Clients/<CLIENT_ID>/ \
+  --size-only
+```
+
+Use `rclone copy` as the standard safe delivery command: it does not delete destination-only files. Do **not** run `rclone sync` automatically; it can delete destination files that are absent from MinIO.
+
+The configured remotes are `minio-onyx` and `yandex-onyx`; their credentials remain only in `/home/alexander/.config/rclone/rclone.conf` (mode 600), never in this vault or git. On this rclone version, `minio-onyx` is configured with `no_check_bucket=true` because the older client otherwise performs an unnecessary bucket check against the already-existing private bucket.
+
+If an upload returns `AccessDenied`, do not expand MinIO policy or use root credentials first. Confirm that the command uses `minio-onyx`, the destination starts with `onyx/`, and the remote retains `no_check_bucket=true`.
 
 > [!danger]
 > Do not start or restart MinIO, PostgreSQL, or ClickHouse when /mnt/data is missing. Docker could create empty root-filesystem paths instead of using persistent data.

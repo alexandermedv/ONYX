@@ -1,6 +1,6 @@
 # HomeLab — Services
 
-Related: [[03 - Network and Security]] · [[04 - Backup and Recovery]] · [[05 - Runbook]]
+Related: [[03 - Network and Security]] · [[04 - Backup and Recovery]] · [[05 - Runbook]] · [[08 - ONYX Storage Layout]]
 
 ## MinIO
 - Container minio; image minio/minio:RELEASE.2025-09-07T16-13-09Z.
@@ -18,6 +18,16 @@ Related: [[03 - Network and Security]] · [[04 - Backup and Recovery]] · [[05 -
 
 > [!danger]
 > Do not store plaintext passwords or secret keys in Obsidian. This vault records credential-file paths only. Use root credentials only for MinIO administration.
+
+### ONYX internal storage
+- Private bucket: `onyx`; it is the internal source of truth for ONYX application artifacts and client delivery material.
+- Logical layout and client conventions: [[08 - ONYX Storage Layout]].
+- User `alexander` has additional policy `onyx-bucket-rw`, scoped only to the `onyx` bucket; it has no MinIO administrative rights.
+- Delivery source path: `onyx/clients/<CLIENT_ID>/06_delivery/`.
+- Delivery remote: `rclone` at `/usr/bin/rclone`, Ubuntu package `1.53.3-4ubuntu1.22.04.5` (reports `rclone v1.53.3-DEV`).
+- rclone config: `/home/alexander/.config/rclone/rclone.conf`, mode 600; remotes `minio-onyx` and `yandex-onyx`. The MinIO remote uses `http://127.0.0.1:9000` and ordinary user credentials only.
+- Delivery boundary: copy only `onyx/clients/<CLIENT_ID>/06_delivery/` to `yandex-onyx:ONYX/Clients/<CLIENT_ID>/`; never export raw/work/QA material.
+- A synthetic `CL-2026-TEST` transfer, repeat copy, and size check passed; test objects were removed from both sides.
 
 ## ClickHouse
 - yandex/clickhouse-server, version 22.1.3.7; data /mnt/data/clickhouse.
