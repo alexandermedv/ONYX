@@ -1,0 +1,24 @@
+run_id: gpt_BUS_09_v1
+identity_qa:
+  tool: InsightFace buffalo_l
+  implementation_basis: existing engine.lora_lab.analyzer logic
+  provider: CPUExecutionProvider
+  references: [REF01, REF02, REF03]
+  identity_master_used: false
+  calibrated_threshold_applied: false
+  threshold_note: No benchmark-calibrated P01 identity threshold exists; score is machine evidence only.
+candidates:
+  - candidate_id: C01
+    identity: {ref01: 0.736101, ref02: 0.780314, ref03: 0.763927, mean: 0.760114, median: 0.763927, min: 0.736101, max: 0.780314}
+    technical:
+      readable: true
+      width: 1086
+      height: 1448
+      face_detected: true
+      face_count: 1
+      face_bbox: [524.122437, 109.527824, 643.399048, 253.067169]
+      face_bbox_width: 119.276611
+      face_bbox_height: 143.539337
+      face_area_ratio: 0.010887
+      exact_duplicate_of: null
+    decision: {status: REVIEW, reason: pending_human_review}

@@ -1,0 +1,21 @@
+comparison_basis: candidate_identity_mean
+notes:
+  - BUS_09 is incomplete with n=1; comparisons are non-equivalent exploratory observations.
+  - No reliability rate or completed-scene KPI is calculated from this run.
+BUS_01: {complete: true, n: 3, identity_mean_across_candidates: 0.875246}
+BUS_03: {complete: true, n: 3, identity_mean_across_candidates: 0.859053}
+BUS_05: {complete: true, n: 3, identity_mean_across_candidates: 0.812501}
+BUS_09:
+  complete: false
+  n: 1
+  C01_identity_mean: 0.760114
+  scene_candidate_mean: 0.760114
+  scene_candidate_mean_interpretation: partial_n1
+deltas_non_equivalent:
+  BUS_09_C01_minus_BUS_01_mean: -0.115132
+  BUS_09_C01_minus_BUS_03_mean: -0.098939
+  BUS_09_C01_minus_BUS_05_mean: -0.052387
+descriptive_exploratory_only:
+  candidate_count: 10
+  composition: 9_completed_scene_candidates_plus_1_incomplete_scene_candidate
+  identity_mean_across_candidates: 0.840052

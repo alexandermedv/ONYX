@@ -31,3 +31,4 @@ See `benchmark_spec.yaml` for the comparison schema and `business_scene_pack_v1.
 - [P01 GPT BUS_01 v1](P01_M30_Corporate/03_benchmark_runs/gpt_BUS_01_v1/README.md) — provisional exploratory run; strict provenance is not verified.
 - [P01 GPT BUS_03 v1](P01_M30_Corporate/03_benchmark_runs/gpt_BUS_03_v1/README.md) — provisional exploratory run; strict provenance is not verified.
 - [P01 GPT BUS_05 v1](P01_M30_Corporate/03_benchmark_runs/gpt_BUS_05_v1/README.md) — provisional exploratory run; strict provenance is not verified.
+- [P01 GPT BUS_09 v1](P01_M30_Corporate/03_benchmark_runs/gpt_BUS_09_v1/README.md) — **INCOMPLETE — 1/3 candidates**; exploratory partial identity observation only.

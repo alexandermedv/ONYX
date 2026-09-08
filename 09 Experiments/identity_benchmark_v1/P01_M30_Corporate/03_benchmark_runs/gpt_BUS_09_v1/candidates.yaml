@@ -1,0 +1,17 @@
+run_id: gpt_BUS_09_v1
+scene_id: BUS_09
+provider: openai
+backend: chatgpt_image
+candidates:
+  - candidate_id: C01
+    filename: P01_BUS_09_GPT_C01.png
+    sha256: 8cb9a843788257fb1fdef165da9db74ff96677cc889a8f9170af14e922691c04
+    file_size_bytes: 1822629
+    width: 1086
+    height: 1448
+    run_id: gpt_BUS_09_v1
+    scene_id: BUS_09
+    provider: openai
+    backend: chatgpt_image
+    generation_id: null
+    status: unevaluated
