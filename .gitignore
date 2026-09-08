@@ -119,3 +119,7 @@ engine/quality_gate/runs/
 # Local generated pilot and benchmark artifacts
 09 Experiments/alexander_lora_dataset_size_v1/manual_benchmark/
 09 Experiments/production_pilot_v0_1/runs/
+
+# Local pre-canonical identity benchmark artifacts
+09 Experiments/identity_benchmark_v1/P01_M30_Corporate/00_master/P01_identity_master_board_v1.png
+09 Experiments/identity_benchmark_v1/P01_M30_Corporate/02_source_generations/

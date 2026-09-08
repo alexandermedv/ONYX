@@ -1,0 +1,139 @@
+scene_pack_id: business_scene_pack_v1
+version: "1.0"
+status: canonical_specification
+model_neutral: true
+
+initial_benchmark_subset:
+  scene_ids: [BUS_01, BUS_03, BUS_05, BUS_09, BUS_10]
+  rationale: baseline face identity, three-quarter identity, seated pose with hands, full-body fidelity, and premium photorealism.
+
+scenes:
+  - scene_id: BUS_01
+    name: Classic Business Headshot
+    framing: head_and_shoulders
+    body_pose: seated_or_standing_upright
+    head_pose: frontal
+    gaze: camera
+    expression: calm_confident
+    wardrobe: dark_business_jacket_with_neutral_shirt
+    environment: neutral_modern_office_background
+    lighting: soft_even_daylight
+    difficulty: low
+    mandatory_constraints: [single_adult_subject, unobstructed_face, natural_skin_texture, no_visible_hand_requirement]
+
+  - scene_id: BUS_02
+    name: Friendly Headshot
+    framing: head_and_shoulders
+    body_pose: upright_relaxed
+    head_pose: frontal_or_slight_turn
+    gaze: camera
+    expression: friendly_restrained_smile
+    wardrobe: business_casual_blazer_and_open_collar_shirt
+    environment: bright_professional_workspace
+    lighting: soft_window_light
+    difficulty: low
+    mandatory_constraints: [single_adult_subject, unobstructed_face, natural_expression, no_excessive_beautification]
+
+  - scene_id: BUS_03
+    name: Executive 3/4
+    framing: chest_up
+    body_pose: upright_three_quarter_body_orientation
+    head_pose: three_quarter
+    gaze: near_camera
+    expression: composed_confident
+    wardrobe: tailored_business_suit
+    environment: executive_office
+    lighting: directional_soft_daylight
+    difficulty: medium
+    mandatory_constraints: [single_adult_subject, visible_three_quarter_face_geometry, natural_jawline, no_profile_only_pose]
+
+  - scene_id: BUS_04
+    name: By the Window
+    framing: waist_up
+    body_pose: relaxed_standing
+    head_pose: slight_three_quarter
+    gaze: camera_or_natural_off_camera
+    expression: thoughtful_confident
+    wardrobe: dark_business_suit
+    environment: modern_office_window_with_subtle_city_context
+    lighting: natural_side_window_light
+    difficulty: medium
+    mandatory_constraints: [single_adult_subject, face_readable_despite_side_light, realistic_window_exposure]
+
+  - scene_id: BUS_05
+    name: Meeting Room
+    framing: medium_portrait
+    body_pose: seated_at_conference_table
+    head_pose: three_quarter
+    gaze: camera
+    expression: approachable_professional
+    wardrobe: tailored_suit
+    environment: contemporary_meeting_room
+    lighting: balanced_soft_office_light
+    difficulty: high
+    mandatory_constraints: [single_adult_subject, table_context, hands_if_visible_are_anatomically_natural, face_is_primary_subject]
+
+  - scene_id: BUS_06
+    name: At the Desk
+    framing: medium_three_quarter
+    body_pose: seated_at_work_desk
+    head_pose: slight_turn
+    gaze: camera
+    expression: focused_relaxed
+    wardrobe: navy_or_charcoal_business_suit
+    environment: functional_executive_office
+    lighting: soft_daylight
+    difficulty: high
+    mandatory_constraints: [single_adult_subject, desk_context, any_visible_hands_are_natural, no_unreadable_ui_text_requirement]
+
+  - scene_id: BUS_07
+    name: Standing in Office
+    framing: three_quarter_length
+    body_pose: standing_balanced_with_relaxed_arms
+    head_pose: frontal_or_slight_three_quarter
+    gaze: camera
+    expression: confident_neutral
+    wardrobe: tailored_business_suit
+    environment: executive_office_with_wood_and_glass
+    lighting: professional_editorial_daylight
+    difficulty: medium
+    mandatory_constraints: [single_adult_subject, plausible_body_proportions, natural_arm_and_hand_anatomy]
+
+  - scene_id: BUS_08
+    name: Relaxed Business
+    framing: waist_up
+    body_pose: relaxed_upright
+    head_pose: slight_three_quarter
+    gaze: camera
+    expression: approachable_confident
+    wardrobe: textured_blazer_and_open_collar_shirt
+    environment: contemporary_workspace
+    lighting: natural_window_light
+    difficulty: medium
+    mandatory_constraints: [single_adult_subject, business_casual_not_leisurewear, preserve_identity_and_apparent_age]
+
+  - scene_id: BUS_09
+    name: Full Body
+    framing: full_length
+    body_pose: standing_with_balanced_weight_and_both_hands_visible
+    head_pose: frontal_or_slight_turn
+    gaze: camera
+    expression: calm_confident
+    wardrobe: complete_tailored_business_suit
+    environment: executive_office_corridor_or_lobby
+    lighting: even_commercial_daylight
+    difficulty: high
+    mandatory_constraints: [single_adult_subject, full_body_in_frame, realistic_height_and_body_shape, anatomically_correct_visible_hands]
+
+  - scene_id: BUS_10
+    name: Premium Hero Portrait
+    framing: medium_close_portrait
+    body_pose: upright_composed
+    head_pose: slight_three_quarter
+    gaze: camera
+    expression: premium_confident_restrained
+    wardrobe: classic_dark_suit_and_white_shirt
+    environment: premium_neutral_corporate_interior
+    lighting: polished_but_natural_editorial_light
+    difficulty: high
+    mandatory_constraints: [single_adult_subject, high_photorealism, natural_skin_texture, no_generic_model_face, delivery_grade_composition]

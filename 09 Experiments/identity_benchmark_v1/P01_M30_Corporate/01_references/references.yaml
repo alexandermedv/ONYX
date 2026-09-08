@@ -1,0 +1,30 @@
+identity_id: P01
+version: "1.0"
+
+references:
+  - id: REF01
+    file: P01_REF01_frontal.png
+    sha256: 3c9d08bdc2ab581a1e1e928337b09bf5f21e4a3eea4a4d4e7d793a7d3bc8a1b0
+    pose: frontal
+    expression: neutral_slight_smile
+    generation_input: true
+
+  - id: REF02
+    file: P01_REF02_right_3q.png
+    sha256: cf2bcba506c5a2b83ca1e9f497a6116431dff8b9d5cee8a3f0eaec9a79404323
+    pose: right_3q
+    expression: neutral
+    generation_input: true
+
+  - id: REF03
+    file: P01_REF03_left_3q_smile.png
+    sha256: 058ea909e7b26589b59f2ce6a4361c78f1dbc6f67c2ad31132715914b179669b
+    pose: left_3q
+    expression: slight_smile
+    generation_input: true
+
+rules:
+  - use_all_three_references_for_identity_benchmark
+  - do_not_use_identity_master_as_generation_input
+  - do_not_replace_references_between_model_comparisons
+  - reference_set_change_requires_new_benchmark_identity_version

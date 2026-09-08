@@ -1,0 +1,38 @@
+benchmark_id: identity_benchmark_v1
+version: "1.0"
+status: active
+primary_identity: P01
+canonical_reference_count: 3
+
+comparison_dimensions:
+  - identity_fidelity
+  - appearance_fidelity
+  - beautification_drift
+  - photorealism
+  - technical_quality
+  - scene_compliance
+  - naturalness
+  - hands_where_applicable
+  - delivery_eligibility
+
+candidate_statuses:
+  - PASS
+  - REPAIR
+  - REGENERATE
+  - REJECT
+
+metrics:
+  - generated_candidates
+  - first_pass_yield
+  - delivery_yield
+  - repair_rate
+  - cloud_cost
+  - local_gpu_time
+  - operator_time
+  - cost_per_delivery_image
+
+provenance_rules:
+  - use_canonical_reference_set_for_all_comparisons
+  - do_not_use_identity_master_as_generation_input
+  - preserve_asset_sha256_in_result_manifests
+  - do_not_modify_frozen_identity_assets_in_place
