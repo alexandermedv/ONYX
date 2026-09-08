@@ -1,0 +1,16 @@
+comparison_basis: candidate_identity_mean
+notes:
+  - Descriptive exploratory comparison only; nine candidates across three scenes with provisional provenance do not establish backend superiority.
+BUS_01: {candidate_count: 3, identity_mean_across_candidates: 0.875246, identity_min_candidate: 0.867965, identity_max_candidate: 0.885309, identity_range: 0.017344}
+BUS_03: {candidate_count: 3, identity_mean_across_candidates: 0.859053, identity_min_candidate: 0.843049, identity_max_candidate: 0.880694, identity_range: 0.037645}
+BUS_05: {candidate_count: 3, identity_mean_across_candidates: 0.812501, identity_min_candidate: 0.797974, identity_max_candidate: 0.839156, identity_range: 0.041182}
+deltas:
+  BUS_03_minus_BUS_01_mean_identity: -0.016193
+  BUS_05_minus_BUS_01_mean_identity: -0.062745
+  BUS_05_minus_BUS_03_mean_identity: -0.046552
+overall_exploratory:
+  candidate_count: 9
+  identity_mean_across_candidates: 0.848933
+  global_min_candidate: {scene_id: BUS_05, candidate_id: C03, identity_mean: 0.797974}
+  global_max_candidate: {scene_id: BUS_01, candidate_id: C01, identity_mean: 0.885309}
+  overall_candidate_range: 0.087335
