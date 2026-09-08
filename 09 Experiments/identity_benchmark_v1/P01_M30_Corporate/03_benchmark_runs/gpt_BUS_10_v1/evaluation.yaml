@@ -1,0 +1,64 @@
+run_id: gpt_BUS_10_v1
+identity_qa:
+  tool: InsightFace buffalo_l
+  implementation_basis: existing engine.lora_lab.analyzer logic
+  provider: CPUExecutionProvider
+  references: [REF01, REF02, REF03]
+  identity_master_used: false
+  calibrated_threshold_applied: false
+  threshold_note: No benchmark-calibrated P01 identity threshold exists; scores are machine evidence only.
+candidates:
+  - candidate_id: C01
+    identity: {ref01: 0.507581, ref02: 0.505553, ref03: 0.494168, mean: 0.502434, median: 0.505553, min: 0.494168, max: 0.507581}
+    technical:
+      readable: true
+      width: 1145
+      height: 1374
+      aspect_ratio: 0.833333
+      face_detected: true
+      face_count: 1
+      face_bbox: [317.900085, 177.052643, 563.379639, 498.526581]
+      face_bbox_width: 245.479553
+      face_bbox_height: 321.473938
+      face_area_ratio: 0.050161
+      sharpness_laplacian_variance: 149.624646
+      exposure_mean: 94.78623
+      perceptual_hash: 28cc9c9ac6151d18
+      exact_duplicate_of: null
+    decision: {status: REVIEW, reason: pending_human_review}
+  - candidate_id: C02
+    identity: {ref01: 0.524421, ref02: 0.508787, ref03: 0.513204, mean: 0.515471, median: 0.513204, min: 0.508787, max: 0.524421}
+    technical:
+      readable: true
+      width: 1086
+      height: 1448
+      aspect_ratio: 0.75
+      face_detected: true
+      face_count: 1
+      face_bbox: [326.165131, 265.590851, 544.791626, 554.131714]
+      face_bbox_width: 218.626495
+      face_bbox_height: 288.540863
+      face_area_ratio: 0.040115
+      sharpness_laplacian_variance: 153.81852
+      exposure_mean: 64.414479
+      perceptual_hash: 0da88c9a47262628
+      exact_duplicate_of: null
+    decision: {status: REVIEW, reason: pending_human_review}
+  - candidate_id: C03
+    identity: {ref01: 0.538807, ref02: 0.542349, ref03: 0.547598, mean: 0.542918, median: 0.542349, min: 0.538807, max: 0.547598}
+    technical:
+      readable: true
+      width: 1086
+      height: 1448
+      aspect_ratio: 0.75
+      face_detected: true
+      face_count: 1
+      face_bbox: [341.213409, 170.755615, 545.093933, 442.68219]
+      face_bbox_width: 203.880524
+      face_bbox_height: 271.926575
+      face_area_ratio: 0.035256
+      sharpness_laplacian_variance: 165.282608
+      exposure_mean: 78.19428
+      perceptual_hash: e2f2d8d7cde466ec
+      exact_duplicate_of: null
+    decision: {status: REVIEW, reason: pending_human_review}

@@ -1,0 +1,56 @@
+series_id: GPT_P01_SERIES_V1
+benchmark_id: identity_benchmark_v1
+identity_id: P01
+identity_version: "1.0"
+scope: first_GPT_P01_exploratory_series
+runs:
+  - {run_id: gpt_BUS_01_v1, scene_id: BUS_01, status: provisional, strict_provenance_verified: false, target_candidates: 3, saved_candidates: 3}
+  - {run_id: gpt_BUS_03_v1, scene_id: BUS_03, status: provisional, strict_provenance_verified: false, target_candidates: 3, saved_candidates: 3}
+  - {run_id: gpt_BUS_05_v1, scene_id: BUS_05, status: provisional, strict_provenance_verified: false, target_candidates: 3, saved_candidates: 3}
+  - {run_id: gpt_BUS_09_v1, scene_id: BUS_09, status: incomplete, strict_provenance_verified: false, target_candidates: 3, saved_candidates: 1, missing_candidates: [C02, C03], missing_candidate_interpretation: not_verified_backend_failures}
+  - {run_id: gpt_BUS_10_v1, scene_id: BUS_10, status: provisional, strict_provenance_verified: false, target_candidates: 3, saved_candidates: 3}
+candidate_totals:
+  target_candidates_total: 15
+  actual_saved_candidates_total: 13
+  completed_scene_candidates: 12
+  incomplete_scene_candidates: 1
+  unverified_missing_candidates: 2
+  reliability_rate: null
+  reliability_note: BUS_09 missing C02/C03 are not recorded as verified backend failures; no generation reliability metric is calculated.
+identity_by_scene:
+  BUS_01: {status: provisional, n: 3, mean: 0.875246, min: 0.867965, max: 0.885309, range: 0.017344}
+  BUS_03: {status: provisional, n: 3, mean: 0.859053, min: 0.843049, max: 0.880694, range: 0.037645}
+  BUS_05: {status: provisional, n: 3, mean: 0.812501, min: 0.797974, max: 0.839156, range: 0.041182}
+  BUS_09: {status: incomplete, n: 1, mean: 0.760114, min: null, max: null, range: null, note: one_candidate_only_non_equivalent}
+  BUS_10: {status: provisional, n: 3, mean: 0.520274, min: 0.502434, max: 0.542918, range: 0.040484}
+all_saved_candidates_descriptive:
+  n: 13
+  mean_identity: 0.766257
+  global_min_candidate: {scene_id: BUS_10, candidate_id: C01, identity_mean: 0.502434}
+  global_max_candidate: {scene_id: BUS_01, candidate_id: C01, identity_mean: 0.885309}
+  range: 0.382875
+face_scale_descriptive:
+  interpretation: exploratory_only_no_causal_or_statistical_claim
+  candidate_face_area_ratio_and_identity_mean:
+    - {scene_id: BUS_01, candidate_id: C01, face_area_ratio: 0.211538, identity_mean: 0.885309}
+    - {scene_id: BUS_01, candidate_id: C02, face_area_ratio: 0.154447, identity_mean: 0.867965}
+    - {scene_id: BUS_01, candidate_id: C03, face_area_ratio: 0.160004, identity_mean: 0.872464}
+    - {scene_id: BUS_03, candidate_id: C01, face_area_ratio: 0.112802, identity_mean: 0.880694}
+    - {scene_id: BUS_03, candidate_id: C02, face_area_ratio: 0.110879, identity_mean: 0.853416}
+    - {scene_id: BUS_03, candidate_id: C03, face_area_ratio: 0.109038, identity_mean: 0.843049}
+    - {scene_id: BUS_05, candidate_id: C01, face_area_ratio: 0.074509, identity_mean: 0.839156}
+    - {scene_id: BUS_05, candidate_id: C02, face_area_ratio: 0.066262, identity_mean: 0.800374}
+    - {scene_id: BUS_05, candidate_id: C03, face_area_ratio: 0.061275, identity_mean: 0.797974}
+    - {scene_id: BUS_09, candidate_id: C01, face_area_ratio: 0.010887, identity_mean: 0.760114}
+    - {scene_id: BUS_10, candidate_id: C01, face_area_ratio: 0.050161, identity_mean: 0.502434}
+    - {scene_id: BUS_10, candidate_id: C02, face_area_ratio: 0.040115, identity_mean: 0.515471}
+    - {scene_id: BUS_10, candidate_id: C03, face_area_ratio: 0.035256, identity_mean: 0.542918}
+  pearson_r_face_area_ratio_to_identity_mean: 0.668888
+  correlation_note: Calculated descriptively across 13 heterogeneous candidates; it does not isolate scene complexity, pose, lighting, or generation variability and supports no causal conclusion.
+provenance_interpretation:
+  all_GPT_runs_not_strict_provenance_runs: true
+  provisional_runs: [BUS_01, BUS_03, BUS_05, BUS_10]
+  incomplete_runs: [BUS_09]
+  final_cross_model_evidence: false
+  human_review_pending: true
+  calibrated_P01_identity_threshold_exists: false

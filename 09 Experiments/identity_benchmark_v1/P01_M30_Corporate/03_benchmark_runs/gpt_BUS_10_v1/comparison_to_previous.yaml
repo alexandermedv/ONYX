@@ -1,0 +1,15 @@
+comparison_basis: candidate_identity_mean
+notes:
+  - Descriptive exploratory comparison only; all GPT run provenance is provisional or incomplete and does not establish backend superiority.
+  - BUS_09 has n=1 and is incomplete, so comparisons involving BUS_09 are non-equivalent observations.
+BUS_01: {complete: true, n: 3, identity_mean_across_candidates: 0.875246, identity_min_candidate: 0.867965, identity_max_candidate: 0.885309, identity_range: 0.017344}
+BUS_03: {complete: true, n: 3, identity_mean_across_candidates: 0.859053, identity_min_candidate: 0.843049, identity_max_candidate: 0.880694, identity_range: 0.037645}
+BUS_05: {complete: true, n: 3, identity_mean_across_candidates: 0.812501, identity_min_candidate: 0.797974, identity_max_candidate: 0.839156, identity_range: 0.041182}
+BUS_09: {complete: false, n: 1, C01_identity_mean: 0.760114, interpretation: incomplete_non_equivalent}
+BUS_10: {complete: true, n: 3, identity_mean_across_candidates: 0.520274, identity_min_candidate: 0.502434, identity_max_candidate: 0.542918, identity_range: 0.040484}
+deltas:
+  BUS_10_minus_BUS_01_mean_identity: -0.354972
+  BUS_10_minus_BUS_03_mean_identity: -0.338779
+  BUS_10_minus_BUS_05_mean_identity: -0.292227
+  BUS_10_minus_BUS_09_C01_identity: -0.23984
+  BUS_10_minus_BUS_09_note: BUS_09_n1_incomplete_non_equivalent
