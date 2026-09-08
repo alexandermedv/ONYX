@@ -32,6 +32,8 @@ postprocessing, and delivery runtimes remain outside the canonical shell.
 - [[Pipeline Architecture]]
 - [[JobSpec and Manifest v1]]
 - [[Engineering]]
+- [ONYX Product Vision](ONYX_PRODUCT_VISION.md)
+- [ONYX MVP v0.1 Definition of Done](ONYX_MVP_V0_1.md)
 
 ## Repository structure
 
