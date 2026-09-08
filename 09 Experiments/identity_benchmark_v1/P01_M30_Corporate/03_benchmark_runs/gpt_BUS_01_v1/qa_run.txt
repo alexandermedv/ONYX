@@ -1,0 +1,6 @@
+Evaluation command:
+D:\AI\ComfyUI_Flux\python_embeded\python.exe -
+
+The one-time stdin harness used the already-installed InsightFace buffalo_l CPUExecutionProvider stack and the deterministic image/face-analysis operations from engine.lora_lab.analyzer. It compared C01-C03 independently with REF01-REF03, without using the Identity Master. The numerical output is recorded in evaluation.yaml.
+
+Quality Gate CLI was not used for the final scores because no installed Python environment contains all of its combined dependencies: the default Conda environment lacks cv2/InsightFace/onnxruntime, while the ComfyUI embedded environment lacks pandas. No dependency was installed and engine/quality_gate was not modified.

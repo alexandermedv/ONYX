@@ -25,3 +25,7 @@ P01_M30_Corporate/
 ```
 
 See `benchmark_spec.yaml` for the comparison schema and `business_scene_pack_v1.yaml` for the model-neutral Business Scene Pack.
+
+## Registered runs
+
+- [P01 GPT BUS_01 v1](P01_M30_Corporate/03_benchmark_runs/gpt_BUS_01_v1/README.md) — provisional exploratory run; strict provenance is not verified.

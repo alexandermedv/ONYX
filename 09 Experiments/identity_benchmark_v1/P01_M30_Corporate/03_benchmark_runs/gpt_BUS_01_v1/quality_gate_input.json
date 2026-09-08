@@ -1,0 +1,25 @@
+{
+  "job_id": "P01_gpt_BUS_01_v1",
+  "postprocess": {
+    "runs": [
+      {
+        "status": "completed",
+        "scene_id": "BUS_01",
+        "method": "chatgpt_image",
+        "source": "09 Experiments/identity_benchmark_v1/P01_M30_Corporate/03_benchmark_runs/gpt_BUS_01_v1/P01_BUS_01_GPT_C01.png"
+      },
+      {
+        "status": "completed",
+        "scene_id": "BUS_01",
+        "method": "chatgpt_image",
+        "source": "09 Experiments/identity_benchmark_v1/P01_M30_Corporate/03_benchmark_runs/gpt_BUS_01_v1/P01_BUS_01_GPT_C02.png"
+      },
+      {
+        "status": "completed",
+        "scene_id": "BUS_01",
+        "method": "chatgpt_image",
+        "source": "09 Experiments/identity_benchmark_v1/P01_M30_Corporate/03_benchmark_runs/gpt_BUS_01_v1/P01_BUS_01_GPT_C03.png"
+      }
+    ]
+  }
+}

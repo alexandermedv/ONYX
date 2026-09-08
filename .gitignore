@@ -123,3 +123,6 @@ engine/quality_gate/runs/
 # Local pre-canonical identity benchmark artifacts
 09 Experiments/identity_benchmark_v1/P01_M30_Corporate/00_master/P01_identity_master_board_v1.png
 09 Experiments/identity_benchmark_v1/P01_M30_Corporate/02_source_generations/
+
+# Local generated candidate images for identity benchmark runs
+09 Experiments/identity_benchmark_v1/P01_M30_Corporate/03_benchmark_runs/**/*.png

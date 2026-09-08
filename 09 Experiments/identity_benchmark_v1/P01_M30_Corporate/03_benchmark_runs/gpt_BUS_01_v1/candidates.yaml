@@ -1,0 +1,42 @@
+run_id: gpt_BUS_01_v1
+scene_id: BUS_01
+provider: openai
+backend: chatgpt_image
+
+candidates:
+  - candidate_id: C01
+    filename: P01_BUS_01_GPT_C01.png
+    sha256: 9c82e2ffa838740cb679c2841e2d1b6429b2e4e59e61d5d7bb8464403b1a15fd
+    file_size_bytes: 2058877
+    width: 1086
+    height: 1448
+    run_id: gpt_BUS_01_v1
+    scene_id: BUS_01
+    provider: openai
+    backend: chatgpt_image
+    generation_id: null
+    status: unevaluated
+  - candidate_id: C02
+    filename: P01_BUS_01_GPT_C02.png
+    sha256: e8ebd81755c8e035a966003f9fa99541585dd6f20cd3ebd61b55ae5989da8943
+    file_size_bytes: 1961351
+    width: 1448
+    height: 1086
+    run_id: gpt_BUS_01_v1
+    scene_id: BUS_01
+    provider: openai
+    backend: chatgpt_image
+    generation_id: null
+    status: unevaluated
+  - candidate_id: C03
+    filename: P01_BUS_01_GPT_C03.png
+    sha256: 0b66351a4163d2a1afb4674544d74194ffc361226b3fe782c07f9652b7bb58ea
+    file_size_bytes: 1780003
+    width: 1448
+    height: 1086
+    run_id: gpt_BUS_01_v1
+    scene_id: BUS_01
+    provider: openai
+    backend: chatgpt_image
+    generation_id: null
+    status: unevaluated
