@@ -2,6 +2,8 @@
 
 This is the first GPT/P01 exploratory series: BUS_01, BUS_03, BUS_05, BUS_09 and BUS_10. Every run lacks strict generation provenance, so it is not final cross-model benchmark evidence. Human review is pending and no calibrated P01 identity threshold exists.
 
+The machine series is complete for its currently saved artifacts; human identity calibration is now pending. Among completed scenes, BUS_10 has the lowest machine identity similarity. No delivery-yield conclusion may be made until the human review is complete.
+
 | Scene | Run status | Saved / target | Identity mean | Candidate min–max |
 |---|---|---:|---:|---:|
 | BUS_01 | provisional | 3 / 3 | 0.875246 | 0.867965–0.885309 |

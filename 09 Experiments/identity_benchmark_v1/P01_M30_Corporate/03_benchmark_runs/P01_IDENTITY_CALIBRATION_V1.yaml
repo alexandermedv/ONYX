@@ -1,0 +1,19 @@
+status: pending_human_review
+identity_id: P01
+identity_version: "1.0"
+machine_metric: insightface_buffalo_l_cosine
+candidate_count: 13
+human_review_complete: false
+thresholds:
+  pass: null
+  borderline: null
+  reject: null
+machine_score_distribution_by_human_decision: null
+false_accept_cases: []
+false_reject_cases: []
+scene_effects: null
+face_scale_effects: null
+notes:
+  - Thresholds are deliberately unset pending human review of all 13 saved candidates.
+  - Calibration supports later interpretation only and does not change production policy.
+  - BUS_09 remains incomplete with one saved candidate and is non-equivalent to completed three-candidate scenes.
