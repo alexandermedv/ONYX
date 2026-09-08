@@ -1,0 +1,142 @@
+{
+  "9": {
+    "inputs": {
+      "filename_prefix": "Flux.1_Dev",
+      "images": [
+        "56:53",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "56:47": {
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "56:48": {
+    "inputs": {
+      "unet_name": "flux1-dev.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "56:49": {
+    "inputs": {
+      "clip_name1": "clip_l.safetensors",
+      "clip_name2": "t5xxl_fp8_e4m3fn.safetensors",
+      "type": "flux",
+      "device": "default"
+    },
+    "class_type": "DualCLIPLoader",
+    "_meta": {
+      "title": "Load CLIP (Dual)"
+    }
+  },
+  "56:50": {
+    "inputs": {
+      "width": 896,
+      "height": 1152,
+      "batch_size": 1
+    },
+    "class_type": "EmptySD3LatentImage",
+    "_meta": {
+      "title": "EmptySD3LatentImage"
+    }
+  },
+  "56:53": {
+    "inputs": {
+      "samples": [
+        "56:58",
+        0
+      ],
+      "vae": [
+        "56:47",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "56:54": {
+    "inputs": {
+      "conditioning": [
+        "56:51",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "Conditioning Zero Out"
+    }
+  },
+  "56:51": {
+    "inputs": {
+      "text": "A highly realistic close portrait of alexonyx, a 37-year-old bald man with a completely shaved smooth head, no visible hair on the scalp, blue eyes, and a completely clean-shaven face. Smooth cheeks and jawline, no visible stubble, no beard and no mustache. He looks his real age, healthy and well-rested, with subtle natural facial asymmetry, realistic facial proportions and authentic skin texture.\n\nHe is wearing a dark navy business jacket over a crisp white dress shirt with an open collar and no tie. Only his head, shoulders and upper chest are visible. The clothing has realistic tailoring, natural fabric texture and subtle folds.\n\nHis head and upper body are turned approximately 20 degrees away from the camera in a gentle three-quarter view. Both the frontal plane and a small part of the side plane of his face are visible. He looks directly into the camera with a calm, neutral expression and relaxed lips. No smile.\n\nClose head-and-shoulders portrait with the entire head visible and a small amount of space above it. The face is prominent in the frame but not extremely close to the lens. Eye-level camera position. Natural facial perspective with no wide-angle distortion.\n\nHe is standing beside a large window in a quiet contemporary office. The softly blurred background contains dark wood, neutral architectural surfaces and indistinct interior details.\n\nSoft directional window light creates natural highlights and shadows across the face while retaining detail in both eyes. Realistic healthy skin tone, visible pores, subtle expression lines and natural restrained under-eye detail.\n\nPhotographed on a professional full-frame camera with an 85mm portrait lens at f/3.2 from a natural portrait distance. Realistic optical rendering, sharp focus on the eyes, natural depth of field, authentic photography, restrained retouching, slight photographic grain, subtle lens softness and realistic exposure. No beauty filter, no plastic skin, no glamour, no advertising aesthetic and no exaggerated smile.\n",
+      "clip": [
+        "56:49",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "56:59": {
+    "inputs": {
+      "lora_name": "alexonyx_v1.safetensors",
+      "strength_model": 1,
+      "model": [
+        "56:48",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "56:58": {
+    "inputs": {
+      "seed": 1090798370788838,
+      "steps": 20,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1,
+      "model": [
+        "56:59",
+        0
+      ],
+      "positive": [
+        "56:51",
+        0
+      ],
+      "negative": [
+        "56:54",
+        0
+      ],
+      "latent_image": [
+        "56:50",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  }
+}
