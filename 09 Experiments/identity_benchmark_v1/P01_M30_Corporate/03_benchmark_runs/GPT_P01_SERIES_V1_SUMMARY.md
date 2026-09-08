@@ -17,3 +17,7 @@ There were 15 planned candidates and 13 actually saved: 12 from completed scenes
 Across all 13 saved candidates, the descriptive mean identity similarity is `0.766257`. The observed minimum is BUS_10/C01 (`0.502434`); the maximum is BUS_01/C01 (`0.885309`). These figures do not establish that GPT is better or worse than any other backend, nor that identity decline proves model degradation. Scene complexity, face scale, pose, lighting and interactive generation variability differ.
 
 Face-area ratios are recorded in the companion YAML. Their exploratory Pearson correlation with identity similarity is `0.668888` across heterogeneous samples; this is not a causal or controlled result. BUS_09 has a particularly small detected face and only one candidate, so it is non-equivalent to the completed scenes.
+
+## First human-review outcome
+
+The first P01 human calibration reviewed all 13 saved candidates: `PASS` 9, `REPAIR` 1, `REGENERATE` 3 and `REJECT` 0; `PASS + REPAIR` is 10/13. BUS_09/C01 remains an incomplete-run (`n=1`) PASS and is a face-scale exception: lower machine similarity did not prevent acceptable human identity review. BUS_10 has the lowest machine similarity among completed scenes, and all three candidates were human identity failures marked `REGENERATE` despite high photorealism. These are exploratory observations only; official thresholds remain unset and no statistically established delivery-yield conclusion is made.

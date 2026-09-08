@@ -1,19 +1,57 @@
-status: pending_human_review
+status: exploratory_calibrated
 identity_id: P01
 identity_version: "1.0"
 machine_metric: insightface_buffalo_l_cosine
 candidate_count: 13
-human_review_complete: false
+human_review_complete: true
 thresholds:
   pass: null
   borderline: null
   reject: null
-machine_score_distribution_by_human_decision: null
+human_decision_counts: {PASS: 9, REPAIR: 1, REGENERATE: 3, REJECT: 0}
+human_decision_rates: {PASS: 0.692308, REPAIR: 0.076923, REGENERATE: 0.230769, REJECT: 0.0}
+usable_after_repair: {count: 10, rate: 0.769231, definition: PASS_plus_REPAIR}
+per_scene_human_outcomes:
+  BUS_01: {n: 3, PASS: 3, REPAIR: 0, REGENERATE: 0, REJECT: 0, usable_after_repair: 3}
+  BUS_03: {n: 3, PASS: 3, REPAIR: 0, REGENERATE: 0, REJECT: 0, usable_after_repair: 3}
+  BUS_05: {n: 3, PASS: 2, REPAIR: 1, REGENERATE: 0, REJECT: 0, usable_after_repair: 3}
+  BUS_09: {n: 1, run_status: incomplete, PASS: 1, REPAIR: 0, REGENERATE: 0, REJECT: 0, usable_after_repair: 1, note: n1_non_equivalent}
+  BUS_10: {n: 3, PASS: 0, REPAIR: 0, REGENERATE: 3, REJECT: 0, usable_after_repair: 0}
+machine_score_distribution_by_human_decision:
+  PASS: {n: 9, mean: 0.844727, median: 0.853416, min: 0.760114, max: 0.885309}
+  REPAIR: {n: 1, mean: 0.797974, median: 0.797974, min: 0.797974, max: 0.797974}
+  REGENERATE: {n: 3, mean: 0.520274, median: 0.515471, min: 0.502434, max: 0.542918}
+  REJECT: {n: 0, mean: null, median: null, min: null, max: null}
+machine_score_distribution_by_human_identity:
+  "5": {n: 4, mean: 0.876608, median: 0.876579, min: 0.867965, max: 0.885309}
+  "4": {n: 5, mean: 0.819222, median: 0.839156, min: 0.760114, max: 0.853416}
+  "3": {n: 1, mean: 0.797974, median: 0.797974, min: 0.797974, max: 0.797974}
+  "2": {n: 3, mean: 0.520274, median: 0.515471, min: 0.502434, max: 0.542918}
+observed_regions:
+  strong_identity_examples: {human_identity: 5, n: 4, observed_machine_range: [0.867965, 0.885309]}
+  acceptable_with_visible_drift_examples: {human_identity: 4, n: 5, observed_machine_range: [0.760114, 0.853416], note: includes_BUS_09_face_scale_exception}
+  borderline_identity_example: {human_identity: 3, n: 1, observed_machine_range: [0.797974, 0.797974], decision: REPAIR}
+  identity_failure_examples: {human_identity: 2, n: 3, observed_machine_range: [0.502434, 0.542918], decisions: [REGENERATE]}
 false_accept_cases: []
 false_reject_cases: []
-scene_effects: null
-face_scale_effects: null
+false_case_note: No official threshold exists, so false-accept and false-reject categories are not assigned. BUS_09 is recorded as an important scale-confounded PASS example.
+scene_effects:
+  note: Completed scenes show lower machine means as scene/composition changes, but this one-identity exploratory series cannot isolate scene complexity from prompt or interactive generation variation.
+  BUS_09: incomplete_n1_non_equivalent
+  BUS_10: lowest_machine_mean_among_completed_scenes_and_all_three_human_identity_failures
+face_scale_effects:
+  BUS_09_C01: {machine_identity_mean: 0.760114, face_area_ratio: 0.010887, human_identity: 4, decision: PASS}
+  BUS_10: {machine_identity_range: [0.502434, 0.542918], face_area_ratio_range: [0.035256, 0.050161], human_identity: 2, decisions: [REGENERATE]}
+  pearson_r_face_area_ratio_to_machine_identity: 0.668888
+  interpretation: Descriptive across 13 heterogeneous candidates only; face scale may confound comparisons, but the data do not establish causality or show that face size alone explains BUS_09.
+limitations:
+  - One synthetic identity P01 only.
+  - Thirteen saved candidates only.
+  - BUS_09 is incomplete with n=1 and is non-equivalent to completed three-candidate scenes.
+  - GPT generation provenance is non-strict.
+  - Human scores were supplied for selected dimensions only; unspecified dimensions remain blank.
+  - No production threshold or statistically established delivery yield follows from this calibration.
 notes:
-  - Thresholds are deliberately unset pending human review of all 13 saved candidates.
+  - Official thresholds remain deliberately unset after this exploratory calibration.
   - Calibration supports later interpretation only and does not change production policy.
   - BUS_09 remains incomplete with one saved candidate and is non-equivalent to completed three-candidate scenes.
