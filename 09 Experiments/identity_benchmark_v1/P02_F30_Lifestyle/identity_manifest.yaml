@@ -1,0 +1,103 @@
+character_id: "P02_F30_Lifestyle"
+identity_id: "P02"
+identity_version: 1
+status: "frozen"
+synthetic_identity: true
+schema_version: 1
+path_base: "character_directory"
+hash_algorithm: "SHA256"
+assets:
+  MASTER:
+    file: "00_master/P02_identity_master_v1.png"
+    role: "Primary canonical identity anchor."
+    canonical: true
+    exists: true
+    asset_status: "present"
+    sha256: "d4a8ff4ec08feafb2af49eca6d75ca7df1843bcf772deb5afae1e070a6e50299"
+    width: 1086
+    height: 1448
+    file_size_bytes: 2136810
+  REF01:
+    file: "01_references/P02_REF01.png"
+    role: "Frontal phone-style portrait, face-focused, no hand on face."
+    canonical: true
+    exists: true
+    asset_status: "present"
+    sha256: "26501512d969490150c37ed9ff16bc6ea834fb3ba39132bb65ec695944d1646e"
+    width: 1086
+    height: 1448
+    file_size_bytes: 1929975
+  REF02:
+    file: "01_references/P02_REF02.png"
+    role: "3/4 facial reference with different head angle."
+    canonical: true
+    exists: true
+    asset_status: "present"
+    sha256: "1011d5d37ee4e805d0e5f0707ca0ed88d9b1ab4b0b2705d294680b36d359ac25"
+    width: 1086
+    height: 1448
+    file_size_bytes: 1838687
+  REF03:
+    file: "01_references/P02_REF03.png"
+    role: "Lighter clothing, more distant framing, primary body-proportion reference."
+    canonical: true
+    exists: true
+    asset_status: "present"
+    sha256: "23fb0883218085354fe2de85d92d2641916501ac41e754735892babb10a004c2"
+    width: 1086
+    height: 1448
+    file_size_bytes: 1887655
+  REF04:
+    file: "01_references/P02_REF04.png"
+    role: "Dark outfit, more distant lifestyle/body reference."
+    canonical: true
+    exists: true
+    asset_status: "present"
+    sha256: "e8241c2f3c41e44dfd4deac5e1fec8ee245903a954e1a773c5bfd1e0c427a4b7"
+    width: 1086
+    height: 1448
+    file_size_bytes: 2088001
+  REF05:
+    file: "01_references/P02_REF05.png"
+    role: "Seated pose, beige/light outfit, different styling and pose, diversity reference."
+    canonical: true
+    exists: true
+    asset_status: "present"
+    sha256: "21ac8aec340e644627aaaaacb7e201a437062333b7db726860b2d1cb3cb39386"
+    width: 1086
+    height: 1448
+    file_size_bytes: 2078084
+  APPROVED_COLLAGE:
+    file: "02_source_generations/P02_approved_character_collage_v1.png"
+    role: "Original approved collage: visual source from which the character identity was established."
+    canonical: true
+    exists: false
+    asset_status: "missing"
+    sha256: null
+provenance:
+  master_source_file: "00_master/Master.png"
+  master_preparation: "Byte-for-byte copy to canonical filename; source preserved."
+  master_source_sha256: "d4a8ff4ec08feafb2af49eca6d75ca7df1843bcf772deb5afae1e070a6e50299"
+  master_source_canonical: false
+  master_source_currently_exists: false
+  master_source_note: "Source disappeared after preparation; canonical copy still matches recorded source SHA256."
+  identity_visual_source: "APPROVED_COLLAGE"
+  collage_provenance_basis: "User-provided identity history; original collage currently missing."
+identity_policy:
+  earlier_reference_attempts_status: "non-canonical"
+  earlier_reference_attempts_rule: "All earlier P02 reference attempts are non-canonical and excluded from the frozen identity set; only the exact canonical paths and recorded hashes in this manifest identify present v1 assets."
+  earlier_reference_attempts_inventory: "No separately identified earlier attempts found in the repository; no historical filenames inferred."
+  canonical_png_policy: "Do not edit, regenerate, or replace canonical PNGs. Identity changes require a new version."
+  missing_asset_policy: "Missing files have null SHA256; no placeholder PNGs. After approved originals are supplied, recompute hashes and validation without modifying PNG bytes."
+validation:
+  checked_on: "2026-09-14"
+  canonical_assets_expected: 7
+  canonical_assets_present: 6
+  all_expected_canonical_assets_exist: false
+  result: "incomplete_missing_assets"
+  missing_assets:
+    - "02_source_generations/P02_approved_character_collage_v1.png"
+  present_assets_sha256_recorded: true
+  original_png_bytes_unchanged_at_preparation: true
+  present_canonical_png_hashes_verified: true
+  scope: "File existence, PNG signature, SHA256 and byte preservation; no visual identity or quality scoring. Frozen status describes identity selection, not asset completeness."

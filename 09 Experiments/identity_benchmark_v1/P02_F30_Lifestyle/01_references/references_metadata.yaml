@@ -1,0 +1,45 @@
+character_id: "P02_F30_Lifestyle"
+identity_id: "P02"
+identity_version: 1
+status: "frozen"
+synthetic_identity: true
+path_base: "character_directory"
+references:
+  REF01:
+    file: "01_references/P02_REF01.png"
+    role: "Frontal phone-style portrait, face-focused, no hand on face."
+    canonical: true
+    exists: true
+    asset_status: "present"
+    sha256: "26501512d969490150c37ed9ff16bc6ea834fb3ba39132bb65ec695944d1646e"
+  REF02:
+    file: "01_references/P02_REF02.png"
+    role: "3/4 facial reference with different head angle."
+    canonical: true
+    exists: true
+    asset_status: "present"
+    sha256: "1011d5d37ee4e805d0e5f0707ca0ed88d9b1ab4b0b2705d294680b36d359ac25"
+  REF03:
+    file: "01_references/P02_REF03.png"
+    role: "Lighter clothing, more distant framing, primary body-proportion reference."
+    canonical: true
+    exists: true
+    asset_status: "present"
+    sha256: "23fb0883218085354fe2de85d92d2641916501ac41e754735892babb10a004c2"
+  REF04:
+    file: "01_references/P02_REF04.png"
+    role: "Dark outfit, more distant lifestyle/body reference."
+    canonical: true
+    exists: true
+    asset_status: "present"
+    sha256: "e8241c2f3c41e44dfd4deac5e1fec8ee245903a954e1a773c5bfd1e0c427a4b7"
+  REF05:
+    file: "01_references/P02_REF05.png"
+    role: "Seated pose, beige/light outfit, different styling and pose, diversity reference."
+    canonical: true
+    exists: true
+    asset_status: "present"
+    sha256: "21ac8aec340e644627aaaaacb7e201a437062333b7db726860b2d1cb3cb39386"
+earlier_reference_attempts_status: "non-canonical"
+canonical_set_rule: "All earlier P02 reference attempts are non-canonical and excluded from the frozen identity set; only the exact canonical paths and recorded hashes in this manifest identify present v1 assets."
+manifest: "../identity_manifest.yaml"

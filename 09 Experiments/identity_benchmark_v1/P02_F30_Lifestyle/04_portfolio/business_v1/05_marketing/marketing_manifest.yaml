@@ -1,0 +1,571 @@
+{
+  "session_id": "P02_BUSINESS_V1",
+  "status": "internal_review_candidate",
+  "publish_approved": false,
+  "assets": [
+    {
+      "file": "05_marketing/01_contact_sheet/P02_business_v1_contact_sheet.jpg",
+      "width": 2400,
+      "height": 1590,
+      "sha256": "2bcb305794eb9cb1dc5e1959706e28dd2446754465566091813eb8cb8b377e25",
+      "file_size_bytes": 1117448,
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "file": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788"
+        },
+        {
+          "id": "BUS_02",
+          "file": "00_source/P02_BUS_02_window_3q_v2.png",
+          "sha256": "c6a4268bb90d2da603a37014e77d30af23723e2bb0edad84fa3fb9c034f58aaf"
+        },
+        {
+          "id": "BUS_03",
+          "file": "00_source/P02_BUS_03_executive_desk_v2.png",
+          "sha256": "5e68469f0789097b6007f8bfdba03bfdb910e1ddd4a0e6487b13d93c6bf0cf99"
+        },
+        {
+          "id": "BUS_04",
+          "file": "00_source/P02_BUS_04_office_walk_v2.png",
+          "sha256": "8dede4976b623d0393cbb19ba74c8e7048008be0652160431213da297b5a9e71"
+        },
+        {
+          "id": "BUS_05",
+          "file": "00_source/P02_BUS_05_boardroom_v2.png",
+          "sha256": "8195b49a07d65e2bbe8d65236da62b4b5bea05e8243d08f90e282eb925d45a4a"
+        },
+        {
+          "id": "BUS_06",
+          "file": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6"
+        },
+        {
+          "id": "BUS_07",
+          "file": "00_source/P02_BUS_07_private_office_v2.png",
+          "sha256": "51f12dad939278d3f3b214312c9588c8ee95111810534d53ab1f25d252f19339"
+        },
+        {
+          "id": "BUS_08",
+          "file": "00_source/P02_BUS_08_laptop_workspace_v2.png",
+          "sha256": "87a5f20554bcc4dac8e577b62b15dd511d78bf5a37f87e8f0da5ff5a82e3f51a"
+        },
+        {
+          "id": "BUS_09",
+          "file": "00_source/P02_BUS_09_window_crossed_arms_v2.png",
+          "sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b"
+        },
+        {
+          "id": "BUS_10",
+          "file": "00_source/P02_BUS_10_editorial_fullbody_v2.png",
+          "sha256": "3cd3547b3dc8f6bcac4dd6776f1505ffffb9413e1da09e35c08493cfc8c4f312"
+        }
+      ],
+      "layout": "5 columns x 2 rows; full image containment",
+      "status": "internal_review_candidate",
+      "publish_approved": false,
+      "processing": "contain resize and layout only; no retouch or generation"
+    },
+    {
+      "file": "05_marketing/01_contact_sheet/P02_business_v1_contact_sheet_clean.jpg",
+      "width": 2400,
+      "height": 1590,
+      "sha256": "0d422b1ab73e37f05b2927673df53fd29411101db6fbfa3a21ff1bfcbfe1051f",
+      "file_size_bytes": 1095294,
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "file": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788"
+        },
+        {
+          "id": "BUS_02",
+          "file": "00_source/P02_BUS_02_window_3q_v2.png",
+          "sha256": "c6a4268bb90d2da603a37014e77d30af23723e2bb0edad84fa3fb9c034f58aaf"
+        },
+        {
+          "id": "BUS_03",
+          "file": "00_source/P02_BUS_03_executive_desk_v2.png",
+          "sha256": "5e68469f0789097b6007f8bfdba03bfdb910e1ddd4a0e6487b13d93c6bf0cf99"
+        },
+        {
+          "id": "BUS_04",
+          "file": "00_source/P02_BUS_04_office_walk_v2.png",
+          "sha256": "8dede4976b623d0393cbb19ba74c8e7048008be0652160431213da297b5a9e71"
+        },
+        {
+          "id": "BUS_05",
+          "file": "00_source/P02_BUS_05_boardroom_v2.png",
+          "sha256": "8195b49a07d65e2bbe8d65236da62b4b5bea05e8243d08f90e282eb925d45a4a"
+        },
+        {
+          "id": "BUS_06",
+          "file": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6"
+        },
+        {
+          "id": "BUS_07",
+          "file": "00_source/P02_BUS_07_private_office_v2.png",
+          "sha256": "51f12dad939278d3f3b214312c9588c8ee95111810534d53ab1f25d252f19339"
+        },
+        {
+          "id": "BUS_08",
+          "file": "00_source/P02_BUS_08_laptop_workspace_v2.png",
+          "sha256": "87a5f20554bcc4dac8e577b62b15dd511d78bf5a37f87e8f0da5ff5a82e3f51a"
+        },
+        {
+          "id": "BUS_09",
+          "file": "00_source/P02_BUS_09_window_crossed_arms_v2.png",
+          "sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b"
+        },
+        {
+          "id": "BUS_10",
+          "file": "00_source/P02_BUS_10_editorial_fullbody_v2.png",
+          "sha256": "3cd3547b3dc8f6bcac4dd6776f1505ffffb9413e1da09e35c08493cfc8c4f312"
+        }
+      ],
+      "layout": "5 columns x 2 rows; full image containment",
+      "status": "internal_review_candidate",
+      "publish_approved": false,
+      "processing": "contain resize and layout only; no retouch or generation"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_01.jpg",
+      "width": 1600,
+      "height": 2000,
+      "sha256": "06cfd8b3d1fc97aa1c0b292ce8aa9ff49d37f6263d51e37eed3e0084d1bd8d60",
+      "file_size_bytes": 604156,
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "file": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788"
+        },
+        {
+          "id": "BUS_06",
+          "file": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6"
+        }
+      ],
+      "layout": "Avito internal draft card 1; full image containment",
+      "status": "internal_review_candidate",
+      "publish_approved": false,
+      "processing": "contain resize and layout only; no retouch or generation"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_02.jpg",
+      "width": 1600,
+      "height": 2000,
+      "sha256": "cae15eb2a783ff1746b82703a97b37acf92c1f979f2b4710ebc49771bd1445d2",
+      "file_size_bytes": 449285,
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "file": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788"
+        },
+        {
+          "id": "BUS_03",
+          "file": "00_source/P02_BUS_03_executive_desk_v2.png",
+          "sha256": "5e68469f0789097b6007f8bfdba03bfdb910e1ddd4a0e6487b13d93c6bf0cf99"
+        },
+        {
+          "id": "BUS_09",
+          "file": "00_source/P02_BUS_09_window_crossed_arms_v2.png",
+          "sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b"
+        }
+      ],
+      "layout": "Avito internal draft card 2; full image containment",
+      "status": "internal_review_candidate",
+      "publish_approved": false,
+      "processing": "contain resize and layout only; no retouch or generation"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_03.jpg",
+      "width": 1600,
+      "height": 2000,
+      "sha256": "1459bf1038ba429458880b55eecf316ab758006f3cfa6fdf3bb262867be34691",
+      "file_size_bytes": 529079,
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "file": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788"
+        },
+        {
+          "id": "BUS_04",
+          "file": "00_source/P02_BUS_04_office_walk_v2.png",
+          "sha256": "8dede4976b623d0393cbb19ba74c8e7048008be0652160431213da297b5a9e71"
+        },
+        {
+          "id": "BUS_05",
+          "file": "00_source/P02_BUS_05_boardroom_v2.png",
+          "sha256": "8195b49a07d65e2bbe8d65236da62b4b5bea05e8243d08f90e282eb925d45a4a"
+        },
+        {
+          "id": "BUS_06",
+          "file": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6"
+        }
+      ],
+      "layout": "Avito internal draft card 3; full image containment",
+      "status": "internal_review_candidate",
+      "publish_approved": false,
+      "processing": "contain resize and layout only; no retouch or generation"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_04.jpg",
+      "width": 1600,
+      "height": 2000,
+      "sha256": "ea32b7d11e9a8435df8037a7b98314cda24ba984c0c695495df2c3d0cb93cc11",
+      "file_size_bytes": 431605,
+      "source_inputs": [
+        {
+          "id": "BUS_08",
+          "file": "00_source/P02_BUS_08_laptop_workspace_v2.png",
+          "sha256": "87a5f20554bcc4dac8e577b62b15dd511d78bf5a37f87e8f0da5ff5a82e3f51a"
+        },
+        {
+          "id": "BUS_04",
+          "file": "00_source/P02_BUS_04_office_walk_v2.png",
+          "sha256": "8dede4976b623d0393cbb19ba74c8e7048008be0652160431213da297b5a9e71"
+        },
+        {
+          "id": "BUS_09",
+          "file": "00_source/P02_BUS_09_window_crossed_arms_v2.png",
+          "sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b"
+        }
+      ],
+      "layout": "Avito internal draft card 4; full image containment",
+      "status": "internal_review_candidate",
+      "publish_approved": false,
+      "processing": "contain resize and layout only; no retouch or generation"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_05.jpg",
+      "width": 1600,
+      "height": 2000,
+      "sha256": "47650d75ca96503d8e60b0648bb0a60fa0792efa414de0954e92de0c17839a22",
+      "file_size_bytes": 546116,
+      "source_inputs": [
+        {
+          "id": "BUS_02",
+          "file": "00_source/P02_BUS_02_window_3q_v2.png",
+          "sha256": "c6a4268bb90d2da603a37014e77d30af23723e2bb0edad84fa3fb9c034f58aaf"
+        },
+        {
+          "id": "BUS_07",
+          "file": "00_source/P02_BUS_07_private_office_v2.png",
+          "sha256": "51f12dad939278d3f3b214312c9588c8ee95111810534d53ab1f25d252f19339"
+        }
+      ],
+      "layout": "Avito internal draft card 5; full image containment",
+      "status": "internal_review_candidate",
+      "publish_approved": false,
+      "processing": "contain resize and layout only; no retouch or generation"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_06.jpg",
+      "width": 1600,
+      "height": 2000,
+      "sha256": "d415467180657ffcc678c0d5a21dfd4cbb01ba975ef3492efed14e920f47c8f5",
+      "file_size_bytes": 217199,
+      "source_inputs": [],
+      "layout": "Avito internal draft card 6; full image containment",
+      "status": "internal_review_candidate",
+      "publish_approved": false,
+      "processing": "contain resize and layout only; no retouch or generation"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_07.jpg",
+      "width": 1600,
+      "height": 2000,
+      "sha256": "236ed3456c0f26fd76a5f294b6049623782d13dd72f7c3dcac15c666910d8c84",
+      "file_size_bytes": 193139,
+      "source_inputs": [],
+      "layout": "Avito internal draft card 7; full image containment",
+      "status": "internal_review_candidate",
+      "publish_approved": false,
+      "processing": "contain resize and layout only; no retouch or generation"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_08.jpg",
+      "width": 1600,
+      "height": 2000,
+      "sha256": "1e72f7afe3b4ccd365e5773e3b6705033471eb81ad0faf4835ba7c7e407f7dd9",
+      "file_size_bytes": 737730,
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "file": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788"
+        },
+        {
+          "id": "BUS_03",
+          "file": "00_source/P02_BUS_03_executive_desk_v2.png",
+          "sha256": "5e68469f0789097b6007f8bfdba03bfdb910e1ddd4a0e6487b13d93c6bf0cf99"
+        },
+        {
+          "id": "BUS_04",
+          "file": "00_source/P02_BUS_04_office_walk_v2.png",
+          "sha256": "8dede4976b623d0393cbb19ba74c8e7048008be0652160431213da297b5a9e71"
+        },
+        {
+          "id": "BUS_06",
+          "file": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6"
+        },
+        {
+          "id": "BUS_08",
+          "file": "00_source/P02_BUS_08_laptop_workspace_v2.png",
+          "sha256": "87a5f20554bcc4dac8e577b62b15dd511d78bf5a37f87e8f0da5ff5a82e3f51a"
+        },
+        {
+          "id": "BUS_09",
+          "file": "00_source/P02_BUS_09_window_crossed_arms_v2.png",
+          "sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b"
+        }
+      ],
+      "layout": "Avito internal draft card 8; full image containment",
+      "status": "internal_review_candidate",
+      "publish_approved": false,
+      "processing": "contain resize and layout only; no retouch or generation"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_09.jpg",
+      "width": 1600,
+      "height": 2000,
+      "sha256": "cfbaef6dcd8527589572b9bbc35a1ee2e2170d4a7fe224f3e317bfe625d0b0a2",
+      "file_size_bytes": 544736,
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "file": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788"
+        },
+        {
+          "id": "BUS_09",
+          "file": "00_source/P02_BUS_09_window_crossed_arms_v2.png",
+          "sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b"
+        }
+      ],
+      "layout": "Avito internal draft card 9; full image containment",
+      "status": "internal_review_candidate",
+      "publish_approved": false,
+      "processing": "contain resize and layout only; no retouch or generation"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_10.jpg",
+      "width": 1600,
+      "height": 2000,
+      "sha256": "d2a51eaa6372006e328c0d4a9377f7bc0942eb06e57f7a745c247c57180f856f",
+      "file_size_bytes": 579859,
+      "source_inputs": [
+        {
+          "id": "BUS_06",
+          "file": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6"
+        },
+        {
+          "id": "BUS_08",
+          "file": "00_source/P02_BUS_08_laptop_workspace_v2.png",
+          "sha256": "87a5f20554bcc4dac8e577b62b15dd511d78bf5a37f87e8f0da5ff5a82e3f51a"
+        }
+      ],
+      "layout": "Avito internal draft card 10; full image containment",
+      "status": "internal_review_candidate",
+      "publish_approved": false,
+      "processing": "contain resize and layout only; no retouch or generation"
+    },
+    {
+      "file": "05_marketing/03_before_after/P02_reference_to_business_demo.jpg",
+      "width": 2100,
+      "height": 1400,
+      "sha256": "8841860cbc44dd626de83ffd0ac6ee6a10ae732c5bf919b47fce4a0305115fed",
+      "file_size_bytes": 609578,
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "file": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788"
+        },
+        {
+          "id": "BUS_06",
+          "file": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6"
+        },
+        {
+          "id": "MASTER",
+          "file": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/00_master/P02_identity_master_v1.png",
+          "sha256": "d4a8ff4ec08feafb2af49eca6d75ca7df1843bcf772deb5afae1e070a6e50299",
+          "path_base": "repository"
+        },
+        {
+          "id": "REF03",
+          "file": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/01_references/P02_REF03.png",
+          "sha256": "23fb0883218085354fe2de85d92d2641916501ac41e754735892babb10a004c2",
+          "path_base": "repository"
+        }
+      ],
+      "layout": "synthetic reference-to-result, not a real-client before/after",
+      "status": "internal_review_candidate",
+      "publish_approved": false,
+      "processing": "contain resize and layout only; no retouch or generation"
+    },
+    {
+      "file": "05_marketing/04_social/P02_business_square_selection.jpg",
+      "width": 1600,
+      "height": 1600,
+      "sha256": "ea2d748a835fb25cb720c4878d4f93fd32409287f7862bc4d10291dd6422c950",
+      "file_size_bytes": 417707,
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "file": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788"
+        },
+        {
+          "id": "BUS_03",
+          "file": "00_source/P02_BUS_03_executive_desk_v2.png",
+          "sha256": "5e68469f0789097b6007f8bfdba03bfdb910e1ddd4a0e6487b13d93c6bf0cf99"
+        },
+        {
+          "id": "BUS_06",
+          "file": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6"
+        },
+        {
+          "id": "BUS_09",
+          "file": "00_source/P02_BUS_09_window_crossed_arms_v2.png",
+          "sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b"
+        }
+      ],
+      "layout": "provisional diverse selection; full image containment",
+      "status": "internal_review_candidate",
+      "publish_approved": false,
+      "processing": "contain resize and layout only; no retouch or generation"
+    },
+    {
+      "file": "05_marketing/04_social/P02_business_story_cover.jpg",
+      "width": 1080,
+      "height": 1920,
+      "sha256": "6ea05b0611e0da222de8657885706b22643b0419f147c3f660b7cb03dcbe4711",
+      "file_size_bytes": 489632,
+      "source_inputs": [
+        {
+          "id": "BUS_06",
+          "file": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6"
+        }
+      ],
+      "layout": "provisional diverse selection; full image containment",
+      "status": "internal_review_candidate",
+      "publish_approved": false,
+      "processing": "contain resize and layout only; no retouch or generation"
+    },
+    {
+      "file": "05_marketing/04_social/P02_business_portrait_showcase.jpg",
+      "width": 1600,
+      "height": 2000,
+      "sha256": "7a112144d1a0705544330a07bf3466c6cea35222ff882ce2d9441b48a67c74d5",
+      "file_size_bytes": 425295,
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "file": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788"
+        },
+        {
+          "id": "BUS_08",
+          "file": "00_source/P02_BUS_08_laptop_workspace_v2.png",
+          "sha256": "87a5f20554bcc4dac8e577b62b15dd511d78bf5a37f87e8f0da5ff5a82e3f51a"
+        },
+        {
+          "id": "BUS_09",
+          "file": "00_source/P02_BUS_09_window_crossed_arms_v2.png",
+          "sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b"
+        }
+      ],
+      "layout": "provisional diverse selection; full image containment",
+      "status": "internal_review_candidate",
+      "publish_approved": false,
+      "processing": "contain resize and layout only; no retouch or generation"
+    },
+    {
+      "file": "05_marketing/04_social/P02_business_clean_grid_4.jpg",
+      "width": 1800,
+      "height": 2440,
+      "sha256": "229ae9fc7af44791872aae422ef225aad3de329d9c7f768fe6b65288853cc786",
+      "file_size_bytes": 1206550,
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "file": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788"
+        },
+        {
+          "id": "BUS_04",
+          "file": "00_source/P02_BUS_04_office_walk_v2.png",
+          "sha256": "8dede4976b623d0393cbb19ba74c8e7048008be0652160431213da297b5a9e71"
+        },
+        {
+          "id": "BUS_06",
+          "file": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6"
+        },
+        {
+          "id": "BUS_09",
+          "file": "00_source/P02_BUS_09_window_crossed_arms_v2.png",
+          "sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b"
+        }
+      ],
+      "layout": "provisional diverse selection; full image containment",
+      "status": "internal_review_candidate",
+      "publish_approved": false,
+      "processing": "contain resize and layout only; no retouch or generation"
+    },
+    {
+      "file": "05_marketing/04_social/P02_business_clean_grid_6.jpg",
+      "width": 2100,
+      "height": 2020,
+      "sha256": "5c1635335ef8a80570639944ebdbd390446c9e9602447d35b079cd9d96216825",
+      "file_size_bytes": 1240400,
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "file": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788"
+        },
+        {
+          "id": "BUS_03",
+          "file": "00_source/P02_BUS_03_executive_desk_v2.png",
+          "sha256": "5e68469f0789097b6007f8bfdba03bfdb910e1ddd4a0e6487b13d93c6bf0cf99"
+        },
+        {
+          "id": "BUS_04",
+          "file": "00_source/P02_BUS_04_office_walk_v2.png",
+          "sha256": "8dede4976b623d0393cbb19ba74c8e7048008be0652160431213da297b5a9e71"
+        },
+        {
+          "id": "BUS_06",
+          "file": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6"
+        },
+        {
+          "id": "BUS_08",
+          "file": "00_source/P02_BUS_08_laptop_workspace_v2.png",
+          "sha256": "87a5f20554bcc4dac8e577b62b15dd511d78bf5a37f87e8f0da5ff5a82e3f51a"
+        },
+        {
+          "id": "BUS_09",
+          "file": "00_source/P02_BUS_09_window_crossed_arms_v2.png",
+          "sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b"
+        }
+      ],
+      "layout": "provisional diverse selection; full image containment",
+      "status": "internal_review_candidate",
+      "publish_approved": false,
+      "processing": "contain resize and layout only; no retouch or generation"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+character_id: "P02_F30_Lifestyle"
+identity_id: "P02"
+identity_version: 1
+status: "frozen"
+synthetic_identity: true
+master:
+  file: "00_master/P02_identity_master_v1.png"
+  role: "Primary canonical identity anchor."
+  canonical: true
+  exists: true
+  asset_status: "present"
+  sha256: "d4a8ff4ec08feafb2af49eca6d75ca7df1843bcf772deb5afae1e070a6e50299"
+source_file: "00_master/Master.png"
+source_preserved_at_preparation: true
+source_currently_exists: false
+source_note: "Source disappeared after preparation; no agent command deleted or moved it."
+identity_visual_source: "02_source_generations/P02_approved_character_collage_v1.png"
+manifest: "../identity_manifest.yaml"
+provenance:
+  creation_method: "Byte-for-byte copy of temporary 00_master/Master.png to 00_master/P02_identity_master_v1.png."
+  canonical_sha256: "d4a8ff4ec08feafb2af49eca6d75ca7df1843bcf772deb5afae1e070a6e50299"
+  temporary_source_status: "Absent after preparation; not restored."
+  canonical_sha256_verified: true
+  canonical_master_unchanged: true
+  verification_note: "Canonical MASTER was rehashed and matches the recorded canonical SHA256; its bytes were not modified."
