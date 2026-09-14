@@ -1,0 +1,760 @@
+{
+  "session_id": "P02_LIFESTYLE_V1",
+  "export_role": "preferred_public_layout",
+  "approval_note": "Clean layout is not human approval; existing session review state remains authoritative.",
+  "historical_records_unchanged": true,
+  "rendering": "Pillow JPEG quality 95, subsampling 0; no crop or source edit",
+  "assets": [
+    {
+      "file": "05_marketing/01_contact_sheet/P02_lifestyle_v1_contact_sheet.jpg",
+      "width": 2400,
+      "height": 1590,
+      "file_size_bytes": 1344295,
+      "sha256": "55d7c0e5ef57b1455725f2b6155d510eb0b0b56e03936da4541ced273e2a8f38",
+      "source_inputs": [
+        {
+          "id": "LIFE_01",
+          "path": "00_source/P02_LIFE_01_cafe_window.png",
+          "sha256": "bcfc627f4b79a8121fe63e23da8beaf94863443919b4f84cbf66f375a4c5dbb0",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_02",
+          "path": "00_source/P02_LIFE_02_city_walk.png",
+          "sha256": "32c62bb3d78d487cc99116a32be0016d4cb4fff1a1a2625f6653f80d8159615f",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_03",
+          "path": "00_source/P02_LIFE_03_home_morning.png",
+          "sha256": "4418e5052aa0da402f681283afc772c9217b554b610f792c3704a156a413ddc1",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_04",
+          "path": "00_source/P02_LIFE_04_book_cafe.png",
+          "sha256": "99e498e8fb7dc52f5de1283662e31073e7a0d3c9964ab2671c0d370cc571896b",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_05",
+          "path": "00_source/P02_LIFE_05_rooftop_sunset.png",
+          "sha256": "95d6428075a4a5dae69d3d7a3f5ad725235c673d39ce4c5c229626356ac41829",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_06",
+          "path": "00_source/P02_LIFE_06_weekend_street.png",
+          "sha256": "ce833d64a5848dbd99d65f3461a4eece52adaff0aa6eca5a173f72ad079e90a5",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_07",
+          "path": "00_source/P02_LIFE_07_balcony_profile.png",
+          "sha256": "eb66169c9bf98fb30b3bd658a67fe7ec2dee7042d88542975b5d866e2dc81285",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_08",
+          "path": "00_source/P02_LIFE_08_cozy_sofa.png",
+          "sha256": "32985e058fdedb32a2312cce5290844fd05aa99759197bdc70ce97e93156f87e",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_09",
+          "path": "00_source/P02_LIFE_09_travel_lobby.png",
+          "sha256": "c8ef167ddcbf00407611a02fb760a67be47eb3781204e288e605db78b2137b7c",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_10",
+          "path": "00_source/P02_LIFE_10_evening_city.png",
+          "sha256": "dff2f12e84565b150fa999441eb68945eaaaa7ce4ed78621506b179c9899ce2d",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX — LIFESTYLE",
+        "Virtual AI Photoshoot"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/01_contact_sheet/P02_lifestyle_v1_contact_sheet_clean.jpg",
+      "width": 2400,
+      "height": 1590,
+      "file_size_bytes": 1317972,
+      "sha256": "78b8ec4359d390d37806cf13b2c38e3527ada712cf28d406aed820a72a7046f6",
+      "source_inputs": [
+        {
+          "id": "LIFE_01",
+          "path": "00_source/P02_LIFE_01_cafe_window.png",
+          "sha256": "bcfc627f4b79a8121fe63e23da8beaf94863443919b4f84cbf66f375a4c5dbb0",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_02",
+          "path": "00_source/P02_LIFE_02_city_walk.png",
+          "sha256": "32c62bb3d78d487cc99116a32be0016d4cb4fff1a1a2625f6653f80d8159615f",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_03",
+          "path": "00_source/P02_LIFE_03_home_morning.png",
+          "sha256": "4418e5052aa0da402f681283afc772c9217b554b610f792c3704a156a413ddc1",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_04",
+          "path": "00_source/P02_LIFE_04_book_cafe.png",
+          "sha256": "99e498e8fb7dc52f5de1283662e31073e7a0d3c9964ab2671c0d370cc571896b",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_05",
+          "path": "00_source/P02_LIFE_05_rooftop_sunset.png",
+          "sha256": "95d6428075a4a5dae69d3d7a3f5ad725235c673d39ce4c5c229626356ac41829",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_06",
+          "path": "00_source/P02_LIFE_06_weekend_street.png",
+          "sha256": "ce833d64a5848dbd99d65f3461a4eece52adaff0aa6eca5a173f72ad079e90a5",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_07",
+          "path": "00_source/P02_LIFE_07_balcony_profile.png",
+          "sha256": "eb66169c9bf98fb30b3bd658a67fe7ec2dee7042d88542975b5d866e2dc81285",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_08",
+          "path": "00_source/P02_LIFE_08_cozy_sofa.png",
+          "sha256": "32985e058fdedb32a2312cce5290844fd05aa99759197bdc70ce97e93156f87e",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_09",
+          "path": "00_source/P02_LIFE_09_travel_lobby.png",
+          "sha256": "c8ef167ddcbf00407611a02fb760a67be47eb3781204e288e605db78b2137b7c",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_10",
+          "path": "00_source/P02_LIFE_10_evening_city.png",
+          "sha256": "dff2f12e84565b150fa999441eb68945eaaaa7ce4ed78621506b179c9899ce2d",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_lifestyle_card_01.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 609848,
+      "sha256": "aaeed125a24e6ba173fc58cce2c3506af431d863479388af28ac472c9a4a6d7e",
+      "source_inputs": [
+        {
+          "id": "LIFE_01",
+          "path": "00_source/P02_LIFE_01_cafe_window.png",
+          "sha256": "bcfc627f4b79a8121fe63e23da8beaf94863443919b4f84cbf66f375a4c5dbb0",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_05",
+          "path": "00_source/P02_LIFE_05_rooftop_sunset.png",
+          "sha256": "95d6428075a4a5dae69d3d7a3f5ad725235c673d39ce4c5c229626356ac41829",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "LIFESTYLE / 01",
+        "Виртуальная lifestyle-\nфотосессия",
+        "10 стильных кадров без студии",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_lifestyle_card_02.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 523024,
+      "sha256": "662d34d21028969b3d15d1694485779a866e3b9f96033d53dddab47c1edcd2eb",
+      "source_inputs": [
+        {
+          "id": "LIFE_03",
+          "path": "00_source/P02_LIFE_03_home_morning.png",
+          "sha256": "4418e5052aa0da402f681283afc772c9217b554b610f792c3704a156a413ddc1",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_06",
+          "path": "00_source/P02_LIFE_06_weekend_street.png",
+          "sha256": "ce833d64a5848dbd99d65f3461a4eece52adaff0aa6eca5a173f72ad079e90a5",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_07",
+          "path": "00_source/P02_LIFE_07_balcony_profile.png",
+          "sha256": "eb66169c9bf98fb30b3bd658a67fe7ec2dee7042d88542975b5d866e2dc81285",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "LIFESTYLE / 02",
+        "Один образ.\nРазные моменты.",
+        "Единая внешность — разные сцены и настроения",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_lifestyle_card_03.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 876206,
+      "sha256": "7a014f7f1d115b101787beac81a21031d8bc01d510aa13f1c4b02495523b04e0",
+      "source_inputs": [
+        {
+          "id": "LIFE_01",
+          "path": "00_source/P02_LIFE_01_cafe_window.png",
+          "sha256": "bcfc627f4b79a8121fe63e23da8beaf94863443919b4f84cbf66f375a4c5dbb0",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_02",
+          "path": "00_source/P02_LIFE_02_city_walk.png",
+          "sha256": "32c62bb3d78d487cc99116a32be0016d4cb4fff1a1a2625f6653f80d8159615f",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_03",
+          "path": "00_source/P02_LIFE_03_home_morning.png",
+          "sha256": "4418e5052aa0da402f681283afc772c9217b554b610f792c3704a156a413ddc1",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_05",
+          "path": "00_source/P02_LIFE_05_rooftop_sunset.png",
+          "sha256": "95d6428075a4a5dae69d3d7a3f5ad725235c673d39ce4c5c229626356ac41829",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_09",
+          "path": "00_source/P02_LIFE_09_travel_lobby.png",
+          "sha256": "c8ef167ddcbf00407611a02fb760a67be47eb3781204e288e605db78b2137b7c",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_10",
+          "path": "00_source/P02_LIFE_10_evening_city.png",
+          "sha256": "dff2f12e84565b150fa999441eb68945eaaaa7ce4ed78621506b179c9899ce2d",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "LIFESTYLE / 03",
+        "В ритме вашей жизни",
+        "Кафе • город • дом • путешествия • вечер",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_lifestyle_card_04.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 546011,
+      "sha256": "b20a6a54166f9164493d7390fe673c663c2ebbc7b8cebde3587632530a5c8821",
+      "source_inputs": [
+        {
+          "id": "LIFE_06",
+          "path": "00_source/P02_LIFE_06_weekend_street.png",
+          "sha256": "ce833d64a5848dbd99d65f3461a4eece52adaff0aa6eca5a173f72ad079e90a5",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_04",
+          "path": "00_source/P02_LIFE_04_book_cafe.png",
+          "sha256": "99e498e8fb7dc52f5de1283662e31073e7a0d3c9964ab2671c0d370cc571896b",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_08",
+          "path": "00_source/P02_LIFE_08_cozy_sofa.png",
+          "sha256": "32985e058fdedb32a2312cce5290844fd05aa99759197bdc70ce97e93156f87e",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "LIFESTYLE / 04",
+        "Живые эмоции",
+        "Улыбка, задумчивость и спокойствие",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_lifestyle_card_05.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 713033,
+      "sha256": "7fae325913c998afda334b38e7e85d0b0ffd2ccf3e4534fc08c8630791705b17",
+      "source_inputs": [
+        {
+          "id": "LIFE_02",
+          "path": "00_source/P02_LIFE_02_city_walk.png",
+          "sha256": "32c62bb3d78d487cc99116a32be0016d4cb4fff1a1a2625f6653f80d8159615f",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_08",
+          "path": "00_source/P02_LIFE_08_cozy_sofa.png",
+          "sha256": "32985e058fdedb32a2312cce5290844fd05aa99759197bdc70ce97e93156f87e",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "LIFESTYLE / 05",
+        "Личная история\nв фотографиях",
+        "Lifestyle • личный бренд • путешествия • соцсети",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_lifestyle_card_06.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 179948,
+      "sha256": "47728b58f1529e01f01c7955293c9c8d9d11611cbc4c96a3ee808cd926eaa068",
+      "source_inputs": [],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "LIFESTYLE / 06",
+        "От идеи к серии",
+        "Концепция, внешность, сцены и внимание к деталям",
+        "01",
+        "Концепция фотосессии",
+        "02",
+        "Опора на внешность",
+        "03",
+        "Разнообразные сцены и ракурсы",
+        "04",
+        "Проверка деталей и отбор",
+        "05",
+        "Подготовка цельной серии",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_lifestyle_card_07.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 169542,
+      "sha256": "91ecc327d5b741d94352b6b55330709be854734d7e03a6613475bd06d88f413d",
+      "source_inputs": [],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "LIFESTYLE / 07",
+        "Качество в деталях",
+        "Что важно для цельной фотосессии",
+        "01",
+        "Лицо и сходство",
+        "02",
+        "Руки и пропорции",
+        "03",
+        "Одежда и мелкие детали",
+        "04",
+        "Артефакты и надписи",
+        "05",
+        "Разнообразие и целостность серии",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_lifestyle_card_08.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 884364,
+      "sha256": "28ebef7cad05c2c01fd6068bc10b9dbd295aa878397d626635f949912eb6abc0",
+      "source_inputs": [
+        {
+          "id": "LIFE_01",
+          "path": "00_source/P02_LIFE_01_cafe_window.png",
+          "sha256": "bcfc627f4b79a8121fe63e23da8beaf94863443919b4f84cbf66f375a4c5dbb0",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_03",
+          "path": "00_source/P02_LIFE_03_home_morning.png",
+          "sha256": "4418e5052aa0da402f681283afc772c9217b554b610f792c3704a156a413ddc1",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_05",
+          "path": "00_source/P02_LIFE_05_rooftop_sunset.png",
+          "sha256": "95d6428075a4a5dae69d3d7a3f5ad725235c673d39ce4c5c229626356ac41829",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_06",
+          "path": "00_source/P02_LIFE_06_weekend_street.png",
+          "sha256": "ce833d64a5848dbd99d65f3461a4eece52adaff0aa6eca5a173f72ad079e90a5",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_09",
+          "path": "00_source/P02_LIFE_09_travel_lobby.png",
+          "sha256": "c8ef167ddcbf00407611a02fb760a67be47eb3781204e288e605db78b2137b7c",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_10",
+          "path": "00_source/P02_LIFE_10_evening_city.png",
+          "sha256": "dff2f12e84565b150fa999441eb68945eaaaa7ce4ed78621506b179c9899ce2d",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "LIFESTYLE / 08",
+        "Десять кадров.\nРазные настроения.",
+        "От утреннего кафе до вечернего города",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_lifestyle_card_09.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 568781,
+      "sha256": "baaf15ce767dcb8ae8fde2c7da7a9a474696101ff020361cc9bc8722f5d2711a",
+      "source_inputs": [
+        {
+          "id": "LIFE_03",
+          "path": "00_source/P02_LIFE_03_home_morning.png",
+          "sha256": "4418e5052aa0da402f681283afc772c9217b554b610f792c3704a156a413ddc1",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_10",
+          "path": "00_source/P02_LIFE_10_evening_city.png",
+          "sha256": "dff2f12e84565b150fa999441eb68945eaaaa7ce4ed78621506b179c9899ce2d",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "LIFESTYLE / 09",
+        "Ваш образ —\nновая история",
+        "Виртуальная фотосессия ONYX",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_lifestyle_card_10.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 633078,
+      "sha256": "bcb076b82e61771f7219d08fc1c5fd512f642a8899d4da5a2c79e974e5881e43",
+      "source_inputs": [
+        {
+          "id": "LIFE_07",
+          "path": "00_source/P02_LIFE_07_balcony_profile.png",
+          "sha256": "eb66169c9bf98fb30b3bd658a67fe7ec2dee7042d88542975b5d866e2dc81285",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_09",
+          "path": "00_source/P02_LIFE_09_travel_lobby.png",
+          "sha256": "c8ef167ddcbf00407611a02fb760a67be47eb3781204e288e605db78b2137b7c",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "LIFESTYLE / 10",
+        "Virtual Photo Studio",
+        "Помогаем людям выглядеть так, как они хотят выглядеть.",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/03_before_after/P02_reference_to_lifestyle.jpg",
+      "width": 2100,
+      "height": 1400,
+      "file_size_bytes": 562071,
+      "sha256": "cdb78f78dd9f86a2401e77d3bc6f26a93bfb4e6d70af19fa6bd26be085e14ed4",
+      "source_inputs": [
+        {
+          "id": "LIFE_03",
+          "path": "00_source/P02_LIFE_03_home_morning.png",
+          "sha256": "4418e5052aa0da402f681283afc772c9217b554b610f792c3704a156a413ddc1",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_10",
+          "path": "00_source/P02_LIFE_10_evening_city.png",
+          "sha256": "dff2f12e84565b150fa999441eb68945eaaaa7ce4ed78621506b179c9899ce2d",
+          "path_base": "session"
+        },
+        {
+          "id": "MASTER",
+          "path": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/00_master/P02_identity_master_v1.png",
+          "sha256": "d4a8ff4ec08feafb2af49eca6d75ca7df1843bcf772deb5afae1e070a6e50299",
+          "path_base": "repository"
+        },
+        {
+          "id": "REF03",
+          "path": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/01_references/P02_REF03.png",
+          "sha256": "23fb0883218085354fe2de85d92d2641916501ac41e754735892babb10a004c2",
+          "path_base": "repository"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX / ОТ ОБРАЗА К СЕРИИ",
+        "Виртуальная фотосессия",
+        "Исходный образ персонажа",
+        "Lifestyle-серия ONYX",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/04_social/P02_lifestyle_square_selection.jpg",
+      "width": 1600,
+      "height": 1600,
+      "file_size_bytes": 532652,
+      "sha256": "2c48a3e0713c001a105693bbd58b3a03461bdc49df1fd580111a1d89c563444c",
+      "source_inputs": [
+        {
+          "id": "LIFE_01",
+          "path": "00_source/P02_LIFE_01_cafe_window.png",
+          "sha256": "bcfc627f4b79a8121fe63e23da8beaf94863443919b4f84cbf66f375a4c5dbb0",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_03",
+          "path": "00_source/P02_LIFE_03_home_morning.png",
+          "sha256": "4418e5052aa0da402f681283afc772c9217b554b610f792c3704a156a413ddc1",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_05",
+          "path": "00_source/P02_LIFE_05_rooftop_sunset.png",
+          "sha256": "95d6428075a4a5dae69d3d7a3f5ad725235c673d39ce4c5c229626356ac41829",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_06",
+          "path": "00_source/P02_LIFE_06_weekend_street.png",
+          "sha256": "ce833d64a5848dbd99d65f3461a4eece52adaff0aa6eca5a173f72ad079e90a5",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "LIFESTYLE",
+        "Виртуальная фотосессия"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/04_social/P02_lifestyle_story_cover.jpg",
+      "width": 1080,
+      "height": 1920,
+      "file_size_bytes": 457245,
+      "sha256": "3cf9d0b1e50e91731346fed38d84b0b979ce418b0daac1c253c5aec5b586ca57",
+      "source_inputs": [
+        {
+          "id": "LIFE_05",
+          "path": "00_source/P02_LIFE_05_rooftop_sunset.png",
+          "sha256": "95d6428075a4a5dae69d3d7a3f5ad725235c673d39ce4c5c229626356ac41829",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "LIFESTYLE",
+        "Виртуальная фотосессия"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/04_social/P02_lifestyle_portrait_showcase.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 770450,
+      "sha256": "5c3780152307343a9d2f4423fc36cae051fbfdd2acf397175315c6b8315723df",
+      "source_inputs": [
+        {
+          "id": "LIFE_01",
+          "path": "00_source/P02_LIFE_01_cafe_window.png",
+          "sha256": "bcfc627f4b79a8121fe63e23da8beaf94863443919b4f84cbf66f375a4c5dbb0",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_06",
+          "path": "00_source/P02_LIFE_06_weekend_street.png",
+          "sha256": "ce833d64a5848dbd99d65f3461a4eece52adaff0aa6eca5a173f72ad079e90a5",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_09",
+          "path": "00_source/P02_LIFE_09_travel_lobby.png",
+          "sha256": "c8ef167ddcbf00407611a02fb760a67be47eb3781204e288e605db78b2137b7c",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "LIFESTYLE",
+        "Виртуальная фотосессия"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/04_social/P02_lifestyle_clean_grid_4.jpg",
+      "width": 1800,
+      "height": 2440,
+      "file_size_bytes": 1376948,
+      "sha256": "46cefbdf463f899c185c5ce52dda9f76a6aa026eb07a16d1f7d0319943f1ca78",
+      "source_inputs": [
+        {
+          "id": "LIFE_01",
+          "path": "00_source/P02_LIFE_01_cafe_window.png",
+          "sha256": "bcfc627f4b79a8121fe63e23da8beaf94863443919b4f84cbf66f375a4c5dbb0",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_05",
+          "path": "00_source/P02_LIFE_05_rooftop_sunset.png",
+          "sha256": "95d6428075a4a5dae69d3d7a3f5ad725235c673d39ce4c5c229626356ac41829",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_06",
+          "path": "00_source/P02_LIFE_06_weekend_street.png",
+          "sha256": "ce833d64a5848dbd99d65f3461a4eece52adaff0aa6eca5a173f72ad079e90a5",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_07",
+          "path": "00_source/P02_LIFE_07_balcony_profile.png",
+          "sha256": "eb66169c9bf98fb30b3bd658a67fe7ec2dee7042d88542975b5d866e2dc81285",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/04_social/P02_lifestyle_clean_grid_6.jpg",
+      "width": 2100,
+      "height": 2020,
+      "file_size_bytes": 1450153,
+      "sha256": "53860525cbc23d65e72005e7eba3d86c4ab9c4df086ccc44f7adf662b5532fd4",
+      "source_inputs": [
+        {
+          "id": "LIFE_01",
+          "path": "00_source/P02_LIFE_01_cafe_window.png",
+          "sha256": "bcfc627f4b79a8121fe63e23da8beaf94863443919b4f84cbf66f375a4c5dbb0",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_03",
+          "path": "00_source/P02_LIFE_03_home_morning.png",
+          "sha256": "4418e5052aa0da402f681283afc772c9217b554b610f792c3704a156a413ddc1",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_05",
+          "path": "00_source/P02_LIFE_05_rooftop_sunset.png",
+          "sha256": "95d6428075a4a5dae69d3d7a3f5ad725235c673d39ce4c5c229626356ac41829",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_06",
+          "path": "00_source/P02_LIFE_06_weekend_street.png",
+          "sha256": "ce833d64a5848dbd99d65f3461a4eece52adaff0aa6eca5a173f72ad079e90a5",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_07",
+          "path": "00_source/P02_LIFE_07_balcony_profile.png",
+          "sha256": "eb66169c9bf98fb30b3bd658a67fe7ec2dee7042d88542975b5d866e2dc81285",
+          "path_base": "session"
+        },
+        {
+          "id": "LIFE_09",
+          "path": "00_source/P02_LIFE_09_travel_lobby.png",
+          "sha256": "c8ef167ddcbf00407611a02fb760a67be47eb3781204e288e605db78b2137b7c",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    }
+  ],
+  "copy": [
+    {
+      "file": "05_marketing/05_copy/avito_description_v1.md",
+      "sha256": "b045c144f25f3424fe34eba8f03115a8f86ca9a68bbde69678a3b06d9a0c6e92",
+      "text": "# Виртуальная lifestyle фотосессия ONYX\n\nДесять кадров, объединённых одним образом. Утреннее кафе, прогулка по городу, уютный дом, закат на крыше и вечерняя улица.\n\nПродуманная серия помогает подобрать фотографию под настроение и задачу. В основе подхода — концепция, внимание к внешности, разнообразие сцен и аккуратный отбор.\n\nДля личного бренда, социальных сетей и истории о себе — без поездки в студию.\n\nРасскажите, какой образ вы хотите создать и где планируете использовать фотографии.\n"
+    },
+    {
+      "file": "05_marketing/05_copy/website_lifestyle_collection_v1.md",
+      "sha256": "dcc9c13391ec8369f3613952686b1452aaabeee8abf9fe7ba9452cf1e3ae7221",
+      "text": "# ONYX Lifestyle\n\nОдин образ — разные моменты. Утреннее кафе, прогулка по городу, уютный дом, закат на крыше и вечерняя улица.\n\nКоллекция объединяет десять фотографий с разными планами, ракурсами и настроением. Виртуальная фотосессия открывает новые возможности для личного визуального образа.\n"
+    },
+    {
+      "file": "05_marketing/05_copy/short_social_caption_v1.md",
+      "sha256": "8dedba757dcfd4e7e7b19e0e922ea845e13b45d871e98147b11c4331443061e0",
+      "text": "ONYX Lifestyle: десять кадров, один образ, разные истории. Утреннее кафе, прогулка по городу, уютный дом, закат на крыше и вечерняя улица.\n\nВиртуальная фотосессия ONYX.\n"
+    },
+    {
+      "file": "05_marketing/05_copy/portfolio_caption_v1.md",
+      "sha256": "d22fb7252753b2e7de55773c79d9dbaeaf886043316ce7946f5571b388c06c5e",
+      "text": "# ONYX / LIFESTYLE\n\nУтреннее кафе, прогулка по городу, уютный дом, закат на крыше и вечерняя улица.\n\nСерия из десяти кадров: внешность объединяет коллекцию, а свет, движение и обстановка создают разные настроения. Виртуальная фотосессия ONYX.\n"
+    }
+  ]
+}

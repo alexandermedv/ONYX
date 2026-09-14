@@ -1,0 +1,748 @@
+{
+  "session_id": "P02_BUSINESS_V1",
+  "export_role": "preferred_public_layout",
+  "approval_note": "Clean layout is not human approval; existing session review state remains authoritative.",
+  "historical_records_unchanged": true,
+  "rendering": "Pillow JPEG quality 95, subsampling 0; no crop or source edit",
+  "assets": [
+    {
+      "file": "05_marketing/01_contact_sheet/P02_business_v1_contact_sheet_publish.jpg",
+      "width": 2400,
+      "height": 1590,
+      "file_size_bytes": 1126789,
+      "sha256": "8f03bb5c889d5bf2569b79bd3539473eae9734d76a82e7f5e2b187edaba1e8a4",
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "path": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_02",
+          "path": "00_source/P02_BUS_02_window_3q_v2.png",
+          "sha256": "c6a4268bb90d2da603a37014e77d30af23723e2bb0edad84fa3fb9c034f58aaf",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_03",
+          "path": "00_source/P02_BUS_03_executive_desk_v2.png",
+          "sha256": "5e68469f0789097b6007f8bfdba03bfdb910e1ddd4a0e6487b13d93c6bf0cf99",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_04",
+          "path": "00_source/P02_BUS_04_office_walk_v2.png",
+          "sha256": "8dede4976b623d0393cbb19ba74c8e7048008be0652160431213da297b5a9e71",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_05",
+          "path": "00_source/P02_BUS_05_boardroom_v2.png",
+          "sha256": "8195b49a07d65e2bbe8d65236da62b4b5bea05e8243d08f90e282eb925d45a4a",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_06",
+          "path": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_07",
+          "path": "00_source/P02_BUS_07_private_office_v2.png",
+          "sha256": "51f12dad939278d3f3b214312c9588c8ee95111810534d53ab1f25d252f19339",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_08",
+          "path": "00_source/P02_BUS_08_laptop_workspace_v2.png",
+          "sha256": "87a5f20554bcc4dac8e577b62b15dd511d78bf5a37f87e8f0da5ff5a82e3f51a",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_09",
+          "path": "00_source/P02_BUS_09_window_crossed_arms_v2.png",
+          "sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_10",
+          "path": "00_source/P02_BUS_10_editorial_fullbody_v2.png",
+          "sha256": "3cd3547b3dc8f6bcac4dd6776f1505ffffb9413e1da09e35c08493cfc8c4f312",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX — BUSINESS",
+        "Virtual AI Photoshoot"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/01_contact_sheet/P02_business_v1_contact_sheet_clean_publish.jpg",
+      "width": 2400,
+      "height": 1590,
+      "file_size_bytes": 1095294,
+      "sha256": "0d422b1ab73e37f05b2927673df53fd29411101db6fbfa3a21ff1bfcbfe1051f",
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "path": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_02",
+          "path": "00_source/P02_BUS_02_window_3q_v2.png",
+          "sha256": "c6a4268bb90d2da603a37014e77d30af23723e2bb0edad84fa3fb9c034f58aaf",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_03",
+          "path": "00_source/P02_BUS_03_executive_desk_v2.png",
+          "sha256": "5e68469f0789097b6007f8bfdba03bfdb910e1ddd4a0e6487b13d93c6bf0cf99",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_04",
+          "path": "00_source/P02_BUS_04_office_walk_v2.png",
+          "sha256": "8dede4976b623d0393cbb19ba74c8e7048008be0652160431213da297b5a9e71",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_05",
+          "path": "00_source/P02_BUS_05_boardroom_v2.png",
+          "sha256": "8195b49a07d65e2bbe8d65236da62b4b5bea05e8243d08f90e282eb925d45a4a",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_06",
+          "path": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_07",
+          "path": "00_source/P02_BUS_07_private_office_v2.png",
+          "sha256": "51f12dad939278d3f3b214312c9588c8ee95111810534d53ab1f25d252f19339",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_08",
+          "path": "00_source/P02_BUS_08_laptop_workspace_v2.png",
+          "sha256": "87a5f20554bcc4dac8e577b62b15dd511d78bf5a37f87e8f0da5ff5a82e3f51a",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_09",
+          "path": "00_source/P02_BUS_09_window_crossed_arms_v2.png",
+          "sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_10",
+          "path": "00_source/P02_BUS_10_editorial_fullbody_v2.png",
+          "sha256": "3cd3547b3dc8f6bcac4dd6776f1505ffffb9413e1da09e35c08493cfc8c4f312",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_01_publish.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 592129,
+      "sha256": "8216d9e9f4c6da7a7c016480dedec5aee9c61dd736b70d49487b56b53925223a",
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "path": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_06",
+          "path": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "BUSINESS / 01",
+        "Виртуальная деловая\nфотосессия",
+        "10 профессиональных кадров без студии",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_02_publish.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 435384,
+      "sha256": "bfd1da4d3359fdbfc576adaf80c6b51424346b5889da44d98c574395bb31e173",
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "path": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_03",
+          "path": "00_source/P02_BUS_03_executive_desk_v2.png",
+          "sha256": "5e68469f0789097b6007f8bfdba03bfdb910e1ddd4a0e6487b13d93c6bf0cf99",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_09",
+          "path": "00_source/P02_BUS_09_window_crossed_arms_v2.png",
+          "sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "BUSINESS / 02",
+        "Один образ.\nРазные сцены.",
+        "Единая внешность — основа всей серии",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_03_publish.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 552770,
+      "sha256": "a80c20668cd776178698f5ebe4023c2f9a0460a162440f19a10a4fe9db51351d",
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "path": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_04",
+          "path": "00_source/P02_BUS_04_office_walk_v2.png",
+          "sha256": "8dede4976b623d0393cbb19ba74c8e7048008be0652160431213da297b5a9e71",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_05",
+          "path": "00_source/P02_BUS_05_boardroom_v2.png",
+          "sha256": "8195b49a07d65e2bbe8d65236da62b4b5bea05e8243d08f90e282eb925d45a4a",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_06",
+          "path": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "BUSINESS / 03",
+        "От портрета\nдо полного роста",
+        "Офис • переговорная • движение • полный рост",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_04_publish.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 419124,
+      "sha256": "68c758d8a912c7118b81e1ff2b5eab516f3cd88751143a2e5f77a79bf3b1eefc",
+      "source_inputs": [
+        {
+          "id": "BUS_08",
+          "path": "00_source/P02_BUS_08_laptop_workspace_v2.png",
+          "sha256": "87a5f20554bcc4dac8e577b62b15dd511d78bf5a37f87e8f0da5ff5a82e3f51a",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_04",
+          "path": "00_source/P02_BUS_04_office_walk_v2.png",
+          "sha256": "8dede4976b623d0393cbb19ba74c8e7048008be0652160431213da297b5a9e71",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_09",
+          "path": "00_source/P02_BUS_09_window_crossed_arms_v2.png",
+          "sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "BUSINESS / 04",
+        "Рабочие моменты",
+        "За ноутбуком, в движении, в профиль",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_05_publish.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 530999,
+      "sha256": "f5524149557d340dea07e92eff00930179d60edad74f9795a35c95b9ecd9f88a",
+      "source_inputs": [
+        {
+          "id": "BUS_02",
+          "path": "00_source/P02_BUS_02_window_3q_v2.png",
+          "sha256": "c6a4268bb90d2da603a37014e77d30af23723e2bb0edad84fa3fb9c034f58aaf",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_07",
+          "path": "00_source/P02_BUS_07_private_office_v2.png",
+          "sha256": "51f12dad939278d3f3b214312c9588c8ee95111810534d53ab1f25d252f19339",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "BUSINESS / 05",
+        "Ваш деловой образ",
+        "Резюме • LinkedIn • сайт • личный бренд",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_06_publish.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 178638,
+      "sha256": "52c302a5ad9ba020cb37f8ad4999ede7e6d1781c7f4a50e173291e8f89a5a5ac",
+      "source_inputs": [],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "BUSINESS / 06",
+        "Как устроена серия",
+        "От концепции к набору кадров",
+        "01",
+        "Концепция фотосессии",
+        "02",
+        "Опора на внешность",
+        "03",
+        "Разнообразные сцены и ракурсы",
+        "04",
+        "Проверка деталей и отбор",
+        "05",
+        "Подготовка цельной серии",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_07_publish.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 172380,
+      "sha256": "b838e74aecca399764b0765b3372e0115f9a30b417ccf61415f6bc2e9788957a",
+      "source_inputs": [],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "BUSINESS / 07",
+        "Внимание к деталям",
+        "Что важно при подготовке делового образа",
+        "01",
+        "Лицо и сходство",
+        "02",
+        "Руки и пропорции",
+        "03",
+        "Одежда и мелкие детали",
+        "04",
+        "Артефакты и надписи",
+        "05",
+        "Разнообразие и целостность серии",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_08_publish.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 770393,
+      "sha256": "8f7054ea7513624dd394a919cf26c7e08b0f0ba904680831356afbe8f6a5326e",
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "path": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_03",
+          "path": "00_source/P02_BUS_03_executive_desk_v2.png",
+          "sha256": "5e68469f0789097b6007f8bfdba03bfdb910e1ddd4a0e6487b13d93c6bf0cf99",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_04",
+          "path": "00_source/P02_BUS_04_office_walk_v2.png",
+          "sha256": "8dede4976b623d0393cbb19ba74c8e7048008be0652160431213da297b5a9e71",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_06",
+          "path": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_08",
+          "path": "00_source/P02_BUS_08_laptop_workspace_v2.png",
+          "sha256": "87a5f20554bcc4dac8e577b62b15dd511d78bf5a37f87e8f0da5ff5a82e3f51a",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_09",
+          "path": "00_source/P02_BUS_09_window_crossed_arms_v2.png",
+          "sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "BUSINESS / 08",
+        "Десять кадров.\nОдна коллекция.",
+        "Разные планы, ракурсы и рабочие ситуации",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_09_publish.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 529640,
+      "sha256": "2c734d84a217167adf867dd8d6a6eab5c657d4ec08c9dd1e5f4cc3b4980e4286",
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "path": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_09",
+          "path": "00_source/P02_BUS_09_window_crossed_arms_v2.png",
+          "sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "BUSINESS / 09",
+        "Ваш образ.\nНовая обстановка.",
+        "Виртуальная фотосессия без поездки в студию",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/02_avito_carousel/P02_business_card_10_publish.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 569825,
+      "sha256": "1fad5df6e8dde1c3062ac7be7cb2ead79ddc9bef692a37304fd871788958af62",
+      "source_inputs": [
+        {
+          "id": "BUS_06",
+          "path": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_08",
+          "path": "00_source/P02_BUS_08_laptop_workspace_v2.png",
+          "sha256": "87a5f20554bcc4dac8e577b62b15dd511d78bf5a37f87e8f0da5ff5a82e3f51a",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "BUSINESS / 10",
+        "Virtual Photo Studio",
+        "Помогаем людям выглядеть так, как они хотят выглядеть.",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/03_before_after/P02_reference_to_business_publish.jpg",
+      "width": 2100,
+      "height": 1400,
+      "file_size_bytes": 564250,
+      "sha256": "051c19a45dfae95b96bd34a556e5ede9be6bd5312d30cf49ec6e021f69a08b01",
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "path": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_06",
+          "path": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6",
+          "path_base": "session"
+        },
+        {
+          "id": "MASTER",
+          "path": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/00_master/P02_identity_master_v1.png",
+          "sha256": "d4a8ff4ec08feafb2af49eca6d75ca7df1843bcf772deb5afae1e070a6e50299",
+          "path_base": "repository"
+        },
+        {
+          "id": "REF03",
+          "path": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/01_references/P02_REF03.png",
+          "sha256": "23fb0883218085354fe2de85d92d2641916501ac41e754735892babb10a004c2",
+          "path_base": "repository"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX / ОТ ОБРАЗА К СЕРИИ",
+        "Виртуальная фотосессия",
+        "Исходный образ персонажа",
+        "Деловая серия ONYX",
+        "ONYX / Virtual Photo Studio"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/04_social/P02_business_square_selection_publish.jpg",
+      "width": 1600,
+      "height": 1600,
+      "file_size_bytes": 473039,
+      "sha256": "d9aa387158e2c67c9908546b58ba0200a4094ba7a56dc36cbd9d04030bfce3ec",
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "path": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_03",
+          "path": "00_source/P02_BUS_03_executive_desk_v2.png",
+          "sha256": "5e68469f0789097b6007f8bfdba03bfdb910e1ddd4a0e6487b13d93c6bf0cf99",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_04",
+          "path": "00_source/P02_BUS_04_office_walk_v2.png",
+          "sha256": "8dede4976b623d0393cbb19ba74c8e7048008be0652160431213da297b5a9e71",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_06",
+          "path": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "BUSINESS",
+        "Виртуальная фотосессия"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/04_social/P02_business_story_cover_publish.jpg",
+      "width": 1080,
+      "height": 1920,
+      "file_size_bytes": 477520,
+      "sha256": "6385394054772aae301dccd6783a2530b771c68ff2aa64885d806f0304f706c9",
+      "source_inputs": [
+        {
+          "id": "BUS_06",
+          "path": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "BUSINESS",
+        "Виртуальная фотосессия"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/04_social/P02_business_portrait_showcase_publish.jpg",
+      "width": 1600,
+      "height": 2000,
+      "file_size_bytes": 644110,
+      "sha256": "30f3e93fb3dca6cf74a9fb1462b3f28392401316759dcbc496b0768d8fd47f64",
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "path": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_08",
+          "path": "00_source/P02_BUS_08_laptop_workspace_v2.png",
+          "sha256": "87a5f20554bcc4dac8e577b62b15dd511d78bf5a37f87e8f0da5ff5a82e3f51a",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_09",
+          "path": "00_source/P02_BUS_09_window_crossed_arms_v2.png",
+          "sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX",
+        "BUSINESS",
+        "Виртуальная фотосессия"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/04_social/P02_business_clean_grid_4_publish.jpg",
+      "width": 1800,
+      "height": 2440,
+      "file_size_bytes": 1225953,
+      "sha256": "736d6f0b1bd052cc3e03e5dee61eef1e20e297a31105cc62d67f5f5fb3dcde88",
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "path": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_04",
+          "path": "00_source/P02_BUS_04_office_walk_v2.png",
+          "sha256": "8dede4976b623d0393cbb19ba74c8e7048008be0652160431213da297b5a9e71",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_06",
+          "path": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_08",
+          "path": "00_source/P02_BUS_08_laptop_workspace_v2.png",
+          "sha256": "87a5f20554bcc4dac8e577b62b15dd511d78bf5a37f87e8f0da5ff5a82e3f51a",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    },
+    {
+      "file": "05_marketing/04_social/P02_business_clean_grid_6_publish.jpg",
+      "width": 2100,
+      "height": 2020,
+      "file_size_bytes": 1240400,
+      "sha256": "5c1635335ef8a80570639944ebdbd390446c9e9602447d35b079cd9d96216825",
+      "source_inputs": [
+        {
+          "id": "BUS_01",
+          "path": "00_source/P02_BUS_01_headshot_front_v2.png",
+          "sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_03",
+          "path": "00_source/P02_BUS_03_executive_desk_v2.png",
+          "sha256": "5e68469f0789097b6007f8bfdba03bfdb910e1ddd4a0e6487b13d93c6bf0cf99",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_04",
+          "path": "00_source/P02_BUS_04_office_walk_v2.png",
+          "sha256": "8dede4976b623d0393cbb19ba74c8e7048008be0652160431213da297b5a9e71",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_06",
+          "path": "00_source/P02_BUS_06_lobby_fullbody_v2.png",
+          "sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_08",
+          "path": "00_source/P02_BUS_08_laptop_workspace_v2.png",
+          "sha256": "87a5f20554bcc4dac8e577b62b15dd511d78bf5a37f87e8f0da5ff5a82e3f51a",
+          "path_base": "session"
+        },
+        {
+          "id": "BUS_09",
+          "path": "00_source/P02_BUS_09_window_crossed_arms_v2.png",
+          "sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b",
+          "path_base": "session"
+        }
+      ],
+      "export_role": "preferred_public_layout",
+      "rendered_text": [
+        "ONYX"
+      ],
+      "processing": "contain resize and composition; no source edit, retouch or AI upscale"
+    }
+  ],
+  "copy": [
+    {
+      "file": "05_marketing/05_copy/avito_description_v1_publish.md",
+      "sha256": "9bbe95cc77d4af1d742937032322d88051e07a75de49c3bcd09b83ed4fc01651",
+      "text": "# Виртуальная деловая фотосессия ONYX\n\nДесять кадров, объединённых одним образом. Крупный портрет, рабочий кабинет, переговорная, движение и полный рост.\n\nПродуманная серия помогает подобрать фотографию под настроение и задачу. В основе подхода — концепция, внимание к внешности, разнообразие сцен и аккуратный отбор.\n\nДля резюме, LinkedIn, сайта и социальных сетей — без поездки в студию.\n\nРасскажите, какой образ вы хотите создать и где планируете использовать фотографии.\n"
+    },
+    {
+      "file": "05_marketing/05_copy/website_business_collection_v1_publish.md",
+      "sha256": "0473548b0e3bf3aca474a121bb8f76cfc90437c383d4d6c9fdc231f83919b227",
+      "text": "# ONYX Business\n\nОдин образ — разные моменты. Крупный портрет, рабочий кабинет, переговорная, движение и полный рост.\n\nКоллекция объединяет десять фотографий с разными планами, ракурсами и настроением. Виртуальная фотосессия открывает новые возможности для личного визуального образа.\n"
+    },
+    {
+      "file": "05_marketing/05_copy/short_social_caption_v1_publish.md",
+      "sha256": "f509fc258ae4264919895718e79bcfa1e646127305eb19ad057a4d0b48bd926e",
+      "text": "ONYX Business: десять кадров, один образ, разные истории. Крупный портрет, рабочий кабинет, переговорная, движение и полный рост.\n\nВиртуальная фотосессия ONYX.\n"
+    },
+    {
+      "file": "05_marketing/05_copy/portfolio_caption_v1_publish.md",
+      "sha256": "cdeb8f5794ebfc8c9f9920681179e7754099fcd15c883e5754901848936fc308",
+      "text": "# ONYX / BUSINESS\n\nКрупный портрет, рабочий кабинет, переговорная, движение и полный рост.\n\nСерия из десяти кадров: внешность объединяет коллекцию, а свет, движение и обстановка создают разные настроения. Виртуальная фотосессия ONYX.\n"
+    }
+  ]
+}

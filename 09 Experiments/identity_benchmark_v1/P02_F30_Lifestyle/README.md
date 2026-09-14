@@ -13,6 +13,12 @@ preserves them, archives prompts and includes technical QA, candidate staging, w
 exports and internal marketing drafts. Human review is pending. This packaging phase
 did not run generation, training, repair or identity scoring and did not change canonical PNGs.
 
+The [P02 LIFESTYLE V1 package](04_portfolio/lifestyle_v1/README.md) now preserves ten
+lifestyle candidates, including the evening-city LIFE_10 replacement, with prompts,
+technical QA, staging, web exports and clean public layouts. Human review remains pending.
+Business has parallel [preferred publishing exports](04_portfolio/business_v1/05_marketing/PUBLISHING_NOTES.md);
+its historical manifests, review/QA and reports are unchanged.
+
 ## Metadata
 
 - [Identity manifest](identity_manifest.yaml): canonical paths, roles, SHA256 and validation.

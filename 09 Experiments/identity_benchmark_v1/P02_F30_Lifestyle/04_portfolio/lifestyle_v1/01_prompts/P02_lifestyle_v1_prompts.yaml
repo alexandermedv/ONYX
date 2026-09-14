@@ -1,0 +1,59 @@
+{
+  "session_id": "P02_LIFESTYLE_V1",
+  "session_identity_rule": "Use MASTER and REF01–REF05 strictly for identity, facial structure, natural body proportions and appearance.\n\nDo NOT preserve or mechanically copy the pose, head angle, gaze direction, facial expression, hand position, hairstyle arrangement, clothing or composition from the references.\n\nEach image must feel like a genuinely different moment from the same person's life.\n\nIntentionally vary:\n- facial expression\n- gaze direction\n- head angle\n- body orientation\n- camera distance\n- hairstyle arrangement\n- activity\n- hand position\n- lighting\n- environment\n\nAvoid repeatedly using the same three-quarter face angle and subtle closed-mouth smile.",
+  "prompt_provenance": "Verbatim user-supplied prompts; exact replacement execution prompt not separately supplied.",
+  "model": null,
+  "seed": null,
+  "prompts": [
+    {
+      "id": "LIFE_01",
+      "prompt": "Use MASTER and REF01–REF05 as identity references for the same adult woman. Preserve her identity with very high fidelity.\n\nUse the references strictly for identity and natural proportions only. Do not copy their pose, expression, gaze direction, hairstyle arrangement, clothing, hand position, or composition.\n\nCreate a photorealistic premium lifestyle photograph. Vertical 3:4 composition.\n\nScene: she is sitting at a stylish independent café beside a large window in soft morning daylight. She wears a relaxed white shirt with the sleeves casually rolled and simple dark trousers.\n\nShe is seated partly side-on to the camera, one hand loosely around a coffee cup and the other resting naturally on the table.\n\nShe is looking out of the window rather than at the camera.\n\nExpression: relaxed, thoughtful, peaceful, with a completely neutral mouth.\n\nHair falls naturally over one shoulder.\n\nBackground: elegant café interior, subtle urban street visible through the glass, shallow depth of field. The photograph should feel candid and real rather than posed.",
+      "text_sha256": "03482600644835380b221bc32796acffd4d43e63023d4913c6c789616a321f79"
+    },
+    {
+      "id": "LIFE_02",
+      "prompt": "Use MASTER and REF01–REF05 strictly as identity references for the same woman. Preserve identity with very high fidelity while creating a genuinely new pose and expression.\n\nCreate a photorealistic premium lifestyle image. Vertical 3:4.\n\nScene: she is walking along an elegant city street during late morning. Show her nearly full-length.\n\nShe wears straight-leg jeans, a fitted neutral top, an oversized camel coat and clean minimal sneakers.\n\nCapture her genuinely mid-stride. One hand lightly holds a small shoulder bag while the other moves naturally with her walk.\n\nShe is looking slightly to her left, away from the camera.\n\nExpression: confident, energetic, naturally serious.\n\nHair has subtle movement from walking.\n\nBackground: refined urban architecture, cafés and soft street activity. Natural daylight and believable motion. Avoid a fashion-model static pose.",
+      "text_sha256": "fee0ee50870353a866eb6065591f7fa460743c25ecba32a14351f7ac6c7d5c9d"
+    },
+    {
+      "id": "LIFE_03",
+      "prompt": "Use MASTER and REF01–REF05 only for identity and natural body proportions.\n\nCreate a photorealistic intimate but non-glamorous lifestyle photograph. Vertical 3:4.\n\nScene: a bright modern apartment in the morning. She stands barefoot near a kitchen island holding a ceramic mug.\n\nShe wears a simple cream knit sweater and relaxed neutral trousers.\n\nHer body is turned slightly away from camera. She looks down toward the mug rather than at the viewer.\n\nExpression: soft, sleepy, peaceful, natural.\n\nHair is loosely gathered back with several strands around her face, noticeably different from the polished hairstyles in other images.\n\nSoft morning window light, warm home atmosphere, understated styling. The photograph should feel like an authentic candid moment at home.",
+      "text_sha256": "9713cea7f2a2e48c447990c167af03e3738035734d9f117f22ddf6dd258ee583"
+    },
+    {
+      "id": "LIFE_04",
+      "prompt": "Use MASTER and REF01–REF05 strictly for identity. Do not copy expressions or poses from other photographs.\n\nCreate a photorealistic premium lifestyle portrait. Vertical 3:4.\n\nScene: she is sitting comfortably in a quiet café or hotel lounge reading a book.\n\nShe wears an ivory turtleneck with a light beige coat draped loosely around her shoulders.\n\nCamera angle: approximately 45 degrees from her side.\n\nShe is looking down at the open book and is unaware of the camera.\n\nExpression: absorbed, calm, natural.\n\nOne leg is crossed casually over the other. Both hands interact naturally with the book.\n\nSoft warm interior light mixed with daylight. Background softly blurred. Avoid direct eye contact and avoid a posed smile.",
+      "text_sha256": "87ac0a7ba4b5ed926f682174d3230c2e2c83601f72f5861f3463d56b4d56e63c"
+    },
+    {
+      "id": "LIFE_05",
+      "prompt": "Use MASTER and REF01–REF05 strictly to preserve identity.\n\nCreate a photorealistic premium lifestyle editorial photograph. Vertical 3:4.\n\nScene: sunset on a sophisticated rooftop terrace overlooking a city.\n\nShe wears a minimalist black sleeveless dress, elegant but understated.\n\nHer body is turned mostly away from the camera. She looks back over her shoulder toward the viewer.\n\nThis should create a clearly different rear-three-quarter pose.\n\nExpression: relaxed, slightly playful, with a subtle natural smile.\n\nHair moves gently in the evening breeze.\n\nWarm sunset rim light, realistic city atmosphere, elegant terrace architecture. Keep it sophisticated rather than overtly glamorous.",
+      "text_sha256": "cfcd6e57f980bd4d45988691464cdf168ac73ce57d2a01afda77a88542f74789"
+    },
+    {
+      "id": "LIFE_06",
+      "prompt": "Use MASTER and REF01–REF05 strictly for identity.\n\nCreate a photorealistic candid lifestyle photograph. Vertical 3:4.\n\nScene: weekend afternoon on a lively but elegant pedestrian street.\n\nShe wears a white T-shirt, high-waisted blue jeans, a light leather or suede jacket and casual shoes.\n\nShe is walking naturally while reacting to someone outside the frame.\n\nExpression: genuine open smile or light laugh, clearly more expressive than the other images.\n\nShe is looking off-camera toward the imagined person, not at the viewer.\n\nOne hand briefly moves her hair away from her face while the other carries a small bag.\n\nNatural daylight, slight movement, believable candid photography. It should feel spontaneous rather than like a fashion pose.",
+      "text_sha256": "09a8b4a13fb17b17106d6f6c71c80a169e0d3e1274d4a2b38212857795fb81f1"
+    },
+    {
+      "id": "LIFE_07",
+      "prompt": "Use MASTER and REF01–REF05 strictly as identity references.\n\nCreate a photorealistic premium lifestyle portrait. Vertical 3:4.\n\nScene: she stands on a contemporary apartment or hotel balcony during early evening.\n\nShow her mostly in side profile.\n\nShe wears a soft light-colored blouse and high-waisted relaxed trousers.\n\nHer forearms rest lightly on the balcony railing.\n\nShe looks into the distance, not toward the camera.\n\nExpression: quiet, contemplative, slightly serious.\n\nHair is pulled partly behind her shoulders to clearly expose the facial profile.\n\nBackground: softly blurred city and sky. Gentle blue-hour or late-evening light. Cinematic but realistic.",
+      "text_sha256": "39205012dfe67950cf23f7f4eb24777d4ca10fd53e5656d6f4390baad5c0c83b"
+    },
+    {
+      "id": "LIFE_08",
+      "prompt": "Use MASTER and REF01–REF05 only for identity and natural proportions.\n\nCreate a photorealistic relaxed home lifestyle photograph. Vertical 3:4.\n\nScene: she is sitting comfortably sideways on a modern sofa in a warm living room.\n\nShe wears an oversized soft knit sweater and relaxed trousers.\n\nOne leg is folded naturally on the sofa. One arm rests along the back of the sofa while the other loosely holds a cup of tea.\n\nShe looks directly toward the camera.\n\nExpression: warm, relaxed and genuinely friendly, with a natural smile that is different from the restrained corporate expression.\n\nHair is more casual and slightly tousled.\n\nSoft window light, warm interior textures, cozy realistic atmosphere.",
+      "text_sha256": "2d11569a7313b1fcbcc1ca6cbb82d1cdf49cf63c9b0d21ce426af8eaf5a359e0"
+    },
+    {
+      "id": "LIFE_09",
+      "prompt": "Use MASTER and REF01–REF05 strictly for identity. Preserve the same canonical woman.\n\nCreate a photorealistic premium travel-lifestyle image. Vertical 3:4.\n\nScene: an elegant contemporary hotel lobby.\n\nShe is walking while pulling a small premium carry-on suitcase.\n\nShe wears comfortable travel clothing: wide-leg trousers, a fitted top, long lightweight coat and clean sneakers or loafers.\n\nShe is not looking at the camera. Her gaze is directed toward reception or toward the lobby ahead.\n\nExpression: focused, relaxed and purposeful.\n\nShow her nearly full-length with natural walking movement.\n\nBackground: polished stone, modern seating, luggage and warm architectural lighting. The scene should feel like genuine travel rather than an office photograph.",
+      "text_sha256": "8c1590cf7ee87dec9287f8cedb7d5a46426bcb66a0a54c9e703cde5bb63eb272"
+    },
+    {
+      "id": "LIFE_10",
+      "prompt": "Use MASTER and REF01–REF05 strictly to preserve identity.\n\nCreate a photorealistic premium evening lifestyle portrait. Vertical 3:4.\n\nScene: an elegant city street or restaurant district shortly after sunset.\n\nShe wears a refined dark midi dress with a lightweight coat casually over one shoulder.\n\nShe is standing near warm architectural lights and softly blurred city bokeh.\n\nHer torso is turned away approximately 45 degrees, while her head turns back toward the camera.\n\nExpression: confident, relaxed, slightly amused, with a subtle asymmetrical smile.\n\nOne hand adjusts the coat while the other remains relaxed at her side.\n\nHair has a softer evening style with a slightly different parting than the daytime photographs.\n\nWarm practical lights mixed with cool ambient evening light. Sophisticated, realistic, cinematic lifestyle photography.",
+      "text_sha256": "15cea9afca84f926addc947d328fef6429ce927add3e0b1d966e19acb574e01b"
+    }
+  ]
+}

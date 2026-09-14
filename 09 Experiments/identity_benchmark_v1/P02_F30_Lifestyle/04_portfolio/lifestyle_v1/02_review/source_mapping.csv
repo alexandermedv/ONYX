@@ -1,0 +1,11 @@
+id,source_filename,canonical_path,sha256,mapping_basis,copy_method
+LIFE_01,P02_LIFE_01_cafe_window.png,00_source/P02_LIFE_01_cafe_window.png,bcfc627f4b79a8121fe63e23da8beaf94863443919b4f84cbf66f375a4c5dbb0,scene content visually inspected; evening-city replacement confirmed for LIFE_10,byte-for-byte
+LIFE_02,2.png,00_source/P02_LIFE_02_city_walk.png,32c62bb3d78d487cc99116a32be0016d4cb4fff1a1a2625f6653f80d8159615f,scene content visually inspected; evening-city replacement confirmed for LIFE_10,byte-for-byte
+LIFE_03,3.png,00_source/P02_LIFE_03_home_morning.png,4418e5052aa0da402f681283afc772c9217b554b610f792c3704a156a413ddc1,scene content visually inspected; evening-city replacement confirmed for LIFE_10,byte-for-byte
+LIFE_04,4.png,00_source/P02_LIFE_04_book_cafe.png,99e498e8fb7dc52f5de1283662e31073e7a0d3c9964ab2671c0d370cc571896b,scene content visually inspected; evening-city replacement confirmed for LIFE_10,byte-for-byte
+LIFE_05,5.png,00_source/P02_LIFE_05_rooftop_sunset.png,95d6428075a4a5dae69d3d7a3f5ad725235c673d39ce4c5c229626356ac41829,scene content visually inspected; evening-city replacement confirmed for LIFE_10,byte-for-byte
+LIFE_06,6.png,00_source/P02_LIFE_06_weekend_street.png,ce833d64a5848dbd99d65f3461a4eece52adaff0aa6eca5a173f72ad079e90a5,scene content visually inspected; evening-city replacement confirmed for LIFE_10,byte-for-byte
+LIFE_07,7.png,00_source/P02_LIFE_07_balcony_profile.png,eb66169c9bf98fb30b3bd658a67fe7ec2dee7042d88542975b5d866e2dc81285,scene content visually inspected; evening-city replacement confirmed for LIFE_10,byte-for-byte
+LIFE_08,8.png,00_source/P02_LIFE_08_cozy_sofa.png,32985e058fdedb32a2312cce5290844fd05aa99759197bdc70ce97e93156f87e,scene content visually inspected; evening-city replacement confirmed for LIFE_10,byte-for-byte
+LIFE_09,9.png,00_source/P02_LIFE_09_travel_lobby.png,c8ef167ddcbf00407611a02fb760a67be47eb3781204e288e605db78b2137b7c,scene content visually inspected; evening-city replacement confirmed for LIFE_10,byte-for-byte
+LIFE_10,10.png,00_source/P02_LIFE_10_evening_city.png,dff2f12e84565b150fa999441eb68945eaaaa7ce4ed78621506b179c9899ce2d,scene content visually inspected; evening-city replacement confirmed for LIFE_10,byte-for-byte
