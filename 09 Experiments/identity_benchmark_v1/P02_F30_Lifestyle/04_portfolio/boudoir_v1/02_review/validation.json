@@ -1,0 +1,92 @@
+{
+  "canonical_assets_present": 10,
+  "canonical_assets_expected": 10,
+  "all_expected_canonical_assets_exist": true,
+  "all_pngs_readable": true,
+  "all_hashes_match": true,
+  "all_final_staging_copies_match": true,
+  "unique_sha256_count": 10,
+  "bd10_corrected_final_used": true,
+  "rows": [
+    {
+      "id": "BD_01",
+      "exists": true,
+      "png_readable": true,
+      "dimensions_match": true,
+      "sha256_match": true,
+      "final_byte_match": true
+    },
+    {
+      "id": "BD_02",
+      "exists": true,
+      "png_readable": true,
+      "dimensions_match": true,
+      "sha256_match": true,
+      "final_byte_match": true
+    },
+    {
+      "id": "BD_03",
+      "exists": true,
+      "png_readable": true,
+      "dimensions_match": true,
+      "sha256_match": true,
+      "final_byte_match": true
+    },
+    {
+      "id": "BD_04",
+      "exists": true,
+      "png_readable": true,
+      "dimensions_match": true,
+      "sha256_match": true,
+      "final_byte_match": true
+    },
+    {
+      "id": "BD_05",
+      "exists": true,
+      "png_readable": true,
+      "dimensions_match": true,
+      "sha256_match": true,
+      "final_byte_match": true
+    },
+    {
+      "id": "BD_06",
+      "exists": true,
+      "png_readable": true,
+      "dimensions_match": true,
+      "sha256_match": true,
+      "final_byte_match": true
+    },
+    {
+      "id": "BD_07",
+      "exists": true,
+      "png_readable": true,
+      "dimensions_match": true,
+      "sha256_match": true,
+      "final_byte_match": true
+    },
+    {
+      "id": "BD_08",
+      "exists": true,
+      "png_readable": true,
+      "dimensions_match": true,
+      "sha256_match": true,
+      "final_byte_match": true
+    },
+    {
+      "id": "BD_09",
+      "exists": true,
+      "png_readable": true,
+      "dimensions_match": true,
+      "sha256_match": true,
+      "final_byte_match": true
+    },
+    {
+      "id": "BD_10",
+      "exists": true,
+      "png_readable": true,
+      "dimensions_match": true,
+      "sha256_match": true,
+      "final_byte_match": true
+    }
+  ]
+}
