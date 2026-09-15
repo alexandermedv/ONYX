@@ -1,0 +1,617 @@
+{
+  "scene_id": "BUS_01",
+  "source_name": "Classic Business Headshot",
+  "canonical_scene_prompt": "professional editorial corporate portrait of one adult man, head and shoulders, seated or standing upright, frontal face, looking at camera, calm confident expression, dark business jacket with neutral shirt, neutral modern office background, soft even daylight, unobstructed face, natural skin texture, professional photography, photorealistic",
+  "prompt": "Place the same adult man in this scene: professional editorial corporate portrait of one adult man, head and shoulders, seated or standing upright, frontal face, looking at camera, calm confident expression, dark business jacket with neutral shirt, neutral modern office background, soft even daylight, unobstructed face, natural skin texture, professional photography, photorealistic Preserve his facial features, apparent age, bald head, natural skin texture, identity, and photorealistic quality. Do not add other people.",
+  "seed": 748412438238144,
+  "status": "completed",
+  "prompt_id": "fa6a4a0b-04d4-42fc-a373-bbf2a8a4f77a",
+  "request": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_qualifier_v1\\requests\\BUS_01.json",
+  "history": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_qualifier_v1\\history\\BUS_01.json",
+  "comfy_generated_filename": "P01_BUS_01_KONTEXT_00001_.png",
+  "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_qualifier_v1\\outputs\\P01_BUS_01_KONTEXT.png",
+  "output_sha256": "c9094caf0e591d4416488fec0b2309a89b848f58736b82cedf825497f3107eda",
+  "duration_seconds": 116.33851420000428,
+  "peak_gpu_used_mib": 18858,
+  "telemetry_samples": [
+    {
+      "timestamp": "2026-09-10T13:53:59.756558+00:00",
+      "ram_free_mib": 17966,
+      "commit_free_mib": 30851,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 1164,
+        "free_mib": 23162
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:01.825475+00:00",
+      "ram_free_mib": 17474,
+      "commit_free_mib": 28877,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 2510,
+        "free_mib": 21816
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:03.886857+00:00",
+      "ram_free_mib": 16554,
+      "commit_free_mib": 25494,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 5547,
+        "free_mib": 18779
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:05.961428+00:00",
+      "ram_free_mib": 16141,
+      "commit_free_mib": 23617,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 6744,
+        "free_mib": 17582
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:08.027384+00:00",
+      "ram_free_mib": 16094,
+      "commit_free_mib": 23032,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 7576,
+        "free_mib": 16750
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:10.071609+00:00",
+      "ram_free_mib": 16084,
+      "commit_free_mib": 22668,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 7896,
+        "free_mib": 16430
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:12.130729+00:00",
+      "ram_free_mib": 15991,
+      "commit_free_mib": 19694,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 10872,
+        "free_mib": 13454
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:14.183410+00:00",
+      "ram_free_mib": 16014,
+      "commit_free_mib": 19361,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 11224,
+        "free_mib": 13102
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:16.249444+00:00",
+      "ram_free_mib": 16004,
+      "commit_free_mib": 19068,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 11501,
+        "free_mib": 12825
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:18.309075+00:00",
+      "ram_free_mib": 16068,
+      "commit_free_mib": 18840,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 11789,
+        "free_mib": 12537
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:20.370570+00:00",
+      "ram_free_mib": 16072,
+      "commit_free_mib": 18602,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 12109,
+        "free_mib": 12217
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:22.431279+00:00",
+      "ram_free_mib": 16076,
+      "commit_free_mib": 18220,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 12429,
+        "free_mib": 11897
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:24.482699+00:00",
+      "ram_free_mib": 16075,
+      "commit_free_mib": 17998,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 12717,
+        "free_mib": 11609
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:26.552166+00:00",
+      "ram_free_mib": 16065,
+      "commit_free_mib": 17635,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 13005,
+        "free_mib": 11321
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:28.613137+00:00",
+      "ram_free_mib": 16070,
+      "commit_free_mib": 17415,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 13229,
+        "free_mib": 11097
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:30.673234+00:00",
+      "ram_free_mib": 16076,
+      "commit_free_mib": 17162,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 13485,
+        "free_mib": 10841
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:32.733795+00:00",
+      "ram_free_mib": 16075,
+      "commit_free_mib": 16932,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 13709,
+        "free_mib": 10617
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:34.794363+00:00",
+      "ram_free_mib": 16024,
+      "commit_free_mib": 15470,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 15181,
+        "free_mib": 9145
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:36.855133+00:00",
+      "ram_free_mib": 16010,
+      "commit_free_mib": 15168,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 15475,
+        "free_mib": 8851
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:38.915895+00:00",
+      "ram_free_mib": 16014,
+      "commit_free_mib": 14850,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 15795,
+        "free_mib": 8531
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:41.199839+00:00",
+      "ram_free_mib": 16022,
+      "commit_free_mib": 14600,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 16076,
+        "free_mib": 8250
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:43.248552+00:00",
+      "ram_free_mib": 16017,
+      "commit_free_mib": 14306,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 16364,
+        "free_mib": 7962
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:45.396126+00:00",
+      "ram_free_mib": 16014,
+      "commit_free_mib": 14087,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 16556,
+        "free_mib": 7770
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:47.457667+00:00",
+      "ram_free_mib": 16013,
+      "commit_free_mib": 13804,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 16834,
+        "free_mib": 7492
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:49.513267+00:00",
+      "ram_free_mib": 16009,
+      "commit_free_mib": 13520,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 17127,
+        "free_mib": 7199
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:51.573002+00:00",
+      "ram_free_mib": 16011,
+      "commit_free_mib": 13261,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 17383,
+        "free_mib": 6943
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:53.760712+00:00",
+      "ram_free_mib": 16018,
+      "commit_free_mib": 13111,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 17575,
+        "free_mib": 6751
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:55.839798+00:00",
+      "ram_free_mib": 16020,
+      "commit_free_mib": 12888,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 17793,
+        "free_mib": 6533
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:54:57.904321+00:00",
+      "ram_free_mib": 16016,
+      "commit_free_mib": 12636,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18047,
+        "free_mib": 6279
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:00.018256+00:00",
+      "ram_free_mib": 16818,
+      "commit_free_mib": 12372,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18269,
+        "free_mib": 6057
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:02.125139+00:00",
+      "ram_free_mib": 17302,
+      "commit_free_mib": 12074,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18557,
+        "free_mib": 5769
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:04.403262+00:00",
+      "ram_free_mib": 17810,
+      "commit_free_mib": 11820,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18813,
+        "free_mib": 5513
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:06.482874+00:00",
+      "ram_free_mib": 18071,
+      "commit_free_mib": 11798,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18819,
+        "free_mib": 5507
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:08.546797+00:00",
+      "ram_free_mib": 18263,
+      "commit_free_mib": 11808,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18819,
+        "free_mib": 5507
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:10.603495+00:00",
+      "ram_free_mib": 18270,
+      "commit_free_mib": 11819,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18819,
+        "free_mib": 5507
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:12.667869+00:00",
+      "ram_free_mib": 18290,
+      "commit_free_mib": 11839,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18813,
+        "free_mib": 5513
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:14.724724+00:00",
+      "ram_free_mib": 18311,
+      "commit_free_mib": 11857,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18813,
+        "free_mib": 5513
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:16.785116+00:00",
+      "ram_free_mib": 18311,
+      "commit_free_mib": 11874,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18814,
+        "free_mib": 5512
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:18.849457+00:00",
+      "ram_free_mib": 18312,
+      "commit_free_mib": 11835,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18836,
+        "free_mib": 5490
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:20.900851+00:00",
+      "ram_free_mib": 18311,
+      "commit_free_mib": 11833,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18835,
+        "free_mib": 5491
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:22.938518+00:00",
+      "ram_free_mib": 18273,
+      "commit_free_mib": 11783,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18832,
+        "free_mib": 5494
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:25.010995+00:00",
+      "ram_free_mib": 18261,
+      "commit_free_mib": 11779,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18833,
+        "free_mib": 5493
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:27.059770+00:00",
+      "ram_free_mib": 18263,
+      "commit_free_mib": 11787,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18832,
+        "free_mib": 5494
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:29.102831+00:00",
+      "ram_free_mib": 18262,
+      "commit_free_mib": 11787,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18811,
+        "free_mib": 5515
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:31.168821+00:00",
+      "ram_free_mib": 18267,
+      "commit_free_mib": 11788,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18811,
+        "free_mib": 5515
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:33.229527+00:00",
+      "ram_free_mib": 18265,
+      "commit_free_mib": 11818,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18811,
+        "free_mib": 5515
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:35.293598+00:00",
+      "ram_free_mib": 18269,
+      "commit_free_mib": 11819,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18811,
+        "free_mib": 5515
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:37.348880+00:00",
+      "ram_free_mib": 18245,
+      "commit_free_mib": 11762,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18849,
+        "free_mib": 5477
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:39.411137+00:00",
+      "ram_free_mib": 18230,
+      "commit_free_mib": 11726,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18856,
+        "free_mib": 5470
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:41.467798+00:00",
+      "ram_free_mib": 18234,
+      "commit_free_mib": 11727,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18858,
+        "free_mib": 5468
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:43.532254+00:00",
+      "ram_free_mib": 18236,
+      "commit_free_mib": 11735,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18851,
+        "free_mib": 5475
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:45.592635+00:00",
+      "ram_free_mib": 18248,
+      "commit_free_mib": 11732,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18855,
+        "free_mib": 5471
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:47.654229+00:00",
+      "ram_free_mib": 18253,
+      "commit_free_mib": 11757,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18848,
+        "free_mib": 5478
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:49.714213+00:00",
+      "ram_free_mib": 18282,
+      "commit_free_mib": 11814,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18831,
+        "free_mib": 5495
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:51.774195+00:00",
+      "ram_free_mib": 18294,
+      "commit_free_mib": 11811,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18831,
+        "free_mib": 5495
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:53.838525+00:00",
+      "ram_free_mib": 18305,
+      "commit_free_mib": 11853,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 18831,
+        "free_mib": 5495
+      }
+    },
+    {
+      "timestamp": "2026-09-10T13:55:55.898804+00:00",
+      "ram_free_mib": 18282,
+      "commit_free_mib": 12733,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 17679,
+        "free_mib": 6647
+      }
+    }
+  ],
+  "telemetry_before": {
+    "timestamp": "2026-09-10T13:53:59.714212+00:00",
+    "ram_free_mib": 17966,
+    "commit_free_mib": 30852,
+    "gpu": {
+      "total_mib": 24576,
+      "used_mib": 1164,
+      "free_mib": 23162
+    }
+  },
+  "telemetry_after": {
+    "timestamp": "2026-09-10T13:55:56.165963+00:00",
+    "ram_free_mib": 18281,
+    "commit_free_mib": 12711,
+    "gpu": {
+      "total_mib": 24576,
+      "used_mib": 17692,
+      "free_mib": 6634
+    }
+  },
+  "technical_validation": {
+    "exists": true,
+    "decodable": true,
+    "format": "PNG",
+    "width": 880,
+    "height": 1184
+  },
+  "warnings": [],
+  "error": null
+}

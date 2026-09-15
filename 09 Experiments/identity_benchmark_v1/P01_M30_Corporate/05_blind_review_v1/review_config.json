@@ -1,0 +1,171 @@
+{
+  "schema": "onyx.identity_benchmark.blind_review_config",
+  "schema_version": "1.0",
+  "review_id": "P01_blind_review_v1",
+  "references": {
+    "master": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\00_master\\P01_identity_master_v1.png",
+    "references": [
+      "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF01_frontal.png",
+      "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF02_right_3q.png",
+      "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF03_left_3q_smile.png"
+    ]
+  },
+  "review_order": [
+    {
+      "scene": "BUS_01",
+      "candidate_id": "BUS_01-A"
+    },
+    {
+      "scene": "BUS_01",
+      "candidate_id": "BUS_01-B"
+    },
+    {
+      "scene": "BUS_01",
+      "candidate_id": "BUS_01-C"
+    },
+    {
+      "scene": "BUS_01",
+      "candidate_id": "BUS_01-D"
+    },
+    {
+      "scene": "BUS_01",
+      "candidate_id": "BUS_01-E"
+    },
+    {
+      "scene": "BUS_01",
+      "candidate_id": "BUS_01-F"
+    },
+    {
+      "scene": "BUS_01",
+      "candidate_id": "BUS_01-G"
+    },
+    {
+      "scene": "BUS_01",
+      "candidate_id": "BUS_01-H"
+    },
+    {
+      "scene": "BUS_01",
+      "candidate_id": "BUS_01-I"
+    },
+    {
+      "scene": "BUS_01",
+      "candidate_id": "BUS_01-J"
+    },
+    {
+      "scene": "BUS_01",
+      "candidate_id": "BUS_01-K"
+    },
+    {
+      "scene": "BUS_01",
+      "candidate_id": "BUS_01-L"
+    },
+    {
+      "scene": "BUS_06",
+      "candidate_id": "BUS_06-A"
+    },
+    {
+      "scene": "BUS_06",
+      "candidate_id": "BUS_06-B"
+    },
+    {
+      "scene": "BUS_06",
+      "candidate_id": "BUS_06-C"
+    },
+    {
+      "scene": "BUS_06",
+      "candidate_id": "BUS_06-D"
+    },
+    {
+      "scene": "BUS_06",
+      "candidate_id": "BUS_06-E"
+    },
+    {
+      "scene": "BUS_06",
+      "candidate_id": "BUS_06-F"
+    },
+    {
+      "scene": "BUS_06",
+      "candidate_id": "BUS_06-G"
+    },
+    {
+      "scene": "BUS_06",
+      "candidate_id": "BUS_06-H"
+    },
+    {
+      "scene": "BUS_06",
+      "candidate_id": "BUS_06-I"
+    },
+    {
+      "scene": "BUS_06",
+      "candidate_id": "BUS_06-J"
+    },
+    {
+      "scene": "BUS_06",
+      "candidate_id": "BUS_06-K"
+    },
+    {
+      "scene": "BUS_06",
+      "candidate_id": "BUS_06-L"
+    },
+    {
+      "scene": "BUS_09",
+      "candidate_id": "BUS_09-A"
+    },
+    {
+      "scene": "BUS_09",
+      "candidate_id": "BUS_09-B"
+    },
+    {
+      "scene": "BUS_09",
+      "candidate_id": "BUS_09-C"
+    },
+    {
+      "scene": "BUS_09",
+      "candidate_id": "BUS_09-D"
+    },
+    {
+      "scene": "BUS_09",
+      "candidate_id": "BUS_09-E"
+    },
+    {
+      "scene": "BUS_09",
+      "candidate_id": "BUS_09-F"
+    },
+    {
+      "scene": "BUS_09",
+      "candidate_id": "BUS_09-G"
+    },
+    {
+      "scene": "BUS_09",
+      "candidate_id": "BUS_09-H"
+    },
+    {
+      "scene": "BUS_09",
+      "candidate_id": "BUS_09-I"
+    },
+    {
+      "scene": "BUS_09",
+      "candidate_id": "BUS_09-J"
+    },
+    {
+      "scene": "BUS_09",
+      "candidate_id": "BUS_09-K"
+    },
+    {
+      "scene": "BUS_09",
+      "candidate_id": "BUS_09-L"
+    }
+  ],
+  "score_weights": {
+    "identity": 0.4,
+    "realism": 0.2,
+    "scene": 0.15,
+    "commercial": 0.25
+  },
+  "verdicts": [
+    "PASS",
+    "REPAIR",
+    "REGENERATE",
+    "REJECT"
+  ]
+}

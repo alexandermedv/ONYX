@@ -293,3 +293,175 @@ Update it once the implementation phase is stable and tests pass.
 
 Documentation and code should normally be committed together when they
 describe the same completed change.
+
+## Remote and unattended execution
+
+ONYX may be operated remotely and may run long-lived jobs while the user is away from the computer.
+
+Remote operation does not imply unrestricted autonomy.
+
+For unattended or remote jobs:
+
+- prefer deterministic scripts and existing pipeline commands over repeated agent reasoning;
+- prefer API/CLI execution over GUI automation when both are available;
+- do not rely on an unlocked interactive Windows desktop unless the task explicitly requires GUI automation;
+- do not modify Windows security, networking, firewall, user accounts, power settings, VPN, SSH, RDP, startup configuration, or scheduled tasks unless explicitly requested;
+- do not expose new network ports or services to the public Internet;
+- do not install remote-access software unless explicitly requested;
+- do not disable security controls merely to make automation easier;
+- if a task cannot continue safely without elevated permissions or interactive access, stop and report the blocker.
+
+For a long-running job, write enough state to disk that the run can be inspected after completion or failure.
+
+Prefer resumable/idempotent execution where practical.
+
+## Cost and usage control
+
+Treat external AI generation, cloud APIs, Codex reasoning, and repeated retries as metered resources.
+
+Prefer, in order where technically appropriate:
+
+1. deterministic local Python/code;
+2. existing local ONYX tools;
+3. local GPU processing / ComfyUI;
+4. inexpensive external/model calls;
+5. expensive model reasoning or generation only when necessary.
+
+Do not use a more expensive Codex model or higher reasoning effort merely because an image generation failed.
+
+Image-generation retry policy must be defined by the job/session configuration where possible.
+
+Never create an unbounded retry loop.
+
+When retry limits are exhausted:
+- preserve the failed result and diagnostics;
+- mark the scene/job appropriately;
+- continue with independent work when safe;
+- report the failure rather than repeatedly consuming quota.
+
+Batch routine filesystem, manifest, QA, metadata, and upload operations in deterministic scripts rather than performing them through repeated conversational reasoning.
+
+## Image production workflow
+
+For automated ONYX photo sessions, prefer a configuration-driven pipeline such as:
+
+session specification
+-> generation
+-> source preservation
+-> automatic QA
+-> PASS / REPAIR / REGENERATE decision
+-> post-processing
+-> upscale
+-> final QA
+-> manifest/report update
+-> delivery
+
+Never overwrite the original generated image during repair or post-processing.
+
+Keep source, intermediate, rejected, repaired, and final assets distinguishable.
+
+A final delivery set should contain only explicitly accepted images.
+
+Where practical, record for every generated asset:
+
+- session/job ID;
+- scene ID;
+- provider/model;
+- model/config version;
+- prompt or prompt reference;
+- reference-image identifiers;
+- seed when applicable;
+- generation timestamp;
+- generation duration;
+- resolution;
+- QA results;
+- identity score when available;
+- retry/repair history;
+- final disposition.
+
+Prefer structured machine-readable manifests over information stored only in chat text.
+
+## Quality gates
+
+Automated QA should use deterministic/local checks whenever practical.
+
+Examples include:
+
+- file readability;
+- expected resolution and aspect ratio;
+- face count;
+- identity similarity;
+- blur/sharpness;
+- duplicate or near-duplicate detection;
+- missing outputs.
+
+Visual-model evaluation should complement deterministic QA rather than replace it.
+
+Do not automatically PASS an image solely because generation completed successfully.
+
+Session-level QA should also consider collection diversity, including scene, framing, pose, expression, clothing, and background diversity when relevant.
+
+## Storage and delivery
+
+ONYX project assets and personal user assets must remain separated.
+
+Known storage distinction:
+
+- `onyx` is the ONYX project/work bucket;
+- `alexander` is personal storage.
+
+Never upload ONYX project assets to `alexander`.
+
+Before adding a new storage destination, inspect the existing project configuration rather than hard-coding credentials or endpoints.
+
+Never write secrets, access keys, passwords, tokens, or private URLs into:
+
+- AGENTS.md;
+- source code;
+- committed configuration;
+- manifests;
+- Markdown documentation.
+
+Prefer environment variables or existing secret/config mechanisms.
+
+For production delivery, upload only the assets intended by the session/job configuration.
+
+Source client photograph uploads remain subject to the Client data rules and require explicit approval.
+
+## Git safety for automated work
+
+Because remote and unattended tasks may run while the repository contains unrelated work:
+
+Before modifying tracked project files:
+1. run `git status --short`;
+2. identify pre-existing changes;
+3. treat all pre-existing changes as user-owned unless clearly produced by the current task.
+
+Never:
+- stage unrelated files;
+- include unrelated changes in a commit;
+- use `git add .` or `git add -A` when unrelated changes exist;
+- run destructive cleanup commands to obtain a clean tree.
+
+Prefer explicitly staging only the files produced by the current task.
+
+Do not push unless the user explicitly requests push.
+
+A request to commit does not imply permission to push.
+
+A request to push does not imply permission to force-push.
+
+## Escalation and approvals
+
+Stop and request explicit approval before:
+
+- destructive filesystem operations;
+- overwriting canonical references;
+- changing production credentials;
+- changing system configuration;
+- exposing network services;
+- rewriting Git history (the existing prohibition on force-push still applies).
+
+The existing Models, GPU jobs, and Client data sections govern approvals for large model downloads, substantial GPU runs, and source/client uploads. Other large external downloads and sensitive source-data uploads also require explicit approval.
+
+Routine execution already explicitly requested by the user does not require asking for approval again at every individual scene or file.

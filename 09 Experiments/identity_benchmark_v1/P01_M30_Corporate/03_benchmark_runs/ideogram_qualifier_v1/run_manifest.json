@@ -1,0 +1,67 @@
+{
+  "run_id": "ideogram_qualifier_v1",
+  "persona": "P01_M30_Corporate",
+  "benchmark": "identity_benchmark_v1",
+  "provider": "Ideogram",
+  "method": "single_reference_character_consistency",
+  "interface": "web",
+  "status": "complete",
+
+  "identity_input": {
+    "reference_count": 1,
+    "reference_role": "canonical frontal reference",
+    "reference_name": "P01_REF01",
+    "multi_reference_supported": false
+  },
+
+  "generation_policy": {
+    "official_scenes": [
+      "BUS_01",
+      "BUS_06",
+      "BUS_09"
+    ],
+    "reroll": false,
+    "manual_retouch": false,
+    "postprocessing": false,
+    "upscale": false,
+    "repair_pass": false,
+    "seed_control": false,
+    "batch_behavior": "web UI generated multiple outputs per prompt",
+    "official_output_rule": "first output from each batch",
+    "raw_batches_preserved": true
+  },
+
+  "outputs": [
+    {
+      "scene": "BUS_01",
+      "file": "P01_BUS_01_IDEOGRAM.jpg",
+      "format": "jpeg",
+      "official": true
+    },
+    {
+      "scene": "BUS_06",
+      "file": "P01_BUS_06_IDEOGRAM.jpg",
+      "format": "jpeg",
+      "official": true
+    },
+    {
+      "scene": "BUS_09",
+      "file": "P01_BUS_09_IDEOGRAM.jpg",
+      "format": "jpeg",
+      "official": true
+    }
+  ],
+
+  "limitations": [
+    "single reference only",
+    "no exposed seed control",
+    "no exposed sampler parameters",
+    "free web UI generated multiple variants",
+    "output count could not be reduced without paid upgrade"
+  ],
+
+  "arena": {
+    "qualifier_complete": true,
+    "blind_review_ready": true
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "onyx.identity_benchmark.flux_kontext_repair",
+  "schema_version": "1.0",
+  "run_id": "flux_kontext_repair_v1",
+  "status": "prepared",
+  "scope": "Two controlled FLUX.1 Kontext Dev repair points for BUS_06 and BUS_09 only. The official flux_kontext_qualifier_v1 remains immutable and is not rerun, modified, replaced, or ranked.",
+  "canonical_runbook": "04 Engineering/ComfyUI FLUX Windows Runbook.md",
+  "source_qualifier": {
+    "path": "../flux_kontext_qualifier_v1",
+    "run_manifest_sha256_preflight": "DAB85F3F6A65D621CB51C3BB2416DC99568B6804F4186DA09DE920EDEECC2548",
+    "technical_validation_sha256_preflight": "0F3B9B5A95A5FEDCEDFC9EF099F41CB822688772FEF5F9A43245B1611F027535",
+    "workflow_template_sha256_preflight": "93F10F1B1C8A3D55FE3756A915C2BCB39BE8E6AB39A0698DDF38599EDDF014D7",
+    "bus_06_output_sha256_preflight": "1FB02E83EE82673D2B1E5C62E46877E82322B95AE829462BE7E2A20C681181BB",
+    "bus_09_output_sha256_preflight": "81C127AE08ABC28305EC50359270EBD14520AF9762FD68D49B2B7086AA5D8267"
+  },
+  "existing_workflow_source": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\user\\default\\workflows\\KontextDev_beard_removal_success_best_pre_identity.json",
+  "existing_workflow_subgraph": "Image Edit (Flux.1 Kontext Dev)",
+  "workflow_template": "workflow_template_api.json",
+  "identity": {
+    "primary_reference_id": "REF01",
+    "primary_reference_source": "../../01_references/P01_REF01_frontal.png",
+    "primary_reference_sha256": "3c9d08bdc2ab581a1e1e928337b09bf5f21e4a3eea4a4d4e7d793a7d3bc8a1b0",
+    "comfy_input": "onyx_benchmark_p01_v1/P01_REF01_frontal.png",
+    "limitation": "The reused working Kontext graph has one connected primary identity input. REF01 remains the same frontal canonical reference as qualifier v1."
+  },
+  "model": {
+    "unet_name": "flux1-dev-kontext_fp8_scaled.safetensors",
+    "unet_path": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\models\\diffusion_models\\flux1-dev-kontext_fp8_scaled.safetensors",
+    "vae_name": "ae.safetensors",
+    "clip_name1": "clip_l.safetensors",
+    "clip_name2": "t5xxl_fp8_e4m3fn_scaled.safetensors"
+  },
+  "generation": {
+    "steps": 20,
+    "cfg": 1.0,
+    "guidance": 2.5,
+    "sampler_name": "euler",
+    "scheduler": "simple",
+    "denoise": 1.0,
+    "resolution_policy": "Reuse FluxKontextImageScale native output; do not resize, crop, upscale or retouch after generation.",
+    "negative_conditioning": "ConditioningZeroOut from the existing qualifier graph. It supplies no editable text-negative field, so the repair changes only positive prompt wording."
+  },
+  "scene_specs_source": "../pulid_multiscene_v1/scene_specs.json",
+  "scenes": [
+    {"scene_id": "BUS_06", "seed": 748412438238146},
+    {"scene_id": "BUS_09", "seed": 748412438238147}
+  ],
+  "prompt_changes": {
+    "common": "Ensure realistic adult male body proportions, with the head naturally proportional to shoulders and torso; balanced anatomy, natural masculine shoulder width, correct perspective, and a realistic corporate photoshoot look. Avoid oversized head or bobblehead appearance.",
+    "BUS_06": "Use a realistic medium shot showing the visible head, shoulders, torso, arms, and hands; the head must not dominate the frame and the upper body must be naturally proportioned.",
+    "BUS_09": "Create a realistic full-body portrait with the full figure visible from head to shoes at a natural standing distance. The face occupies a naturally small portion of the frame; the head is proportional to torso and legs. Avoid short body, tiny torso, narrow shoulders, and wide-angle distortion."
+  }
+}

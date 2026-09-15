@@ -1,0 +1,50 @@
+{
+  "schema": "onyx.identity_benchmark.technical_validation",
+  "schema_version": "1.0",
+  "run_id": "flux_kontext_qualifier_v1",
+  "generated_at": "2026-09-10T13:57:47.812767+00:00",
+  "expected_output_count": 3,
+  "validated_output_count": 3,
+  "all_expected_outputs_present": true,
+  "results": [
+    {
+      "scene_id": "BUS_01",
+      "seed": 748412438238144,
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_qualifier_v1\\outputs\\P01_BUS_01_KONTEXT.png",
+      "output_sha256": "c9094caf0e591d4416488fec0b2309a89b848f58736b82cedf825497f3107eda",
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 880,
+        "height": 1184
+      }
+    },
+    {
+      "scene_id": "BUS_06",
+      "seed": 748412438238146,
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_qualifier_v1\\outputs\\P01_BUS_06_KONTEXT.png",
+      "output_sha256": "1fb02e83ee82673d2b1e5c62e46877e82322b95ae829462be7e2a20c681181bb",
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 880,
+        "height": 1184
+      }
+    },
+    {
+      "scene_id": "BUS_09",
+      "seed": 748412438238147,
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_qualifier_v1\\outputs\\P01_BUS_09_KONTEXT.png",
+      "output_sha256": "81c127ae08abc28305ec50359270ebd14520af9762fd68d49b2b7086aa5d8267",
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 880,
+        "height": 1184
+      }
+    }
+  ]
+}

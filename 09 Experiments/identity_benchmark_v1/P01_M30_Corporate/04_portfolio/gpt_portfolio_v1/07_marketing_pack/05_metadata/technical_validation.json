@@ -1,0 +1,18 @@
+{
+  "schema": "onyx.p01.marketing_pack.validation",
+  "verified_on": "2026-09-13",
+  "checks": {
+    "source_sha256_unchanged": true,
+    "all_marketing_jpegs_decodable": true,
+    "avito_slide_dimensions": "10 × 1080×1350",
+    "prohibited_model_wording": "absent from delivered site and copy"
+  },
+  "result": {
+    "ok": true,
+    "errors": [],
+    "site_assets": 8,
+    "avito_slides": 10,
+    "comparison_assets": 2,
+    "marketing_images": 20
+  }
+}

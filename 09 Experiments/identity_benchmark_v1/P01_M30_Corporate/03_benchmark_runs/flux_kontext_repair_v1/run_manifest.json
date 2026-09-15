@@ -1,0 +1,477 @@
+{
+  "schema": "onyx.identity_benchmark.flux_kontext_repair_run",
+  "schema_version": "1.0",
+  "run_id": "flux_kontext_repair_v1",
+  "status": "completed_api_free_sent",
+  "started_at": "2026-09-10T14:20:10.761714+00:00",
+  "plan": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_repair_v1\\run_plan.json",
+  "plan_sha256": "d2a827c32f33c22d4c66ae3db165b7cb0701e4c06d1da533a6b64bca626b07df",
+  "workflow_template": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_repair_v1\\workflow_template_api.json",
+  "workflow_template_sha256": "93f10f1b1c8a3d55fe3756a915c2bcb39be8e6ab39a0698ddf38599eddf014d7",
+  "official_artifacts_verified_before_run": {
+    "run_manifest_sha256_preflight": "DAB85F3F6A65D621CB51C3BB2416DC99568B6804F4186DA09DE920EDEECC2548",
+    "technical_validation_sha256_preflight": "0F3B9B5A95A5FEDCEDFC9EF099F41CB822688772FEF5F9A43245B1611F027535",
+    "workflow_template_sha256_preflight": "93F10F1B1C8A3D55FE3756A915C2BCB39BE8E6AB39A0698DDF38599EDDF014D7",
+    "bus_06_output_sha256_preflight": "1FB02E83EE82673D2B1E5C62E46877E82322B95AE829462BE7E2A20C681181BB",
+    "bus_09_output_sha256_preflight": "81C127AE08ABC28305EC50359270EBD14520AF9762FD68D49B2B7086AA5D8267"
+  },
+  "identity": {
+    "primary_reference_id": "REF01",
+    "primary_reference_source": "../../01_references/P01_REF01_frontal.png",
+    "primary_reference_sha256": "3c9d08bdc2ab581a1e1e928337b09bf5f21e4a3eea4a4d4e7d793a7d3bc8a1b0",
+    "comfy_input": "onyx_benchmark_p01_v1/P01_REF01_frontal.png",
+    "limitation": "The reused working Kontext graph has one connected primary identity input. REF01 remains the same frontal canonical reference as qualifier v1.",
+    "source_path": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF01_frontal.png",
+    "source_sha256_verified": "3c9d08bdc2ab581a1e1e928337b09bf5f21e4a3eea4a4d4e7d793a7d3bc8a1b0"
+  },
+  "model": {
+    "unet_name": "flux1-dev-kontext_fp8_scaled.safetensors",
+    "unet_path": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\models\\diffusion_models\\flux1-dev-kontext_fp8_scaled.safetensors",
+    "vae_name": "ae.safetensors",
+    "clip_name1": "clip_l.safetensors",
+    "clip_name2": "t5xxl_fp8_e4m3fn_scaled.safetensors"
+  },
+  "generation": {
+    "steps": 20,
+    "cfg": 1.0,
+    "guidance": 2.5,
+    "sampler_name": "euler",
+    "scheduler": "simple",
+    "denoise": 1.0,
+    "resolution_policy": "Reuse FluxKontextImageScale native output; do not resize, crop, upscale or retouch after generation.",
+    "negative_conditioning": "ConditioningZeroOut from the existing qualifier graph. It supplies no editable text-negative field, so the repair changes only positive prompt wording."
+  },
+  "prompt_changes": {
+    "common": "Ensure realistic adult male body proportions, with the head naturally proportional to shoulders and torso; balanced anatomy, natural masculine shoulder width, correct perspective, and a realistic corporate photoshoot look. Avoid oversized head or bobblehead appearance.",
+    "BUS_06": "Use a realistic medium shot showing the visible head, shoulders, torso, arms, and hands; the head must not dominate the frame and the upper body must be naturally proportioned.",
+    "BUS_09": "Create a realistic full-body portrait with the full figure visible from head to shoes at a natural standing distance. The face occupies a naturally small portion of the frame; the head is proportional to torso and legs. Avoid short body, tiny torso, narrow shoulders, and wide-angle distortion."
+  },
+  "runtime_flags": [
+    "--windows-standalone-build",
+    "--disable-async-offload",
+    "--disable-pinned-memory"
+  ],
+  "results": [
+    {
+      "scene_id": "BUS_06",
+      "source_name": "At the Desk",
+      "canonical_scene_prompt": "professional editorial corporate portrait of one adult man, medium three-quarter shot, seated at a work desk, slight turn, looking at camera, focused relaxed expression, navy or charcoal business suit, functional executive office with laptop, soft daylight, desk context, visible hands are natural, professional photography, photorealistic",
+      "prompt": "Place the same adult man in this scene: professional editorial corporate portrait of one adult man, medium three-quarter shot, seated at a work desk, slight turn, looking at camera, focused relaxed expression, navy or charcoal business suit, functional executive office with laptop, soft daylight, desk context, visible hands are natural, professional photography, photorealistic Preserve his facial features, apparent age, bald head, natural skin texture, identity, and photorealistic quality. Ensure realistic adult male body proportions, with the head naturally proportional to shoulders and torso; balanced anatomy, natural masculine shoulder width, correct perspective, and a realistic corporate photoshoot look. Avoid oversized head or bobblehead appearance. Use a realistic medium shot showing the visible head, shoulders, torso, arms, and hands; the head must not dominate the frame and the upper body must be naturally proportioned. Do not add other people.",
+      "seed": 748412438238146,
+      "status": "completed_recovered_saved_output",
+      "prompt_id": "b02f59e0-95f9-4802-b817-83ea26351931",
+      "request": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_repair_v1\\requests\\BUS_06.json",
+      "history": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_repair_v1\\history\\BUS_06.json",
+      "comfy_generated_filename": "P01_BUS_06_KONTEXT_REPAIR_00001_.png",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_repair_v1\\outputs\\P01_BUS_06_KONTEXT_REPAIR.png",
+      "output_sha256": "dafead933a0411dd39edafe5918a987c0b76227ba1f7d4c29fe95afbb43dc858",
+      "duration_seconds": 58.295,
+      "peak_gpu_used_mib": null,
+      "telemetry_samples": [],
+      "telemetry_before": {
+        "timestamp": "2026-09-10T14:20:10.765142+00:00",
+        "ram_free_mib": 20351,
+        "commit_free_mib": 30775,
+        "gpu": {
+          "total_mib": 24576,
+          "used_mib": 1180,
+          "free_mib": 23146
+        }
+      },
+      "telemetry_after": {
+        "timestamp": "2026-09-10T14:23:53.416011+00:00",
+        "ram_free_mib": 19194,
+        "commit_free_mib": 29408,
+        "gpu": {
+          "total_mib": 24576,
+          "used_mib": 1218,
+          "free_mib": 23108
+        }
+      },
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 880,
+        "height": 1184
+      },
+      "warnings": [
+        "Recovered an already-completed ComfyUI output after an artifact-directory mismatch; no second submission was made."
+      ],
+      "error": null
+    },
+    {
+      "scene_id": "BUS_09",
+      "source_name": "Full Body",
+      "canonical_scene_prompt": "professional editorial corporate portrait of one adult man, full-length, standing with balanced weight and both hands visible, frontal or slight turn, looking at camera, calm confident expression, complete tailored business suit, executive office corridor or lobby, even commercial daylight, realistic height and body shape, anatomically correct visible hands, professional photography, photorealistic",
+      "prompt": "Place the same adult man in this scene: professional editorial corporate portrait of one adult man, full-length, standing with balanced weight and both hands visible, frontal or slight turn, looking at camera, calm confident expression, complete tailored business suit, executive office corridor or lobby, even commercial daylight, realistic height and body shape, anatomically correct visible hands, professional photography, photorealistic Preserve his facial features, apparent age, bald head, natural skin texture, identity, and photorealistic quality. Ensure realistic adult male body proportions, with the head naturally proportional to shoulders and torso; balanced anatomy, natural masculine shoulder width, correct perspective, and a realistic corporate photoshoot look. Avoid oversized head or bobblehead appearance. Create a realistic full-body portrait with the full figure visible from head to shoes at a natural standing distance. The face occupies a naturally small portion of the frame; the head is proportional to torso and legs. Avoid short body, tiny torso, narrow shoulders, and wide-angle distortion. Do not add other people.",
+      "seed": 748412438238147,
+      "status": "completed",
+      "prompt_id": "1d0e7e9d-eb94-464a-8fbc-521482ed41ff",
+      "request": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_repair_v1\\requests\\BUS_09.json",
+      "history": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_repair_v1\\history\\BUS_09.json",
+      "comfy_generated_filename": "P01_BUS_09_KONTEXT_REPAIR_00001_.png",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_repair_v1\\outputs\\P01_BUS_09_KONTEXT_REPAIR.png",
+      "output_sha256": "ddecae6d5d1a2e511cc88b3c9003b1760f5695ede29df242569f84a6d153f173",
+      "duration_seconds": 58.3120121000029,
+      "peak_gpu_used_mib": 18663,
+      "telemetry_samples": [
+        {
+          "timestamp": "2026-09-10T14:23:53.555318+00:00",
+          "ram_free_mib": 19196,
+          "commit_free_mib": 29406,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 1218,
+            "free_mib": 23108
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:23:55.610354+00:00",
+          "ram_free_mib": 18681,
+          "commit_free_mib": 25316,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 5178,
+            "free_mib": 19148
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:23:57.655646+00:00",
+          "ram_free_mib": 18218,
+          "commit_free_mib": 17818,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 12691,
+            "free_mib": 11635
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:23:59.733849+00:00",
+          "ram_free_mib": 17940,
+          "commit_free_mib": 12529,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 17983,
+            "free_mib": 6343
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:01.792124+00:00",
+          "ram_free_mib": 17881,
+          "commit_free_mib": 11787,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18655,
+            "free_mib": 5671
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:03.854854+00:00",
+          "ram_free_mib": 17878,
+          "commit_free_mib": 11785,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18655,
+            "free_mib": 5671
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:05.915490+00:00",
+          "ram_free_mib": 17865,
+          "commit_free_mib": 11746,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18654,
+            "free_mib": 5672
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:07.955887+00:00",
+          "ram_free_mib": 17862,
+          "commit_free_mib": 11748,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18654,
+            "free_mib": 5672
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:10.012701+00:00",
+          "ram_free_mib": 17856,
+          "commit_free_mib": 11735,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18654,
+            "free_mib": 5672
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:12.073521+00:00",
+          "ram_free_mib": 17854,
+          "commit_free_mib": 11737,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18647,
+            "free_mib": 5679
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:14.118249+00:00",
+          "ram_free_mib": 17879,
+          "commit_free_mib": 11756,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18654,
+            "free_mib": 5672
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:16.154413+00:00",
+          "ram_free_mib": 17868,
+          "commit_free_mib": 11752,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18647,
+            "free_mib": 5679
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:18.214860+00:00",
+          "ram_free_mib": 17872,
+          "commit_free_mib": 11753,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18654,
+            "free_mib": 5672
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:20.260032+00:00",
+          "ram_free_mib": 17870,
+          "commit_free_mib": 11757,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18651,
+            "free_mib": 5675
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:22.316128+00:00",
+          "ram_free_mib": 17860,
+          "commit_free_mib": 11754,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18654,
+            "free_mib": 5672
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:24.376778+00:00",
+          "ram_free_mib": 17866,
+          "commit_free_mib": 11759,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18651,
+            "free_mib": 5675
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:26.440715+00:00",
+          "ram_free_mib": 17863,
+          "commit_free_mib": 11753,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18654,
+            "free_mib": 5672
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:28.498815+00:00",
+          "ram_free_mib": 17864,
+          "commit_free_mib": 11758,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18651,
+            "free_mib": 5675
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:30.542545+00:00",
+          "ram_free_mib": 17865,
+          "commit_free_mib": 11743,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18663,
+            "free_mib": 5663
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:32.602301+00:00",
+          "ram_free_mib": 17870,
+          "commit_free_mib": 11744,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18658,
+            "free_mib": 5668
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:34.662884+00:00",
+          "ram_free_mib": 17864,
+          "commit_free_mib": 11736,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18654,
+            "free_mib": 5672
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:36.708089+00:00",
+          "ram_free_mib": 17831,
+          "commit_free_mib": 11698,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18662,
+            "free_mib": 5664
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:38.744549+00:00",
+          "ram_free_mib": 17842,
+          "commit_free_mib": 11730,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18663,
+            "free_mib": 5663
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:40.785316+00:00",
+          "ram_free_mib": 17858,
+          "commit_free_mib": 11761,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18658,
+            "free_mib": 5668
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:42.844935+00:00",
+          "ram_free_mib": 17856,
+          "commit_free_mib": 11761,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18654,
+            "free_mib": 5672
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:44.886267+00:00",
+          "ram_free_mib": 17857,
+          "commit_free_mib": 11773,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18647,
+            "free_mib": 5679
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:46.926069+00:00",
+          "ram_free_mib": 17837,
+          "commit_free_mib": 11728,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18654,
+            "free_mib": 5672
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:48.965692+00:00",
+          "ram_free_mib": 17842,
+          "commit_free_mib": 11735,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 18640,
+            "free_mib": 5686
+          }
+        },
+        {
+          "timestamp": "2026-09-10T14:24:51.011226+00:00",
+          "ram_free_mib": 17854,
+          "commit_free_mib": 12600,
+          "gpu": {
+            "total_mib": 24576,
+            "used_mib": 17652,
+            "free_mib": 6674
+          }
+        }
+      ],
+      "telemetry_before": {
+        "timestamp": "2026-09-10T14:23:53.506980+00:00",
+        "ram_free_mib": 19196,
+        "commit_free_mib": 29407,
+        "gpu": {
+          "total_mib": 24576,
+          "used_mib": 1218,
+          "free_mib": 23108
+        }
+      },
+      "telemetry_after": {
+        "timestamp": "2026-09-10T14:24:51.895348+00:00",
+        "ram_free_mib": 17823,
+        "commit_free_mib": 12482,
+        "gpu": {
+          "total_mib": 24576,
+          "used_mib": 17662,
+          "free_mib": 6664
+        }
+      },
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 880,
+        "height": 1184
+      },
+      "warnings": [],
+      "error": null
+    }
+  ],
+  "warnings": [
+    {
+      "at": "2026-09-10T14:23:53.503624+00:00",
+      "warning": "Resumed after recovering an existing completed output; only unresolved scenes may be submitted."
+    }
+  ],
+  "errors": [
+    {
+      "at": "2026-09-10T14:21:10.056803+00:00",
+      "error": "FileNotFoundError(WindowsPath('D:/AI/ONYX/09 Experiments/identity_benchmark_v1/P01_M30_Corporate/03_benchmark_runs/flux_kontext_repair_v1/outputs/P01_BUS_06_KONTEXT_REPAIR_00001_.png'))"
+    }
+  ],
+  "telemetry": {
+    "before_series": {
+      "timestamp": "2026-09-10T14:20:10.765142+00:00",
+      "ram_free_mib": 20351,
+      "commit_free_mib": 30775,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 1180,
+        "free_mib": 23146
+      }
+    },
+    "after_api_free": {
+      "timestamp": "2026-09-10T14:24:51.945375+00:00",
+      "ram_free_mib": 17819,
+      "commit_free_mib": 12482,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 14686,
+        "free_mib": 9640
+      }
+    }
+  },
+  "resumed_at": "2026-09-10T14:23:53.503614+00:00",
+  "finished_at": "2026-09-10T14:24:51.990848+00:00"
+}

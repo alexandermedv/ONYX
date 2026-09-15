@@ -1,0 +1,79 @@
+{
+  "schema": "onyx.lora_lab.approved_dataset_manifest",
+  "schema_version": "1.0",
+  "experiment_id": "p01_lora_dataset_size_v1",
+  "status": "approved",
+  "approval": {
+    "source": "user_request_2026-09-10",
+    "purpose": "Controlled P01 comparison where dataset size is the only intended training variable."
+  },
+  "runtime_filename_prefix": "p01onyx",
+  "datasets": {
+    "p01_mini_3": {
+      "size": 3,
+      "items": [
+        {
+          "reference_id": "REF01",
+          "filename": "P01_REF01_frontal.png",
+          "source_path": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF01_frontal.png",
+          "sha256": "3c9d08bdc2ab581a1e1e928337b09bf5f21e4a3eea4a4d4e7d793a7d3bc8a1b0",
+          "caption": "photo of p01onyx man, close-up frontal portrait, relaxed slight smile, dark crewneck shirt, modern home interior, soft window light"
+        },
+        {
+          "reference_id": "REF02",
+          "filename": "P01_REF02_right_3q.png",
+          "source_path": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF02_right_3q.png",
+          "sha256": "cf2bcba506c5a2b83ca1e9f497a6116431dff8b9d5cee8a3f0eaec9a79404323",
+          "caption": "photo of p01onyx man, close-up right three-quarter portrait, relaxed expression, dark crewneck shirt, modern interior, soft daylight"
+        },
+        {
+          "reference_id": "REF03",
+          "filename": "P01_REF03_left_3q_smile.png",
+          "source_path": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF03_left_3q_smile.png",
+          "sha256": "058ea909e7b26589b59f2ce6a4361c78f1dbc6f67c2ad31132715914b179669b",
+          "caption": "photo of p01onyx man, close-up left three-quarter portrait, slight smile, olive overshirt and white tee, modern interior, warm soft light"
+        }
+      ]
+    },
+    "p01_mini_5": {
+      "size": 5,
+      "items": [
+        {
+          "reference_id": "REF01",
+          "filename": "P01_REF01_frontal.png",
+          "source_path": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF01_frontal.png",
+          "sha256": "3c9d08bdc2ab581a1e1e928337b09bf5f21e4a3eea4a4d4e7d793a7d3bc8a1b0",
+          "caption": "photo of p01onyx man, close-up frontal portrait, relaxed slight smile, dark crewneck shirt, modern home interior, soft window light"
+        },
+        {
+          "reference_id": "REF02",
+          "filename": "P01_REF02_right_3q.png",
+          "source_path": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF02_right_3q.png",
+          "sha256": "cf2bcba506c5a2b83ca1e9f497a6116431dff8b9d5cee8a3f0eaec9a79404323",
+          "caption": "photo of p01onyx man, close-up right three-quarter portrait, relaxed expression, dark crewneck shirt, modern interior, soft daylight"
+        },
+        {
+          "reference_id": "REF03",
+          "filename": "P01_REF03_left_3q_smile.png",
+          "source_path": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF03_left_3q_smile.png",
+          "sha256": "058ea909e7b26589b59f2ce6a4361c78f1dbc6f67c2ad31132715914b179669b",
+          "caption": "photo of p01onyx man, close-up left three-quarter portrait, slight smile, olive overshirt and white tee, modern interior, warm soft light"
+        },
+        {
+          "reference_id": "REF04",
+          "filename": "P01_REF04_right_soft.png",
+          "source_path": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF04_right_soft.png",
+          "sha256": "a136b8a375984c48a994384873c6ede9b06a91e98f5334a76434d35a82702e00",
+          "caption": "photo of p01onyx man, close-up right three-quarter portrait, soft slight smile, dark crewneck shirt, neutral interior, diffused window light"
+        },
+        {
+          "reference_id": "REF05",
+          "filename": "P01_REF05_left_soft.png",
+          "source_path": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF05_left_soft.png",
+          "sha256": "d9e2ff1c8ba8acc5bb575aacce69d2af7a9fa68f317c4e5aeb52831298bbe27a",
+          "caption": "photo of p01onyx man, close-up left three-quarter portrait, soft slight smile, olive overshirt and white tee, neutral interior, diffused window light"
+        }
+      ]
+    }
+  }
+}

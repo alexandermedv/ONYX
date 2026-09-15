@@ -1,0 +1,167 @@
+{
+  "schema": "onyx.identity_benchmark.technical_validation",
+  "schema_version": "1.0",
+  "run_id": "local_qualifier_tail_v1",
+  "generated_at": "2026-09-10T12:28:34.602357+00:00",
+  "expected_png_count": 12,
+  "validated_png_count": 12,
+  "all_expected_outputs_present": true,
+  "results": [
+    {
+      "variant_id": "MINI3_0750",
+      "scene_id": "BUS_06",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_06_MINI3_0750_00001_.png",
+      "output_sha256": "1ea0103cab4925bc52209126b1464cc653cfea302a6f72ab81d6bf5e85e2d117",
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "variant_id": "MINI3_0750",
+      "scene_id": "BUS_09",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_09_MINI3_0750_00001_.png",
+      "output_sha256": "aa875fad2fc3ce384890f563f0a125d7416ccb54f917b40d68e597b30bed468d",
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "variant_id": "MINI3_1000",
+      "scene_id": "BUS_06",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_06_MINI3_1000_00001_.png",
+      "output_sha256": "ff8a50679044a6880fe78b25dcafdd6145e7683819d095989b17b0d2d652514c",
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "variant_id": "MINI3_1000",
+      "scene_id": "BUS_09",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_09_MINI3_1000_00001_.png",
+      "output_sha256": "242daaac97c036ad9f2a43d3f2c93193c120eb5c792aa6b972bd4a2b7b197708",
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "variant_id": "MINI3_1250",
+      "scene_id": "BUS_06",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_06_MINI3_1250_00001_.png",
+      "output_sha256": "90c557bda1d98229b51544f5a65217c93ad3ac42ea7c3a8c83df9c4dd61ce75a",
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "variant_id": "MINI3_1250",
+      "scene_id": "BUS_09",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_09_MINI3_1250_00001_.png",
+      "output_sha256": "cb06590f2b6f38dea6d432b26b2751805aa1c443ce1b5151c8e7950b5f617484",
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "variant_id": "MINI5_0750",
+      "scene_id": "BUS_06",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_06_MINI5_0750_00001_.png",
+      "output_sha256": "d1c1c554c30ebc712e55cca3069e26a4a099cb3df6a6987e0560a12d9c51b59e",
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "variant_id": "MINI5_0750",
+      "scene_id": "BUS_09",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_09_MINI5_0750_00001_.png",
+      "output_sha256": "c2ac9cb0c4a1a7a194046003dce92c8f3cf7ecd5ebc68587cb3d583e68ddb074",
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "variant_id": "MINI5_1000",
+      "scene_id": "BUS_06",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_06_MINI5_1000_00001_.png",
+      "output_sha256": "143d1af25c84e19642cffedf2b313cc54148c41ee4bb27a488c16d667cc1f9cd",
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "variant_id": "MINI5_1000",
+      "scene_id": "BUS_09",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_09_MINI5_1000_00001_.png",
+      "output_sha256": "bb5643a4bafda45ec217b60f69b292fe1ec85aa5cb776edd0d5265d2bb1fdae8",
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "variant_id": "MINI5_1250",
+      "scene_id": "BUS_06",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_06_MINI5_1250_00001_.png",
+      "output_sha256": "179a79a37d0a40494d4e4cfb1cf844d97acd7fa082bf2d91b91e49046bca1c35",
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "variant_id": "MINI5_1250",
+      "scene_id": "BUS_09",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_09_MINI5_1250_00001_.png",
+      "output_sha256": "4295ff8c8e972328daf281881f4cda2a65d410ebf0a40bc6f3466d78b7e5daeb",
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 768,
+        "height": 1024
+      }
+    }
+  ]
+}

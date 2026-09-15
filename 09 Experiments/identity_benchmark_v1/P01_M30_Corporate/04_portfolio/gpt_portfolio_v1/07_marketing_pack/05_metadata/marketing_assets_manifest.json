@@ -1,0 +1,256 @@
+{
+  "schema": "onyx.p01.marketing_pack",
+  "schema_version": "1.0",
+  "created_on": "2026-09-13",
+  "assets": [
+    {
+      "filename": "03_reference_to_result/reference_to_result_horizontal.jpg",
+      "purpose": "Horizontal references-to-result website comparison",
+      "source_images": [
+        "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF01_frontal.png",
+        "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF02_right_3q.png",
+        "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF03_left_3q_smile.png",
+        "02_selected/P01_PORT_01_HERO.png",
+        "02_selected/P01_PORT_02_DESK.png",
+        "02_selected/P01_PORT_05_FULLBODY.png"
+      ],
+      "width": 1920,
+      "height": 1080,
+      "format": "JPEG",
+      "sha256": "e16590d4f7c0aef95453d6f7a682d98ce93182354dd669ce3f60d4d531ce5dd2"
+    },
+    {
+      "filename": "03_reference_to_result/reference_to_result_vertical.jpg",
+      "purpose": "Vertical references-to-result marketplace comparison",
+      "source_images": [
+        "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF01_frontal.png",
+        "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF02_right_3q.png",
+        "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF03_left_3q_smile.png",
+        "02_selected/P01_PORT_01_HERO.png",
+        "02_selected/P01_PORT_02_DESK.png",
+        "02_selected/P01_PORT_05_FULLBODY.png"
+      ],
+      "width": 1080,
+      "height": 1350,
+      "format": "JPEG",
+      "sha256": "c985d9897cc4dc90718c30dd3b8e0715b49794c91472f0cd381693dda906b8e3"
+    },
+    {
+      "filename": "01_site_case/site_hero_desktop.jpg",
+      "purpose": "Website desktop hero image",
+      "source_images": [
+        "02_selected/P01_PORT_01_HERO.png"
+      ],
+      "width": 1920,
+      "height": 1080,
+      "format": "JPEG",
+      "sha256": "2b36b9b833606c7942a0a9a2f4b5c990776325340d163963623cc2b2a369f610"
+    },
+    {
+      "filename": "01_site_case/site_hero_mobile.jpg",
+      "purpose": "Website mobile hero image",
+      "source_images": [
+        "02_selected/P01_PORT_01_HERO.png"
+      ],
+      "width": 1200,
+      "height": 1600,
+      "format": "JPEG",
+      "sha256": "2b8bc7e041ecd60842e60fa0ffdaa21431cad78c7785f6f0bd7b9c0d15482555"
+    },
+    {
+      "filename": "01_site_case/site_gallery_01.jpg",
+      "purpose": "Website gallery image 1",
+      "source_images": [
+        "02_selected/P01_PORT_01_HERO.png"
+      ],
+      "width": 1200,
+      "height": 1600,
+      "format": "JPEG",
+      "sha256": "d76b9099a763fa07a3bf8711144728b691bec5909fbf07662fdb6f5aba7ce9fa"
+    },
+    {
+      "filename": "01_site_case/site_gallery_02.jpg",
+      "purpose": "Website gallery image 2",
+      "source_images": [
+        "02_selected/P01_PORT_02_DESK.png"
+      ],
+      "width": 1200,
+      "height": 1600,
+      "format": "JPEG",
+      "sha256": "4001c23a7ea9a9c9341254feabba2e93c14511d7c53d188c8b18041f1d97a246"
+    },
+    {
+      "filename": "01_site_case/site_gallery_03.jpg",
+      "purpose": "Website gallery image 3",
+      "source_images": [
+        "02_selected/P01_PORT_03_LOUNGE.png"
+      ],
+      "width": 1200,
+      "height": 1600,
+      "format": "JPEG",
+      "sha256": "d0f1bbe48b21a6ab773b0bdcd719e112df6afa2d031bf52aead344add16ddda3"
+    },
+    {
+      "filename": "01_site_case/site_gallery_04.jpg",
+      "purpose": "Website gallery image 4",
+      "source_images": [
+        "02_selected/P01_PORT_04_LIBRARY.png"
+      ],
+      "width": 1200,
+      "height": 1600,
+      "format": "JPEG",
+      "sha256": "ade6820f52af369a317e093965df82bc20c624898ab954a951a49f1355f07238"
+    },
+    {
+      "filename": "01_site_case/site_gallery_05.jpg",
+      "purpose": "Website gallery image 5",
+      "source_images": [
+        "02_selected/P01_PORT_05_FULLBODY.png"
+      ],
+      "width": 1200,
+      "height": 1600,
+      "format": "JPEG",
+      "sha256": "405d9b0da7f5b0c7e7a3d30b3fce5e5387b59f8abb60644c20f80a34e0b23213"
+    },
+    {
+      "filename": "01_site_case/site_gallery_06.jpg",
+      "purpose": "Website gallery image 6",
+      "source_images": [
+        "02_selected/P01_PORT_06_CLOSEUP.png"
+      ],
+      "width": 1200,
+      "height": 1600,
+      "format": "JPEG",
+      "sha256": "7f8a542ae7de29daabe4f5252ee87327f12d1c81f3f0fc87ae8eb083833c2447"
+    },
+    {
+      "filename": "02_avito_carousel/avito_01.jpg",
+      "purpose": "Avito cover",
+      "source_images": [
+        "02_selected/P01_PORT_01_HERO.png"
+      ],
+      "width": 1080,
+      "height": 1350,
+      "format": "JPEG",
+      "sha256": "553692061b40ada96310a58a744c453c73218b1b9c17dd20b9f36635ee3ee84b"
+    },
+    {
+      "filename": "02_avito_carousel/avito_02.jpg",
+      "purpose": "Avito hero result",
+      "source_images": [
+        "02_selected/P01_PORT_01_HERO.png"
+      ],
+      "width": 1080,
+      "height": 1350,
+      "format": "JPEG",
+      "sha256": "b40e98e07ae42ffb708a3e37807b5c672387c97b3c4acaffbbecb5efbdf6dde1"
+    },
+    {
+      "filename": "02_avito_carousel/avito_03.jpg",
+      "purpose": "Avito desk result",
+      "source_images": [
+        "02_selected/P01_PORT_02_DESK.png"
+      ],
+      "width": 1080,
+      "height": 1350,
+      "format": "JPEG",
+      "sha256": "b55281f533532bcf59dd8bd24a7993273e82b64a585c579acc0b546fd7f94bf4"
+    },
+    {
+      "filename": "02_avito_carousel/avito_04.jpg",
+      "purpose": "Avito full-body result",
+      "source_images": [
+        "02_selected/P01_PORT_05_FULLBODY.png"
+      ],
+      "width": 1080,
+      "height": 1350,
+      "format": "JPEG",
+      "sha256": "7d2c915b185650960fd20aab47b9c7db12f2497760e468714d802673d3e881ce"
+    },
+    {
+      "filename": "02_avito_carousel/avito_05.jpg",
+      "purpose": "Avito variety collage",
+      "source_images": [
+        "02_selected/P01_PORT_01_HERO.png",
+        "02_selected/P01_PORT_02_DESK.png",
+        "02_selected/P01_PORT_03_LOUNGE.png",
+        "02_selected/P01_PORT_04_LIBRARY.png"
+      ],
+      "width": 1080,
+      "height": 1350,
+      "format": "JPEG",
+      "sha256": "11258157059487531e0c8c409848266ee9c4d2522f8d50dca1a7cdb599abced9"
+    },
+    {
+      "filename": "02_avito_carousel/avito_06.jpg",
+      "purpose": "Avito references-to-result slide",
+      "source_images": [
+        "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF01_frontal.png",
+        "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF02_right_3q.png",
+        "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF03_left_3q_smile.png",
+        "02_selected/P01_PORT_01_HERO.png",
+        "02_selected/P01_PORT_02_DESK.png",
+        "02_selected/P01_PORT_05_FULLBODY.png"
+      ],
+      "width": 1080,
+      "height": 1350,
+      "format": "JPEG",
+      "sha256": "6b9af97b0806baaef575434c062eab46b5a7e349a0d8d99a52017e886c5fd97d"
+    },
+    {
+      "filename": "02_avito_carousel/avito_07.jpg",
+      "purpose": "Avito product promise",
+      "source_images": [
+        "02_selected/P01_PORT_06_CLOSEUP.png"
+      ],
+      "width": 1080,
+      "height": 1350,
+      "format": "JPEG",
+      "sha256": "cceb2f042c459d6599df8ef34e6009e6c107e178c04694c2349764815f3fa8c4"
+    },
+    {
+      "filename": "02_avito_carousel/avito_08.jpg",
+      "purpose": "Avito deliverables",
+      "source_images": [
+        "02_selected/P01_PORT_03_LOUNGE.png"
+      ],
+      "width": 1080,
+      "height": 1350,
+      "format": "JPEG",
+      "sha256": "0697dcdb39d5b7c26dacdde9b563a44a57e8af4048b5a4599c87fb6ba1c9dbc9"
+    },
+    {
+      "filename": "02_avito_carousel/avito_09.jpg",
+      "purpose": "Avito process",
+      "source_images": [
+        "02_selected/P01_PORT_04_LIBRARY.png"
+      ],
+      "width": 1080,
+      "height": 1350,
+      "format": "JPEG",
+      "sha256": "2d3a98e02b3401417162708774ed1e9ed03b5c9894759fb08a129fa46aecc44c"
+    },
+    {
+      "filename": "02_avito_carousel/avito_10.jpg",
+      "purpose": "Avito call to action",
+      "source_images": [
+        "02_selected/P01_PORT_01_HERO.png"
+      ],
+      "width": 1080,
+      "height": 1350,
+      "format": "JPEG",
+      "sha256": "153d75385315886a336c83347339564e61bbda745978ff83823e29b50953b773"
+    }
+  ],
+  "source_integrity_sha256": {
+    "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\04_portfolio\\gpt_portfolio_v1\\02_selected\\P01_PORT_01_HERO.png": "d07cf45701e922553a81b0aeb29edd2940caf86bcaf35b316a2fda8b8ac4dd68",
+    "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\04_portfolio\\gpt_portfolio_v1\\02_selected\\P01_PORT_02_DESK.png": "0dee679a49cb65ded0fe2de7bd0c8fdf14143fd9694054e9c7b6cc93f3d5d440",
+    "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\04_portfolio\\gpt_portfolio_v1\\02_selected\\P01_PORT_03_LOUNGE.png": "9f646a3244c504cafe0b7fbb2c10027f8e05549cf96da197d8f02f260b9f40b2",
+    "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\04_portfolio\\gpt_portfolio_v1\\02_selected\\P01_PORT_04_LIBRARY.png": "6843b1188836251e4cbaab14f7d65c7eb6efe166c127ad4e0e310249697e0e3c",
+    "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\04_portfolio\\gpt_portfolio_v1\\02_selected\\P01_PORT_05_FULLBODY.png": "ee614ec6dcd3ffa6fa1e912f0469930a301fbb7abf8976bec0bbf85f8c469be6",
+    "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\04_portfolio\\gpt_portfolio_v1\\02_selected\\P01_PORT_06_CLOSEUP.png": "21d3f8ebe7d2ab4a41b630f893444378d624757bfbb9a784c0bf6656031adaa8",
+    "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF01_frontal.png": "3c9d08bdc2ab581a1e1e928337b09bf5f21e4a3eea4a4d4e7d793a7d3bc8a1b0",
+    "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF02_right_3q.png": "cf2bcba506c5a2b83ca1e9f497a6116431dff8b9d5cee8a3f0eaec9a79404323",
+    "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF03_left_3q_smile.png": "058ea909e7b26589b59f2ce6a4361c78f1dbc6f67c2ad31132715914b179669b"
+  }
+}

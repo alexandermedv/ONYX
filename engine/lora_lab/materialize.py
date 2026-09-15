@@ -66,21 +66,30 @@ def build_approved_manifest(selection_path: Path, caption_proposal_path: Path,
 
 
 def materialize_approved(manifest: dict, target_root: Path) -> dict:
+    """Copy an approved, manifest-declared dataset collection into runtime storage."""
     if target_root.exists():
         raise FileExistsError(f"immutable target already exists: {target_root}")
+    runtime_prefix = str(manifest.get("runtime_filename_prefix", "alexonyx"))
+    if not runtime_prefix or not runtime_prefix.replace("_", "").isalnum():
+        raise ValueError("runtime_filename_prefix must contain only letters, numbers, and underscores")
+    datasets = manifest.get("datasets", {})
+    if not datasets:
+        raise ValueError("approved manifest has no datasets")
     target_root.parent.mkdir(parents=True, exist_ok=True)
     staging = Path(tempfile.mkdtemp(prefix=f".{target_root.name}.staging-", dir=target_root.parent))
     try:
         verification = {}
-        for dataset_id, dataset in manifest["datasets"].items():
+        for dataset_id, dataset in datasets.items():
+            if not dataset.get("items"):
+                raise ValueError(f"dataset has no items: {dataset_id}")
             folder = staging / "datasets" / dataset_id
             folder.mkdir(parents=True)
             rows = []
             for index, item in enumerate(dataset["items"], start=1):
                 source = Path(item["source_path"])
-                image_name = f"alexonyx_{index:03d}{source.suffix.lower()}"
+                image_name = f"{runtime_prefix}_{index:03d}{source.suffix.lower()}"
                 image_target = folder / image_name
-                caption_target = folder / f"alexonyx_{index:03d}.txt"
+                caption_target = folder / f"{runtime_prefix}_{index:03d}.txt"
                 shutil.copy2(source, image_target)
                 caption_target.write_text(item["caption"] + "\n", encoding="utf-8", newline="\n")
                 actual_hash = file_hash(image_target)
@@ -88,7 +97,7 @@ def materialize_approved(manifest: dict, target_root: Path) -> dict:
                     raise RuntimeError(f"hash mismatch after copy: {source}")
                 rows.append({**item, "materialized_image": str(target_root / "datasets" / dataset_id / image_name),
                              "materialized_caption": str(target_root / "datasets" / dataset_id / caption_target.name)})
-            verification[dataset_id] = {"images": len(list(folder.glob("*.jpg"))) + len(list(folder.glob("*.png"))) + len(list(folder.glob("*.webp"))),
+            verification[dataset_id] = {"images": len([path for path in folder.iterdir() if path.suffix.lower() in IMAGE_EXTENSIONS]),
                                         "captions": len(list(folder.glob("*.txt"))), "items": rows}
         resolved = {**manifest, "runtime_root": str(target_root), "materialization": verification}
         write_json(staging / "approved_immutable_manifest.json", resolved)

@@ -1,0 +1,35 @@
+{
+  "schema": "onyx.identity_benchmark.pulid_multiscene_plan",
+  "schema_version": "1.0",
+  "run_id": "pulid_multiscene_v1",
+  "scope": "P01 PuLID-only four-scene technical identity-method set: reuse BUS_01 v3 and generate BUS_03, BUS_06 and BUS_09 exactly once.",
+  "canonical_runbook": "04 Engineering/ComfyUI FLUX Windows Runbook.md",
+  "workflow_template": "../local_pulid_baseline_v3/outputs/workflow_api.json",
+  "baseline_reuse": "../local_pulid_baseline_v3/run_manifest.json",
+  "scene_specs": "scene_specs.json",
+  "identity": {
+    "id": "P01",
+    "reference_manifest": "../../01_references/references.yaml",
+    "reference_ids": ["REF01", "REF02", "REF03"]
+  },
+  "generation": {
+    "width": 768,
+    "height": 1024,
+    "steps": 20,
+    "sampler": "euler",
+    "scheduler": "simple",
+    "guidance": 3.5,
+    "pulid_weight": 0.9,
+    "pulid_start": 0.0,
+    "pulid_end": 1.0
+  },
+  "restrictions": [
+    "do_not_rerun_BUS_01",
+    "do_not_run_mini_lora",
+    "do_not_run_checkpoint_benchmark",
+    "do_not_run_QA_or_ranking",
+    "do_not_change_Production_Pilot",
+    "one_generation_per_new_scene",
+    "no_automatic_regeneration"
+  ]
+}

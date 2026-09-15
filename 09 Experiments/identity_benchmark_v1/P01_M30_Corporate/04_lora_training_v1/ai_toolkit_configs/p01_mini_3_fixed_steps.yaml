@@ -1,0 +1,126 @@
+{
+  "job": "extension",
+  "config": {
+    "name": "p01_mini_3_fixed_steps",
+    "process": [
+      {
+        "type": "diffusion_trainer",
+        "training_folder": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1",
+        "sqlite_db_path": "D:\\AI\\AI-Toolkit\\aitk_db.db",
+        "device": "cuda",
+        "trigger_word": "p01onyx",
+        "performance_log_every": 10,
+        "network": {
+          "type": "lora",
+          "linear": 16,
+          "linear_alpha": 16,
+          "conv": 16,
+          "conv_alpha": 16,
+          "lokr_full_rank": true,
+          "lokr_factor": -1,
+          "network_kwargs": {
+            "ignore_if_contains": []
+          }
+        },
+        "save": {
+          "dtype": "bf16",
+          "save_every": 250,
+          "max_step_saves_to_keep": 5,
+          "save_format": "diffusers",
+          "push_to_hub": false
+        },
+        "datasets": [
+          {
+            "folder_path": "D:\\AI\\ONYX-runtime\\lora_lab\\p01_lora_dataset_size_v1\\datasets\\p01_mini_3",
+            "mask_path": null,
+            "mask_min_value": 0.1,
+            "default_caption": "",
+            "caption_ext": "txt",
+            "caption_dropout_rate": 0.0,
+            "cache_latents_to_disk": false,
+            "is_reg": false,
+            "network_weight": 1,
+            "resolution": [
+              512,
+              768,
+              1024
+            ],
+            "controls": [],
+            "shrink_video_to_frames": true,
+            "num_frames": 1,
+            "flip_x": false,
+            "flip_y": false,
+            "num_repeats": 1
+          }
+        ],
+        "train": {
+          "batch_size": 1,
+          "bypass_guidance_embedding": false,
+          "steps": 1250,
+          "gradient_accumulation": 1,
+          "train_unet": true,
+          "train_text_encoder": false,
+          "gradient_checkpointing": true,
+          "noise_scheduler": "flowmatch",
+          "optimizer": "adamw8bit",
+          "timestep_type": "sigmoid",
+          "content_or_style": "balanced",
+          "optimizer_params": {
+            "weight_decay": 0.0001
+          },
+          "unload_text_encoder": false,
+          "cache_text_embeddings": false,
+          "lr": 0.0001,
+          "ema_config": {
+            "use_ema": false,
+            "ema_decay": 0.99
+          },
+          "skip_first_sample": true,
+          "force_first_sample": false,
+          "disable_sampling": true,
+          "dtype": "bf16",
+          "diff_output_preservation": false,
+          "diff_output_preservation_multiplier": 1,
+          "diff_output_preservation_class": "person",
+          "switch_boundary_every": 1,
+          "loss_type": "mse"
+        },
+        "logging": {
+          "log_every": 1,
+          "use_ui_logger": true
+        },
+        "model": {
+          "name_or_path": "D:\\AI\\Cache\\huggingface\\hub\\models--black-forest-labs--FLUX.1-dev\\snapshots\\3de623fc3c33e44ffbe2bad470d0f45bccf2eb21",
+          "quantize": true,
+          "qtype": "qfloat8",
+          "quantize_te": true,
+          "qtype_te": "qfloat8",
+          "arch": "flux",
+          "low_vram": false,
+          "model_kwargs": {},
+          "compile": false
+        },
+        "sample": {
+          "sampler": "flowmatch",
+          "sample_every": 250,
+          "sample_start_step": 0,
+          "width": 1024,
+          "height": 1024,
+          "samples": [],
+          "neg": "",
+          "seed": 2026082901,
+          "walk_seed": false,
+          "guidance_scale": 4,
+          "sample_steps": 30,
+          "num_frames": 1,
+          "fps": 1
+        }
+      }
+    ]
+  },
+  "meta": {
+    "name": "p01_mini_3_fixed_steps",
+    "version": "1.0",
+    "dry_run_render": true
+  }
+}

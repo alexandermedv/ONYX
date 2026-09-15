@@ -1,0 +1,174 @@
+{
+  "schema": "onyx.identity_benchmark.checkpoint_series",
+  "schema_version": "1.0",
+  "run_id": "checkpoint_benchmark_v1",
+  "dataset_id": "p01_mini_3",
+  "status": "completed_server_stopped",
+  "started_at": "2026-09-10T10:31:38.849546+03:00",
+  "plan_sha256": "f90003c34ac1581e2a8a5d81f4af34fae369dbcc923089c3580e0e3cdbe7db88",
+  "workflow_template": "D:\\AI\\ONYX\\comfyui-workflows\\ONYX_Flux_Scene_Generator_0.3_fixed_lora_api.json",
+  "workflow_template_sha256": "7f5c37815de1dde1eb6f00f5715797610f0894ba6111c0c31fbc84bb08fed9c7",
+  "generation": {
+    "seed": 748412438238144,
+    "width": 768,
+    "height": 1024,
+    "steps": 20,
+    "cfg": 1.0,
+    "cfg_source": "ONYX_Flux_Scene_Generator_0.3_fixed_lora_api.json KSampler contract",
+    "sampler_name": "euler",
+    "scheduler": "simple",
+    "denoise": 1.0,
+    "lora_weight": 1.0
+  },
+  "scene": {
+    "id": "BUS_01",
+    "canonical_prompt": "professional editorial corporate portrait of one adult man, head and shoulders, seated or standing upright, frontal face, looking at camera, calm confident expression, dark business jacket with neutral shirt, neutral modern office background, soft even daylight, unobstructed face, natural skin texture, professional photography, photorealistic",
+    "prompt": "photo of p01onyx man, professional editorial corporate portrait of one adult man, head and shoulders, seated or standing upright, frontal face, looking at camera, calm confident expression, dark business jacket with neutral shirt, neutral modern office background, soft even daylight, unobstructed face, natural skin texture, professional photography, photorealistic"
+  },
+  "extra_lora_root": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1",
+  "variants": [
+    {
+      "dataset_id": "p01_mini_3",
+      "checkpoint": 750,
+      "source_checkpoint": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1\\p01_mini_3_fixed_steps\\p01_mini_3_fixed_steps_000000750.safetensors",
+      "source_checkpoint_sha256": "30a7b54036eb51832d54a531289c67c04b90e4c760549e43649bf7957c1af127",
+      "staged_filename": "p01_mini_3__0750.safetensors",
+      "prompt_id": "f9886c3c-3758-4f1f-94fc-5e464cacb277",
+      "status": "completed",
+      "request": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\requests\\p01_mini_3__0750.json",
+      "history": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\history\\p01_mini_3__0750.json",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\outputs\\P01_BUS_01_p01_mini_3__0750_00001_.png",
+      "output_sha256": "6b0aa8c93274d7504cedc98f5a704f2b0924ea766e88359e48586bc0f744028c",
+      "duration_seconds": 314.00761259999854,
+      "telemetry_before": {
+        "timestamp": "2026-09-10T10:31:38.923393+03:00",
+        "ram_free_mib": 20858,
+        "commit_free_mib": 34767,
+        "gpu": {
+          "total_mib": 24576,
+          "used_mib": 943,
+          "free_mib": 23383
+        }
+      },
+      "telemetry_after": {
+        "timestamp": "2026-09-10T10:36:53.483996+03:00",
+        "ram_free_mib": 19154,
+        "commit_free_mib": 11558,
+        "gpu": {
+          "total_mib": 24576,
+          "used_mib": 22304,
+          "free_mib": 2022
+        }
+      },
+      "technical_validation": {
+        "decodable": true,
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "dataset_id": "p01_mini_3",
+      "checkpoint": 1000,
+      "source_checkpoint": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1\\p01_mini_3_fixed_steps\\p01_mini_3_fixed_steps_000001000.safetensors",
+      "source_checkpoint_sha256": "bcb58e7c7d22d7671659796ce8fa1ed2ff39283626d36a88ea439a8baeeed9c6",
+      "staged_filename": "p01_mini_3__1000.safetensors",
+      "prompt_id": "1778149f-6f75-416c-b371-594a93cfba63",
+      "status": "completed",
+      "request": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\requests\\p01_mini_3__1000.json",
+      "history": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\history\\p01_mini_3__1000.json",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\outputs\\P01_BUS_01_p01_mini_3__1000_00001_.png",
+      "output_sha256": "6f68e8befa68461acbb1da4ddab2be0c3399b0e325afd9915a7765e685c55928",
+      "duration_seconds": 246.49190100000123,
+      "telemetry_before": {
+        "timestamp": "2026-09-10T10:36:53.542749+03:00",
+        "ram_free_mib": 19147,
+        "commit_free_mib": 11559,
+        "gpu": {
+          "total_mib": 24576,
+          "used_mib": 22304,
+          "free_mib": 2022
+        }
+      },
+      "telemetry_after": {
+        "timestamp": "2026-09-10T10:41:00.452995+03:00",
+        "ram_free_mib": 19171,
+        "commit_free_mib": 11599,
+        "gpu": {
+          "total_mib": 24576,
+          "used_mib": 22303,
+          "free_mib": 2023
+        }
+      },
+      "technical_validation": {
+        "decodable": true,
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "dataset_id": "p01_mini_3",
+      "checkpoint": 1250,
+      "source_checkpoint": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1\\p01_mini_3_fixed_steps\\p01_mini_3_fixed_steps.safetensors",
+      "source_checkpoint_sha256": "14b8e2d7315dac76bb42eaaa02bc9a6f89c7006cd7b62cc7a2358793e2b5106d",
+      "staged_filename": "p01_mini_3__1250.safetensors",
+      "prompt_id": "063fa25c-f99e-4bd0-9f87-afd40f04068a",
+      "status": "completed",
+      "request": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\requests\\p01_mini_3__1250.json",
+      "history": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\history\\p01_mini_3__1250.json",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\outputs\\P01_BUS_01_p01_mini_3__1250_00001_.png",
+      "output_sha256": "3ee2a42616617a8e8f9406e0a07738e83f8b8096339b9a69d068d04ce8f1b929",
+      "duration_seconds": 244.47201919999497,
+      "telemetry_before": {
+        "timestamp": "2026-09-10T10:41:00.513576+03:00",
+        "ram_free_mib": 19163,
+        "commit_free_mib": 11599,
+        "gpu": {
+          "total_mib": 24576,
+          "used_mib": 22303,
+          "free_mib": 2023
+        }
+      },
+      "telemetry_after": {
+        "timestamp": "2026-09-10T10:45:05.425367+03:00",
+        "ram_free_mib": 19193,
+        "commit_free_mib": 11620,
+        "gpu": {
+          "total_mib": 24576,
+          "used_mib": 22304,
+          "free_mib": 2022
+        }
+      },
+      "technical_validation": {
+        "decodable": true,
+        "width": 768,
+        "height": 1024
+      }
+    }
+  ],
+  "telemetry": {
+    "before_series": {
+      "timestamp": "2026-09-10T10:31:38.861107+03:00",
+      "ram_free_mib": 20863,
+      "commit_free_mib": 34767,
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 943,
+        "free_mib": 23383
+      }
+    },
+    "after_server_stop": {
+      "timestamp": "2026-09-10T07:47:15.9428922Z",
+      "gpu": {
+        "total_mib": 24576,
+        "used_mib": 732,
+        "free_mib": 23594
+      }
+    }
+  },
+  "cleanup": {
+    "api_free_requested": true,
+    "api_free_response": "HTTP success with empty body",
+    "server_stopped": true
+  },
+  "finished_at": "2026-09-10T07:47:15.9526475Z"
+}

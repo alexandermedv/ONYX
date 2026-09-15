@@ -1,0 +1,35 @@
+{
+  "schema": "onyx.identity_benchmark.checkpoint_run",
+  "schema_version": "1.0",
+  "run_id": "checkpoint_benchmark_v1",
+  "status": "prepared",
+  "scope": "Six-image P01 mini-LoRA checkpoint comparison only; no PuLID rerun, training, QA, ranking, seed sweep, or postprocessing.",
+  "canonical_runbook": "04 Engineering/ComfyUI FLUX Windows Runbook.md",
+  "workflow_template": "comfyui-workflows/ONYX_Flux_Scene_Generator_0.3_fixed_lora_api.json",
+  "workflow_template_sha256": "TO_BE_RECORDED_AT_EXECUTION",
+  "scene": {
+    "id": "BUS_01",
+    "canonical_prompt": "professional editorial corporate portrait of one adult man, head and shoulders, seated or standing upright, frontal face, looking at camera, calm confident expression, dark business jacket with neutral shirt, neutral modern office background, soft even daylight, unobstructed face, natural skin texture, professional photography, photorealistic",
+    "prompt": "photo of p01onyx man, professional editorial corporate portrait of one adult man, head and shoulders, seated or standing upright, frontal face, looking at camera, calm confident expression, dark business jacket with neutral shirt, neutral modern office background, soft even daylight, unobstructed face, natural skin texture, professional photography, photorealistic"
+  },
+  "generation": {
+    "seed": 748412438238144,
+    "width": 768,
+    "height": 1024,
+    "steps": 20,
+    "cfg": 1.0,
+    "cfg_source": "ONYX_Flux_Scene_Generator_0.3_fixed_lora_api.json KSampler contract",
+    "sampler_name": "euler",
+    "scheduler": "simple",
+    "denoise": 1.0,
+    "lora_weight": 1.0
+  },
+  "variants": [
+    {"dataset_id": "p01_mini_3", "checkpoint": 750, "source_path": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1\\p01_mini_3_fixed_steps\\p01_mini_3_fixed_steps_000000750.safetensors", "staged_filename": "p01_mini_3__0750.safetensors"},
+    {"dataset_id": "p01_mini_3", "checkpoint": 1000, "source_path": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1\\p01_mini_3_fixed_steps\\p01_mini_3_fixed_steps_000001000.safetensors", "staged_filename": "p01_mini_3__1000.safetensors"},
+    {"dataset_id": "p01_mini_3", "checkpoint": 1250, "source_path": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1\\p01_mini_3_fixed_steps\\p01_mini_3_fixed_steps.safetensors", "staged_filename": "p01_mini_3__1250.safetensors"},
+    {"dataset_id": "p01_mini_5", "checkpoint": 750, "source_path": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1\\p01_mini_5_fixed_steps\\p01_mini_5_fixed_steps_000000750.safetensors", "staged_filename": "p01_mini_5__0750.safetensors"},
+    {"dataset_id": "p01_mini_5", "checkpoint": 1000, "source_path": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1\\p01_mini_5_fixed_steps\\p01_mini_5_fixed_steps_000001000.safetensors", "staged_filename": "p01_mini_5__1000.safetensors"},
+    {"dataset_id": "p01_mini_5", "checkpoint": 1250, "source_path": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1\\p01_mini_5_fixed_steps\\p01_mini_5_fixed_steps.safetensors", "staged_filename": "p01_mini_5__1250.safetensors"}
+  ]
+}

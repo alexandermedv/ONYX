@@ -1,0 +1,225 @@
+{
+  "prompt": [
+    1,
+    "29ade830-9e30-4bad-a1ec-5765cd79f974",
+    {
+      "1": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "onyx_benchmark_p01_v1/P01_REF01_frontal.png"
+        }
+      },
+      "2": {
+        "class_type": "ImageStitch",
+        "inputs": {
+          "image1": [
+            "1",
+            0
+          ],
+          "direction": "right",
+          "match_image_size": true,
+          "spacing_width": 0,
+          "spacing_color": "white"
+        }
+      },
+      "3": {
+        "class_type": "FluxKontextImageScale",
+        "inputs": {
+          "image": [
+            "2",
+            0
+          ]
+        }
+      },
+      "4": {
+        "class_type": "VAEEncode",
+        "inputs": {
+          "pixels": [
+            "3",
+            0
+          ],
+          "vae": [
+            "5",
+            0
+          ]
+        }
+      },
+      "5": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "ae.safetensors"
+        }
+      },
+      "6": {
+        "class_type": "DualCLIPLoader",
+        "inputs": {
+          "clip_name1": "clip_l.safetensors",
+          "clip_name2": "t5xxl_fp8_e4m3fn_scaled.safetensors",
+          "type": "flux",
+          "device": "default"
+        }
+      },
+      "7": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "flux1-dev-kontext_fp8_scaled.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "8": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "Place the same adult man in this scene: professional editorial corporate portrait of one adult man, medium three-quarter shot, seated at a work desk, slight turn, looking at camera, focused relaxed expression, navy or charcoal business suit, functional executive office with laptop, soft daylight, desk context, visible hands are natural, professional photography, photorealistic Preserve his facial features, apparent age, bald head, natural skin texture, identity, and photorealistic quality. Do not add other people.",
+          "clip": [
+            "6",
+            0
+          ]
+        }
+      },
+      "9": {
+        "class_type": "ReferenceLatent",
+        "inputs": {
+          "conditioning": [
+            "8",
+            0
+          ],
+          "latent": [
+            "4",
+            0
+          ]
+        }
+      },
+      "10": {
+        "class_type": "FluxGuidance",
+        "inputs": {
+          "conditioning": [
+            "9",
+            0
+          ],
+          "guidance": 2.5
+        }
+      },
+      "11": {
+        "class_type": "ConditioningZeroOut",
+        "inputs": {
+          "conditioning": [
+            "8",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "7",
+            0
+          ],
+          "positive": [
+            "10",
+            0
+          ],
+          "negative": [
+            "11",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ],
+          "seed": 748412438238146,
+          "steps": 20,
+          "cfg": 1.0,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1.0
+        }
+      },
+      "13": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "12",
+            0
+          ],
+          "vae": [
+            "5",
+            0
+          ]
+        }
+      },
+      "14": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "filename_prefix": "P01_BUS_06_KONTEXT",
+          "images": [
+            "13",
+            0
+          ]
+        }
+      }
+    },
+    {
+      "client_id": "72e2b82676f84fb399439874f032cbe4",
+      "create_time": 1789048556259
+    },
+    [
+      "14"
+    ]
+  ],
+  "outputs": {
+    "14": {
+      "images": [
+        {
+          "filename": "P01_BUS_06_KONTEXT_00001_.png",
+          "subfolder": "",
+          "type": "output"
+        }
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "29ade830-9e30-4bad-a1ec-5765cd79f974",
+          "timestamp": 1789048556261
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "prompt_id": "29ade830-9e30-4bad-a1ec-5765cd79f974",
+          "timestamp": 1789048556270
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "29ade830-9e30-4bad-a1ec-5765cd79f974",
+          "timestamp": 1789048610429
+        }
+      ]
+    ]
+  },
+  "meta": {
+    "14": {
+      "node_id": "14",
+      "display_node": "14",
+      "parent_node": null,
+      "real_node_id": "14"
+    }
+  }
+}

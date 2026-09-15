@@ -1,0 +1,202 @@
+{
+  "prompt": [
+    0,
+    "1146ea19-7f4d-4d06-9243-b59dea9c6931",
+    {
+      "9": {
+        "inputs": {
+          "filename_prefix": "P01_BUS_01_p01_mini_5__0750",
+          "images": [
+            "56:53",
+            0
+          ]
+        },
+        "class_type": "SaveImage",
+        "_meta": {
+          "title": "Save Image"
+        }
+      },
+      "56:47": {
+        "inputs": {
+          "vae_name": "ae.safetensors"
+        },
+        "class_type": "VAELoader",
+        "_meta": {
+          "title": "Load VAE"
+        }
+      },
+      "56:48": {
+        "inputs": {
+          "unet_name": "flux1-dev.safetensors",
+          "weight_dtype": "default"
+        },
+        "class_type": "UNETLoader",
+        "_meta": {
+          "title": "Load Diffusion Model"
+        }
+      },
+      "56:49": {
+        "inputs": {
+          "clip_name1": "clip_l.safetensors",
+          "clip_name2": "t5xxl_fp8_e4m3fn.safetensors",
+          "type": "flux",
+          "device": "default"
+        },
+        "class_type": "DualCLIPLoader",
+        "_meta": {
+          "title": "Load CLIP (Dual)"
+        }
+      },
+      "56:50": {
+        "inputs": {
+          "width": 768,
+          "height": 1024,
+          "batch_size": 1
+        },
+        "class_type": "EmptySD3LatentImage",
+        "_meta": {
+          "title": "EmptySD3LatentImage"
+        }
+      },
+      "56:53": {
+        "inputs": {
+          "samples": [
+            "56:58",
+            0
+          ],
+          "vae": [
+            "56:47",
+            0
+          ]
+        },
+        "class_type": "VAEDecode",
+        "_meta": {
+          "title": "VAE Decode"
+        }
+      },
+      "56:54": {
+        "inputs": {
+          "conditioning": [
+            "56:51",
+            0
+          ]
+        },
+        "class_type": "ConditioningZeroOut",
+        "_meta": {
+          "title": "Conditioning Zero Out"
+        }
+      },
+      "56:51": {
+        "inputs": {
+          "text": "photo of p01onyx man, professional editorial corporate portrait of one adult man, head and shoulders, seated or standing upright, frontal face, looking at camera, calm confident expression, dark business jacket with neutral shirt, neutral modern office background, soft even daylight, unobstructed face, natural skin texture, professional photography, photorealistic",
+          "clip": [
+            "56:49",
+            0
+          ]
+        },
+        "class_type": "CLIPTextEncode",
+        "_meta": {
+          "title": "CLIP Text Encode (Prompt)"
+        }
+      },
+      "56:59": {
+        "inputs": {
+          "lora_name": "p01_mini_5_fixed_steps_000000750.safetensors",
+          "strength_model": 1.0,
+          "model": [
+            "56:48",
+            0
+          ]
+        },
+        "class_type": "LoraLoaderModelOnly",
+        "_meta": {
+          "title": "Load LoRA"
+        }
+      },
+      "56:58": {
+        "inputs": {
+          "seed": 748412438238144,
+          "steps": 20,
+          "cfg": 1.0,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1.0,
+          "model": [
+            "56:59",
+            0
+          ],
+          "positive": [
+            "56:51",
+            0
+          ],
+          "negative": [
+            "56:54",
+            0
+          ],
+          "latent_image": [
+            "56:50",
+            0
+          ]
+        },
+        "class_type": "KSampler",
+        "_meta": {
+          "title": "KSampler"
+        }
+      }
+    },
+    {
+      "client_id": "8e61566de7484300aad77368786224f1",
+      "create_time": 1789026550719
+    },
+    [
+      "9"
+    ]
+  ],
+  "outputs": {
+    "9": {
+      "images": [
+        {
+          "filename": "P01_BUS_01_p01_mini_5__0750_00001_.png",
+          "subfolder": "",
+          "type": "output"
+        }
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "1146ea19-7f4d-4d06-9243-b59dea9c6931",
+          "timestamp": 1789026550721
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [],
+          "prompt_id": "1146ea19-7f4d-4d06-9243-b59dea9c6931",
+          "timestamp": 1789026550726
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "1146ea19-7f4d-4d06-9243-b59dea9c6931",
+          "timestamp": 1789026850612
+        }
+      ]
+    ]
+  },
+  "meta": {
+    "9": {
+      "node_id": "9",
+      "display_node": "9",
+      "parent_node": null,
+      "real_node_id": "9"
+    }
+  }
+}

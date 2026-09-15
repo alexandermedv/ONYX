@@ -1,0 +1,37 @@
+{
+  "schema": "onyx.identity_benchmark.technical_validation",
+  "schema_version": "1.0",
+  "run_id": "flux_kontext_repair_v1",
+  "generated_at": "2026-09-10T14:24:51.992533+00:00",
+  "expected_output_count": 2,
+  "validated_output_count": 2,
+  "all_expected_outputs_present": true,
+  "results": [
+    {
+      "scene_id": "BUS_06",
+      "seed": 748412438238146,
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_repair_v1\\outputs\\P01_BUS_06_KONTEXT_REPAIR.png",
+      "output_sha256": "dafead933a0411dd39edafe5918a987c0b76227ba1f7d4c29fe95afbb43dc858",
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 880,
+        "height": 1184
+      }
+    },
+    {
+      "scene_id": "BUS_09",
+      "seed": 748412438238147,
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_repair_v1\\outputs\\P01_BUS_09_KONTEXT_REPAIR.png",
+      "output_sha256": "ddecae6d5d1a2e511cc88b3c9003b1760f5695ede29df242569f84a6d153f173",
+      "technical_validation": {
+        "exists": true,
+        "decodable": true,
+        "format": "PNG",
+        "width": 880,
+        "height": 1184
+      }
+    }
+  ]
+}

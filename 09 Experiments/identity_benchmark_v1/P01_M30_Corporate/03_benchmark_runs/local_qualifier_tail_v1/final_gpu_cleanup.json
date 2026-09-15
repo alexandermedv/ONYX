@@ -1,0 +1,14 @@
+{
+  "schema": "onyx.identity_benchmark.final_gpu_cleanup",
+  "captured_at_local": "2026-09-10T15:29:31+03:00",
+  "action": "ComfyUI process started for the mini-5 series was stopped after runner completion and API model release.",
+  "nvidia_smi": {
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "memory_used_mib": 566,
+    "memory_free_mib": 23760,
+    "gpu_utilization_percent": 9,
+    "compute_processes": [],
+    "remaining_process_types": ["C+G"]
+  },
+  "result": "GPU compute memory released; only normal desktop graphics processes remain."
+}

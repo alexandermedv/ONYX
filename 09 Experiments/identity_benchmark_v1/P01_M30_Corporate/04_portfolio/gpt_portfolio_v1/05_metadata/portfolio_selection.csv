@@ -1,0 +1,11 @@
+rank_in_portfolio,source_filename,copied_filename,set,scene_tag,identity_score,commercial_score,scene_diversity_value,beautification_level,notes
+1,BUS02.png,P01_PORT_01_HERO.png,selected,hero,4,5,high,moderate,Standing three-quarter office portrait with polished hero framing and clear identity.
+2,BUS06.png,P01_PORT_02_DESK.png,selected,desk,4,4,high,moderate,"Seated desk context, readable executive story, and technically clean hands."
+3,BUS05.png,P01_PORT_03_LOUNGE.png,selected,lounge,4,5,high,moderate,Relaxed seated lounge variation with natural clasped hands and strong commercial composition.
+4,BUS08.png,P01_PORT_04_LIBRARY.png,selected,library,4,4,high,moderate,Library environment adds scene variety while retaining a credible executive look.
+5,BUS09.png,P01_PORT_05_FULLBODY.png,selected,fullbody,4,4,high,moderate,Head-to-shoes lobby frame provides the selected set's complete silhouette and suit presentation.
+6,BUS01.png,P01_PORT_06_CLOSEUP.png,selected,closeup,4,5,high,moderate,"Clean close portrait with direct eye contact and an appealing, controlled polished finish."
+7,BUS03.png,P01_RESERVE_01.png,reserve,formal_desk,4,4,medium,moderate,"Strong formal desk alternative, held in reserve because it overlaps the selected desk coverage."
+8,BUS04.png,P01_RESERVE_02.png,reserve,lobby_standing,4,4,medium,moderate,Good standing lobby option; prominent background branding makes it less universally reusable.
+9,BUS07.png,P01_RESERVE_03.png,reserve,standing,4,4,medium,moderate,"Clean standing portrait, reserved because it overlaps hero and full-body coverage."
+10,BUS10.png,P01_RESERVE_04.png,reserve,corridor,4,4,medium,moderate,"Useful corridor alternate, reserved to keep the selected set more scene-diverse."

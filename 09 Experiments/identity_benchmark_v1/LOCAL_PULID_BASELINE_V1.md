@@ -37,3 +37,13 @@ The first permitted request, `local_adapter_smoke_v1`, was sent with seed `74841
 The adapter is graph-valid and three-reference capable, but **not smoke-validated or ready for a local benchmark series**. Do not retry or tune it under this baseline record. A separate runtime diagnosis and explicit authorization are required before another GPU attempt.
 
 The full immutable record is [run_manifest.yaml](P01_M30_Corporate/03_benchmark_runs/local_adapter_smoke_v1/run_manifest.yaml).
+
+## Authorized follow-up, 2026-09-10
+
+The separate [v2 attempt](P01_M30_Corporate/03_benchmark_runs/local_pulid_baseline_v2/README.md) resolved EVA from the existing shared Hugging Face cache with no download or model relocation. Exactly one P01 request was submitted using a process-local offline launcher with dynamic VRAM disabled. It failed with a native access violation during FLUX initialization, before sampling or identity conditioning could be verified. No image was produced. The adapter remains unvalidated for a benchmark series; see the v2 manifest and logs for evidence. Production Pilot and mini-LoRA were unchanged.
+
+## Current status: v3 technical baseline passed
+
+After the user pointed back to [[ComfyUI FLUX Windows Runbook]], the [v3 attempt](P01_M30_Corporate/03_benchmark_runs/local_pulid_baseline_v3/README.md) restored its required configuration: DynamicVRAM enabled, async offload and pinned memory disabled. V2 incorrectly departed from the documented configuration and is not a canonical-runtime test.
+
+One P01 BUS_01 image completed in **348.15 seconds**, with unchanged generation parameters and all three verified references. The technical baseline passed; identity quality and comparison against `mini_5__1250` remain separate work. No generation followed success.

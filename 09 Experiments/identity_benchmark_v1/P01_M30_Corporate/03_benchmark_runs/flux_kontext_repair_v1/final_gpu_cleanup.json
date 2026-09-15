@@ -1,0 +1,13 @@
+{
+  "schema": "onyx.identity_benchmark.gpu_cleanup",
+  "run_id": "flux_kontext_repair_v1",
+  "captured_at": "2026-09-10T17:25:32+03:00",
+  "action": "Stopped isolated ComfyUI process PID 22008 after completion of exactly two repair outputs.",
+  "nvidia_smi": {
+    "total_mib": 24576,
+    "used_mib": 841,
+    "free_mib": 23485
+  },
+  "python_compute_process_present": false,
+  "runbook_cleanup_confirmed": true
+}

@@ -28,3 +28,22 @@ rules:
   - do_not_use_identity_master_as_generation_input
   - do_not_replace_references_between_model_comparisons
   - reference_set_change_requires_new_benchmark_identity_version
+
+approved_training_references:
+  - id: REF04
+    file: P01_REF04_right_soft.png
+    sha256: a136b8a375984c48a994384873c6ede9b06a91e98f5334a76434d35a82702e00
+    pose: right_3q
+    expression: slight_smile
+    training_input: true
+
+  - id: REF05
+    file: P01_REF05_left_soft.png
+    sha256: d9e2ff1c8ba8acc5bb575aacce69d2af7a9fa68f317c4e5aeb52831298bbe27a
+    pose: left_3q
+    expression: slight_smile
+    training_input: true
+
+training_rules:
+  - REF01_to_REF03_remain_the_canonical_generation_reference_set_for_identity_benchmark_v1
+  - REF04_and_REF05_are_approved_only_for_the_P01_mini_5_training_dataset

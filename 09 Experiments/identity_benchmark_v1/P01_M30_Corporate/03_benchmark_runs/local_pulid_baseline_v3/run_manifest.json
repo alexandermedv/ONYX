@@ -1,0 +1,135 @@
+{
+  "run_id": "local_pulid_baseline_v3",
+  "date": "2026-09-10",
+  "status": "success",
+  "onyx_head": "1999980a17f121e1f229675ce8fff1b43615aa0c",
+  "installation": "D:\\AI\\ComfyUI_Flux",
+  "comfyui_head": "b1693ecba9f5b65f8c80ab36b195ab963ec92413",
+  "pulid_node_head": "a80912fc3435c358607bf4b43a58dbcbebdb09ff",
+  "pulidflux_py_sha256": "e40765baf2e2e5e6e71b892be96ec021724a93f0e09a3bfc206a6570a1663f26",
+  "existing_node_change": "forward_orig accepts **kwargs; preserved",
+  "prompt_id": "bb2980b3-8221-4d49-af30-43555c1f0aa4",
+  "scene": "BUS_01",
+  "seed": 748412438238144,
+  "width": 768,
+  "height": 1024,
+  "steps": 20,
+  "sampler": "euler",
+  "scheduler": "simple",
+  "denoise": 1.0,
+  "guidance": 3.5,
+  "pulid_weight": 0.9,
+  "pulid_start": 0.0,
+  "pulid_end": 1.0,
+  "references": [
+    {
+      "node": "67",
+      "canonical": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF01_frontal.png",
+      "staged": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\input\\onyx_benchmark_p01_v1\\P01_REF01_frontal.png",
+      "sha256": "3c9d08bdc2ab581a1e1e928337b09bf5f21e4a3eea4a4d4e7d793a7d3bc8a1b0"
+    },
+    {
+      "node": "68",
+      "canonical": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF02_right_3q.png",
+      "staged": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\input\\onyx_benchmark_p01_v1\\P01_REF02_right_3q.png",
+      "sha256": "cf2bcba506c5a2b83ca1e9f497a6116431dff8b9d5cee8a3f0eaec9a79404323"
+    },
+    {
+      "node": "54",
+      "canonical": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\01_references\\P01_REF03_left_3q_smile.png",
+      "staged": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\input\\onyx_benchmark_p01_v1\\P01_REF03_left_3q_smile.png",
+      "sha256": "058ea909e7b26589b59f2ce6a4361c78f1dbc6f67c2ad31132715914b179669b"
+    }
+  ],
+  "identity_weights": [
+    {
+      "modified": "2026-06-30T02:50:41.2412391+03:00",
+      "sha256": "84c3a17a228c567a155259b2245b0b59072bf7da510260a0a02ec54de6d50b05",
+      "path": "D:\\AI\\Cache\\huggingface\\hub\\models--QuanSun--EVA-CLIP\\snapshots\\11afd202f2ae80869d6cef18b1ec775e79bd8d12\\EVA02_CLIP_L_336_psz14_s6B.pt",
+      "bytes": 856461210
+    },
+    {
+      "modified": "2026-08-06T14:47:34.6182103+03:00",
+      "sha256": "92c41c3af322b02e58e1b32842e4601e08c8f16ec1fe80089dbe957df510f51d",
+      "path": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\models\\pulid\\pulid_flux_v0.9.1.safetensors",
+      "bytes": 1142099520
+    },
+    {
+      "modified": "2026-08-06T14:53:53.8190968+03:00",
+      "sha256": "df5c06b8a0c12e422b2ed8947b8869faa4105387f199c477af038aa01f9a45cc",
+      "path": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\models\\insightface\\models\\antelopev2\\1k3d68.onnx",
+      "bytes": 143607619
+    },
+    {
+      "modified": "2026-08-06T14:53:13.7472054+03:00",
+      "sha256": "f001b856447c413801ef5c42091ed0cd516fcd21f2d6b79635b1e733a7109dbf",
+      "path": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\models\\insightface\\models\\antelopev2\\2d106det.onnx",
+      "bytes": 5030888
+    },
+    {
+      "modified": "2026-08-06T14:53:12.9973719+03:00",
+      "sha256": "4fde69b1c810857b88c64a335084f1c3fe8f01246c9a191b48c7bb756d6652fb",
+      "path": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\models\\insightface\\models\\antelopev2\\genderage.onnx",
+      "bytes": 1322532
+    },
+    {
+      "modified": "2026-08-06T14:53:48.4927746+03:00",
+      "sha256": "4ab1d6435d639628a6f3e5008dd4f929edf4c4124b1a7169e1048f9fef534cdf",
+      "path": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\models\\insightface\\models\\antelopev2\\glintr100.onnx",
+      "bytes": 260665334
+    },
+    {
+      "modified": "2026-08-06T14:53:22.0268045+03:00",
+      "sha256": "5838f7fe053675b1c7a08b633df49e7af5495cee0493c7dcf6697200b85b5b91",
+      "path": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\models\\insightface\\models\\antelopev2\\scrfd_10g_bnkps.onnx",
+      "bytes": 16923827
+    },
+    {
+      "modified": "2026-08-06T16:37:39.0579276+03:00",
+      "sha256": "6d1de9c2944f2ccddca5f5e010ea5ae64a39845a86311af6fdf30841b0a5a16d",
+      "path": "D:\\AI\\ComfyUI_Flux\\python_embeded\\Lib\\site-packages\\facexlib\\weights\\detection_Resnet50_Final.pth",
+      "bytes": 109497761
+    },
+    {
+      "modified": "2026-08-06T16:42:46.4372257+03:00",
+      "sha256": "468e13ca13a9b43cc0881a9f99083a430e9c0a38abd935431d1c28ee94b26567",
+      "path": "D:\\AI\\ComfyUI_Flux\\python_embeded\\Lib\\site-packages\\facexlib\\weights\\parsing_bisenet.pth",
+      "bytes": 53289463
+    },
+    {
+      "modified": "2026-08-06T16:42:14.124744+03:00",
+      "sha256": "3d558d8d0e42c20224f13cf5a29c79eba2d59913419f945545d8cf7b72920de2",
+      "path": "D:\\AI\\ComfyUI_Flux\\python_embeded\\Lib\\site-packages\\facexlib\\weights\\parsing_parsenet.pth",
+      "bytes": 85331193
+    }
+  ],
+  "workflow": "outputs/workflow_api.json",
+  "workflow_sha256": "a2d7ebbaab6a4ea4b094409958d8c7a717d0a07fc49e5a72122645031d983e2c",
+  "output_image": "outputs/P01_BUS_01_PULID_BASELINE_00001_.png",
+  "generation_elapsed_seconds": 348.15,
+  "last_monitor_elapsed_seconds": 350.53862619999995,
+  "sampled_peak_total_gpu_memory_mib": 24150.0,
+  "model_downloads": 0,
+  "model_copy_or_link_changes": 0,
+  "identity_conditioning_verified": true,
+  "error": null,
+  "warnings": [
+    "Nonfatal database lock permission error",
+    "CLIP text_projection.weight missing warning",
+    "EVA rotary buffer missing keys logged",
+    "Package deprecations and optional backend notices"
+  ],
+  "runtime_changes": [
+    "Canonical runbook memory flags: dynamic VRAM enabled, async offload and pinned memory disabled",
+    "Direct python -s ComfyUI/main.py invocation",
+    "HF offline environment",
+    "PuLID/GGUF whitelist",
+    "isolated output/user directory"
+  ],
+  "retry_count": 0,
+  "server_stopped": true,
+  "output_sha256": "33e7089c50613c13796e66dc5edaba6ddce2dabd147e3a79e4ab11798b7a211c",
+  "canonical_runbook": "04 Engineering/ComfyUI FLUX Windows Runbook.md",
+  "minimum_commit_free_mib": 10206.0,
+  "minimum_ram_free_mib": 18529.0
+}

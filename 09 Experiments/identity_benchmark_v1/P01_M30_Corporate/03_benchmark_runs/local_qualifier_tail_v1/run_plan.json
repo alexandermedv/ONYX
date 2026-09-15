@@ -1,0 +1,40 @@
+{
+  "schema": "onyx.identity_benchmark.local_qualifier_tail",
+  "schema_version": "1.0",
+  "run_id": "local_qualifier_tail_v1",
+  "status": "prepared",
+  "scope": "The 12 missing local mini-LoRA qualifier images only: BUS_06 and BUS_09 for the six existing P01 mini-LoRA checkpoints. BUS_01, PuLID, LoRA training, QA/ranking, external models, upscaling, and Production Pilot are excluded.",
+  "canonical_runbook": "04 Engineering/ComfyUI FLUX Windows Runbook.md",
+  "workflow_template": "comfyui-workflows/ONYX_Flux_Scene_Generator_0.3_fixed_lora_api.json",
+  "canonical_scene_specs_source": "../pulid_multiscene_v1/scene_specs.json",
+  "canonical_references_source": "../../01_references/references.yaml",
+  "required_scene_ids": ["BUS_06", "BUS_09"],
+  "prompt_policy": "Reuse the resolved canonical SceneSpec prompt from canonical_scene_specs_source and prefix it with 'photo of p01onyx man, ', matching checkpoint_benchmark_v1.",
+  "generation": {
+    "persona": "P01",
+    "width": 768,
+    "height": 1024,
+    "steps": 20,
+    "cfg": 1.0,
+    "cfg_source": "ONYX_Flux_Scene_Generator_0.3_fixed_lora_api.json KSampler contract",
+    "guidance": null,
+    "guidance_mode": "not_applicable: the approved mini-LoRA template has no FluxGuidance node",
+    "sampler_name": "euler",
+    "scheduler": "simple",
+    "denoise": 1.0,
+    "lora_weight": 1.0,
+    "trigger": "p01onyx"
+  },
+  "scenes": {
+    "BUS_06": {"seed": 748412438238146, "label": "DESK"},
+    "BUS_09": {"seed": 748412438238147, "label": "FULL"}
+  },
+  "variants": [
+    {"variant_id": "MINI3_0750", "dataset_id": "p01_mini_3", "checkpoint": 750, "source_path": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1\\p01_mini_3_fixed_steps\\p01_mini_3_fixed_steps_000000750.safetensors", "source_checkpoint_sha256": "30A7B54036EB51832D54A531289C67C04B90E4C760549E43649BF7957C1AF127"},
+    {"variant_id": "MINI3_1000", "dataset_id": "p01_mini_3", "checkpoint": 1000, "source_path": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1\\p01_mini_3_fixed_steps\\p01_mini_3_fixed_steps_000001000.safetensors", "source_checkpoint_sha256": "BCB58E7C7D22D7671659796CE8FA1ED2FF39283626D36A88EA439A8BAEEED9C6"},
+    {"variant_id": "MINI3_1250", "dataset_id": "p01_mini_3", "checkpoint": 1250, "source_path": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1\\p01_mini_3_fixed_steps\\p01_mini_3_fixed_steps.safetensors", "source_checkpoint_sha256": "14B8E2D7315DAC76BB42EAAA02BC9A6F89C7006CD7B62CC7A2358793E2B5106D"},
+    {"variant_id": "MINI5_0750", "dataset_id": "p01_mini_5", "checkpoint": 750, "source_path": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1\\p01_mini_5_fixed_steps\\p01_mini_5_fixed_steps_000000750.safetensors", "source_checkpoint_sha256": "E71755D97CB9049FB10DC6FCD70C4216D52F6CE499E39BF4C624207B120CA756"},
+    {"variant_id": "MINI5_1000", "dataset_id": "p01_mini_5", "checkpoint": 1000, "source_path": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1\\p01_mini_5_fixed_steps\\p01_mini_5_fixed_steps_000001000.safetensors", "source_checkpoint_sha256": "46912AD3CF9DA0B942885954B3FEB9D29A3231AB6394ABFDCE937472BCBD4486"},
+    {"variant_id": "MINI5_1250", "dataset_id": "p01_mini_5", "checkpoint": 1250, "source_path": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1\\p01_mini_5_fixed_steps\\p01_mini_5_fixed_steps.safetensors", "source_checkpoint_sha256": "87EC121C4E4BEC9066A2DE3E7E31AD34867B3637E31D2B4AFD746DAC7AAA6721"}
+  ]
+}

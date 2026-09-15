@@ -1,0 +1,14 @@
+{
+  "schema": "onyx.identity_benchmark.final_gpu_cleanup",
+  "captured_at_local": "2026-09-10T16:59:34+03:00",
+  "action": "The ComfyUI process started for the bounded FLUX Kontext qualifier was stopped after all three outputs completed and the runner sent API model release.",
+  "nvidia_smi": {
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "memory_used_mib": 876,
+    "memory_free_mib": 23450,
+    "gpu_utilization_percent": 10,
+    "compute_processes": [],
+    "remaining_process_types": ["C+G"]
+  },
+  "result": "GPU compute memory released; only normal desktop graphics processes remain."
+}

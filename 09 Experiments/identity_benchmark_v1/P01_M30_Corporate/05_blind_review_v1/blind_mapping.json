@@ -1,0 +1,147 @@
+{
+  "schema": "onyx.identity_benchmark.blind_mapping",
+  "schema_version": "1.0",
+  "blind_review_seed": 20260912,
+  "mapping": {
+    "BUS_01": {
+      "A": "mini5_0750",
+      "B": "ideogram",
+      "C": "mini5_1250",
+      "D": "mini5_1000",
+      "E": "mini3_1000",
+      "F": "mini3_0750",
+      "G": "qwen",
+      "H": "gpt_images_25",
+      "I": "kandinsky",
+      "J": "mini3_1250",
+      "K": "pulid",
+      "L": "flux_kontext"
+    },
+    "BUS_06": {
+      "A": "mini5_0750",
+      "B": "mini3_0750",
+      "C": "qwen",
+      "D": "flux_kontext",
+      "E": "ideogram",
+      "F": "mini3_1250",
+      "G": "mini5_1000",
+      "H": "mini3_1000",
+      "I": "pulid",
+      "J": "kandinsky",
+      "K": "mini5_1250",
+      "L": "gpt_images_25"
+    },
+    "BUS_09": {
+      "A": "pulid",
+      "B": "kandinsky",
+      "C": "mini3_0750",
+      "D": "gpt_images_25",
+      "E": "qwen",
+      "F": "ideogram",
+      "G": "mini5_1000",
+      "H": "flux_kontext",
+      "I": "mini3_1000",
+      "J": "mini5_0750",
+      "K": "mini5_1250",
+      "L": "mini3_1250"
+    }
+  },
+  "participants": {
+    "gpt_images_25": {
+      "source": {
+        "BUS_01": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\gpt_images_25_qualifier_v1\\P01_BUS_01_GPT_IMAGES_25.png",
+        "BUS_06": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\gpt_images_25_qualifier_v1\\P01_BUS_06_GPT_IMAGES_25.png",
+        "BUS_09": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\gpt_images_25_qualifier_v1\\P01_BUS_09_GPT_IMAGES_25.png"
+      },
+      "model_name": "GPT Images 2.5"
+    },
+    "qwen": {
+      "source": {
+        "BUS_01": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\qwen_qualifier_v1\\P01_BUS_01_QWEN.png",
+        "BUS_06": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\qwen_qualifier_v1\\P01_BUS_06_QWEN.png",
+        "BUS_09": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\qwen_qualifier_v1\\P01_BUS_09_QWEN.png"
+      },
+      "model_name": "Qwen"
+    },
+    "kandinsky": {
+      "source": {
+        "BUS_01": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\kandinsky_qualifier_v1\\P01_BUS_01_KANDINSKY.jpeg",
+        "BUS_06": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\kandinsky_qualifier_v1\\P01_BUS_06_KANDINSKY.jpeg",
+        "BUS_09": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\kandinsky_qualifier_v1\\P01_BUS_09_KANDINSKY.jpeg"
+      },
+      "model_name": "Kandinsky"
+    },
+    "ideogram": {
+      "source": {
+        "BUS_01": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\ideogram_qualifier_v1\\P01_BUS_01_IDEOGRAM.jpg",
+        "BUS_06": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\ideogram_qualifier_v1\\P01_BUS_06_IDEOGRAM.jpg",
+        "BUS_09": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\ideogram_qualifier_v1\\P01_BUS_09_IDEOGRAM.jpg"
+      },
+      "model_name": "Ideogram"
+    },
+    "pulid": {
+      "source": {
+        "BUS_01": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_pulid_baseline_v3\\outputs\\P01_BUS_01_PULID_BASELINE_00001_.png",
+        "BUS_06": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\pulid_multiscene_v1\\outputs\\P01_BUS_06_PULID_00001_.png",
+        "BUS_09": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\pulid_multiscene_v1\\outputs\\P01_BUS_09_PULID_00001_.png"
+      },
+      "model_name": "PuLID"
+    },
+    "flux_kontext": {
+      "source": {
+        "BUS_01": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_qualifier_v1\\outputs\\P01_BUS_01_KONTEXT.png",
+        "BUS_06": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_repair_v1\\outputs\\P01_BUS_06_KONTEXT_REPAIR.png",
+        "BUS_09": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\flux_kontext_repair_v1\\outputs\\P01_BUS_09_KONTEXT_REPAIR.png"
+      },
+      "model_name": "FLUX Kontext"
+    },
+    "mini3_0750": {
+      "source": {
+        "BUS_01": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\outputs\\P01_BUS_01_p01_mini_3__0750_00001_.png",
+        "BUS_06": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_06_MINI3_0750_00001_.png",
+        "BUS_09": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_09_MINI3_0750_00001_.png"
+      },
+      "model_name": "mini-3 @ 0750"
+    },
+    "mini3_1000": {
+      "source": {
+        "BUS_01": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\outputs\\P01_BUS_01_p01_mini_3__1000_00001_.png",
+        "BUS_06": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_06_MINI3_1000_00001_.png",
+        "BUS_09": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_09_MINI3_1000_00001_.png"
+      },
+      "model_name": "mini-3 @ 1000"
+    },
+    "mini3_1250": {
+      "source": {
+        "BUS_01": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\outputs\\P01_BUS_01_p01_mini_3__1250_00001_.png",
+        "BUS_06": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_06_MINI3_1250_00001_.png",
+        "BUS_09": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_09_MINI3_1250_00001_.png"
+      },
+      "model_name": "mini-3 @ 1250"
+    },
+    "mini5_0750": {
+      "source": {
+        "BUS_01": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\outputs\\P01_BUS_01_p01_mini_5__0750_00001_.png",
+        "BUS_06": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_06_MINI5_0750_00001_.png",
+        "BUS_09": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_09_MINI5_0750_00001_.png"
+      },
+      "model_name": "mini-5 @ 0750"
+    },
+    "mini5_1000": {
+      "source": {
+        "BUS_01": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\outputs\\P01_BUS_01_p01_mini_5__1000_00001_.png",
+        "BUS_06": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_06_MINI5_1000_00001_.png",
+        "BUS_09": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_09_MINI5_1000_00001_.png"
+      },
+      "model_name": "mini-5 @ 1000"
+    },
+    "mini5_1250": {
+      "source": {
+        "BUS_01": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\outputs\\P01_BUS_01_p01_mini_5__1250_00001_.png",
+        "BUS_06": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_06_MINI5_1250_00001_.png",
+        "BUS_09": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_qualifier_tail_v1\\outputs\\P01_BUS_09_MINI5_1250_00001_.png"
+      },
+      "model_name": "mini-5 @ 1250"
+    }
+  }
+}

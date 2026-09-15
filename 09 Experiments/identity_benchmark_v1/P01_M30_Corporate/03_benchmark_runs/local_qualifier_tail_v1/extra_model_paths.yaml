@@ -1,0 +1,5 @@
+p01_local_qualifier_tail_v1:
+  base_path: D:\AI\AI-Toolkit\output\onyx_p01_lora_dataset_size_v1
+  loras: |
+    p01_mini_3_fixed_steps
+    p01_mini_5_fixed_steps

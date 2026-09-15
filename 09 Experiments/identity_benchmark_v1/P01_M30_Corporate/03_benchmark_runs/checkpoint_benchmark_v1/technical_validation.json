@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "png_count": 6,
+  "checks": [
+    {
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\outputs\\P01_BUS_01_p01_mini_3__0750_00001_.png",
+      "sha256": "6b0aa8c93274d7504cedc98f5a704f2b0924ea766e88359e48586bc0f744028c",
+      "decodable": true,
+      "width": 768,
+      "height": 1024,
+      "manifest_hash_matches": true
+    },
+    {
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\outputs\\P01_BUS_01_p01_mini_3__1000_00001_.png",
+      "sha256": "6f68e8befa68461acbb1da4ddab2be0c3399b0e325afd9915a7765e685c55928",
+      "decodable": true,
+      "width": 768,
+      "height": 1024,
+      "manifest_hash_matches": true
+    },
+    {
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\outputs\\P01_BUS_01_p01_mini_3__1250_00001_.png",
+      "sha256": "3ee2a42616617a8e8f9406e0a07738e83f8b8096339b9a69d068d04ce8f1b929",
+      "decodable": true,
+      "width": 768,
+      "height": 1024,
+      "manifest_hash_matches": true
+    },
+    {
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\outputs\\P01_BUS_01_p01_mini_5__0750_00001_.png",
+      "sha256": "930c55cc1d916da90223693c0068c539c0616152dfbbfc6acf27a73ce06d514d",
+      "decodable": true,
+      "width": 768,
+      "height": 1024,
+      "manifest_hash_matches": true
+    },
+    {
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\outputs\\P01_BUS_01_p01_mini_5__1000_00001_.png",
+      "sha256": "141af3d27f263cfdaae2856cdf479755830757ea080af5bb56142a6554df9f5e",
+      "decodable": true,
+      "width": 768,
+      "height": 1024,
+      "manifest_hash_matches": true
+    },
+    {
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\outputs\\P01_BUS_01_p01_mini_5__1250_00001_.png",
+      "sha256": "042c739da93362505183063a63ac9c29b8a6c5678be9fb18e27f75b297660255",
+      "decodable": true,
+      "width": 768,
+      "height": 1024,
+      "manifest_hash_matches": true
+    }
+  ]
+}

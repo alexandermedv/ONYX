@@ -1,0 +1,25 @@
+{
+  "schema": "onyx.identity_benchmark.resolved_scene_specs",
+  "schema_version": "1.0",
+  "source_scene_pack": "09 Experiments/identity_benchmark_v1/business_scene_pack_v1.yaml",
+  "scenes": [
+    {
+      "scene_id": "BUS_03",
+      "source_name": "Executive 3/4",
+      "seed": 748412438238145,
+      "prompt": "professional editorial corporate portrait of one adult man, chest up, upright three-quarter body orientation, three-quarter face, looking near camera, composed confident expression, tailored business suit, executive office, directional soft daylight, visible three-quarter face geometry, natural jawline, face not in profile, professional photography, photorealistic"
+    },
+    {
+      "scene_id": "BUS_06",
+      "source_name": "At the Desk",
+      "seed": 748412438238146,
+      "prompt": "professional editorial corporate portrait of one adult man, medium three-quarter shot, seated at a work desk, slight turn, looking at camera, focused relaxed expression, navy or charcoal business suit, functional executive office with laptop, soft daylight, desk context, visible hands are natural, professional photography, photorealistic"
+    },
+    {
+      "scene_id": "BUS_09",
+      "source_name": "Full Body",
+      "seed": 748412438238147,
+      "prompt": "professional editorial corporate portrait of one adult man, full-length, standing with balanced weight and both hands visible, frontal or slight turn, looking at camera, calm confident expression, complete tailored business suit, executive office corridor or lobby, even commercial daylight, realistic height and body shape, anatomically correct visible hands, professional photography, photorealistic"
+    }
+  ]
+}

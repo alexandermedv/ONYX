@@ -1,0 +1,49 @@
+{
+  "schema": "onyx.identity_benchmark.flux_kontext_qualifier",
+  "schema_version": "1.0",
+  "run_id": "flux_kontext_qualifier_v1",
+  "status": "prepared",
+  "scope": "Three FLUX.1 Kontext Dev local qualifier points only: BUS_01, BUS_06 and BUS_09. No PuLID, LoRA, postprocess, reroll, external model, QA/ranking, or Production Pilot action.",
+  "canonical_runbook": "04 Engineering/ComfyUI FLUX Windows Runbook.md",
+  "existing_workflow_source": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\user\\default\\workflows\\KontextDev_beard_removal_success_best_pre_identity.json",
+  "existing_workflow_subgraph": "Image Edit (Flux.1 Kontext Dev)",
+  "workflow_template": "workflow_template_api.json",
+  "identity": {
+    "method": "FLUX.1 Kontext Dev native single-primary-reference image-conditioning workflow",
+    "primary_reference_id": "REF01",
+    "primary_reference_source": "../../01_references/P01_REF01_frontal.png",
+    "primary_reference_sha256": "3c9d08bdc2ab581a1e1e928337b09bf5f21e4a3eea4a4d4e7d793a7d3bc8a1b0",
+    "comfy_input": "onyx_benchmark_p01_v1/P01_REF01_frontal.png",
+    "limitation": "The reused working Kontext graph has one connected primary identity input. REF01 is the frontal canonical reference; REF02 and REF03 are not connected because no existing P01 multi-reference Kontext graph was found."
+  },
+  "model": {
+    "unet_name": "flux1-dev-kontext_fp8_scaled.safetensors",
+    "unet_path": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\models\\diffusion_models\\flux1-dev-kontext_fp8_scaled.safetensors",
+    "vae_name": "ae.safetensors",
+    "clip_name1": "clip_l.safetensors",
+    "clip_name2": "t5xxl_fp8_e4m3fn_scaled.safetensors"
+  },
+  "generation": {
+    "requested_width": 768,
+    "requested_height": 1024,
+    "resolution_policy": "The existing Kontext workflow uses FluxKontextImageScale on the primary reference and reuses that latent for sampling. The native scale selects its preferred closest vertical size; actual output dimensions are recorded rather than resized afterward.",
+    "steps": 20,
+    "cfg": 1.0,
+    "guidance": 2.5,
+    "sampler_name": "euler",
+    "scheduler": "simple",
+    "denoise": 1.0,
+    "reference_latent_method": "model default (offset); no FluxKontextMultiReferenceLatentMethod override in the reused graph"
+  },
+  "scene_sources": {
+    "BUS_01": "../checkpoint_benchmark_v1/run_plan.json:scene",
+    "BUS_06": "../pulid_multiscene_v1/scene_specs.json",
+    "BUS_09": "../pulid_multiscene_v1/scene_specs.json"
+  },
+  "scenes": [
+    {"scene_id": "BUS_01", "seed": 748412438238144},
+    {"scene_id": "BUS_06", "seed": 748412438238146},
+    {"scene_id": "BUS_09", "seed": 748412438238147}
+  ],
+  "prompt_policy": "Use each existing canonical resolved SceneSpec verbatim inside the same neutral Kontext instruction: 'Place the same adult man in this scene: {SceneSpec} Preserve his facial features, apparent age, bald head, natural skin texture, identity, and photorealistic quality. Do not add other people.'"
+}

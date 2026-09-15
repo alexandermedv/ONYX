@@ -1,0 +1,45 @@
+{
+  "schema": "onyx.identity_benchmark.technical_validation",
+  "schema_version": "1.0",
+  "status": "passed",
+  "scene_count": 4,
+  "checks": [
+    {
+      "scene_id": "BUS_01",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\local_pulid_baseline_v3\\outputs\\P01_BUS_01_PULID_BASELINE_00001_.png",
+      "sha256": "33e7089c50613c13796e66dc5edaba6ddce2dabd147e3a79e4ab11798b7a211c",
+      "manifest_hash_matches": true,
+      "decodable": true,
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "scene_id": "BUS_03",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\pulid_multiscene_v1\\outputs\\P01_BUS_03_PULID_00001_.png",
+      "sha256": "600bf2d536ad3cfb5f0a52b43224d0a0e176f9a3137357809d228989fe97ed6f",
+      "manifest_hash_matches": true,
+      "decodable": true,
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "scene_id": "BUS_06",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\pulid_multiscene_v1\\outputs\\P01_BUS_06_PULID_00001_.png",
+      "sha256": "5df39cdc67b8ed86c7fe788df76265d6fe12d62930690e115517e7601391cdbf",
+      "manifest_hash_matches": true,
+      "decodable": true,
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "scene_id": "BUS_09",
+      "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\pulid_multiscene_v1\\outputs\\P01_BUS_09_PULID_00001_.png",
+      "sha256": "0c23daeffd2509f68b96a0b117fd92c79625f2586d18a19031bea3125e2d241d",
+      "manifest_hash_matches": true,
+      "decodable": true,
+      "width": 768,
+      "height": 1024
+    }
+  ],
+  "bus_01_physical_copy_created": false
+}

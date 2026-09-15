@@ -1,0 +1,80 @@
+{
+  "schema": "onyx.lora_lab.training_plan",
+  "schema_version": "1.0",
+  "experiment_id": "p01_lora_dataset_size_v1",
+  "comparison_mode": "fixed_steps",
+  "training_spec": {
+    "experiment_id": "p01_lora_dataset_size_v1",
+    "base_model": "D:\\AI\\Cache\\huggingface\\hub\\models--black-forest-labs--FLUX.1-dev\\snapshots\\3de623fc3c33e44ffbe2bad470d0f45bccf2eb21",
+    "trigger_word": "p01onyx",
+    "resolution": [
+      512,
+      768,
+      1024
+    ],
+    "batch_size": 1,
+    "gradient_accumulation": 1,
+    "rank": 16,
+    "alpha": 16,
+    "conv_rank": 16,
+    "conv_alpha": 16,
+    "optimizer": "adamw8bit",
+    "learning_rate": 0.0001,
+    "scheduler": "flowmatch_sigmoid",
+    "fixed_steps": 1250,
+    "fixed_exposure_epochs": 60.0,
+    "seed": 2026082901,
+    "save_interval": 250,
+    "sample_interval": 250,
+    "precision": "bf16",
+    "device": "cuda",
+    "output_root": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1",
+    "ai_toolkit_root": "D:\\AI\\AI-Toolkit",
+    "caption_dropout_rate": 0.0,
+    "checkpoint_fractions": [
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0
+    ]
+  },
+  "runs": [
+    {
+      "run_id": "p01_mini_3_fixed_steps",
+      "dataset_id": "p01_mini_3",
+      "dataset_size": 3,
+      "dataset_manifest": "09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\04_lora_training_v1\\approved_dataset_manifest.json",
+      "mode": "fixed_steps",
+      "optimizer_steps": 1250,
+      "samples_seen": 1250,
+      "effective_epochs": 416.6666666666667,
+      "checkpoint_steps": [
+        250,
+        500,
+        750,
+        1000,
+        1250
+      ],
+      "output_directory": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1\\p01_mini_3_fixed_steps"
+    },
+    {
+      "run_id": "p01_mini_5_fixed_steps",
+      "dataset_id": "p01_mini_5",
+      "dataset_size": 5,
+      "dataset_manifest": "09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\04_lora_training_v1\\approved_dataset_manifest.json",
+      "mode": "fixed_steps",
+      "optimizer_steps": 1250,
+      "samples_seen": 1250,
+      "effective_epochs": 250.0,
+      "checkpoint_steps": [
+        250,
+        500,
+        750,
+        1000,
+        1250
+      ],
+      "output_directory": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1\\p01_mini_5_fixed_steps"
+    }
+  ]
+}

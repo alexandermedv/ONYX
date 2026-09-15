@@ -1,0 +1,39 @@
+{
+  "dataset_id": "p01_mini_5",
+  "checkpoint": 750,
+  "source_checkpoint": "D:\\AI\\AI-Toolkit\\output\\onyx_p01_lora_dataset_size_v1\\p01_mini_5_fixed_steps\\p01_mini_5_fixed_steps_000000750.safetensors",
+  "source_checkpoint_sha256": "e71755d97cb9049fb10dc6fcd70c4216d52f6ce499e39bf4c624207b120ca756",
+  "staged_filename": "p01_mini_5__0750.safetensors",
+  "prompt_id": "1146ea19-7f4d-4d06-9243-b59dea9c6931",
+  "status": "completed",
+  "request": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\requests\\p01_mini_5__0750.json",
+  "history": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\history\\p01_mini_5__0750.json",
+  "output": "D:\\AI\\ONYX\\09 Experiments\\identity_benchmark_v1\\P01_M30_Corporate\\03_benchmark_runs\\checkpoint_benchmark_v1\\outputs\\P01_BUS_01_p01_mini_5__0750_00001_.png",
+  "output_sha256": "930c55cc1d916da90223693c0068c539c0616152dfbbfc6acf27a73ce06d514d",
+  "duration_seconds": 300.87618480000674,
+  "telemetry_before": {
+    "timestamp": "2026-09-10T07:49:10.625187+00:00",
+    "ram_free_mib": 20736,
+    "commit_free_mib": 34553,
+    "gpu": {
+      "total_mib": 24576,
+      "used_mib": 995,
+      "free_mib": 23331
+    }
+  },
+  "telemetry_after": {
+    "timestamp": "2026-09-10T07:54:11.989564+00:00",
+    "ram_free_mib": 19264,
+    "commit_free_mib": 11441,
+    "gpu": {
+      "total_mib": 24576,
+      "used_mib": 22317,
+      "free_mib": 2009
+    }
+  },
+  "technical_validation": {
+    "decodable": true,
+    "width": 768,
+    "height": 1024
+  }
+}
