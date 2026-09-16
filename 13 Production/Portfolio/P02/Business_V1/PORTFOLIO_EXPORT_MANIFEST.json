@@ -1,0 +1,278 @@
+{
+  "schema": "onyx.production.portfolio_export",
+  "schema_version": "1.0",
+  "character": "P02",
+  "collection": "business",
+  "created_on": "2026-09-16",
+  "promotion_mode": "derived_exports_only",
+  "source_assets_mutated": false,
+  "portfolio_ready": false,
+  "blockers": [
+    "AI upscale has not run; no upscale provider/output lineage exists.",
+    "Paid delivery exports remain blocked until upscale QA completes."
+  ],
+  "finals": [
+    {
+      "number": 1,
+      "role": "HERO",
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/business_v1/03_final/P02_BUS_01_headshot_front_v2.png",
+      "source_sha256": "cfa6328f56eb890c1faab43cac65f1b18873b1666a3a5e733a26c3209711c788",
+      "export": "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_01_HERO.jpg",
+      "export_sha256": "ffcd2a6e021d4edc4e1fd31159ae314ecde6097ea8610267ea86b7fe24c05162",
+      "source_resolution": [
+        1086,
+        1448
+      ],
+      "export_resolution": [
+        1086,
+        1448
+      ],
+      "processing": "P03: reviewed center crop from 5:6 to 3:4; P01/P02: 3:4 source retained. JPEG derivative only; no AI upscale, retouch or repair.",
+      "qa": {
+        "status": "PASS",
+        "review_type": "editorial visual QA",
+        "reviewed_on": "2026-09-16",
+        "scope": "identity continuity, anatomy, framing, scene diversity and visible artefacts at contact-sheet review scale"
+      }
+    },
+    {
+      "number": 2,
+      "role": "CLOSE",
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/business_v1/03_final/P02_BUS_09_window_crossed_arms_v2.png",
+      "source_sha256": "e83ac1012236713fe5b83529372a9b24ed2abf6bdd08e45b2d4c45ee869ac40b",
+      "export": "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_02_CLOSE.jpg",
+      "export_sha256": "a8c54ee3f73541d513f19e89c84beb05e319f33e0c40edbc636e11c335387582",
+      "source_resolution": [
+        1086,
+        1448
+      ],
+      "export_resolution": [
+        1086,
+        1448
+      ],
+      "processing": "P03: reviewed center crop from 5:6 to 3:4; P01/P02: 3:4 source retained. JPEG derivative only; no AI upscale, retouch or repair.",
+      "qa": {
+        "status": "PASS",
+        "review_type": "editorial visual QA",
+        "reviewed_on": "2026-09-16",
+        "scope": "identity continuity, anatomy, framing, scene diversity and visible artefacts at contact-sheet review scale"
+      }
+    },
+    {
+      "number": 3,
+      "role": "WAIST",
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/business_v1/03_final/P02_BUS_02_window_3q_v2.png",
+      "source_sha256": "c6a4268bb90d2da603a37014e77d30af23723e2bb0edad84fa3fb9c034f58aaf",
+      "export": "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_03_WAIST.jpg",
+      "export_sha256": "0e984d2851d5e3d99f4ff97906dbcfe748d27482eec4aa1280bf251738e23479",
+      "source_resolution": [
+        1086,
+        1448
+      ],
+      "export_resolution": [
+        1086,
+        1448
+      ],
+      "processing": "P03: reviewed center crop from 5:6 to 3:4; P01/P02: 3:4 source retained. JPEG derivative only; no AI upscale, retouch or repair.",
+      "qa": {
+        "status": "PASS",
+        "review_type": "editorial visual QA",
+        "reviewed_on": "2026-09-16",
+        "scope": "identity continuity, anatomy, framing, scene diversity and visible artefacts at contact-sheet review scale"
+      }
+    },
+    {
+      "number": 4,
+      "role": "SEATED",
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/business_v1/03_final/P02_BUS_03_executive_desk_v2.png",
+      "source_sha256": "5e68469f0789097b6007f8bfdba03bfdb910e1ddd4a0e6487b13d93c6bf0cf99",
+      "export": "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_04_SEATED.jpg",
+      "export_sha256": "c51335f9dd689e77d0169be643b7d721fd443c23487b51c8d8bbb06ff1c0ddc3",
+      "source_resolution": [
+        1086,
+        1448
+      ],
+      "export_resolution": [
+        1086,
+        1448
+      ],
+      "processing": "P03: reviewed center crop from 5:6 to 3:4; P01/P02: 3:4 source retained. JPEG derivative only; no AI upscale, retouch or repair.",
+      "qa": {
+        "status": "PASS",
+        "review_type": "editorial visual QA",
+        "reviewed_on": "2026-09-16",
+        "scope": "identity continuity, anatomy, framing, scene diversity and visible artefacts at contact-sheet review scale"
+      }
+    },
+    {
+      "number": 5,
+      "role": "ENVIRONMENT",
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/business_v1/03_final/P02_BUS_05_boardroom_v2.png",
+      "source_sha256": "8195b49a07d65e2bbe8d65236da62b4b5bea05e8243d08f90e282eb925d45a4a",
+      "export": "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_05_ENVIRONMENT.jpg",
+      "export_sha256": "e5fc685dd0d6859f7afeaa31f85dab2659535dd7ac58f7aea6c368ecb68157c0",
+      "source_resolution": [
+        1086,
+        1448
+      ],
+      "export_resolution": [
+        1086,
+        1448
+      ],
+      "processing": "P03: reviewed center crop from 5:6 to 3:4; P01/P02: 3:4 source retained. JPEG derivative only; no AI upscale, retouch or repair.",
+      "qa": {
+        "status": "PASS",
+        "review_type": "editorial visual QA",
+        "reviewed_on": "2026-09-16",
+        "scope": "identity continuity, anatomy, framing, scene diversity and visible artefacts at contact-sheet review scale"
+      }
+    },
+    {
+      "number": 6,
+      "role": "ACTION",
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/business_v1/03_final/P02_BUS_04_office_walk_v2.png",
+      "source_sha256": "8dede4976b623d0393cbb19ba74c8e7048008be0652160431213da297b5a9e71",
+      "export": "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_06_ACTION.jpg",
+      "export_sha256": "f6c071d10147c4187192b2cf6274f5366f53b15fc07cbf6b3953b8d748f3a1c8",
+      "source_resolution": [
+        1086,
+        1448
+      ],
+      "export_resolution": [
+        1086,
+        1448
+      ],
+      "processing": "P03: reviewed center crop from 5:6 to 3:4; P01/P02: 3:4 source retained. JPEG derivative only; no AI upscale, retouch or repair.",
+      "qa": {
+        "status": "PASS",
+        "review_type": "editorial visual QA",
+        "reviewed_on": "2026-09-16",
+        "scope": "identity continuity, anatomy, framing, scene diversity and visible artefacts at contact-sheet review scale"
+      }
+    },
+    {
+      "number": 7,
+      "role": "3Q_BODY",
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/business_v1/03_final/P02_BUS_07_private_office_v2.png",
+      "source_sha256": "51f12dad939278d3f3b214312c9588c8ee95111810534d53ab1f25d252f19339",
+      "export": "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_07_3Q_BODY.jpg",
+      "export_sha256": "ced65a4bab43cdeadd2406321eb2c1fd8a63971081f58288c39663d35c6ace58",
+      "source_resolution": [
+        1086,
+        1448
+      ],
+      "export_resolution": [
+        1086,
+        1448
+      ],
+      "processing": "P03: reviewed center crop from 5:6 to 3:4; P01/P02: 3:4 source retained. JPEG derivative only; no AI upscale, retouch or repair.",
+      "qa": {
+        "status": "PASS",
+        "review_type": "editorial visual QA",
+        "reviewed_on": "2026-09-16",
+        "scope": "identity continuity, anatomy, framing, scene diversity and visible artefacts at contact-sheet review scale"
+      }
+    },
+    {
+      "number": 8,
+      "role": "FULL_BODY",
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/business_v1/03_final/P02_BUS_06_lobby_fullbody_v2.png",
+      "source_sha256": "f9109dd9f9ba2c29d3a35fe1a7b46f58f74d9f58807a46a808183213607d4cd6",
+      "export": "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_08_FULL_BODY.jpg",
+      "export_sha256": "6cc8ec0317a48b54fd5c48d9d7a515f29f1b8fcfc0ee5cd53ba005f87732a425",
+      "source_resolution": [
+        1086,
+        1448
+      ],
+      "export_resolution": [
+        1086,
+        1448
+      ],
+      "processing": "P03: reviewed center crop from 5:6 to 3:4; P01/P02: 3:4 source retained. JPEG derivative only; no AI upscale, retouch or repair.",
+      "qa": {
+        "status": "PASS",
+        "review_type": "editorial visual QA",
+        "reviewed_on": "2026-09-16",
+        "scope": "identity continuity, anatomy, framing, scene diversity and visible artefacts at contact-sheet review scale"
+      }
+    },
+    {
+      "number": 9,
+      "role": "MOOD",
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/business_v1/03_final/P02_BUS_08_laptop_workspace_v2.png",
+      "source_sha256": "87a5f20554bcc4dac8e577b62b15dd511d78bf5a37f87e8f0da5ff5a82e3f51a",
+      "export": "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_09_MOOD.jpg",
+      "export_sha256": "aa84f1f2f61e125cd6b91fbbb8095a529a1408ead5b4dd830298be8a91c746fd",
+      "source_resolution": [
+        1086,
+        1448
+      ],
+      "export_resolution": [
+        1086,
+        1448
+      ],
+      "processing": "P03: reviewed center crop from 5:6 to 3:4; P01/P02: 3:4 source retained. JPEG derivative only; no AI upscale, retouch or repair.",
+      "qa": {
+        "status": "PASS",
+        "review_type": "editorial visual QA",
+        "reviewed_on": "2026-09-16",
+        "scope": "identity continuity, anatomy, framing, scene diversity and visible artefacts at contact-sheet review scale"
+      }
+    },
+    {
+      "number": 10,
+      "role": "EDITORIAL",
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/business_v1/03_final/P02_BUS_10_editorial_fullbody_v2.png",
+      "source_sha256": "3cd3547b3dc8f6bcac4dd6776f1505ffffb9413e1da09e35c08493cfc8c4f312",
+      "export": "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_10_EDITORIAL.jpg",
+      "export_sha256": "d918c5e894d5a6f8a0b191e1d78db72f03d3a30e4be98db4797e60c99261f6f5",
+      "source_resolution": [
+        1086,
+        1448
+      ],
+      "export_resolution": [
+        1086,
+        1448
+      ],
+      "processing": "P03: reviewed center crop from 5:6 to 3:4; P01/P02: 3:4 source retained. JPEG derivative only; no AI upscale, retouch or repair.",
+      "qa": {
+        "status": "PASS",
+        "review_type": "editorial visual QA",
+        "reviewed_on": "2026-09-16",
+        "scope": "identity continuity, anatomy, framing, scene diversity and visible artefacts at contact-sheet review scale"
+      }
+    }
+  ],
+  "marketing": [
+    {
+      "file": "13 Production/Portfolio/P02/Business_V1/marketing_watermarked/ONYX_P02_BUSINESS_COVER.jpg",
+      "sha256": "78a855e8426ee264cfa1812b7a036f1f216a6082e6f58ff02878a29c5a919864",
+      "watermark": "ONYX",
+      "status": "PORTFOLIO_PREVIEW"
+    },
+    {
+      "file": "13 Production/Portfolio/P02/Business_V1/marketing_watermarked/ONYX_P02_BUSINESS_BEFORE_AFTER.jpg",
+      "sha256": "53bc75a28a950878f37df458233626533645171e386eac59920e960174747e5a",
+      "watermark": "ONYX",
+      "status": "PORTFOLIO_PREVIEW"
+    },
+    {
+      "file": "13 Production/Portfolio/P02/Business_V1/marketing_watermarked/ONYX_P02_BUSINESS_COLLAGE_4.jpg",
+      "sha256": "a7b0c0092c9e6f6e3c2f16f9382d006870d5afeb0b10e122fd54ee858e6a3dbc",
+      "watermark": "ONYX",
+      "status": "PORTFOLIO_PREVIEW"
+    },
+    {
+      "file": "13 Production/Portfolio/P02/Business_V1/marketing_watermarked/ONYX_P02_BUSINESS_COLLAGE_6.jpg",
+      "sha256": "233e6fb2265c846e980625b01a0b485bd1af7b3f91daaf737fa557a463007066",
+      "watermark": "ONYX",
+      "status": "PORTFOLIO_PREVIEW"
+    },
+    {
+      "file": "13 Production/Portfolio/P02/Business_V1/marketing_watermarked/ONYX_P02_BUSINESS_CONTACT_SHEET.jpg",
+      "sha256": "766ef4735935a0820f1dea7f3e0dc31f948be4dc8ae8381adc3e5e227e95a23d",
+      "watermark": "ONYX",
+      "status": "PORTFOLIO_PREVIEW"
+    }
+  ]
+}

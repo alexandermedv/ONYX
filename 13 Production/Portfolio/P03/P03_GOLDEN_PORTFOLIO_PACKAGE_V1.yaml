@@ -49,11 +49,11 @@ marketing_asset_checklist:
   portfolio_card: MISSING
   avito_carousel: SOURCE_EXISTS_PENDING_PROMOTION
   web_assets: SOURCE_EXISTS_PENDING_PROMOTION
-portfolio_ready_status: MISSING
+portfolio_ready_status: BLOCKED_UPSCALE
 blockers:
   - Human QA decisions for EXEC_01 through EXEC_10 are PENDING.
   - Final approval and upscale evidence are MISSING.
-  - Required standard production exports and portfolio watermark version are MISSING.
+  - AI upscale has not been run: the configured local ComfyUI endpoint refused connection during the 2026-09-16 readiness check.
 
 # Audit supplement; role assignments above remain unapproved proposals.
 audit_evidence: 13 Production/Portfolio/P03/EXECUTIVE_V1_SOURCE_INVENTORY.json
@@ -62,3 +62,8 @@ role_mapping_blockers:
   - EXEC_08 is medium framing, not verified 3Q_BODY.
   - Standard output numbering must follow roles, not EXEC source numbers.
   - Source 5:6 images require approved 3:4 composition; do not crop automatically.
+
+production_exports:
+  status: SOURCE_RESOLUTION_READY
+  manifest: 13 Production/Portfolio/P03/Business_V1/PORTFOLIO_EXPORT_MANIFEST.json
+  note: Standard 3:4, watermarked portfolio-preview derivatives exist. They are not paid delivery files and do not satisfy the AI-upscale gate.
