@@ -6,6 +6,8 @@ Use only an approved production package. Never modify files under `09 Experiment
 
 ## Build
 
+For a new package, run `engine/production/onyx_production_pipeline.py`. It first stages the approved source-resolution JPEGs, runs the configured ComfyUI postprocessor to create the full-resolution PNG masters, and then runs `onyx_delivery.py` to create the three client tiers. Re-running the delivery script alone is appropriate when the masters already exist.
+
 Run `engine/production/onyx_delivery.py` with the package directory and the approved Cormorant font. The process creates three derived folders:
 
 - `client_jpeg_2048`: paid client delivery, high-quality JPEG;
