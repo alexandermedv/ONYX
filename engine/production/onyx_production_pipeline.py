@@ -17,7 +17,9 @@ def main() -> int:
     p.add_argument("--server", default="http://127.0.0.1:8188")
     args = p.parse_args()
     package = args.package
-    name = package.parent.name.lower().replace("_v1", "")
+    name = next((part.lower() for part in package.parts if part.lower() in {"p01", "p02", "p03"}), None)
+    if name is None:
+        raise SystemExit("Package path must include P01, P02 or P03")
     source = package / "final_source_resolution"
     input_dir = package / f"upscale_{name}_v1_input"
     output_dir = package / f"upscale_{name}_v1"
