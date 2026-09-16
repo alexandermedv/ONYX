@@ -9,3 +9,11 @@
 - В footer или рядом с watermark указывается ID заказа.
 - Preview экспортируется в уменьшенном размере; paid delivery содержит clean JPEG и master без watermark.
 - Нельзя отправлять preview без watermark и нельзя использовать watermark, который можно легко обрезать.
+
+### Approved watermark treatment v1.1
+
+- Use five repeated transparent lockups per image.
+- Each lockup contains the monogram incision, ONYX, and PRIVATE PREVIEW with the order ID handled by the delivery manifest.
+- One lockup may lightly cross the face so the mark cannot be removed by a simple crop.
+- No opaque panel, black badge, or high-contrast central banner is allowed.
+
