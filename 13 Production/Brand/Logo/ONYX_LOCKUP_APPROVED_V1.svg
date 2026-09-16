@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-label="ONYX logo lockup">
   <rect width="1600" height="1200" fill="none"/>
   <text x="800" y="650" text-anchor="middle" font-family="Cormorant Garamond, Didot, serif" font-size="650" font-weight="500" fill="#B5A079">O</text>
-  <path d="M800 410 L806 475 L800 540 L794 475 Z" fill="#B5A079"/>
+  <path d="M800 300 L805 365 L800 430 L795 365 Z" fill="#B5A079"/>
   <text x="800" y="970" text-anchor="middle" font-family="Cormorant Garamond, Didot, serif" font-size="210" letter-spacing="70" fill="#B5A079">ONYX</text>
 </svg>

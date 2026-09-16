@@ -6,6 +6,10 @@ Use the monogram for avatars, favicons and compact marks. Use the lockup for cov
 
 Do not add glow, bevel, metallic gradients or a stone texture inside the production mark. The textured black-gold treatment belongs to presentation backgrounds only.
 
+## Frame QA rule
+
+The full source portrait must remain visible in portfolio cards. Never use a crop that removes the head or top of the subject to fit a frame. If the source aspect ratio does not fit, contain it with intentional side margins or expand the canvas; reject the card when the face is clipped.
+
 ## Presentation artwork
 
 `Presentations/ONYX_MONOGRAM_ONYX_SILK_PRESENTATION_V1.png` is an approved atmospheric treatment of the logo. It may be used for presentation covers, editorial collages, campaign moodboards and brand reveal materials. Keep the complete composition intact and do not extract its textured gold as production artwork.

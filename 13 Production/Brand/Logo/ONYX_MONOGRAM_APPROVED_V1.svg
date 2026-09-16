@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="ONYX monogram">
   <rect width="1000" height="1000" fill="none"/>
   <text x="500" y="690" text-anchor="middle" font-family="Cormorant Garamond, Didot, serif" font-size="760" font-weight="500" fill="#B5A079">O</text>
-  <path d="M500 430 L507 500 L500 570 L493 500 Z" fill="#B5A079"/>
+  <path d="M500 350 L506 410 L500 470 L494 410 Z" fill="#B5A079"/>
 </svg>
