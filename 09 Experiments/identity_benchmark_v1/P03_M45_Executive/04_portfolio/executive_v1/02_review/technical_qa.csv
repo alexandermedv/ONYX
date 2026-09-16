@@ -1,0 +1,11 @@
+id,filename,width,height,aspect_ratio,sha256,readable,png_valid,exact_duplicate,exif_present,technical_notes
+EXEC_01,P03_EXEC_01_headshot_front.png,1145,1374,0.833333,3fa2041543602951310c5f06b0d2da133787bae3549ce7162f6891007b99a169,true,true,false,false,Pillow full decode passed.
+EXEC_02,P03_EXEC_02_window_3q.png,1145,1374,0.833333,0c7db020687ccc03912807eec0d329572ea4106bc63c31aef58f59ef44327292,true,true,false,false,Pillow full decode passed.
+EXEC_03,P03_EXEC_03_executive_desk.png,1145,1374,0.833333,f16819358576f55c21112cd9fc2f90e0f6ebfb48c30d8d4381c07c9db566af22,true,true,false,false,Pillow full decode passed.
+EXEC_04,P03_EXEC_04_office_walk.png,1145,1374,0.833333,e9e2893ba6f632ec93c1088e69aa4d7efbe5566470402290af5422cb2ff49706,true,true,false,false,Pillow full decode passed.
+EXEC_05,P03_EXEC_05_boardroom.png,1145,1374,0.833333,25ee84204a9205ba8cac8db82fcaf0447d249df4b120621620aae0462cc890e6,true,true,false,false,Pillow full decode passed.
+EXEC_06,P03_EXEC_06_lobby_fullbody.png,1145,1374,0.833333,b7f383a3d60d00183e005a9938369f3520435a9decb4130ca21834432e77f213,true,true,false,false,Pillow full decode passed.
+EXEC_07,P03_EXEC_07_private_office.png,1145,1374,0.833333,5073b7d3989b28ddfa1075b9a48b162c8234a263d4f70f2bf39c9c473cd86b6b,true,true,false,false,Pillow full decode passed.
+EXEC_08,P03_EXEC_08_laptop_workspace.png,1145,1374,0.833333,0166def16f04f92ffcd1c2884ad8211f892e650e6e277505c124aa0b7e60a47e,true,true,false,false,Pillow full decode passed.
+EXEC_09,P03_EXEC_09_window_profile.png,1145,1374,0.833333,a7f1a95365face548e4de3a6374377fa94672e9268fef8f21d59846c99a4c6e4,true,true,false,false,Pillow full decode passed.
+EXEC_10,P03_EXEC_10_editorial_fullbody.png,1145,1374,0.833333,f2379c10d3d06410677a6c8b851ce158f587de269a4b8ee2aef4c240aa8e2c54,true,true,false,false,Pillow full decode passed.

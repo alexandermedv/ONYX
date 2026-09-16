@@ -1,0 +1,56 @@
+{
+  "session_id": "P03_EXECUTIVE_V1",
+  "session_rule": "Use MASTER and REF01\u2013REF05 strictly for facial identity, facial structure, natural body proportions, skin tone, apparent age, hair characteristics and mature executive appearance only. Do NOT mechanically copy pose, head angle, gaze, expression, hand placement, composition, clothing or hairstyle arrangement. Create genuinely different photographs of the same man.",
+  "scenes": [
+    {
+      "id": "EXEC_01",
+      "filename": "P03_EXEC_01_headshot_front.png",
+      "prompt": "Premium front-facing executive headshot; head and shoulders, direct eye contact, dark navy suit, ivory shirt, calm confident intelligent expression, soft modern office background and natural window light."
+    },
+    {
+      "id": "EXEC_02",
+      "filename": "P03_EXEC_02_window_3q.png",
+      "prompt": "Waist-up portrait beside a floor-to-ceiling window; torso 30\u201340 degrees, charcoal suit, city background, restrained expression, directional daylight, one hand naturally adjusting cuff or jacket."
+    },
+    {
+      "id": "EXEC_03",
+      "filename": "P03_EXEC_03_executive_desk.png",
+      "prompt": "Seated at a premium executive desk, mid-thigh or waist-up, neutral jacket, notebook and laptop, engaged posture, gaze off camera and focused expression."
+    },
+    {
+      "id": "EXEC_04",
+      "filename": "P03_EXEC_04_office_walk.png",
+      "prompt": "Knees-up or near-full-body mid-stride through a modern glass office corridor, slim laptop case, purposeful gaze away from camera, subtle motion."
+    },
+    {
+      "id": "EXEC_05",
+      "filename": "P03_EXEC_05_boardroom.png",
+      "prompt": "Standing beside a glass and wood conference table in a dark green, navy or charcoal suit, one hand naturally on chair or table, upright authoritative posture and serious direct gaze."
+    },
+    {
+      "id": "EXEC_06",
+      "filename": "P03_EXEC_06_lobby_fullbody.png",
+      "prompt": "Premium full-body portrait in a luxury business lobby, taupe or gray suit, elegant shoes, natural asymmetrical stance, one hand holding a folio, slight professional smile."
+    },
+    {
+      "id": "EXEC_07",
+      "filename": "P03_EXEC_07_private_office.png",
+      "prompt": "Seated sideways in a dark wood private office, body side-on and face turned back, thoughtful serious expression, document or book in hand."
+    },
+    {
+      "id": "EXEC_08",
+      "filename": "P03_EXEC_08_laptop_workspace.png",
+      "prompt": "Candid working moment in a bright collaborative workspace, open laptop, executive-casual wardrobe, looking at screen, both hands natural, spontaneous workday expression."
+    },
+    {
+      "id": "EXEC_09",
+      "filename": "P03_EXEC_09_window_profile.png",
+      "prompt": "Mostly side profile by a window, looking outside rather than at camera, arms loosely crossed or hands resting, cinematic strategic expression, city softly blurred."
+    },
+    {
+      "id": "EXEC_10",
+      "filename": "P03_EXEC_10_editorial_fullbody.png",
+      "prompt": "Premium leadership editorial near full body in minimalist architectural office, sophisticated neutral suit, one leg forward, holding slim leather portfolio, chin slightly raised."
+    }
+  ]
+}
