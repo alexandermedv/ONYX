@@ -63,7 +63,8 @@ def main() -> int:
         filename = master.name.replace("_00001_", "").replace(".png", ".jpg")
         save_jpeg(master, dirs["client_jpeg_2048"] / filename, 2048, 92)
         save_jpeg(master, dirs["web_jpeg_1600"] / filename, 1600, 88)
-        preview_source = (package / "portfolio_framed_preview" / filename) if (package / "portfolio_framed_preview" / filename).exists() else (dirs["web_jpeg_1600"] / filename)`r`n        add_preview_mark(preview_source, dirs["prepayment_preview"] / filename, args.font, args.order_id)
+        preview_source = (package / "portfolio_framed_preview" / filename) if (package / "portfolio_framed_preview" / filename).exists() else (dirs["web_jpeg_1600"] / filename)
+        add_preview_mark(preview_source, dirs["prepayment_preview"] / filename, args.font, args.order_id)
         records.append({"master": master.as_posix(), "master_sha256": sha256(master), "client_jpeg_2048": (dirs["client_jpeg_2048"] / filename).as_posix(), "web_jpeg_1600": (dirs["web_jpeg_1600"] / filename).as_posix(), "prepayment_preview": (dirs["prepayment_preview"] / filename).as_posix(), "watermark": f"ONYX / PRIVATE PREVIEW / ORDER {args.order_id}"})
     (delivery / "CLIENT_DELIVERY_MANIFEST_V1.json").write_text(json.dumps({"schema": "onyx.production.client_delivery", "order_id": args.order_id, "records": records}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Built {len(records)} delivery sets in {delivery}")
@@ -72,5 +73,6 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
 
 
