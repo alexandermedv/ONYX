@@ -57,3 +57,12 @@ Canonical experimental images are referenced by promotion manifest. They are not
 - Footer may overlap only the lower image boundary through a controlled transition; it must not move the portrait upward or crop the subject.
 - Reject any export where a face, head, or critical body area is clipped by the footer.
 
+
+### Эталонная геометрия framed preview
+
+- Canvas: 1080 x 1350 px, portrait 4:5.
+- Photo field: y=0..1120 px; fit with contain/thumbnail and preserve full head.
+- Footer field: y=1120..1350 px; height 230 px, full canvas width.
+- Stone footer texture is anchored to the lower field and does not resize the photo field.
+- Logo lockup stays within the footer safe area; never stretch the monogram vertically.
+
