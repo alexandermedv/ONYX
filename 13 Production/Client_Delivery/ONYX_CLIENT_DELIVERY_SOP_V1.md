@@ -6,20 +6,22 @@ Use only an approved production package. Never modify files under `09 Experiment
 
 ## Build
 
-For a new package, run `engine/production/onyx_production_pipeline.py`. It first stages the approved source-resolution JPEGs, runs the configured ComfyUI postprocessor to create the full-resolution PNG masters, and then runs `onyx_delivery.py` to create the three client tiers. Re-running the delivery script alone is appropriate when the masters already exist.
+For a new package, run `engine/production/onyx_production_pipeline.py`. It first stages the approved source-resolution JPEGs, runs the configured ComfyUI postprocessor to create the full-resolution PNG masters, and then runs `onyx_delivery.py` to create the client package. Re-running the delivery script alone is appropriate when the masters already exist.
 
 Run `engine/production/onyx_delivery.py` with the package directory and the approved Cormorant font. The process creates four delivery folders:
 
-- `full_resolution`: paid delivery containing the ten original upscale PNG masters at maximum resolution;
-- `client_jpeg_2048`: paid client delivery, high-quality JPEG;
-- `web_jpeg_1600`: paid lightweight delivery;
-- `prepayment_preview`: reduced preview with `ONYX / PRIVATE PREVIEW / ORDER <ID>`.
+- `00_PREPAYMENT_PREVIEW`: reduced proofs used only before payment;
+- `01_LIGHT_JPEG`: paid lightweight delivery;
+- `02_HIGH_QUALITY_JPEG`: paid high-quality JPEG delivery;
+- `03_FULL_RESOLUTION_PNG`: paid delivery containing the ten original upscale PNG masters at maximum resolution.
 
-The script writes `CLIENT_DELIVERY_MANIFEST_V1.json` with source master paths, copied full-resolution paths and SHA-256 values.
+Client-facing files are named `ONYX_01` through `ONYX_10`; internal character identifiers are not exposed in filenames. The script also creates `README.txt`, `ONYX_<ORDER>_LIGHT.zip`, `ONYX_<ORDER>_FULL.zip`, and `CLIENT_DELIVERY_MANIFEST_V1.json` with source master paths, copied full-resolution paths and SHA-256 values.
+
+The prepayment footer uses `BUSINESS COLLECTION / CLIENT PREVIEW`. `PORTFOLIO PREVIEW` is reserved for public portfolio assets and must never appear in client proof files.
 
 ## Sending policy
 
-Before payment, send only `prepayment_preview` and replace `<ID>` with the order number. After payment, the standard package contains `full_resolution`, `client_jpeg_2048` and `web_jpeg_1600`. Paid files contain no watermark. The client may use the lightweight set for messaging and social media, the 2048 px set for everyday use, and the full-resolution PNG set for print, retouching and archive storage.
+Before payment, send only `00_PREPAYMENT_PREVIEW`. After payment, send either the compact LIGHT archive or the complete FULL archive. Paid files contain no watermark. The client may use the lightweight set for messaging and social media, the high-quality JPEG set for everyday use, and the full-resolution PNG set for print, retouching and archive storage.
 
 ## QA gate
 
