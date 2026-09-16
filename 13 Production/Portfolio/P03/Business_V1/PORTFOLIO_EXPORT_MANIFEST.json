@@ -9,7 +9,6 @@
   "portfolio_ready": false,
   "blockers": [
     "AI upscale has not run; no upscale provider/output lineage exists.",
-    "A controlled ONYX watermark asset is not approved; clean marketing layouts are not portfolio-watermark previews.",
     "Paid delivery exports remain blocked until upscale QA completes."
   ],
   "finals": [
@@ -275,5 +274,52 @@
       "watermark": null,
       "status": "CLEAN_LAYOUT_PREVIEW"
     }
-  ]
+  ],
+  "portfolio_branding": {
+    "status": "APPROVED_FRAME_APPLIED",
+    "application": "editorial lower field; no logo is placed over the photograph",
+    "asset": "13 Production/Brand/Logo/ONYX_WORDMARK_EDITORIAL_V1_CHAMPAGNE.png",
+    "previews": [
+      {
+        "file": "13 Production/Portfolio/P03/Business_V1/portfolio_framed_preview/ONYX_P03_BUSINESS_01_HERO.jpg",
+        "sha256": "18cef54c91113f2ce193b976488be554aba3492592dae5cc0206d7076f135a35"
+      },
+      {
+        "file": "13 Production/Portfolio/P03/Business_V1/portfolio_framed_preview/ONYX_P03_BUSINESS_02_CLOSE.jpg",
+        "sha256": "2e8d049f4d7baef331d4300339470dbbf1d12596c75ba1534174696ac4670722"
+      },
+      {
+        "file": "13 Production/Portfolio/P03/Business_V1/portfolio_framed_preview/ONYX_P03_BUSINESS_03_WAIST.jpg",
+        "sha256": "c2dadefc72da2284bdb62c2e4b512e54a50b54a7a0b3461f0ac9307bf07e5d78"
+      },
+      {
+        "file": "13 Production/Portfolio/P03/Business_V1/portfolio_framed_preview/ONYX_P03_BUSINESS_04_SEATED.jpg",
+        "sha256": "6fe66ef8887c35b7c9a1c0d3e189b54baa66a2ad69d3d0fd83f971388c35be7f"
+      },
+      {
+        "file": "13 Production/Portfolio/P03/Business_V1/portfolio_framed_preview/ONYX_P03_BUSINESS_05_ENVIRONMENT.jpg",
+        "sha256": "ad3052e0d9b134d89d17e48a2774bd7955dfcb41e0d05a6e19518ce290c9149d"
+      },
+      {
+        "file": "13 Production/Portfolio/P03/Business_V1/portfolio_framed_preview/ONYX_P03_BUSINESS_06_ACTION.jpg",
+        "sha256": "f2c93df272d924cce1cd9798490f944c5bf0565724fc8348e81b55919143f12d"
+      },
+      {
+        "file": "13 Production/Portfolio/P03/Business_V1/portfolio_framed_preview/ONYX_P03_BUSINESS_07_3Q_BODY.jpg",
+        "sha256": "7fec51f6105725ff3c79335d3724ee520387fb7a95f85dc1577136e7b964d3e9"
+      },
+      {
+        "file": "13 Production/Portfolio/P03/Business_V1/portfolio_framed_preview/ONYX_P03_BUSINESS_08_FULL_BODY.jpg",
+        "sha256": "e041916211456da628441761c9df3befd5350c05fea0c5dcf3d4173c7aba2ef3"
+      },
+      {
+        "file": "13 Production/Portfolio/P03/Business_V1/portfolio_framed_preview/ONYX_P03_BUSINESS_09_MOOD.jpg",
+        "sha256": "60b2f1ac9439c5def64dc11aaec3fe825efbf7c837ff95043bc405d7c08ed03b"
+      },
+      {
+        "file": "13 Production/Portfolio/P03/Business_V1/portfolio_framed_preview/ONYX_P03_BUSINESS_10_EDITORIAL.jpg",
+        "sha256": "cfd05a5370d985f066450d38d8c39f78915549ee04625701fd7e9da3353145f0"
+      }
+    ]
+  }
 }
