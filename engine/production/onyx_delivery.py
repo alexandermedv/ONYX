@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import shutil
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
@@ -47,6 +48,10 @@ def delivery_filename(master: Path) -> str:
     return master.name.replace("_00001_", "").replace(".png", ".jpg")
 
 
+def full_resolution_filename(master: Path) -> str:
+    return master.name.replace("_00001_", "")
+
+
 def discover_masters(package: Path) -> list[Path]:
     candidate_dirs = (
         package / "upscale_master",
@@ -75,18 +80,25 @@ def main() -> int:
     if len(masters) != 10:
         raise SystemExit(f"Expected 10 approved masters, found {len(masters)}")
     delivery = package / "client_delivery"
-    dirs = {"client_jpeg_2048": delivery / "client_jpeg_2048", "web_jpeg_1600": delivery / "web_jpeg_1600", "prepayment_preview": delivery / "prepayment_preview"}
+    dirs = {
+        "full_resolution": delivery / "full_resolution",
+        "client_jpeg_2048": delivery / "client_jpeg_2048",
+        "web_jpeg_1600": delivery / "web_jpeg_1600",
+        "prepayment_preview": delivery / "prepayment_preview",
+    }
     for directory in dirs.values(): directory.mkdir(parents=True, exist_ok=True)
     records = []
     for master in masters:
         filename = delivery_filename(master)
+        full_resolution = dirs["full_resolution"] / full_resolution_filename(master)
+        shutil.copy2(master, full_resolution)
         save_jpeg(master, dirs["client_jpeg_2048"] / filename, 2048, 92)
         save_jpeg(master, dirs["web_jpeg_1600"] / filename, 1600, 88)
         preview_source = package / "portfolio_framed_preview" / filename
         if not preview_source.exists():
             raise SystemExit(f"Approved framed preview with footer is missing: {preview_source}")
         add_preview_mark(preview_source, dirs["prepayment_preview"] / filename, args.font, args.order_id)
-        records.append({"master": master.as_posix(), "master_sha256": sha256(master), "client_jpeg_2048": (dirs["client_jpeg_2048"] / filename).as_posix(), "web_jpeg_1600": (dirs["web_jpeg_1600"] / filename).as_posix(), "prepayment_preview": (dirs["prepayment_preview"] / filename).as_posix(), "watermark": f"ONYX / PRIVATE PREVIEW / ORDER {args.order_id}"})
+        records.append({"master": master.as_posix(), "master_sha256": sha256(master), "full_resolution": full_resolution.as_posix(), "full_resolution_sha256": sha256(full_resolution), "client_jpeg_2048": (dirs["client_jpeg_2048"] / filename).as_posix(), "web_jpeg_1600": (dirs["web_jpeg_1600"] / filename).as_posix(), "prepayment_preview": (dirs["prepayment_preview"] / filename).as_posix(), "watermark": f"ONYX / PRIVATE PREVIEW / ORDER {args.order_id}"})
     (delivery / "CLIENT_DELIVERY_MANIFEST_V1.json").write_text(json.dumps({"schema": "onyx.production.client_delivery", "order_id": args.order_id, "records": records}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Built {len(records)} delivery sets in {delivery}")
     return 0

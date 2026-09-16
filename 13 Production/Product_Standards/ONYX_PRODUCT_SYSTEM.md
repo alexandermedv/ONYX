@@ -10,6 +10,8 @@
 
 The client receives ten final photographs with varied angles, compositions and locations. The package includes QA, repair or regeneration where required, final retouch, upscale and final files without a watermark.
 
+Every paid delivery includes three usable sets: full-resolution upscale PNG masters, high-quality JPEG files with a 2048 px maximum edge, and lightweight web JPEG files with a 1600 px maximum edge. Prepayment previews are supplied separately with the approved stone footer and protective watermark system.
+
 ## Marketing Package
 
 - cover;
