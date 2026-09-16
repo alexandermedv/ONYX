@@ -23,3 +23,4 @@ Before payment, send only `prepayment_preview` and replace `<ID>` with the order
 ## QA gate
 
 Check that the package contains ten images, filenames and roles match the portfolio manifest, previews carry the correct order ID, paid JPEGs have no watermark, and the manifest is present. Do not publish or deliver while owner final approval is pending.
+

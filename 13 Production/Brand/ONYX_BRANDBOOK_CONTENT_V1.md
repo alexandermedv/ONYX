@@ -23,7 +23,7 @@ Photography occupies the visual lead. Use generous Warm White or Onyx fields, qu
 
 ## Watermark applications
 
-Portfolio cards use the approved editorial wordmark in a dedicated lower field. Prepayment proofs use the repeated central `ONYX / PRIVATE PREVIEW / ORDER <ID>` mark. Paid files are always clean. Never place a plain white `ONYX` caption directly on a photograph.
+Portfolio cards use the approved editorial wordmark in a dedicated lower field. Prepayment proofs use the five repeated transparent `ONYX / PRIVATE PREVIEW / ORDER <ID>` marks, including one light overlap with the face. Paid files are always clean. Never place a plain white `ONYX` caption directly on a photograph.
 
 ## Product communication
 
@@ -32,3 +32,4 @@ Say “персональная виртуальная фотосессия”, 
 ## Delivery tiers
 
 Before payment: reduced marked preview only. After payment: JPEG 2048 and web JPEG 1600, with full-resolution PNG masters supplied when maximum quality or archive delivery is requested.
+

@@ -37,7 +37,8 @@ ONYX создаёт персональные виртуальные фотосе
 | Use | Mark | Rule |
 | --- | --- | --- |
 | Portfolio preview | `ONYX Editorial Wordmark v1` | In a dedicated lower editorial field; never over the photograph |
-| Client pre-payment proof | `ONYX` + `PRIVATE PREVIEW / ORDER <ID>` | Three restrained central overlays across the image body |
+| Client pre-payment proof | `ONYX` + `PRIVATE PREVIEW / ORDER <ID>` | Five restrained transparent overlays across the image body |
 | Paid final client delivery | none | No watermark or frame |
 
 Controlled artwork: `Brand/Logo/ONYX_WORDMARK_EDITORIAL_V1_CHAMPAGNE.png`. The approved portfolio application is a branded frame, not an overlaid caption. Client proof overlays are only for pre-payment previews. This standard does not authorize changing canonical experimental images.
+
