@@ -16,6 +16,8 @@ import uuid
 from pathlib import Path
 from typing import Any
 
+from PIL import Image
+
 
 IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".webp"}
 
@@ -158,8 +160,12 @@ def request_json(url: str, payload: dict[str, Any] | None = None) -> dict[str, A
     request = urllib.request.Request(url, data=data)
     if data is not None:
         request.add_header("Content-Type", "application/json")
-    with urllib.request.urlopen(request, timeout=30) as response:
-        return json.loads(response.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            return json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as error:
+        detail = error.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"ComfyUI HTTP {error.code} for {url}: {detail}") from error
 
 
 def queue_prompt(server: str, workflow: dict[str, Any], client_id: str) -> str:
@@ -251,9 +257,10 @@ def run_postprocess(args: argparse.Namespace) -> int:
     produced = 0
     for index, source in enumerate(sources, 1):
         workflow = copy.deepcopy(base)
-        uploaded_name = f"job_engine_{uuid.uuid4().hex}_{source.name}"
+        uploaded_name = f"onyx_post_{uuid.uuid4().hex}.png"
         comfy_source = args.comfy_input / uploaded_name
-        shutil.copy2(source, comfy_source)
+        with Image.open(source) as source_image:
+            source_image.convert("RGB").save(comfy_source, "PNG", optimize=True)
         try:
             workflow[args.load_node]["inputs"]["image"] = uploaded_name
             if args.seed_node in workflow:

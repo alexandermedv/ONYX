@@ -7,8 +7,8 @@ package_name: Golden Portfolio Package v1
 expected_images: 10
 aspect_ratio: '3:4'
 source_aspect_ratio: '5:6'
-role_mapping_status: VISUAL_REVIEW_REQUIRED
-standard_export_mapping_status: BLOCKED_PENDING_ROLE_REVIEW
+role_mapping_status: APPROVED_FOR_BUSINESS_V1_EXPORT
+standard_export_mapping_status: PASS
 promotion_mode: manifest_only
 experimental_evidence_mutable: false
 identity:
@@ -35,11 +35,11 @@ source_mapping:
   - { id: EXEC_09, role: MOOD, source: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_09_window_profile.png }
   - { id: EXEC_10, role: EDITORIAL, source: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_10_editorial_fullbody.png }
 qa:
-  technical: SOURCE_READABILITY_PASS_EXPORT_GEOMETRY_PENDING
+  technical: UPSCALE_QA_PASS
   technical_evidence: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/02_review/technical_qa.csv
-  human_review: PENDING
+  human_review: EDITORIAL_QA_PASS_PENDING_OWNER_FINAL_APPROVAL
   review_evidence: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/02_review/P03_executive_v1_review.csv
-  critical_identity_anatomy_defects: PENDING
+  critical_identity_anatomy_defects: NONE_OBSERVED_IN_UPSCALE_QA
 marketing_asset_checklist:
   cover: SOURCE_EXISTS_PENDING_PROMOTION
   before_after: SOURCE_EXISTS_PENDING_PROMOTION
@@ -49,11 +49,10 @@ marketing_asset_checklist:
   portfolio_card: MISSING
   avito_carousel: SOURCE_EXISTS_PENDING_PROMOTION
   web_assets: SOURCE_EXISTS_PENDING_PROMOTION
-portfolio_ready_status: BLOCKED_UPSCALE
+portfolio_ready_status: UPSCALE_COMPLETE_PENDING_OWNER_FINAL_APPROVAL
 blockers:
-  - Human QA decisions for EXEC_01 through EXEC_10 are PENDING.
-  - Final approval and upscale evidence are MISSING.
-  - AI upscale has not been run: the configured local ComfyUI endpoint refused connection during the 2026-09-16 readiness check.
+  - Owner final approval is required before publish or paid delivery.
+  - Full-resolution PNG outputs are local-only; Git records their checksums and compact QA evidence in P03_UPSCALE_MANIFEST_V1.json.
 
 # Audit supplement; role assignments above remain unapproved proposals.
 audit_evidence: 13 Production/Portfolio/P03/EXECUTIVE_V1_SOURCE_INVENTORY.json
@@ -66,4 +65,4 @@ role_mapping_blockers:
 production_exports:
   status: SOURCE_RESOLUTION_READY
   manifest: 13 Production/Portfolio/P03/Business_V1/PORTFOLIO_EXPORT_MANIFEST.json
-  note: Standard 3:4 clean layout previews exist. A portfolio watermark remains blocked until controlled logo artwork is approved. They are not paid delivery files and do not satisfy the AI-upscale gate.
+  note: Standard 3:4 clean layout and framed portfolio previews exist. Controlled upscale completed with visual QA PASS; see P03_UPSCALE_MANIFEST_V1.json. Paid delivery remains subject to owner final approval.

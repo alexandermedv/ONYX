@@ -1,9 +1,9 @@
-# Upscale readiness — 2026-09-16
+# Upscale readiness and P03 qualification — 2026-09-16
 
-The configured postprocessing workflow is `comfyui-workflows/Portrait_PostProcessor_1.0_API.json`; it specifies the local model `4x_NMKD-Siax_200k.pth`, which is present at the configured ComfyUI installation.
+The active ComfyUI installation is `D:\AI\ComfyUI_Flux\ComfyUI`, served locally at `http://127.0.0.1:8188` (ComfyUI 0.30.0). The prior validation failure came from staging an image into an obsolete ComfyUI input folder. The postprocessor now normalizes staged inputs to valid RGB PNG files in the active input root and preserves ComfyUI's HTTP validation response.
 
-The endpoint `http://127.0.0.1:8188` refused connection during readiness verification. No external ComfyUI process was started, no source was copied into its input directory, and no upscale was attempted.
+P03 Business was qualified with `comfyui-workflows/Portrait_PostProcessor_1.0_API.json` (SHA-256 `FD8D686120908FF3B2BE60F0F4CDC73F9A9440118227F4911172A083AD4C842E`): 4x `4x_NMKD-Siax_200k.pth`, followed by FaceDetailer using `Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors` at denoise 0.15. The HERO smoke test and all ten P03 frames passed visual QA for identity, face, skin, hair, hands, anatomy and visible artefacts. Full lineage is recorded in `P03/P03_UPSCALE_MANIFEST_V1.json`; compact contact and anatomy sheets accompany the local outputs.
 
-The 30 final portfolio exports for P01 Business, P02 Business and P03 Business are source-resolution JPEG derivatives. They have passed editorial visual QA and standard 3:4 packaging, but cannot be labelled `UPSCALED` or delivered as paid finals.
+P01 Business and P02 Business retain source-resolution exports only. Their full batches have not been submitted, so they remain blocked on the same validated upscale workflow and per-frame QA.
 
-When the existing ComfyUI service is available, run a single P03 HERO postprocessing smoke test through the configured workflow. Inspect identity and anatomy against the source before applying it to the three ten-photo packages. Record the workflow hash, model filename, source/output SHA256, dimensions and visual QA decision in each package manifest.
+P03 still requires owner final approval before publication or paid delivery. Full-resolution PNG outputs remain local-only; Git contains the manifest and QA evidence rather than the approximately 400 MB render set.
