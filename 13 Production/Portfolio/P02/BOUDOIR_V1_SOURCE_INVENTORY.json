@@ -1,0 +1,566 @@
+{
+  "character": "P02",
+  "collection": "boudoir_v1",
+  "status": "QA_REVIEW",
+  "promotion_mode": "manifest_only",
+  "publish_approved": false,
+  "source_manifest": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/boudoir_manifest.yaml",
+  "identity": [
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/00_master/P02_identity_master_v1.png",
+      "sha256": "d4a8ff4ec08feafb2af49eca6d75ca7df1843bcf772deb5afae1e070a6e50299",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/01_references/P02_REF01.png",
+      "sha256": "26501512d969490150c37ed9ff16bc6ea834fb3ba39132bb65ec695944d1646e",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/01_references/P02_REF02.png",
+      "sha256": "1011d5d37ee4e805d0e5f0707ca0ed88d9b1ab4b0b2705d294680b36d359ac25",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/01_references/P02_REF03.png",
+      "sha256": "23fb0883218085354fe2de85d92d2641916501ac41e754735892babb10a004c2",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/01_references/P02_REF04.png",
+      "sha256": "e8241c2f3c41e44dfd4deac5e1fec8ee245903a954e1a773c5bfd1e0c427a4b7",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/01_references/P02_REF05.png",
+      "sha256": "21ac8aec340e644627aaaaacb7e201a437062333b7db726860b2d1cb3cb39386",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true
+    }
+  ],
+  "photos": [
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/03_final/P02_BD_01_silk_bedroom.png",
+      "sha256": "41a26b5b539f6ba0744903b4b4421c4532478c827f02f8f9b683ca9bc09f2187",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "BD_01",
+      "framing": null,
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/02_review/P02_boudoir_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/03_final/P02_BD_02_window_silhouette.png",
+      "sha256": "66c2f3c8b9bab3b64db2bde4efbe713d934809617962235fb9813903e495db19",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "BD_02",
+      "framing": null,
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/02_review/P02_boudoir_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/03_final/P02_BD_03_armchair_glamour.png",
+      "sha256": "23c6210efe0dd7710a7250d7a87a53d4ab2a0319d6c90d2c304cb78663f91b7c",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "BD_03",
+      "framing": null,
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/02_review/P02_boudoir_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/03_final/P02_BD_04_white_shirt_bed.png",
+      "sha256": "cf78dc093176cab8de37b9f796d448e52d80311603bb10d4c95425bbfb76f2d2",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "BD_04",
+      "framing": null,
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/02_review/P02_boudoir_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/03_final/P02_BD_05_silk_sheets.png",
+      "sha256": "552dcdd36c3778cbcdf65c97c92c495263f8b3c191dccd59da47c89e92ade945",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "BD_05",
+      "framing": null,
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/02_review/P02_boudoir_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/03_final/P02_BD_06_vanity_mirror.png",
+      "sha256": "c48243a836c6a97c231ce15631a2d9f72c8891967bce3785c9e37c36cd97ef5f",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "BD_06",
+      "framing": null,
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/02_review/P02_boudoir_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/03_final/P02_BD_07_back_view_robe.png",
+      "sha256": "b0c2d78bd4f6c644d3e20fda7e9fe1a8d29f149ef358e20811134c4a7ae5a2a9",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "BD_07",
+      "framing": null,
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/02_review/P02_boudoir_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/03_final/P02_BD_08_bedroom_lounge.png",
+      "sha256": "3c85892fab0ea93c6cd18b0abba35d72d191084aec30138cc9189ec6206a6d7a",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "BD_08",
+      "framing": null,
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/02_review/P02_boudoir_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/03_final/P02_BD_09_evening_lounge_wine.png",
+      "sha256": "79cecefc45699c3fb5bac4b09e54bc695a3b075d1f7b2cbcca6f37587d7f9c56",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "BD_09",
+      "framing": null,
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/02_review/P02_boudoir_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/03_final/P02_BD_10_luxury_bath_evening.png",
+      "sha256": "c961fe9fbf7b803a59acca2a5dce08683e64e0f1ed5c3d6c6dd3fd5daae75c8e",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "BD_10",
+      "framing": null,
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/02_review/P02_boudoir_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    }
+  ],
+  "marketing_candidates": [
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/05_marketing/01_contact_sheet/P02_boudoir_v1_contact_sheet.jpg",
+      "sha256": "ae5c0ee30d3c6cf344ea1029dadd142f9f5f63465b25d984aae2ebce6f3832d0",
+      "width": 1500,
+      "height": 910,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "contact_sheet",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/05_marketing/01_contact_sheet/P02_boudoir_v1_contact_sheet_clean.jpg",
+      "sha256": "5dbfbf232deb8055c721c8f7884d2f666e2c590e2ddc0c27f6350eaff6a72df5",
+      "width": 1500,
+      "height": 800,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "contact_sheet",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/05_marketing/02_private_showcase/P02_boudoir_private_card_01.jpg",
+      "sha256": "3742a3ad6e385098419cea8b63ebc05e52f31eeebdecf695ef6ee28fe2b53383",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/05_marketing/02_private_showcase/P02_boudoir_private_card_02.jpg",
+      "sha256": "8931b614917c6eb54f50cb762e3a3c4ff41173d499029e1b3c88a4f5a1eed170",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/05_marketing/02_private_showcase/P02_boudoir_private_card_03.jpg",
+      "sha256": "1a123abafb971a57d70cbe964458ad68cc28f25293f9772ed4bf7fe3b8a6161d",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/05_marketing/02_private_showcase/P02_boudoir_private_card_04.jpg",
+      "sha256": "c9772e3fd07ddd1fd1ae998eafc2a8ead0889e808914b800a937a66d544127a1",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/05_marketing/02_private_showcase/P02_boudoir_private_card_05.jpg",
+      "sha256": "b8a921df722291ad79fbcda094484528b186515288bd0e6fd968b778094338f5",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/05_marketing/02_private_showcase/P02_boudoir_private_card_06.jpg",
+      "sha256": "f681ca370af7c4a2757bed228ee344ff77198298c1bb424c13d62a12623a2533",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/05_marketing/02_private_showcase/P02_boudoir_private_card_07.jpg",
+      "sha256": "0568a7b58e98271bbcda725817afa8899d32cc7c6447132268e45dc9e56b5cf3",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/05_marketing/02_private_showcase/P02_boudoir_private_card_08.jpg",
+      "sha256": "f1d7f7ee2a288b6b6db14f809b83a9587c67a0bd056dd813005f8c4951301065",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/05_marketing/03_before_after/P02_reference_to_boudoir.jpg",
+      "sha256": "72315cbdcd4bbed3df3297a1474bca30147a64ba2ee60cc0b432a8fd76671c2f",
+      "width": 1600,
+      "height": 900,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "before_after",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/05_marketing/04_social_drafts/P02_boudoir_clean_grid_4.jpg",
+      "sha256": "96736dfde472f466aebfe741431fb63ad1fe4b50ade184d65af921d4d8ecc3f7",
+      "width": 600,
+      "height": 910,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "collage_4",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/05_marketing/04_social_drafts/P02_boudoir_clean_grid_6.jpg",
+      "sha256": "c6b651067ebc9d66d2c6c979c81c969c7f3961f87f7ab2dc68aeb4d58d72083c",
+      "width": 900,
+      "height": 910,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "collage_6",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/05_marketing/04_social_drafts/P02_boudoir_portrait_showcase.jpg",
+      "sha256": "8c987c8113216a3b3c27dba686e258dfcbc6fe4c85b718d7861069eb12299b5c",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/05_marketing/04_social_drafts/P02_boudoir_square_collage.jpg",
+      "sha256": "96736dfde472f466aebfe741431fb63ad1fe4b50ade184d65af921d4d8ecc3f7",
+      "width": 600,
+      "height": 910,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/05_marketing/04_social_drafts/P02_boudoir_vertical_story.jpg",
+      "sha256": "6b85262329bc242e7b77ee4aed9505e1831006dc886f46f3c5100b254ed83baf",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/jpg/P02_BD_01_silk_bedroom_web.jpg",
+      "sha256": "6c5646ffa91ef0a8e55e9da88cd987755dd047fd3c335ad9b299d6357a390871",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/jpg/P02_BD_02_window_silhouette_web.jpg",
+      "sha256": "93f6db3cc8d13d5bd47e5a4cdd6d0fb179fc4f79fa96439936ba686e286c5047",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/jpg/P02_BD_03_armchair_glamour_web.jpg",
+      "sha256": "62b0c97b7fb5606186e9f86e22d095b67c297796b3540b3dde938aac84d2a09e",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/jpg/P02_BD_04_white_shirt_bed_web.jpg",
+      "sha256": "fa71fef697b8dc08ad193d678b1a92a4088c96e828d667639d4ae285a3519663",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/jpg/P02_BD_05_silk_sheets_web.jpg",
+      "sha256": "a6e360658f677f535932fb208d3ee072796a93ab7e68357c005056947ba4bb3d",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/jpg/P02_BD_06_vanity_mirror_web.jpg",
+      "sha256": "22d751ddaef7225716f62d908e05e993c3ccd43f2efd14857fe9fb944f95dfcb",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/jpg/P02_BD_07_back_view_robe_web.jpg",
+      "sha256": "954dd55708924f3b54a33b87ef9c9f5ff64e9ae061c8be76432ece9f1965a73c",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/jpg/P02_BD_08_bedroom_lounge_web.jpg",
+      "sha256": "2caf4ceb591305d11290c2b5286484b06c8c5a0fd6f86624dc04d0c2314a922b",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/jpg/P02_BD_09_evening_lounge_wine_web.jpg",
+      "sha256": "f9f1a3ba3902ab89f11e38c96630f9869abf866ad6df8b6c8262938f6efbfbd1",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/jpg/P02_BD_10_luxury_bath_evening_web.jpg",
+      "sha256": "47caf06a3ba12c159faac9cddb66bf7d688ff82795c3bc63b1a1bd9c2514b34a",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/webp/P02_BD_01_silk_bedroom_web.webp",
+      "sha256": "4f05965082135fc5481b9de58e864cdd124124fd369c06acff21efdfe98f02a3",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/webp/P02_BD_02_window_silhouette_web.webp",
+      "sha256": "703fcf35e275508357b1c80905a010340329725407390dc8857aec8eb36d9b60",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/webp/P02_BD_03_armchair_glamour_web.webp",
+      "sha256": "f15ef6a3d79feaf4e2cb10a70477ce2ff73182f0ea1cfe50cb24d5a4b45a4040",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/webp/P02_BD_04_white_shirt_bed_web.webp",
+      "sha256": "757e823a6fca71537d8b8dfa2273e87cf2d89d506831ee4d99b8d7a22cfaad90",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/webp/P02_BD_05_silk_sheets_web.webp",
+      "sha256": "0ce70a099cc0598476b873fa0e6c5322e90ba6560f8a4c46e701c5b8d27f1ce9",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/webp/P02_BD_06_vanity_mirror_web.webp",
+      "sha256": "29148bd99b5f08dd22d48b4bc3c49ec774f7ec8c4cb8f81e57fbe6ec3e7751a4",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/webp/P02_BD_07_back_view_robe_web.webp",
+      "sha256": "f69d1304b84c10155b0e2a9d4fd9d94d6d26cd45d3a472553eae71799737d63a",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/webp/P02_BD_08_bedroom_lounge_web.webp",
+      "sha256": "ab9aa8f8e02b1dbbbfbd21d545949231f00100bdf3a5514ff8c24ba3a28f627e",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/webp/P02_BD_09_evening_lounge_wine_web.webp",
+      "sha256": "4fe5386da0f579d73df0179d74acc4e2764029fcc644c39c755127f274532349",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/boudoir_v1/04_web/webp/P02_BD_10_luxury_bath_evening_web.webp",
+      "sha256": "b1a647ee35b92dc3ffe1f3dfe898a1a3fd1611fb61f616333ce8d738091b1feb",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    }
+  ],
+  "upscale_evidence": "NOT_FOUND",
+  "standard_exports": "MISSING",
+  "portfolio_watermark": "NOT_VERIFIED",
+  "role_mapping": "VISUAL_SELECTION_REQUIRED"
+}

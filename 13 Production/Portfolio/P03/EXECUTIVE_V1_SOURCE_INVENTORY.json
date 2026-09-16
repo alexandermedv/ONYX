@@ -1,0 +1,586 @@
+{
+  "character": "P03",
+  "collection": "executive_v1",
+  "status": "QA_REVIEW",
+  "promotion_mode": "manifest_only",
+  "publish_approved": false,
+  "source_manifest": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/executive_manifest.yaml",
+  "identity": [
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/00_master/P03_identity_master_v1.png",
+      "sha256": "10648d58e91bb3fe15cfe066d3099d1db338f0518dafee6898afaf94490c3375",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/01_references/P03_REF01.png",
+      "sha256": "40317c785acbad3e8ec06f4eaf4775932f0d4e242f25af5261d604610b33ce7c",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/01_references/P03_REF02.png",
+      "sha256": "56c1b58ea857a000f47c7f0259500c253c4f19793e2c87d9f09488fbed9b5ac8",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/01_references/P03_REF03.png",
+      "sha256": "e0b57dce622bd6a739824f4a426b274f9f16ec29d2682d62d929059c8e479eed",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/01_references/P03_REF04.png",
+      "sha256": "3288f035295a9f0637f11a21f0bc9b55414e6dfac21cfa9690e9f93e98c2d2d2",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/01_references/P03_REF05.png",
+      "sha256": "e4e710631986681c52ae7636cd2c2c796fe11b69863ab5abcc7b99d80d00092f",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true
+    }
+  ],
+  "photos": [
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_01_headshot_front.png",
+      "sha256": "3fa2041543602951310c5f06b0d2da133787bae3549ce7162f6891007b99a169",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "id": "EXEC_01",
+      "framing": "head and shoulders",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/02_review/P03_executive_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_02_window_3q.png",
+      "sha256": "0c7db020687ccc03912807eec0d329572ea4106bc63c31aef58f59ef44327292",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "id": "EXEC_02",
+      "framing": "waist-up",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/02_review/P03_executive_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_03_executive_desk.png",
+      "sha256": "f16819358576f55c21112cd9fc2f90e0f6ebfb48c30d8d4381c07c9db566af22",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "id": "EXEC_03",
+      "framing": "waist-up",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/02_review/P03_executive_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_04_office_walk.png",
+      "sha256": "e9e2893ba6f632ec93c1088e69aa4d7efbe5566470402290af5422cb2ff49706",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "id": "EXEC_04",
+      "framing": "near full-body",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/02_review/P03_executive_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_05_boardroom.png",
+      "sha256": "25ee84204a9205ba8cac8db82fcaf0447d249df4b120621620aae0462cc890e6",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "id": "EXEC_05",
+      "framing": "three-quarter",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/02_review/P03_executive_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_06_lobby_fullbody.png",
+      "sha256": "b7f383a3d60d00183e005a9938369f3520435a9decb4130ca21834432e77f213",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "id": "EXEC_06",
+      "framing": "full-body",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/02_review/P03_executive_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_07_private_office.png",
+      "sha256": "5073b7d3989b28ddfa1075b9a48b162c8234a263d4f70f2bf39c9c473cd86b6b",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "id": "EXEC_07",
+      "framing": "medium",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/02_review/P03_executive_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_08_laptop_workspace.png",
+      "sha256": "0166def16f04f92ffcd1c2884ad8211f892e650e6e277505c124aa0b7e60a47e",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "id": "EXEC_08",
+      "framing": "medium",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/02_review/P03_executive_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_09_window_profile.png",
+      "sha256": "a7f1a95365face548e4de3a6374377fa94672e9268fef8f21d59846c99a4c6e4",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "id": "EXEC_09",
+      "framing": "medium",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/02_review/P03_executive_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_10_editorial_fullbody.png",
+      "sha256": "f2379c10d3d06410677a6c8b851ce158f587de269a4b8ee2aef4c240aa8e2c54",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "id": "EXEC_10",
+      "framing": "near full-body",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/02_review/P03_executive_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    }
+  ],
+  "marketing_candidates": [
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/01_contact_sheet/P03_executive_v1_contact_sheet.jpg",
+      "sha256": "ba76ed789a2d64b1dd697260195a7397597ea369bb9b2a15311bd42c8741a974",
+      "width": 1500,
+      "height": 1050,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "contact_sheet",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/01_contact_sheet/P03_executive_v1_contact_sheet_clean.jpg",
+      "sha256": "ae4c32e05654977e6532e996efff68f65d4e5c13179d39d06472971b82c9dddb",
+      "width": 1500,
+      "height": 1050,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "contact_sheet",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_01.jpg",
+      "sha256": "f17fa62f0490abf0bec35cb50fd44af6bc448b7b5eef780bb6919b7a7fe728de",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_02.jpg",
+      "sha256": "f67485d9aefd81dd8cac5cf04e394b11efe5ea43642983375dd7a66237d868f4",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_03.jpg",
+      "sha256": "d4f58e5066959ae11ee0ced1dbf8ff8f1e241f8e32662f2e51dad9053386580c",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_04.jpg",
+      "sha256": "d85c3d16670da22eaf8e11340856ba423b0cc25e87b32d9235706c2362a92863",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_05.jpg",
+      "sha256": "f67a4c10ce41da24617532f07d786dfbf7bac083f1d683a6c0062404845c1377",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_06.jpg",
+      "sha256": "f63a7a473f2139e27e622795711c254cf226f7cb3e194e43b4d3807909e453ef",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_07.jpg",
+      "sha256": "b5c47710eea96cbcdc5d643cd30cc0d9e11b2786574220ea8e3ba2c070dd34ce",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_08.jpg",
+      "sha256": "82417c6c853f2e76f9b09a888db485427c81822c65c334d1bec925b9c8bfd1d3",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_09.jpg",
+      "sha256": "e26ce778fc78f18ff565c67e408519c39ce9b557c254a50c5743602c401f2b9f",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_10.jpg",
+      "sha256": "b5dd1c9732735ad43099f8363360f04d7553888c265daf99991dd22aed704849",
+      "width": 1080,
+      "height": 1350,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/03_before_after/P03_identity_to_executive.jpg",
+      "sha256": "c2a1f3e517414218fb7dda06740f198bdfbca85c6fd79f672f99c6f639660cbe",
+      "width": 1600,
+      "height": 900,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "before_after",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/04_social/P03_executive_clean_grid_4.jpg",
+      "sha256": "017ff99d5229fb8a5829b0556e3055ef38d0d771d751603b7154043419274d93",
+      "width": 1500,
+      "height": 1050,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "collage_4",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/04_social/P03_executive_clean_grid_6.jpg",
+      "sha256": "10d8bf0a7392c6594d8d13263fcf06460d435abb892aa44e33b8c1c44da7c157",
+      "width": 1500,
+      "height": 1050,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "collage_6",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/04_social/P03_executive_portrait_showcase.jpg",
+      "sha256": "c7433c1be80aa9c7dee2b4285cce8b263edfdb0f56f54d6ceb17bb4deab87f53",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/04_social/P03_executive_square_collage.jpg",
+      "sha256": "017ff99d5229fb8a5829b0556e3055ef38d0d771d751603b7154043419274d93",
+      "width": 1500,
+      "height": 1050,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/04_social/P03_executive_story_cover.jpg",
+      "sha256": "cb04efc62a1a10682779567c19dc0cc11e6059a5a3ce6dc9ac81be50678a5b2a",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "cover",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/jpg/P03_EXEC_01_headshot_front_web.jpg",
+      "sha256": "9e40433c112c968d49fd3b7af328b21ccaac160775c22910613cb6515501c235",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/jpg/P03_EXEC_02_window_3q_web.jpg",
+      "sha256": "4ecc633eeb2b28e12d897e43b17e23df4842e8954e5bddbdbcbd316f2d98aef9",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/jpg/P03_EXEC_03_executive_desk_web.jpg",
+      "sha256": "232f08fccc58bac498ba4ec6eb9bace7bacd63ce449ff55faab7440d4ab8eebc",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/jpg/P03_EXEC_04_office_walk_web.jpg",
+      "sha256": "e51ead0533c0c50a4e752b20afbfa2ccb9a8f8ad6d35ab9750dc002ff8574895",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/jpg/P03_EXEC_05_boardroom_web.jpg",
+      "sha256": "2f07bbb397620ec08515e6d67022f4db874ba936aa744197c662f60d90e9bbea",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/jpg/P03_EXEC_06_lobby_fullbody_web.jpg",
+      "sha256": "32936270e351b15f7c747d53ed0518c4e0480f135c8070b32bc905d7bc1572fc",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/jpg/P03_EXEC_07_private_office_web.jpg",
+      "sha256": "fc368feb8c80bd4c238e183fccbf7716f01ed9b7308436cb5bb04778fe961e04",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/jpg/P03_EXEC_08_laptop_workspace_web.jpg",
+      "sha256": "032ae66d2ebf6a75e10b6f5330146e251bda30d426621eb9e6b36561399c3de7",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/jpg/P03_EXEC_09_window_profile_web.jpg",
+      "sha256": "e99fe56d33cbb75c3632c92e928094084bc832075fae8cf3d5dbc47fac73a49b",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/jpg/P03_EXEC_10_editorial_fullbody_web.jpg",
+      "sha256": "a745e6c6942b32d31d6b45054aacdd301bbd0a289b4563dfe71be99dfbc15816",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/webp/P03_EXEC_01_headshot_front_web.webp",
+      "sha256": "f051ac4037969aed42f855823ab9a62c9ebfcbb5fccd7ac2fdd8927ce60a527a",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/webp/P03_EXEC_02_window_3q_web.webp",
+      "sha256": "3cf594fdd79951b2d0bf7c60bf494c3d6ec949e41117425569d35c3e3fe97208",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/webp/P03_EXEC_03_executive_desk_web.webp",
+      "sha256": "615cc2819ab6495a30cbd09b3e1f23e098175df2634c9ba5310e551a1d0b0ece",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/webp/P03_EXEC_04_office_walk_web.webp",
+      "sha256": "60288dc5e4a67ad9c4a0af0a0e38cafc7eb1bac1c3338ddfa5e007804c95cf22",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/webp/P03_EXEC_05_boardroom_web.webp",
+      "sha256": "bb6c5e9d841563c36f54990984d5d4800b233a6fe22a1d147c3e96bc64550313",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/webp/P03_EXEC_06_lobby_fullbody_web.webp",
+      "sha256": "ee4be43f8e011c58cea81ef3b508a83982797776ba3e5d09a10c539b9e24ba06",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/webp/P03_EXEC_07_private_office_web.webp",
+      "sha256": "8bd848843c9781bff3ef65d4656ecdeed3cfef2b151ecad4674e60eaae72b364",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/webp/P03_EXEC_08_laptop_workspace_web.webp",
+      "sha256": "fa881a73cdb5d008dadbe660ebeedc61cc05fe5822b366e5d4973a1530e7de66",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/webp/P03_EXEC_09_window_profile_web.webp",
+      "sha256": "d8cda554a1371cf140ebb88d73472397580c15d46efc8d722771042db1506869",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/04_web/webp/P03_EXEC_10_editorial_fullbody_web.webp",
+      "sha256": "a1098f23fd00b300a610241142987831d15381f8304e3b84d7fb3ebae0d28dbc",
+      "width": 1145,
+      "height": 1374,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    }
+  ],
+  "upscale_evidence": "NOT_FOUND",
+  "standard_exports": "MISSING",
+  "portfolio_watermark": "NOT_VERIFIED",
+  "role_mapping": "VISUAL_SELECTION_REQUIRED"
+}

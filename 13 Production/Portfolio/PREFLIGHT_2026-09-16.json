@@ -1,0 +1,20 @@
+{
+  "branch": "main",
+  "head": "7a2e6e51326c56d232979a759bd02eeca4b5768b",
+  "origin_main": "ec524e50a29bc617365c3f647b08cafa703d7ea6",
+  "ahead_behind": "0\t2",
+  "preserved_user_files": {
+    "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_01.jpg": "f17fa62f0490abf0bec35cb50fd44af6bc448b7b5eef780bb6919b7a7fe728de",
+    "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_02.jpg": "f67485d9aefd81dd8cac5cf04e394b11efe5ea43642983375dd7a66237d868f4",
+    "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_03.jpg": "d4f58e5066959ae11ee0ced1dbf8ff8f1e241f8e32662f2e51dad9053386580c",
+    "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_04.jpg": "d85c3d16670da22eaf8e11340856ba423b0cc25e87b32d9235706c2362a92863",
+    "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_05.jpg": "f67a4c10ce41da24617532f07d786dfbf7bac083f1d683a6c0062404845c1377",
+    "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_06.jpg": "f63a7a473f2139e27e622795711c254cf226f7cb3e194e43b4d3807909e453ef",
+    "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_07.jpg": "b5c47710eea96cbcdc5d643cd30cc0d9e11b2786574220ea8e3ba2c070dd34ce",
+    "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_08.jpg": "82417c6c853f2e76f9b09a888db485427c81822c65c334d1bec925b9c8bfd1d3",
+    "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_09.jpg": "e26ce778fc78f18ff565c67e408519c39ce9b557c254a50c5743602c401f2b9f",
+    "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/02_avito_carousel/P03_executive_card_10.jpg": "b5dd1c9732735ad43099f8363360f04d7553888c265daf99991dd22aed704849",
+    "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/05_marketing/03_before_after/P03_identity_to_executive.jpg": "c2a1f3e517414218fb7dda06740f198bdfbca85c6fd79f672f99c6f639660cbe",
+    "09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/finalize_pack.py": "ae1325ad3dad8482652078b89ccc09c96cfed1b3e0ab3f4a7e364b7d250b6fcd"
+  }
+}

@@ -1,0 +1,64 @@
+schema: onyx.production.golden_portfolio
+schema_version: '1.0'
+created_on: '2026-09-16'
+character_id: P03
+collection: business
+package_name: Golden Portfolio Package v1
+expected_images: 10
+aspect_ratio: '3:4'
+source_aspect_ratio: '5:6'
+role_mapping_status: VISUAL_REVIEW_REQUIRED
+standard_export_mapping_status: BLOCKED_PENDING_ROLE_REVIEW
+promotion_mode: manifest_only
+experimental_evidence_mutable: false
+identity:
+  master:
+    status: SOURCE_READY
+    canonical_path: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/00_master/P03_identity_master_v1.png
+  references:
+    status: SOURCE_READY
+    canonical_paths:
+      - 09 Experiments/identity_benchmark_v1/P03_M45_Executive/01_references/P03_REF01.png
+      - 09 Experiments/identity_benchmark_v1/P03_M45_Executive/01_references/P03_REF02.png
+      - 09 Experiments/identity_benchmark_v1/P03_M45_Executive/01_references/P03_REF03.png
+      - 09 Experiments/identity_benchmark_v1/P03_M45_Executive/01_references/P03_REF04.png
+      - 09 Experiments/identity_benchmark_v1/P03_M45_Executive/01_references/P03_REF05.png
+source_mapping:
+  - { id: EXEC_01, role: HERO, source: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_01_headshot_front.png }
+  - { id: EXEC_02, role: CLOSE, source: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_02_window_3q.png }
+  - { id: EXEC_03, role: SEATED, source: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_03_executive_desk.png }
+  - { id: EXEC_04, role: ACTION, source: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_04_office_walk.png }
+  - { id: EXEC_05, role: ENVIRONMENT, source: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_05_boardroom.png }
+  - { id: EXEC_06, role: FULL_BODY, source: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_06_lobby_fullbody.png }
+  - { id: EXEC_07, role: WAIST, source: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_07_private_office.png }
+  - { id: EXEC_08, role: 3Q_BODY, source: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_08_laptop_workspace.png }
+  - { id: EXEC_09, role: MOOD, source: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_09_window_profile.png }
+  - { id: EXEC_10, role: EDITORIAL, source: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/03_final/P03_EXEC_10_editorial_fullbody.png }
+qa:
+  technical: SOURCE_READABILITY_PASS_EXPORT_GEOMETRY_PENDING
+  technical_evidence: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/02_review/technical_qa.csv
+  human_review: PENDING
+  review_evidence: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/02_review/P03_executive_v1_review.csv
+  critical_identity_anatomy_defects: PENDING
+marketing_asset_checklist:
+  cover: SOURCE_EXISTS_PENDING_PROMOTION
+  before_after: SOURCE_EXISTS_PENDING_PROMOTION
+  collage_4: SOURCE_EXISTS_PENDING_PROMOTION
+  collage_6: SOURCE_EXISTS_PENDING_PROMOTION
+  contact_sheet: SOURCE_EXISTS_PENDING_PROMOTION
+  portfolio_card: MISSING
+  avito_carousel: SOURCE_EXISTS_PENDING_PROMOTION
+  web_assets: SOURCE_EXISTS_PENDING_PROMOTION
+portfolio_ready_status: MISSING
+blockers:
+  - Human QA decisions for EXEC_01 through EXEC_10 are PENDING.
+  - Final approval and upscale evidence are MISSING.
+  - Required standard production exports and portfolio watermark version are MISSING.
+
+# Audit supplement; role assignments above remain unapproved proposals.
+audit_evidence: 13 Production/Portfolio/P03/EXECUTIVE_V1_SOURCE_INVENTORY.json
+role_mapping_blockers:
+  - EXEC_02 is waist-up in source metadata, not verified CLOSE.
+  - EXEC_08 is medium framing, not verified 3Q_BODY.
+  - Standard output numbering must follow roles, not EXEC source numbers.
+  - Source 5:6 images require approved 3:4 composition; do not crop automatically.

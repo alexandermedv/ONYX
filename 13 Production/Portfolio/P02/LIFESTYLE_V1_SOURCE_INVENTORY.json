@@ -1,0 +1,586 @@
+{
+  "character": "P02",
+  "collection": "lifestyle_v1",
+  "status": "QA_REVIEW",
+  "promotion_mode": "manifest_only",
+  "publish_approved": false,
+  "source_manifest": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/lifestyle_manifest.yaml",
+  "identity": [
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/00_master/P02_identity_master_v1.png",
+      "sha256": "d4a8ff4ec08feafb2af49eca6d75ca7df1843bcf772deb5afae1e070a6e50299",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/01_references/P02_REF01.png",
+      "sha256": "26501512d969490150c37ed9ff16bc6ea834fb3ba39132bb65ec695944d1646e",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/01_references/P02_REF02.png",
+      "sha256": "1011d5d37ee4e805d0e5f0707ca0ed88d9b1ab4b0b2705d294680b36d359ac25",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/01_references/P02_REF03.png",
+      "sha256": "23fb0883218085354fe2de85d92d2641916501ac41e754735892babb10a004c2",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/01_references/P02_REF04.png",
+      "sha256": "e8241c2f3c41e44dfd4deac5e1fec8ee245903a954e1a773c5bfd1e0c427a4b7",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/01_references/P02_REF05.png",
+      "sha256": "21ac8aec340e644627aaaaacb7e201a437062333b7db726860b2d1cb3cb39386",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true
+    }
+  ],
+  "photos": [
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/03_final/P02_LIFE_01_cafe_window.png",
+      "sha256": "bcfc627f4b79a8121fe63e23da8beaf94863443919b4f84cbf66f375a4c5dbb0",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "LIFE_01",
+      "framing": "seated portrait",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/02_review/P02_lifestyle_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/03_final/P02_LIFE_02_city_walk.png",
+      "sha256": "32c62bb3d78d487cc99116a32be0016d4cb4fff1a1a2625f6653f80d8159615f",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "LIFE_02",
+      "framing": "near full length",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/02_review/P02_lifestyle_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/03_final/P02_LIFE_03_home_morning.png",
+      "sha256": "4418e5052aa0da402f681283afc772c9217b554b610f792c3704a156a413ddc1",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "LIFE_03",
+      "framing": "three-quarter body",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/02_review/P02_lifestyle_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/03_final/P02_LIFE_04_book_cafe.png",
+      "sha256": "99e498e8fb7dc52f5de1283662e31073e7a0d3c9964ab2671c0d370cc571896b",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "LIFE_04",
+      "framing": "seated three-quarter body",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/02_review/P02_lifestyle_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/03_final/P02_LIFE_05_rooftop_sunset.png",
+      "sha256": "95d6428075a4a5dae69d3d7a3f5ad725235c673d39ce4c5c229626356ac41829",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "LIFE_05",
+      "framing": "three-quarter portrait",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/02_review/P02_lifestyle_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/03_final/P02_LIFE_06_weekend_street.png",
+      "sha256": "ce833d64a5848dbd99d65f3461a4eece52adaff0aa6eca5a173f72ad079e90a5",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "LIFE_06",
+      "framing": "knees up",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/02_review/P02_lifestyle_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/03_final/P02_LIFE_07_balcony_profile.png",
+      "sha256": "eb66169c9bf98fb30b3bd658a67fe7ec2dee7042d88542975b5d866e2dc81285",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "LIFE_07",
+      "framing": "three-quarter body",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/02_review/P02_lifestyle_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/03_final/P02_LIFE_08_cozy_sofa.png",
+      "sha256": "32985e058fdedb32a2312cce5290844fd05aa99759197bdc70ce97e93156f87e",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "LIFE_08",
+      "framing": "seated portrait",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/02_review/P02_lifestyle_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/03_final/P02_LIFE_09_travel_lobby.png",
+      "sha256": "c8ef167ddcbf00407611a02fb760a67be47eb3781204e288e605db78b2137b7c",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "LIFE_09",
+      "framing": "near full length",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/02_review/P02_lifestyle_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/03_final/P02_LIFE_10_evening_city.png",
+      "sha256": "dff2f12e84565b150fa999441eb68945eaaaa7ce4ed78621506b179c9899ce2d",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "id": "LIFE_10",
+      "framing": "three-quarter portrait",
+      "review_evidence": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/02_review/P02_lifestyle_v1_review.csv",
+      "decision": "PENDING",
+      "role_status": "VISUAL_SELECTION_REQUIRED",
+      "production_approved": false
+    }
+  ],
+  "marketing_candidates": [
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/01_contact_sheet/P02_lifestyle_v1_contact_sheet.jpg",
+      "sha256": "55d7c0e5ef57b1455725f2b6155d510eb0b0b56e03936da4541ced273e2a8f38",
+      "width": 2400,
+      "height": 1590,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "contact_sheet",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/01_contact_sheet/P02_lifestyle_v1_contact_sheet_clean.jpg",
+      "sha256": "78b8ec4359d390d37806cf13b2c38e3527ada712cf28d406aed820a72a7046f6",
+      "width": 2400,
+      "height": 1590,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "contact_sheet",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/02_avito_carousel/P02_lifestyle_card_01.jpg",
+      "sha256": "aaeed125a24e6ba173fc58cce2c3506af431d863479388af28ac472c9a4a6d7e",
+      "width": 1600,
+      "height": 2000,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/02_avito_carousel/P02_lifestyle_card_02.jpg",
+      "sha256": "662d34d21028969b3d15d1694485779a866e3b9f96033d53dddab47c1edcd2eb",
+      "width": 1600,
+      "height": 2000,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/02_avito_carousel/P02_lifestyle_card_03.jpg",
+      "sha256": "7a014f7f1d115b101787beac81a21031d8bc01d510aa13f1c4b02495523b04e0",
+      "width": 1600,
+      "height": 2000,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/02_avito_carousel/P02_lifestyle_card_04.jpg",
+      "sha256": "b20a6a54166f9164493d7390fe673c663c2ebbc7b8cebde3587632530a5c8821",
+      "width": 1600,
+      "height": 2000,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/02_avito_carousel/P02_lifestyle_card_05.jpg",
+      "sha256": "7fae325913c998afda334b38e7e85d0b0ffd2ccf3e4534fc08c8630791705b17",
+      "width": 1600,
+      "height": 2000,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/02_avito_carousel/P02_lifestyle_card_06.jpg",
+      "sha256": "47728b58f1529e01f01c7955293c9c8d9d11611cbc4c96a3ee808cd926eaa068",
+      "width": 1600,
+      "height": 2000,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/02_avito_carousel/P02_lifestyle_card_07.jpg",
+      "sha256": "91ecc327d5b741d94352b6b55330709be854734d7e03a6613475bd06d88f413d",
+      "width": 1600,
+      "height": 2000,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/02_avito_carousel/P02_lifestyle_card_08.jpg",
+      "sha256": "28ebef7cad05c2c01fd6068bc10b9dbd295aa878397d626635f949912eb6abc0",
+      "width": 1600,
+      "height": 2000,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/02_avito_carousel/P02_lifestyle_card_09.jpg",
+      "sha256": "baaf15ce767dcb8ae8fde2c7da7a9a474696101ff020361cc9bc8722f5d2711a",
+      "width": 1600,
+      "height": 2000,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/02_avito_carousel/P02_lifestyle_card_10.jpg",
+      "sha256": "bcb076b82e61771f7219d08fc1c5fd512f642a8899d4da5a2c79e974e5881e43",
+      "width": 1600,
+      "height": 2000,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "carousel",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/03_before_after/P02_reference_to_lifestyle.jpg",
+      "sha256": "cdb78f78dd9f86a2401e77d3bc6f26a93bfb4e6d70af19fa6bd26be085e14ed4",
+      "width": 2100,
+      "height": 1400,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "before_after",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/04_social/P02_lifestyle_clean_grid_4.jpg",
+      "sha256": "46cefbdf463f899c185c5ce52dda9f76a6aa026eb07a16d1f7d0319943f1ca78",
+      "width": 1800,
+      "height": 2440,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "collage_4",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/04_social/P02_lifestyle_clean_grid_6.jpg",
+      "sha256": "53860525cbc23d65e72005e7eba3d86c4ab9c4df086ccc44f7adf662b5532fd4",
+      "width": 2100,
+      "height": 2020,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "collage_6",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/04_social/P02_lifestyle_portrait_showcase.jpg",
+      "sha256": "5c3780152307343a9d2f4423fc36cae051fbfdd2acf397175315c6b8315723df",
+      "width": 1600,
+      "height": 2000,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/04_social/P02_lifestyle_square_selection.jpg",
+      "sha256": "2c48a3e0713c001a105693bbd58b3a03461bdc49df1fd580111a1d89c563444c",
+      "width": 1600,
+      "height": 1600,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/04_social/P02_lifestyle_story_cover.jpg",
+      "sha256": "3cf9d0b1e50e91731346fed38d84b0b979ce418b0daac1c253c5aec5b586ca57",
+      "width": 1080,
+      "height": 1920,
+      "ratio_3_4": false,
+      "readable": true,
+      "candidate_kind": "cover",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/jpg/P02_LIFE_01_cafe_window_web.jpg",
+      "sha256": "0bdcb4db1993131229b5f3dc8ffdee564e39fe96dc1cf286862b5e12459dfa95",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/jpg/P02_LIFE_02_city_walk_web.jpg",
+      "sha256": "66c2865014ddfc495c9316478f1eb742bfa812aa4c657d1a0c4f2ee464a97b24",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/jpg/P02_LIFE_03_home_morning_web.jpg",
+      "sha256": "03c9fcdce9e70a093cf4ffe92984ca83ed5fb041d151cd2baed846a776f7c9eb",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/jpg/P02_LIFE_04_book_cafe_web.jpg",
+      "sha256": "0372f8d87eb824453b4d03589be803578745f7a6473066ff4acc11ae5d7d7b6e",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/jpg/P02_LIFE_05_rooftop_sunset_web.jpg",
+      "sha256": "83425374300bc06aa4bc0df7b7c2e0fc926f70c4afc2dcbec668bf5ab6c97af8",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/jpg/P02_LIFE_06_weekend_street_web.jpg",
+      "sha256": "0aa055326cb94298b54c359ba47ec87e568699caa54ba5bcaf70e4f30682647a",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/jpg/P02_LIFE_07_balcony_profile_web.jpg",
+      "sha256": "2404258d34c877aad9e1b5315ac3d156c6a527d09df634050aa84e4f5512a1fa",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/jpg/P02_LIFE_08_cozy_sofa_web.jpg",
+      "sha256": "02842a8e1069df0b0aa05a16c9f374bf11558e3d2f6c6cc699979e170e7c9bef",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/jpg/P02_LIFE_09_travel_lobby_web.jpg",
+      "sha256": "64e95856c39468f4b826fbcd7ee6152ef3ab1f39bf731dac97a4d2fa78db057c",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/jpg/P02_LIFE_10_evening_city_web.jpg",
+      "sha256": "2792a7551966a5e71ecf318a3060cc8a18bf63c6795cab06402907c496e62709",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/webp/P02_LIFE_01_cafe_window_web.webp",
+      "sha256": "a98669a4965acc5cfbe3d5fe08caea044582320b54c3382b095ef37eb18277c9",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/webp/P02_LIFE_02_city_walk_web.webp",
+      "sha256": "06b077a944a697a5fdde561fce6956a16303b9e8c491ae729e27d8350c917997",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/webp/P02_LIFE_03_home_morning_web.webp",
+      "sha256": "9a611d6a9928854e63c826ae0ebe9224e2382698165bb4b9059b514f322550f3",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/webp/P02_LIFE_04_book_cafe_web.webp",
+      "sha256": "a75a58eef75e2c25e5c40e36f350ae78aeee0ecd2e065696aa3aee5e709b0381",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/webp/P02_LIFE_05_rooftop_sunset_web.webp",
+      "sha256": "345854f3ee67fd64327ac32cdf8e0a524d36a2d281bbe6111f87bc4206d10440",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/webp/P02_LIFE_06_weekend_street_web.webp",
+      "sha256": "e2b4cf2a61109f8fec555e9ca9a8f66babc2f403c21a79c53df093b379645ae7",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/webp/P02_LIFE_07_balcony_profile_web.webp",
+      "sha256": "6c38e9233e7683afe85375dc42a93923284a948c8a015eacd96f6fa86d64bc05",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/webp/P02_LIFE_08_cozy_sofa_web.webp",
+      "sha256": "9f94e1ddfd6a25a7668d9614a4edf15696041f76f3360a194ab481566e81f6ad",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/webp/P02_LIFE_09_travel_lobby_web.webp",
+      "sha256": "093ea5d44af6fc27832e8d0c85d8eafc9015319b2a5c7c1d4c2d1ed31753ef7f",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    },
+    {
+      "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/04_web/webp/P02_LIFE_10_evening_city_web.webp",
+      "sha256": "8e9e94435eec764980c10cc07a2ca6695ebeabaca9d52465344617888adb4224",
+      "width": 1086,
+      "height": 1448,
+      "ratio_3_4": true,
+      "readable": true,
+      "candidate_kind": "other",
+      "production_approved": false
+    }
+  ],
+  "upscale_evidence": "NOT_FOUND",
+  "standard_exports": "MISSING",
+  "portfolio_watermark": "NOT_VERIFIED",
+  "role_mapping": "VISUAL_SELECTION_REQUIRED"
+}
