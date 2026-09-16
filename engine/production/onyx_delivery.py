@@ -30,20 +30,15 @@ def add_preview_mark(source: Path, target: Path, font_path: Path, order_id: str)
         image.thumbnail((1200, 1200), Image.Resampling.LANCZOS)
         overlay = Image.new("RGBA", image.size, (0, 0, 0, 0))
         draw = ImageDraw.Draw(overlay)
-        regular = ImageFont.truetype(str(font_path), 88)
-        small = ImageFont.truetype(str(font_path), 28)
-        cx, cy = image.width // 2, image.height // 2
-        title = "ONYX"
-        box = draw.textbbox((0, 0), title, font=regular)
-        draw.text((cx - (box[2] - box[0]) // 2, cy - 55), title, font=regular,
-                  fill=(246, 244, 239, 175), stroke_width=1, stroke_fill=(17, 17, 17, 80))
-        label = f"PRIVATE PREVIEW  /  ORDER {order_id}"
-        box = draw.textbbox((0, 0), label, font=small)
-        draw.text((cx - (box[2] - box[0]) // 2, cy + 48), label, font=small,
-                  fill=(246, 244, 239, 190), stroke_width=1, stroke_fill=(17, 17, 17, 90))
-        for x, y in ((cx - 360, cy - 330), (cx + 260, cy + 300)):
-            draw.text((x, y), title, font=small, fill=(246, 244, 239, 75),
-                      stroke_width=1, stroke_fill=(17, 17, 17, 35))
+        regular = ImageFont.truetype(str(font_path), 42)
+        small = ImageFont.truetype(str(font_path), 16)
+        w, h = image.size
+        for cx, cy in ((w*0.18,h*0.22),(w*0.82,h*0.22),(w*0.18,h*0.50),(w*0.82,h*0.50),(w*0.50,h*0.48)):
+            col=(246,244,239,105); sub=(246,244,239,88); r=23
+            draw.ellipse((cx-r,cy-r,cx+r,cy+r), outline=col, width=2)
+            draw.polygon([(cx,cy-14),(cx+2,cy),(cx,cy+14),(cx-2,cy)], fill=col)
+            draw.text((cx+32,cy-20), "ONYX", font=regular, fill=col, stroke_width=1, stroke_fill=(17,17,17,40))
+            draw.text((cx+32,cy+13), "PRIVATE PREVIEW", font=small, fill=sub)
         image = Image.alpha_composite(image.convert("RGBA"), overlay).convert("RGB")
         image.save(target, "JPEG", quality=82, optimize=True, progressive=True)
 
