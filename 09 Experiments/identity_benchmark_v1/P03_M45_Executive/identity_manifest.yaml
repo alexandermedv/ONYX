@@ -1,0 +1,78 @@
+{
+  "character_id": "P03_M45_Executive",
+  "identity_version": 1,
+  "status": "frozen",
+  "canonical_assets": [
+    {
+      "role": "approved_collage",
+      "path": "02_source_generations/P03_approved_character_collage_v1.png",
+      "semantic": "approved visual source for identity",
+      "width": 1145,
+      "height": 1374,
+      "file_size_bytes": 2347042,
+      "sha256": "2aea9d24e7516efac186dd2738ca2c2d1caa205a92cc60e9aac52e30da76d77d"
+    },
+    {
+      "role": "MASTER",
+      "path": "00_master/P03_identity_master_v1.png",
+      "semantic": "primary canonical identity anchor",
+      "width": 1145,
+      "height": 1374,
+      "file_size_bytes": 2000328,
+      "sha256": "10648d58e91bb3fe15cfe066d3099d1db338f0518dafee6898afaf94490c3375"
+    },
+    {
+      "role": "REF01",
+      "path": "01_references/P03_REF01.png",
+      "semantic": "frontal, face-focused clean identity reference",
+      "width": 1145,
+      "height": 1374,
+      "file_size_bytes": 2040982,
+      "sha256": "40317c785acbad3e8ec06f4eaf4775932f0d4e242f25af5261d604610b33ce7c"
+    },
+    {
+      "role": "REF02",
+      "path": "01_references/P03_REF02.png",
+      "semantic": "three-quarter alternate head geometry reference",
+      "width": 1145,
+      "height": 1374,
+      "file_size_bytes": 2297617,
+      "sha256": "56c1b58ea857a000f47c7f0259500c253c4f19793e2c87d9f09488fbed9b5ac8"
+    },
+    {
+      "role": "REF03",
+      "path": "01_references/P03_REF03.png",
+      "semantic": "distant body-proportions reference",
+      "width": 1145,
+      "height": 1374,
+      "file_size_bytes": 1891451,
+      "sha256": "e0b57dce622bd6a739824f4a426b274f9f16ec29d2682d62d929059c8e479eed"
+    },
+    {
+      "role": "REF04",
+      "path": "01_references/P03_REF04.png",
+      "semantic": "alternate pose and styling reference",
+      "width": 1145,
+      "height": 1374,
+      "file_size_bytes": 2288487,
+      "sha256": "3288f035295a9f0637f11a21f0bc9b55414e6dfac21cfa9690e9f93e98c2d2d2"
+    },
+    {
+      "role": "REF05",
+      "path": "01_references/P03_REF05.png",
+      "semantic": "diversity reference with alternate wardrobe and framing",
+      "width": 1145,
+      "height": 1374,
+      "file_size_bytes": 2211733,
+      "sha256": "e4e710631986681c52ae7636cd2c2c796fe11b69863ab5abcc7b99d80d00092f"
+    }
+  ],
+  "noncanonical_attempts": [],
+  "validation": {
+    "canonical_assets_present": 7,
+    "canonical_assets_expected": 7,
+    "all_expected_canonical_assets_exist": true,
+    "hashes_recorded": true,
+    "dimensions_recorded": true
+  }
+}

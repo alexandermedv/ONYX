@@ -1,0 +1,15 @@
+{
+  "character_id": "P03_M45_Executive",
+  "identity_version": 1,
+  "status": "frozen",
+  "asset": {
+    "role": "MASTER",
+    "path": "00_master/P03_identity_master_v1.png",
+    "semantic": "primary canonical identity anchor",
+    "width": 1145,
+    "height": 1374,
+    "file_size_bytes": 2000328,
+    "sha256": "10648d58e91bb3fe15cfe066d3099d1db338f0518dafee6898afaf94490c3375"
+  },
+  "provenance": "Generated from the approved P03 character collage using the built-in ImageGen backend; visually reviewed before identity freeze."
+}
