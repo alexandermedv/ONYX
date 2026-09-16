@@ -34,13 +34,25 @@ def grid(ps,out,labels=True,title='ONYX — EXECUTIVE'):
   if labels:d.text((x,100+(k//5)*440),a['id'],font=F(22),fill='white')
  c.save(out,quality=92)
 grid(assets,R/'05_marketing/01_contact_sheet/P03_executive_v1_contact_sheet.jpg');grid(assets,R/'05_marketing/01_contact_sheet/P03_executive_v1_contact_sheet_clean.jpg',False)
+card_copy=['Виртуальная деловая фотосессия','Один человек. Разные сцены. Стабильная внешность.','Портреты, кабинет, переговорная, движение, полный рост.','Рабочие моменты, профиль и естественные ракурсы.','Для LinkedIn, сайта, выступлений и личного бренда.','Концепция серии, подбор сцен и подготовка web-версий.','Проверяем лицо, руки, пропорции и разнообразие серии.','10 профессиональных кадров в единой деловой серии.','Ваши фотографии → виртуальная фотосессия ONYX','Virtual Photo Studio']
+def wrap(d,text,f,width):
+ words=text.split(); lines=[]; line=''
+ for word in words:
+  next_line=(line+' '+word).strip()
+  if d.textbbox((0,0),next_line,font=f)[2] <= width: line=next_line
+  else: lines.append(line); line=word
+ if line:lines.append(line)
+ return lines
 for k,a in enumerate(assets,1):
- im=Image.open(S/a['canonical_filename']).convert('RGB');c=Image.new('RGB',(1080,1350),(25,25,28));t=thumb(im,(940,1080));c.paste(t,((1080-t.width)//2,120));d=ImageDraw.Draw(c);d.text((70,45),'ONYX',font=F(34),fill='white');d.text((70,1190),['Виртуальная деловая фотосессия','Один человек. Разные сцены.','Профессиональная серия','Работа, движение, профиль','Для LinkedIn и сайта','Концепция и контроль качества','Проверяем детали','10 кадров в единой серии','Ваша виртуальная фотосессия','Virtual Photo Studio'][k-1],font=F(26),fill='white');c.save(R/f'05_marketing/02_avito_carousel/P03_executive_card_{k:02}.jpg',quality=92)
+ im=Image.open(S/a['canonical_filename']).convert('RGB');c=Image.new('RGB',(1080,1350),(18,18,21));t=thumb(im,(970,850));c.paste(t,((1080-t.width)//2,88));d=ImageDraw.Draw(c);d.text((55,30),'ONYX',font=F(38),fill='white');f=F(48);lines=wrap(d,card_copy[k-1],f,900); y=1000
+ for line in lines:d.text((85,y),line,font=f,fill='white');y+=64
+ c.save(R/f'05_marketing/02_avito_carousel/P03_executive_card_{k:02}.jpg',quality=94)
 grid([assets[i] for i in [0,2,5,9]],R/'05_marketing/04_social/P03_executive_square_collage.jpg',False);grid([assets[i] for i in [0,3,5,7,8,9]],R/'05_marketing/04_social/P03_executive_clean_grid_6.jpg',False);grid([assets[i] for i in [0,2,5,9]],R/'05_marketing/04_social/P03_executive_clean_grid_4.jpg',False)
 for name,a in [('P03_executive_portrait_showcase.jpg',assets[0]),('P03_executive_story_cover.jpg',assets[9])]:Image.open(S/a['canonical_filename']).convert('RGB').save(R/'05_marketing/04_social'/name,quality=92)
-master=R.parents[1]/'00_master/P03_identity_master_v1.png';c=Image.new('RGB',(1600,900),(25,25,28));
-for p,x,label in [(master,80,'Source identity'),(S/assets[9]['canonical_filename'],870,'Final executive series')]:
- im=thumb(Image.open(p).convert('RGB'),(620,720));c.paste(im,(x+(620-im.width)//2,100));ImageDraw.Draw(c).text((x,835),label,font=F(28),fill='white')
+collage=R.parents[1]/'02_source_generations/P03_approved_character_collage_v1.png';c=Image.new('RGB',(1600,900),(25,25,28));
+ref=Image.open(collage).convert('RGB'); w,h=ref.size; ref=ref.crop((w//2+8,8,w-8,h//2-8))
+for p,x,label in [(ref,80,'Source identity concept — smart casual'),(S/assets[9]['canonical_filename'],870,'Final executive series')]:
+ im=thumb(p if isinstance(p,Image.Image) else Image.open(p).convert('RGB'),(620,720));c.paste(im,(x+(620-im.width)//2,100));ImageDraw.Draw(c).text((x,835),label,font=F(28),fill='white')
 c.save(R/'05_marketing/03_before_after/P03_identity_to_executive.jpg',quality=92)
 copy={'avito_description_v1.md':'# Виртуальная деловая фотосессия\n\nПрофессиональная серия для сайта, LinkedIn, резюме и личного бренда. Разные сцены и ракурсы формируют цельный визуальный образ.','website_collection_v1.md':'# Executive collection\n\nПремиальная деловая серия с естественным характером, рабочими сценами и уверенной подачей.','short_social_caption_v1.md':'Деловой образ, который работает в разных ситуациях.','portfolio_caption_v1.md':'Executive v1 — серия портретов, рабочих сцен и полноростовых кадров в единой профессиональной стилистике.'}
 for n,t in copy.items():(R/'05_marketing/05_copy'/n).write_text(t+'\n',encoding='utf8')
