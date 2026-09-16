@@ -9,6 +9,7 @@
   "portfolio_ready": false,
   "blockers": [
     "AI upscale has not run; no upscale provider/output lineage exists.",
+    "A controlled ONYX watermark asset is not approved; clean marketing layouts are not portfolio-watermark previews.",
     "Paid delivery exports remain blocked until upscale QA completes."
   ],
   "finals": [
@@ -245,34 +246,34 @@
   ],
   "marketing": [
     {
-      "file": "13 Production/Portfolio/P02/Business_V1/marketing_watermarked/ONYX_P02_BUSINESS_COVER.jpg",
-      "sha256": "78a855e8426ee264cfa1812b7a036f1f216a6082e6f58ff02878a29c5a919864",
-      "watermark": "ONYX",
-      "status": "PORTFOLIO_PREVIEW"
+      "file": "13 Production/Portfolio/P02/Business_V1/marketing_preview/ONYX_P02_BUSINESS_COVER.jpg",
+      "sha256": "ffcd2a6e021d4edc4e1fd31159ae314ecde6097ea8610267ea86b7fe24c05162",
+      "watermark": null,
+      "status": "CLEAN_LAYOUT_PREVIEW"
     },
     {
-      "file": "13 Production/Portfolio/P02/Business_V1/marketing_watermarked/ONYX_P02_BUSINESS_BEFORE_AFTER.jpg",
-      "sha256": "53bc75a28a950878f37df458233626533645171e386eac59920e960174747e5a",
-      "watermark": "ONYX",
-      "status": "PORTFOLIO_PREVIEW"
+      "file": "13 Production/Portfolio/P02/Business_V1/marketing_preview/ONYX_P02_BUSINESS_BEFORE_AFTER.jpg",
+      "sha256": "0d1c4650ba967802afd437eb838c15af54e19769973abf5782ad890e812a8183",
+      "watermark": null,
+      "status": "CLEAN_LAYOUT_PREVIEW"
     },
     {
-      "file": "13 Production/Portfolio/P02/Business_V1/marketing_watermarked/ONYX_P02_BUSINESS_COLLAGE_4.jpg",
-      "sha256": "a7b0c0092c9e6f6e3c2f16f9382d006870d5afeb0b10e122fd54ee858e6a3dbc",
-      "watermark": "ONYX",
-      "status": "PORTFOLIO_PREVIEW"
+      "file": "13 Production/Portfolio/P02/Business_V1/marketing_preview/ONYX_P02_BUSINESS_COLLAGE_4.jpg",
+      "sha256": "f4e0f25074816746001d428289e98bb6dcbd85a2b142b31b70162d922014242c",
+      "watermark": null,
+      "status": "CLEAN_LAYOUT_PREVIEW"
     },
     {
-      "file": "13 Production/Portfolio/P02/Business_V1/marketing_watermarked/ONYX_P02_BUSINESS_COLLAGE_6.jpg",
-      "sha256": "233e6fb2265c846e980625b01a0b485bd1af7b3f91daaf737fa557a463007066",
-      "watermark": "ONYX",
-      "status": "PORTFOLIO_PREVIEW"
+      "file": "13 Production/Portfolio/P02/Business_V1/marketing_preview/ONYX_P02_BUSINESS_COLLAGE_6.jpg",
+      "sha256": "33a34e9b8b028ad909c580c1c4ddeda2a2d07229cd7c759b434b44e874c23c83",
+      "watermark": null,
+      "status": "CLEAN_LAYOUT_PREVIEW"
     },
     {
-      "file": "13 Production/Portfolio/P02/Business_V1/marketing_watermarked/ONYX_P02_BUSINESS_CONTACT_SHEET.jpg",
-      "sha256": "766ef4735935a0820f1dea7f3e0dc31f948be4dc8ae8381adc3e5e227e95a23d",
-      "watermark": "ONYX",
-      "status": "PORTFOLIO_PREVIEW"
+      "file": "13 Production/Portfolio/P02/Business_V1/marketing_preview/ONYX_P02_BUSINESS_CONTACT_SHEET.jpg",
+      "sha256": "58599d2a0086ce057a0ba29b68d33c497bd77e212a37038fb13a0ff15fcde9cd",
+      "watermark": null,
+      "status": "CLEAN_LAYOUT_PREVIEW"
     }
   ]
 }
