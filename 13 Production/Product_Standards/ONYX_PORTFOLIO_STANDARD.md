@@ -48,3 +48,12 @@ Client delivery uses `ONYX_01.jpg` through `ONYX_10.jpg`.
 - cover, before/after, collage and contact sheet exist.
 
 Canonical experimental images are referenced by promotion manifest. They are not renamed or overwritten to conform to this naming standard.
+
+## Footer placement rule (v1.1)
+
+- Footer is a contained lower field, 230 px in a 1080x1350 portfolio frame (about 17% of height).
+- The source portrait is fitted with 	humbnail inside the upper field; never use cover/crop when it can remove a head or face.
+- Keep the complete head and hair visible with safe space above; side margins are acceptable.
+- Footer may overlap only the lower image boundary through a controlled transition; it must not move the portrait upward or crop the subject.
+- Reject any export where a face, head, or critical body area is clipped by the footer.
+
