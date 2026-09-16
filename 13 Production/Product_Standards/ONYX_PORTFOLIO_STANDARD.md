@@ -66,3 +66,10 @@ Canonical experimental images are referenced by promotion manifest. They are not
 - Stone footer texture is anchored to the lower field and does not resize the photo field.
 - Logo lockup stays within the footer safe area; never stretch the monogram vertically.
 
+
+### Footer lockup alignment
+
+- The top of the monogram ring aligns with the horizontal rule above the copy.
+- The bottom of the ONYX wordmark aligns with the bottom of the PORTFOLIO PREVIEW line.
+- Logo and copy share one fixed footer alignment zone; do not stretch or independently offset either element.
+
