@@ -43,6 +43,25 @@ def add_preview_mark(source: Path, target: Path, font_path: Path, order_id: str)
         image.save(target, "JPEG", quality=82, optimize=True, progressive=True)
 
 
+def delivery_filename(master: Path) -> str:
+    return master.name.replace("_00001_", "").replace(".png", ".jpg")
+
+
+def discover_masters(package: Path) -> list[Path]:
+    candidate_dirs = (
+        package / "upscale_master",
+        package / "upscale_smoke",
+        package / "upscale_p01_v1",
+        package / "upscale_p02_v1",
+        package / "upscale_p03_v1",
+    )
+    by_delivery_name: dict[str, Path] = {}
+    for directory in candidate_dirs:
+        for master in sorted(directory.glob("ONYX_*.png")):
+            by_delivery_name.setdefault(delivery_filename(master), master)
+    return [by_delivery_name[name] for name in sorted(by_delivery_name)]
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("package", type=Path, help="Business_V1 package directory")
@@ -50,20 +69,22 @@ def main() -> int:
     parser.add_argument("--font", type=Path, required=True)
     args = parser.parse_args()
     package = args.package
-    masters = sorted((package / "upscale_master").glob("*.png"))
-    if not masters:
-        masters = sorted((package / "upscale_p03_v1").glob("*.png")) + sorted((package / "upscale_p01_v1").glob("*.png")) + sorted((package / "upscale_p02_v1").glob("*.png"))
+    masters = discover_masters(package)
     if not masters:
         raise SystemExit("No approved upscale PNG masters found")
+    if len(masters) != 10:
+        raise SystemExit(f"Expected 10 approved masters, found {len(masters)}")
     delivery = package / "client_delivery"
     dirs = {"client_jpeg_2048": delivery / "client_jpeg_2048", "web_jpeg_1600": delivery / "web_jpeg_1600", "prepayment_preview": delivery / "prepayment_preview"}
     for directory in dirs.values(): directory.mkdir(parents=True, exist_ok=True)
     records = []
     for master in masters:
-        filename = master.name.replace("_00001_", "").replace(".png", ".jpg")
+        filename = delivery_filename(master)
         save_jpeg(master, dirs["client_jpeg_2048"] / filename, 2048, 92)
         save_jpeg(master, dirs["web_jpeg_1600"] / filename, 1600, 88)
-        preview_source = (package / "portfolio_framed_preview" / filename) if (package / "portfolio_framed_preview" / filename).exists() else (dirs["web_jpeg_1600"] / filename)
+        preview_source = package / "portfolio_framed_preview" / filename
+        if not preview_source.exists():
+            raise SystemExit(f"Approved framed preview with footer is missing: {preview_source}")
         add_preview_mark(preview_source, dirs["prepayment_preview"] / filename, args.font, args.order_id)
         records.append({"master": master.as_posix(), "master_sha256": sha256(master), "client_jpeg_2048": (dirs["client_jpeg_2048"] / filename).as_posix(), "web_jpeg_1600": (dirs["web_jpeg_1600"] / filename).as_posix(), "prepayment_preview": (dirs["prepayment_preview"] / filename).as_posix(), "watermark": f"ONYX / PRIVATE PREVIEW / ORDER {args.order_id}"})
     (delivery / "CLIENT_DELIVERY_MANIFEST_V1.json").write_text(json.dumps({"schema": "onyx.production.client_delivery", "order_id": args.order_id, "records": records}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
