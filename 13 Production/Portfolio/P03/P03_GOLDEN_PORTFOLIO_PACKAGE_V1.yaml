@@ -66,4 +66,4 @@ role_mapping_blockers:
 production_exports:
   status: SOURCE_RESOLUTION_READY
   manifest: 13 Production/Portfolio/P03/Business_V1/PORTFOLIO_EXPORT_MANIFEST.json
-  note: Standard 3:4, watermarked portfolio-preview derivatives exist. They are not paid delivery files and do not satisfy the AI-upscale gate.
+  note: Standard 3:4 clean layout previews exist. A portfolio watermark remains blocked until controlled logo artwork is approved. They are not paid delivery files and do not satisfy the AI-upscale gate.
