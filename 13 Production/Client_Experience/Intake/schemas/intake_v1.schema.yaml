@@ -54,10 +54,11 @@ fields:
       required: true
     - canonical: reference_qa_status
       label_ru: Статус проверки референсов
-      description_ru: Итог внутренней проверки до производства.
+      description_ru: Итог внутренней проверки до производства; null до получения референсов и запуска QA.
       type: enum
       allowed_values_ref: reference_qa_status
       required: true
+      nullable: true
     - canonical: reference_qa_checks
       label_ru: Проверки референсов
       description_ru: Результаты контрольного списка внутренней проверки.
@@ -93,15 +94,15 @@ fields:
       required: false
   preferences:
     - canonical: primary_use
-      label_ru: Основная цель
-      description_ru: Для чего нужны фотографии.
+      label_ru: Цель фотосессии
+      description_ru: Назначение и случаи использования фотографий в одном ответе.
       type: string
       required: true
     - canonical: use_places
-      label_ru: Где будут использоваться фотографии
-      description_ru: Каналы и площадки использования.
+      label_ru: Места использования (Premium)
+      description_ru: Дополнительный контекст о каналах и площадках только для Premium Creative Profile.
       type: array_of_strings
-      required: false
+      required_for_products: [PREMIUM]
     - canonical: desired_style
       label_ru: Желаемый стиль
       description_ru: Короткое описание образа словами клиента.
@@ -171,6 +172,7 @@ fields:
       type: enum
       allowed_values_ref: service_processing_consent
       required: true
+      nullable: true
     - canonical: portfolio_consent
       label_ru: Согласие на портфолио
       description_ru: Публикация возможна только при GRANTED; значение по умолчанию DENIED.
@@ -178,6 +180,7 @@ fields:
       allowed_values_ref: portfolio_consent
       default: DENIED
       required: true
+      nullable: true
     - canonical: marketing_consent
       label_ru: Согласие на маркетинговые материалы
       description_ru: Независимо от согласия на портфолио.
@@ -185,6 +188,7 @@ fields:
       allowed_values_ref: marketing_consent
       default: NOT_ASKED
       required: true
+      nullable: true
   metadata:
     - canonical: intake_version
       label_ru: Версия intake

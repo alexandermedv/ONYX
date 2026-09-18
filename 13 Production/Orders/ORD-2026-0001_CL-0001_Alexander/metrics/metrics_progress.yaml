@@ -1,0 +1,26 @@
+schema_version: 1
+order_id: ORD-2026-0001
+intake_completed: true
+references_received: true
+reference_qa:
+  started: true
+  completed: true
+  status: PASS_WITH_NOTES
+scene_planning:
+  started: true
+  completed: true
+production_generation:
+  started: false
+  completed: false
+time:
+  intake_minutes: null
+  reference_upload_minutes: null
+  reference_qa_minutes: null
+  scene_planning_minutes: null
+  generation_minutes: null
+  manual_review_minutes: null
+  repair_minutes: null
+  collection_book_minutes: null
+  delivery_minutes: null
+  total_manual_minutes: null
+  total_elapsed_minutes: null

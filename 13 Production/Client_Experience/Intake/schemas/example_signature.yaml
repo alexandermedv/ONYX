@@ -34,8 +34,7 @@ appearance:
   must_keep: [Длина волос до плеч, Родинка над правой бровью]
   glasses_status: Очки не использовать.
 preferences:
-  primary_use: Страница эксперта и деловые публикации
-  use_places: [Личный сайт, Публикации]
+  primary_use: Страница эксперта и деловые публикации.
   desired_style: Уверенно, открыто, современно.
   style_intensity: POLISHED
   clothing_style: SMART_CASUAL

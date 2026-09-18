@@ -1,0 +1,28 @@
+schema_version: 1
+order_id: ORD-2026-0001
+reference_manifest: ../01_references/reference_manifest.yaml
+reviewed_reference_ids: [REF_01, REF_02, REF_03, REF_04, REF_05, REF_06]
+qa_status: PASS_WITH_NOTES
+canonical_reference_recommendation: PROMOTE_LATER
+checks:
+  face_visibility: PASS
+  identity_consistency: PASS
+  currentness: WARN
+  angle_variety: PASS
+  lighting: PASS
+  filter_status: PASS
+  image_quality: PASS
+  hairstyle_status: PASS
+  facial_hair_status: PASS
+  glasses_status: PASS
+  body_information: PASS
+  preference_conflicts: PASS
+notes:
+  - All six images appear to show the same adult man with consistent visible identity cues.
+  - The set includes clear outdoor and studio-lit facial views plus three business-attire studio references.
+  - Clean-shaven appearance is consistent with the intake requirement to avoid a beard.
+  - Capture dates are not supplied in the files; currentness is accepted as client-provided but cannot be independently dated.
+  - Two near-full-body studio references improve posture and body information; outfit diversity remains intentionally limited to compatible business looks.
+decision: >-
+  Sufficient for Signature Business production planning. Keep full-body framing conservative
+  and use near-full-body rather than requiring a full-body scene.
