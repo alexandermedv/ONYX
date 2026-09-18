@@ -1,0 +1,86 @@
+version: 1
+status: launch_product_definition
+currency: RUB
+pricing_note: "Launch prices; Premium price requires unit-economics review after real orders."
+common:
+  identity_consistency: true
+  production_qa: true
+  technical_correction_included: true
+  high_resolution_originals: true
+  delivery_layer_required: true
+  direct_minio_access: false
+products:
+  preview:
+    client_name: "ONYX Preview"
+    positioning: "Personal test frame ONYX"
+    price_rub: 900
+    final_photos: 1
+    collection_selection: single_approved_collection
+    primary_look: 1
+    creative_profile: false
+    concept_approval: false
+    collection_book: none
+    motion: false
+    social_ready_exports: false
+    client_revision_policy: technical_only
+    upgrade_credit_rub: 900
+  signature:
+    client_name: "ONYX Signature"
+    positioning: "Personal photoshoot in a chosen collection"
+    price_rub: 3000
+    final_photos: 10
+    expected_looks: "2-3"
+    expected_visual_scenes: "4-6; quality-adjusted, not contractual"
+    creative_model: standardized_collection
+    creative_profile: false
+    concept_approval: false
+    collection_book: standard
+    motion: false
+    social_ready_exports: false
+    onyx_selection: true
+    client_revision_policy: "1 launch-policy round; limited scope"
+    preview_upgrade_remaining_rub: 2100
+  premium:
+    client_name: "ONYX Premium"
+    positioning: "Personalized visual story"
+    price_rub: 5000
+    final_photos: 20
+    expected_looks: "4-5"
+    expected_visual_scenes: "8-12; quality-adjusted, not contractual"
+    creative_model: personalized_visual_story
+    creative_profile: true
+    concept_approval: true
+    premium_creative_brief: true
+    visual_chapters: true
+    collection_book: extended
+    motion: true
+    social_ready_exports: true
+    onyx_selection: true
+    personal_style_recommendation: true
+    recommended_use_guidance: true
+    client_revision_policy: "2 launch-policy rounds; broader scope"
+    preview_upgrade_remaining_rub: 4100
+automation_fields:
+  order_statuses:
+    - LEAD
+    - WAITING_FOR_PAYMENT
+    - WAITING_FOR_REFERENCES
+    - REFERENCE_REVIEW
+    - READY_FOR_PRODUCTION
+    - IN_PRODUCTION
+    - IN_QA
+    - WAITING_FOR_CLIENT
+    - IN_REVISION
+    - FINAL_QA
+    - READY_FOR_DELIVERY
+    - DELIVERED
+    - CLOSED
+  internal_pricing_fields:
+    - inference_cost
+    - manual_minutes
+    - repair_cost
+    - motion_cost
+    - delivery_cost
+    - total_variable_cost
+    - effective_hourly_margin
+    - gross_margin
