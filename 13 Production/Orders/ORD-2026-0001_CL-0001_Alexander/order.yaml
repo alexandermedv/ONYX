@@ -5,7 +5,7 @@ client_display_name: Alexander
 client_slug: Alexander
 product: SIGNATURE
 collection: BUSINESS
-status: READY_FOR_COLLECTION_BOOK
+status: READY_FOR_DELIVERY
 test_order: true
 paid_order: false
 source: INTERNAL_DRY_RUN
@@ -37,4 +37,10 @@ third_replacement_round_status: COMPLETED
 fourth_replacement_round_status: COMPLETED
 canonical_reference_recommendation: PROMOTE_LATER
 created_at: 2026-09-18T00:00:00+03:00
-updated_at: 2026-09-18T00:00:00+03:00
+updated_at: 2026-09-18T12:00:00+03:00
+collection_book_version: v2
+collection_book_owner_review: PASS
+approved_for_delivery: true
+collection_book_pdf: 08_collection_book/ORD-2026-0001_ALEXANDER_BUSINESS_COLLECTION_BOOK_v2.pdf
+collection_book_pdf_sha256: e6baa66d665bb95ab4b729bec7a3f5308c55ae21f5c960951399e2e9402e454d
+collection_book_page_count: 15

@@ -1,0 +1,352 @@
+{
+  "schema": "onyx.collection_book.v1",
+  "status": "AWAITING_DESIGN_APPROVAL",
+  "order_id": "ORD-2026-0001",
+  "book_version": "2.0",
+  "created_at": "2026-09-18",
+  "source_data_sha256": "bb9976284a4f58f7dec05596f1fd2dfc1bed9931e7c5eae55d34ca4d36509ecd",
+  "renderer_sha256": "aa7a9bf31e4d6d919c0b627be74e3c32f654966d1a23239482f64d6ca1d2ba3f",
+  "style_sha256": "2041bdc79e50fa55209a6ea694dfa9575d1e2f36fc10a2e412597298c8db2524",
+  "brand_assets": [
+    {
+      "path": "13 Production/Brand/Logo/ONYX_WORDMARK_EDITORIAL_V1_CHAMPAGNE.png",
+      "sha256": "7f3af61a153b62d778818911eadf2bd1642ac3d0d3aed15a65b0fd6e009b547b"
+    },
+    {
+      "path": "13 Production/Brand/Logo/Presentations/ONYX_MONOGRAM_ONYX_SILK_PRESENTATION_V1.png",
+      "sha256": "ef1d9bd88d7a4c1a09e23f49618bae03b1fb117d8a4e0dcac12769c045dca55d"
+    },
+    {
+      "path": "13 Production/Brand/Typography/Manrope-Variable.ttf",
+      "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6"
+    },
+    {
+      "path": "13 Production/Brand/Typography/CormorantGaramond-Variable.ttf",
+      "sha256": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0"
+    }
+  ],
+  "pdf": {
+    "file": "ORD-2026-0001_ALEXANDER_BUSINESS_COLLECTION_BOOK_v2.pdf",
+    "sha256": "e6baa66d665bb95ab4b729bec7a3f5308c55ae21f5c960951399e2e9402e454d",
+    "bytes": 4476738,
+    "pages": 15
+  },
+  "sources": [
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_10.png",
+      "absolute_path": "D:\\AI\\ONYX\\13 Production\\Orders\\ORD-2026-0001_CL-0001_Alexander\\07_final\\ONYX_BUSINESS_10.png",
+      "sha256": "7398089bfd86734d95e991ab5494b554891cfef55dfd8bd1f199caf2735f8b56"
+    },
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_01.png",
+      "absolute_path": "D:\\AI\\ONYX\\13 Production\\Orders\\ORD-2026-0001_CL-0001_Alexander\\07_final\\ONYX_BUSINESS_01.png",
+      "sha256": "2b332e20cfdf4a37830d635b85695db63d68f5c7d2f0bc95de35848e26501532"
+    },
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_02.png",
+      "absolute_path": "D:\\AI\\ONYX\\13 Production\\Orders\\ORD-2026-0001_CL-0001_Alexander\\07_final\\ONYX_BUSINESS_02.png",
+      "sha256": "07e1863382985ca0e2a776e1488a4c961b151a68d428e2a7162064d8f91fa477"
+    },
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_03.png",
+      "absolute_path": "D:\\AI\\ONYX\\13 Production\\Orders\\ORD-2026-0001_CL-0001_Alexander\\07_final\\ONYX_BUSINESS_03.png",
+      "sha256": "ab0aa0f00c8274af6f59a276112644b514eb5a75eb79dd691051ed36c19984d2"
+    },
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_04.png",
+      "absolute_path": "D:\\AI\\ONYX\\13 Production\\Orders\\ORD-2026-0001_CL-0001_Alexander\\07_final\\ONYX_BUSINESS_04.png",
+      "sha256": "39d2f8fb4a45d2d121b4f8467a3473ccfa0bdba68502101588a55c6e7fec3290"
+    },
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_05.png",
+      "absolute_path": "D:\\AI\\ONYX\\13 Production\\Orders\\ORD-2026-0001_CL-0001_Alexander\\07_final\\ONYX_BUSINESS_05.png",
+      "sha256": "e959324f8f0953c10eca394d4cdf0825ef97cfa08b57f26ef2d382f8d40bb6ec"
+    },
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_06.png",
+      "absolute_path": "D:\\AI\\ONYX\\13 Production\\Orders\\ORD-2026-0001_CL-0001_Alexander\\07_final\\ONYX_BUSINESS_06.png",
+      "sha256": "a9db1806c0de5108d68b856be221cc960334311306847db116fa68966430a0bd"
+    },
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_07.png",
+      "absolute_path": "D:\\AI\\ONYX\\13 Production\\Orders\\ORD-2026-0001_CL-0001_Alexander\\07_final\\ONYX_BUSINESS_07.png",
+      "sha256": "968457abc9011507fdc70b5f652d2a01cdc7e6e42145eecd0480476e6cfbd5e3"
+    },
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_08.png",
+      "absolute_path": "D:\\AI\\ONYX\\13 Production\\Orders\\ORD-2026-0001_CL-0001_Alexander\\07_final\\ONYX_BUSINESS_08.png",
+      "sha256": "846a72ce93875356afdc51362d15577a60f6e3f4e5d9091db1a1e155105a6994"
+    },
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_09.png",
+      "absolute_path": "D:\\AI\\ONYX\\13 Production\\Orders\\ORD-2026-0001_CL-0001_Alexander\\07_final\\ONYX_BUSINESS_09.png",
+      "sha256": "0419018d844f8223b594a43413e55db75bb63d7731a24601851ad2337c171b46"
+    }
+  ],
+  "placements": [
+    {
+      "page": 1,
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_10.png",
+      "reason": "intentional cover reuse",
+      "rect": [
+        293.33333333333337,
+        250.0,
+        493.3333333333333,
+        740.0
+      ],
+      "embedded_pixels": [
+        1024,
+        1536
+      ],
+      "crop": false
+    },
+    {
+      "page": 5,
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_10.png",
+      "reason": "story",
+      "rect": [
+        166.66666666666669,
+        230.0,
+        746.6666666666666,
+        1120.0
+      ],
+      "embedded_pixels": [
+        1024,
+        1536
+      ],
+      "crop": false
+    },
+    {
+      "page": 6,
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_01.png",
+      "reason": "story",
+      "rect": [
+        152.5,
+        330.0,
+        775.0,
+        930.0
+      ],
+      "embedded_pixels": [
+        1145,
+        1374
+      ],
+      "crop": false
+    },
+    {
+      "page": 7,
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_02.png",
+      "reason": "story",
+      "rect": [
+        398.1666666666667,
+        365.0,
+        566.6666666666666,
+        850.0
+      ],
+      "embedded_pixels": [
+        1024,
+        1536
+      ],
+      "crop": false
+    },
+    {
+      "page": 8,
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_03.png",
+      "reason": "story",
+      "rect": [
+        72.0,
+        386.0,
+        456.0,
+        608.0
+      ],
+      "embedded_pixels": [
+        1086,
+        1448
+      ],
+      "crop": false
+    },
+    {
+      "page": 8,
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_04.png",
+      "reason": "story",
+      "rect": [
+        552.0,
+        348.0,
+        456.0,
+        684.0
+      ],
+      "embedded_pixels": [
+        1024,
+        1536
+      ],
+      "crop": false
+    },
+    {
+      "page": 9,
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_05.png",
+      "reason": "story",
+      "rect": [
+        166.66666666666669,
+        230.0,
+        746.6666666666666,
+        1120.0
+      ],
+      "embedded_pixels": [
+        1024,
+        1536
+      ],
+      "crop": false
+    },
+    {
+      "page": 10,
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_06.png",
+      "reason": "story",
+      "rect": [
+        398.1666666666667,
+        365.0,
+        566.6666666666666,
+        850.0
+      ],
+      "embedded_pixels": [
+        1024,
+        1536
+      ],
+      "crop": false
+    },
+    {
+      "page": 11,
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_07.png",
+      "reason": "story",
+      "rect": [
+        230.0,
+        330.0,
+        620.0,
+        930.0
+      ],
+      "embedded_pixels": [
+        1024,
+        1536
+      ],
+      "crop": false
+    },
+    {
+      "page": 12,
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_08.png",
+      "reason": "story",
+      "rect": [
+        398.1666666666667,
+        365.0,
+        566.6666666666666,
+        850.0
+      ],
+      "embedded_pixels": [
+        1024,
+        1536
+      ],
+      "crop": false
+    },
+    {
+      "page": 13,
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_09.png",
+      "reason": "story",
+      "rect": [
+        166.66666666666669,
+        230.0,
+        746.6666666666666,
+        1120.0
+      ],
+      "embedded_pixels": [
+        1024,
+        1536
+      ],
+      "crop": false
+    },
+    {
+      "page": 14,
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_01.png",
+      "reason": "intentional selection reuse",
+      "rect": [
+        303.3333333333333,
+        445.0,
+        633.3333333333334,
+        760.0
+      ],
+      "embedded_pixels": [
+        1145,
+        1374
+      ],
+      "crop": false
+    }
+  ],
+  "previews": [
+    {
+      "file": "preview\\page-01.jpg",
+      "sha256": "9b95e2288b8957b9970d09efb0402629aa908847abc425f2e9aee0f97238c261"
+    },
+    {
+      "file": "preview\\page-02.jpg",
+      "sha256": "d499f52a8e3077a316c26a760151ea281d77e851852addf313dc2f0fcc34f08d"
+    },
+    {
+      "file": "preview\\page-03.jpg",
+      "sha256": "22a8794c747127faac8348baf11b968cf7fc049ea22ecdeb780a8ac237183518"
+    },
+    {
+      "file": "preview\\page-04.jpg",
+      "sha256": "ec8af7c7bf044c135ba1ac6af4e177e7039e32d82b82e1ff3caad9aec5b88a7f"
+    },
+    {
+      "file": "preview\\page-05.jpg",
+      "sha256": "7266fb1b7b3ab4ed9ad700352016e78ea352da2a422bb47f010d9972058fbb28"
+    },
+    {
+      "file": "preview\\page-06.jpg",
+      "sha256": "11789c9339da93e4e4ad95ad0d0c2cefe09fd4b8d1042ab914ef5de12c43f4d6"
+    },
+    {
+      "file": "preview\\page-07.jpg",
+      "sha256": "70b856bdd73b3ac1857d2ac1bb97a758257bc10c3015ec793d5e474222878570"
+    },
+    {
+      "file": "preview\\page-08.jpg",
+      "sha256": "236de5a1ee0777f67ba4a0ba192a878a62781fa2c16453f41bcc7e5c6b4296b7"
+    },
+    {
+      "file": "preview\\page-09.jpg",
+      "sha256": "7105403facb5cb8bf1cea50a935523c67f3c7a1d93a9b318c14245bf9234ee9a"
+    },
+    {
+      "file": "preview\\page-10.jpg",
+      "sha256": "a69db9eb0c2d9815eca1fbb2f3fdddd17d3f612deaf1405448643ed064ce21c7"
+    },
+    {
+      "file": "preview\\page-11.jpg",
+      "sha256": "ef54a5858cb7feb19ead5e23c57a615cef2ecaee1995ac00d3cea81e0f42240f"
+    },
+    {
+      "file": "preview\\page-12.jpg",
+      "sha256": "00c7fcced21e1919510c00e31d73a2a58a1afc10d647128b46a7ae73c27a5ea9"
+    },
+    {
+      "file": "preview\\page-13.jpg",
+      "sha256": "90e5faa94285cccd3d168b2e789f9a2badd9fd3c809a809a1e3f286bd796c32e"
+    },
+    {
+      "file": "preview\\page-14.jpg",
+      "sha256": "e4e91fd607c7733e62cfb43e3c3421d873894cee9ce5cbd3e5f447b34ca35128"
+    },
+    {
+      "file": "preview\\page-15.jpg",
+      "sha256": "7056b55c5531d2fd9eec2a42340733f7725de90deda143403990f68d75dcd65a"
+    }
+  ],
+  "qa": "PASS",
+  "previous_version": "1.0",
+  "change_summary": "Editorial caption pass: page 4 wording clarified; BUSINESS_06 caption set to Другой ракурс; BUSINESS_08 caption set to Рабочие детали; semantic caption metadata added.",
+  "qa_caption_semantics": "PASS",
+  "collection_book_version": "v2",
+  "collection_book_owner_review": "PASS",
+  "approved_for_delivery": true,
+  "cover": "BUSINESS_10",
+  "onyx_selection": "BUSINESS_01",
+  "page_count": 15
+}

@@ -2,38 +2,27 @@
 
 **Order:** `ORD-2026-0001`
 **Client:** Alexander
-**Client ID:** `CL-0001`
 **Product:** ONYX Signature
 **Collection:** Business
-**Status:** `READY_FOR_COLLECTION_BOOK`
-
-## Goal
-
-Универсальное использование — резюме и социальные сети.
+**Status:** `READY_FOR_DELIVERY`
 
 ## Current stage
 
-Automated production, collection QA, and human review are complete. All 10 finals are approved; Collection Book generation is the next step.
+Production complete. Human Review: `PASS` (10/10 finals approved). Collection Book v2 owner/design review: `PASS`. Delivery is pending.
 
-## Completed steps
+## Collection Book approval
 
-1. Production client entity created.
-2. Production order created.
-3. Signature Intake recorded from supplied answers.
-4. Six client-provided references preserved with SHA-256 manifest.
-5. Reference QA completed: `PASS_WITH_NOTES`.
-6. Signature Business Scene Plan completed.
+- Version: `v2`
+- PDF: `08_collection_book/ORD-2026-0001_ALEXANDER_BUSINESS_COLLECTION_BOOK_v2.pdf`
+- Pages: `15`
+- QA: `PASS`
+- Cover: `BUSINESS_10`
+- ONYX Selection: `BUSINESS_01`
+- PDF SHA256: `e6baa66d665bb95ab4b729bec7a3f5308c55ae21f5c960951399e2e9402e454d`
+- Owner/design review: `PASS`
 
-## Historical production baseline
-
-This dry run generated 20 candidates and selected 10 finals. It used two candidates per scene as an experimental baseline; this is not the production default going forward.
-
-## Blocked reason
-
-Human Review: `PASS` — 10/10 finals approved. ONYX Selection: `BUSINESS_01`; cover candidate: `BUSINESS_10`.
+PDF and previews remain private runtime assets and are excluded from Git.
 
 ## Next step
 
-Next step: Collection Book generation.
-
-Do not generate, upload to MinIO or deliver before an explicit next-phase instruction.
+Prepare delivery package. Do not upload to MinIO or deliver until the delivery step is explicitly initiated.

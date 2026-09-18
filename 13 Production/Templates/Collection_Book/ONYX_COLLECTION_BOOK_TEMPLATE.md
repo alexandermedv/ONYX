@@ -44,3 +44,13 @@ Output must not already contain generated book files. Rebuild to a new version d
 ## Reproducibility limits
 
 Deterministic PDF metadata via ReportLab invariant mode. Exact bytes also depend on ReportLab/Pillow/font/Poppler versions; preserve those with the QA report. Source approval is external to this template. Historical stale manifests are preserved and reported, not repaired by the renderer.
+
+## Semantic caption contract
+
+Each `photos[]` entry keeps its editable caption with the approved source image. The optional `page_caption` object records the rendered text, scene semantics and editability:
+
+```json
+"page_caption": {"text": "Рабочие детали", "source_scene": "work-detail portrait", "editable": true}
+```
+
+Captions must describe the actual image and scene role rather than a page-number slot. QA must include `caption matches actual image content` and must be repeated whenever a photo is replaced.

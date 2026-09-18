@@ -1,0 +1,154 @@
+{
+  "order_id": "ORD-2026-0001",
+  "client_display_name": "Alexander",
+  "collection_name": "Business",
+  "collection_subtitle": "Деловая фотосессия для уверенного профессионального образа",
+  "product_tier": "Signature",
+  "sample": false,
+  "cover_image": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_10.png",
+  "hero_image": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_10.png",
+  "photos": [
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_10.png",
+      "sha256": "7398089bfd86734d95e991ab5494b554891cfef55dfd8bd1f199caf2735f8b56",
+      "caption": "Внимание к делу",
+      "page_caption": {
+        "text": "Внимание к делу",
+        "source_scene": "editorial hero",
+        "editable": true
+      }
+    },
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_01.png",
+      "sha256": "2b332e20cfdf4a37830d635b85695db63d68f5c7d2f0bc95de35848e26501532",
+      "caption": "Завершённый образ",
+      "page_caption": {
+        "text": "Завершённый образ",
+        "source_scene": "cover hero",
+        "editable": true
+      }
+    },
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_02.png",
+      "sha256": "07e1863382985ca0e2a776e1488a4c961b151a68d428e2a7162064d8f91fa477",
+      "caption": "Первое впечатление",
+      "page_caption": {
+        "text": "Первое впечатление",
+        "source_scene": "hero portrait",
+        "editable": true
+      }
+    },
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_03.png",
+      "sha256": "ab0aa0f00c8274af6f59a276112644b514eb5a75eb79dd691051ed36c19984d2",
+      "caption": "У окна",
+      "page_caption": {
+        "text": "У окна",
+        "source_scene": "window portrait",
+        "editable": true
+      }
+    },
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_04.png",
+      "sha256": "39d2f8fb4a45d2d121b4f8467a3473ccfa0bdba68502101588a55c6e7fec3290",
+      "caption": "Свет и пространство",
+      "page_caption": {
+        "text": "Свет и пространство",
+        "source_scene": "waist-up portrait",
+        "editable": true
+      }
+    },
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_05.png",
+      "sha256": "e959324f8f0953c10eca394d4cdf0825ef97cfa08b57f26ef2d382f8d40bb6ec",
+      "caption": "В рабочем ритме",
+      "page_caption": {
+        "text": "В рабочем ритме",
+        "source_scene": "paired work scene",
+        "editable": true
+      }
+    },
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_06.png",
+      "sha256": "a9db1806c0de5108d68b856be221cc960334311306847db116fa68966430a0bd",
+      "caption": "Другой ракурс",
+      "page_caption": {
+        "text": "Другой ракурс",
+        "source_scene": "side-angle portrait",
+        "editable": true
+      }
+    },
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_07.png",
+      "sha256": "968457abc9011507fdc70b5f652d2a01cdc7e6e42145eecd0480476e6cfbd5e3",
+      "caption": "Пауза между встречами",
+      "page_caption": {
+        "text": "Пауза между встречами",
+        "source_scene": "space/pause scene",
+        "editable": true
+      }
+    },
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_08.png",
+      "sha256": "846a72ce93875356afdc51362d15577a60f6e3f4e5d9091db1a1e155105a6994",
+      "caption": "Рабочие детали",
+      "page_caption": {
+        "text": "Рабочие детали",
+        "source_scene": "work-detail portrait",
+        "editable": true
+      }
+    },
+    {
+      "path": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_09.png",
+      "sha256": "0419018d844f8223b594a43413e55db75bb63d7731a24601851ad2337c171b46",
+      "caption": "Другой ракурс",
+      "page_caption": {
+        "text": "Другой ракурс",
+        "source_scene": "side-angle portrait",
+        "editable": true
+      }
+    }
+  ],
+  "onyx_mission_heading": "Ваш образ.\nВаша история.",
+  "onyx_mission_text": "ONYX помогает вам выглядеть так, как вы хотите выглядеть, в самый важный день: раскрывает ваш образ, характер и профессиональное присутствие. Мы создаём коллекции, в которых уверенность выглядит естественно и остаётся вашей.\n\nСпасибо, что доверили ONYX создать эту коллекцию.",
+  "collection_description": "Business создана для ситуаций, где первое впечатление имеет значение: профессиональный профиль, сайт компании, публичные выступления, деловые публикации и социальные сети.\nВизуальный язык коллекции - уверенность без излишней формальности: современная архитектура, натуральный свет, спокойные позы и внимание к личности человека.",
+  "collection_use_cases": [
+    "Профессиональный профиль и резюме",
+    "Сайт компании и команда",
+    "Публичные выступления и анонсы",
+    "Деловые и экспертные публикации",
+    "LinkedIn, Telegram и социальные сети",
+    "Личный бренд и медиа"
+  ],
+  "onyx_selection_image": "13 Production/Orders/ORD-2026-0001_CL-0001_Alexander/07_final/ONYX_BUSINESS_01.png",
+  "onyx_selection_note": "Самый универсальный портрет серии: спокойный фон, открытый взгляд и точное кадрирование помогают сразу увидеть уверенного профессионала.",
+  "personal_closing_note": "Александр, в этой серии особенно хорошо работает баланс строгого образа и живой естественности. Кадр в костюме и галстуке задаёт формальную опору, а расслабленные smart-casual кадры добавляют свободы и характера. Разные ракурсы, спокойные позы и движение показывают вас собранным и открытым к диалогу - это убедительный образ для резюме, профессиональных профилей и социальных сетей.",
+  "next_collections": [
+    {
+      "name": "Lifestyle",
+      "description": "Город, прогулки и повседневные истории за пределами офиса.",
+      "status": "coming_soon",
+      "collection_url": null,
+      "qr_url": null,
+      "cta_label": "Узнать о коллекции"
+    },
+    {
+      "name": "Dating",
+      "description": "Естественные городские встречи и открытый, тёплый образ вне делового контекста.",
+      "status": "coming_soon",
+      "collection_url": null,
+      "qr_url": null,
+      "cta_label": "Узнать о коллекции"
+    }
+  ],
+  "brand_logo": "13 Production/Brand/Logo/ONYX_WORDMARK_EDITORIAL_V1_CHAMPAGNE.png",
+  "cover_brand_art": "13 Production/Brand/Logo/Presentations/ONYX_MONOGRAM_ONYX_SILK_PRESENTATION_V1.png",
+  "footer_title": "BUSINESS COLLECTION",
+  "brand_variant": "editorial_v1",
+  "language": "ru",
+  "book_version": "2.0",
+  "created_at": "2026-09-18",
+  "output_stem": "ORD-2026-0001_ALEXANDER_BUSINESS_COLLECTION_BOOK_v2",
+  "motion_asset": null,
+  "closing_heading": "Ваш спокойный\nфокус."
+}

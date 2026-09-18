@@ -89,3 +89,17 @@ Run the renderer tests, then inspect the PDF and its generated previews:
 ```
 
 Confirm all ordered images appear, text is readable at phone scale, pages have the expected count, the PDF is under 15 MiB, captions do not collide with footers, all source hashes remain unchanged and no internal identifiers are visible. Deliver only the PDF. Keep `source_data.json`, manifest, preview and review files internal.
+
+## 7. Semantic photo captions
+
+Photo captions are editorial data, not fixed labels tied only to page numbers or layout slots. Each photo entry should include `caption` and, when traceability is useful, a `page_caption` object:
+
+```json
+"page_caption": {
+  "text": "Другой ракурс",
+  "source_scene": "side-angle portrait",
+  "editable": true
+}
+```
+
+Before every final render, verify `caption matches actual image content` using the approved photograph, scene role, pose, environment and intended use. If a scene is replaced, revisit its caption before rendering; a new image inherits no caption automatically.
