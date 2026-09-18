@@ -1,0 +1,29 @@
+schema_version: 1
+order_id: ORD-2026-0001
+result: PASS
+final_count: 10
+checks:
+  identity_consistency: PASS
+  photorealism: PASS
+  anatomy_hands_eyes: PASS
+  clean_shaven_consistency: PASS
+  business_style_consistency: PASS
+  scene_diversity: PASS
+  framing_diversity: PASS
+  expression_diversity: PASS
+  outfit_diversity: PASS
+  watch_visibility: PASS
+  replacement_traceability: PASS
+  late_series_distinctiveness: PASS
+  wearable_accessory_guidance: PASS
+  cv_social_professional_suitability: PASS
+  formal_tie_anchor_present: PASS
+  tie_realism_and_knot: PASS
+  all_final_images_portrait_compatible: PASS
+  no_letterboxing: PASS
+  canonical_signature_business_ratio: PASS
+human_review_required: false
+human_review_status: PASS
+selection:
+  onyx_selection: 07_final/ONYX_BUSINESS_01.png
+  collection_book_cover_candidate: 07_final/ONYX_BUSINESS_10.png

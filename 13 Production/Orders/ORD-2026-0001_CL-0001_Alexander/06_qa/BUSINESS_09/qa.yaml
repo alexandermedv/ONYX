@@ -1,0 +1,8 @@
+scene_id: BUSINESS_09
+result: PASS
+selected_candidate: BUSINESS_09_R02
+candidates: [{id: BUSINESS_09_C01, result: PASS}, {id: BUSINESS_09_C02, result: PASS}]
+superseded_final: 07_final/superseded/ONYX_BUSINESS_09.previous_v2.png
+face_variation_controls: {gaze: toward_window, head_tilt: neutral, chin_angle: lowered}
+repair: false
+regeneration: false

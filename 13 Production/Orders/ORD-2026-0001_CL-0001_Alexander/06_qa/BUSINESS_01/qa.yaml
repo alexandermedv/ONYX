@@ -1,0 +1,20 @@
+schema_version: 1
+order_id: ORD-2026-0001
+scene_id: BUSINESS_01
+generation_route: CHATGPT_IMAGEGEN
+candidates:
+  - candidate_id: BUSINESS_01_C01
+    file: ../../05_candidates/BUSINESS_01/BUSINESS_01_C01.png
+    generation_attempt: 1
+    dimensions: { width: 1145, height: 1374 }
+    qa_result: PASS
+    notes: Strong direct hero framing, consistent identity, clean-shaven, natural hands out of frame, realistic skin and suit.
+  - candidate_id: BUSINESS_01_C02
+    file: ../../05_candidates/BUSINESS_01/BUSINESS_01_C02.png
+    generation_attempt: 2
+    dimensions: { width: 1024, height: 1536 }
+    qa_result: PASS
+    notes: Strong alternative three-quarter framing, consistent identity and realistic office background.
+selected_candidate: BUSINESS_01_C01
+repair_performed: false
+collection_notes: Direct hero remains distinct from planned soft three-quarter BUSINESS_02.

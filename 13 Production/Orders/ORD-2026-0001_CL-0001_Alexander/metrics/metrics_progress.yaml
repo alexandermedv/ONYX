@@ -10,8 +10,53 @@ scene_planning:
   started: true
   completed: true
 production_generation:
-  started: false
-  completed: false
+  started: true
+  completed: true
+  status: PASS
+  generation_route: CHATGPT_IMAGEGEN
+  scenes_total: 10
+  candidates_generated: 20
+  finals: 10
+  repairs: 0
+  regenerations: 0
+  rejects: 0
+historical_actuals:
+  generated_candidates: 20
+  selected_finals: 10
+  generation_ratio: 2.0
+  note: Historical dry run used 2 candidates per scene; this is not the production default going forward.
+planning_defaults:
+  signature:
+    planned_generation_count: 12
+    delivery_target_count: 10
+    selection_buffer_count: 2
+  premium:
+    planned_generation_count: 25
+    delivery_target_count: 20
+    selection_buffer_count: 5
+collection_qa:
+  completed: true
+  status: PASS
+replacement_generation_count: 5
+replacement_scenes_count: 5
+number_of_superseded_finals: 5
+replacement_candidates_generated: 5
+replacement_candidates_passed_automated_qa: 5
+second_replacement_round_count: 1
+replaced_scenes_this_round: 3
+new_candidates_this_round: 3
+third_replacement_round_count: 1
+third_replaced_scenes_this_round: 1
+third_new_candidates_this_round: 1
+fourth_replacement_round_count: 1
+replaced_scenes_this_round: 1
+new_candidates_this_round: 1
+business_03_aspect_ratio_correction: true
+superseded_finals_total: 10
+human_review:
+  status: PASS
+  finals_approved: 10
+  collection_book_pending: true
 time:
   intake_minutes: null
   reference_upload_minutes: null

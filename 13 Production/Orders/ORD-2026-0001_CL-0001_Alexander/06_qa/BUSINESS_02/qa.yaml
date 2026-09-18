@@ -1,0 +1,11 @@
+scene_id: BUSINESS_02
+result: PASS
+selected_candidate: BUSINESS_02_R01
+candidates:
+  - id: BUSINESS_02_C01
+    result: PASS
+  - id: BUSINESS_02_C02
+    result: PASS
+superseded_final: 07_final/superseded/ONYX_BUSINESS_02.previous.png
+repair: false
+regeneration: false

@@ -13,6 +13,9 @@ time:
   total_manual_minutes: null
   total_elapsed_minutes: null
 generation:
+  planned_generation_count: null
+  delivery_target_count: null
+  selection_buffer_count: null
   total_generation_attempts: null
   candidates_generated: null
   final_selected: null

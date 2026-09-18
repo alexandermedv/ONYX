@@ -1,0 +1,6 @@
+scene_id: BUSINESS_05
+result: PASS
+selected_candidate: BUSINESS_05_C01
+candidates: [{id: BUSINESS_05_C01, result: PASS}, {id: BUSINESS_05_C02, result: PASS}]
+repair: false
+regeneration: false
