@@ -1,0 +1,59 @@
+intake_version: "1.0"
+order:
+  order_id: DEMO-PREMIUM-001
+  product: PREMIUM
+  client_display_name: Демо-клиент
+  order_reference: DEMO-CONTACT-003
+  selected_collection: Business
+references:
+  reference_items:
+    - reference_id: DEMO_REF_21
+      role: front
+      notes: Текущий портрет при дневном свете.
+    - reference_id: DEMO_REF_22
+      role: right_three_quarter
+      notes: Ракурс три четверти.
+    - reference_id: DEMO_REF_23
+      role: full_body
+      notes: Кадр в полный рост.
+  reference_qa_status: PASS
+  reference_qa_checks:
+    face_visibility: PASS
+    identity_consistency: PASS
+    currentness: PASS
+    angle_variety: PASS
+    filter_status: PASS
+    image_quality: PASS
+    facial_hair_status: N_A
+    hairstyle_status: PASS
+    glasses_status: PASS
+    body_information: PASS
+    preference_conflicts: PASS
+appearance:
+  must_keep: [Естественная текстура волос, Тонкая оправа очков]
+  glasses_status: Использовать тонкую нейтральную оправу.
+  body_adjustment_intent: LIGHT_FLATTERING_CORRECTION
+  body_adjustment_note: Предпочтительны собранные, естественные позы.
+preferences:
+  primary_use: Личный бренд руководителя
+  use_places: [Сайт, Публичные выступления, Деловые публикации]
+  desired_style: Современный, уверенный, интеллигентный.
+  style_intensity: POLISHED
+  clothing_style: BUSINESS_FORMAL
+  wardrobe_preferences: [Глубокий синий, Мягкие фактуры, Минималистичные детали]
+  must_avoid: [Яркие логотипы, Слишком постановочные позы]
+  client_note: Нужен спокойный, открытый образ для профессиональной аудитории.
+premium:
+  personal_image_traits: [confident, modern, authoritative, sophisticated]
+  environment_preferences: [modern_office, architecture, hotel_lounge]
+  production_priorities: [MAX_LIKENESS, PROFESSIONAL, REALISM, DIVERSITY]
+  inspirations: [Современная деловая архитектура, Утренний мягкий свет]
+  concept_card_status: PENDING_APPROVAL
+consent:
+  service_processing_consent: GRANTED
+  portfolio_consent: DENIED
+  marketing_consent: NOT_ASKED
+metadata:
+  intake_version: "1.0"
+  submitted_at: "2026-09-18T11:00:00+03:00"
+  intake_owner: DEMO_INTAKE_OWNER

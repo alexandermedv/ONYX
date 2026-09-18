@@ -1,0 +1,44 @@
+intake_version: "1.0"
+order:
+  order_id: DEMO-PREVIEW-001
+  product: PREVIEW
+  client_display_name: Демо-клиент
+  order_reference: DEMO-CONTACT-001
+  selected_collection: Business
+references:
+  reference_items:
+    - reference_id: DEMO_REF_01
+      role: front
+      notes: Недавний портрет при мягком дневном свете.
+    - reference_id: DEMO_REF_02
+      role: three_quarter
+      notes: Ракурс три четверти.
+  reference_qa_status: PASS
+  reference_qa_checks:
+    face_visibility: PASS
+    identity_consistency: PASS
+    currentness: PASS
+    angle_variety: PASS
+    filter_status: PASS
+    image_quality: PASS
+    facial_hair_status: N_A
+    hairstyle_status: PASS
+    glasses_status: PASS
+    body_information: N_A
+    preference_conflicts: PASS
+appearance:
+  must_keep: [Короткая стрижка, Очки]
+  glasses_status: Очки оставить частью образа.
+preferences:
+  primary_use: Профессиональный профиль
+  use_places: [Сайт компании, Социальные сети]
+  desired_style: Современно и спокойно.
+  must_avoid: [Яркие принты, Слишком формальный костюм]
+consent:
+  service_processing_consent: GRANTED
+  portfolio_consent: DENIED
+  marketing_consent: NOT_ASKED
+metadata:
+  intake_version: "1.0"
+  submitted_at: "2026-09-18T10:00:00+03:00"
+  intake_owner: DEMO_INTAKE_OWNER

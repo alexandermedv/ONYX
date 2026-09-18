@@ -1,0 +1,51 @@
+intake_version: "1.0"
+order:
+  order_id: DEMO-SIGNATURE-001
+  product: SIGNATURE
+  client_display_name: Демо-клиент
+  order_reference: DEMO-CONTACT-002
+  selected_collection: Business
+references:
+  reference_items:
+    - reference_id: DEMO_REF_11
+      role: front
+      notes: Естественное выражение лица.
+    - reference_id: DEMO_REF_12
+      role: left_three_quarter
+      notes: Недавний кадр.
+    - reference_id: DEMO_REF_13
+      role: waist
+      notes: Для понимания силуэта.
+  reference_qa_status: PASS_WITH_NOTES
+  reference_qa_checks:
+    face_visibility: PASS
+    identity_consistency: PASS
+    currentness: PASS
+    angle_variety: PASS
+    filter_status: WARN
+    image_quality: PASS
+    facial_hair_status: N_A
+    hairstyle_status: PASS
+    glasses_status: PASS
+    body_information: PASS
+    preference_conflicts: PASS
+  reference_qa_notes: На одном кадре есть лёгкая ретушь; ориентироваться на остальные.
+appearance:
+  must_keep: [Длина волос до плеч, Родинка над правой бровью]
+  glasses_status: Очки не использовать.
+preferences:
+  primary_use: Страница эксперта и деловые публикации
+  use_places: [Личный сайт, Публикации]
+  desired_style: Уверенно, открыто, современно.
+  style_intensity: POLISHED
+  clothing_style: SMART_CASUAL
+  must_avoid: [Тёмные тяжёлые фоны, Агрессивный макияж]
+  client_note: Предпочтительны спокойные нейтральные цвета.
+consent:
+  service_processing_consent: GRANTED
+  portfolio_consent: DENIED
+  marketing_consent: DENIED
+metadata:
+  intake_version: "1.0"
+  submitted_at: "2026-09-18T10:30:00+03:00"
+  intake_owner: DEMO_INTAKE_OWNER

@@ -1,0 +1,203 @@
+schema_version: "1.0"
+schema_id: onyx_client_intake_v1
+title: ONYX Client Intake v1
+description: >-
+  Каноническая машиночитаемая структура для Preview, Signature и Premium.
+  Это описательная YAML-схема для форм и производства, а не JSON Schema.
+controlled_values:
+  product: [PREVIEW, SIGNATURE, PREMIUM]
+  style_intensity: [NATURAL, POLISHED, GLAMOUR]
+  portfolio_consent: [GRANTED, DENIED, NOT_ASKED]
+  marketing_consent: [GRANTED, DENIED, NOT_ASKED]
+  service_processing_consent: [GRANTED, DENIED]
+  reference_qa_status: [PASS, PASS_WITH_NOTES, NEEDS_MORE_REFERENCES, REJECT]
+  reference_check: [PASS, WARN, FAIL, N_A]
+  clothing_style: [BUSINESS_FORMAL, SMART_CASUAL, CASUAL, FASHION, OTHER]
+  body_adjustment_intent: [NO_INTENTIONAL_ADJUSTMENT, LIGHT_FLATTERING_CORRECTION, POLISHED_SILHOUETTE, INDIVIDUAL_REQUEST]
+  personal_image_trait: [confident, approachable, elegant, modern, creative, authoritative, relaxed, sophisticated, energetic, minimal, editorial, other]
+  environment: [modern_office, architecture, hotel_lounge, city, studio, home_lifestyle, travel, nature, editorial, other]
+  production_priority: [MAX_LIKENESS, PROFESSIONAL, ATTRACTIVENESS, REALISM, DIVERSITY, SOCIAL_PRESENCE]
+fields:
+  order:
+    - canonical: order_id
+      label_ru: Идентификатор заказа
+      description_ru: Внутренний стабильный идентификатор заказа.
+      type: string
+      required: true
+    - canonical: product
+      label_ru: Продукт
+      description_ru: Выбранный уровень ONYX.
+      type: enum
+      allowed_values_ref: product
+      required: true
+    - canonical: client_display_name
+      label_ru: Имя для отображения
+      description_ru: Как обращаться к клиенту в материалах заказа.
+      type: string
+      required: true
+    - canonical: order_reference
+      label_ru: Номер заказа или контакт
+      description_ru: Ссылка на заказ или канал связи.
+      type: string
+      required: true
+    - canonical: selected_collection
+      label_ru: Выбранная коллекция
+      description_ru: Название согласованной коллекции.
+      type: string
+      required: true
+  references:
+    - canonical: reference_items
+      label_ru: Референсы
+      description_ru: Идентификаторы приложенных кадров и краткая роль каждого.
+      type: array_of_objects
+      item_fields: [reference_id, role, notes]
+      required: true
+    - canonical: reference_qa_status
+      label_ru: Статус проверки референсов
+      description_ru: Итог внутренней проверки до производства.
+      type: enum
+      allowed_values_ref: reference_qa_status
+      required: true
+    - canonical: reference_qa_checks
+      label_ru: Проверки референсов
+      description_ru: Результаты контрольного списка внутренней проверки.
+      type: object
+      allowed_values_ref: reference_check
+      required: false
+    - canonical: reference_qa_notes
+      label_ru: Заметки по референсам
+      description_ru: Ограничения или запрос недостающих кадров.
+      type: string
+      required: false
+  appearance:
+    - canonical: must_keep
+      label_ru: Что важно сохранить
+      description_ru: Важные элементы внешности и привычного образа.
+      type: array_of_strings
+      required_for_products: [PREVIEW, SIGNATURE, PREMIUM]
+    - canonical: glasses_status
+      label_ru: Очки
+      description_ru: Нужно ли учитывать очки как часть образа.
+      type: string
+      required: false
+    - canonical: body_adjustment_intent
+      label_ru: Подход к силуэту
+      description_ru: Нейтральное пожелание о работе с силуэтом.
+      type: enum
+      allowed_values_ref: body_adjustment_intent
+      required_for_products: [PREMIUM]
+    - canonical: body_adjustment_note
+      label_ru: Индивидуальное пожелание о силуэте
+      description_ru: Заполняется только при необходимости.
+      type: string
+      required: false
+  preferences:
+    - canonical: primary_use
+      label_ru: Основная цель
+      description_ru: Для чего нужны фотографии.
+      type: string
+      required: true
+    - canonical: use_places
+      label_ru: Где будут использоваться фотографии
+      description_ru: Каналы и площадки использования.
+      type: array_of_strings
+      required: false
+    - canonical: desired_style
+      label_ru: Желаемый стиль
+      description_ru: Короткое описание образа словами клиента.
+      type: string
+      required_for_products: [PREVIEW, SIGNATURE, PREMIUM]
+    - canonical: style_intensity
+      label_ru: Выразительность стиля
+      description_ru: Выбранная степень стилизации.
+      type: enum
+      allowed_values_ref: style_intensity
+      required_for_products: [SIGNATURE, PREMIUM]
+    - canonical: clothing_style
+      label_ru: Стиль одежды
+      description_ru: Общая формальность одежды.
+      type: enum
+      allowed_values_ref: clothing_style
+      required: false
+    - canonical: wardrobe_preferences
+      label_ru: Предпочтения по одежде
+      description_ru: Одежда, фактуры, цвета и детали.
+      type: array_of_strings
+      required_for_products: [PREMIUM]
+    - canonical: must_avoid
+      label_ru: Чего избегать
+      description_ru: Нежелательные вещи, цвета, степень формальности, ретушь или места.
+      type: array_of_strings
+      required_for_products: [PREVIEW, SIGNATURE, PREMIUM]
+    - canonical: client_note
+      label_ru: Заметка клиента
+      description_ru: Короткий дополнительный контекст.
+      type: string
+      required: false
+  premium:
+    - canonical: personal_image_traits
+      label_ru: Качества желаемого образа
+      description_ru: Слова, описывающие впечатление от образа.
+      type: array_of_enums
+      allowed_values_ref: personal_image_trait
+      required_for_products: [PREMIUM]
+    - canonical: environment_preferences
+      label_ru: Предпочтительные среды
+      description_ru: Места и типы окружения.
+      type: array_of_enums
+      allowed_values_ref: environment
+      required_for_products: [PREMIUM]
+    - canonical: production_priorities
+      label_ru: Приоритеты результата
+      description_ru: Что важнее всего для клиента.
+      type: array_of_enums
+      allowed_values_ref: production_priority
+      required_for_products: [PREMIUM]
+    - canonical: inspirations
+      label_ru: Вдохновение
+      description_ru: Необязательное словесное описание настроения или примеров.
+      type: array_of_strings
+      required: false
+    - canonical: concept_card_status
+      label_ru: Статус Concept Card
+      description_ru: Для Premium: DRAFT, PENDING_APPROVAL или APPROVED до массового производства.
+      type: enum
+      allowed_values: [DRAFT, PENDING_APPROVAL, APPROVED]
+      required_for_products: [PREMIUM]
+  consent:
+    - canonical: service_processing_consent
+      label_ru: Согласие на выполнение заказа
+      description_ru: Право передать материалы и обработать их для выполнения заказа.
+      type: enum
+      allowed_values_ref: service_processing_consent
+      required: true
+    - canonical: portfolio_consent
+      label_ru: Согласие на портфолио
+      description_ru: Публикация возможна только при GRANTED; значение по умолчанию DENIED.
+      type: enum
+      allowed_values_ref: portfolio_consent
+      default: DENIED
+      required: true
+    - canonical: marketing_consent
+      label_ru: Согласие на маркетинговые материалы
+      description_ru: Независимо от согласия на портфолио.
+      type: enum
+      allowed_values_ref: marketing_consent
+      default: NOT_ASKED
+      required: true
+  metadata:
+    - canonical: intake_version
+      label_ru: Версия intake
+      description_ru: Версия структуры заполнения.
+      type: string
+      required: true
+    - canonical: submitted_at
+      label_ru: Время заполнения
+      description_ru: ISO 8601 timestamp.
+      type: datetime
+      required: true
+    - canonical: intake_owner
+      label_ru: Ответственный за intake
+      description_ru: Внутренний идентификатор сотрудника или роли.
+      type: string
+      required: true
