@@ -1,0 +1,104 @@
+{
+  "order_id": "P02-BUSINESS-SAMPLE",
+  "client_display_name": "Анна",
+  "collection_name": "Business",
+  "collection_subtitle": "Деловая фотосессия для уверенного профессионального образа",
+  "product_tier": "Signature",
+  "sample": true,
+  "cover_image": "13 Production/Portfolio/P02/Business_V1/upscale_p02_v1/ONYX_P02_BUSINESS_01_HERO_00001_.png",
+  "hero_image": "13 Production/Portfolio/P02/Business_V1/upscale_p02_v1/ONYX_P02_BUSINESS_01_HERO_00001_.png",
+  "photos": [
+    {
+      "path": "13 Production/Portfolio/P02/Business_V1/upscale_p02_v1/ONYX_P02_BUSINESS_01_HERO_00001_.png",
+      "sha256": "87d60ba2aa6b7a945dfff026deeb2edceae55dcd83ccfd226a87dc52c23f6de5",
+      "caption": "Первое впечатление"
+    },
+    {
+      "path": "13 Production/Portfolio/P02/Business_V1/upscale_p02_v1/ONYX_P02_BUSINESS_02_CLOSE_00001_.png",
+      "sha256": "378d9b4765d424109dc31313b12b5c57210bf8ee51d2d80b3d88c807d8274f64",
+      "caption": "У окна"
+    },
+    {
+      "path": "13 Production/Portfolio/P02/Business_V1/upscale_p02_v1/ONYX_P02_BUSINESS_03_WAIST_00001_.png",
+      "sha256": "604ec0f11536878ebb3918ba6082d62b1a5e5ed6e2101d15d8be74d606f090ab",
+      "caption": "Свет и пространство"
+    },
+    {
+      "path": "13 Production/Portfolio/P02/Business_V1/upscale_p02_v1/ONYX_P02_BUSINESS_04_SEATED_00001_.png",
+      "sha256": "22cb1099114606567744c539a6ba64ce90b0353a70529428acbc43406d7025d3",
+      "caption": "За рабочим столом"
+    },
+    {
+      "path": "13 Production/Portfolio/P02/Business_V1/upscale_p02_v1/ONYX_P02_BUSINESS_05_ENVIRONMENT_00001_.png",
+      "sha256": "15415ded6e8ed38410f4febd055fb254439b991c728f1d997d6afb558a46a86f",
+      "caption": "Переговорная"
+    },
+    {
+      "path": "13 Production/Portfolio/P02/Business_V1/upscale_p02_v1/ONYX_P02_BUSINESS_06_ACTION_00001_.png",
+      "sha256": "629792d14515181552ce7dd8baff31e579766799860cf4bc2f4a44db257cb309",
+      "caption": "В движении"
+    },
+    {
+      "path": "13 Production/Portfolio/P02/Business_V1/upscale_p02_v1/ONYX_P02_BUSINESS_07_3Q_BODY_00001_.png",
+      "sha256": "c2921f002ad69122e3d79d293f37bf06521ef045c8a5e5d544cc9f678b69be41",
+      "caption": "Пауза между встречами"
+    },
+    {
+      "path": "13 Production/Portfolio/P02/Business_V1/upscale_p02_v1/ONYX_P02_BUSINESS_08_FULL_BODY_00001_.png",
+      "sha256": "6d12a1579b0aed24b30cfeb06cc7c4e1a2d4880de3f03be5551f81b29d5f2c7b",
+      "caption": "Открытое пространство"
+    },
+    {
+      "path": "13 Production/Portfolio/P02/Business_V1/upscale_p02_v1/ONYX_P02_BUSINESS_09_MOOD_00001_.png",
+      "sha256": "1e6add2717d2c0b5fce67db77b6d1d6ab9cd0830e951d9f1f160737cecd9aa99",
+      "caption": "Внимание к делу"
+    },
+    {
+      "path": "13 Production/Portfolio/P02/Business_V1/upscale_p02_v1/ONYX_P02_BUSINESS_10_EDITORIAL_00001_.png",
+      "sha256": "0b3e04685cd5523e751fba7dc0154c80e4dc9080d5c7ad80fb995e3ab5ee1c3d",
+      "caption": "Завершённый образ"
+    }
+  ],
+  "onyx_mission_heading": "Ваш образ.\nВаша история.",
+  "onyx_mission_text": "ONYX помогает выглядеть так, как вам хочется выглядеть в важный день — уверенно, естественно и в согласии с собой. Мы создаём изображения, которые раскрывают ваш характер, настроение и тот образ, который вы хотите показать миру.\n\nСпасибо, что доверили ONYX создать эту коллекцию.",
+  "collection_description": "Business создана для ситуаций, где первое впечатление имеет значение: профессиональный профиль, сайт компании, публичные выступления, деловые публикации и социальные сети.\nВизуальный язык коллекции - уверенность без излишней формальности: современная архитектура, натуральный свет, спокойные позы и внимание к личности человека.",
+  "collection_use_cases": [
+    "Профессиональный профиль и резюме",
+    "Сайт компании и команда",
+    "Публичные выступления и анонсы",
+    "Деловые и экспертные публикации",
+    "LinkedIn, Telegram и социальные сети",
+    "Личный бренд и медиа"
+  ],
+  "onyx_selection_image": "13 Production/Portfolio/P02/Business_V1/upscale_p02_v1/ONYX_P02_BUSINESS_01_HERO_00001_.png",
+  "onyx_selection_note": "Главный портрет серии: спокойный фон и близкое кадрирование удерживают внимание на лице. Выбор для первого знакомства в профессиональном профиле.",
+  "personal_closing_note": "Анна, в кадрах у окна, за рабочим столом и в движении особенно заметна ваша спокойная собранность. Она делает образ убедительным без излишней строгости: в нём есть внимание к деталям, ясность и открытость к разговору. Это редкое сочетание помогает вам выглядеть уверенно, современно и по-настоящему естественно в любой рабочей ситуации.",
+  "next_collections": [
+    {
+      "name": "Lifestyle",
+      "description": "Город, прогулки и повседневные истории за пределами офиса.",
+      "status": "coming_soon",
+      "collection_url": null,
+      "qr_url": null,
+      "cta_label": "Узнать о коллекции"
+    },
+    {
+      "name": "Dating",
+      "description": "Естественные городские встречи и открытый, тёплый образ вне делового контекста.",
+      "status": "coming_soon",
+      "collection_url": null,
+      "qr_url": null,
+      "cta_label": "Узнать о коллекции"
+    }
+  ],
+  "brand_logo": "13 Production/Brand/Logo/ONYX_WORDMARK_EDITORIAL_V1_CHAMPAGNE.png",
+  "cover_brand_art": "13 Production/Brand/Logo/Presentations/ONYX_MONOGRAM_ONYX_SILK_PRESENTATION_V1.png",
+  "footer_title": "BUSINESS COLLECTION",
+  "brand_variant": "editorial_v1",
+  "language": "ru",
+  "book_version": "1.0",
+  "created_at": "2026-09-17",
+  "output_stem": "P02_BUSINESS_COLLECTION_BOOK_v1",
+  "motion_asset": null,
+  "closing_heading": "Ваш спокойный\nфокус."
+}
