@@ -1,0 +1,49 @@
+schema_version: 1
+order_id: ORD-2026-0002
+client_id: CL-0002
+client_display_name: Valentina
+client_slug: Valentina
+product: SIGNATURE
+collection: BUSINESS
+status: READY_FOR_DELIVERY
+test_order: false
+paid_order: false
+source: CLIENT_ORDER
+final_photos_expected: 10
+collection_book:
+  required: true
+  type: STANDARD
+  status: APPROVED
+  version: v2
+  file: ORD-2026-0002_VALENTINA_BUSINESS_COLLECTION_BOOK_v2.pdf
+  page_count: 15
+  qa: PASS
+  owner_design_review: PASS
+  collection_book_version: v2
+  collection_book_owner_review: PASS
+  approved_for_delivery: true
+  cover_scene: BUSINESS_09
+  onyx_selection: BUSINESS_01
+  best_overall: BUSINESS_02
+  pdf_sha256: 3db1d94859e6819cc6aa3df98377c709073dce35f8d52039d9390a6cefc3d7e0
+  next_source_data: source_data_v2.json
+  previous_version: v1
+  previous_status: SUPERSEDED
+  approved_version: NOT_APPROVED
+generation_route_default: CHATGPT_IMAGEGEN
+generation_route_policy: PULID_AND_FLUX_NEVER_DEFAULT
+reference_count: 5
+production_generated: 19
+original_production_generated: 12
+replacement_generated: 7
+finals_selected: 10
+replacement_round_2_generated: 3
+onyx_selection: BUSINESS_01
+best_overall: BUSINESS_02
+manicure_visible_final_count: 5
+apple_watch_final_count: 2
+body_type_match: PASS
+human_review_status: PASS
+reference_qa_status: PASS_WITH_NOTES
+production_target: 12
+selection_target: 10

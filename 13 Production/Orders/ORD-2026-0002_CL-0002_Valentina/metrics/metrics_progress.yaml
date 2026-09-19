@@ -1,0 +1,102 @@
+order_id: ORD-2026-0002
+recovery_preflight_existing_replacement_outputs: 0
+original_production_images_generated: 12
+replacement_images_generated: 7
+production_images_generated_total: 19
+replacement_scenes_count: 7
+replacement_attempts:
+  REPL_A_BODYTYPE:
+    attempts: 2
+    successful_outputs: 1
+    transport_failures_without_output: 1
+  REPL_B_PROFILE:
+    attempts: 1
+    successful_outputs: 1
+  REPL_C_FORMAL:
+    attempts: 1
+    successful_outputs: 1
+  REPL_D_WARM:
+    attempts: 1
+    successful_outputs: 1
+finals_selected: 10
+body_type_match: PASS
+outfit_diversity: PASS
+outfit_directions: 6
+pose_diversity: PASS
+expression_diversity: PASS
+angle_diversity: PASS
+hand_to_face_count: 1
+hand_to_face_limit: 1
+hand_to_face_overuse: PASS
+full_body_present: true
+dynamic_scene_present: true
+side_angle_present: true
+formal_anchor_present: true
+warm_smile_present: true
+previous_human_review: PASS
+human_review: PASS
+human_review_approved_finals: 10
+human_review_pending_finals: 0
+previous_owner_review_recorded_at: 2026-09-19
+current_owner_review: PASS
+order_status: READY_FOR_DELIVERY
+best_overall: BUSINESS_02
+previous_onyx_selection: BUSINESS_02
+onyx_selection: BUSINESS_01
+collection_book_cover: BUSINESS_09
+formal_profile_recommendation: BUSINESS_09
+professional_headshot: BUSINESS_01
+full_body_recommendation: BUSINESS_05
+social_approachable_recommendation: BUSINESS_11
+previous_collection_human_review:
+  identity_consistency: PASS
+  body_type: PASS
+  glamour_balance: PASS
+  outfit_diversity: PASS
+  pose_diversity: PASS
+  expression_diversity: PASS
+  angle_diversity: PASS
+  formal_anchor: PASS
+  full_body: PASS
+  dynamic_scene: PASS
+  hand_to_face_overuse: PASS
+
+
+
+collection_book:
+  version: v1
+  file: 08_collection_book/ORD-2026-0002_VALENTINA_BUSINESS_COLLECTION_BOOK_v1.pdf
+  page_count: 15
+  size_bytes: 4838645
+  sha256: 65b8c677c3d1bcee2879f652a72e6263f4e508300918ce71abd2d38dccd6a019
+  qa: PASS
+  owner_design_review: PENDING
+
+replacement_round_2:
+  owner_human_review: PASS
+  all_current_finals_approved: true
+  scenes_count: 3
+  candidates_generated: 3
+  attempts_total: 3
+  attempts_per_scene: 1
+  route: CHATGPT_IMAGEGEN
+  replaced_scene_ids: [BUSINESS_04, BUSINESS_09, BUSINESS_11]
+  manicure_visible_final_count: 5
+  apple_watch_final_count: 2
+  automated_qa: PASS
+  owner_review: PASS
+  previous_finals_preserved: 3
+
+collection_book_v1_status: SUPERSEDED
+collection_book_v2_status: APPROVED
+collection_book_v2_file: 08_collection_book/ORD-2026-0002_VALENTINA_BUSINESS_COLLECTION_BOOK_v2.pdf
+collection_book_v2_page_count: 15
+collection_book_v2_size_bytes: 4928959
+collection_book_v2_sha256: 3db1d94859e6819cc6aa3df98377c709073dce35f8d52039d9390a6cefc3d7e0
+collection_book_v2_qa: PASS
+collection_book_v2_owner_design_review: PASS
+collection_book_v2_approved_for_delivery: true
+collection_book_v2_version: v2
+collection_book_v2_cover: BUSINESS_09
+collection_book_v2_onyx_selection: BUSINESS_01
+collection_book_v2_best_overall: BUSINESS_02

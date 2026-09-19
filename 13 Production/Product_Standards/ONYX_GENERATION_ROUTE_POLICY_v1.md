@@ -44,7 +44,7 @@ The historical `ORD-2026-0001` dry run used 20 candidates for 10 finals (two can
 
 For men's business, lifestyle, and professional scenes, the preferred smartwatch or sport-luxury reference when a watch is appropriate is the **Garmin Forerunner 965**. It must be realistic, correctly scaled and fitted, and visually subordinate to the portrait; use it episodically rather than in every scene.
 
-For women's business, lifestyle, and professional scenes, an **Apple Watch** may be used occasionally when it fits the styling and character. It is not mandatory and should never become a collection-wide requirement.
+For women’s Business and Executive series, target a neat, refined business-appropriate manicure in at least about half of final images where hands are clearly visible. When it naturally fits the character and styling, preferably include an **Apple Watch** in one or two final images. Keep it correctly scaled and worn, and visually subordinate. These are styling preferences, not reasons to compromise identity, realism, anatomy, or business coherence; never force a watch or a hand pose into a scene.
 
 ## Male business / executive tie anchor
 
