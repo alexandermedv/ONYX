@@ -1,7 +1,9 @@
 version: 1
-status: launch_product_definition
+status: FROZEN_FOR_SOFT_LAUNCH
 currency: RUB
-pricing_note: "Launch prices; Premium price requires unit-economics review after real orders."
+pricing_note: Frozen until 10 paid orders; exceptions require recorded owner decision.
+saleable_product_keys: [portrait, signature, premium]
+compatibility_note: Legacy preview is retained for historical readers only; new sales must use saleable_product_keys and per-order readiness gates.
 common:
   identity_consistency: true
   production_qa: true
@@ -11,8 +13,8 @@ common:
   direct_minio_access: false
 products:
   preview:
-    client_name: "ONYX Preview"
-    positioning: "Personal test frame ONYX"
+    client_name: ONYX Preview
+    positioning: Personal test frame ONYX
     price_rub: 900
     final_photos: 1
     collection_selection: single_approved_collection
@@ -24,13 +26,35 @@ products:
     social_ready_exports: false
     client_revision_policy: technical_only
     upgrade_credit_rub: 900
+    status: SUPERSEDED
+    launch_status: NOT_FOR_SALE
+    legacy_only: true
+  portrait:
+    product_id: ONYX_PORTRAIT_V1
+    client_name: ONYX Portrait
+    positioning: Standalone professional portrait
+    price_rub: 1000
+    currency: RUB
+    final_photos: 1
+    final_image_count: 1
+    included_correction_rounds: 0
+    collection_book: none
+    scope_type: single_direction
+    recommended_concepts_min: 1
+    recommended_concepts_max: 1
+    concept_count_is_customer_guarantee: false
+    status: CURRENT
+    launch_status: FROZEN_SCOPE_CONDITIONAL_ORDER_ACCEPTANCE
+    motion: false
+    social_ready_exports: false
+    client_revision_policy: 0 subjective rounds; QA defects free and excluded from
+      count
+    recommended: false
   signature:
-    client_name: "ONYX Signature"
-    positioning: "Personal photoshoot in a chosen collection"
+    client_name: ONYX Signature
+    positioning: Complete photoshoot in one main Collection
     price_rub: 3000
     final_photos: 10
-    expected_looks: "2-3"
-    expected_visual_scenes: "4-6; quality-adjusted, not contractual"
     creative_model: standardized_collection
     creative_profile: false
     concept_approval: false
@@ -38,49 +62,348 @@ products:
     motion: false
     social_ready_exports: false
     onyx_selection: true
-    client_revision_policy: "1 launch-policy round; limited scope"
-    preview_upgrade_remaining_rub: 2100
+    client_revision_policy: 1 subjective rounds; QA defects free and excluded from
+      count
+    product_id: ONYX_SIGNATURE_V1
+    currency: RUB
+    final_image_count: 10
+    included_correction_rounds: 1
+    scope_type: one_main_collection
+    recommended_concepts_min: 2
+    recommended_concepts_max: 3
+    concept_count_is_customer_guarantee: false
+    status: CURRENT
+    launch_status: FROZEN_SCOPE_CONDITIONAL_ORDER_ACCEPTANCE
+    recommended: true
   premium:
-    client_name: "ONYX Premium"
-    positioning: "Personalized visual story"
+    client_name: ONYX Premium
+    positioning: Extended editorial photoshoot in one main Collection
     price_rub: 5000
     final_photos: 20
-    expected_looks: "4-5"
-    expected_visual_scenes: "8-12; quality-adjusted, not contractual"
     creative_model: personalized_visual_story
     creative_profile: true
     concept_approval: true
     premium_creative_brief: true
     visual_chapters: true
     collection_book: extended
-    motion: true
-    social_ready_exports: true
+    motion: false
+    social_ready_exports: false
     onyx_selection: true
     personal_style_recommendation: true
     recommended_use_guidance: true
-    client_revision_policy: "2 launch-policy rounds; broader scope"
-    preview_upgrade_remaining_rub: 4100
+    client_revision_policy: 2 subjective rounds; QA defects free and excluded from
+      count
+    product_id: ONYX_PREMIUM_V1
+    currency: RUB
+    final_image_count: 20
+    included_correction_rounds: 2
+    scope_type: one_main_collection
+    recommended_concepts_min: 4
+    recommended_concepts_max: 6
+    concept_count_is_customer_guarantee: false
+    status: CURRENT
+    launch_status: FROZEN_SCOPE_CONDITIONAL_ORDER_ACCEPTANCE
+    recommended: false
 automation_fields:
   order_statuses:
-    - LEAD
-    - WAITING_FOR_PAYMENT
-    - WAITING_FOR_REFERENCES
-    - REFERENCE_REVIEW
-    - READY_FOR_PRODUCTION
-    - IN_PRODUCTION
-    - IN_QA
-    - WAITING_FOR_CLIENT
-    - IN_REVISION
-    - FINAL_QA
-    - READY_FOR_DELIVERY
-    - DELIVERED
-    - CLOSED
+  - LEAD
+  - WAITING_FOR_PAYMENT
+  - WAITING_FOR_REFERENCES
+  - REFERENCE_REVIEW
+  - READY_FOR_PRODUCTION
+  - IN_PRODUCTION
+  - IN_QA
+  - WAITING_FOR_CLIENT
+  - IN_REVISION
+  - FINAL_QA
+  - READY_FOR_DELIVERY
+  - DELIVERED
+  - CLOSED
   internal_pricing_fields:
-    - inference_cost
-    - manual_minutes
-    - repair_cost
-    - motion_cost
-    - delivery_cost
-    - total_variable_cost
-    - effective_hourly_margin
-    - gross_margin
+  - inference_cost
+  - manual_minutes
+  - repair_cost
+  - motion_cost
+  - delivery_cost
+  - total_variable_cost
+  - effective_hourly_margin
+  - gross_margin
+revision: 2026-09-20-commercial-freeze
+version_status: CURRENT
+freeze_date: '2026-09-20'
+commercial_system_id: ONYX_COMMERCIAL_PRODUCT_SYSTEM_v1
+commercial_source_of_truth: ONYX_PRODUCT_SYSTEM.md
+addons:
+  ADD_FINAL_IMAGE:
+    product_id: ADD_FINAL_IMAGE
+    client_name: Additional Final Image
+    price_rub: 500
+    currency: RUB
+    final_image_count: 1
+    included_correction_rounds: 0
+    collection_book: none
+    scope_type: existing_agreed_direction
+    status: CURRENT
+    launch_status: FROZEN_SCOPE
+    price_type: fixed
+  ADD_CONCEPT:
+    product_id: ADD_CONCEPT
+    client_name: Additional Concept / Look
+    price_rub: 1000
+    currency: RUB
+    final_image_count: 0
+    included_correction_rounds: 0
+    collection_book: none
+    scope_type: new_compatible_concept
+    status: CURRENT
+    launch_status: FROZEN_SCOPE
+    price_type: fixed
+  ADD_CORRECTION_ROUND:
+    correction_rounds_added: 1
+    product_id: ADD_CORRECTION_ROUND
+    client_name: Additional Correction Round
+    price_rub: 700
+    currency: RUB
+    final_image_count: 0
+    included_correction_rounds: 0
+    collection_book: none
+    scope_type: subjective_same_scope_round
+    status: CURRENT
+    launch_status: FROZEN_SCOPE
+    price_type: fixed
+  ONYX_REPAIR:
+    product_id: ONYX_REPAIR
+    client_name: ONYX Repair
+    price_rub: 500
+    currency: RUB
+    final_image_count: null
+    included_correction_rounds: 0
+    collection_book: none
+    scope_type: external_image_or_new_scope
+    status: CURRENT
+    launch_status: CAPACITY_AND_SCOPE_CONFIRMATION_REQUIRED
+    price_type: quote_from
+    simple_from_rub: 500
+    complex_from_rub: 1000
+    quote_after_inspection: true
+    own_qa_defects_free: true
+    feasibility_required: true
+  ONYX_PRIORITY:
+    product_id: ONYX_PRIORITY
+    client_name: ONYX Priority
+    price_rub: null
+    currency: RUB
+    final_image_count: 0
+    included_correction_rounds: 0
+    collection_book: none
+    scope_type: priority_queue
+    status: CURRENT
+    launch_status: CAPACITY_AND_SCOPE_CONFIRMATION_REQUIRED
+    price_type: percentage
+    surcharge_percent: 50
+    target_delivery: within_24_hours
+    capacity_confirmation_required: true
+    qa_standard_unchanged: true
+  ONYX_EXPRESS:
+    product_id: ONYX_EXPRESS
+    client_name: ONYX Express
+    price_rub: null
+    currency: RUB
+    final_image_count: 0
+    included_correction_rounds: 0
+    collection_book: none
+    scope_type: express_queue
+    status: CURRENT
+    launch_status: CAPACITY_AND_SCOPE_CONFIRMATION_REQUIRED
+    price_type: percentage
+    surcharge_percent: 100
+    target_delivery: same_day
+    capacity_confirmation_required: true
+    qa_standard_unchanged: true
+urgency_policy:
+  surcharge_basis: approved_production_subtotal_including_applicable_addons_excluding_urgency
+  stackable: false
+  start_gate: references_consent_scope_approvals_and_payment_complete
+  explicit_deadline_and_timezone_required: true
+upgrades:
+- from_product_id: ONYX_PORTRAIT_V1
+  to_product_id: ONYX_SIGNATURE_V1
+  window_calendar_days: 7
+  window_start: source_delivery_date
+  credit_rub: 1000
+  additional_payment_rub: 2000
+  target_total_rub: 3000
+  requires:
+  - references_available
+  - production_context_available
+  - valid_consent
+  - order_metadata_available
+  - same_collection_continuation
+  target_finals_and_rounds_cumulative: true
+- from_product_id: ONYX_SIGNATURE_V1
+  to_product_id: ONYX_PREMIUM_V1
+  window_calendar_days: 7
+  window_start: source_delivery_date
+  credit_rub: 3000
+  additional_payment_rub: 2000
+  target_total_rub: 5000
+  requires:
+  - references_available
+  - production_context_available
+  - valid_consent
+  - order_metadata_available
+  - same_collection_continuation
+  target_finals_and_rounds_cumulative: true
+taxonomy:
+- Collection
+- Concept
+- Scene
+- Final Image
+manifest_guidance:
+  runtime_enforced: false
+  additive_fields:
+  - commercial_system_id
+  - product_id
+  - collection_id
+  - concept_id
+  - scene_id
+  - final_image_id
+  - candidate_provenance
+  - acceptance_status
+  migrate_existing_assets: false
+reference_policy:
+  recommended_useful_range:
+  - 4
+  - 8
+  hard_limit: false
+  authority: ../Client_Experience/Intake/ONYX_REFERENCE_GUIDE_v1.md
+payment_policy:
+  prepayment_percent: 100
+  after_reference_qa: true
+  feasibility_and_capacity_required: true
+  flow:
+  - REFERENCES_SUBMITTED
+  - REFERENCE_QA_PASS_OR_AGREED_NOTES
+  - FEASIBILITY_CONFIRMED
+  - FINAL_SCOPE_PRICE_DEADLINE_CONFIRMED
+  - PREPAYMENT_RECEIVED_AND_RECORDED
+  - PRODUCTION_STARTS
+  priority_express:
+    capacity_confirmation_before_quote: true
+    surcharge_and_deadline_acceptance_before_payment: true
+    payment_before_urgent_production: true
+    do_not_sell_without_target_capacity: true
+  cancellation_before_production:
+    default: FULL_REFUND_OF_AMOUNT_RECEIVED
+    automatic_deductions: false
+  cancellation_after_production:
+    basis:
+    - work_actually_performed
+    - direct_costs_actually_incurred
+    - production_stage
+    - applicable_requirements
+    owner_case_review: true
+    fixed_forfeiture: false
+  failed_order:
+    default_resolution: REFUND_FOR_UNFULFILLED_SCOPE
+    individual_bad_images: REGENERATE_REPLACE_OR_REPAIR
+  refund_record_fields:
+  - refund_status
+  - refund_amount
+  - refund_date
+  - refund_channel_or_reference
+  - client_confirmation
+privacy_policy:
+  authority: ../Client_Experience/Intake/ONYX_CONSENT_AND_PRIVACY_v1.md
+  retention_policy: ../Client_Experience/Intake/ONYX_DATA_RETENTION_AND_DELETION_v1.md
+  image_retention_calendar_days_after_closed: 30
+  early_deletion_available: true
+  automated_deletion: false
+  accounting_record_retention_days: null
+  accounting_retention_note: No term asserted; retain only when specifically required under applicable confirmed rules.
+  publication_consent_separate: true
+future_products:
+- name: Additional Collection
+  status: PLANNED
+  launch_status: NON_BLOCKER
+  price_rub: null
+- name: Physical Collection Book
+  status: PLANNED
+  launch_status: NON_BLOCKER
+  price_rub: null
+- name: Couple session
+  status: PLANNED
+  launch_status: NON_BLOCKER
+  price_rub: null
+- name: Family session
+  status: PLANNED
+  launch_status: NON_BLOCKER
+  price_rub: null
+- name: Corporate packages
+  status: PLANNED
+  launch_status: NON_BLOCKER
+  price_rub: null
+- name: Printed products
+  status: PLANNED
+  launch_status: NON_BLOCKER
+  price_rub: null
+- name: Advanced retouch
+  status: PLANNED
+  launch_status: NON_BLOCKER
+  price_rub: null
+- name: VIP LoRA
+  status: PLANNED
+  launch_status: NON_BLOCKER
+  price_rub: null
+- name: ONYX Motion
+  status: PLANNED
+  launch_status: NON_BLOCKER
+  price_rub: null
+- name: Specialized social exports
+  status: PLANNED
+  launch_status: NON_BLOCKER
+  price_rub: null
+freeze_policy:
+  review_after_unique_paid_orders: 10
+  review_name: ONYX Product & Pricing Review v1.1
+  sales_production_delivery_percent: 80
+  rnd_automation_percent: 20
+
+# Documentation contract only. Existing persisted order_statuses above remain unchanged.
+order_lifecycle_policy:
+  implementation_status: DOCUMENTATION_ONLY
+  closure_event: CLOSED
+  retention_clock_starts_at: order_closed_at
+  canonical_operational_states:
+  - INTAKE
+  - WAITING_FOR_REFERENCES
+  - REFERENCE_QA
+  - READY_FOR_PAYMENT
+  - PAID
+  - IN_PRODUCTION
+  - IN_QA
+  - WAITING_FOR_CLIENT_CORRECTION
+  - READY_FOR_DELIVERY
+  - DELIVERED
+  - CLOSED
+  terminal_resolution_statuses:
+  - REFUNDED
+  - CANCELLED
+  legacy_mapping_authority: ONYX_SERVICE_STANDARD_v1.md
+  metadata_fields:
+    order_closed_at: timezone-aware timestamp; set only after delivery or cancellation/refund resolution.
+    retention_until: order_closed_at plus 30 calendar days in the order timezone.
+    deletion_status: [PENDING, PARTIAL_EXTERNAL_LIMITATION, HOLD, COMPLETE]
+    deleted_at: timestamp when eligible active-workspace deletion is completed.
+    payment_status: [NOT_DUE, DUE, PAID, REFUND_PENDING, PARTIALLY_REFUNDED, REFUNDED]
+    refund_status: [NOT_APPLICABLE, REVIEW, AGREED, PROCESSING, PARTIALLY_REFUNDED, REFUNDED]
+    resolution_status: [FULFILLED, CANCELLED, REFUNDED, PARTIALLY_FULFILLED, OPEN]
+    marketing_consent: [GRANTED, DENIED, NOT_ASKED]
+  metrics_after_image_deletion:
+  - order_id
+  - product_id
+  - dates_and_status
+  - amount_and_payment_refund_facts
+  - consent_status
+  - minimal_operational_qa
+  - anonymized_production_metrics

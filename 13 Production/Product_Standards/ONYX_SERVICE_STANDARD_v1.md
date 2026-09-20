@@ -1,94 +1,89 @@
 # ONYX Service Standard v1
 
-**Status:** production service framework. It establishes operating states and boundaries; it does not promise an unmeasured SLA or approve legal payment terms.
+CURRENT, revised 2026-09-21. [Commercial source of truth](ONYX_PRODUCT_SYSTEM.md) governs frozen prices, deliverables, rounds and upgrades. This is an operational business policy, not a new legal contract.
 
-## Customer journey
+## Customer journey and payment
 
-```text
-Lead
-→ Product selection
-→ Preview or direct purchase
-→ Payment
-→ Intake
-→ Reference QA
-→ Production
-→ Internal QA
-→ Client review where applicable
-→ Corrections
-→ Final QA
-→ Collection Book
-→ Delivery
-→ Feedback
-→ Retention / deletion
-```
+Lead → product selection → references submitted → Reference QA → feasibility and capacity confirmed → final scope, price and deadline confirmed → 100% prepayment → Premium Concept Card approval where applicable → production → technical and human QA → client review/corrections → final QA → Book where included → delivery → resolution recorded → `CLOSED` → retention/deletion under [Data Retention & Deletion](../Client_Experience/Intake/ONYX_DATA_RETENTION_AND_DELETION_v1.md).
 
-## Order states for future automation
+Reference QA must be PASS or PASS_WITH_NOTES with limitations resolved/agreed before payment and final acceptance. NEEDS_MORE_REFERENCES/REJECT cannot proceed to payment. No generation is promised before prepayment. Reference Guide uses quality-based sufficiency; 4–8 useful images is an orientation, not a hard limit.
 
-| State | Meaning | Typical next states |
-| --- | --- | --- |
-| `LEAD` | Product interest recorded | `WAITING_FOR_PAYMENT`, `WAITING_FOR_REFERENCES` |
-| `WAITING_FOR_PAYMENT` | Payment step pending | `WAITING_FOR_REFERENCES`, `CLOSED` |
-| `WAITING_FOR_REFERENCES` | Intake or usable references pending | `REFERENCE_REVIEW`, `CLOSED` |
-| `REFERENCE_REVIEW` | References are assessed for identity input quality | `READY_FOR_PRODUCTION`, `WAITING_FOR_REFERENCES` |
-| `READY_FOR_PRODUCTION` | Inputs and, for Premium, Concept Card approval are complete | `IN_PRODUCTION` |
-| `IN_PRODUCTION` | Generation, repair and post-processing underway | `IN_QA` |
-| `IN_QA` | Internal quality gate and diversity review | `WAITING_FOR_CLIENT`, `FINAL_QA`, `IN_PRODUCTION` |
-| `WAITING_FOR_CLIENT` | Preview decision, Premium Concept Card approval or client revision input pending | `IN_REVISION`, `FINAL_QA`, `CLOSED` |
-| `IN_REVISION` | Approved subjective correction scope underway | `IN_QA` |
-| `FINAL_QA` | Final assets and delivery package checked | `READY_FOR_DELIVERY` |
-| `READY_FOR_DELIVERY` | Delivery package prepared | `DELIVERED` |
-| `DELIVERED` | Client delivery completed | `CLOSED` |
-| `CLOSED` | Service completed, cancelled or retained/deleted under policy | — |
+| State | Meaning / gate | Next states |
+|---|---|---|
+| LEAD | Product interest | WAITING_FOR_REFERENCES, CLOSED |
+| WAITING_FOR_REFERENCES | Intake, per-order processing consent and usable inputs | REFERENCE_REVIEW, CLOSED |
+| REFERENCE_REVIEW | Assess reference suitability and scope feasibility | WAITING_FOR_PAYMENT, WAITING_FOR_REFERENCES, CLOSED |
+| WAITING_FOR_PAYMENT | Accepted references, final quote and confirmed capacity | READY_FOR_PRODUCTION, WAITING_FOR_CLIENT, CLOSED |
+| WAITING_FOR_CLIENT | Premium direction approval, cancellation choice or consolidated feedback | READY_FOR_PRODUCTION, IN_REVISION, FINAL_QA, CLOSED |
+| READY_FOR_PRODUCTION | Full payment received and logged; inputs, consent, capacity and creative approval complete | IN_PRODUCTION |
+| IN_PRODUCTION | Bounded configured attempts | IN_QA, CLOSED through resolution |
+| IN_QA | Technical/human review and collection diversity | WAITING_FOR_CLIENT, FINAL_QA, IN_PRODUCTION |
+| IN_REVISION | Agreed subjective scope | IN_QA |
+| FINAL_QA | All ordered finals accepted; Book/package checked | READY_FOR_DELIVERY, IN_PRODUCTION |
+| READY_FOR_DELIVERY | Approved clean package | DELIVERED |
+| DELIVERED | Actual handover recorded | CLOSED |
+| CLOSED | Delivery or cancellation/refund resolution complete; `order_closed_at` recorded. Starts 30-calendar-day image-retention clock. | — |
 
-These states complement, rather than replace, existing production-asset statuses in the Product System.
+These are documentation/config states, not a newly implemented runtime state machine. Record resolution outcome separately from state: fulfilled, cancelled, refunded or otherwise explicitly agreed; CLOSED alone does not prove success.
 
-## Service levels
+### Legacy order-state mapping
 
-| Area | Preview | Signature | Premium |
-| --- | --- | --- | --- |
-| Customer role | Minimal choice: collection and primary look | Chooses existing collection; limited creative participation | Completes Creative Profile and approves a Concept Card |
-| Creative direction | No concept approval | Standard collection framework | Individual direction and scene plan |
-| Delivery | One final high-resolution image | 10 images, standard Collection Book and delivery package | 20 images, extended Book, Motion, use guidance and optional social-ready copies |
-| Revisions | Technical correction only | One launch-policy subjective correction round with limited scope | Two launch-policy subjective correction rounds with broader scope |
+Keep the existing persisted states in `products_v1.yaml` and current order records. This mapping supplies the requested operational names without renaming records or changing runtime consumers:
 
-No turnaround-time SLA is set until production measurements exist. Use `TBD` rather than promising hours or days.
+| Operational stage | Existing persisted state / record |
+|---|---|
+| `INTAKE` | `LEAD` or initial order record |
+| `WAITING_FOR_REFERENCES` | `WAITING_FOR_REFERENCES` |
+| `REFERENCE_QA` | `REFERENCE_REVIEW` |
+| `READY_FOR_PAYMENT` | `WAITING_FOR_PAYMENT` after PASS/PASS_WITH_NOTES and confirmed quote/capacity |
+| `PAID` | `READY_FOR_PRODUCTION` only when `payment_status: PAID` is recorded |
+| `IN_PRODUCTION` | `IN_PRODUCTION` |
+| `IN_QA` | `IN_QA` / `FINAL_QA` |
+| `WAITING_FOR_CLIENT_CORRECTION` | `WAITING_FOR_CLIENT` / `IN_REVISION` |
+| `READY_FOR_DELIVERY` | `READY_FOR_DELIVERY` after final acceptance |
+| `DELIVERED` | `DELIVERED` with handover timestamp |
+| `CLOSED` | `CLOSED` after delivery or agreed cancellation/refund resolution |
+| `REFUNDED` | Keep as `resolution_status: REFUNDED`; persisted state becomes `CLOSED` after refund completion |
+| `CANCELLED` | Keep as `resolution_status: CANCELLED`; persisted state becomes `CLOSED` after cancellation resolution |
 
-## Correction policy
+Do not transition to `CLOSED` while a refund remains unresolved. `CLOSED` plus `order_closed_at` starts image-retention countdown; storing resolution as metadata preserves existing status consumers.
 
-### Technical correction — included
+## Service levels and correction boundaries
 
-Technical correction covers visible artefacts; hands, eyes or anatomy errors; extra objects; image defects; and unexpected identity failure. These are internal quality obligations, not subjective client revisions.
+Portrait: one direction, one final, no Book or included subjective round. Signature: one main Collection, usually 2–3 Concepts, ten finals, one round, Standard Book. Premium: one main Collection, usually 4–6 Concepts, twenty finals, two rounds, Extended Book and deeper direction. Compatible adjacent Concepts are possible; full second Collection is separate scope.
 
-### Client revision — launch policy
+[Correction Policy](ONYX_CORRECTION_POLICY_v1.md) distinguishes free QA defects from subjective changes. New major wardrobe/location/Concept is scope expansion, not automatically a correction. No unlimited retries or rounds.
 
-Client revision covers a different outfit, pose, scene, expression or additional stylistic request. Signature includes one correction round with a limited number of images; Premium includes two rounds with a higher replacement/correction scope. Do not publish a fixed image-count limit until first-order data is reviewed.
+## Deadlines and upgrades
 
-This is a launch policy to validate after the first paid orders. A request beyond the agreed scope may require a new product decision or separate quote; no automatic entitlement is created.
+Standard deadline is agreed per order; no unsupported global SLA. Priority targets within 24 hours and Express same day only after explicit capacity confirmation and all inputs/payment/approvals. Record timezone, start and deadline; QA remains unchanged. Prices and surcharge basis are in [Price Book](ONYX_PRICE_BOOK_v1.md).
 
-## Reference quality policy
+Portrait → Signature and Signature → Premium each cost an additional 2000 RUB within 7 calendar days of source delivery, subject to source policy eligibility. Target totals remain 3000/5000 RUB. Target finals/rounds are cumulative, not two sessions; prior used rounds count toward the target allowance. Verify consent, reference availability and continuing context; never extend retention automatically. If context is unavailable after closure, transparently offer a new order rather than a technical upgrade. Never charge the credited base price twice.
 
-A usable reference set has clear, recent images of the client, adequate face visibility, varied angles or expressions where available, and no severe blur, obstruction or conflicting identity information. The needed number varies by identity method and available source material; do not impose an unsupported universal minimum.
+## Payment, capacity and urgent orders
 
-Ask for new references when identity cannot be evaluated reliably, the face is consistently obscured/blurred, the supplied images conflict materially, or quality gates identify poor identity input. Do not start production with knowingly inadequate references unless the client has been informed of the limitation and the responsible production decision is recorded.
+The soft-launch flow is **References submitted → Reference QA → feasibility confirmed → final scope/price/deadline confirmed → 100% prepayment → production starts**. Reference QA is free and precedes payment. Do not collect production prepayment until references are usable, the selected product and scope are feasible, the total is confirmed and capacity is available. Record the quote and the client's confirmation. Start only after the full agreed amount is received, verified and logged. Use the existing approved payment channel; this policy assumes no new provider, credential or fee.
 
-## Premium intake and Concept Card
+For Priority/Express, confirm available capacity and target first; confirm surcharge and exact total second; collect payment after the client agrees; then start urgent production. If the target cannot be met, do not sell or collect its surcharge. If an accepted urgent target later becomes impossible, promptly agree a revised deadline or refund the undelivered urgency surcharge as applicable.
 
-Collect purpose, professional field, intended uses, desired impression, preferred style, Natural/Polished/Glamour level, clothing, environments, elements to avoid, permitted facial/body correction and additional wishes. Convert them into a Premium Creative Brief and one bounded Concept Card.
+## Failed production, cancellation and refunds
 
-Concept approval happens before `READY_FOR_PRODUCTION`. Keep it to one concise direction check; it does not initiate unlimited custom design work.
+Use the bounded reasonable effort allowed by the job configuration. Regenerate/replace isolated failures; do not automatically cancel the whole session for a rejected frame. If ONYX cannot deliver an accepted result meeting its minimum production/QA standard, stop retries, preserve diagnostics, notify the client, and record the order as unresolved/failed rather than successfully delivered. The base resolution is refund of payment for the unfulfilled order. If a mutually accepted alternative scope resolves the issue, record the choice and delivered scope; rejected images or an unwanted credit are not fulfillment.
 
-## Delivery
+The operator records paid amount, delivered/accepted scope, reason, resolution offered, client decision and refund completion. If part of a multi-part order is accepted and the remainder cannot be completed, agree a refund for the unfulfilled part based on the confirmed line-item quote. If no separable line value was quoted, the owner agrees the proposed amount with the client before processing. Record amount and processing evidence. Do not invent a fixed deduction or require store credit.
 
-High-resolution originals are the primary deliverable. Signature includes the standard Collection Book; Premium includes the extended Book requirement and, when feasible, Motion and social-ready copies. The client receives delivery through the approved delivery layer, not direct MinIO access.
+For client cancellation before production starts, the soft-launch operational default is a full refund of the amount received. Do not deduct hypothetical expenses. If a verifiable unavoidable third-party charge has already been incurred, record it and obtain owner review before proposing any adjustment; do not apply an automatic penalty. Once production starts, record work performed, direct costs actually incurred, stage and applicable requirements. The owner proposes a case-specific resolution and agrees the amount with the client before processing. No fixed forfeiture or absolute no-refund-after-generation rule applies.
 
-## Privacy, consent and retention
+Process refunds through the original payment channel when available; otherwise agree a documented method with the client. Record `refund_status`, amount, date, channel/reference and confirmation. Do not promise an unsupported processing-time SLA; share only timing confirmed by the actual provider for that transaction. Keep minimal payment/refund records separate from image files. Exact public cancellation Terms may receive separate legal review; this does not block the internal operational workflow or Avito Pack preparation.
 
-- Client photos are private production data.
-- MinIO `onyx` is internal production storage; clients do not receive direct MinIO access.
-- Source references and production artefacts are never published or used in a portfolio without separate client consent.
-- Retention duration and the deletion procedure are **OWNER DECISION REQUIRED**. Until approved, record the intended lifecycle and do not imply a retention period to clients.
-- A deletion request/process must be tracked as an operational event without exposing storage credentials or private locations.
+## Privacy and delivery
 
-## Payment and failed-production framework — OWNER DECISION REQUIRED
+[Consent & Privacy](../Client_Experience/Intake/ONYX_CONSENT_AND_PRIVACY_v1.md) remains authoritative. Per-order processing consent is required; reuse for a new order needs explicit reuse consent. Portfolio and marketing consent are separate and not implied by purchase. Apply the relevant permission to Avito, social, website and advertising; denied/not asked never permits publication.
 
-Do not publish final rules for prepayment, cancellation, refunds, Preview-credit expiry or failed-production outcomes until owner approval. During launch, record each exceptional case and use it to form the final policy.
+Retain client image assets no later than 30 calendar days after `CLOSED`, with earlier deletion on an eligible request when no correction/dispute needs the assets. Closure starts the clock. Separate minimal order/transaction/consent records; this policy asserts no fixed legal retention term for them. Follow the manual checklist in [Data Retention & Deletion v1](../Client_Experience/Intake/ONYX_DATA_RETENTION_AND_DELETION_v1.md). No automated purge or third-party erasure is claimed.
+
+Only accepted clean finals, the included Book and approved client readme belong in delivery. No sources, rejected candidates, prompts, internal paths or manifests. `onyx` is internal project storage; never use personal `alexander` or expose direct MinIO access. Use the approved delivery layer and verify its access/expiry for each order.
+
+Delivery counts are 1/10/20 plus purchased additional finals; a legacy ten-frame builder is not a universal product rule. Portrait/Premium may be manually packaged with recorded human QA until their automation is adapted. Record final IDs, acceptance, source integrity, Book QA and actual handover.
+
+Ask for post-delivery satisfaction, remaining defects, intended-use suitability and optional repeat/Collection interest; record complaints and resolution without inferring marketing consent. Feedback collection may be manual at soft launch.

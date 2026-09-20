@@ -1,138 +1,119 @@
-# ONYX Product System v1
+# ONYX Commercial Product System v1
 
-**Status:** production launch standard.
-**Scope:** product architecture and customer value; implementation, prices and service operations are defined by the linked standards.
+Commercial source of truth: **ONYX_COMMERCIAL_PRODUCT_SYSTEM_v1**.
+Version status: **CURRENT**. Commercial status: **FROZEN_FOR_SOFT_LAUNCH**.
+Freeze date: **2026-09-20**. Owner: ONYX owner.
 
-## Positioning
+This file governs product names, prices, deliverables, corrections, add-ons and upgrades.
+[Price Book](ONYX_PRICE_BOOK_v1.md) and [products_v1.yaml](products_v1.yaml) are synchronized views of this document, not independent authorities.
+Operational readiness is tracked separately in [Launch readiness](ONYX_LAUNCH_READINESS_CHECKLIST_v1.md); frozen commercial scope does not certify every production route or Collection.
+Earlier values are SUPERSEDED; see [version history](ONYX_COMMERCIAL_VERSION_HISTORY_v1.md).
 
-ONYX is not a service for generating isolated AI images. Its core product is a **personal virtual photoshoot**, designed, selected, refined and delivered as a finished visual collection.
+## Product taxonomy
 
-Technology is not the customer value proposition. The value is identity consistency, creative direction, diversity of the series, selection, quality control, regeneration and repair, retouch and enhancement, upscale, curator-style selection, Collection Book and a convenient delivery package.
+**Collection → Concept → Scene → Final Image**
 
-## Launch product matrix
+- Collection: a broad visual direction, such as Business, Executive, Lifestyle, Fashion, Glamour, Travel or Evening. The [Collection Catalog](ONYX_COLLECTION_CATALOG.md) describes existing directions; listing does not grant launch availability.
+- Concept: a distinct creative idea within a Collection, e.g. Corporate Headshot, Formal Executive, Boardroom, Smart Casual, Workspace, Office Walk or Window Portrait in Business.
+- Scene: a concrete composition within a Concept. Boardroom may contain seated at table, standing by presentation screen, close executive portrait and walking into boardroom.
+- Final Image: an individually accepted client deliverable after final QA, not a candidate or generation attempt.
 
-| Product | Customer outcome | Price, RUB | Final photographs | Creative model | Collection Book | Motion | Revisions |
-| --- | --- | ---: | ---: | --- | --- | --- | --- |
-| ONYX Preview | Personal test frame: proof of identity and collection quality before a full photoshoot | 900 | 1 | One chosen collection and primary look | No | No | Technical correction only |
-| ONYX Signature | Personal photoshoot in a chosen collection | 3,000 | 10 | Standardized ONYX collection, adapted to the person | Standard | No | One launch-policy round, limited scope |
-| ONYX Premium | Personalized visual story designed around the person’s goals and desired image | 5,000 | 20 | Personal Creative Profile, creative direction and scene plan | Extended | ONYX Motion | Two launch-policy rounds, broader scope |
+New scene plans and commercial manifest extensions record collection_id, concept_id, scene_id and final_image_id, with links to candidate provenance and acceptance. Existing asset IDs and canonical runtime contracts are not rewritten. The YAML documents an additive future manifest contract; runtime enforcement is not implemented by this freeze.
 
-**Preview proves. Signature standardizes. Premium personalizes.** Premium is not simply a 20-image Signature package.
+## Frozen product matrix
 
-Client-facing launch prices and Preview upgrade arithmetic are authoritative in [ONYX Price Book v1](ONYX_PRICE_BOOK_v1.md). The structured source for future automation is [products_v1.yaml](products_v1.yaml).
+| Product / stable ID | Price, RUB | Final images | Collection scope | Concepts | Client correction rounds | Collection Book |
+|---|---:|---:|---|---|---:|---|
+| ONYX Portrait / ONYX_PORTRAIT_V1 | 1000 | 1 | Single agreed direction | 1 | 0 | No |
+| ONYX Signature / ONYX_SIGNATURE_V1 | 3000 | 10 | 1 main Collection | Usually 2–3 | 1 | Standard PDF |
+| ONYX Premium / ONYX_PREMIUM_V1 | 5000 | 20 | 1 main Collection | Usually 4–6 | 2 | Extended PDF |
 
-## ONYX Preview
+Concept ranges are production guidance, never a hard customer deliverable count. Internal candidate budgets and retry limits are job configuration, never a promised number of generations. Only approved final images count toward delivery.
 
-### Purpose
+## ONYX Portrait
 
-Preview is a low-risk first purchase. It lets a client check identity preservation, see the style of a selected collection, understand ONYX quality and decide whether to purchase a full photoshoot.
+A complete standalone professional portrait service: CV/resume, business or corporate profile, messenger/avatar, social media, personal website, dating/profile photo and other single-portrait uses. Customer wording: «Один готовый профессиональный портрет». Do not position it as trial, demo, пробное фото or тестовая генерация.
 
-Use customer language such as **«персональный тестовый кадр ONYX»**. Do not describe it as a sale of one AI image.
+Includes reference suitability review, one agreed Concept/Scene direction, internal candidates, identity preservation, technical/face/eyes/anatomy/realism QA, selection of one final, standard final preparation and correction of ONYX technical defects before delivery (and defects missed at delivery).
 
-### Included
+No multi-scene session, independent additional Concepts, Collection Book, separate client correction round, requested wardrobe/location variants, all intermediate generations or unlimited revisions are included.
 
-- one final high-resolution photograph;
-- one chosen production-approved collection and one primary look;
-- production QA;
-- repair or regeneration when required for technical quality;
-- final processing and high-resolution delivery.
+## ONYX Signature — CORE / RECOMMENDED PRODUCT
 
-Preview has no Concept Card, personal creative profile or client-directed creative cycle. A full Preview payment is credited when the client upgrades to Signature or Premium; it is a product price credit, not a discount on the listed total price.
+A compact complete virtual photoshoot in one main Collection: usually 2–3 Concepts, multiple Scenes and 10 curated finals. Includes Client Intake, Reference QA, creative direction, scene planning, candidate production, identity preservation, diversity, human and technical QA, regeneration/replacement of unacceptable frames, repair as needed, curation, final QA, one client correction round, Standard Collection Book PDF and delivery package.
 
-## ONYX Signature
-
-### Purpose
-
-**Персональная фотосессия в выбранной коллекции.** Signature is the standard mass-market ONYX product.
-
-Signature is standardized by creative framework. The client chooses a ready ONYX Collection, such as Business, Executive, Lifestyle or another production-approved collection. ONYX adapts the collection to the individual; it does not design a wholly new visual concept from zero.
-
-### Included
-
-- 10 final photographs;
-- usually 2–3 looks and 4–6 visually distinct scenes, adjusted when quality requires it;
-- one coherent collection visual language;
-- identity consistency and diversity control;
-- production QA, repair or regeneration, retouch or enhancement and upscale;
-- ONYX Selection;
-- standard ONYX Collection Book;
-- high-resolution originals and delivery package.
-
-The P02 Business Collection Book is the approved Signature reference implementation. See [Collection Book Standard](ONYX_COLLECTION_BOOK_STANDARD.md) and [production guide](../Templates/Collection_Book/COLLECTION_BOOK_PRODUCTION_GUIDE.md).
+The client buys 10 finished images. Candidate counts such as 12 or 20 remain internal production parameters. The approved Signature Book reference and current layout rules remain in [Collection Book Standard](ONYX_COLLECTION_BOOK_STANDARD.md).
 
 ## ONYX Premium
 
-### Purpose
+An extended editorial photoshoot with deeper creative direction and a richer coherent visual story: 20 finals, one main Collection, usually 4–6 Concepts and multiple Scenes. Greater range of wardrobe, viewpoints, expressions, compositions, scene types and mood must preserve identity, realism and coherence.
 
-Premium is a **photoshoot developed around the client’s personality, goals and desired image**. It is a personalized visual story with more creative variety, not a larger standard collection.
+Includes Signature production quality obligations, Personal Creative Profile, Premium Creative Brief, one bounded pre-production Concept Card approval, curation, replacement/regeneration, repair as needed, final QA, two client correction rounds, Extended Collection Book PDF and delivery package. The extended Book contains all 20 images, clearer narrative structure and Concept chapters when useful, with personalized selection/use guidance.
 
-### Included
+Compatible adjacent Concepts are allowed when they form one session. Business / Executive can be coherent; **Business + Lifestyle included** or two full Collections is not the default. A full second Collection is separately scoped and quoted; no frozen Additional Collection price exists.
 
-- 20 final photographs;
-- Personal Creative Profile and Premium Creative Brief;
-- individual creative direction and scene plan;
-- usually 4–5 looks, 8–12 scenes and several visual chapters or moods, adjusted when quality requires it;
-- increased variety and identity consistency;
-- production QA, repair or regeneration, retouch or enhancement and upscale;
-- extended ONYX Collection Book;
-- ONYX Selection and, where useful, additional curator selections;
-- Personal Style Recommendation and Recommended Use guidance;
-- ONYX Motion;
-- social-ready export formats in addition to high-resolution originals;
-- expanded client revision scope.
+ONYX Motion and specialized social export sets from the previous model are not mandatory frozen deliverables. They remain future separately approved scope; no video or Book is produced by this documentation change.
 
-The 5,000 RUB launch price is a hypothesis. Reassess it after the first real orders using measured unit economics; it is not a promise of a permanent price.
+## Add-ons and independent Repair
 
-### Personal Creative Profile
+| Service / stable ID | Price, RUB | Applies to | Boundary |
+|---|---:|---|---|
+| Additional Final Image / ADD_FINAL_IMAGE | 500 | 1 extra accepted final within agreed Collection/Concept or close Scene direction | Extra angle/pose/portrait in existing look; substantial new wardrobe, location, style or Concept is separately scoped |
+| Additional Concept / Look / ADD_CONCEPT | 1000 | New creative idea/look/location type within existing or compatible Collection architecture | Not automatically a separate Collection; final count stays the ordered count unless extra finals are purchased |
+| Additional Correction Round / ADD_CORRECTION_ROUND | 700 | One subjective round after included rounds are used; Portrait has zero included | No new session, full creative reset, new Collection or unlimited regeneration |
+| ONYX Repair / ONYX_REPAIR | from 500 simple; from 1000 complex | External image or new scope outside ONYX obligations | Price and feasibility only after inspection; no guarantee of technically impossible repair |
+| ONYX Priority / ONYX_PRIORITY | +50% | Confirmed capacity; target within 24 hours | Queue change only; unchanged identity and QA standard |
+| ONYX Express / ONYX_EXPRESS | +100% | Explicitly confirmed capacity; same-day target | Not always available; unchanged identity and QA standard |
 
-Premium production begins only after collecting: purpose of the photoshoot; profession or field; intended uses; desired impression; preferred style; Natural / Polished / Glamour level; clothing; preferred environments; elements to avoid; permitted facial and body correction; and other wishes.
+Additional Concept fee pays for creative scope, not an unspecified bonus image bundle. Confirm its final count in the quote before payment; Additional Final Image supplies extra finals when needed. ONYX classifies substantial creative changes as Concept/Collection/new order rather than a simple extra final, explains the scope and confirms the price first.
 
-These inputs become the internal **Premium Creative Brief**. They guide production but do not authorize unsupported changes to identity or appearance.
+Repair may cover hands/anatomy, clothing, background, object removal/replacement, local composition, realism or restoration. A defect in ONYX's own final delivery is corrected free, never sold as paid Repair.
 
-### Concept Card and approval
+Urgency quote records the surcharge base explicitly: approved production subtotal (base product plus applicable production add-ons), excluding any urgency fee itself; Priority and Express are alternatives, not cumulative. The accepted quote records the exact total and delivery deadline before payment. Timing starts only when usable references, consent, agreed scope, required approvals and payment are complete. Express requires an explicit local same-day deadline; if that cannot be met, do not sell it. Standard delivery time is agreed per order; there is no measured universal standard SLA yet.
 
-Premium includes a brief operational concept approval before batch production. It is a bounded direction check, not an open-ended bespoke design engagement.
+## Corrections
 
-```text
-ONYX PREMIUM CONCEPT
+ONYX QA defects are corrected free and never consume a client round: extra/missing fingers, malformed hands/eyes, anatomy/body-proportion errors, severe face artifacts, damaged clothing, obvious AI artifacts, unusable technical output, identity failure or violation of an explicitly recorded requirement.
 
-Client:
-Collection / concept:
-Visual direction:
-Mood:
-Primary use:
-Looks:
-Scenes:
-Key priorities:
-Avoid:
-```
+Client correction means a subjective change to an otherwise compliant image: smile intensity, small look change, preference for another version or local style adjustment. One round is one consolidated feedback list and the agreed bounded response; record affected finals and scope before work. Portrait includes zero, Signature one, Premium two. Further same-scope rounds cost 700 RUB. Full wardrobe/location/creative changes may be Additional Concept, Additional Collection or a new order. There is no unlimited regeneration entitlement or invented per-round image limit. See [Correction Policy](ONYX_CORRECTION_POLICY_v1.md).
 
-The client approves or corrects this card once before mass generation. The service standard defines the state transition.
+## Upgrade rules
 
-### Visual chapters
+| Upgrade | Window | Credited base payment, RUB | Additional base payment, RUB | Target total, RUB |
+|---|---|---:|---:|---:|
+| Portrait → Signature | 7 calendar days | 1000 | 2000 | 3000 |
+| Signature → Premium | 7 calendar days | 3000 | 2000 | 5000 |
 
-Premium should be organized as logical visual chapters so it reads as a complete story rather than 20 variations of one scene. For a Business or Executive direction, chapters may be Portrait, At Work, Personal Brand and Editorial. This is an example, not a mandatory universal list; chapters come from the Creative Profile.
+Operational window: from recorded delivery of the source product, through delivery date + 7 calendar days in the order timezone; record request timestamp and eligibility. The result is the target package (10 or 20 total finals), not two separately charged packages. Prior accepted finals may count when they meet the continuing brief. Target tier's included correction allowance is cumulative: subtract rounds already used on the continuing order. Any outstanding QA defect stays free.
 
-### ONYX Motion
+Upgrade requires available references, production context, consent and order metadata under the actual privacy policy; Signature → Premium also requires continuation of the original Collection. Never extend retention or reuse rights automatically to support an upgrade. If context is unavailable, explain that a new order is necessary; do not silently call it an upgrade. Additional services are separately itemized, not credited twice. Track prior credits to prevent double charging. Legacy Preview orders retain their recorded agreed terms; no automatic relabeling/repricing.
 
-ONYX Motion is a Premium deliverable: a short cinematic motion portrait based on a key collection frame. Target: about four seconds, natural motion and expression, minimal artefacts, a premium look and vertical/social-friendly format. The underlying model is not part of the product definition and may change.
+## References, payment, failed production and privacy
 
-### Premium Collection Book and use guidance
+Reference QA and feasibility/capacity confirmation precede final acceptance and **100% prepayment**. For all three tiers 4–8 useful references is an orientation only: the mature [Reference Guide](../Client_Experience/Intake/ONYX_REFERENCE_GUIDE_v1.md) quality-based rule prevails; no universal hard minimum or maximum.
 
-Premium Book requirements extend the Signature standard with Personal Creative Direction, visual chapters, ONYX Selection, optional additional curator selections, Personal Style Recommendation, Recommended Use, personal closing note and next collections. No Premium Book PDF is defined by this document.
+Failed candidates are regenerated/replaced within bounded job effort; one bad frame does not cancel a session. If reasonable effort cannot produce an acceptable order, it is not successfully fulfilled: stop retries, record evidence and use the [Service Standard resolution process](ONYX_SERVICE_STANDARD_v1.md). Never mark a rejected set delivered.
 
-Recommended Use is personalized after final selection and may cover a professional profile, avatar, corporate site, speaker bio, CV, social media or editorial/personal-brand use when relevant. It does not promise particular platforms.
+[Consent & Privacy](../Client_Experience/Intake/ONYX_CONSENT_AND_PRIVACY_v1.md) remains authoritative for processing, reference reuse and separate publication permissions. Purchase never grants portfolio, Avito, social, website or advertising permission. Default is no publication; require the relevant explicit consent. Synthetic portfolio characters follow existing asset/provenance approval rules. Client image assets follow [Data Retention & Deletion v1](../Client_Experience/Intake/ONYX_DATA_RETENTION_AND_DELETION_v1.md): up to 30 calendar days after CLOSED, with eligible early deletion; minimum order/payment/consent records are segregated and have no invented legal retention term. The upgrade window does not establish retention.
 
-Social-ready exports are optional optimized copies such as avatar/profile, portrait post or story/reel cover. High-resolution originals remain the main deliverable; no social assets are generated by this standard.
+## Scope boundaries and future products
 
-## What is outside the launch line
+Default v1 excludes personal LoRA training, unlimited revisions, all candidates, internal prompts/workflows/seeds/config/model settings, complex manual Photoshop compositing, exact branded-object reproduction guarantees, physical books, multiple complete Collections inside Premium, explicit adult content, ONYX Private and unapproved scope.
 
-The following are future scope, not launch products: ONYX Private; fully bespoke products above Premium; subscriptions; corporate packages; website self-service; automated SaaS; unlimited generation; and Model Arena as a customer feature.
+PLANNED / FUTURE, not mandatory soft-launch scope: Additional Collection (price TBD), Physical Collection Book, Couple session, Family session, Corporate packages, printed products, advanced retouch, VIP LoRA, Motion and specialized social exports. Catalog presence does not make these saleable today.
 
-## Related standards
+## Pricing communication and internal rationale
 
-- [Price Book](ONYX_PRICE_BOOK_v1.md): prices, Preview credit and unit-economics placeholders.
-- [Service Standard](ONYX_SERVICE_STANDARD_v1.md): journey, corrections, privacy, retention and delivery rules.
-- [Portfolio Standard](ONYX_PORTFOLIO_STANDARD.md): asset roles and portfolio QA.
-- [Marketing Standard](ONYX_MARKETING_STANDARD.md): marketing collateral only.
-- [Collection Book Standard](ONYX_COLLECTION_BOOK_STANDARD.md): Signature and Premium Book requirements.
+Public headline: **Профессиональные AI-фото по вашим обычным снимкам — от 1 000 ₽.**
+
+Public display: Portrait — 1 фото — 1 000 ₽; Signature ⭐ — 10 фото — 3 000 ₽; Premium — 20 фото — 5 000 ₽. Brief add-ons: +1 фото — 500 ₽; срочное выполнение — от +50%; исправление фото — от 500 ₽. Detailed correction/complex Repair fees belong in consultation, Price Book and Service Standard, not the first slide.
+
+Portrait lowers purchase friction, serves real single-image needs and may lead to Signature. Signature is the core value package for most clients. Premium increases creative depth and average order value, not the number of full Collections. Extra finals monetize existing scope; Concepts monetize creative expansion; Repair is an independent acquisition/revenue channel; urgency compensates queue disruption.
+
+## Freeze and review
+
+Until **10 PAID ORDERS**, do not change base prices, final counts, Portrait/Signature/Premium structure or upgrade pricing except documented critical product issues, unsustainable economics, serious client confusion, legal/compliance issues or inability to deliver reliably. Record an owner decision, reason and synchronized Markdown/YAML revision before any exception. R&D never silently changes the freeze.
+
+At 10 paid orders run **ONYX Product & Pricing Review v1.1**. Track unique paid order IDs; upgrade/add-on payments do not inflate this count. Record refunds separately. Portrait economics require operator minutes, attempts, generation cost when measurable, correction frequency and Portrait → Signature upgrade rate; do not change its price before evidence.
+
+Soft-launch allocation: **80% SALES / CLIENT PRODUCTION / DELIVERY**, **20% R&D / AUTOMATION**. Model arenas, LoRA/PuLID/FLUX tuning, complex automation and website infrastructure must not delay sales. See [KPI framework](ONYX_LAUNCH_KPI_v1.md) and [readiness](ONYX_LAUNCH_READINESS_CHECKLIST_v1.md).

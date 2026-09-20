@@ -1,5 +1,9 @@
 # ONYX Client Delivery SOP v1
 
+## Commercial scope — 2026-09-20
+
+[Product System](../Product_Standards/ONYX_PRODUCT_SYSTEM.md) governs 1/10/20 accepted finals plus purchased extras; Portrait has no Book, Signature Standard PDF, Premium Extended PDF. The existing builder described below is the legacy ten-image Signature path. Portrait/Premium require manually verified packaging until a compatible builder is confirmed; do not claim universal automation.
+
 ## Source
 
 Use only an approved production package. Never modify files under `09 Experiments`. The package must contain ten approved master PNGs after upscale and a completed visual QA record.
@@ -21,9 +25,8 @@ The prepayment footer uses `BUSINESS COLLECTION / CLIENT PREVIEW`. `PORTFOLIO PR
 
 ## Sending policy
 
-Before payment, send only `00_PREPAYMENT_PREVIEW`. After payment, send either the compact LIGHT archive or the complete FULL archive. Paid files contain no watermark. The client may use the lightweight set for messaging and social media, the high-quality JPEG set for everyday use, and the full-resolution PNG set for print, retouching and archive storage.
+New frozen orders require Reference QA and 100% prepayment before production. Legacy `00_PREPAYMENT_PREVIEW` proofs are not a free included prepayment generation step. After payment and final acceptance, send either the compact LIGHT archive or the complete FULL archive. Paid files contain no watermark. The client may use the lightweight set for messaging and social media, the high-quality JPEG set for everyday use, and the full-resolution PNG set for print, retouching and archive storage.
 
 ## QA gate
 
 Check that every delivery folder contains ten images, filenames and roles match the portfolio manifest, full-resolution checksums match their source masters, previews carry the correct order ID, paid files have no watermark, and the manifest is present. Do not publish or deliver while owner final approval is pending.
-

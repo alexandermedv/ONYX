@@ -21,6 +21,10 @@ Recommended hierarchy:
 
 Photography occupies the visual lead. Use generous Warm White or Onyx fields, quiet Stone dividers and Champagne only for restrained emphasis. Leave clear space around the wordmark. A composition should have one dominant photograph, one message and one action.
 
+## Signature stone application
+
+`ONYX Stone Signature` is the approved premium presentation mode: black onyx stone and silk with the luminous metallic-gold monogram and wordmark. Use it on covers, title slides, presentations, premium dark banners and selected collage fields. Keep body copy in a separate field. Use flat logo masters for small sizes, watermarks, functional layouts and light backgrounds.
+
 ## Watermark applications
 
 Portfolio cards use the approved editorial wordmark in a dedicated lower field. Prepayment proofs use the five repeated transparent `ONYX / PRIVATE PREVIEW / ORDER <ID>` marks, including one light overlap with the face. Paid files are always clean. Never place a plain white `ONYX` caption directly on a photograph.
@@ -31,5 +35,9 @@ Say “персональная виртуальная фотосессия”, 
 
 ## Delivery tiers
 
-Before payment: reduced marked preview only. After payment: JPEG 2048 and web JPEG 1600, with full-resolution PNG masters supplied when maximum quality or archive delivery is requested.
+Before payment: `00_PREPAYMENT_PREVIEW` with the approved `CLIENT PREVIEW` footer and five protective marks. After payment: `01_LIGHT_JPEG`, `02_HIGH_QUALITY_JPEG` and `03_FULL_RESOLUTION_PNG`. Paid files are clean and contain no watermark.
 
+
+## Commercial timing clarification — 2026-09-20
+
+[Service Standard](../Product_Standards/ONYX_SERVICE_STANDARD_v1.md) now requires Reference QA and 100% prepayment before production. Existing prepayment-proof terminology specifies protected proof assets only; it does not promise free prepayment generation and does not refer to a current paid Preview product. Visual proof rules remain unchanged. Earlier exported brandbooks are visual references, not payment-policy authorities.

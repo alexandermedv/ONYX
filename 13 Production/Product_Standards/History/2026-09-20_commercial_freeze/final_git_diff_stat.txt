@@ -1,0 +1,66 @@
+ 03 Product/Collections.md                          |   8 +-
+ 03 Product/Product.md                              |   8 +-
+ 10 Roadmap/Roadmap.md                              |   7 +
+ .../Brand/CLIENT_PREVIEW_PROOF_STANDARD_V1.md      |   4 +
+ 13 Production/Brand/Logo/EDITORIAL_WORDMARK_V1.md  |   8 +
+ 13 Production/Brand/ONYX_BRANDBOOK_CONTENT_V1.md   |  10 +-
+ 13 Production/Brand/ONYX_BRAND_SYSTEM.md           |  14 +
+ .../ONYX_P01_BUSINESS_PREPAYMENT_PREVIEW.jpg       | Bin 276514 -> 126239 bytes
+ .../ONYX_P02_BUSINESS_PREPAYMENT_PREVIEW.jpg       | Bin 294057 -> 133764 bytes
+ .../ONYX_P03_BUSINESS_PREPAYMENT_PREVIEW.jpg       | Bin 289525 -> 135437 bytes
+ .../Client_Delivery/ONYX_CLIENT_DELIVERY_SOP_V1.md |   7 +-
+ 13 Production/Client_Delivery/Templates/README.md  |   2 +-
+ .../Intake/ONYX_CONSENT_AND_PRIVACY_v1.md          |  11 +
+ .../Intake/ONYX_PREMIUM_CREATIVE_PROFILE_v1.md     |   4 +
+ .../Intake/ONYX_REFERENCE_QA_STANDARD_v1.md        |   4 +-
+ .../Intake/ONYX_SIGNATURE_INTAKE_v1.md             |   2 +
+ 13 Production/Client_Experience/Intake/README.md   |  17 +-
+ .../Intake/schemas/example_preview.yaml            |   1 +
+ .../Intake/schemas/intake_v1.schema.yaml           | 143 ++++++++-
+ .../08_collection_book/.gitkeep                    |   1 -
+ .../ONYX_P01_BUSINESS_01_HERO.jpg                  | Bin 285171 -> 249458 bytes
+ .../ONYX_P01_BUSINESS_02_CLOSE.jpg                 | Bin 293451 -> 257169 bytes
+ .../ONYX_P01_BUSINESS_03_WAIST.jpg                 | Bin 274622 -> 239157 bytes
+ .../ONYX_P01_BUSINESS_04_SEATED.jpg                | Bin 273199 -> 237697 bytes
+ .../ONYX_P01_BUSINESS_05_ENVIRONMENT.jpg           | Bin 302462 -> 264954 bytes
+ .../ONYX_P01_BUSINESS_06_ACTION.jpg                | Bin 260221 -> 228323 bytes
+ .../ONYX_P01_BUSINESS_07_3Q_BODY.jpg               | Bin 266432 -> 233467 bytes
+ .../ONYX_P01_BUSINESS_08_FULL_BODY.jpg             | Bin 263484 -> 232219 bytes
+ .../ONYX_P01_BUSINESS_09_MOOD.jpg                  | Bin 293686 -> 255947 bytes
+ .../ONYX_P01_BUSINESS_10_EDITORIAL.jpg             | Bin 284800 -> 249139 bytes
+ .../ONYX_P02_BUSINESS_01_HERO.jpg                  | Bin 304996 -> 266288 bytes
+ .../ONYX_P02_BUSINESS_02_CLOSE.jpg                 | Bin 265801 -> 232496 bytes
+ .../ONYX_P02_BUSINESS_03_WAIST.jpg                 | Bin 309233 -> 270689 bytes
+ .../ONYX_P02_BUSINESS_04_SEATED.jpg                | Bin 332007 -> 290532 bytes
+ .../ONYX_P02_BUSINESS_05_ENVIRONMENT.jpg           | Bin 263828 -> 230408 bytes
+ .../ONYX_P02_BUSINESS_06_ACTION.jpg                | Bin 299472 -> 262716 bytes
+ .../ONYX_P02_BUSINESS_07_3Q_BODY.jpg               | Bin 272901 -> 237926 bytes
+ .../ONYX_P02_BUSINESS_08_FULL_BODY.jpg             | Bin 311533 -> 273940 bytes
+ .../ONYX_P02_BUSINESS_09_MOOD.jpg                  | Bin 281917 -> 246873 bytes
+ .../ONYX_P02_BUSINESS_10_EDITORIAL.jpg             | Bin 290822 -> 255921 bytes
+ .../ONYX_P03_BUSINESS_01_HERO.jpg                  | Bin 299585 -> 263751 bytes
+ .../ONYX_P03_BUSINESS_02_CLOSE.jpg                 | Bin 292106 -> 256075 bytes
+ .../ONYX_P03_BUSINESS_03_WAIST.jpg                 | Bin 307214 -> 269399 bytes
+ .../ONYX_P03_BUSINESS_04_SEATED.jpg                | Bin 341052 -> 298724 bytes
+ .../ONYX_P03_BUSINESS_05_ENVIRONMENT.jpg           | Bin 271484 -> 237776 bytes
+ .../ONYX_P03_BUSINESS_06_ACTION.jpg                | Bin 277760 -> 244531 bytes
+ .../ONYX_P03_BUSINESS_07_3Q_BODY.jpg               | Bin 290997 -> 255154 bytes
+ .../ONYX_P03_BUSINESS_08_FULL_BODY.jpg             | Bin 296526 -> 261090 bytes
+ .../ONYX_P03_BUSINESS_09_MOOD.jpg                  | Bin 308072 -> 270072 bytes
+ .../ONYX_P03_BUSINESS_10_EDITORIAL.jpg             | Bin 271980 -> 238574 bytes
+ .../ONYX_COLLECTION_BOOK_STANDARD.md               |  10 +-
+ .../Product_Standards/ONYX_COLLECTION_CATALOG.md   |   2 +-
+ .../ONYX_GENERATION_ROUTE_POLICY_v1.md             |  19 ++
+ .../Product_Standards/ONYX_MARKETING_STANDARD.md   |  17 +-
+ .../Product_Standards/ONYX_PORTFOLIO_STANDARD.md   |   6 +-
+ .../ONYX_PREPAYMENT_PREVIEW_STANDARD.md            |   3 +-
+ .../Product_Standards/ONYX_PRICE_BOOK_v1.md        |  62 ++--
+ .../Product_Standards/ONYX_PRODUCT_SYSTEM.md       | 161 +++++-----
+ .../Product_Standards/ONYX_SERVICE_STANDARD_v1.md  | 107 +++----
+ 13 Production/Product_Standards/products_v1.yaml   | 325 ++++++++++++++++++---
+ 13 Production/README.md                            |  10 +
+ .../COLLECTION_BOOK_PRODUCTION_GUIDE.md            |   4 +
+ .../ONYX_COLLECTION_BOOK_TEMPLATE.md               |   4 +
+ 13 Production/Templates/Collection_Book/README.md  |   4 +
+ engine/production/onyx_delivery.py                 |   7 +-
+ 65 files changed, 722 insertions(+), 270 deletions(-)

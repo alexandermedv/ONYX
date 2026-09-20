@@ -1,0 +1,170 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "YAML parsing and duplicate-key rejection",
+      "status": "PASS",
+      "detail": "8 files"
+    },
+    {
+      "check": "Unique stable IDs and no legacy product in saleable set",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ONYX_PORTRAIT_V1 Markdown/YAML price, final count and rounds",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ONYX_PORTRAIT_V1 Price Book parity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ONYX_PORTRAIT_V1 recommendation ranges are guidance",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ONYX_SIGNATURE_V1 Markdown/YAML price, final count and rounds",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ONYX_SIGNATURE_V1 Price Book parity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ONYX_SIGNATURE_V1 recommendation ranges are guidance",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ONYX_PREMIUM_V1 Markdown/YAML price, final count and rounds",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ONYX_PREMIUM_V1 Price Book parity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ONYX_PREMIUM_V1 recommendation ranges are guidance",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ONYX_PORTRAIT_V1 upgrade arithmetic",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ONYX_SIGNATURE_V1 upgrade arithmetic",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Freeze metadata parity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Legacy Preview quarantined",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ADD_FINAL_IMAGE commercial table parity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ADD_CONCEPT commercial table parity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ADD_CORRECTION_ROUND commercial table parity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ONYX_REPAIR commercial table parity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ONYX_PRIORITY commercial table parity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ONYX_EXPRESS commercial table parity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Intake IDs resolve to saleable config",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Intake authority resolves",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Portrait intake example resolves",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Superseded snapshot integrity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Existing intake field definitions retained",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Existing consent control values retained",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "New local Markdown links resolve",
+      "status": "PASS",
+      "detail": "112 links; failures=[]"
+    },
+    {
+      "check": "HEAD unchanged",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Every initial status entry retained",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No task modifications to runtime, orders, images or experiments",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "git diff --check",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "renderer_tests": {
+    "passed": 3,
+    "output": "3 tests OK; planner counts and privacy vocabulary only; no PDF generated"
+  },
+  "scope": "Documentation/config consistency, no GPU/network/generation"
+}

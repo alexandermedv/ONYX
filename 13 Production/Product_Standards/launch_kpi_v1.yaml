@@ -1,0 +1,110 @@
+schema_version: 1
+status: MANUAL_SCHEMA_ONLY
+currency: RUB
+unknown_value: null
+commercial_source_of_truth: ONYX_PRODUCT_SYSTEM.md
+period_fields:
+- period_start
+- period_end
+- timezone
+- channel
+- cohort_definition
+funnel_fields:
+- ad_impressions
+- ad_views
+- inquiries
+- qualified_leads
+- intake_started
+- intake_completed
+- references_accepted
+- paid_orders
+- inquiry_to_payment_conversion
+product_mix_ids:
+- ONYX_PORTRAIT_V1
+- ONYX_SIGNATURE_V1
+- ONYX_PREMIUM_V1
+- ONYX_REPAIR
+- ONYX_PRIORITY
+- ONYX_EXPRESS
+order_fields:
+- order_id
+- product_id
+- source_order_id
+- paid_at
+- delivered_at
+- deadline_at
+- timezone
+- production_started_at
+- production_finished_at
+- candidate_generations
+- regeneration_attempts
+- evaluated_candidates
+- technical_rejects
+- qa_defect_requests
+- subjective_correction_requests
+- correction_rounds_used
+- operator_minutes
+- total_production_minutes
+- elapsed_delivery_minutes
+- sla_met
+- generation_cost_rub
+- total_cost_rub
+- satisfaction
+- refund_requested
+- refund_completed
+- refund_amount_rub
+- repeat_purchase
+- additional_collection_interest
+- complaint_reasons
+revenue_line_fields:
+- order_id
+- line_id
+- product_or_addon_id
+- line_type
+- quantity
+- amount_rub
+- credit_applied_rub
+- refund_rub
+line_types:
+- base
+- addon
+- upgrade
+upsell_fields:
+- additional_final_images
+- additional_concepts
+- additional_correction_rounds
+- portrait_to_signature_upgrade_rate
+- signature_to_premium_upgrade_rate
+- addon_attachment_rate
+- upgrade_context_unavailable_count
+revenue_metrics:
+- total_revenue
+- net_revenue
+- average_order_value
+- revenue_per_product
+- addon_revenue
+- upgrade_revenue
+quality_metrics:
+- delivered_orders
+- client_satisfaction
+- refund_requests
+- refund_rate
+- repeat_purchase
+- additional_collection_interest
+- complaints_by_reason
+review_trigger:
+  unique_paid_orders: 10
+  exclude_addon_and_upgrade_transactions: true
+manifest_extension:
+  status: DOCUMENTED_NOT_RUNTIME_ENFORCED
+  fields:
+  - commercial_system_id
+  - product_id
+  - collection_id
+  - concept_id
+  - scene_id
+  - final_image_id
+  - candidate_id
+  - qa_result
+  - human_acceptance
+  - disposition

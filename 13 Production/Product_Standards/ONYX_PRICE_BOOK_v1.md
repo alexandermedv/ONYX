@@ -1,45 +1,37 @@
 # ONYX Price Book v1
 
-**Status:** launch pricing framework. Client-facing prices are active launch prices; internal cost fields are intentionally unfilled until real orders are measured.
+CURRENT — FROZEN_FOR_SOFT_LAUNCH, 2026-09-20.
+Commercial source of truth: [ONYX Commercial Product System v1](ONYX_PRODUCT_SYSTEM.md).
+Machine-readable mirror: [products_v1.yaml](products_v1.yaml). Prior prices: [SUPERSEDED history](ONYX_COMMERCIAL_VERSION_HISTORY_v1.md).
 
-## Client-facing launch prices
+| Product | Price, RUB | Accepted finals | Included client rounds | Book |
+|---|---:|---:|---:|---|
+| ONYX Portrait | 1000 | 1 | 0 | No |
+| ONYX Signature — recommended | 3000 | 10 | 1 | Standard PDF |
+| ONYX Premium | 5000 | 20 | 2 | Extended PDF |
 
-| Product | Total product price, RUB | Customer wording |
-| --- | ---: | --- |
-| ONYX Preview | 900 | Personal test frame ONYX |
-| ONYX Signature | 3,000 | Personal photoshoot in a chosen collection |
-| ONYX Premium | 5,000 | Personalized visual story |
+| Additional service | Price | Scope |
+|---|---|---|
+| Additional Final Image | 500 RUB | One extra final in existing agreed direction |
+| Additional Concept / Look | 1000 RUB | New creative scope; no automatic increase in final count |
+| Additional Correction Round | 700 RUB | Subjective same-scope round after included allowance |
+| ONYX Repair | from 500 RUB simple; from 1000 RUB complex | External image/new scope; quote after inspection |
+| ONYX Priority | +50% | Within 24 hours, confirmed capacity only |
+| ONYX Express | +100% | Same-day, explicit capacity/deadline confirmation |
+| Additional Collection | TBD / FUTURE | Separate scope, no frozen price |
 
-## Preview upgrade pricing
+Urgency base is the agreed production subtotal including applicable production add-ons, excluding urgency itself. Priority/Express do not stack. Show exact quoted total before payment. Standard delivery is agreed per order; never lower QA for speed.
 
-Preview payment is credited in full toward one subsequent Signature or Premium purchase.
+| Upgrade within 7 calendar days of source delivery | Credit | Pay additionally | Target base total |
+|---|---:|---:|---:|
+| Portrait → Signature | 1000 RUB | 2000 RUB | 3000 RUB |
+| Signature → Premium | 3000 RUB | 2000 RUB | 5000 RUB |
 
-| Upgrade | Total product price, RUB | Preview credit, RUB | Remaining amount after Preview upgrade, RUB |
-| --- | ---: | ---: | ---: |
-| Preview → Signature | 3,000 | 900 | 2,100 |
-| Preview → Premium | 5,000 | 900 | 4,100 |
+Eligibility requires available lawful references, consent, context and metadata; continuation of the original Collection for Premium. Target package is cumulative, with no double charging. See source for time boundary and rounds accounting. Legacy orders retain recorded terms.
 
-Always show both the total product price and the remaining amount after Preview upgrade. Do not call the remaining amount the price of Signature or Premium.
+100% prepayment only after Reference QA, scope/feasibility and capacity confirmation. Technical ONYX defects are free and consume no client rounds. Failed production follows [Service Standard](ONYX_SERVICE_STANDARD_v1.md).
 
-## Internal pricing fields — TBD after production tests
+Public headline: «Профессиональные AI-фото по вашим обычным снимкам — от 1 000 ₽.»
+Public list: 1 фото — 1 000 ₽; 10 фото — 3 000 ₽; 20 фото — 5 000 ₽.
 
-| Field | Definition | Status |
-| --- | --- | --- |
-| `inference_cost` | Direct generation cost per order | TBD |
-| `manual_minutes` | Measured human production time | TBD |
-| `repair_cost` | Cost of repair/regeneration work | TBD |
-| `motion_cost` | Direct Motion cost for Premium | TBD |
-| `delivery_cost` | Packaging, storage and delivery cost | TBD |
-| `total_variable_cost` | Sum of variable costs | TBD |
-| `effective_hourly_margin` | Margin after measured manual time | TBD |
-| `gross_margin` | Revenue less variable cost | TBD |
-
-## Payment policy — OWNER DECISION REQUIRED
-
-The following are framework fields only and are not customer terms until approved by the owner:
-
-- payment model and timing of prepayment;
-- cancellation treatment;
-- refund conditions;
-- outcome when production cannot pass quality requirements;
-- expiry or transferability of a Preview credit.
+Internal cost fields remain measurements, not invented margins: inference_cost, manual_minutes, repair_cost, delivery_cost, total_variable_cost, effective_hourly_margin, gross_margin. motion_cost is retained only for legacy/future work. Review economics after 10 paid orders, including Portrait operator time and upgrade rate.

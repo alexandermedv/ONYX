@@ -1,0 +1,208 @@
+{
+  "900": {
+    "production_occurrences": 8,
+    "production_files": 4,
+    "active_occurrences": 3,
+    "active_files": [
+      "13 Production/Product_Standards/ONYX_COMMERCIAL_VERSION_HISTORY_v1.md",
+      "13 Production/Product_Standards/products_v1.yaml"
+    ]
+  },
+  "1000": {
+    "production_occurrences": 23,
+    "production_files": 11,
+    "active_occurrences": 19,
+    "active_files": [
+      "13 Production/README.md",
+      "13 Production/Product_Standards/ONYX_COMMERCIAL_VERSION_HISTORY_v1.md",
+      "13 Production/Product_Standards/ONYX_LAUNCH_KPI_v1.md",
+      "13 Production/Product_Standards/ONYX_LAUNCH_READINESS_CHECKLIST_v1.md",
+      "13 Production/Product_Standards/ONYX_PRICE_BOOK_v1.md",
+      "13 Production/Product_Standards/ONYX_PRODUCT_SYSTEM.md",
+      "13 Production/Product_Standards/products_v1.yaml"
+    ]
+  },
+  "3000": {
+    "production_occurrences": 12,
+    "production_files": 6,
+    "active_occurrences": 12,
+    "active_files": [
+      "13 Production/README.md",
+      "13 Production/Product_Standards/ONYX_PRICE_BOOK_v1.md",
+      "13 Production/Product_Standards/ONYX_PRODUCT_SYSTEM.md",
+      "13 Production/Product_Standards/ONYX_SERVICE_STANDARD_v1.md",
+      "13 Production/Product_Standards/products_v1.yaml",
+      "13 Production/Marketing/Avito/ONYX_AVITO_LAUNCH_REQUIREMENTS_v1.md"
+    ]
+  },
+  "5000": {
+    "production_occurrences": 9,
+    "production_files": 6,
+    "active_occurrences": 8,
+    "active_files": [
+      "13 Production/README.md",
+      "13 Production/Product_Standards/ONYX_PRICE_BOOK_v1.md",
+      "13 Production/Product_Standards/ONYX_PRODUCT_SYSTEM.md",
+      "13 Production/Product_Standards/ONYX_SERVICE_STANDARD_v1.md",
+      "13 Production/Product_Standards/products_v1.yaml"
+    ]
+  },
+  "Preview": {
+    "production_occurrences": 347,
+    "production_files": 46,
+    "active_occurrences": 72,
+    "active_files": [
+      "13 Production/Brand/BRAND_BOARD_1920x1080_SPEC.md",
+      "13 Production/Brand/BRAND_PREFLIGHT_CHECKLIST_V1.md",
+      "13 Production/Brand/CLIENT_PREVIEW_PROOF_STANDARD_V1.md",
+      "13 Production/Brand/ONYX_BRANDBOOK_CONTENT_V1.md",
+      "13 Production/Brand/ONYX_BRAND_SYSTEM.md",
+      "13 Production/Client_Delivery/ONYX_CLIENT_DELIVERY_SOP_V1.md",
+      "13 Production/Product_Standards/ONYX_COLLECTION_BOOK_STANDARD.md",
+      "13 Production/Product_Standards/ONYX_COMMERCIAL_VERSION_HISTORY_v1.md",
+      "13 Production/Product_Standards/ONYX_PORTFOLIO_STANDARD.md",
+      "13 Production/Product_Standards/ONYX_PREPAYMENT_PREVIEW_STANDARD.md",
+      "13 Production/Product_Standards/ONYX_PRODUCT_SYSTEM.md",
+      "13 Production/Product_Standards/products_v1.yaml",
+      "13 Production/Templates/Collection_Book/COLLECTION_BOOK_PRODUCTION_GUIDE.md",
+      "13 Production/Templates/Collection_Book/ONYX_COLLECTION_BOOK_TEMPLATE.md",
+      "13 Production/Templates/Collection_Book/README.md",
+      "13 Production/Client_Experience/Intake/README.md",
+      "13 Production/Client_Experience/Intake/schemas/example_preview.yaml",
+      "13 Production/Client_Experience/Intake/schemas/intake_v1.schema.yaml",
+      "13 Production/Client_Delivery/Templates/README.md",
+      "13 Production/Brand/Logo/EDITORIAL_WORDMARK_V1.md"
+    ]
+  },
+  "Trial": {
+    "production_occurrences": 3,
+    "production_files": 3,
+    "active_occurrences": 3,
+    "active_files": [
+      "13 Production/Product_Standards/ONYX_COMMERCIAL_VERSION_HISTORY_v1.md",
+      "13 Production/Product_Standards/ONYX_PRODUCT_SYSTEM.md",
+      "13 Production/Marketing/Avito/ONYX_AVITO_LAUNCH_REQUIREMENTS_v1.md"
+    ]
+  },
+  "Signature": {
+    "production_occurrences": 184,
+    "production_files": 89,
+    "active_occurrences": 110,
+    "active_files": [
+      "13 Production/README.md",
+      "13 Production/Brand/ONYX_BRANDBOOK_CONTENT_V1.md",
+      "13 Production/Brand/ONYX_BRAND_SYSTEM.md",
+      "13 Production/Client_Delivery/ONYX_CLIENT_DELIVERY_SOP_V1.md",
+      "13 Production/Product_Standards/launch_kpi_v1.yaml",
+      "13 Production/Product_Standards/ONYX_COLLECTION_BOOK_STANDARD.md",
+      "13 Production/Product_Standards/ONYX_COMMERCIAL_VERSION_HISTORY_v1.md",
+      "13 Production/Product_Standards/ONYX_CORRECTION_POLICY_v1.md",
+      "13 Production/Product_Standards/ONYX_GENERATION_ROUTE_POLICY_v1.md",
+      "13 Production/Product_Standards/ONYX_LAUNCH_KPI_v1.md",
+      "13 Production/Product_Standards/ONYX_LAUNCH_READINESS_CHECKLIST_v1.md",
+      "13 Production/Product_Standards/ONYX_MARKETING_STANDARD.md",
+      "13 Production/Product_Standards/ONYX_PORTFOLIO_STANDARD.md",
+      "13 Production/Product_Standards/ONYX_PRICE_BOOK_v1.md",
+      "13 Production/Product_Standards/ONYX_PRODUCT_SYSTEM.md",
+      "13 Production/Product_Standards/ONYX_SERVICE_STANDARD_v1.md",
+      "13 Production/Product_Standards/products_v1.yaml",
+      "13 Production/Templates/Collection_Book/COLLECTION_BOOK_PRODUCTION_GUIDE.md",
+      "13 Production/Templates/Collection_Book/ONYX_COLLECTION_BOOK_TEMPLATE.md",
+      "13 Production/Templates/Collection_Book/README.md",
+      "13 Production/Marketing/Avito/ONYX_AVITO_LAUNCH_REQUIREMENTS_v1.md",
+      "13 Production/Client_Experience/Intake/ONYX_BOUDOIR_SIGNATURE_INTAKE_v1.md",
+      "13 Production/Client_Experience/Intake/ONYX_SIGNATURE_INTAKE_v1.md",
+      "13 Production/Client_Experience/Intake/README.md",
+      "13 Production/Client_Experience/Intake/schemas/example_signature.yaml",
+      "13 Production/Client_Experience/Intake/schemas/example_signature_boudoir.yaml",
+      "13 Production/Client_Experience/Intake/schemas/intake_v1.schema.yaml",
+      "13 Production/Client_Delivery/Templates/README.md",
+      "13 Production/Brand/Logo/EDITORIAL_WORDMARK_V1.md"
+    ]
+  },
+  "Premium": {
+    "production_occurrences": 245,
+    "production_files": 127,
+    "active_occurrences": 114,
+    "active_files": [
+      "13 Production/README.md",
+      "13 Production/Brand/ONYX_BRANDBOOK_CONTENT_V1.md",
+      "13 Production/Brand/ONYX_BRAND_SYSTEM.md",
+      "13 Production/Client_Delivery/ONYX_CLIENT_DELIVERY_SOP_V1.md",
+      "13 Production/Product_Standards/launch_kpi_v1.yaml",
+      "13 Production/Product_Standards/ONYX_COLLECTION_BOOK_STANDARD.md",
+      "13 Production/Product_Standards/ONYX_COLLECTION_CATALOG.md",
+      "13 Production/Product_Standards/ONYX_COMMERCIAL_VERSION_HISTORY_v1.md",
+      "13 Production/Product_Standards/ONYX_CORRECTION_POLICY_v1.md",
+      "13 Production/Product_Standards/ONYX_GENERATION_ROUTE_POLICY_v1.md",
+      "13 Production/Product_Standards/ONYX_LAUNCH_KPI_v1.md",
+      "13 Production/Product_Standards/ONYX_LAUNCH_READINESS_CHECKLIST_v1.md",
+      "13 Production/Product_Standards/ONYX_MARKETING_STANDARD.md",
+      "13 Production/Product_Standards/ONYX_PORTFOLIO_STANDARD.md",
+      "13 Production/Product_Standards/ONYX_PRICE_BOOK_v1.md",
+      "13 Production/Product_Standards/ONYX_PRODUCT_SYSTEM.md",
+      "13 Production/Product_Standards/ONYX_SERVICE_STANDARD_v1.md",
+      "13 Production/Product_Standards/products_v1.yaml",
+      "13 Production/Templates/Collection_Book/COLLECTION_BOOK_PRODUCTION_GUIDE.md",
+      "13 Production/Templates/Collection_Book/ONYX_COLLECTION_BOOK_TEMPLATE.md",
+      "13 Production/Templates/Collection_Book/README.md",
+      "13 Production/Marketing/Avito/ONYX_AVITO_LAUNCH_REQUIREMENTS_v1.md",
+      "13 Production/Client_Experience/Intake/ONYX_PREMIUM_CREATIVE_PROFILE_v1.md",
+      "13 Production/Client_Experience/Intake/README.md",
+      "13 Production/Client_Experience/Intake/schemas/example_premium.yaml",
+      "13 Production/Client_Experience/Intake/schemas/intake_v1.schema.yaml",
+      "13 Production/Client_Delivery/Templates/README.md"
+    ]
+  },
+  "20 photos": {
+    "production_occurrences": 1,
+    "production_files": 1,
+    "active_occurrences": 1,
+    "active_files": [
+      "13 Production/Templates/Collection_Book/README.md"
+    ]
+  },
+  "10 photos": {
+    "production_occurrences": 0,
+    "production_files": 0,
+    "active_occurrences": 0,
+    "active_files": []
+  },
+  "correction": {
+    "production_occurrences": 66,
+    "production_files": 21,
+    "active_occurrences": 57,
+    "active_files": [
+      "13 Production/Product_Standards/launch_kpi_v1.yaml",
+      "13 Production/Product_Standards/ONYX_COMMERCIAL_VERSION_HISTORY_v1.md",
+      "13 Production/Product_Standards/ONYX_CORRECTION_POLICY_v1.md",
+      "13 Production/Product_Standards/ONYX_HUMAN_QA_STANDARD_v1.md",
+      "13 Production/Product_Standards/ONYX_LAUNCH_KPI_v1.md",
+      "13 Production/Product_Standards/ONYX_LAUNCH_READINESS_CHECKLIST_v1.md",
+      "13 Production/Product_Standards/ONYX_MARKETING_STANDARD.md",
+      "13 Production/Product_Standards/ONYX_PRICE_BOOK_v1.md",
+      "13 Production/Product_Standards/ONYX_PRODUCT_SYSTEM.md",
+      "13 Production/Product_Standards/ONYX_SERVICE_STANDARD_v1.md",
+      "13 Production/Product_Standards/products_v1.yaml",
+      "13 Production/Client_Experience/Intake/ONYX_PREMIUM_CREATIVE_PROFILE_v1.md",
+      "13 Production/Client_Experience/Intake/schemas/example_premium.yaml",
+      "13 Production/Client_Experience/Intake/schemas/intake_v1.schema.yaml"
+    ]
+  },
+  "multiple collections": {
+    "production_occurrences": 0,
+    "production_files": 0,
+    "active_occurrences": 0,
+    "active_files": []
+  },
+  "Business + Lifestyle": {
+    "production_occurrences": 2,
+    "production_files": 2,
+    "active_occurrences": 2,
+    "active_files": [
+      "13 Production/Product_Standards/ONYX_COMMERCIAL_VERSION_HISTORY_v1.md",
+      "13 Production/Product_Standards/ONYX_PRODUCT_SYSTEM.md"
+    ]
+  },
+  "classification": "900 retained only in SUPERSEDED history/legacy non-saleable config; Preview remains only historical product/renderer enum or proof terminology; negative trial and multiple-Collection statements are prohibitions, not offers. Orders, samples and portfolio evidence are historical artifacts, not pricing authority. No experiments modified."
+}

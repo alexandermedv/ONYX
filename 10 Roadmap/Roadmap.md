@@ -1,5 +1,12 @@
 # Roadmap
 
+## CURRENT commercial priority — 2026-09-20
+
+[ONYX Commercial Product System v1](../13%20Production/Product_Standards/ONYX_PRODUCT_SYSTEM.md) is FROZEN_FOR_SOFT_LAUNCH. Until 10 unique paid orders: **80% SALES / CLIENT PRODUCTION / DELIVERY**, **20% R&D / AUTOMATION**. Existing technical milestones below remain historical/technical facts, not blockers or permission to change the frozen product. Model arenas, new LoRA, PuLID/FLUX tuning, complex automation and website infrastructure must not delay sales. Review prices/scope at **ONYX Product & Pricing Review v1.1** after 10 paid orders.
+
+Next commercial step: prepare ONYX Avito Launch Pack v1 using the approved asset/consent gates and client payment/retention wording. Use the operational payment/refund process and the [manual 30-day data deletion policy](../13%20Production/Client_Experience/Intake/ONYX_DATA_RETENTION_AND_DELETION_v1.md). Public cancellation Terms can receive separate legal review before publication.
+
+
 ## ✅ Phase 1A — Canonical contracts: COMPLETE
 
 - [x] JobSpec v1 и Manifest v1 contract layer.

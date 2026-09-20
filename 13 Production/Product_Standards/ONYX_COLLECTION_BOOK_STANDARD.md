@@ -8,10 +8,10 @@ Collection Book is the personal editorial presentation of an ONYX photoshoot. It
 
 ## Delivery model
 
-- Preview: one photograph; template supports a compact seven-page book, no sample produced.
+- Portrait: no Collection Book. The renderer’s legacy Preview tier is a technical capability only, not a saleable frozen entitlement.
 - Signature: ten photographs; 14–18 pages, reference implementation 15.
-- Premium: twenty photographs; reference layout 16 pages through paired compositions; optional Motion delivered separately with an explicit HTTPS link in the book.
-- All orders retain their separate clean high-resolution photographs. Existing product delivery sets and pricing are unchanged. These tier names describe this template contract, not a pricing revision.
+- Premium: twenty photographs; Extended Collection Book PDF, a clearer narrative and Concept chapters when useful. The legacy 16-page paired layout is a technical starting point, not proof of visual certification. Motion is outside the frozen package.
+- All orders retain their separate clean high-resolution photographs. Commercial inclusions follow [Product System](ONYX_PRODUCT_SYSTEM.md); renderer capabilities do not expand them.
 
 ## Required sections
 
@@ -19,9 +19,11 @@ Cover with selected photo, approved logo, collection title and short subtitle; o
 
 Photo story must cover every ordered photograph exactly once. Cover and Selection may intentionally reuse photographs; every reuse must be recorded. Existing hero metadata takes precedence over subjective re-selection. No invented review scores.
 
+The current renderer accepts exactly 1/10/20 photographs. A Signature/Premium order with extra finals needs a separately prepared and visually checked Book layout covering the complete ordered set; the existing renderer does not automatically support 11/21 or arbitrary counts. Confirm that packaging capacity before selling extra finals for a Book-bearing order. No renderer change is included in this freeze.
+
 ## Optional sections
 
-Client display name; captions; additional context when it is specific and brief; verified collection links; separately delivered Premium Motion link. QR URLs are reserved in v1 and rejected when nonempty until a QR renderer is implemented. Do not show inactive placeholder buttons or invented URLs.
+Client display name; captions; additional context when it is specific and brief; verified collection links; separately approved future Motion link, never a frozen Premium obligation. QR URLs are reserved in v1 and rejected when nonempty until a QR renderer is implemented. Do not show inactive placeholder buttons or invented URLs.
 
 Cross-sell copy and Business/Executive differentiation must follow [ONYX Collection Catalog](ONYX_COLLECTION_CATALOG.md).
 

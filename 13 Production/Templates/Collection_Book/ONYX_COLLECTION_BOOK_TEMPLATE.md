@@ -54,3 +54,7 @@ Each `photos[]` entry keeps its editable caption with the approved source image.
 ```
 
 Captions must describe the actual image and scene role rather than a page-number slot. QA must include `caption matches actual image content` and must be repeated whenever a photo is replaced.
+
+## Commercial scope override — CURRENT, 2026-09-20
+
+[Product System](../../Product_Standards/ONYX_PRODUCT_SYSTEM.md) controls inclusions: Portrait has no Book; Signature Standard PDF; Premium Extended PDF with deeper narrative and Concept grouping when useful. `Preview` below names a retained legacy renderer tier, not a current product entitlement. Motion support is a technical capability outside frozen scope. Existing renderer input contracts and examples remain unchanged. Premium visual certification remains per-output work, not implied by planner tests.

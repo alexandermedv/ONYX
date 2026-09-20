@@ -6,7 +6,7 @@
 
 ## Standard session
 
-A standard session contains ten images. Roles are standardized, while their specific scenes depend on the collection.
+The standard Signature portfolio demonstration contains ten images. Commercial Portrait/Premium orders contain 1/20 accepted finals respectively; this portfolio role grid is not a universal deliverable count. Roles are standardized, while their specific scenes depend on the collection.
 
 | No. | Role |
 | --- | --- |
@@ -73,3 +73,7 @@ Canonical experimental images are referenced by promotion manifest. They are not
 - The bottom of the ONYX wordmark aligns with the bottom of the PORTFOLIO PREVIEW line.
 - Logo and copy share one fixed footer alignment zone; do not stretch or independently offset either element.
 
+
+## Commercial authority and publication
+
+[Product System](ONYX_PRODUCT_SYSTEM.md) governs purchased scope. Public client portfolio use requires explicit portfolio consent; marketing/Avito/social/website/ads require the relevant separate marketing permission. Synthetic character assets follow existing approval and provenance rules.

@@ -1,3 +1,9 @@
+# Historical product model — SUPERSEDED
+
+As of 2026-09-20, the text below is retained as history, not current commercial terms or taxonomy. Current authority: [ONYX Commercial Product System v1](../13%20Production/Product_Standards/ONYX_PRODUCT_SYSTEM.md). Current hierarchy: Collection → Concept → Scene → Final Image. Legacy category labels are not automatically current Collections or saleable products.
+
+---
+
 # Collections
 
 ## Назначение

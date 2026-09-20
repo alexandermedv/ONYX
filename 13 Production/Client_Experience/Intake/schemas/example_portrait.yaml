@@ -1,8 +1,7 @@
-# SUPERSEDED: historical Preview intake; not for new orders. Use example_portrait.yaml.
 intake_version: "1.0"
 order:
-  order_id: DEMO-PREVIEW-001
-  product: PREVIEW
+  order_id: DEMO-PORTRAIT-001
+  product: PORTRAIT
   client_display_name: Демо-клиент
   order_reference: DEMO-CONTACT-001
   selected_collection: Business

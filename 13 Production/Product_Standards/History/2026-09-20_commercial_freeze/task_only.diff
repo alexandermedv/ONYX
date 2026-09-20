@@ -1,0 +1,1189 @@
+--- pre-task/13 Production/Product_Standards/ONYX_PRODUCT_SYSTEM.md
++++ current/13 Production/Product_Standards/ONYX_PRODUCT_SYSTEM.md
+@@ -1,138 +1,119 @@
+-# ONYX Product System v1
++# ONYX Commercial Product System v1
+ 
+-**Status:** production launch standard.
+-**Scope:** product architecture and customer value; implementation, prices and service operations are defined by the linked standards.
++Commercial source of truth: **ONYX_COMMERCIAL_PRODUCT_SYSTEM_v1**.
++Version status: **CURRENT**. Commercial status: **FROZEN_FOR_SOFT_LAUNCH**.
++Freeze date: **2026-09-20**. Owner: ONYX owner.
+ 
+-## Positioning
++This file governs product names, prices, deliverables, corrections, add-ons and upgrades.
++[Price Book](ONYX_PRICE_BOOK_v1.md) and [products_v1.yaml](products_v1.yaml) are synchronized views of this document, not independent authorities.
++Operational readiness is tracked separately in [Launch readiness](ONYX_LAUNCH_READINESS_CHECKLIST_v1.md); frozen commercial scope does not certify every production route or Collection.
++Earlier values are SUPERSEDED; see [version history](ONYX_COMMERCIAL_VERSION_HISTORY_v1.md).
+ 
+-ONYX is not a service for generating isolated AI images. Its core product is a **personal virtual photoshoot**, designed, selected, refined and delivered as a finished visual collection.
++## Product taxonomy
+ 
+-Technology is not the customer value proposition. The value is identity consistency, creative direction, diversity of the series, selection, quality control, regeneration and repair, retouch and enhancement, upscale, curator-style selection, Collection Book and a convenient delivery package.
++**Collection → Concept → Scene → Final Image**
+ 
+-## Launch product matrix
++- Collection: a broad visual direction, such as Business, Executive, Lifestyle, Fashion, Glamour, Travel or Evening. The [Collection Catalog](ONYX_COLLECTION_CATALOG.md) describes existing directions; listing does not grant launch availability.
++- Concept: a distinct creative idea within a Collection, e.g. Corporate Headshot, Formal Executive, Boardroom, Smart Casual, Workspace, Office Walk or Window Portrait in Business.
++- Scene: a concrete composition within a Concept. Boardroom may contain seated at table, standing by presentation screen, close executive portrait and walking into boardroom.
++- Final Image: an individually accepted client deliverable after final QA, not a candidate or generation attempt.
+ 
+-| Product | Customer outcome | Price, RUB | Final photographs | Creative model | Collection Book | Motion | Revisions |
+-| --- | --- | ---: | ---: | --- | --- | --- | --- |
+-| ONYX Preview | Personal test frame: proof of identity and collection quality before a full photoshoot | 900 | 1 | One chosen collection and primary look | No | No | Technical correction only |
+-| ONYX Signature | Personal photoshoot in a chosen collection | 3,000 | 10 | Standardized ONYX collection, adapted to the person | Standard | No | One launch-policy round, limited scope |
+-| ONYX Premium | Personalized visual story designed around the person’s goals and desired image | 5,000 | 20 | Personal Creative Profile, creative direction and scene plan | Extended | ONYX Motion | Two launch-policy rounds, broader scope |
++New scene plans and commercial manifest extensions record collection_id, concept_id, scene_id and final_image_id, with links to candidate provenance and acceptance. Existing asset IDs and canonical runtime contracts are not rewritten. The YAML documents an additive future manifest contract; runtime enforcement is not implemented by this freeze.
+ 
+-**Preview proves. Signature standardizes. Premium personalizes.** Premium is not simply a 20-image Signature package.
++## Frozen product matrix
+ 
+-Client-facing launch prices and Preview upgrade arithmetic are authoritative in [ONYX Price Book v1](ONYX_PRICE_BOOK_v1.md). The structured source for future automation is [products_v1.yaml](products_v1.yaml).
++| Product / stable ID | Price, RUB | Final images | Collection scope | Concepts | Client correction rounds | Collection Book |
++|---|---:|---:|---|---|---:|---|
++| ONYX Portrait / ONYX_PORTRAIT_V1 | 1000 | 1 | Single agreed direction | 1 | 0 | No |
++| ONYX Signature / ONYX_SIGNATURE_V1 | 3000 | 10 | 1 main Collection | Usually 2–3 | 1 | Standard PDF |
++| ONYX Premium / ONYX_PREMIUM_V1 | 5000 | 20 | 1 main Collection | Usually 4–6 | 2 | Extended PDF |
+ 
+-## ONYX Preview
++Concept ranges are production guidance, never a hard customer deliverable count. Internal candidate budgets and retry limits are job configuration, never a promised number of generations. Only approved final images count toward delivery.
+ 
+-### Purpose
++## ONYX Portrait
+ 
+-Preview is a low-risk first purchase. It lets a client check identity preservation, see the style of a selected collection, understand ONYX quality and decide whether to purchase a full photoshoot.
++A complete standalone professional portrait service: CV/resume, business or corporate profile, messenger/avatar, social media, personal website, dating/profile photo and other single-portrait uses. Customer wording: «Один готовый профессиональный портрет». Do not position it as trial, demo, пробное фото or тестовая генерация.
+ 
+-Use customer language such as **«персональный тестовый кадр ONYX»**. Do not describe it as a sale of one AI image.
++Includes reference suitability review, one agreed Concept/Scene direction, internal candidates, identity preservation, technical/face/eyes/anatomy/realism QA, selection of one final, standard final preparation and correction of ONYX technical defects before delivery (and defects missed at delivery).
+ 
+-### Included
++No multi-scene session, independent additional Concepts, Collection Book, separate client correction round, requested wardrobe/location variants, all intermediate generations or unlimited revisions are included.
+ 
+-- one final high-resolution photograph;
+-- one chosen production-approved collection and one primary look;
+-- production QA;
+-- repair or regeneration when required for technical quality;
+-- final processing and high-resolution delivery.
++## ONYX Signature — CORE / RECOMMENDED PRODUCT
+ 
+-Preview has no Concept Card, personal creative profile or client-directed creative cycle. A full Preview payment is credited when the client upgrades to Signature or Premium; it is a product price credit, not a discount on the listed total price.
++A compact complete virtual photoshoot in one main Collection: usually 2–3 Concepts, multiple Scenes and 10 curated finals. Includes Client Intake, Reference QA, creative direction, scene planning, candidate production, identity preservation, diversity, human and technical QA, regeneration/replacement of unacceptable frames, repair as needed, curation, final QA, one client correction round, Standard Collection Book PDF and delivery package.
+ 
+-## ONYX Signature
+-
+-### Purpose
+-
+-**Персональная фотосессия в выбранной коллекции.** Signature is the standard mass-market ONYX product.
+-
+-Signature is standardized by creative framework. The client chooses a ready ONYX Collection, such as Business, Executive, Lifestyle or another production-approved collection. ONYX adapts the collection to the individual; it does not design a wholly new visual concept from zero.
+-
+-### Included
+-
+-- 10 final photographs;
+-- usually 2–3 looks and 4–6 visually distinct scenes, adjusted when quality requires it;
+-- one coherent collection visual language;
+-- identity consistency and diversity control;
+-- production QA, repair or regeneration, retouch or enhancement and upscale;
+-- ONYX Selection;
+-- standard ONYX Collection Book;
+-- high-resolution originals and delivery package.
+-
+-The P02 Business Collection Book is the approved Signature reference implementation. See [Collection Book Standard](ONYX_COLLECTION_BOOK_STANDARD.md) and [production guide](../Templates/Collection_Book/COLLECTION_BOOK_PRODUCTION_GUIDE.md).
++The client buys 10 finished images. Candidate counts such as 12 or 20 remain internal production parameters. The approved Signature Book reference and current layout rules remain in [Collection Book Standard](ONYX_COLLECTION_BOOK_STANDARD.md).
+ 
+ ## ONYX Premium
+ 
+-### Purpose
++An extended editorial photoshoot with deeper creative direction and a richer coherent visual story: 20 finals, one main Collection, usually 4–6 Concepts and multiple Scenes. Greater range of wardrobe, viewpoints, expressions, compositions, scene types and mood must preserve identity, realism and coherence.
+ 
+-Premium is a **photoshoot developed around the client’s personality, goals and desired image**. It is a personalized visual story with more creative variety, not a larger standard collection.
++Includes Signature production quality obligations, Personal Creative Profile, Premium Creative Brief, one bounded pre-production Concept Card approval, curation, replacement/regeneration, repair as needed, final QA, two client correction rounds, Extended Collection Book PDF and delivery package. The extended Book contains all 20 images, clearer narrative structure and Concept chapters when useful, with personalized selection/use guidance.
+ 
+-### Included
++Compatible adjacent Concepts are allowed when they form one session. Business / Executive can be coherent; **Business + Lifestyle included** or two full Collections is not the default. A full second Collection is separately scoped and quoted; no frozen Additional Collection price exists.
+ 
+-- 20 final photographs;
+-- Personal Creative Profile and Premium Creative Brief;
+-- individual creative direction and scene plan;
+-- usually 4–5 looks, 8–12 scenes and several visual chapters or moods, adjusted when quality requires it;
+-- increased variety and identity consistency;
+-- production QA, repair or regeneration, retouch or enhancement and upscale;
+-- extended ONYX Collection Book;
+-- ONYX Selection and, where useful, additional curator selections;
+-- Personal Style Recommendation and Recommended Use guidance;
+-- ONYX Motion;
+-- social-ready export formats in addition to high-resolution originals;
+-- expanded client revision scope.
++ONYX Motion and specialized social export sets from the previous model are not mandatory frozen deliverables. They remain future separately approved scope; no video or Book is produced by this documentation change.
+ 
+-The 5,000 RUB launch price is a hypothesis. Reassess it after the first real orders using measured unit economics; it is not a promise of a permanent price.
++## Add-ons and independent Repair
+ 
+-### Personal Creative Profile
++| Service / stable ID | Price, RUB | Applies to | Boundary |
++|---|---:|---|---|
++| Additional Final Image / ADD_FINAL_IMAGE | 500 | 1 extra accepted final within agreed Collection/Concept or close Scene direction | Extra angle/pose/portrait in existing look; substantial new wardrobe, location, style or Concept is separately scoped |
++| Additional Concept / Look / ADD_CONCEPT | 1000 | New creative idea/look/location type within existing or compatible Collection architecture | Not automatically a separate Collection; final count stays the ordered count unless extra finals are purchased |
++| Additional Correction Round / ADD_CORRECTION_ROUND | 700 | One subjective round after included rounds are used; Portrait has zero included | No new session, full creative reset, new Collection or unlimited regeneration |
++| ONYX Repair / ONYX_REPAIR | from 500 simple; from 1000 complex | External image or new scope outside ONYX obligations | Price and feasibility only after inspection; no guarantee of technically impossible repair |
++| ONYX Priority / ONYX_PRIORITY | +50% | Confirmed capacity; target within 24 hours | Queue change only; unchanged identity and QA standard |
++| ONYX Express / ONYX_EXPRESS | +100% | Explicitly confirmed capacity; same-day target | Not always available; unchanged identity and QA standard |
+ 
+-Premium production begins only after collecting: purpose of the photoshoot; profession or field; intended uses; desired impression; preferred style; Natural / Polished / Glamour level; clothing; preferred environments; elements to avoid; permitted facial and body correction; and other wishes.
++Additional Concept fee pays for creative scope, not an unspecified bonus image bundle. Confirm its final count in the quote before payment; Additional Final Image supplies extra finals when needed. ONYX classifies substantial creative changes as Concept/Collection/new order rather than a simple extra final, explains the scope and confirms the price first.
+ 
+-These inputs become the internal **Premium Creative Brief**. They guide production but do not authorize unsupported changes to identity or appearance.
++Repair may cover hands/anatomy, clothing, background, object removal/replacement, local composition, realism or restoration. A defect in ONYX's own final delivery is corrected free, never sold as paid Repair.
+ 
+-### Concept Card and approval
++Urgency quote records the surcharge base explicitly: approved production subtotal (base product plus applicable production add-ons), excluding any urgency fee itself; Priority and Express are alternatives, not cumulative. The accepted quote records the exact total and delivery deadline before payment. Timing starts only when usable references, consent, agreed scope, required approvals and payment are complete. Express requires an explicit local same-day deadline; if that cannot be met, do not sell it. Standard delivery time is agreed per order; there is no measured universal standard SLA yet.
+ 
+-Premium includes a brief operational concept approval before batch production. It is a bounded direction check, not an open-ended bespoke design engagement.
++## Corrections
+ 
+-```text
+-ONYX PREMIUM CONCEPT
++ONYX QA defects are corrected free and never consume a client round: extra/missing fingers, malformed hands/eyes, anatomy/body-proportion errors, severe face artifacts, damaged clothing, obvious AI artifacts, unusable technical output, identity failure or violation of an explicitly recorded requirement.
+ 
+-Client:
+-Collection / concept:
+-Visual direction:
+-Mood:
+-Primary use:
+-Looks:
+-Scenes:
+-Key priorities:
+-Avoid:
+-```
++Client correction means a subjective change to an otherwise compliant image: smile intensity, small look change, preference for another version or local style adjustment. One round is one consolidated feedback list and the agreed bounded response; record affected finals and scope before work. Portrait includes zero, Signature one, Premium two. Further same-scope rounds cost 700 RUB. Full wardrobe/location/creative changes may be Additional Concept, Additional Collection or a new order. There is no unlimited regeneration entitlement or invented per-round image limit. See [Correction Policy](ONYX_CORRECTION_POLICY_v1.md).
+ 
+-The client approves or corrects this card once before mass generation. The service standard defines the state transition.
++## Upgrade rules
+ 
+-### Visual chapters
++| Upgrade | Window | Credited base payment, RUB | Additional base payment, RUB | Target total, RUB |
++|---|---|---:|---:|---:|
++| Portrait → Signature | 7 calendar days | 1000 | 2000 | 3000 |
++| Signature → Premium | 7 calendar days | 3000 | 2000 | 5000 |
+ 
+-Premium should be organized as logical visual chapters so it reads as a complete story rather than 20 variations of one scene. For a Business or Executive direction, chapters may be Portrait, At Work, Personal Brand and Editorial. This is an example, not a mandatory universal list; chapters come from the Creative Profile.
++Operational window: from recorded delivery of the source product, through delivery date + 7 calendar days in the order timezone; record request timestamp and eligibility. The result is the target package (10 or 20 total finals), not two separately charged packages. Prior accepted finals may count when they meet the continuing brief. Target tier's included correction allowance is cumulative: subtract rounds already used on the continuing order. Any outstanding QA defect stays free.
+ 
+-### ONYX Motion
++Upgrade requires available references, production context, consent and order metadata under the actual privacy policy; Signature → Premium also requires continuation of the original Collection. Never extend retention or reuse rights automatically to support an upgrade. If context is unavailable, explain that a new order is necessary; do not silently call it an upgrade. Additional services are separately itemized, not credited twice. Track prior credits to prevent double charging. Legacy Preview orders retain their recorded agreed terms; no automatic relabeling/repricing.
+ 
+-ONYX Motion is a Premium deliverable: a short cinematic motion portrait based on a key collection frame. Target: about four seconds, natural motion and expression, minimal artefacts, a premium look and vertical/social-friendly format. The underlying model is not part of the product definition and may change.
++## References, payment, failed production and privacy
+ 
+-### Premium Collection Book and use guidance
++Reference QA and feasibility/capacity confirmation precede final acceptance and **100% prepayment**. For all three tiers 4–8 useful references is an orientation only: the mature [Reference Guide](../Client_Experience/Intake/ONYX_REFERENCE_GUIDE_v1.md) quality-based rule prevails; no universal hard minimum or maximum.
+ 
+-Premium Book requirements extend the Signature standard with Personal Creative Direction, visual chapters, ONYX Selection, optional additional curator selections, Personal Style Recommendation, Recommended Use, personal closing note and next collections. No Premium Book PDF is defined by this document.
++Failed candidates are regenerated/replaced within bounded job effort; one bad frame does not cancel a session. If reasonable effort cannot produce an acceptable order, it is not successfully fulfilled: stop retries, record evidence and use the [Service Standard resolution process](ONYX_SERVICE_STANDARD_v1.md). Never mark a rejected set delivered.
+ 
+-Recommended Use is personalized after final selection and may cover a professional profile, avatar, corporate site, speaker bio, CV, social media or editorial/personal-brand use when relevant. It does not promise particular platforms.
++[Consent & Privacy](../Client_Experience/Intake/ONYX_CONSENT_AND_PRIVACY_v1.md) remains authoritative for processing, reference reuse and separate publication permissions. Purchase never grants portfolio, Avito, social, website or advertising permission. Default is no publication; require the relevant explicit consent. Synthetic portfolio characters follow existing asset/provenance approval rules. Retention duration/deletion procedure are unresolved and must be approved before accepting new client data; the upgrade window does not establish retention.
+ 
+-Social-ready exports are optional optimized copies such as avatar/profile, portrait post or story/reel cover. High-resolution originals remain the main deliverable; no social assets are generated by this standard.
++## Scope boundaries and future products
+ 
+-## What is outside the launch line
++Default v1 excludes personal LoRA training, unlimited revisions, all candidates, internal prompts/workflows/seeds/config/model settings, complex manual Photoshop compositing, exact branded-object reproduction guarantees, physical books, multiple complete Collections inside Premium, explicit adult content, ONYX Private and unapproved scope.
+ 
+-The following are future scope, not launch products: ONYX Private; fully bespoke products above Premium; subscriptions; corporate packages; website self-service; automated SaaS; unlimited generation; and Model Arena as a customer feature.
++PLANNED / FUTURE, not mandatory soft-launch scope: Additional Collection (price TBD), Physical Collection Book, Couple session, Family session, Corporate packages, printed products, advanced retouch, VIP LoRA, Motion and specialized social exports. Catalog presence does not make these saleable today.
+ 
+-## Related standards
++## Pricing communication and internal rationale
+ 
+-- [Price Book](ONYX_PRICE_BOOK_v1.md): prices, Preview credit and unit-economics placeholders.
+-- [Service Standard](ONYX_SERVICE_STANDARD_v1.md): journey, corrections, privacy, retention and delivery rules.
+-- [Portfolio Standard](ONYX_PORTFOLIO_STANDARD.md): asset roles and portfolio QA.
+-- [Marketing Standard](ONYX_MARKETING_STANDARD.md): marketing collateral only.
+-- [Collection Book Standard](ONYX_COLLECTION_BOOK_STANDARD.md): Signature and Premium Book requirements.
++Public headline: **Профессиональные AI-фото по вашим обычным снимкам — от 1 000 ₽.**
++
++Public display: Portrait — 1 фото — 1 000 ₽; Signature ⭐ — 10 фото — 3 000 ₽; Premium — 20 фото — 5 000 ₽. Brief add-ons: +1 фото — 500 ₽; срочное выполнение — от +50%; исправление фото — от 500 ₽. Detailed correction/complex Repair fees belong in consultation, Price Book and Service Standard, not the first slide.
++
++Portrait lowers purchase friction, serves real single-image needs and may lead to Signature. Signature is the core value package for most clients. Premium increases creative depth and average order value, not the number of full Collections. Extra finals monetize existing scope; Concepts monetize creative expansion; Repair is an independent acquisition/revenue channel; urgency compensates queue disruption.
++
++## Freeze and review
++
++Until **10 PAID ORDERS**, do not change base prices, final counts, Portrait/Signature/Premium structure or upgrade pricing except documented critical product issues, unsustainable economics, serious client confusion, legal/compliance issues or inability to deliver reliably. Record an owner decision, reason and synchronized Markdown/YAML revision before any exception. R&D never silently changes the freeze.
++
++At 10 paid orders run **ONYX Product & Pricing Review v1.1**. Track unique paid order IDs; upgrade/add-on payments do not inflate this count. Record refunds separately. Portrait economics require operator minutes, attempts, generation cost when measurable, correction frequency and Portrait → Signature upgrade rate; do not change its price before evidence.
++
++Soft-launch allocation: **80% SALES / CLIENT PRODUCTION / DELIVERY**, **20% R&D / AUTOMATION**. Model arenas, LoRA/PuLID/FLUX tuning, complex automation and website infrastructure must not delay sales. See [KPI framework](ONYX_LAUNCH_KPI_v1.md) and [readiness](ONYX_LAUNCH_READINESS_CHECKLIST_v1.md).
+--- pre-task/13 Production/Product_Standards/ONYX_PRICE_BOOK_v1.md
++++ current/13 Production/Product_Standards/ONYX_PRICE_BOOK_v1.md
+@@ -1,45 +1,37 @@
+ # ONYX Price Book v1
+ 
+-**Status:** launch pricing framework. Client-facing prices are active launch prices; internal cost fields are intentionally unfilled until real orders are measured.
++CURRENT — FROZEN_FOR_SOFT_LAUNCH, 2026-09-20.
++Commercial source of truth: [ONYX Commercial Product System v1](ONYX_PRODUCT_SYSTEM.md).
++Machine-readable mirror: [products_v1.yaml](products_v1.yaml). Prior prices: [SUPERSEDED history](ONYX_COMMERCIAL_VERSION_HISTORY_v1.md).
+ 
+-## Client-facing launch prices
++| Product | Price, RUB | Accepted finals | Included client rounds | Book |
++|---|---:|---:|---:|---|
++| ONYX Portrait | 1000 | 1 | 0 | No |
++| ONYX Signature — recommended | 3000 | 10 | 1 | Standard PDF |
++| ONYX Premium | 5000 | 20 | 2 | Extended PDF |
+ 
+-| Product | Total product price, RUB | Customer wording |
+-| --- | ---: | --- |
+-| ONYX Preview | 900 | Personal test frame ONYX |
+-| ONYX Signature | 3,000 | Personal photoshoot in a chosen collection |
+-| ONYX Premium | 5,000 | Personalized visual story |
++| Additional service | Price | Scope |
++|---|---|---|
++| Additional Final Image | 500 RUB | One extra final in existing agreed direction |
++| Additional Concept / Look | 1000 RUB | New creative scope; no automatic increase in final count |
++| Additional Correction Round | 700 RUB | Subjective same-scope round after included allowance |
++| ONYX Repair | from 500 RUB simple; from 1000 RUB complex | External image/new scope; quote after inspection |
++| ONYX Priority | +50% | Within 24 hours, confirmed capacity only |
++| ONYX Express | +100% | Same-day, explicit capacity/deadline confirmation |
++| Additional Collection | TBD / FUTURE | Separate scope, no frozen price |
+ 
+-## Preview upgrade pricing
++Urgency base is the agreed production subtotal including applicable production add-ons, excluding urgency itself. Priority/Express do not stack. Show exact quoted total before payment. Standard delivery is agreed per order; never lower QA for speed.
+ 
+-Preview payment is credited in full toward one subsequent Signature or Premium purchase.
++| Upgrade within 7 calendar days of source delivery | Credit | Pay additionally | Target base total |
++|---|---:|---:|---:|
++| Portrait → Signature | 1000 RUB | 2000 RUB | 3000 RUB |
++| Signature → Premium | 3000 RUB | 2000 RUB | 5000 RUB |
+ 
+-| Upgrade | Total product price, RUB | Preview credit, RUB | Remaining amount after Preview upgrade, RUB |
+-| --- | ---: | ---: | ---: |
+-| Preview → Signature | 3,000 | 900 | 2,100 |
+-| Preview → Premium | 5,000 | 900 | 4,100 |
++Eligibility requires available lawful references, consent, context and metadata; continuation of the original Collection for Premium. Target package is cumulative, with no double charging. See source for time boundary and rounds accounting. Legacy orders retain recorded terms.
+ 
+-Always show both the total product price and the remaining amount after Preview upgrade. Do not call the remaining amount the price of Signature or Premium.
++100% prepayment only after Reference QA, scope/feasibility and capacity confirmation. Technical ONYX defects are free and consume no client rounds. Failed production follows [Service Standard](ONYX_SERVICE_STANDARD_v1.md).
+ 
+-## Internal pricing fields — TBD after production tests
++Public headline: «Профессиональные AI-фото по вашим обычным снимкам — от 1 000 ₽.»
++Public list: 1 фото — 1 000 ₽; 10 фото — 3 000 ₽; 20 фото — 5 000 ₽.
+ 
+-| Field | Definition | Status |
+-| --- | --- | --- |
+-| `inference_cost` | Direct generation cost per order | TBD |
+-| `manual_minutes` | Measured human production time | TBD |
+-| `repair_cost` | Cost of repair/regeneration work | TBD |
+-| `motion_cost` | Direct Motion cost for Premium | TBD |
+-| `delivery_cost` | Packaging, storage and delivery cost | TBD |
+-| `total_variable_cost` | Sum of variable costs | TBD |
+-| `effective_hourly_margin` | Margin after measured manual time | TBD |
+-| `gross_margin` | Revenue less variable cost | TBD |
+-
+-## Payment policy — OWNER DECISION REQUIRED
+-
+-The following are framework fields only and are not customer terms until approved by the owner:
+-
+-- payment model and timing of prepayment;
+-- cancellation treatment;
+-- refund conditions;
+-- outcome when production cannot pass quality requirements;
+-- expiry or transferability of a Preview credit.
++Internal cost fields remain measurements, not invented margins: inference_cost, manual_minutes, repair_cost, delivery_cost, total_variable_cost, effective_hourly_margin, gross_margin. motion_cost is retained only for legacy/future work. Review economics after 10 paid orders, including Portrait operator time and upgrade rate.
+--- pre-task/13 Production/Product_Standards/ONYX_SERVICE_STANDARD_v1.md
++++ current/13 Production/Product_Standards/ONYX_SERVICE_STANDARD_v1.md
+@@ -1,94 +1,59 @@
+ # ONYX Service Standard v1
+ 
+-**Status:** production service framework. It establishes operating states and boundaries; it does not promise an unmeasured SLA or approve legal payment terms.
++CURRENT, commercial freeze 2026-09-20. [Commercial source of truth](ONYX_PRODUCT_SYSTEM.md) governs prices, deliverables, rounds and upgrades. This is an operational business policy, not a new legal contract.
+ 
+-## Customer journey
++## Customer journey and payment
+ 
+-```text
+-Lead
+-→ Product selection
+-→ Preview or direct purchase
+-→ Payment
+-→ Intake
+-→ Reference QA
+-→ Production
+-→ Internal QA
+-→ Client review where applicable
+-→ Corrections
+-→ Final QA
+-→ Collection Book
+-→ Delivery
+-→ Feedback
+-→ Retention / deletion
+-```
++Lead → product selection → intake/processing consent → Reference QA → scope, feasibility and capacity confirmation → agreed quote/deadline → 100% prepayment → Premium Concept Card approval where applicable → production → technical and human QA → client review/corrections → final QA → Book where included → delivery → feedback → retention/deletion under approved policy.
+ 
+-## Order states for future automation
++Reference QA must be PASS or PASS_WITH_NOTES with limitations resolved/agreed before payment and final acceptance. NEEDS_MORE_REFERENCES/REJECT cannot proceed to payment. No generation is promised before prepayment. Reference Guide uses quality-based sufficiency; 4–8 useful images is an orientation, not a hard limit.
+ 
+-| State | Meaning | Typical next states |
+-| --- | --- | --- |
+-| `LEAD` | Product interest recorded | `WAITING_FOR_PAYMENT`, `WAITING_FOR_REFERENCES` |
+-| `WAITING_FOR_PAYMENT` | Payment step pending | `WAITING_FOR_REFERENCES`, `CLOSED` |
+-| `WAITING_FOR_REFERENCES` | Intake or usable references pending | `REFERENCE_REVIEW`, `CLOSED` |
+-| `REFERENCE_REVIEW` | References are assessed for identity input quality | `READY_FOR_PRODUCTION`, `WAITING_FOR_REFERENCES` |
+-| `READY_FOR_PRODUCTION` | Inputs and, for Premium, Concept Card approval are complete | `IN_PRODUCTION` |
+-| `IN_PRODUCTION` | Generation, repair and post-processing underway | `IN_QA` |
+-| `IN_QA` | Internal quality gate and diversity review | `WAITING_FOR_CLIENT`, `FINAL_QA`, `IN_PRODUCTION` |
+-| `WAITING_FOR_CLIENT` | Preview decision, Premium Concept Card approval or client revision input pending | `IN_REVISION`, `FINAL_QA`, `CLOSED` |
+-| `IN_REVISION` | Approved subjective correction scope underway | `IN_QA` |
+-| `FINAL_QA` | Final assets and delivery package checked | `READY_FOR_DELIVERY` |
+-| `READY_FOR_DELIVERY` | Delivery package prepared | `DELIVERED` |
+-| `DELIVERED` | Client delivery completed | `CLOSED` |
+-| `CLOSED` | Service completed, cancelled or retained/deleted under policy | — |
++| State | Meaning / gate | Next states |
++|---|---|---|
++| LEAD | Product interest | WAITING_FOR_REFERENCES, CLOSED |
++| WAITING_FOR_REFERENCES | Intake, consent and usable inputs | REFERENCE_REVIEW, CLOSED |
++| REFERENCE_REVIEW | Assess suitability/feasibility | WAITING_FOR_PAYMENT, WAITING_FOR_REFERENCES, CLOSED |
++| WAITING_FOR_PAYMENT | Accepted references, quote and capacity | READY_FOR_PRODUCTION, WAITING_FOR_CLIENT, CLOSED |
++| WAITING_FOR_CLIENT | Premium direction approval or consolidated feedback | READY_FOR_PRODUCTION, IN_REVISION, FINAL_QA, CLOSED |
++| READY_FOR_PRODUCTION | Payment, inputs, consent and required creative approval complete | IN_PRODUCTION |
++| IN_PRODUCTION | Bounded configured attempts | IN_QA, CLOSED through resolution |
++| IN_QA | Technical/human review and collection diversity | WAITING_FOR_CLIENT, FINAL_QA, IN_PRODUCTION |
++| IN_REVISION | Agreed subjective scope | IN_QA |
++| FINAL_QA | All ordered finals accepted; Book/package checked | READY_FOR_DELIVERY, IN_PRODUCTION |
++| READY_FOR_DELIVERY | Approved clean package | DELIVERED |
++| DELIVERED | Actual handover recorded | CLOSED |
++| CLOSED | Completed/cancelled/resolved; lifecycle recorded separately | — |
+ 
+-These states complement, rather than replace, existing production-asset statuses in the Product System.
++These are documentation/config states, not a newly implemented runtime state machine. Record resolution outcome separately from state: fulfilled, cancelled, refunded or otherwise explicitly agreed; CLOSED alone does not prove success.
+ 
+-## Service levels
++## Service levels and correction boundaries
+ 
+-| Area | Preview | Signature | Premium |
+-| --- | --- | --- | --- |
+-| Customer role | Minimal choice: collection and primary look | Chooses existing collection; limited creative participation | Completes Creative Profile and approves a Concept Card |
+-| Creative direction | No concept approval | Standard collection framework | Individual direction and scene plan |
+-| Delivery | One final high-resolution image | 10 images, standard Collection Book and delivery package | 20 images, extended Book, Motion, use guidance and optional social-ready copies |
+-| Revisions | Technical correction only | One launch-policy subjective correction round with limited scope | Two launch-policy subjective correction rounds with broader scope |
++Portrait: one direction, one final, no Book or included subjective round. Signature: one main Collection, usually 2–3 Concepts, ten finals, one round, Standard Book. Premium: one main Collection, usually 4–6 Concepts, twenty finals, two rounds, Extended Book and deeper direction. Compatible adjacent Concepts are possible; full second Collection is separate scope.
+ 
+-No turnaround-time SLA is set until production measurements exist. Use `TBD` rather than promising hours or days.
++[Correction Policy](ONYX_CORRECTION_POLICY_v1.md) distinguishes free QA defects from subjective changes. New major wardrobe/location/Concept is scope expansion, not automatically a correction. No unlimited retries or rounds.
+ 
+-## Correction policy
++## Deadlines and upgrades
+ 
+-### Technical correction — included
++Standard deadline is agreed per order; no unsupported global SLA. Priority targets within 24 hours and Express same day only after explicit capacity confirmation and all inputs/payment/approvals. Record timezone, start and deadline; QA remains unchanged. Prices and surcharge basis are in [Price Book](ONYX_PRICE_BOOK_v1.md).
+ 
+-Technical correction covers visible artefacts; hands, eyes or anatomy errors; extra objects; image defects; and unexpected identity failure. These are internal quality obligations, not subjective client revisions.
++Portrait → Signature and Signature → Premium each cost an additional 2000 RUB within 7 calendar days of source delivery, subject to source policy eligibility. Target totals remain 3000/5000 RUB. Target finals/rounds are cumulative, not two sessions; prior used rounds count toward the target allowance. Verify consent, reference availability and continuing context; never extend retention automatically. If context is unavailable after closure, transparently offer a new order rather than a technical upgrade. Never charge the credited base price twice.
+ 
+-### Client revision — launch policy
++## Failed production, cancellation and refunds
+ 
+-Client revision covers a different outfit, pose, scene, expression or additional stylistic request. Signature includes one correction round with a limited number of images; Premium includes two rounds with a higher replacement/correction scope. Do not publish a fixed image-count limit until first-order data is reviewed.
++Use bounded reasonable effort from the job configuration. Regenerate/replace isolated failures; do not automatically cancel the whole session for a rejected frame. If the complete agreed result cannot pass QA, stop retries, preserve diagnostics, notify the client, and record the order as unresolved/failed rather than successfully delivered.
+ 
+-This is a launch policy to validate after the first paid orders. A request beyond the agreed scope may require a new product decision or separate quote; no automatic entitlement is created.
++The operator records paid amount, delivered/accepted scope, reason and proposed resolution. The owner confirms the resolution with the client: an explicitly accepted revised scope/extension, or a refund proposal for the unfulfilled order/scope. Do not substitute an unwanted credit or rejected images for fulfillment. Record the agreed refund amount, confirmation and payment completion before closing as refunded. A wholly unfulfilled order requires a full-refund proposal; partial fulfillment and voluntary cancellation require an explicit case decision, not an invented universal deduction.
+ 
+-## Reference quality policy
++Exact cancellation/partial-refund terms, refund processing timing and payment/refund channel are not established in existing policy. Owner must approve and communicate these before taking payments; they remain a launch readiness blocker. This freeze establishes business resolution principles, not legal conclusions.
+ 
+-A usable reference set has clear, recent images of the client, adequate face visibility, varied angles or expressions where available, and no severe blur, obstruction or conflicting identity information. The needed number varies by identity method and available source material; do not impose an unsupported universal minimum.
++## Privacy and delivery
+ 
+-Ask for new references when identity cannot be evaluated reliably, the face is consistently obscured/blurred, the supplied images conflict materially, or quality gates identify poor identity input. Do not start production with knowingly inadequate references unless the client has been informed of the limitation and the responsible production decision is recorded.
++[Consent & Privacy](../Client_Experience/Intake/ONYX_CONSENT_AND_PRIVACY_v1.md) remains authoritative. Per-order processing consent is required; reuse for a new order needs explicit reuse consent. Portfolio and marketing consent are separate and not implied by purchase. Apply the relevant permission to Avito, social, website and advertising; denied/not asked never permits publication.
+ 
+-## Premium intake and Concept Card
++Retention duration and an actionable deletion procedure are missing. Do not invent a period or imply seven-day retention from upgrade eligibility. Owner must resolve this before accepting new client data. Deletion requests and outcomes must be recorded under the approved policy.
+ 
+-Collect purpose, professional field, intended uses, desired impression, preferred style, Natural/Polished/Glamour level, clothing, environments, elements to avoid, permitted facial/body correction and additional wishes. Convert them into a Premium Creative Brief and one bounded Concept Card.
++Only accepted clean finals, the included Book and approved client readme belong in delivery. No sources, rejected candidates, prompts, internal paths or manifests. `onyx` is internal project storage; never use personal `alexander` or expose direct MinIO access. Use the approved delivery layer and verify its access/expiry for each order.
+ 
+-Concept approval happens before `READY_FOR_PRODUCTION`. Keep it to one concise direction check; it does not initiate unlimited custom design work.
++Delivery counts are 1/10/20 plus purchased additional finals; a legacy ten-frame builder is not a universal product rule. Portrait/Premium may be manually packaged with recorded human QA until their automation is adapted. Record final IDs, acceptance, source integrity, Book QA and actual handover.
+ 
+-## Delivery
+-
+-High-resolution originals are the primary deliverable. Signature includes the standard Collection Book; Premium includes the extended Book requirement and, when feasible, Motion and social-ready copies. The client receives delivery through the approved delivery layer, not direct MinIO access.
+-
+-## Privacy, consent and retention
+-
+-- Client photos are private production data.
+-- MinIO `onyx` is internal production storage; clients do not receive direct MinIO access.
+-- Source references and production artefacts are never published or used in a portfolio without separate client consent.
+-- Retention duration and the deletion procedure are **OWNER DECISION REQUIRED**. Until approved, record the intended lifecycle and do not imply a retention period to clients.
+-- A deletion request/process must be tracked as an operational event without exposing storage credentials or private locations.
+-
+-## Payment and failed-production framework — OWNER DECISION REQUIRED
+-
+-Do not publish final rules for prepayment, cancellation, refunds, Preview-credit expiry or failed-production outcomes until owner approval. During launch, record each exceptional case and use it to form the final policy.
++Ask for post-delivery satisfaction, remaining defects, intended-use suitability and optional repeat/Collection interest; record complaints and resolution without inferring marketing consent. Feedback collection may be manual at soft launch.
+--- pre-task/13 Production/Product_Standards/products_v1.yaml
++++ current/13 Production/Product_Standards/products_v1.yaml
+@@ -1,7 +1,9 @@
+ version: 1
+-status: launch_product_definition
++status: FROZEN_FOR_SOFT_LAUNCH
+ currency: RUB
+-pricing_note: "Launch prices; Premium price requires unit-economics review after real orders."
++pricing_note: Frozen until 10 paid orders; exceptions require recorded owner decision.
++saleable_product_keys: [portrait, signature, premium]
++compatibility_note: Legacy preview is retained for historical readers only; new sales must use saleable_product_keys and per-order readiness gates.
+ common:
+   identity_consistency: true
+   production_qa: true
+@@ -11,8 +13,8 @@
+   direct_minio_access: false
+ products:
+   preview:
+-    client_name: "ONYX Preview"
+-    positioning: "Personal test frame ONYX"
++    client_name: ONYX Preview
++    positioning: Personal test frame ONYX
+     price_rub: 900
+     final_photos: 1
+     collection_selection: single_approved_collection
+@@ -24,13 +26,35 @@
+     social_ready_exports: false
+     client_revision_policy: technical_only
+     upgrade_credit_rub: 900
++    status: SUPERSEDED
++    launch_status: NOT_FOR_SALE
++    legacy_only: true
++  portrait:
++    product_id: ONYX_PORTRAIT_V1
++    client_name: ONYX Portrait
++    positioning: Standalone professional portrait
++    price_rub: 1000
++    currency: RUB
++    final_photos: 1
++    final_image_count: 1
++    included_correction_rounds: 0
++    collection_book: none
++    scope_type: single_direction
++    recommended_concepts_min: 1
++    recommended_concepts_max: 1
++    concept_count_is_customer_guarantee: false
++    status: CURRENT
++    launch_status: FROZEN_SCOPE_CONDITIONAL_ORDER_ACCEPTANCE
++    motion: false
++    social_ready_exports: false
++    client_revision_policy: 0 subjective rounds; QA defects free and excluded from
++      count
++    recommended: false
+   signature:
+-    client_name: "ONYX Signature"
+-    positioning: "Personal photoshoot in a chosen collection"
++    client_name: ONYX Signature
++    positioning: Complete photoshoot in one main Collection
+     price_rub: 3000
+     final_photos: 10
+-    expected_looks: "2-3"
+-    expected_visual_scenes: "4-6; quality-adjusted, not contractual"
+     creative_model: standardized_collection
+     creative_profile: false
+     concept_approval: false
+@@ -38,49 +62,272 @@
+     motion: false
+     social_ready_exports: false
+     onyx_selection: true
+-    client_revision_policy: "1 launch-policy round; limited scope"
+-    preview_upgrade_remaining_rub: 2100
++    client_revision_policy: 1 subjective rounds; QA defects free and excluded from
++      count
++    product_id: ONYX_SIGNATURE_V1
++    currency: RUB
++    final_image_count: 10
++    included_correction_rounds: 1
++    scope_type: one_main_collection
++    recommended_concepts_min: 2
++    recommended_concepts_max: 3
++    concept_count_is_customer_guarantee: false
++    status: CURRENT
++    launch_status: FROZEN_SCOPE_CONDITIONAL_ORDER_ACCEPTANCE
++    recommended: true
+   premium:
+-    client_name: "ONYX Premium"
+-    positioning: "Personalized visual story"
++    client_name: ONYX Premium
++    positioning: Extended editorial photoshoot in one main Collection
+     price_rub: 5000
+     final_photos: 20
+-    expected_looks: "4-5"
+-    expected_visual_scenes: "8-12; quality-adjusted, not contractual"
+     creative_model: personalized_visual_story
+     creative_profile: true
+     concept_approval: true
+     premium_creative_brief: true
+     visual_chapters: true
+     collection_book: extended
+-    motion: true
+-    social_ready_exports: true
++    motion: false
++    social_ready_exports: false
+     onyx_selection: true
+     personal_style_recommendation: true
+     recommended_use_guidance: true
+-    client_revision_policy: "2 launch-policy rounds; broader scope"
+-    preview_upgrade_remaining_rub: 4100
++    client_revision_policy: 2 subjective rounds; QA defects free and excluded from
++      count
++    product_id: ONYX_PREMIUM_V1
++    currency: RUB
++    final_image_count: 20
++    included_correction_rounds: 2
++    scope_type: one_main_collection
++    recommended_concepts_min: 4
++    recommended_concepts_max: 6
++    concept_count_is_customer_guarantee: false
++    status: CURRENT
++    launch_status: FROZEN_SCOPE_CONDITIONAL_ORDER_ACCEPTANCE
++    recommended: false
+ automation_fields:
+   order_statuses:
+-    - LEAD
+-    - WAITING_FOR_PAYMENT
+-    - WAITING_FOR_REFERENCES
+-    - REFERENCE_REVIEW
+-    - READY_FOR_PRODUCTION
+-    - IN_PRODUCTION
+-    - IN_QA
+-    - WAITING_FOR_CLIENT
+-    - IN_REVISION
+-    - FINAL_QA
+-    - READY_FOR_DELIVERY
+-    - DELIVERED
+-    - CLOSED
++  - LEAD
++  - WAITING_FOR_PAYMENT
++  - WAITING_FOR_REFERENCES
++  - REFERENCE_REVIEW
++  - READY_FOR_PRODUCTION
++  - IN_PRODUCTION
++  - IN_QA
++  - WAITING_FOR_CLIENT
++  - IN_REVISION
++  - FINAL_QA
++  - READY_FOR_DELIVERY
++  - DELIVERED
++  - CLOSED
+   internal_pricing_fields:
+-    - inference_cost
+-    - manual_minutes
+-    - repair_cost
+-    - motion_cost
+-    - delivery_cost
+-    - total_variable_cost
+-    - effective_hourly_margin
+-    - gross_margin
++  - inference_cost
++  - manual_minutes
++  - repair_cost
++  - motion_cost
++  - delivery_cost
++  - total_variable_cost
++  - effective_hourly_margin
++  - gross_margin
++revision: 2026-09-20-commercial-freeze
++version_status: CURRENT
++freeze_date: '2026-09-20'
++commercial_system_id: ONYX_COMMERCIAL_PRODUCT_SYSTEM_v1
++commercial_source_of_truth: ONYX_PRODUCT_SYSTEM.md
++addons:
++  ADD_FINAL_IMAGE:
++    product_id: ADD_FINAL_IMAGE
++    client_name: Additional Final Image
++    price_rub: 500
++    currency: RUB
++    final_image_count: 1
++    included_correction_rounds: 0
++    collection_book: none
++    scope_type: existing_agreed_direction
++    status: CURRENT
++    launch_status: FROZEN_SCOPE
++    price_type: fixed
++  ADD_CONCEPT:
++    product_id: ADD_CONCEPT
++    client_name: Additional Concept / Look
++    price_rub: 1000
++    currency: RUB
++    final_image_count: 0
++    included_correction_rounds: 0
++    collection_book: none
++    scope_type: new_compatible_concept
++    status: CURRENT
++    launch_status: FROZEN_SCOPE
++    price_type: fixed
++  ADD_CORRECTION_ROUND:
++    correction_rounds_added: 1
++    product_id: ADD_CORRECTION_ROUND
++    client_name: Additional Correction Round
++    price_rub: 700
++    currency: RUB
++    final_image_count: 0
++    included_correction_rounds: 0
++    collection_book: none
++    scope_type: subjective_same_scope_round
++    status: CURRENT
++    launch_status: FROZEN_SCOPE
++    price_type: fixed
++  ONYX_REPAIR:
++    product_id: ONYX_REPAIR
++    client_name: ONYX Repair
++    price_rub: 500
++    currency: RUB
++    final_image_count: null
++    included_correction_rounds: 0
++    collection_book: none
++    scope_type: external_image_or_new_scope
++    status: CURRENT
++    launch_status: CAPACITY_AND_SCOPE_CONFIRMATION_REQUIRED
++    price_type: quote_from
++    simple_from_rub: 500
++    complex_from_rub: 1000
++    quote_after_inspection: true
++    own_qa_defects_free: true
++    feasibility_required: true
++  ONYX_PRIORITY:
++    product_id: ONYX_PRIORITY
++    client_name: ONYX Priority
++    price_rub: null
++    currency: RUB
++    final_image_count: 0
++    included_correction_rounds: 0
++    collection_book: none
++    scope_type: priority_queue
++    status: CURRENT
++    launch_status: CAPACITY_AND_SCOPE_CONFIRMATION_REQUIRED
++    price_type: percentage
++    surcharge_percent: 50
++    target_delivery: within_24_hours
++    capacity_confirmation_required: true
++    qa_standard_unchanged: true
++  ONYX_EXPRESS:
++    product_id: ONYX_EXPRESS
++    client_name: ONYX Express
++    price_rub: null
++    currency: RUB
++    final_image_count: 0
++    included_correction_rounds: 0
++    collection_book: none
++    scope_type: express_queue
++    status: CURRENT
++    launch_status: CAPACITY_AND_SCOPE_CONFIRMATION_REQUIRED
++    price_type: percentage
++    surcharge_percent: 100
++    target_delivery: same_day
++    capacity_confirmation_required: true
++    qa_standard_unchanged: true
++urgency_policy:
++  surcharge_basis: approved_production_subtotal_including_applicable_addons_excluding_urgency
++  stackable: false
++  start_gate: references_consent_scope_approvals_and_payment_complete
++  explicit_deadline_and_timezone_required: true
++upgrades:
++- from_product_id: ONYX_PORTRAIT_V1
++  to_product_id: ONYX_SIGNATURE_V1
++  window_calendar_days: 7
++  window_start: source_delivery_date
++  credit_rub: 1000
++  additional_payment_rub: 2000
++  target_total_rub: 3000
++  requires:
++  - references_available
++  - production_context_available
++  - valid_consent
++  - order_metadata_available
++  - same_collection_continuation
++  target_finals_and_rounds_cumulative: true
++- from_product_id: ONYX_SIGNATURE_V1
++  to_product_id: ONYX_PREMIUM_V1
++  window_calendar_days: 7
++  window_start: source_delivery_date
++  credit_rub: 3000
++  additional_payment_rub: 2000
++  target_total_rub: 5000
++  requires:
++  - references_available
++  - production_context_available
++  - valid_consent
++  - order_metadata_available
++  - same_collection_continuation
++  target_finals_and_rounds_cumulative: true
++taxonomy:
++- Collection
++- Concept
++- Scene
++- Final Image
++manifest_guidance:
++  runtime_enforced: false
++  additive_fields:
++  - commercial_system_id
++  - product_id
++  - collection_id
++  - concept_id
++  - scene_id
++  - final_image_id
++  - candidate_provenance
++  - acceptance_status
++  migrate_existing_assets: false
++reference_policy:
++  recommended_useful_range:
++  - 4
++  - 8
++  hard_limit: false
++  authority: ../Client_Experience/Intake/ONYX_REFERENCE_GUIDE_v1.md
++payment_policy:
++  prepayment_percent: 100
++  after_reference_qa: true
++  feasibility_and_capacity_required: true
++privacy_policy:
++  authority: ../Client_Experience/Intake/ONYX_CONSENT_AND_PRIVACY_v1.md
++  retention_status: OWNER_DECISION_REQUIRED
++  publication_consent_separate: true
++future_products:
++- name: Additional Collection
++  status: PLANNED
++  launch_status: NON_BLOCKER
++  price_rub: null
++- name: Physical Collection Book
++  status: PLANNED
++  launch_status: NON_BLOCKER
++  price_rub: null
++- name: Couple session
++  status: PLANNED
++  launch_status: NON_BLOCKER
++  price_rub: null
++- name: Family session
++  status: PLANNED
++  launch_status: NON_BLOCKER
++  price_rub: null
++- name: Corporate packages
++  status: PLANNED
++  launch_status: NON_BLOCKER
++  price_rub: null
++- name: Printed products
++  status: PLANNED
++  launch_status: NON_BLOCKER
++  price_rub: null
++- name: Advanced retouch
++  status: PLANNED
++  launch_status: NON_BLOCKER
++  price_rub: null
++- name: VIP LoRA
++  status: PLANNED
++  launch_status: NON_BLOCKER
++  price_rub: null
++- name: ONYX Motion
++  status: PLANNED
++  launch_status: NON_BLOCKER
++  price_rub: null
++- name: Specialized social exports
++  status: PLANNED
++  launch_status: NON_BLOCKER
++  price_rub: null
++freeze_policy:
++  review_after_unique_paid_orders: 10
++  review_name: ONYX Product & Pricing Review v1.1
++  sales_production_delivery_percent: 80
++  rnd_automation_percent: 20
+--- pre-task/13 Production/Product_Standards/ONYX_MARKETING_STANDARD.md
++++ current/13 Production/Product_Standards/ONYX_MARKETING_STANDARD.md
+@@ -19,8 +19,8 @@
+ 
+ | Slide | Message |
+ | --- | --- |
+-| 1 | Hero — professional photoshoot without studio |
+-| 2 | 10 final photographs |
++| 1 | Профессиональные AI-фото по вашим обычным снимкам — от 1 000 ₽ |
++| 2 | Portrait: 1 фото — 1 000 ₽; Signature ⭐: 10 фото — 3 000 ₽; Premium: 20 фото — 5 000 ₽ |
+ | 3 | original/reference → ONYX result |
+ | 4 | full 10-photo contact sheet |
+ | 5 | more than generation: QA / repair / retouch / upscale |
+@@ -31,3 +31,16 @@
+ | 10 | CTA |
+ 
+ Customer-facing material must not expose LoRA, Flux, PuLID, ComfyUI, seed, checkpoint, face swap or prompt engineering. These may remain in internal technical documentation.
++
++
++## Commercial freeze — CURRENT, 2026-09-20
++
++[Product System](ONYX_PRODUCT_SYSTEM.md) is the commercial authority. Portrait is a standalone professional result; Signature is recommended; Premium is an extended editorial session in one main Collection, usually 4–6 Concepts. Never promise multiple complete Collections or a fixed candidate count.
++
++Public headline: **Профессиональные AI-фото по вашим обычным снимкам — от 1 000 ₽.**
++Brief add-ons: **+1 фото — 500 ₽; срочное выполнение — от +50%; исправление фото — от 500 ₽.**
++Do not crowd the first slide with correction fees, complex Repair pricing or technical terms. Explain full terms before payment. Urgency requires capacity confirmation; Repair needs inspection. Public examples of ten images illustrate Signature, not every tier.
++
++Purchase grants no publication rights. Client materials need the relevant separate portfolio/marketing consent for Avito, social, website or ads. Synthetic portfolio characters require existing provenance/asset approvals. No private source photo may be uploaded merely to prepare marketing.
++
++The final Avito Launch Pack is not created here. Follow [Avito requirements v1](../Marketing/Avito/ONYX_AVITO_LAUNCH_REQUIREMENTS_v1.md).
+--- pre-task/13 Production/Product_Standards/ONYX_PORTFOLIO_STANDARD.md
++++ current/13 Production/Product_Standards/ONYX_PORTFOLIO_STANDARD.md
+@@ -6,7 +6,7 @@
+ 
+ ## Standard session
+ 
+-A standard session contains ten images. Roles are standardized, while their specific scenes depend on the collection.
++The standard Signature portfolio demonstration contains ten images. Commercial Portrait/Premium orders contain 1/20 accepted finals respectively; this portfolio role grid is not a universal deliverable count. Roles are standardized, while their specific scenes depend on the collection.
+ 
+ | No. | Role |
+ | --- | --- |
+@@ -73,3 +73,7 @@
+ - The bottom of the ONYX wordmark aligns with the bottom of the PORTFOLIO PREVIEW line.
+ - Logo and copy share one fixed footer alignment zone; do not stretch or independently offset either element.
+ 
++
++## Commercial authority and publication
++
++[Product System](ONYX_PRODUCT_SYSTEM.md) governs purchased scope. Public client portfolio use requires explicit portfolio consent; marketing/Avito/social/website/ads require the relevant separate marketing permission. Synthetic character assets follow existing approval and provenance rules.
+--- pre-task/13 Production/Product_Standards/ONYX_COLLECTION_BOOK_STANDARD.md
++++ current/13 Production/Product_Standards/ONYX_COLLECTION_BOOK_STANDARD.md
+@@ -8,10 +8,10 @@
+ 
+ ## Delivery model
+ 
+-- Preview: one photograph; template supports a compact seven-page book, no sample produced.
++- Portrait: no Collection Book. The renderer’s legacy Preview tier is a technical capability only, not a saleable frozen entitlement.
+ - Signature: ten photographs; 14–18 pages, reference implementation 15.
+-- Premium: twenty photographs; reference layout 16 pages through paired compositions; optional Motion delivered separately with an explicit HTTPS link in the book.
+-- All orders retain their separate clean high-resolution photographs. Existing product delivery sets and pricing are unchanged. These tier names describe this template contract, not a pricing revision.
++- Premium: twenty photographs; Extended Collection Book PDF, a clearer narrative and Concept chapters when useful. The legacy 16-page paired layout is a technical starting point, not proof of visual certification. Motion is outside the frozen package.
++- All orders retain their separate clean high-resolution photographs. Commercial inclusions follow [Product System](ONYX_PRODUCT_SYSTEM.md); renderer capabilities do not expand them.
+ 
+ ## Required sections
+ 
+@@ -19,9 +19,11 @@
+ 
+ Photo story must cover every ordered photograph exactly once. Cover and Selection may intentionally reuse photographs; every reuse must be recorded. Existing hero metadata takes precedence over subjective re-selection. No invented review scores.
+ 
++The current renderer accepts exactly 1/10/20 photographs. A Signature/Premium order with extra finals needs a separately prepared and visually checked Book layout covering the complete ordered set; the existing renderer does not automatically support 11/21 or arbitrary counts. Confirm that packaging capacity before selling extra finals for a Book-bearing order. No renderer change is included in this freeze.
++
+ ## Optional sections
+ 
+-Client display name; captions; additional context when it is specific and brief; verified collection links; separately delivered Premium Motion link. QR URLs are reserved in v1 and rejected when nonempty until a QR renderer is implemented. Do not show inactive placeholder buttons or invented URLs.
++Client display name; captions; additional context when it is specific and brief; verified collection links; separately approved future Motion link, never a frozen Premium obligation. QR URLs are reserved in v1 and rejected when nonempty until a QR renderer is implemented. Do not show inactive placeholder buttons or invented URLs.
+ 
+ Cross-sell copy and Business/Executive differentiation must follow [ONYX Collection Catalog](ONYX_COLLECTION_CATALOG.md).
+ 
+--- pre-task/13 Production/Product_Standards/ONYX_COLLECTION_CATALOG.md
++++ current/13 Production/Product_Standards/ONYX_COLLECTION_CATALOG.md
+@@ -4,7 +4,7 @@
+ 
+ ## How the catalog works
+ 
+-An ONYX product defines the use case; a collection defines a visual world and scene set. A Collection Book may recommend another collection only when it differs clearly from the book already delivered and its availability is verified. Otherwise use `Скоро` and no URL.
++A commercial tier defines deliverables; a Collection defines a broad visual world containing Concepts, each containing Scenes and accepted Final Images. [Product System](ONYX_PRODUCT_SYSTEM.md) governs the frozen taxonomy. Premium contains one main Collection, with compatible adjacent Concepts when coherent; a full additional Collection is separate scope. A Collection Book may recommend another collection only when it differs clearly from the book already delivered and its availability is verified. Otherwise use `Скоро` and no URL.
+ 
+ ## Business
+ 
+--- pre-task/13 Production/Product_Standards/ONYX_PREPAYMENT_PREVIEW_STANDARD.md
++++ current/13 Production/Product_Standards/ONYX_PREPAYMENT_PREVIEW_STANDARD.md
+@@ -1,6 +1,6 @@
+ # ONYX Prepayment Preview Standard v1
+ 
+-До оплаты клиент получает фирменный preview, а не технический черновик.
++CURRENT commercial override, 2026-09-20: [Service Standard](ONYX_SERVICE_STANDARD_v1.md) requires Reference QA then 100% prepayment before production. These legacy proof layout/file names remain supported; a prepayment proof is not an included free production step or the discontinued paid Preview product. Use approved proofs only when separately authorized; layout rules below do not change payment timing.
+ 
+ - Canvas: 1080 × 1350 px, full width photo, без боковых полей.
+ - Нижний footer: 230 px, каменная onyx-текстура и утверждённый lockup `BUSINESS COLLECTION / CLIENT PREVIEW`.
+@@ -18,4 +18,3 @@
+ - Each lockup contains the monogram incision, ONYX, and PRIVATE PREVIEW with the order ID handled by the delivery manifest.
+ - One lockup may lightly cross the face so the mark cannot be removed by a simple crop.
+ - No opaque panel, black badge, or high-contrast central banner is allowed.
+-
+--- pre-task/13 Production/Client_Delivery/ONYX_CLIENT_DELIVERY_SOP_V1.md
++++ current/13 Production/Client_Delivery/ONYX_CLIENT_DELIVERY_SOP_V1.md
+@@ -1,4 +1,8 @@
+ # ONYX Client Delivery SOP v1
++
++## Commercial scope — 2026-09-20
++
++[Product System](../Product_Standards/ONYX_PRODUCT_SYSTEM.md) governs 1/10/20 accepted finals plus purchased extras; Portrait has no Book, Signature Standard PDF, Premium Extended PDF. The existing builder described below is the legacy ten-image Signature path. Portrait/Premium require manually verified packaging until a compatible builder is confirmed; do not claim universal automation.
+ 
+ ## Source
+ 
+@@ -21,9 +25,8 @@
+ 
+ ## Sending policy
+ 
+-Before payment, send only `00_PREPAYMENT_PREVIEW`. After payment, send either the compact LIGHT archive or the complete FULL archive. Paid files contain no watermark. The client may use the lightweight set for messaging and social media, the high-quality JPEG set for everyday use, and the full-resolution PNG set for print, retouching and archive storage.
++New frozen orders require Reference QA and 100% prepayment before production. Legacy `00_PREPAYMENT_PREVIEW` proofs are not a free included prepayment generation step. After payment and final acceptance, send either the compact LIGHT archive or the complete FULL archive. Paid files contain no watermark. The client may use the lightweight set for messaging and social media, the high-quality JPEG set for everyday use, and the full-resolution PNG set for print, retouching and archive storage.
+ 
+ ## QA gate
+ 
+ Check that every delivery folder contains ten images, filenames and roles match the portfolio manifest, full-resolution checksums match their source masters, previews carry the correct order ID, paid files have no watermark, and the manifest is present. Do not publish or deliver while owner final approval is pending.
+-
+--- pre-task/13 Production/Client_Delivery/Templates/README.md
++++ current/13 Production/Client_Delivery/Templates/README.md
+@@ -1,3 +1,3 @@
+ # Client Delivery Template
+ 
+-For an approved paid order, prepare only the ten final files named `ONYX_01.jpg` through `ONYX_10.jpg`. Final paid delivery contains no watermark. Source, intermediate, rejected, repaired and preview assets stay outside the delivery package and retain their manifest provenance.
++For an approved paid order, prepare only the accepted ordered final files: Portrait 1, Signature 10, Premium 20, plus purchased additional finals; use sequential client-safe names. Include the Standard/Extended Collection Book PDF for Signature/Premium respectively; no Book for Portrait. Final paid delivery contains no watermark. Source, intermediate, rejected, repaired and preview assets stay outside the delivery package and retain their manifest provenance.
+--- pre-task/13 Production/Client_Experience/Intake/README.md
++++ current/13 Production/Client_Experience/Intake/README.md
+@@ -15,7 +15,7 @@
+ ├── ONYX_REFERENCE_QA_STANDARD_v1.md
+ └── schemas/
+     ├── intake_v1.schema.yaml
+-    ├── example_preview.yaml
++    ├── example_portrait.yaml
+     ├── example_signature.yaml
+     └── example_premium.yaml
+ ```
+@@ -23,7 +23,7 @@
+ ## Как использовать
+ 
+ 1. Отправьте каждому клиенту [руководство по фотографиям](ONYX_REFERENCE_GUIDE_v1.md) и [согласия](ONYX_CONSENT_AND_PRIVACY_v1.md).
+-2. Для **Preview** соберите только короткий набор полей из схемы: имя для отображения, номер заказа или контакт, выбранную коллекцию, назначение, стиль, референсы, пожелания и согласия.
++2. Для **Portrait** соберите только короткий набор полей из схемы: имя для отображения, номер заказа или контакт, выбранную коллекцию, назначение, стиль, референсы, пожелания и согласия.
+ 3. Для **Signature** заполните [короткую анкету](ONYX_SIGNATURE_INTAKE_v1.md). Для **Boudoir** дополнительно заполните [Boudoir Signature intake](ONYX_BOUDOIR_SIGNATURE_INTAKE_v1.md); все Boudoir-specific поля и согласия обязательны.
+    Для коллекции **Boudoir** дополнительно обязательны поля из [Boudoir Signature intake](ONYX_BOUDOIR_SIGNATURE_INTAKE_v1.md), включая границы образа, возраст и отдельные согласия.
+ 4. Для **Premium** заполните [Creative Profile](ONYX_PREMIUM_CREATIVE_PROFILE_v1.md), затем перенесите согласованный профиль в Concept Card. До массового производства концепция должна быть одобрена.
+@@ -44,4 +44,11 @@
+ 
+ ## Машиночитаемый формат
+ 
+-[Схема intake_v1.2](schemas/intake_v1.schema.yaml) описывает канонические поля, подписи, типы, обязательность и контролируемые значения. Boudoir-specific поля обязательны для `collection: BOUDOIR`; они являются источником для формы, ручного заполнения и передачи данных в производство. Примеры показывают минимально достаточное заполнение для каждого продукта.
++[Схема intake_v1.3](schemas/intake_v1.schema.yaml) описывает канонические поля, подписи, типы, обязательность и контролируемые значения. Boudoir-specific поля обязательны для `collection: BOUDOIR`; они являются источником для формы, ручного заполнения и передачи данных в производство. Примеры показывают минимально достаточное заполнение для каждого продукта.
++
++
++## Commercial freeze, 2026-09-20
++
++[Product System](../../Product_Standards/ONYX_PRODUCT_SYSTEM.md) governs prices/scope. Portrait is one finished professional portrait; Signature/Premium use one main Collection with usually 2–3/4–6 Concepts. Confirm references, feasible scope and capacity before 100% prepayment. A paid order never implies publication consent.
++
++For all tiers 4–8 useful references is guidance only; the quality-based Reference Guide controls sufficiency. `PORTRAIT` is current; `PREVIEW` and `example_preview.yaml` are legacy-only, SUPERSEDED and not for new intake. Existing Boudoir fields/consent requirements remain intact. Retention/deletion approval is still required before accepting new client data.
+--- pre-task/13 Production/Client_Experience/Intake/schemas/intake_v1.schema.yaml
++++ current/13 Production/Client_Experience/Intake/schemas/intake_v1.schema.yaml
+@@ -1,12 +1,12 @@
+-schema_version: "1.2"
++schema_version: "1.3"
+ schema_id: onyx_client_intake_v1_1
+-title: ONYX Client Intake v1.2
++title: ONYX Client Intake v1.3
+ description: >-
+-  Каноническая машиночитаемая структура для Preview, Signature и Premium.
++  Каноническая машиночитаемая структура для Portrait, Signature и Premium (PREVIEW — только legacy).
+   Boudoir-specific поля обязательны только для коллекции BOUDOIR.
+   Это описательная YAML-схема для форм и производства, а не JSON Schema.
+ controlled_values:
+-  product: [PREVIEW, SIGNATURE, PREMIUM]
++  product: [PORTRAIT, PREVIEW, SIGNATURE, PREMIUM]
+   style_intensity: [NATURAL, POLISHED, GLAMOUR]
+   portfolio_consent: [GRANTED, DENIED, NOT_ASKED]
+   marketing_consent: [GRANTED, DENIED, NOT_ASKED]
+@@ -82,7 +82,7 @@
+       label_ru: Что важно сохранить
+       description_ru: Важные элементы внешности и привычного образа.
+       type: array_of_strings
+-      required_for_products: [PREVIEW, SIGNATURE, PREMIUM]
++      required_for_products: [PORTRAIT, PREVIEW, SIGNATURE, PREMIUM]
+     - canonical: glasses_status
+       label_ru: Очки
+       description_ru: Нужно ли учитывать очки как часть образа.
+@@ -119,7 +119,7 @@
+       label_ru: Желаемый стиль
+       description_ru: Короткое описание образа словами клиента.
+       type: string
+-      required_for_products: [PREVIEW, SIGNATURE, PREMIUM]
++      required_for_products: [PORTRAIT, PREVIEW, SIGNATURE, PREMIUM]
+     - canonical: style_intensity
+       label_ru: Выразительность стиля
+       description_ru: Выбранная степень стилизации.
+@@ -141,7 +141,7 @@
+       label_ru: Чего избегать
+       description_ru: Нежелательные вещи, цвета, степень формальности, ретушь или места.
+       type: array_of_strings
+-      required_for_products: [PREVIEW, SIGNATURE, PREMIUM]
++      required_for_products: [PORTRAIT, PREVIEW, SIGNATURE, PREMIUM]
+       required_for_collections: [BOUDOIR]
+     - canonical: client_note
+       label_ru: Заметка клиента
+@@ -174,7 +174,7 @@
+       required: false
+     - canonical: concept_card_status
+       label_ru: Статус Concept Card
+-      description_ru: Для Premium: DRAFT, PENDING_APPROVAL или APPROVED до массового производства.
++      description_ru: 'Для Premium: DRAFT, PENDING_APPROVAL или APPROVED до массового производства.'
+       type: enum
+       allowed_values: [DRAFT, PENDING_APPROVAL, APPROVED]
+       required_for_products: [PREMIUM]
+@@ -320,3 +320,13 @@
+       description_ru: Внутренний идентификатор сотрудника или роли.
+       type: string
+       required: true
++
++commercial_product_mapping:
++  PORTRAIT: ONYX_PORTRAIT_V1
++  SIGNATURE: ONYX_SIGNATURE_V1
++  PREMIUM: ONYX_PREMIUM_V1
++legacy_product_values:
++  PREVIEW:
++    status: SUPERSEDED
++    allowed_for_new_orders: false
++commercial_authority: ../../../Product_Standards/ONYX_PRODUCT_SYSTEM.md
+--- pre-task/13 Production/Client_Experience/Intake/schemas/example_preview.yaml
++++ current/13 Production/Client_Experience/Intake/schemas/example_preview.yaml
+@@ -1,3 +1,4 @@
++# SUPERSEDED: historical Preview intake; not for new orders. Use example_portrait.yaml.
+ intake_version: "1.0"
+ order:
+   order_id: DEMO-PREVIEW-001
+--- pre-task/13 Production/Client_Experience/Intake/ONYX_PREMIUM_CREATIVE_PROFILE_v1.md
++++ current/13 Production/Client_Experience/Intake/ONYX_PREMIUM_CREATIVE_PROFILE_v1.md
+@@ -45,3 +45,7 @@
+ ## Что происходит дальше
+ 
+ Команда переносит согласованный профиль в Concept Card: цель — в назначение, качества образа и стиль — в визуальное направление, одежду — в образы, среду — в сцены, а приоритеты и ограничения — в правила производства. Concept Card согласуется до начала массового производства.
++
++## Границы съёмки
++
++Premium — одна основная Collection, обычно 4–6 Concepts и 20 готовых фотографий. Близкие смежные идеи допустимы в единой истории; полноценная вторая Collection согласуется отдельно. Число Concepts — ориентир, а не жёсткая гарантия.
+--- pre-task/13 Production/Client_Experience/Intake/ONYX_REFERENCE_QA_STANDARD_v1.md
++++ current/13 Production/Client_Experience/Intake/ONYX_REFERENCE_QA_STANDARD_v1.md
+@@ -6,8 +6,8 @@
+ 
+ | Статус | Когда ставить | Следующее действие |
+ |---|---|---|
+-| `PASS` | Референсы дают достаточное и непротиворечивое представление о внешности для выбранного заказа. | Передать в производство. |
+-| `PASS_WITH_NOTES` | Материала достаточно, но есть ограничения или детали, которые нужно явно учесть. | Передать в производство вместе с заметками. |
++| `PASS` | Референсы дают достаточное и непротиворечивое представление о внешности для выбранного заказа. | Подтвердить scope/capacity и перейти к оплате; производство только после оплаты и обязательных approvals. |
++| `PASS_WITH_NOTES` | Материала достаточно, но есть ограничения или детали, которые нужно явно учесть. | Согласовать ограничения и scope/capacity, перейти к оплате; передать заметки в производство после оплаты и approvals. |
+ | `NEEDS_MORE_REFERENCES` | Главных данных не хватает, но запрос можно закрыть дополнительными фото. | Попросить конкретные недостающие кадры. |
+ | `REJECT` | Материалы нельзя использовать: нет права на передачу, данные противоречивы или качество не позволяет установить внешность. | Остановить intake и объяснить, что нужно заменить. |
+ 
+--- pre-task/03 Product/Product.md
++++ current/03 Product/Product.md
+@@ -1,3 +1,9 @@
++# Historical product model — SUPERSEDED
++
++As of 2026-09-20, the text below is retained as history, not current commercial terms or taxonomy. Current authority: [ONYX Commercial Product System v1](../13%20Production/Product_Standards/ONYX_PRODUCT_SYSTEM.md). Current hierarchy: Collection → Concept → Scene → Final Image. Legacy category labels are not automatically current Collections or saleable products.
++
++---
++
+ # Product
+ 
+ ## Назначение
+@@ -128,4 +134,4 @@
+ - [[Mission]]
+ - [[Vision]]
+ - [[ONYX Method]]
+-- [[Collections]]+- [[Collections]]
+--- pre-task/03 Product/Collections.md
++++ current/03 Product/Collections.md
+@@ -1,3 +1,9 @@
++# Historical product model — SUPERSEDED
++
++As of 2026-09-20, the text below is retained as history, not current commercial terms or taxonomy. Current authority: [ONYX Commercial Product System v1](../13%20Production/Product_Standards/ONYX_PRODUCT_SYSTEM.md). Current hierarchy: Collection → Concept → Scene → Final Image. Legacy category labels are not automatically current Collections or saleable products.
++
++---
++
+ # Collections
+ 
+ ## Назначение
+@@ -163,4 +169,4 @@
+ ## Связанные документы
+ 
+ - [[Product]]
+-- [[ONYX Method]]+- [[ONYX Method]]
+--- pre-task/13 Production/Templates/Collection_Book/README.md
++++ current/13 Production/Templates/Collection_Book/README.md
+@@ -17,3 +17,7 @@
+ Planner/privacy unit checks cover 1, 10 and 20 photos. The actual P02 Signature book additionally passes end-to-end PDF rendering checks. Previews are 1350 px JPEGs rendered directly from the PDF. Premium/Preview PDF output has not been visually certified.
+ 
+ See [data contract](ONYX_COLLECTION_BOOK_TEMPLATE.md), [production guide](COLLECTION_BOOK_PRODUCTION_GUIDE.md), [standard](../../Product_Standards/ONYX_COLLECTION_BOOK_STANDARD.md), and [sample](../../Samples/P02_Business_Collection_Book_v1/README.md). Do not send internal manifests, source_data or reports to clients.
++
++## Commercial scope override — CURRENT, 2026-09-20
++
++[Product System](../../Product_Standards/ONYX_PRODUCT_SYSTEM.md) controls inclusions: Portrait has no Book; Signature Standard PDF; Premium Extended PDF with deeper narrative and Concept grouping when useful. `Preview` below names a retained legacy renderer tier, not a current product entitlement. Motion support is a technical capability outside frozen scope. Existing renderer input contracts and examples remain unchanged. Premium visual certification remains per-output work, not implied by planner tests.
+--- pre-task/13 Production/Templates/Collection_Book/ONYX_COLLECTION_BOOK_TEMPLATE.md
++++ current/13 Production/Templates/Collection_Book/ONYX_COLLECTION_BOOK_TEMPLATE.md
+@@ -54,3 +54,7 @@
+ ```
+ 
+ Captions must describe the actual image and scene role rather than a page-number slot. QA must include `caption matches actual image content` and must be repeated whenever a photo is replaced.
++
++## Commercial scope override — CURRENT, 2026-09-20
++
++[Product System](../../Product_Standards/ONYX_PRODUCT_SYSTEM.md) controls inclusions: Portrait has no Book; Signature Standard PDF; Premium Extended PDF with deeper narrative and Concept grouping when useful. `Preview` below names a retained legacy renderer tier, not a current product entitlement. Motion support is a technical capability outside frozen scope. Existing renderer input contracts and examples remain unchanged. Premium visual certification remains per-output work, not implied by planner tests.
+--- pre-task/13 Production/Templates/Collection_Book/COLLECTION_BOOK_PRODUCTION_GUIDE.md
++++ current/13 Production/Templates/Collection_Book/COLLECTION_BOOK_PRODUCTION_GUIDE.md
+@@ -103,3 +103,7 @@
+ ```
+ 
+ Before every final render, verify `caption matches actual image content` using the approved photograph, scene role, pose, environment and intended use. If a scene is replaced, revisit its caption before rendering; a new image inherits no caption automatically.
++
++## Commercial scope override — CURRENT, 2026-09-20
++
++[Product System](../../Product_Standards/ONYX_PRODUCT_SYSTEM.md) controls inclusions: Portrait has no Book; Signature Standard PDF; Premium Extended PDF with deeper narrative and Concept grouping when useful. `Preview` below names a retained legacy renderer tier, not a current product entitlement. Motion support is a technical capability outside frozen scope. Existing renderer input contracts and examples remain unchanged. Premium visual certification remains per-output work, not implied by planner tests.
+--- pre-task/13 Production/Brand/ONYX_BRANDBOOK_CONTENT_V1.md
++++ current/13 Production/Brand/ONYX_BRANDBOOK_CONTENT_V1.md
+@@ -37,3 +37,7 @@
+ 
+ Before payment: `00_PREPAYMENT_PREVIEW` with the approved `CLIENT PREVIEW` footer and five protective marks. After payment: `01_LIGHT_JPEG`, `02_HIGH_QUALITY_JPEG` and `03_FULL_RESOLUTION_PNG`. Paid files are clean and contain no watermark.
+ 
++
++## Commercial timing clarification — 2026-09-20
++
++[Service Standard](../Product_Standards/ONYX_SERVICE_STANDARD_v1.md) now requires Reference QA and 100% prepayment before production. Existing prepayment-proof terminology specifies protected proof assets only; it does not promise free prepayment generation and does not refer to a current paid Preview product. Visual proof rules remain unchanged. Earlier exported brandbooks are visual references, not payment-policy authorities.
+--- pre-task/13 Production/Brand/ONYX_BRAND_SYSTEM.md
++++ current/13 Production/Brand/ONYX_BRAND_SYSTEM.md
+@@ -52,3 +52,7 @@
+ 
+ Controlled artwork: `Brand/Logo/ONYX_WORDMARK_EDITORIAL_V1_CHAMPAGNE.png`. The approved portfolio application is a branded frame, not an overlaid caption. Client proof overlays are only for pre-payment previews. This standard does not authorize changing canonical experimental images.
+ 
++
++## Commercial timing clarification — 2026-09-20
++
++[Service Standard](../Product_Standards/ONYX_SERVICE_STANDARD_v1.md) now requires Reference QA and 100% prepayment before production. Existing prepayment-proof terminology specifies protected proof assets only; it does not promise free prepayment generation and does not refer to a current paid Preview product. Visual proof rules remain unchanged. Earlier exported brandbooks are visual references, not payment-policy authorities.
+--- pre-task/13 Production/Brand/Logo/EDITORIAL_WORDMARK_V1.md
++++ current/13 Production/Brand/Logo/EDITORIAL_WORDMARK_V1.md
+@@ -22,3 +22,7 @@
+ 
+ The Cormorant Garamond variable font is bundled under SIL Open Font License 1.1. See `../Typography/CormorantGaramond-OFL.txt`.
+ 
++
++## Commercial timing clarification — 2026-09-20
++
++[Service Standard](../../Product_Standards/ONYX_SERVICE_STANDARD_v1.md) now requires Reference QA and 100% prepayment before production. Existing prepayment-proof terminology specifies protected proof assets only; it does not promise free prepayment generation and does not refer to a current paid Preview product. Visual proof rules remain unchanged. Earlier exported brandbooks are visual references, not payment-policy authorities.
+--- pre-task/13 Production/Brand/CLIENT_PREVIEW_PROOF_STANDARD_V1.md
++++ current/13 Production/Brand/CLIENT_PREVIEW_PROOF_STANDARD_V1.md
+@@ -6,3 +6,7 @@
+ 
+ `ONYX_PREPAYMENT_PROOF_LAYOUT_V1.png` is a visual sample only; `SAMPLE-0001` is not a customer identifier.
+ 
++
++## Commercial timing clarification — 2026-09-20
++
++[Service Standard](../Product_Standards/ONYX_SERVICE_STANDARD_v1.md) now requires Reference QA and 100% prepayment before production. Existing prepayment-proof terminology specifies protected proof assets only; it does not promise free prepayment generation and does not refer to a current paid Preview product. Visual proof rules remain unchanged. Earlier exported brandbooks are visual references, not payment-policy authorities.
+--- pre-task/10 Roadmap/Roadmap.md
++++ current/10 Roadmap/Roadmap.md
+@@ -1,4 +1,11 @@
+ # Roadmap
++
++## CURRENT commercial priority — 2026-09-20
++
++[ONYX Commercial Product System v1](../13%20Production/Product_Standards/ONYX_PRODUCT_SYSTEM.md) is FROZEN_FOR_SOFT_LAUNCH. Until 10 unique paid orders: **80% SALES / CLIENT PRODUCTION / DELIVERY**, **20% R&D / AUTOMATION**. Existing technical milestones below remain historical/technical facts, not blockers or permission to change the frozen product. Model arenas, new LoRA, PuLID/FLUX tuning, complex automation and website infrastructure must not delay sales. Review prices/scope at **ONYX Product & Pricing Review v1.1** after 10 paid orders.
++
++Next commercial step: resolve the [true readiness blockers](../13%20Production/Product_Standards/ONYX_LAUNCH_READINESS_CHECKLIST_v1.md), then prepare ONYX Avito Launch Pack v1.
++
+ 
+ ## ✅ Phase 1A — Canonical contracts: COMPLETE
+ 
+--- pre-task/13 Production/README.md
++++ current/13 Production/README.md
+@@ -22,3 +22,9 @@
+ The production status of an asset is determined by its production manifest, not by the existence of a similarly named experimental file. `MISSING`, `PENDING`, and `REPAIR_REQUIRED` must not be replaced by placeholders.
+ 
+ See [[../12 Decisions/ADR-0007 Production Core and R&D Promotion Boundary|ADR-0007]].
++
++## CURRENT commercial freeze — 2026-09-20
++
++Commercial source of truth: [ONYX_COMMERCIAL_PRODUCT_SYSTEM_v1](Product_Standards/ONYX_PRODUCT_SYSTEM.md), **FROZEN_FOR_SOFT_LAUNCH**. Machine-readable mirror: [products_v1.yaml](Product_Standards/products_v1.yaml). Portrait 1000 RUB / 1 final; Signature 3000 RUB / 10; Premium 5000 RUB / 20. Premium has one main Collection and deeper Concepts, not multiple complete Collections by default.
++
++[Launch readiness](Product_Standards/ONYX_LAUNCH_READINESS_CHECKLIST_v1.md) separates frozen scope from demonstrated operations. [History](Product_Standards/ONYX_COMMERCIAL_VERSION_HISTORY_v1.md) preserves superseded values. [KPI](Product_Standards/ONYX_LAUNCH_KPI_v1.md) defines manual measurement and the 10-paid-order review. Documentation/config updated; runtime generation, Book rendering and delivery code are unchanged.
