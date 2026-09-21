@@ -1,9 +1,81 @@
 {
   "character": "P02",
   "collection": "business_v1",
-  "status": "QA_REVIEW",
+  "status": "AVITO_LAUNCH_V1_APPROVED",
   "promotion_mode": "manifest_only",
-  "publish_approved": false,
+  "synthetic_persona": true,
+  "marketing_approved": true,
+  "avito_publication_approved": true,
+  "publish_approved": true,
+  "approval_scope": "AVITO_LAUNCH_V1",
+  "publish_approval_applies_to": [
+    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_01_HERO.jpg",
+    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_02_CLOSE.jpg",
+    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_03_WAIST.jpg",
+    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_04_SEATED.jpg",
+    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_05_ENVIRONMENT.jpg",
+    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_06_ACTION.jpg",
+    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_07_3Q_BODY.jpg",
+    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_08_FULL_BODY.jpg",
+    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_09_MOOD.jpg",
+    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_10_EDITORIAL.jpg"
+  ],
+  "unlisted_assets_approved": false,
+  "approval": {
+    "recorded_on": "2026-09-21",
+    "approved_by": "ONYX owner via explicit user authorization",
+    "scope": "AVITO_LAUNCH_V1",
+    "allowed_uses": [
+      "Avito advertisement",
+      "Avito carousel",
+      "ONYX marketing layouts directly related to Avito Launch Pack v1",
+      "crop, resize, typography and branding overlays for advertising cards",
+      "contact sheets and QA previews for this advertisement"
+    ],
+    "excluded_uses": [
+      "P01",
+      "P03",
+      "P02 Lifestyle",
+      "P02 Boudoir",
+      "private Orders",
+      "client references",
+      "client candidates",
+      "client finals",
+      "client Collection Books",
+      "delivery packages",
+      "marketing channels outside AVITO_LAUNCH_V1"
+    ],
+    "source_assets_mutable": false
+  },
+  "before_after_reference_approval": {
+    "recorded_on": "2026-09-21",
+    "approved_by": "ONYX owner via explicit user authorization",
+    "purpose": "Before to After card in ONYX Avito Launch Pack revision v2",
+    "approval_scope": "AVITO_LAUNCH_V1_BEFORE_AFTER",
+    "unlisted_references_approved": false,
+    "assets": [
+      {
+        "id": "B01",
+        "source": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/01_references/P02_REF03.png",
+        "sha256": "23fb0883218085354fe2de85d92d2641916501ac41e754735892babb10a004c2",
+        "identity_version": 1,
+        "canonical_reference": true,
+        "synthetic_persona": true,
+        "marketing_approved": true,
+        "avito_publication_approved": true,
+        "publish_approved": true,
+        "approval_scope": "AVITO_LAUNCH_V1_BEFORE_AFTER",
+        "source_assets_mutable": false
+      }
+    ],
+    "excluded_uses": [
+      "P01",
+      "P03",
+      "real clients",
+      "Orders assets",
+      "marketing channels outside ONYX Avito Launch Pack revision v2"
+    ]
+  },
   "source_manifest": "09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/business_v1/business_manifest.yaml",
   "identity": [
     {

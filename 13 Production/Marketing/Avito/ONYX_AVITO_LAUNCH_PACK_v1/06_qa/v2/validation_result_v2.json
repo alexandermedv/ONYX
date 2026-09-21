@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "revision": "v2",
+  "checks": [
+    "exact REF03 approval scope",
+    "synthetic canonical identity provenance",
+    "Before/After source-copy hashes",
+    "ten v2 masters and ten v2 exports",
+    "v2 render inspection",
+    "v1 rendered outputs preserved",
+    "frozen public prices"
+  ],
+  "canonical_reference_unchanged_by_hash": true,
+  "v1_outputs_preserved": true
+}

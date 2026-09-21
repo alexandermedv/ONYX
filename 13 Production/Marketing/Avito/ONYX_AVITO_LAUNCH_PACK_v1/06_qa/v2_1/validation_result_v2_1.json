@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "release_status": "READY_FOR_AVITO_LAUNCH_APPROVAL",
+  "revision": "v2.1",
+  "checks": [
+    "exact REF03 approval and immutable-source scope",
+    "canonical and working-copy REF03 hashes",
+    "v2.1 provenance and publication hold",
+    "P02 Business A01–A10 rights and byte-identical provenance",
+    "ten v2.1 masters and ten v2.1 exports",
+    "only HERO changed; cards 02–10 are byte-identical to v2",
+    "v2 rendered outputs preserved",
+    "final contact sheet and 390 px mobile QA preview",
+    "frozen prices and CTA text"
+  ],
+  "before_reference": "P02_REF03.png",
+  "before_reference_changed": false,
+  "canonical_sources_unchanged_by_hash": true,
+  "publication_performed": false
+}
