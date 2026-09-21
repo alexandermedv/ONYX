@@ -4,6 +4,23 @@ currency: RUB
 pricing_note: Frozen until 10 paid orders; exceptions require recorded owner decision.
 saleable_product_keys: [portrait, signature, premium]
 compatibility_note: Legacy preview is retained for historical readers only; new sales must use saleable_product_keys and per-order readiness gates.
+public_collections:
+  business:
+    client_name: Business
+    status: PUBLIC_LAUNCH_AVAILABLE
+    definition: Business portraits for a professional profile, resume, website and personal brand.
+    saleable_product_keys: [portrait, signature, premium]
+    reference_qa_required: true
+    creative_feasibility_confirmation_required: true
+  lifestyle:
+    client_name: Lifestyle
+    status: PUBLIC_LAUNCH_AVAILABLE
+    definition: Natural contemporary photographs for social media, a personal profile and an everyday image.
+    saleable_product_keys: [portrait, signature, premium]
+    reference_qa_required: true
+    creative_feasibility_confirmation_required: true
+unlisted_collections_publicly_available: false
+multi_collection_default_in_premium: false
 common:
   identity_consistency: true
   production_qa: true
@@ -129,6 +146,7 @@ automation_fields:
   - effective_hourly_margin
   - gross_margin
 revision: 2026-09-20-commercial-freeze
+collection_availability_revision: 2026-09-21-avito-v2.3
 version_status: CURRENT
 freeze_date: '2026-09-20'
 commercial_system_id: ONYX_COMMERCIAL_PRODUCT_SYSTEM_v1

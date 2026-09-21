@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "release_status": "APPROVED_FOR_AVITO_PUBLISH",
+  "revision": "v2.5",
+  "headroom_fixed_cards": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "visual_review": "PASS — complete head and hair contour visible in every image on slides 02–05",
+  "checks": [
+    "ten v2.5 masters and exports",
+    "only slides 02–05 changed from v2.4",
+    "v2.4 outputs preserved",
+    "wide crops preserve the complete source top edge",
+    "final carousel and exact 390 px previews for slides 02–05"
+  ],
+  "publication_performed": false
+}

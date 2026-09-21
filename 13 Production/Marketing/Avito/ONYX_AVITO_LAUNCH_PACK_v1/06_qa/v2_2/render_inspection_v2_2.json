@@ -1,0 +1,203 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "04_master/v2_2/AVITO_V2_2_01.png",
+      "format": "PNG",
+      "width": 2560,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 2512227,
+      "sha256": "e355bf650c4fa65568094dc3eea5aef185f7ed6346eacc4ee7860f9cb9fe69a1"
+    },
+    {
+      "path": "04_master/v2_2/AVITO_V2_2_02.png",
+      "format": "PNG",
+      "width": 2560,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 2370895,
+      "sha256": "9f3f35e66b578e3ad7bf0f1544083e556117b79ccc69a97cd7460a23e4494f5f"
+    },
+    {
+      "path": "04_master/v2_2/AVITO_V2_2_03.png",
+      "format": "PNG",
+      "width": 2560,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 1674675,
+      "sha256": "ea1c3646e26802834988eb558616fa1aa5078ccfc478df3c229569d81dd1b504"
+    },
+    {
+      "path": "04_master/v2_2/AVITO_V2_2_04.png",
+      "format": "PNG",
+      "width": 2560,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 2753266,
+      "sha256": "83118d6186f405d54346ffe28d94b1069d4421dd678af49aaed528f2bac1e9b8"
+    },
+    {
+      "path": "04_master/v2_2/AVITO_V2_2_05.png",
+      "format": "PNG",
+      "width": 2560,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 3450659,
+      "sha256": "186acc143cc3418cba259ef550d627bd807d4f8eb378ecca388c5edaa02a45b6"
+    },
+    {
+      "path": "04_master/v2_2/AVITO_V2_2_06.png",
+      "format": "PNG",
+      "width": 2560,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 84535,
+      "sha256": "e0545b1b5fee3bab5944e520dd034d1b2df13dcf7642e31b37f394e2eacb4f34"
+    },
+    {
+      "path": "04_master/v2_2/AVITO_V2_2_07.png",
+      "format": "PNG",
+      "width": 2560,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 90128,
+      "sha256": "d66d3b7df93ee1125a23d7179c6d5ec859bd404bb0c3dc43d1524f25d45b736c"
+    },
+    {
+      "path": "04_master/v2_2/AVITO_V2_2_08.png",
+      "format": "PNG",
+      "width": 2560,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 107517,
+      "sha256": "b00af2afdaf1db82198ea77d0f05ae8cc2c68c4437e45a2c5d1133d5cd787655"
+    },
+    {
+      "path": "04_master/v2_2/AVITO_V2_2_09.png",
+      "format": "PNG",
+      "width": 2560,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 1908082,
+      "sha256": "a5aaafeeb47c44a8b0f3f817ca00485a1613b6c1704d451898dd072e5c9d7758"
+    },
+    {
+      "path": "04_master/v2_2/AVITO_V2_2_10.png",
+      "format": "PNG",
+      "width": 2560,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 1939075,
+      "sha256": "c10a6bf82dd7d781391cd13831ad9ed7a35c8a2dba061997325096b7abcaaca9"
+    },
+    {
+      "path": "05_export/v2_2/AVITO_V2_2_01.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 960,
+      "mode": "RGB",
+      "bytes": 198405,
+      "sha256": "f01a08917c5959b9dfa8c589d70f492d2ec2486b53a9b449c1c65f1dbe2608cb"
+    },
+    {
+      "path": "05_export/v2_2/AVITO_V2_2_02.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 960,
+      "mode": "RGB",
+      "bytes": 205448,
+      "sha256": "f10dea81c6ac253514b666d84e4b24e1868089744a300ad20c90e335f23f44ac"
+    },
+    {
+      "path": "05_export/v2_2/AVITO_V2_2_03.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 960,
+      "mode": "RGB",
+      "bytes": 163148,
+      "sha256": "4603835b9846caed77e82af025b761b68e043281e070ed7a957ae42c04dc6878"
+    },
+    {
+      "path": "05_export/v2_2/AVITO_V2_2_04.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 960,
+      "mode": "RGB",
+      "bytes": 213317,
+      "sha256": "5aa349d2209472b79361c06f5cbda9ebcd5ad59289c5b96dd59743a0b1288adc"
+    },
+    {
+      "path": "05_export/v2_2/AVITO_V2_2_05.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 960,
+      "mode": "RGB",
+      "bytes": 264019,
+      "sha256": "c64594a79d71ea9264a6822bfc30e75c839811c1f394127e5a6c818ad6df7127"
+    },
+    {
+      "path": "05_export/v2_2/AVITO_V2_2_06.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 960,
+      "mode": "RGB",
+      "bytes": 77050,
+      "sha256": "3dbf5c2583512b9f7cec150d69c436b467ab6c4139af27746bfd4585d3c1eedd"
+    },
+    {
+      "path": "05_export/v2_2/AVITO_V2_2_07.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 960,
+      "mode": "RGB",
+      "bytes": 76600,
+      "sha256": "b518f858139fd6db4b276cedddcf092a5e05eb9405f77a63be6fb615b0fa6af6"
+    },
+    {
+      "path": "05_export/v2_2/AVITO_V2_2_08.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 960,
+      "mode": "RGB",
+      "bytes": 89059,
+      "sha256": "ee837e13ba7758e9eded5c9c6635257c42c34b8dea9a7689e1ff04bfd044719a"
+    },
+    {
+      "path": "05_export/v2_2/AVITO_V2_2_09.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 960,
+      "mode": "RGB",
+      "bytes": 189886,
+      "sha256": "3f8fecba4d6121b0eacd29a54bdba9b7f04f754361d5f86e9fdc47e0bd74621a"
+    },
+    {
+      "path": "05_export/v2_2/AVITO_V2_2_10.jpg",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 960,
+      "mode": "RGB",
+      "bytes": 160359,
+      "sha256": "8f155c20b4998032de0bbc6c0540280e88a5d127180c39440889e14532456295"
+    },
+    {
+      "path": "02_contact_sheets/AVITO_CAROUSEL_FINAL_REVIEW_v2_2.jpg",
+      "format": "JPEG",
+      "width": 2000,
+      "height": 1300,
+      "mode": "RGB",
+      "bytes": 356948,
+      "sha256": "2c220f8c515cce2de66889de57486f443cfffc6f7b6dd3d10e91fc64cdac6d1b"
+    },
+    {
+      "path": "06_qa/v2_2/AVITO_MOBILE_QA_v2_2.jpg",
+      "format": "JPEG",
+      "width": 1100,
+      "height": 1000,
+      "mode": "RGB",
+      "bytes": 174479,
+      "sha256": "516d60cd0a0ad84a4709614b50f01342084a0a3fb6c52ac4ba6ee187d1d2dd5f"
+    }
+  ]
+}

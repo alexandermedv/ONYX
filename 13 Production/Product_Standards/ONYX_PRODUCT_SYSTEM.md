@@ -3,6 +3,7 @@
 Commercial source of truth: **ONYX_COMMERCIAL_PRODUCT_SYSTEM_v1**.
 Version status: **CURRENT**. Commercial status: **FROZEN_FOR_SOFT_LAUNCH**.
 Freeze date: **2026-09-20**. Owner: ONYX owner.
+Collection availability decision date: **2026-09-21**.
 
 This file governs product names, prices, deliverables, corrections, add-ons and upgrades.
 [Price Book](ONYX_PRICE_BOOK_v1.md) and [products_v1.yaml](products_v1.yaml) are synchronized views of this document, not independent authorities.
@@ -19,6 +20,19 @@ Earlier values are SUPERSEDED; see [version history](ONYX_COMMERCIAL_VERSION_HIS
 - Final Image: an individually accepted client deliverable after final QA, not a candidate or generation attempt.
 
 New scene plans and commercial manifest extensions record collection_id, concept_id, scene_id and final_image_id, with links to candidate provenance and acceptance. Existing asset IDs and canonical runtime contracts are not rewritten. The YAML documents an additive future manifest contract; runtime enforcement is not implemented by this freeze.
+
+## Public Collection availability
+
+The current soft launch publicly offers two Collections:
+
+| Collection | Launch status | Public definition |
+|---|---|---|
+| Business | `PUBLIC_LAUNCH_AVAILABLE` | Business portraits for a professional profile, resume, website and personal brand. |
+| Lifestyle | `PUBLIC_LAUNCH_AVAILABLE` | Natural contemporary photographs for social media, a personal profile and an everyday image. |
+
+Portrait, Signature and Premium may be ordered in either Business or Lifestyle after reference suitability and creative feasibility are confirmed before payment. Prices and final-image counts do not vary by Collection. Premium still contains one main Collection; a complete Business session plus a complete Lifestyle session is separate scope.
+
+Executive, Fashion, Glamour, Travel, Evening, Dating, Boudoir and every other documented direction remain `NOT_PUBLICLY_LAUNCHED` until a separate recorded decision. Catalog presence or production experimentation does not change that status.
 
 ## Frozen product matrix
 

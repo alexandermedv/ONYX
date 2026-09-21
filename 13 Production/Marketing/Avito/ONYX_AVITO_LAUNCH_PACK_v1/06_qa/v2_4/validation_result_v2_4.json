@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "release_status": "APPROVED_FOR_AVITO_PUBLISH",
+  "revision": "v2.4",
+  "selected_business_asset": "A03 / ONYX_P02_BUSINESS_03_WAIST.jpg",
+  "selected_lifestyle_asset": "LIFE_06 / P02_LIFE_06_weekend_street.png",
+  "checks": [
+    "ten v2.4 masters and exports",
+    "only slide 03 changed from v2.3",
+    "v2.3 outputs preserved",
+    "ten exact Lifestyle hashes and approval scope verified",
+    "file-level provenance and selected A03/LIFE_06 pair verified",
+    "listing collections and unchanged product prices verified",
+    "card 03 uses only approved synthetic Business and Lifestyle sources",
+    "final carousel and exact 390 px mobile preview"
+  ],
+  "canonical_sources_mutated": false,
+  "publication_performed": false
+}

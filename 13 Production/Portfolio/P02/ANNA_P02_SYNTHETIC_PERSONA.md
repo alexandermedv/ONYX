@@ -2,7 +2,7 @@
 
 **Status:** INTERNAL SAMPLE PERSONA
 **Created:** 2026-09-18
-**Scope:** Collection Book demo copy; exact P02 Business A01–A10 assets additionally approved for `AVITO_LAUNCH_V1`
+**Scope:** Collection Book demo copy; exact P02 Business A01–A10 and P02 Lifestyle LIFE_01–LIFE_10 assets additionally approved for `AVITO_LAUNCH_V1`
 
 Anna is a fictional ONYX persona for the P02 Business Collection Book. She is not a client, does not identify a real person, and does not alter the underlying P02 image assets, their hashes, experimental records, review state, or delivery provenance.
 
@@ -24,7 +24,15 @@ On 2026-09-21 the ONYX owner explicitly confirmed that the ten files in `13 Prod
 
 For these exact assets: `synthetic_persona: true`, `marketing_approved: true`, `avito_publication_approved: true`, `publish_approved: true`, `approval_scope: AVITO_LAUNCH_V1`.
 
-This approval does not include P01, P03, P02 Lifestyle, P02 Boudoir, private Orders, client references/candidates/finals, client Collection Books, delivery packages, or any other marketing channel. Canonical and source images remain immutable.
+This approval does not include P01, P03, P02 Boudoir, private Orders, client references/candidates/finals, client Collection Books, delivery packages, or any other marketing channel. Canonical and source images remain immutable.
+
+## Avito Launch Pack v1 approval — Lifestyle
+
+On 2026-09-21 the ONYX owner explicitly authorized the ten exact synthetic files `P02_LIFE_01_cafe_window.png` through `P02_LIFE_10_evening_city.png` in `09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/03_final/` for the Avito advertisement, Avito carousel, directly related ONYX Avito Launch v1 layouts, required crop/resize/branding/typography overlays, internal contact sheets and QA previews.
+
+For these exact files: `synthetic_persona: true`, `synthetic_provenance_status: CONFIRMED`, `marketing_approved: true`, `avito_publication_approved: true`, `publish_approved: true`, `approval_scope: AVITO_LAUNCH_V1`.
+
+This permission does not extend to other personas, private Orders, client assets, website or social media, or another marketing channel. The canonical/source files remain immutable.
 
 ## Avito Launch Pack revision v2 — Before/After reference
 

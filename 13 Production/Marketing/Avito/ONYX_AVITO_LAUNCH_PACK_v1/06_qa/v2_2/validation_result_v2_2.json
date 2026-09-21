@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "release_status": "READY_FOR_AVITO_PUBLISH_REVIEW",
+  "revision": "v2.2",
+  "launch_ready_collections": [
+    "Business"
+  ],
+  "checks": [
+    "ten v2.2 masters and exports",
+    "only slides 03, 04, 05 and 08 changed",
+    "v2.1 rendered outputs preserved",
+    "approved synthetic P02 rights scope only",
+    "listing copy commercial, upgrade, CTA and privacy requirements",
+    "collection availability follows source of truth",
+    "final contact sheet and exact 390 px mobile preview"
+  ],
+  "v2_1_preserved": true,
+  "publication_performed": false
+}

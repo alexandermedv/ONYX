@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "release_status": "READY_FOR_AVITO_PUBLISH_APPROVAL",
+  "revision": "v2.3",
+  "public_collections": [
+    "Business",
+    "Lifestyle"
+  ],
+  "lifestyle_exact_assets_published": false,
+  "checks": [
+    "ten v2.3 masters and exports",
+    "only slide 03 changed from v2.2",
+    "v2.2 rendered outputs preserved",
+    "Business and Lifestyle only are public launch Collections",
+    "Lifestyle production capability is separate from exact-asset rights; source hashes preserved",
+    "listing is customer-facing and preserves prices, upgrades and one-Collection Premium",
+    "slide 03 is typographic and uses no unapproved or private asset",
+    "final contact sheet and exact 390 px mobile preview"
+  ],
+  "publication_performed": false
+}
