@@ -1,0 +1,21 @@
+schema: onyx.character.identity
+character_id: P02
+identity_name: P02_F30_Lifestyle
+status: frozen
+synthetic_identity: true
+hash_algorithm: SHA256
+master:
+  file: MASTER.png
+  source: 09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/00_master/P02_identity_master_v1.png
+  sha256: d4a8ff4ec08feafb2af49eca6d75ca7df1843bcf772deb5afae1e070a6e50299
+references:
+  files: [P02_REF01.png, P02_REF02.png, P02_REF03.png, P02_REF04.png, P02_REF05.png]
+  source: 09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/01_references
+approved_collage:
+  file: 02_source_generations/P02_approved_character_collage_v1.png
+  status: missing
+  substitute_allowed: false
+provenance:
+  source_preserved: true
+  source_location: 09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle
+  verification: SHA256 verified on 2026-09-23

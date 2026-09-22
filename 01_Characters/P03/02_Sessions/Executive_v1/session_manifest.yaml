@@ -1,0 +1,16 @@
+schema: onyx.character.session
+character_id: P03
+session_id: P03_EXECUTIVE_V1
+collection: Executive
+status: candidate_set
+owner_approval: PENDING
+source_count: 10
+final_count: 0
+source_provenance: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/04_portfolio/executive_v1/00_source
+hash_verification: PASS
+migration_notes:
+  - Legacy 00_source and 03_final PNG sets are byte-identical 10/10; legacy 03_final was not deleted.
+  - Existing manifests disagree about upscale completion.
+  - Golden package records upscale QA PASS, while PORTFOLIO_EXPORT_MANIFEST records upscale not run.
+  - Owner final approval remains pending.
+  - No canonical 02_Final assets are declared until these statuses are reconciled.

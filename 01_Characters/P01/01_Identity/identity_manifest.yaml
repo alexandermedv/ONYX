@@ -1,0 +1,22 @@
+schema: onyx.character.identity
+character_id: P01
+identity_name: P01_M30_Corporate
+status: frozen
+synthetic_identity: true
+hash_algorithm: SHA256
+master:
+  file: MASTER.png
+  source: 09 Experiments/identity_benchmark_v1/P01_M30_Corporate/00_master/P01_identity_master_v1.png
+  sha256: 87adeef5c4a167cd2b7d6dee05493467755fe3a4554c9ff7a61fdb5d13a7af02
+references:
+  primary_generation_set:
+    - REF01: P01_REF01_frontal.png
+    - REF02: P01_REF02_right_3q.png
+    - REF03: P01_REF03_left_3q_smile.png
+  supplementary_training_set:
+    - REF04: P01_REF04_right_soft.png
+    - REF05: P01_REF05_left_soft.png
+provenance:
+  source_preserved: true
+  source_location: 09 Experiments/identity_benchmark_v1/P01_M30_Corporate
+  verification: SHA256 verified on 2026-09-23

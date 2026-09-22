@@ -1,0 +1,20 @@
+schema: onyx.character.identity
+character_id: P03
+identity_name: P03_M45_Executive
+status: frozen
+synthetic_identity: true
+hash_algorithm: SHA256
+master:
+  file: MASTER.png
+  source: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/00_master/P03_identity_master_v1.png
+  sha256: 10648d58e91bb3fe15cfe066d3099d1db338f0518dafee6898afaf94490c3375
+references:
+  files: [P03_REF01.png, P03_REF02.png, P03_REF03.png, P03_REF04.png, P03_REF05.png]
+  source: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/01_references
+approved_collage:
+  source: 09 Experiments/identity_benchmark_v1/P03_M45_Executive/02_source_generations/P03_approved_character_collage_v1.png
+  status: present_in_experiment
+provenance:
+  source_preserved: true
+  source_location: 09 Experiments/identity_benchmark_v1/P03_M45_Executive
+  verification: SHA256 verified on 2026-09-23

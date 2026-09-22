@@ -1,5 +1,20 @@
 # ONYX
 
+## Current content model
+
+Production content is organized around a single package per synthetic character:
+
+```text
+01_Characters   character identity, sessions, branded derivatives and history
+02_Marketing    shared ONYX campaign deliverables
+03_Standards    stable brand, product, portfolio and client-experience rules
+04_Templates    reusable templates only
+09 Experiments  R&D history, benchmarks and model experiments
+D:\AI\ONYX_Clients  real client data outside the Git repository
+```
+
+The current content migration is incremental. Legacy `13 Production` paths remain while WIP is verified and migrated. Technical roots such as `engine`, `scripts`, `tests`, `config` and model/workflow directories remain in place.
+
 Helping people look the way they want to look.
 
 ------------------------------------------------

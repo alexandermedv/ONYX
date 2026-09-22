@@ -1,5 +1,14 @@
 ﻿# ONYX — Codex Instructions
 
+## Content layout rules
+
+- Production assets for a synthetic character belong under `01_Characters/<ID>`.
+- Shared ONYX advertising deliverables belong under `02_Marketing`; canonical character photographs remain in the character package.
+- Stable rules belong under `03_Standards`; reusable templates belong under `04_Templates`.
+- `09 Experiments` remains R&D history and keeps its existing name.
+- Real client data belongs physically outside the repository under `D:\AI\ONYX_Clients`. Never stage client files. The in-repository `/_Clients/`, `/Clients/` and `/clients/` paths are defensive-only ignore locations.
+- During incremental migration, preserve user WIP. If a modified or untracked file is encountered, mark it `DEFERRED_WIP` and leave it in place.
+
 ## Project
 
 ONYX is an AI portrait generation and image-production pipeline.

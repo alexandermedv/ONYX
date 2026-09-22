@@ -1,0 +1,14 @@
+schema: onyx.character.session
+character_id: P02
+session_id: P02_LIFESTYLE_V1
+collection: Lifestyle
+status: production_package_migrated
+source_count: 10
+final_count: 10
+source_provenance: 09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/00_source
+final_provenance: 09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/03_final
+branded_provenance: 09 Experiments/identity_benchmark_v1/P02_F30_Lifestyle/04_portfolio/lifestyle_v1/05_marketing/04_social
+hash_verification: PASS
+notes:
+  - Source and final PNGs are byte-identical 10/10; one canonical final copy is stored here.
+  - Experiment originals remain unchanged.

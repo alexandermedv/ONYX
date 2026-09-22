@@ -130,3 +130,6 @@ engine/quality_gate/runs/
 # Local full-resolution production upscale renders
 13 Production/Portfolio/*/Business_V1/upscale_*_input/
 13 Production/Portfolio/*/Business_V1/upscale_*/*.png
+/_Clients/
+/Clients/
+/clients/

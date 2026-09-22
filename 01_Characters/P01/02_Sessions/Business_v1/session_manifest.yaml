@@ -1,0 +1,16 @@
+schema: onyx.character.session
+character_id: P01
+session_id: P01_BUSINESS_V1
+collection: Business
+status: production_package_migrated
+source_count: 10
+final_count: 10
+source_provenance: 09 Experiments/identity_benchmark_v1/P01_M30_Corporate/04_portfolio/gpt_portfolio_v1
+final_provenance: 01_Characters/P01/02_Sessions/Business_v1/02_Final
+branded_status: no_distinct_files
+hash_verification: PASS
+notes:
+  - Source files are role-mapped experiment outputs.
+  - Final files are clean production JPEG exports.
+  - No separate Branded copy was created because legacy marketing_preview files are byte-identical to Final exports.
+  - Modified framed previews and untracked marketing_v2/client_delivery WIP were deferred.
