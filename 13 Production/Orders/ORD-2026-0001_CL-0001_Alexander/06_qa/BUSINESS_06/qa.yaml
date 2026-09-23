@@ -1,7 +1,0 @@
-scene_id: BUSINESS_06
-result: PASS
-selected_candidate: BUSINESS_06_R01
-candidates: [{id: BUSINESS_06_C01, result: PASS}, {id: BUSINESS_06_C02, result: PASS}]
-superseded_final: 07_final/superseded/ONYX_BUSINESS_06.previous.png
-repair: false
-regeneration: false

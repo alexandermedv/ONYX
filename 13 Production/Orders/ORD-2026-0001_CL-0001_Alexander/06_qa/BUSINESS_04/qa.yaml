@@ -1,6 +1,0 @@
-scene_id: BUSINESS_04
-result: PASS
-selected_candidate: BUSINESS_04_C01
-candidates: [{id: BUSINESS_04_C01, result: PASS}, {id: BUSINESS_04_C02, result: PASS}]
-repair: false
-regeneration: false
