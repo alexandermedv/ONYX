@@ -25,7 +25,7 @@ ONYX/
 D:\AI\ONYX_Clients/       real client data and orders, outside Git
 ```
 
-`13 Production/` is a temporary legacy migration root. It is not authoritative. It remains only because active modified and untracked work must be preserved until each package is closed and migrated.
+`13 Production/` is retired and must not be recreated. Production assets belong in the canonical roots above; historical material is retained only under `Archive/Legacy_Structure/`.
 
 ## Authority rules
 

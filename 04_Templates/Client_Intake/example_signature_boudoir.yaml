@@ -1,0 +1,38 @@
+schema_version: "1.2"
+order:
+  order_id: EXAMPLE-BOUDOIR-001
+  product: SIGNATURE
+  client_display_name: Example Client
+  order_reference: EXAMPLE-BOUDOIR-001
+  selected_collection: BOUDOIR
+preferences:
+  primary_use: private/personal collection
+  intended_use: private/personal collection
+  desired_style: elegant intimate editorial
+  style_intensity: GLAMOUR
+  must_avoid: [explicit nudity, pornographic framing, body distortion]
+boudoir:
+  sensuality_level: MAX_NON_EXPLICIT
+  clothing_level: MINIMAL
+  preferred_wardrobe_types: [lingerie, bodysuit, silk robe, sheer layers]
+  preferred_coverage: IMPLIED_TASTEFUL
+  lingerie_allowed: true
+  bodysuit_allowed: true
+  silk_robe_allowed: true
+  sheer_layers_allowed: true
+  implied_nudity_allowed: true
+  strategic_coverage_required: true
+  explicit_nudity: false
+  sexual_activity: false
+  oversized_shirt_limit: one scene maximum, not a dominant wardrobe direction
+  mood: [elegant, intimate, confident]
+  lighting_preference: [soft natural window light, warm cinematic evening light]
+  intended_use: private/personal collection
+  must_avoid: [explicit nudity, pornographic framing, vulgar poses]
+  adult_confirmation: CONFIRMED_18_PLUS
+  reference_reuse_consent: GRANTED
+  portfolio_use_consent: NOT_GRANTED
+consent:
+  service_processing_consent: GRANTED
+  portfolio_consent: DENIED
+  marketing_consent: NOT_ASKED

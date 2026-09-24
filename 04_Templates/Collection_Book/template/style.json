@@ -4,8 +4,8 @@
   "dark": "#111111",
   "accent": "#B5A079",
   "muted": "#77736D",
-  "body_font": "13 Production/Brand/Typography/Manrope-Variable.ttf",
-  "display_font": "13 Production/Brand/Typography/CormorantGaramond-Variable.ttf",
+  "body_font": "03_Standards/Brand/WIP/Manrope-Variable.ttf",
+  "display_font": "03_Standards/Brand/WIP/CormorantGaramond-Variable.ttf",
   "image_max_edge": 2048,
   "jpeg_quality": 92
 }

@@ -34,7 +34,7 @@ def glyph(text: str, font_path: Path, size: int, color: tuple[int, int, int, int
     return image
 
 
-def build_client_preview_frame(source: Path, serif_font: Path, stone_texture: Path) -> Image.Image:
+def build_client_preview_frame(source: Path, serif_font: Path, stone_texture: Path, collection: str) -> Image.Image:
     scale = 3
     sans_font = Path(r"C:\Windows\Fonts\segoeui.ttf")
     gold = (218, 177, 68, 255)
@@ -55,7 +55,7 @@ def build_client_preview_frame(source: Path, serif_font: Path, stone_texture: Pa
     word = glyph("O N Y X", serif_font, 20, gold, scale)
     layer.alpha_composite(word, (cx - word.width // 2, bottom - word.height))
     draw.line((330 * scale, top, 1010 * scale, top), fill=gold, width=2 * scale)
-    title = glyph("BUSINESS COLLECTION", sans_font, 25, warm_white, scale)
+    title = glyph(f"{collection.upper()} COLLECTION", sans_font, 25, warm_white, scale)
     subtitle = glyph("CLIENT PREVIEW", sans_font, 19, gold, scale)
     layer.alpha_composite(title, (330 * scale, 105 * scale))
     layer.alpha_composite(subtitle, (330 * scale, bottom - subtitle.height))
@@ -151,8 +151,9 @@ def main() -> int:
     parser.add_argument("--font", type=Path, required=True)
     args = parser.parse_args()
     package = args.package
+    collection = package.name.removesuffix("_V1").replace("_", " ")
     repo = package.resolve().parents[3]
-    stone_texture = repo / "13 Production" / "Brand" / "Logo" / "Presentations" / "ONYX_MONOGRAM_ONYX_SILK_PRESENTATION_V1.png"
+    stone_texture = repo / "03_Standards" / "Brand" / "Assets" / "Logo" / "ONYX_MONOGRAM_ONYX_SILK_PRESENTATION_V1.png"
     if not stone_texture.exists():
         raise SystemExit(f"Approved ONYX stone texture is missing: {stone_texture}")
     masters = discover_masters(package)
@@ -183,7 +184,7 @@ def main() -> int:
         preview_source = package / "portfolio_framed_preview" / filename
         if not preview_source.exists():
             raise SystemExit(f"Approved framed preview with footer is missing: {preview_source}")
-        framed = build_client_preview_frame(preview_source, args.font, stone_texture)
+        framed = build_client_preview_frame(preview_source, args.font, stone_texture, collection)
         add_preview_mark(framed, preview, args.font, args.order_id)
         records.append({"master": master.as_posix(), "master_sha256": sha256(master), "full_resolution": full_resolution.as_posix(), "full_resolution_sha256": sha256(full_resolution), "client_jpeg_2048": high_quality.as_posix(), "web_jpeg_1600": light.as_posix(), "prepayment_preview": preview.as_posix(), "watermark": f"ONYX / PRIVATE PREVIEW / ORDER {args.order_id}"})
     (delivery / "CLIENT_DELIVERY_MANIFEST_V1.json").write_text(json.dumps({"schema": "onyx.production.client_delivery", "order_id": args.order_id, "records": records}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

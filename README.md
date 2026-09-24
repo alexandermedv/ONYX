@@ -13,7 +13,7 @@ Production content is organized around a single package per synthetic character:
 D:\AI\ONYX_Clients  real client data outside the Git repository
 ```
 
-The current content migration is incremental. Legacy `13 Production` paths remain while WIP is verified and migrated. Technical roots such as `engine`, `scripts`, `tests`, `config` and model/workflow directories remain in place.
+The legacy `13 Production` content migration is complete; that root is retired and must not be recreated. Technical roots such as `engine`, `scripts`, `tests`, `config` and model/workflow directories remain in place.
 
 Helping people look the way they want to look.
 

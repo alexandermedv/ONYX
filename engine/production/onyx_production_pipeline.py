@@ -20,7 +20,7 @@ def main() -> int:
     name = next((part.lower() for part in package.parts if part.lower() in {"p01", "p02", "p03"}), None)
     if name is None:
         raise SystemExit("Package path must include P01, P02 or P03")
-    source = package / "final_source_resolution"
+    source = package / "02_Final"
     input_dir = package / f"upscale_{name}_v1_input"
     output_dir = package / f"upscale_{name}_v1"
     input_dir.mkdir(parents=True, exist_ok=True)

@@ -8,7 +8,7 @@ import shutil
 ROOT = Path(__file__).resolve().parents[1]
 PRODUCTION = ROOT.parents[2]
 BRAND = PRODUCTION / "Brand"
-SOURCE = PRODUCTION / "Portfolio" / "P02" / "Business_V1" / "final_source_resolution"
+SOURCE = REPO / "01_Characters" / "P02" / "02_Sessions" / "Business_v1" / "02_Final"
 CANDIDATES = ROOT / "01_asset_candidates"
 MASTER = ROOT / "04_master"
 EXPORT = ROOT / "05_export"
