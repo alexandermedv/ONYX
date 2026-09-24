@@ -6,7 +6,7 @@ import json
 
 ROOT = Path(__file__).resolve().parents[2]
 REPO = ROOT.parents[3]
-INVENTORY = REPO / "13 Production" / "Portfolio" / "P02" / "BUSINESS_V1_SOURCE_INVENTORY.json"
+INVENTORY = REPO / "01_Characters" / "P02" / "02_Sessions" / "Business_v1" / "WIP" / "manifests" / "BUSINESS_V1_SOURCE_INVENTORY.json"
 REFERENCE = REPO / "09 Experiments" / "identity_benchmark_v1" / "P02_F30_Lifestyle" / "01_references" / "P02_REF03.png"
 REFERENCE_COPY = ROOT / "01_asset_candidates" / "v2" / "P02_REF03.png"
 IDENTITY_MANIFEST = REPO / "09 Experiments" / "identity_benchmark_v1" / "P02_F30_Lifestyle" / "identity_manifest.yaml"

@@ -2,6 +2,9 @@
 
 ## Content layout rules
 
+- `13 Production` is retired and must not be recreated. New production assets belong under `01_Characters`, `02_Marketing`, `03_Standards`, `04_Templates`, or `09 Experiments`; real client data belongs only outside the repository under `D:\AI\ONYX_Clients`.
+- Temporary or WIP assets must live inside their canonical entity/session/package, never in a shared legacy production folder.
+
 - Production assets for a synthetic character belong under `01_Characters/<ID>`.
 - Shared ONYX advertising deliverables belong under `02_Marketing`; canonical character photographs remain in the character package.
 - Stable rules belong under `03_Standards`; reusable templates belong under `04_Templates`.

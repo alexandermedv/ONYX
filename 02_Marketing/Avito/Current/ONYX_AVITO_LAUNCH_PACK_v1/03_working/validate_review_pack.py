@@ -7,7 +7,7 @@ import json
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[3]
 SOURCE = REPO / "01_Characters" / "P02" / "02_Sessions" / "Business_v1" / "02_Final"
-INVENTORY = REPO / "13 Production" / "Portfolio" / "P02" / "BUSINESS_V1_SOURCE_INVENTORY.json"
+INVENTORY = REPO / "01_Characters" / "P02" / "02_Sessions" / "Business_v1" / "WIP" / "manifests" / "BUSINESS_V1_SOURCE_INVENTORY.json"
 EXPECTED = {
     "ONYX_P02_BUSINESS_01_HERO.jpg": "ffcd2a6e021d4edc4e1fd31159ae314ecde6097ea8610267ea86b7fe24c05162",
     "ONYX_P02_BUSINESS_02_CLOSE.jpg": "a8c54ee3f73541d513f19e89c84beb05e319f33e0c40edbc636e11c335387582",

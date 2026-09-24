@@ -49,7 +49,7 @@ for item in v23_inspection["files"]:
     assert path.exists() and sha256(path) == item["sha256"], f"v2.3 output changed: {item['path']}"
 checks.append("v2.3 outputs preserved")
 
-inventory_path = REPO / "13 Production" / "Portfolio" / "P02" / "LIFESTYLE_V1_SOURCE_INVENTORY.json"
+inventory_path = REPO / "01_Characters" / "P02" / "02_Sessions" / "Business_v1" / "WIP" / "manifests" / "LIFESTYLE_V1_SOURCE_INVENTORY.json"
 inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
 assert inventory["synthetic_persona"] is True
 assert inventory["synthetic_provenance_status"] == "CONFIRMED"

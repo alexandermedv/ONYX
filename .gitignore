@@ -85,9 +85,9 @@ cache/
 09 Experiments/ensemble_generator_0.2/final_results/
 09 Experiments/ensemble_generator_0.2/*.manifest.json
 09 Experiments/ensemble_generator_0.2/*.zip
-09 Experiments/ensemble_generator_0.2/Архив/
+09 Experiments/ensemble_generator_0.2/пїЅпїЅпїЅпїЅпїЅ/
 
-**/Архив/
+**/пїЅпїЅпїЅпїЅпїЅ/
 
 # Client / identity source images
 09 Experiments/*/dataset/source/
@@ -101,14 +101,14 @@ engine/quality_gate/*.csv
 engine/quality_gate/runs/
 
 # Local archives / backups
-09 Experiments/**/Архив/
+09 Experiments/**/пїЅпїЅпїЅпїЅпїЅ/
 09 Experiments/**/*.zip
 09 Experiments/ensemble_generator_0.1/
 # Experiment archives
-09 Experiments/**/Архив/
+09 Experiments/**/пїЅпїЅпїЅпїЅпїЅ/
 09 Experiments/**/Archive/
 09 Experiments/**/archive/
-09 Experiments/ensemble_generator_0.2/Архив/
+09 Experiments/ensemble_generator_0.2/пїЅпїЅпїЅпїЅпїЅ/
 
 # Ignore archived copies inside experiments
 09 Experiments/ensemble_generator_0.2/*/ensemble_runner_backup.py
@@ -128,8 +128,6 @@ engine/quality_gate/runs/
 09 Experiments/identity_benchmark_v1/P01_M30_Corporate/03_benchmark_runs/**/*.png
 
 # Local full-resolution production upscale renders
-13 Production/Portfolio/*/Business_V1/upscale_*_input/
-13 Production/Portfolio/*/Business_V1/upscale_*/*.png
 /_Clients/
 /Clients/
 /clients/

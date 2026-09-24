@@ -50,16 +50,16 @@ for item in v22_inspection["files"]:
     assert path.exists() and sha256(path) == item["sha256"], f"v2.2 output changed: {item['path']}"
 checks.append("v2.2 rendered outputs preserved")
 
-product_system = (REPO / "13 Production" / "Product_Standards" / "ONYX_PRODUCT_SYSTEM.md").read_text(encoding="utf-8")
-products_yaml = (REPO / "13 Production" / "Product_Standards" / "products_v1.yaml").read_text(encoding="utf-8")
-catalog = (REPO / "13 Production" / "Product_Standards" / "ONYX_COLLECTION_CATALOG.md").read_text(encoding="utf-8")
+product_system = (REPO / "03_Standards" / "Product" / "ONYX_PRODUCT_SYSTEM.md").read_text(encoding="utf-8")
+products_yaml = (REPO / "03_Standards" / "Product" / "products_v1.yaml").read_text(encoding="utf-8")
+catalog = (REPO / "03_Standards" / "Portfolio" / "ONYX_COLLECTION_CATALOG.md").read_text(encoding="utf-8")
 for content in (product_system, products_yaml, catalog):
     assert content.count("PUBLIC_LAUNCH_AVAILABLE") >= 2
 assert "unlisted_collections_publicly_available: false" in products_yaml
 assert "multi_collection_default_in_premium: false" in products_yaml
 checks.append("Business and Lifestyle only are public launch Collections")
 
-inventory = json.loads((REPO / "13 Production" / "Portfolio" / "P02" / "LIFESTYLE_V1_SOURCE_INVENTORY.json").read_text(encoding="utf-8"))
+inventory = json.loads((REPO / "01_Characters" / "P02" / "02_Sessions" / "Business_v1" / "WIP" / "manifests" / "LIFESTYLE_V1_SOURCE_INVENTORY.json").read_text(encoding="utf-8"))
 assert inventory["synthetic_persona"] is True
 assert inventory["synthetic_provenance_status"] == "CONFIRMED"
 assert inventory["production_capability"] == "CONFIRMED_FOR_COLLECTION_OFFER"

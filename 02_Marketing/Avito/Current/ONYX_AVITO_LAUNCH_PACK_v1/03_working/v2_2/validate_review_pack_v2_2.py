@@ -86,7 +86,7 @@ for forbidden in ("trial", "demo", "пробник", "тестовое фото"
     assert forbidden not in listing.lower()
 checks.append("listing copy commercial, upgrade, CTA and privacy requirements")
 
-catalog = (REPO / "13 Production" / "Product_Standards" / "ONYX_COLLECTION_CATALOG.md").read_text(encoding="utf-8")
+catalog = (REPO / "03_Standards" / "Portfolio" / "ONYX_COLLECTION_CATALOG.md").read_text(encoding="utf-8")
 assert "entries below do not imply a launched public offer" in catalog
 blueprint = (ROOT / "03_working" / "v2_2" / "CAROUSEL_BLUEPRINT_v2_2.md").read_text(encoding="utf-8")
 assert "Business is the only explicitly evidenced launch-ready Collection" in blueprint
