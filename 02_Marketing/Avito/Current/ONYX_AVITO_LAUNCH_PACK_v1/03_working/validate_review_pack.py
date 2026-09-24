@@ -6,7 +6,7 @@ import json
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[3]
-SOURCE = REPO / "13 Production" / "Portfolio" / "P02" / "Business_V1" / "final_source_resolution"
+SOURCE = REPO / "01_Characters" / "P02" / "02_Sessions" / "Business_v1" / "02_Final"
 INVENTORY = REPO / "13 Production" / "Portfolio" / "P02" / "BUSINESS_V1_SOURCE_INVENTORY.json"
 EXPECTED = {
     "ONYX_P02_BUSINESS_01_HERO.jpg": "ffcd2a6e021d4edc4e1fd31159ae314ecde6097ea8610267ea86b7fe24c05162",
@@ -42,7 +42,7 @@ for key, value in {
 }.items():
     assert inventory[key] == value, f"inventory field mismatch: {key}"
 expected_inventory_paths = {
-    f"13 Production/Portfolio/P02/Business_V1/final_source_resolution/{filename}"
+    f"01_Characters/P02/02_Sessions/Business_v1/02_Final/{filename}"
     for filename in EXPECTED
 }
 assert set(inventory["publish_approval_applies_to"]) == expected_inventory_paths

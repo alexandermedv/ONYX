@@ -5,7 +5,7 @@ Local ReportLab + Pillow + pypdf + Poppler. No service, model, GPU, network, glo
 From repository root, with those dependencies installed:
 
 ```powershell
-python "04_Templates/Collection_Book/render_collection_book.py" --data "04_Templates/Collection_Book/example_data/P02_BUSINESS_COLLECTION_BOOK_v1.json" --output "13 Production/Samples/P02_Business_Collection_Book_v1_rebuild"
+python "04_Templates/Collection_Book/render_collection_book.py" --data "04_Templates/Collection_Book/example_data/P02_BUSINESS_COLLECTION_BOOK_v1.json" --output "tmp/collection_book_p02_rebuild"
 ```
 
 On this workstation replace `python` with `& 'C:/Users/ME/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe'`. `pdftoppm` is on PATH; otherwise pass `--poppler` with its executable path. No extra dependencies were installed.

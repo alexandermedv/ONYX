@@ -20,7 +20,7 @@ The Business book uses a poised first-contact portrait, desk and meeting scenes,
 
 ## Avito Launch Pack v1 approval
 
-On 2026-09-21 the ONYX owner explicitly confirmed that the ten files in `13 Production/Portfolio/P02/Business_V1/final_source_resolution` named `ONYX_P02_BUSINESS_01_HERO.jpg` through `ONYX_P02_BUSINESS_10_EDITORIAL.jpg` are synthetic marketing assets approved for the Avito advertisement, Avito carousel, directly related ONYX layouts, required crop/resize/type/branding overlays, contact sheets and QA previews in `AVITO_LAUNCH_V1`.
+On 2026-09-21 the ONYX owner explicitly confirmed that the ten files in `01_Characters/P02/02_Sessions/Business_v1/02_Final` named `ONYX_P02_BUSINESS_01_HERO.jpg` through `ONYX_P02_BUSINESS_10_EDITORIAL.jpg` are synthetic marketing assets approved for the Avito advertisement, Avito carousel, directly related ONYX layouts, required crop/resize/type/branding overlays, contact sheets and QA previews in `AVITO_LAUNCH_V1`.
 
 For these exact assets: `synthetic_persona: true`, `marketing_approved: true`, `avito_publication_approved: true`, `publish_approved: true`, `approval_scope: AVITO_LAUNCH_V1`.
 

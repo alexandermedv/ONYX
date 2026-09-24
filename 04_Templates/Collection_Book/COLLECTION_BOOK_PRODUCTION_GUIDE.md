@@ -75,7 +75,7 @@ Do not change fixed values merely to accommodate long copy. Edit the copy first.
 Run from the repository root into a new output folder:
 
 ```powershell
-& 'C:/Users/ME/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe' '04_Templates/Collection_Book/render_collection_book.py' --data 'path/to/client_book.json' --output '13 Production/Samples/CLIENT_COLLECTION_BOOK_v1'
+& 'C:/Users/ME/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe' '04_Templates/Collection_Book/render_collection_book.py' --data 'path/to/client_book.json' --output "$env:ONYX_CLIENT_ROOT/CL-XXXX_ClientName/ORD-YYYY-NNNN/Collection_Book"
 ```
 
 Do not use the sample folder as an output target. The renderer rejects a nonempty output directory to prevent accidental overwrite.

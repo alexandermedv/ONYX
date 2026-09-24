@@ -2,7 +2,7 @@
 
 CURRENT: ONYX_COMMERCIAL_PRODUCT_SYSTEM_v1, FROZEN_FOR_SOFT_LAUNCH, 2026-09-20.
 Authority: [Product System](ONYX_PRODUCT_SYSTEM.md).
-Superseded source snapshot: [pre-freeze working-tree documents](../../13%20Production/Product_Standards/History/2026-09-20_commercial_freeze/superseded_documents.md). Existing user changes were included in that snapshot and preserved through targeted edits. No experiment/order history is rewritten.
+Superseded source snapshot: [pre-freeze working-tree documents](../../Archive/Legacy_Structure/Product_Standards/2026-09-20_commercial_freeze/superseded_documents.md). Existing user changes were included in that snapshot and preserved through targeted edits. No experiment/order history is rewritten.
 
 | Old value | New value | Document | Reason |
 |---|---|---|---|

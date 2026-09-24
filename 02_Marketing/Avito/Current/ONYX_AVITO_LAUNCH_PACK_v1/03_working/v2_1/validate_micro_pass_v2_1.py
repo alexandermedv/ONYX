@@ -63,7 +63,7 @@ for item in assets:
     assert item["publish_approved"] is True
     assert item["approval_scope"] == "AVITO_LAUNCH_V1"
     assert item["source_mutated"] is False
-    assert item["source"].startswith("13 Production/Portfolio/P02/Business_V1/final_source_resolution/")
+    assert item["source"].startswith("01_Characters/P02/02_Sessions/Business_v1/02_Final/")
     assert sha256(REPO / item["source"]) == item["source_sha256"]
     assert sha256(ROOT / item["candidate_copy"]) == item["candidate_copy_sha256"]
     assert item["source_sha256"] == item["candidate_copy_sha256"]

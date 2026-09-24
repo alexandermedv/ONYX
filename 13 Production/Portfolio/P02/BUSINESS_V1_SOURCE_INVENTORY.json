@@ -9,16 +9,16 @@
   "publish_approved": true,
   "approval_scope": "AVITO_LAUNCH_V1",
   "publish_approval_applies_to": [
-    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_01_HERO.jpg",
-    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_02_CLOSE.jpg",
-    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_03_WAIST.jpg",
-    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_04_SEATED.jpg",
-    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_05_ENVIRONMENT.jpg",
-    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_06_ACTION.jpg",
-    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_07_3Q_BODY.jpg",
-    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_08_FULL_BODY.jpg",
-    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_09_MOOD.jpg",
-    "13 Production/Portfolio/P02/Business_V1/final_source_resolution/ONYX_P02_BUSINESS_10_EDITORIAL.jpg"
+    "01_Characters/P02/02_Sessions/Business_v1/02_Final/ONYX_P02_BUSINESS_01_HERO.jpg",
+    "01_Characters/P02/02_Sessions/Business_v1/02_Final/ONYX_P02_BUSINESS_02_CLOSE.jpg",
+    "01_Characters/P02/02_Sessions/Business_v1/02_Final/ONYX_P02_BUSINESS_03_WAIST.jpg",
+    "01_Characters/P02/02_Sessions/Business_v1/02_Final/ONYX_P02_BUSINESS_04_SEATED.jpg",
+    "01_Characters/P02/02_Sessions/Business_v1/02_Final/ONYX_P02_BUSINESS_05_ENVIRONMENT.jpg",
+    "01_Characters/P02/02_Sessions/Business_v1/02_Final/ONYX_P02_BUSINESS_06_ACTION.jpg",
+    "01_Characters/P02/02_Sessions/Business_v1/02_Final/ONYX_P02_BUSINESS_07_3Q_BODY.jpg",
+    "01_Characters/P02/02_Sessions/Business_v1/02_Final/ONYX_P02_BUSINESS_08_FULL_BODY.jpg",
+    "01_Characters/P02/02_Sessions/Business_v1/02_Final/ONYX_P02_BUSINESS_09_MOOD.jpg",
+    "01_Characters/P02/02_Sessions/Business_v1/02_Final/ONYX_P02_BUSINESS_10_EDITORIAL.jpg"
   ],
   "unlisted_assets_approved": false,
   "approval": {

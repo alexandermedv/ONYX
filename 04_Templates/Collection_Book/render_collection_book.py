@@ -18,7 +18,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen.canvas import Canvas
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parents[2]
+ROOT = HERE.parents[1]
 FORBIDDEN = re.compile(r'P0\d|BUS_\d|FLUX|LoRA|PuLID|ComfyUI|checkpoint|prompt|generation|AI pipeline|[A-Z]:[\\/]|\.png|\.jpg', re.I)
 
 def digest(path):
