@@ -4,7 +4,7 @@
   "run_id": "flux_kontext_repair_v1",
   "status": "prepared",
   "scope": "Two controlled FLUX.1 Kontext Dev repair points for BUS_06 and BUS_09 only. The official flux_kontext_qualifier_v1 remains immutable and is not rerun, modified, replaced, or ranked.",
-  "canonical_runbook": "04 Engineering/ComfyUI FLUX Windows Runbook.md",
+  "canonical_runbook": "docs/Knowledge_Base/Engineering/ComfyUI FLUX Windows Runbook.md",
   "source_qualifier": {
     "path": "../flux_kontext_qualifier_v1",
     "run_manifest_sha256_preflight": "DAB85F3F6A65D621CB51C3BB2416DC99568B6804F4186DA09DE920EDEECC2548",

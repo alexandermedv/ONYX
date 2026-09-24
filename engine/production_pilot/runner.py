@@ -162,7 +162,7 @@ def prepare_run(spec: dict[str, Any], root: Path, run_id: str) -> dict[str, Any]
                 "status": "prepared", "created_at": datetime.now(timezone.utc).isoformat(),
                 "spec_path": str((root / "09 Experiments/production_pilot_v0_1/pilot_spec.json").resolve()),
                 "workflow_path": str(template_path.resolve()), "workflow_sha256": sha256_file(template_path),
-                "lora_name": spec["lora_name"], "generation": spec["generation"], "runtime_runbook": "04 Engineering/ComfyUI FLUX Windows Runbook.md", "scenes": []}
+                "lora_name": spec["lora_name"], "generation": spec["generation"], "runtime_runbook": "docs/Knowledge_Base/Engineering/ComfyUI FLUX Windows Runbook.md", "scenes": []}
     _write_json(run_root / "manifests" / "run_manifest.json", manifest)
     return manifest
 

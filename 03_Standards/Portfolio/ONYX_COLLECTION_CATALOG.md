@@ -4,7 +4,7 @@
 
 ## How the catalog works
 
-A commercial tier defines deliverables; a Collection defines a broad visual world containing Concepts, each containing Scenes and accepted Final Images. [Product System](ONYX_PRODUCT_SYSTEM.md) governs the frozen taxonomy and public availability. Premium contains one main Collection, with compatible adjacent Concepts when coherent; a full additional Collection is separate scope. A Collection Book may recommend another collection only when it differs clearly from the book already delivered and its availability is verified. Otherwise use `Скоро` and no URL.
+A commercial tier defines deliverables; a Collection defines a broad visual world containing Concepts, each containing Scenes and accepted Final Images. [Product System](../Product/ONYX_PRODUCT_SYSTEM.md) governs the frozen taxonomy and public availability. Premium contains one main Collection, with compatible adjacent Concepts when coherent; a full additional Collection is separate scope. A Collection Book may recommend another collection only when it differs clearly from the book already delivered and its availability is verified. Otherwise use `Скоро` and no URL.
 
 ## Business
 

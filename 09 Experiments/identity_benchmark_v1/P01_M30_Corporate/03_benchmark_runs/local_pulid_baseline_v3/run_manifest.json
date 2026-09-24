@@ -129,7 +129,7 @@
   "retry_count": 0,
   "server_stopped": true,
   "output_sha256": "33e7089c50613c13796e66dc5edaba6ddce2dabd147e3a79e4ab11798b7a211c",
-  "canonical_runbook": "04 Engineering/ComfyUI FLUX Windows Runbook.md",
+  "canonical_runbook": "docs/Knowledge_Base/Engineering/ComfyUI FLUX Windows Runbook.md",
   "minimum_commit_free_mib": 10206.0,
   "minimum_ram_free_mib": 18529.0
 }

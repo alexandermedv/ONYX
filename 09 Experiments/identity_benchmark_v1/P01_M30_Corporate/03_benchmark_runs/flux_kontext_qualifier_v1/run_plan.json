@@ -4,7 +4,7 @@
   "run_id": "flux_kontext_qualifier_v1",
   "status": "prepared",
   "scope": "Three FLUX.1 Kontext Dev local qualifier points only: BUS_01, BUS_06 and BUS_09. No PuLID, LoRA, postprocess, reroll, external model, QA/ranking, or Production Pilot action.",
-  "canonical_runbook": "04 Engineering/ComfyUI FLUX Windows Runbook.md",
+  "canonical_runbook": "docs/Knowledge_Base/Engineering/ComfyUI FLUX Windows Runbook.md",
   "existing_workflow_source": "D:\\AI\\ComfyUI_Flux\\ComfyUI\\user\\default\\workflows\\KontextDev_beard_removal_success_best_pre_identity.json",
   "existing_workflow_subgraph": "Image Edit (Flux.1 Kontext Dev)",
   "workflow_template": "workflow_template_api.json",

@@ -11,7 +11,7 @@ Collection Book is the personal editorial presentation of an ONYX photoshoot. It
 - Portrait: no Collection Book. The renderer’s legacy Preview tier is a technical capability only, not a saleable frozen entitlement.
 - Signature: ten photographs; 14–18 pages, reference implementation 15.
 - Premium: twenty photographs; Extended Collection Book PDF, a clearer narrative and Concept chapters when useful. The legacy 16-page paired layout is a technical starting point, not proof of visual certification. Motion is outside the frozen package.
-- All orders retain their separate clean high-resolution photographs. Commercial inclusions follow [Product System](ONYX_PRODUCT_SYSTEM.md); renderer capabilities do not expand them.
+- All orders retain their separate clean high-resolution photographs. Commercial inclusions follow [Product System](../Product/ONYX_PRODUCT_SYSTEM.md); renderer capabilities do not expand them.
 
 ## Required sections
 
@@ -35,7 +35,7 @@ Body copy is Russian in v1; established collection names and ONYX Selection may 
 
 ## Visual standard
 
-Authority: [Brand System](../Brand/ONYX_BRAND_SYSTEM.md), [Brandbook content](../Brand/ONYX_BRANDBOOK_CONTENT_V1.md), [Editorial Wordmark](../Brand/Logo/EDITORIAL_WORDMARK_V1.md).
+Authority: [Brand System](../Brand/ONYX_BRAND_SYSTEM.md), [Brandbook content](../Brand/ONYX_BRANDBOOK_CONTENT_V1.md), [Editorial Wordmark](../../13%20Production/Brand/Logo/EDITORIAL_WORDMARK_V1.md).
 
 Digital portrait canvas 1080 × 1350 logical units, 4:5. Manrope for body, Cormorant Garamond for short editorial headlines; approved champagne wordmark on an Onyx field. Preserve logo proportions and clear space. Warm White #F6F4EF, Onyx #111111, Champagne #B5A079; no gradients or invented identity.
 

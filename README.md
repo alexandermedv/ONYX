@@ -52,16 +52,20 @@ postprocessing, and delivery runtimes remain outside the canonical shell.
 
 ## Repository structure
 
-01 Brand
-02 Business
-03 Product
-04 Engineering
-05 AI Pipeline
-...
+- `01_Characters/` — authoritative synthetic identities and their sessions.
+- `02_Marketing/` — shared ONYX campaigns and channel exports.
+- `03_Standards/` — stable Brand, Product, Portfolio, Marketing and Client Experience rules.
+- `04_Templates/` — reusable generic templates.
+- `09 Experiments/` — preserved R&D evidence.
+- `engine/` — production runtime and execution code.
+- `docs/` — architecture decisions and historical knowledge base.
+- `D:\AI\ONYX_Clients` — real client assets and orders outside Git.
+
+See [Repository Structure](REPOSITORY_STRUCTURE.md).
 
 ## Roadmap
 
-See 10 Roadmap/
+See [Roadmap](docs/Knowledge_Base/Roadmap/Roadmap.md).
 
 ## License
 

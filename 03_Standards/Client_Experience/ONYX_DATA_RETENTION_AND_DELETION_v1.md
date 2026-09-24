@@ -2,7 +2,7 @@
 
 **Status:** CURRENT / soft-launch operational policy  
 **Effective:** 2026-09-21  
-**Commercial source:** [ONYX Commercial Product System v1](../../Product_Standards/ONYX_PRODUCT_SYSTEM.md)
+**Commercial source:** [ONYX Commercial Product System v1](../Product/ONYX_PRODUCT_SYSTEM.md)
 
 This operational policy applies to orders accepted from its effective date. For an existing open order, explain the rule at the next client contact and apply it going forward without shortening a specifically promised period; do not revive closed orders or retroactively change an agreed term without the client's agreement. It supplements, and does not weaken, the client's existing consent or any stricter applicable privacy requirement. It does not promise deletion from systems outside ONYX's control.
 

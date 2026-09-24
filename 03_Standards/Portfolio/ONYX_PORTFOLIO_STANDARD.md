@@ -76,4 +76,4 @@ Canonical experimental images are referenced by promotion manifest. They are not
 
 ## Commercial authority and publication
 
-[Product System](ONYX_PRODUCT_SYSTEM.md) governs purchased scope. Public client portfolio use requires explicit portfolio consent; marketing/Avito/social/website/ads require the relevant separate marketing permission. Synthetic character assets follow existing approval and provenance rules.
+[Product System](../Product/ONYX_PRODUCT_SYSTEM.md) governs purchased scope. Public client portfolio use requires explicit portfolio consent; marketing/Avito/social/website/ads require the relevant separate marketing permission. Synthetic character assets follow existing approval and provenance rules.

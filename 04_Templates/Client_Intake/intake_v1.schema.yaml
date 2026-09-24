@@ -329,4 +329,4 @@ legacy_product_values:
   PREVIEW:
     status: SUPERSEDED
     allowed_for_new_orders: false
-commercial_authority: ../../../Product_Standards/ONYX_PRODUCT_SYSTEM.md
+commercial_authority: ../../03_Standards/Product/ONYX_PRODUCT_SYSTEM.md

@@ -4,7 +4,7 @@
   "run_id": "checkpoint_benchmark_v1",
   "status": "prepared",
   "scope": "Six-image P01 mini-LoRA checkpoint comparison only; no PuLID rerun, training, QA, ranking, seed sweep, or postprocessing.",
-  "canonical_runbook": "04 Engineering/ComfyUI FLUX Windows Runbook.md",
+  "canonical_runbook": "docs/Knowledge_Base/Engineering/ComfyUI FLUX Windows Runbook.md",
   "workflow_template": "comfyui-workflows/ONYX_Flux_Scene_Generator_0.3_fixed_lora_api.json",
   "workflow_template_sha256": "TO_BE_RECORDED_AT_EXECUTION",
   "scene": {

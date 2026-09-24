@@ -3,7 +3,7 @@
   "schema_version": "1.0",
   "run_id": "pulid_multiscene_v1",
   "scope": "P01 PuLID-only four-scene technical identity-method set: reuse BUS_01 v3 and generate BUS_03, BUS_06 and BUS_09 exactly once.",
-  "canonical_runbook": "04 Engineering/ComfyUI FLUX Windows Runbook.md",
+  "canonical_runbook": "docs/Knowledge_Base/Engineering/ComfyUI FLUX Windows Runbook.md",
   "workflow_template": "../local_pulid_baseline_v3/outputs/workflow_api.json",
   "baseline_reuse": "../local_pulid_baseline_v3/run_manifest.json",
   "scene_specs": "scene_specs.json",

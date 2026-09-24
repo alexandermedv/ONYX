@@ -35,7 +35,7 @@ Customer-facing material must not expose LoRA, Flux, PuLID, ComfyUI, seed, check
 
 ## Commercial freeze — CURRENT, 2026-09-20
 
-[Product System](ONYX_PRODUCT_SYSTEM.md) is the commercial authority. Portrait is a standalone professional result; Signature is recommended; Premium is an extended editorial session in one main Collection, usually 4–6 Concepts. Never promise multiple complete Collections or a fixed candidate count.
+[Product System](../Product/ONYX_PRODUCT_SYSTEM.md) is the commercial authority. Portrait is a standalone professional result; Signature is recommended; Premium is an extended editorial session in one main Collection, usually 4–6 Concepts. Never promise multiple complete Collections or a fixed candidate count.
 
 Public headline: **Профессиональные AI-фото по вашим обычным снимкам — от 1 000 ₽.**
 Brief add-ons: **+1 фото — 500 ₽; срочное выполнение — от +50%; исправление фото — от 500 ₽.**
@@ -43,4 +43,4 @@ Do not crowd the first slide with correction fees, complex Repair pricing or tec
 
 Purchase grants no publication rights. Client materials need the relevant separate portfolio/marketing consent for Avito, social, website or ads. Synthetic portfolio characters require existing provenance/asset approvals. No private source photo may be uploaded merely to prepare marketing.
 
-The final Avito Launch Pack is not created here. Follow [Avito requirements v1](../Marketing/Avito/ONYX_AVITO_LAUNCH_REQUIREMENTS_v1.md).
+The final Avito Launch Pack is not created here. Follow [Avito requirements v1](../../02_Marketing/Avito/Current/ONYX_AVITO_LAUNCH_REQUIREMENTS_v1.md).

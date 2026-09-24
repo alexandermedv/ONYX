@@ -4,7 +4,7 @@
   "run_id": "local_qualifier_tail_v1",
   "status": "prepared",
   "scope": "The 12 missing local mini-LoRA qualifier images only: BUS_06 and BUS_09 for the six existing P01 mini-LoRA checkpoints. BUS_01, PuLID, LoRA training, QA/ranking, external models, upscaling, and Production Pilot are excluded.",
-  "canonical_runbook": "04 Engineering/ComfyUI FLUX Windows Runbook.md",
+  "canonical_runbook": "docs/Knowledge_Base/Engineering/ComfyUI FLUX Windows Runbook.md",
   "workflow_template": "comfyui-workflows/ONYX_Flux_Scene_Generator_0.3_fixed_lora_api.json",
   "canonical_scene_specs_source": "../pulid_multiscene_v1/scene_specs.json",
   "canonical_references_source": "../../01_references/references.yaml",

@@ -14,7 +14,7 @@ Earlier values are SUPERSEDED; see [version history](ONYX_COMMERCIAL_VERSION_HIS
 
 **Collection → Concept → Scene → Final Image**
 
-- Collection: a broad visual direction, such as Business, Executive, Lifestyle, Fashion, Glamour, Travel or Evening. The [Collection Catalog](ONYX_COLLECTION_CATALOG.md) describes existing directions; listing does not grant launch availability.
+- Collection: a broad visual direction, such as Business, Executive, Lifestyle, Fashion, Glamour, Travel or Evening. The [Collection Catalog](../Portfolio/ONYX_COLLECTION_CATALOG.md) describes existing directions; listing does not grant launch availability.
 - Concept: a distinct creative idea within a Collection, e.g. Corporate Headshot, Formal Executive, Boardroom, Smart Casual, Workspace, Office Walk or Window Portrait in Business.
 - Scene: a concrete composition within a Concept. Boardroom may contain seated at table, standing by presentation screen, close executive portrait and walking into boardroom.
 - Final Image: an individually accepted client deliverable after final QA, not a candidate or generation attempt.
@@ -56,7 +56,7 @@ No multi-scene session, independent additional Concepts, Collection Book, separa
 
 A compact complete virtual photoshoot in one main Collection: usually 2–3 Concepts, multiple Scenes and 10 curated finals. Includes Client Intake, Reference QA, creative direction, scene planning, candidate production, identity preservation, diversity, human and technical QA, regeneration/replacement of unacceptable frames, repair as needed, curation, final QA, one client correction round, Standard Collection Book PDF and delivery package.
 
-The client buys 10 finished images. Candidate counts such as 12 or 20 remain internal production parameters. The approved Signature Book reference and current layout rules remain in [Collection Book Standard](ONYX_COLLECTION_BOOK_STANDARD.md).
+The client buys 10 finished images. Candidate counts such as 12 or 20 remain internal production parameters. The approved Signature Book reference and current layout rules remain in [Collection Book Standard](../Portfolio/ONYX_COLLECTION_BOOK_STANDARD.md).
 
 ## ONYX Premium
 
@@ -104,11 +104,11 @@ Upgrade requires available references, production context, consent and order met
 
 ## References, payment, failed production and privacy
 
-Reference QA and feasibility/capacity confirmation precede final acceptance and **100% prepayment**. For all three tiers 4–8 useful references is an orientation only: the mature [Reference Guide](../Client_Experience/Intake/ONYX_REFERENCE_GUIDE_v1.md) quality-based rule prevails; no universal hard minimum or maximum.
+Reference QA and feasibility/capacity confirmation precede final acceptance and **100% prepayment**. For all three tiers 4–8 useful references is an orientation only: the mature [Reference Guide](../Client_Experience/ONYX_REFERENCE_GUIDE_v1.md) quality-based rule prevails; no universal hard minimum or maximum.
 
 Failed candidates are regenerated/replaced within bounded job effort; one bad frame does not cancel a session. If reasonable effort cannot produce an acceptable order, it is not successfully fulfilled: stop retries, record evidence and use the [Service Standard resolution process](ONYX_SERVICE_STANDARD_v1.md). Never mark a rejected set delivered.
 
-[Consent & Privacy](../Client_Experience/Intake/ONYX_CONSENT_AND_PRIVACY_v1.md) remains authoritative for processing, reference reuse and separate publication permissions. Purchase never grants portfolio, Avito, social, website or advertising permission. Default is no publication; require the relevant explicit consent. Synthetic portfolio characters follow existing asset/provenance approval rules. Client image assets follow [Data Retention & Deletion v1](../Client_Experience/Intake/ONYX_DATA_RETENTION_AND_DELETION_v1.md): up to 30 calendar days after CLOSED, with eligible early deletion; minimum order/payment/consent records are segregated and have no invented legal retention term. The upgrade window does not establish retention.
+[Consent & Privacy](../Client_Experience/ONYX_CONSENT_AND_PRIVACY_v1.md) remains authoritative for processing, reference reuse and separate publication permissions. Purchase never grants portfolio, Avito, social, website or advertising permission. Default is no publication; require the relevant explicit consent. Synthetic portfolio characters follow existing asset/provenance approval rules. Client image assets follow [Data Retention & Deletion v1](../Client_Experience/ONYX_DATA_RETENTION_AND_DELETION_v1.md): up to 30 calendar days after CLOSED, with eligible early deletion; minimum order/payment/consent records are segregated and have no invented legal retention term. The upgrade window does not establish retention.
 
 ## Scope boundaries and future products
 

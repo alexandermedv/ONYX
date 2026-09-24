@@ -17,11 +17,11 @@
 - `Templates/Collection_Book/` — local JSON-to-PDF reference renderer for 1/10/20-photo books; not yet a delivery default.
 - `Samples/P02_Business_Collection_Book_v1/` — 15-page Signature reference, technical QA complete, owner design approval pending. Historical source-approval conflicts are documented in its README.
 
-Collection Book requirements: [[Product_Standards/ONYX_COLLECTION_BOOK_STANDARD]]. Architectural decision: [[../12 Decisions/ADR-0008 Collection Book Reference Renderer]].
+Collection Book requirements: [[Product_Standards/ONYX_COLLECTION_BOOK_STANDARD]]. Architectural decision: [[../docs/Decisions/ADR-0008 Collection Book Reference Renderer]].
 
 The production status of an asset is determined by its production manifest, not by the existence of a similarly named experimental file. `MISSING`, `PENDING`, and `REPAIR_REQUIRED` must not be replaced by placeholders.
 
-See [[../12 Decisions/ADR-0007 Production Core and R&D Promotion Boundary|ADR-0007]].
+See [[../docs/Decisions/ADR-0007 Production Core and R&D Promotion Boundary|ADR-0007]].
 
 ## CURRENT commercial freeze — 2026-09-20
 

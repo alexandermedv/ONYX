@@ -55,4 +55,4 @@ Controlled artwork: `Brand/Logo/ONYX_WORDMARK_EDITORIAL_V1_CHAMPAGNE.png`. The a
 
 ## Commercial timing clarification — 2026-09-20
 
-[Service Standard](../Product_Standards/ONYX_SERVICE_STANDARD_v1.md) now requires Reference QA and 100% prepayment before production. Existing prepayment-proof terminology specifies protected proof assets only; it does not promise free prepayment generation and does not refer to a current paid Preview product. Visual proof rules remain unchanged. Earlier exported brandbooks are visual references, not payment-policy authorities.
+[Service Standard](../Product/ONYX_SERVICE_STANDARD_v1.md) now requires Reference QA and 100% prepayment before production. Existing prepayment-proof terminology specifies protected proof assets only; it does not promise free prepayment generation and does not refer to a current paid Preview product. Visual proof rules remain unchanged. Earlier exported brandbooks are visual references, not payment-policy authorities.

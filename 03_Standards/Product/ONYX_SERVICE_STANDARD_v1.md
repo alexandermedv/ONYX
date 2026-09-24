@@ -4,7 +4,7 @@ CURRENT, revised 2026-09-21. [Commercial source of truth](ONYX_PRODUCT_SYSTEM.md
 
 ## Customer journey and payment
 
-Lead → product selection → references submitted → Reference QA → feasibility and capacity confirmed → final scope, price and deadline confirmed → 100% prepayment → Premium Concept Card approval where applicable → production → technical and human QA → client review/corrections → final QA → Book where included → delivery → resolution recorded → `CLOSED` → retention/deletion under [Data Retention & Deletion](../Client_Experience/Intake/ONYX_DATA_RETENTION_AND_DELETION_v1.md).
+Lead → product selection → references submitted → Reference QA → feasibility and capacity confirmed → final scope, price and deadline confirmed → 100% prepayment → Premium Concept Card approval where applicable → production → technical and human QA → client review/corrections → final QA → Book where included → delivery → resolution recorded → `CLOSED` → retention/deletion under [Data Retention & Deletion](../Client_Experience/ONYX_DATA_RETENTION_AND_DELETION_v1.md).
 
 Reference QA must be PASS or PASS_WITH_NOTES with limitations resolved/agreed before payment and final acceptance. NEEDS_MORE_REFERENCES/REJECT cannot proceed to payment. No generation is promised before prepayment. Reference Guide uses quality-based sufficiency; 4–8 useful images is an orientation, not a hard limit.
 
@@ -78,9 +78,9 @@ Process refunds through the original payment channel when available; otherwise a
 
 ## Privacy and delivery
 
-[Consent & Privacy](../Client_Experience/Intake/ONYX_CONSENT_AND_PRIVACY_v1.md) remains authoritative. Per-order processing consent is required; reuse for a new order needs explicit reuse consent. Portfolio and marketing consent are separate and not implied by purchase. Apply the relevant permission to Avito, social, website and advertising; denied/not asked never permits publication.
+[Consent & Privacy](../Client_Experience/ONYX_CONSENT_AND_PRIVACY_v1.md) remains authoritative. Per-order processing consent is required; reuse for a new order needs explicit reuse consent. Portfolio and marketing consent are separate and not implied by purchase. Apply the relevant permission to Avito, social, website and advertising; denied/not asked never permits publication.
 
-Retain client image assets no later than 30 calendar days after `CLOSED`, with earlier deletion on an eligible request when no correction/dispute needs the assets. Closure starts the clock. Separate minimal order/transaction/consent records; this policy asserts no fixed legal retention term for them. Follow the manual checklist in [Data Retention & Deletion v1](../Client_Experience/Intake/ONYX_DATA_RETENTION_AND_DELETION_v1.md). No automated purge or third-party erasure is claimed.
+Retain client image assets no later than 30 calendar days after `CLOSED`, with earlier deletion on an eligible request when no correction/dispute needs the assets. Closure starts the clock. Separate minimal order/transaction/consent records; this policy asserts no fixed legal retention term for them. Follow the manual checklist in [Data Retention & Deletion v1](../Client_Experience/ONYX_DATA_RETENTION_AND_DELETION_v1.md). No automated purge or third-party erasure is claimed.
 
 Only accepted clean finals, the included Book and approved client readme belong in delivery. No sources, rejected candidates, prompts, internal paths or manifests. `onyx` is internal project storage; never use personal `alexander` or expose direct MinIO access. Use the approved delivery layer and verify its access/expiry for each order.
 

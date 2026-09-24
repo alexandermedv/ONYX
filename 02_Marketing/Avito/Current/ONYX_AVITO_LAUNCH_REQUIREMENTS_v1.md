@@ -1,7 +1,7 @@
 # ONYX Avito Launch Pack v1 — requirements
 
 CURRENT requirements, 2026-09-20. Final Launch Pack not created or published in this task.
-Authority: [Commercial Product System](../../Product_Standards/ONYX_PRODUCT_SYSTEM.md).
+Authority: [Commercial Product System](../../../03_Standards/Product/ONYX_PRODUCT_SYSTEM.md).
 
 Headline: **Профессиональные AI-фото по вашим обычным снимкам — от 1 000 ₽**.
 
@@ -15,7 +15,7 @@ Do not use a Signature-only 3000-RUB entry headline, trial/demo positioning, unl
 
 Pack should include approved hero/gallery, truthful identity/quality examples, product comparison, simple process (references checked before payment), CTA, inquiry answers and a scope/deadline confirmation template. Standard delivery is agreed individually. Collect reference suitability before accepting 100% prepayment; explain detailed fees in consultation.
 
-Use the approved [short client payment, correction, refund and retention wording](../../Client_Experience/Intake/ONYX_DATA_RETENTION_AND_DELETION_v1.md#short-client-facing-wording) in inquiry replies. Disclose that images and working files are kept up to 30 calendar days after order closure and that external-service deletion may follow separate processes. A client purchase does not permit publishing their materials; require the specific separate consent. Public cancellation/refund Terms can receive separate legal review; this is not a blocker to preparing the Pack or beginning an internal operational soft launch.
+Use the approved [short client payment, correction, refund and retention wording](../../../03_Standards/Client_Experience/ONYX_DATA_RETENTION_AND_DELETION_v1.md#short-client-facing-wording) in inquiry replies. Disclose that images and working files are kept up to 30 calendar days after order closure and that external-service deletion may follow separate processes. A client purchase does not permit publishing their materials; require the specific separate consent. Public cancellation/refund Terms can receive separate legal review; this is not a blocker to preparing the Pack or beginning an internal operational soft launch.
 
 Use only publication-approved assets: synthetic character provenance approval or the relevant client portfolio/marketing consent. Verify exported copy for current prices; legacy brandbook PDFs and prior ten-frame cards do not establish commercial terms. Owner checks claim accuracy, asset rights, readability and readiness blockers before publication. Publishing is a separate requested action.
 

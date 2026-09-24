@@ -1,6 +1,6 @@
 # ONYX Prepayment Preview Standard v1
 
-CURRENT commercial override, 2026-09-20: [Service Standard](ONYX_SERVICE_STANDARD_v1.md) requires Reference QA then 100% prepayment before production. These legacy proof layout/file names remain supported; a prepayment proof is not an included free production step or the discontinued paid Preview product. Use approved proofs only when separately authorized; layout rules below do not change payment timing.
+CURRENT commercial override, 2026-09-20: [Service Standard](../Product/ONYX_SERVICE_STANDARD_v1.md) requires Reference QA then 100% prepayment before production. These legacy proof layout/file names remain supported; a prepayment proof is not an included free production step or the discontinued paid Preview product. Use approved proofs only when separately authorized; layout rules below do not change payment timing.
 
 - Canvas: 1080 × 1350 px, full width photo, без боковых полей.
 - Нижний footer: 230 px, каменная onyx-текстура и утверждённый lockup `BUSINESS COLLECTION / CLIENT PREVIEW`.
